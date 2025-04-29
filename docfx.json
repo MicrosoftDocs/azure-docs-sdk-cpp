@@ -1,22 +1,82 @@
 {
   "build": {
     "content": [
+{
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": ["**/*-index.md"],
+        "src": "docs-ref-services/latest",
+        "group": "latest",
+        "dest": "api/overview/azure"
+      },
       {
         "files": [
           "**/*.md",
           "**/*.yml"
         ],
+        "exclude": ["**/*-index.md"],
+        "src": "docs-ref-services/preview",
+        "group": "preview",
+        "dest": "api/overview/azure"
+      },
+      {
+        "files": [
+          "*.md",
+          "*.yml"
+        ],
+        "exclude": ["**/*-index.md"],
+        "src": "docs-ref-services",
+        "group": "all",
+        "dest": "api/overview/azure"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "docs-ref-conceptual",
+        "dest": "azure",
+        "group": "latest",
         "exclude": [
           "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "**/docfx.json",
-          "_repo.en-us/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices.md",
-          "SECURITY.md"
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml"          
+        ],
+        "src": "docs-ref-autogen",
+        "group": "latest",
+        "dest": "api",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "preview/docs-ref-autogen",
+        "group": "preview",
+        "dest": "api",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "bread",
+        "dest": "azure/bread",
+        "group": "all",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
         ]
       }
     ],
@@ -26,23 +86,37 @@
           "**/*.png",
           "**/*.jpg"
         ],
+        "src": "docs-ref-conceptual",
+        "dest": "azure",
         "exclude": [
           "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "**/docfx.json",
-          "_repo.en-us/**"
+          "**/includes/**"
         ]
       }
     ],
+	"groups": {
+      "preview": {
+        "dest": "preview",
+        "moniker_range": "azure-cpp-preview"
+      },
+      "latest": {
+        "dest": "latest",
+        "moniker_range": "azure-cpp"
+      },
+      "all": {
+        "dest": "all",
+        "moniker_range": "azure-cpp-preview || azure-cpp"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/breadcrumb/azurecpp/toc.yml",
+      "breadcrumb_path": "/cpp/azure/bread/toc.json",
       "feedback_system": "Standard",
       "permissioned-type": "public"
     },
     "fileMetadata": {},
-    "template": []
+    "template": [],
+    "markdownEngineName": "markdig"
   }
 }

@@ -1,0 +1,302 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-messaging-eventhubs
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureMessagingEventHubsModelsReceivedEventData
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Represents an event received from the Azure Event Hubs service.  
+     <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_received_event_data.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="event__data_8hpp_source.html">event_data.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Messaging::EventHubs::Models::ReceivedEventData:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;ReceivedEventData (std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;message)Construct a ReceivedEventData from an AMQP Message.  
+
+
+
+
+    &#160;&#160;ReceivedEventData (ReceivedEventData const &amp;)=defaultCopy an ReceivedEventData to another. 
+
+
+
+
+    ReceivedEventData &amp;&#160;&#160;operator= (ReceivedEventData const &amp;)=defaultAssign an ReceivedEventData to another. /. 
+
+
+
+
+    &#160;&#160;ReceivedEventData (ReceivedEventData &amp;&amp;)=defaultCreate an ReceivedEventData moving from another. 
+
+
+
+
+    ReceivedEventData &amp;&#160;&#160;operator= (ReceivedEventData &amp;&amp;)=defaultMove an ReceivedEventData to another. 
+
+
+
+    std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt;&#160;&#160;GetRawAmqpMessage () const overrideGet the raw AMQP message.  
+
+
+
+
+
+    &#160;EventData ()
+
+    &#160;Construct a default EventData object. 
+
+
+    &#160;EventData (std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;message)
+
+    &#160;Construct a new EventData object from an AMQP message.  
+
+
+    &#160;EventData (std::initializer_list&lt; uint8_t &gt; const &amp;body)
+
+    &#160;Construct a new EventData object from an initializer list of bytes.  
+
+
+    &#160;EventData (std::vector&lt; uint8_t &gt; const &amp;body)
+
+    &#160;Construct a new EventData object from a vector of bytes.  
+
+
+    &#160;EventData (std::string const &amp;body)
+
+    &#160;Construct a new EventData object from a string.  
+
+
+    &#160;EventData (EventData const &amp;)=default
+
+
+    EventData &amp;&#160;operator= (EventData const &amp;)=default
+
+
+    &#160;EventData (EventData &amp;&amp;)=default
+
+
+    EventData &amp;&#160;operator= (EventData &amp;&amp;)=default
+
+
+    virtual std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt;&#160;GetRawAmqpMessage () const
+
+    &#160;Get the AMQP message associated with this EventData.
+- section: Public Attributes
+- content: >-
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;EnqueuedTimeThe date and time that the event was enqueued.  
+
+
+
+    Azure::Nullable&lt; std::uint64_t &gt;&#160;&#160;OffsetThe offset of the event data within the partition.  
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;PartitionKeyThe partition key for sending a message to a partition.  
+
+
+
+    Azure::Nullable&lt; std::int64_t &gt;&#160;&#160;SequenceNumberThe sequence number of the event data.  
+
+
+
+    std::map&lt; std::string, Azure::Core::Amqp::Models::AmqpValue &gt;&#160;&#160;SystemPropertiesThe set of system properties populated by the Event Hubs service.  
+
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;Body
+
+    &#160;The body of the event data. 
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;ContentType
+
+
+    Azure::Nullable&lt; Azure::Core::Amqp::Models::AmqpValue &gt;&#160;CorrelationId
+
+    &#160;The correlation identifier.  
+
+
+    Azure::Nullable&lt; Azure::Core::Amqp::Models::AmqpValue &gt;&#160;MessageId
+
+    &#160;The message identifier.  
+
+
+    std::map&lt; std::string, Azure::Core::Amqp::Models::AmqpValue &gt;&#160;Properties
+
+    &#160;The set of free-form event properties.
+- section: Additional Inherited Members
+- content: std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const  &gt;&#160;m_message
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: Events Received from the EventHubs service have additional information associated with them, specifically the date and time that the event was enqueued, the offset of the event data within the partition, and the partition key for sending a message to a partition.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ReceivedEventData()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Messaging::EventHubs::Models::ReceivedEventData::ReceivedEventData 
+              (
+              std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;&#160;
+              message)
+- content: ''
+- content: ''
+- content: This constructor is used internally during the receive operation.
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetRawAmqpMessage()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const  &gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::GetRawAmqpMessage \n          (\n          )\n           const\n        \n      \n  \n  \ninlineoverridevirtual"
+- content: ''
+- content: ''
+- content: Returns the underlying AMQP message that was received from the Event Hubs service.
+- content: ''
+- content: Reimplemented from <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#aeee9554aec4c75140c99e2dfe5e67100">Azure::Messaging::EventHubs::Models::EventData</a>.
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EnqueuedTime'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::EnqueuedTime
+- content: ''
+- content: ''
+- content: The value is expressed in UTC.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Offset'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::uint64_t&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::Offset
+- content: ''
+- content: ''
+- content: The offset is a marker or identifier for an event within the Event Hubs stream. The identifier is unique within a partition of the Event Hubs stream.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PartitionKey'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::PartitionKey
+- content: ''
+- content: ''
+- content: The partition key is used to determine the partition that the message is sent to. Messages with the same partition key are sent to the same partition. Messages without a partition key are sent to a random partition.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SequenceNumber'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::int64_t&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::SequenceNumber
+- content: ''
+- content: ''
+- content: The sequence number is a unique identifier for the event within its partition.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SystemProperties'
+- content: ''
+- content: ''
+- content: ''
+- content: std::map&lt;std::string, Azure::Core::Amqp::Models::AmqpValue&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::SystemProperties
+- content: ''
+- content: ''
+- content: The properties are for read-only use by the application.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/messaging/eventhubs/models/event_data.hpp
+
+    src/event_data.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

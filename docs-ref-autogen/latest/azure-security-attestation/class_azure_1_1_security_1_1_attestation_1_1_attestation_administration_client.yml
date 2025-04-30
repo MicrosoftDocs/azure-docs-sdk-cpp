@@ -1,0 +1,389 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-attestation
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityAttestationAttestationAdministrationClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    The <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client.html">AttestationAdministrationClient</a> implements the functionality required by the "Administration" family of attestation service APIs.  
+     <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="attestation__administration__client_8hpp_source.html">attestation_administration_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;AttestationAdministrationClient (AttestationAdministrationClient const &amp;attestationClient)=defaultConstruct a new Attestation Administration Client object from another attestation administration client.  More...
+
+
+
+
+    virtual&#160;&#160;~AttestationAdministrationClient ()=defaultDestructor. 
+
+
+
+    std::string const&#160;&#160;Endpoint () constReturns the Endpoint which the client is communicating with.  More...
+
+
+
+    Response&lt; Models::AttestationToken&lt; std::string &gt; &gt;&#160;&#160;GetAttestationPolicy (Models::AttestationType const &amp;attestationType, GetPolicyOptions const &amp;options=GetPolicyOptions{}, Azure::Core::Context const &amp;context=Azure::Core::Context{}) constRetrieves an Attestation Policy from the service.  More...
+
+
+
+    Response&lt; Models::AttestationToken&lt; Models::PolicyResult &gt; &gt;&#160;&#160;SetAttestationPolicy (Models::AttestationType const &amp;attestationType, std::string const &amp;policyToSet, SetPolicyOptions const &amp;options=SetPolicyOptions{}, Azure::Core::Context const &amp;context=Azure::Core::Context{}) constSets the attestation policy for the specified AttestationType.  More...
+
+
+
+    Response&lt; Models::AttestationToken&lt; Models::PolicyResult &gt; &gt;&#160;&#160;ResetAttestationPolicy (Models::AttestationType const &amp;attestationType, SetPolicyOptions const &amp;options=SetPolicyOptions{}, Azure::Core::Context const &amp;context=Azure::Core::Context{}) constResets the attestation policy for the specified AttestationType to its default.  More...
+
+
+
+    Models::AttestationToken&lt; void &gt;&#160;&#160;CreateAttestationPolicyToken (Azure::Nullable&lt; std::string &gt; const &amp;policyToSet, Azure::Nullable&lt; AttestationSigningKey &gt; const &amp;signingKey={}) constReturns an Attestation Token object which would be sent to the attestation service to set or reset an attestation policy.  More...
+
+
+
+    Response&lt; Models::AttestationToken&lt; Models::IsolatedModeCertificateListResult &gt; &gt;&#160;&#160;GetIsolatedModeCertificates (GetIsolatedModeCertificatesOptions const &amp;options=GetIsolatedModeCertificatesOptions{}, Azure::Core::Context const &amp;context=Azure::Core::Context{}) constRetrieves the list of isolated mode management certificates.  More...
+
+
+
+    Response&lt; Models::AttestationToken&lt; Models::IsolatedModeCertificateModificationResult &gt; &gt;&#160;&#160;AddIsolatedModeCertificate (std::string const &amp;pemEncodedCertificateToAdd, AttestationSigningKey const &amp;signerForRequest, AddIsolatedModeCertificateOptions const &amp;options=AddIsolatedModeCertificateOptions{}, Azure::Core::Context const &amp;context=Azure::Core::Context{}) constAdds a new certificate to the list of policy management certificates.  More...
+
+
+
+    Response&lt; Models::AttestationToken&lt; Models::IsolatedModeCertificateModificationResult &gt; &gt;&#160;&#160;RemoveIsolatedModeCertificate (std::string const &amp;pemEncodedCertificateToAdd, AttestationSigningKey const &amp;signerForRequest, RemoveIsolatedModeCertificateOptions const &amp;options=RemoveIsolatedModeCertificateOptions{}, Azure::Core::Context const &amp;context=Azure::Core::Context{}) constRemoves a certificate from the list of policy management certificates for the instance.  More...
+- section: Static Public Member Functions
+- content: static AttestationAdministrationClient&#160;&#160;Create (std::string const &amp;endpoint, std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt; credential, AttestationAdministrationClientOptions const &amp;options=AttestationAdministrationClientOptions{}, Azure::Core::Context const &amp;context=Azure::Core::Context{})Construct a new Attestation Administration Client object.  More...
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: ''
+- content: 'The Administration family of APIs provide APIs to manage:'
+- content: ''
+- content: >-
+    Attestation policies.
+
+    Attestation policy management certificates (Isolated attestation service instances only).
+- content: ''
+- content: 'There are three flavors of attestation service instances:'
+- content: >-
+    Shared Mode
+
+    AAD Mode
+
+    Isolated Mode
+- content: ''
+- content: Shared mode attestation service instances do not allow any administration actions at all. They exist to allow customers to perform attestation operations without requiring any customizations.
+- content: ''
+- content: AAD Mode instances allow customers to modify attestation policies. When the attestation instance is in AAD mode, the creator of the instance indicates that they trust ARM RBAC and Microsoft AAD to validate client connections to the service. As such, additional proof of authorization is not required for administrative operations.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;AttestationAdministrationClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Security::Attestation::AttestationAdministrationClient::AttestationAdministrationClient \n          (\n          AttestationAdministrationClient const &amp;&#160;\n          attestationClient)\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: attestationClient
+    summary: 'An existing attestation client. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;AddIsolatedModeCertificate()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::AttestationToken&lt; Models::IsolatedModeCertificateModificationResult &gt; &gt; AttestationAdministrationClient::AddIsolatedModeCertificate \n          (\n          std::string const &amp;&#160;\n          pemEncodedCertificateToAdd, \n        \n        \n          \n          \n          AttestationSigningKey const &amp;&#160;\n          signerForRequest, \n        \n        \n          \n          \n          AddIsolatedModeCertificateOptions const &amp;&#160;\n          options = AddIsolatedModeCertificateOptions{}, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context{}&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: When the attestation service is running in "Isolated" mode, the service maintains a set of X.509 certificates which must be used to sign all policy operations. The AddIsolatedModeCertificates API adds a new certificate to the list of certificates which are used for this attestation service instance.
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: pemEncodedCertificateToAdd
+    summary: 'The X.509 certificate to add to the service. '
+  - name: signerForRequest
+    summary: 'Private key and certificate pair to be used to sign the request to the service. '
+  - name: options
+    summary: 'Options to be set when adding the new certificate. '
+  - name: context
+    summary: 'Call context for the operation. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Response<Models::AttestationToken<Models::PolicyCertificateListResult>> Return value from the operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;Create()'
+- content: ''
+- content: ''
+- content: ''
+- content: "AttestationAdministrationClient AttestationAdministrationClient::Create \n          (\n          std::string const &amp;&#160;\n          endpoint, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt;&#160;\n          credential, \n        \n        \n          \n          \n          AttestationAdministrationClientOptions const &amp;&#160;\n          options = AttestationAdministrationClientOptions{}, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context{}&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: endpoint
+    summary: 'The URL address where the client will send the requests to. '
+  - name: credential
+    summary: 'The authentication token to use. '
+  - name: options
+    summary: 'The options to customize the client behavior. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The newly created client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;CreateAttestationPolicyToken()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Models::AttestationToken&lt; void &gt; AttestationAdministrationClient::CreateAttestationPolicyToken \n          (\n          Azure::Nullable&lt; std::string &gt; const &amp;&#160;\n          policyToSet, \n        \n        \n          \n          \n          Azure::Nullable&lt; AttestationSigningKey &gt; const &amp;&#160;\n          signingKey = {}&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: To verify that the attestation service received the attestation policy, the service returns the SHA256 hash of the policy token which was sent ot the service. To simplify the customer experience of interacting with the SetAttestationPolicy and ResetAttestationPolicy APIs, CreateSetAttestationPolicyToken API will generate the same token that would be send to the service.
+- content: ''
+- content: To ensure that the token which was sent from the client matches the token which was received by the attestation service, the customer can call CreateSetAttestationPolicyToken and then generate the SHA256 of that token and compare it with the value returned by the service - the two hash values should be identical.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: policyToSet
+    summary: 'The policy document to set. '
+  - name: signingKey
+    summary: 'Optional Attestation Signing Key to be used to sign the policy. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Models::AttestationToken<void> Attestation token which would be sent to the attestation service based on this signing key.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;Endpoint()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string const Azure::Security::Attestation::AttestationAdministrationClient::Endpoint \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The remote endpoint used when communicating with the attestation service. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;GetAttestationPolicy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::AttestationToken&lt; std::string &gt; &gt; AttestationAdministrationClient::GetAttestationPolicy \n          (\n          Models::AttestationType const &amp;&#160;\n          attestationType, \n        \n        \n          \n          \n          GetPolicyOptions const &amp;&#160;\n          options = GetPolicyOptions{}, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context{}&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: attestationType
+    summary: 'Attestation type to be used when retrieving the policy. '
+  - name: options
+    summary: 'Options to be used when retrieving the policy. '
+  - name: context
+    summary: 'User defined context for the operation. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Response<Models::AttestationToken<std::string>> The returned policy from the service. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;GetIsolatedModeCertificates()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::AttestationToken&lt; IsolatedModeCertificateListResult &gt; &gt; AttestationAdministrationClient::GetIsolatedModeCertificates \n          (\n          GetIsolatedModeCertificatesOptions const &amp;&#160;\n          options = GetIsolatedModeCertificatesOptions{}, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context{}&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: When the attestation service is running in "Isolated" mode, the service maintains a set of X.509 certificates which must be used to sign all policy operations. The GetIsolatedModeCertificates API returns the list of certificates which are used for this attestation service instance.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Options to be set when retrieving the list of parameters. '
+  - name: context
+    summary: 'Call context for the operation. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Response<Models::AttestationToken<Models::PolicyCertificateListResult>> Return value from the operation, a set of attestation signers. Attestation policy operations on isolated instances must be signed by one the private key associated with one of the listed certificates. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;RemoveIsolatedModeCertificate()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::AttestationToken&lt; Models::IsolatedModeCertificateModificationResult &gt; &gt; AttestationAdministrationClient::RemoveIsolatedModeCertificate \n          (\n          std::string const &amp;&#160;\n          pemEncodedCertificateToAdd, \n        \n        \n          \n          \n          AttestationSigningKey const &amp;&#160;\n          signerForRequest, \n        \n        \n          \n          \n          RemoveIsolatedModeCertificateOptions const &amp;&#160;\n          options = RemoveIsolatedModeCertificateOptions{}, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context{}&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: 'When the attestation service is running in "Isolated" mode, the service maintains a set of X.509 certificates which must be used to sign all policy operations. The #RemoveIsolatedModeCertificates API removes a certificate from the list of certificates which are used for this attestation service instance.'
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: pemEncodedCertificateToAdd
+    summary: 'The X.509 certificate to remove from the service instance. '
+  - name: signerForRequest
+    summary: 'Private key and certificate pair to be used to sign the request to the service. '
+  - name: options
+    summary: 'Options to be set when adding the new certificate. '
+  - name: context
+    summary: 'Call context for the operation. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Response<Models::AttestationToken<Models::PolicyCertificateListResult>> Return value from the operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;ResetAttestationPolicy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::AttestationToken&lt; Models::PolicyResult &gt; &gt; AttestationAdministrationClient::ResetAttestationPolicy \n          (\n          Models::AttestationType const &amp;&#160;\n          attestationType, \n        \n        \n          \n          \n          SetPolicyOptions const &amp;&#160;\n          options = SetPolicyOptions{}, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context{}&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: attestationType
+    summary: 'Sets the policy on the specified AttestationType. '
+  - name: options
+    summary: 'Options used when setting the policy, including signer. '
+  - name: context
+    summary: 'User defined context for the operation. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Response<Models::AttestationToken<Models::PolicyResult>> The result of the reset policy operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;SetAttestationPolicy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::AttestationToken&lt; Models::PolicyResult &gt; &gt; AttestationAdministrationClient::SetAttestationPolicy \n          (\n          Models::AttestationType const &amp;&#160;\n          attestationType, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          policyToSet, \n        \n        \n          \n          \n          SetPolicyOptions const &amp;&#160;\n          options = SetPolicyOptions{}, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context{}&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: The SetAttestationPolicy API sets the attestation policy for the specified attestationType to the value specified.
+- content: ''
+- content: The result of a SetAttestationPolicy API call is a PolicyResult object, which contains the result of the operation, the hash of the AttestationToken object sent to the service, and (if the <a href="struct_azure_1_1_security_1_1_attestation_1_1_set_policy_options.html">SetPolicyOptions</a> contains a <code>SigningKey</code> field) the certificate which was used to sign the attestation policy.
+- content: ''
+- content: Note that the hash of the AttestationToken is not immediately derivable from the inputs to this function - the function calls the CreateAttestationPolicyToken to create the underlying token which will be sent to the service.
+- content: ''
+- content: In order to verify that the attestation service correctly received the attestation policy sent by the client, the caller of the SetAttestationPolicy can also call CreateAttestationPolicyToken and calculate the SHA256 hash of the RawToken field and check to ensure that it matches the value returned by the service.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: attestationType
+    summary: 'Sets the policy on the specified AttestationType. '
+  - name: policyToSet
+    summary: 'The policy document to set. '
+  - name: options
+    summary: 'Options used when setting the policy, including signer. '
+  - name: context
+    summary: 'User defined context for the operation. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Response<Models::AttestationToken<Models::PolicyResult>> The result of the set policy operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/attestation/attestation_administration_client.hpp
+
+    src/attestation_administration_client.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by &#160;
+- content: ''
+- content: 1.9.1
+- content: ''
+- content: ''
+- content: ''

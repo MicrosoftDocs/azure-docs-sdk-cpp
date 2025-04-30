@@ -1,0 +1,440 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-shares
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesSharesModelsFileAttributes
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Attributes for a file or directory.
+- content: ''
+- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;FileAttributes ()=default
+
+
+    &#160;FileAttributes (const std::string &amp;value)
+
+
+    bool&#160;operator== (const FileAttributes &amp;other) const
+
+
+    bool&#160;operator!= (const FileAttributes &amp;other) const
+
+
+    std::string&#160;ToString () const
+
+
+    const std::vector&lt; std::string &gt; &amp;&#160;GetValues () const
+
+
+    FileAttributes&#160;operator| (const FileAttributes &amp;other) const
+
+
+    FileAttributes&#160;operator&amp; (const FileAttributes &amp;other) const
+
+
+    FileAttributes&#160;operator^ (const FileAttributes &amp;other) const
+
+
+    FileAttributes &amp;&#160;operator|= (const FileAttributes &amp;other)
+
+
+    FileAttributes &amp;&#160;operator&amp;= (const FileAttributes &amp;other)
+
+
+    FileAttributes &amp;&#160;operator^= (const FileAttributes &amp;other)
+- section: Static Public Attributes
+- content: >-
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;ReadOnly
+
+
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;Hidden
+
+
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;System
+
+
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;None
+
+
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;Directory
+
+
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;Archive
+
+
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;Temporary
+
+
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;Offline
+
+
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;NotContentIndexed
+
+
+    AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes&#160;NoScrubData
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;FileAttributes() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::Models::FileAttributes::FileAttributes \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- content: Constructs a new <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a> instance.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;FileAttributes() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::Models::FileAttributes::FileAttributes \n          (\n          const std::string &amp;&#160;\n          value)\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- content: Constructs a new <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a> from a string.
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetValues()'
+- content: ''
+- content: ''
+- content: ''
+- content: "const std::vector&lt; std::string &gt; &amp; Azure::Storage::Files::Shares::Models::FileAttributes::GetValues \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: Returns the values as an array.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator!=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Storage::Files::Shares::Models::FileAttributes::operator!= \n          (\n          const FileAttributes &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: Compares with another <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator&amp;()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::operator&amp; 
+              (
+              const FileAttributes &amp;&#160;
+              other)
+               const
+- content: ''
+- content: ''
+- content: Bitwise AND of two instances.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator&amp;=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "FileAttributes &amp; Azure::Storage::Files::Shares::Models::FileAttributes::operator&amp;= \n          (\n          const FileAttributes &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: Bitwise AND and assignment of two instances.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator==()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Storage::Files::Shares::Models::FileAttributes::operator== \n          (\n          const FileAttributes &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: Compares with another <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator^()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::operator^ 
+              (
+              const FileAttributes &amp;&#160;
+              other)
+               const
+- content: ''
+- content: ''
+- content: Bitwise XOR of two instances.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator^=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "FileAttributes &amp; Azure::Storage::Files::Shares::Models::FileAttributes::operator^= \n          (\n          const FileAttributes &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: Bitwise XOR and assignment of two instances.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator|()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::operator| 
+              (
+              const FileAttributes &amp;&#160;
+              other)
+               const
+- content: ''
+- content: ''
+- content: Bitwise OR of two instances.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator|=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "FileAttributes &amp; Azure::Storage::Files::Shares::Models::FileAttributes::operator|= \n          (\n          const FileAttributes &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: Bitwise OR and assignment of two instances.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ToString()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    std::string Azure::Storage::Files::Shares::Models::FileAttributes::ToString 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- content: Converts this instance to its string representation.
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Archive'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::Archive\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: Archive'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Directory'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::Directory\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: Directory'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Hidden'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::Hidden\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: Hidden'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;None'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::None\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: None'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;NoScrubData'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::NoScrubData\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: NoScrubData'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;NotContentIndexed'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::NotContentIndexed\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: NotContentIndexed'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Offline'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::Offline\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: Offline'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ReadOnly'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::ReadOnly\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: ReadOnly'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;System'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::System\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: System'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Temporary'
+- content: ''
+- content: ''
+- content: ''
+- content: "AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FileAttributes Azure::Storage::Files::Shares::Models::FileAttributes::Temporary\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: 'Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_attributes.html">FileAttributes</a>: Temporary'
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/storage/files/shares/rest_client.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

@@ -1,0 +1,197 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreHttpWinHttpTransport
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Concrete implementation of an HTTP transport that uses WinHTTP when sending and receiving requests and responses over the wire.
+- content: ''
+- content: <code>#include &lt;<a href="win__http__transport_8hpp_source.html">win_http_transport.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Core::Http::WinHttpTransport:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;WinHttpTransport (WinHttpTransportOptions const &amp;options=WinHttpTransportOptions())Constructs WinHttpTransport.  
+
+
+
+    &#160;&#160;WinHttpTransport (Azure::Core::Http::Policies::TransportOptions const &amp;options)Constructs WinHttpTransport object based on common Azure HTTP Transport Options.  
+
+
+
+    virtual std::unique_ptr&lt; RawResponse &gt;&#160;&#160;Send (Request &amp;request, Context const &amp;context) overrideImplements the HTTP transport interface to send an HTTP Request and produce an HTTP RawResponse.  
+
+
+
+
+    virtual std::unique_ptr&lt; RawResponse &gt;&#160;Send (Request &amp;request, Context const &amp;context)=0
+
+    &#160;Send an HTTP request over the wire.  
+
+
+    virtual&#160;~HttpTransport ()
+
+    &#160;Destructs HttpTransport.
+- section: Protected Member Functions
+- content: >-
+    virtual void&#160;&#160;OnUpgradedConnection (std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;request) constCallback to allow a derived transport to extract the request handle. Used for WebSocket transports.  
+
+
+
+
+    &#160;HttpTransport ()=default
+
+    &#160;Constructs a default instance of HttpTransport.  
+
+
+    &#160;HttpTransport (const HttpTransport &amp;other)=default
+
+    &#160;Constructs HttpTransport by copying another instance of HttpTransport.  
+
+
+    &#160;HttpTransport (HttpTransport &amp;&amp;other)=default
+
+    &#160;Constructs HttpTransport by moving another instance of HttpTransport.  
+
+
+    HttpTransport &amp;&#160;operator= (const HttpTransport &amp;other)=default
+
+    &#160;Assigns HttpTransport to another instance of HttpTransport.  
+
+
+
+    virtual bool&#160;HasWebSocketSupport () const
+
+    &#160;Returns true if the HttpTransport supports WebSockets (the ability to communicate bidirectionally on the TCP connection used by the HTTP transport).
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;WinHttpTransport() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Http::WinHttpTransport::WinHttpTransport 
+              (
+              WinHttpTransportOptions const &amp;&#160;
+              options = WinHttpTransportOptions())
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameter to override the default settings. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;WinHttpTransport() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Http::WinHttpTransport::WinHttpTransport 
+              (
+              Azure::Core::Http::Policies::TransportOptions const &amp;&#160;
+              options)
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;OnUpgradedConnection()'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Azure::Core::Http::WinHttpTransport::OnUpgradedConnection \n          (\n          std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;&#160;\n          request)\n           const\n        \n      \n  \n  \nprotectedvirtual"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: request
+    summary: '- <a class="el" href="class_azure_1_1_core_1_1_http_1_1_request.html" title="A request message from a client to a server.">Request</a> which contains the WinHttp request handle. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Send()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::unique_ptr&lt; RawResponse &gt; Azure::Core::Http::WinHttpTransport::Send \n          (\n          Request &amp;&#160;\n          request, \n        \n        \n          \n          \n          Context const &amp;&#160;\n          context&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \noverridevirtual"
+- content: ''
+- content: ''
+- content: Implements <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#aab0a38b3e67079a9ede743c3e8de909d">Azure::Core::Http::HttpTransport</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/http/win_http_transport.hpp
+
+    src/http/winhttp/win_http_transport.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

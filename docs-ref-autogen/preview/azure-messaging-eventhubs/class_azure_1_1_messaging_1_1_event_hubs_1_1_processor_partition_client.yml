@@ -1,0 +1,168 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-messaging-eventhubs
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureMessagingEventHubsProcessorPartitionClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor_partition_client.html">ProcessorPartitionClient</a> allows you to receive events, similar to a [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a>], with a checkpoint store for tracking progress. This type is instantiated from [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a89bf35ff8cf3b323c1f7da994ef47f56">Processor.NextPartitionClient</a>], which handles load balancing of partition ownership between multiple [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a>] instances.  
+     <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor_partition_client.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="processor__partition__client_8hpp_source.html">processor_partition_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;ProcessorPartitionClient (ProcessorPartitionClient const &amp;other)=deleteCopy a ProcessorPartitionClient to another ProcessorPartitionClient. 
+
+
+
+
+    &#160;&#160;ProcessorPartitionClient (ProcessorPartitionClient &amp;&amp;other)=defaultMove a ProcessorPartitionClient to another. 
+
+
+
+
+    ProcessorPartitionClient &amp;&#160;&#160;operator= (ProcessorPartitionClient const &amp;other)=deleteAssignment operator. 
+
+
+
+
+    ProcessorPartitionClient &amp;&#160;&#160;operator= (ProcessorPartitionClient &amp;&amp;other)=defaultMove a ProcessorPartitionClient to another. 
+
+
+
+    std::vector&lt; std::shared_ptr&lt; const Models::ReceivedEventData &gt; &gt;&#160;ReceiveEvents (uint32_t maxBatchSize, Core::Context const &amp;context={})
+
+
+    void&#160;&#160;UpdateCheckpoint (std::shared_ptr&lt; const Models::ReceivedEventData &gt; const &amp;eventData, Core::Context const &amp;context={})Updates the checkpoint for this partition using the given event data.  
+
+
+
+
+    std::string&#160;&#160;PartitionId () constReturns the partition ID associated with this ProcessorPartitionClient. 
+
+
+
+    void&#160;&#160;Close (Core::Context const &amp;context={})Closes the partition client.
+- section: Friends
+- content: class&#160;Processor
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Close()'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Azure::Messaging::EventHubs::ProcessorPartitionClient::Close \n          (\n          Core::Context const &amp;&#160;\n          context = {})\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: 'The context to pass to the close operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ReceiveEvents()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::vector&lt; std::shared_ptr&lt; const Models::ReceivedEventData &gt; &gt; Azure::Messaging::EventHubs::ProcessorPartitionClient::ReceiveEvents \n          (\n          uint32_t&#160;\n          maxBatchSize, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: Receives Events from the partition.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: maxBatchSize
+    summary: 'The maximum number of events to receive in a single call to the service. '
+  - name: context
+    summary: 'The context to pass to the update checkpoint operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpdateCheckpoint()'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Azure::Messaging::EventHubs::ProcessorPartitionClient::UpdateCheckpoint \n          (\n          std::shared_ptr&lt; const Models::ReceivedEventData &gt; const &amp;&#160;\n          eventData, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- content: Subsequent partition client reads will start from this event.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: eventData
+    summary: 'The event data to use for updating the checkpoint. '
+  - name: context
+    summary: 'The context to pass to the update checkpoint operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/messaging/eventhubs/processor_partition_client.hpp
+
+    src/processor_partition_client.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

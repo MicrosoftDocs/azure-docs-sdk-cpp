@@ -1,0 +1,382 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-data-tables
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureDataTablesTableClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Table Client.
+- content: ''
+- content: <code>#include &lt;<a href="table__client_8hpp_source.html">table_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;TableClient (std::string const &amp;serviceUrl, std::string const &amp;tableName, const TableClientOptions &amp;options={})Initializes a new instance of tableClient.  
+
+
+
+    &#160;&#160;TableClient (const std::string &amp;serviceUrl, const std::string &amp;tableName, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const TableClientOptions &amp;options={})Initializes a new instance of tableClient.  
+
+
+
+    &#160;&#160;TableClient (const std::string &amp;serviceUrl, std::shared_ptr&lt; Azure::Data::Tables::Credentials::AzureSasCredential &gt; credential, const std::string &amp;tableName, const TableClientOptions &amp;options={})Initializes a new instance of tableClient.  
+
+
+
+    Response&lt; Models::AddEntityResult &gt;&#160;&#160;AddEntity (Models::TableEntity const &amp;tableEntity, Models::AddEntityOptions const &amp;options={}, Core::Context const &amp;context={})Add entity in a table.  
+
+
+
+    Response&lt; Models::UpdateEntityResult &gt;&#160;&#160;UpdateEntity (Models::TableEntity const &amp;tableEntity, Models::UpdateEntityOptions const &amp;options={}, Core::Context const &amp;context={})Update entity in a table.  
+
+
+
+    Response&lt; Models::MergeEntityResult &gt;&#160;&#160;MergeEntity (Models::TableEntity const &amp;tableEntity, Models::MergeEntityOptions const &amp;options={}, Core::Context const &amp;context={})Merge entity in a table.  
+
+
+
+    Response&lt; Models::DeleteEntityResult &gt;&#160;&#160;DeleteEntity (Models::TableEntity const &amp;tableEntity, Core::Context const &amp;context={})Deletes the specified entity in a table.  
+
+
+
+    Response&lt; Models::UpsertEntityResult &gt;&#160;&#160;UpsertEntity (Models::TableEntity const &amp;tableEntity, Models::UpsertEntityOptions const &amp;options={}, Core::Context const &amp;context={})Upsert specified entity in a table.  
+
+
+
+    Models::QueryEntitiesPagedResponse&#160;&#160;QueryEntities (Models::QueryEntitiesOptions const &amp;options={}, Core::Context const &amp;context={})Queries entities in a table.  
+
+
+
+    Response&lt; Models::TableEntity &gt;&#160;&#160;GetEntity (std::string const &amp;partitionKey, std::string const &amp;rowKey, Core::Context const &amp;context={})Queries a single entity in a table.  
+
+
+
+    Response&lt; Models::SubmitTransactionResult &gt;&#160;&#160;SubmitTransaction (std::vector&lt; Models::TransactionStep &gt; const &amp;steps, Core::Context const &amp;context={})Submits a transaction.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;TableClient() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "TableClient::TableClient \n          (\n          std::string const &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          tableName, \n        \n        \n          \n          \n          const TableClientOptions &amp;&#160;\n          options = {}&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: serviceUrl
+    summary: 'The URL of the service account that is the target of the desired operation. The URL may contain SAS query parameters. '
+  - name: tableName
+    summary: 'The name of the table. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;TableClient() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "TableClient::TableClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          tableName, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const TableClientOptions &amp;&#160;\n          options = {}&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: serviceUrl
+    summary: 'The URL of the service account that is the target of the desired operation. The URL may contain SAS query parameters. '
+  - name: tableName
+    summary: 'The name of the table. '
+  - name: credential
+    summary: 'The shared key credential used to sign requests. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;TableClient() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "TableClient::TableClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Azure::Data::Tables::Credentials::AzureSasCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          tableName, \n        \n        \n          \n          \n          const TableClientOptions &amp;&#160;\n          options = {}&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: serviceUrl
+    summary: 'The service Url '
+  - name: credential
+    summary: 'The SAS credential used to sign requests. '
+  - name: tableName
+    summary: 'The name of the table. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AddEntity()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::AddEntityResult &gt; TableClient::AddEntity \n          (\n          Models::TableEntity const &amp;&#160;\n          tableEntity, \n        \n        \n          \n          \n          Models::AddEntityOptions const &amp;&#160;\n          options = {}, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tableEntity
+    summary: 'The TableEntity to set. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'for canceling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Add entity result. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteEntity()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteEntityResult &gt; TableClient::DeleteEntity \n          (\n          Models::TableEntity const &amp;&#160;\n          tableEntity, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tableEntity
+    summary: 'The TableEntity to delete. '
+  - name: context
+    summary: 'for canceling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Delete entity result. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetEntity()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::TableEntity &gt; TableClient::GetEntity \n          (\n          std::string const &amp;&#160;\n          partitionKey, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          rowKey, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: partitionKey
+    summary: 'The partition key of the entity. '
+  - name: rowKey
+    summary: 'The row key of the entity. '
+  - name: context
+    summary: 'for canceling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Table entity. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;MergeEntity()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::MergeEntityResult &gt; TableClient::MergeEntity \n          (\n          Models::TableEntity const &amp;&#160;\n          tableEntity, \n        \n        \n          \n          \n          Models::MergeEntityOptions const &amp;&#160;\n          options = {}, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tableEntity
+    summary: 'The TableEntity to merge. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'for canceling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Merge entity result. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;QueryEntities()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Models::QueryEntitiesPagedResponse TableClient::QueryEntities \n          (\n          Models::QueryEntitiesOptions const &amp;&#160;\n          options = {}, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'for canceling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Entity list paged response. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SubmitTransaction()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SubmitTransactionResult &gt; TableClient::SubmitTransaction \n          (\n          std::vector&lt; Models::TransactionStep &gt; const &amp;&#160;\n          steps, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: steps
+    summary: 'The transaction steps to execute. '
+  - name: context
+    summary: 'for canceling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Submit transaction result. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpdateEntity()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::UpdateEntityResult &gt; TableClient::UpdateEntity \n          (\n          Models::TableEntity const &amp;&#160;\n          tableEntity, \n        \n        \n          \n          \n          Models::UpdateEntityOptions const &amp;&#160;\n          options = {}, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tableEntity
+    summary: 'The TableEntity to set. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'for canceling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Update entity result. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpsertEntity()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::UpsertEntityResult &gt; TableClient::UpsertEntity \n          (\n          Models::TableEntity const &amp;&#160;\n          tableEntity, \n        \n        \n          \n          \n          Models::UpsertEntityOptions const &amp;&#160;\n          options = {}, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tableEntity
+    summary: 'The TableEntity to upsert. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'for canceling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Upsert entity result. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/data/tables/table_client.hpp
+
+    src/table_clients.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

@@ -1,0 +1,339 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-messaging-eventhubs
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureMessagingEventHubsModelsEventData
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Represents an event sent to the Azure Event Hubs service.
+- content: ''
+- content: <code>#include &lt;<a href="event__data_8hpp_source.html">event_data.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Messaging::EventHubs::Models::EventData:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;EventData ()Construct a default EventData object. 
+
+
+
+    &#160;&#160;EventData (std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;message)Construct a new EventData object from an AMQP message.  
+
+
+
+    &#160;&#160;EventData (std::initializer_list&lt; uint8_t &gt; const &amp;body)Construct a new EventData object from an initializer list of bytes.  
+
+
+
+    &#160;&#160;EventData (std::vector&lt; uint8_t &gt; const &amp;body)Construct a new EventData object from a vector of bytes.  
+
+
+
+    &#160;&#160;EventData (std::string const &amp;body)Construct a new EventData object from a string.  
+
+
+
+    &#160;EventData (EventData const &amp;)=default
+
+
+    EventData &amp;&#160;operator= (EventData const &amp;)=default
+
+
+    &#160;EventData (EventData &amp;&amp;)=default
+
+
+    EventData &amp;&#160;operator= (EventData &amp;&amp;)=default
+
+
+    virtual std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt;&#160;&#160;GetRawAmqpMessage () constGet the AMQP message associated with this EventData.
+- section: Public Attributes
+- content: >-
+    std::vector&lt; uint8_t &gt;&#160;&#160;BodyThe body of the event data. 
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;ContentType
+
+
+    Azure::Nullable&lt; Azure::Core::Amqp::Models::AmqpValue &gt;&#160;&#160;CorrelationIdThe correlation identifier.  
+
+
+
+    Azure::Nullable&lt; Azure::Core::Amqp::Models::AmqpValue &gt;&#160;&#160;MessageIdThe message identifier.  
+
+
+
+    std::map&lt; std::string, Azure::Core::Amqp::Models::AmqpValue &gt;&#160;&#160;PropertiesThe set of free-form event properties.
+- section: Protected Attributes
+- content: std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const  &gt;&#160;m_message
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EventData() [1/6]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Messaging::EventHubs::Models::EventData::EventData 
+              (
+              std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;&#160;
+              message)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: message
+    summary: '- AMQP message to construct the <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html" title="Represents an event sent to the Azure Event Hubs service.">EventData</a> from. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EventData() [2/6]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Messaging::EventHubs::Models::EventData::EventData \n          (\n          std::initializer_list&lt; uint8_t &gt; const &amp;&#160;\n          body)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: body
+    summary: '- Body for the newly created <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html" title="Represents an event sent to the Azure Event Hubs service.">EventData</a>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EventData() [3/6]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Messaging::EventHubs::Models::EventData::EventData \n          (\n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          body)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: body
+    summary: '- Body for the newly created <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html" title="Represents an event sent to the Azure Event Hubs service.">EventData</a>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EventData() [4/6]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Messaging::EventHubs::Models::EventData::EventData \n          (\n          std::string const &amp;&#160;\n          body)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: body
+    summary: '- Body for the newly created <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html" title="Represents an event sent to the Azure Event Hubs service.">EventData</a>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EventData() [5/6]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Messaging::EventHubs::Models::EventData::EventData \n          (\n          EventData const &amp;&#160;\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- content: Copy an <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> to another.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EventData() [6/6]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Messaging::EventHubs::Models::EventData::EventData \n          (\n          EventData &amp;&amp;&#160;\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- content: Create an <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> moving from another.
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetRawAmqpMessage()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; Azure::Messaging::EventHubs::Models::EventData::GetRawAmqpMessage \n          (\n          )\n           const\n        \n      \n  \n  \nvirtual"
+- content: ''
+- content: ''
+- content: Returns an underlying AMQP message corresponding to this <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> object.
+- content: ''
+- content: ''
+- content: Reimplemented in <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_received_event_data.html#af5c275d7df2985f083beb24c3736b359">Azure::Messaging::EventHubs::Models::ReceivedEventData</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "EventData &amp; Azure::Messaging::EventHubs::Models::EventData::operator= \n          (\n          EventData &amp;&amp;&#160;\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- content: Move an <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> to another.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "EventData &amp; Azure::Messaging::EventHubs::Models::EventData::operator= \n          (\n          EventData const &amp;&#160;\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- content: Assign an <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> to another.
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ContentType'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Messaging::EventHubs::Models::EventData::ContentType
+- content: ''
+- content: ''
+- content: Represents the MIME ContentType of the event data.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CorrelationId'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Azure::Core::Amqp::Models::AmqpValue&gt; Azure::Messaging::EventHubs::Models::EventData::CorrelationId
+- content: ''
+- content: ''
+- content: Allows an application to specify a context for the event data, such as the type of the event data or the entity that produced the event data.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;m_message'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::shared_ptr&lt;Azure::Core::Amqp::Models::AmqpMessage const&gt; Azure::Messaging::EventHubs::Models::EventData::m_message\n        \n      \n  \n  \nprotected"
+- content: ''
+- content: ''
+- content: The incoming AMQP message, if one was received.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;MessageId'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Azure::Core::Amqp::Models::AmqpValue&gt; Azure::Messaging::EventHubs::Models::EventData::MessageId
+- content: ''
+- content: ''
+- content: The identifier is an application-defined value that uniquely identifies the message and its payload. The identifier is a free-form string and can reflect a GUID or an identifier derived from the application context.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Properties'
+- content: ''
+- content: ''
+- content: ''
+- content: std::map&lt;std::string, Azure::Core::Amqp::Models::AmqpValue&gt; Azure::Messaging::EventHubs::Models::EventData::Properties
+- content: ''
+- content: ''
+- content: The properties are for application-specific use.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/messaging/eventhubs/models/event_data.hpp
+
+    src/event_data.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

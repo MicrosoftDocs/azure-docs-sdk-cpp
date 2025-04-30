@@ -1,0 +1,664 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-datalake
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesDataLakeDataLakePathClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    The <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a> allows you to manipulate Azure Storage DataLake files.  
+     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="datalake__path__client_8hpp_source.html">datalake_path_client.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Storage::Files::DataLake::DataLakePathClient:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    virtual&#160;&#160;~DataLakePathClient ()=defaultDestructor.  
+
+
+
+    &#160;&#160;DataLakePathClient (const std::string &amp;pathUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Shared key authentication client.  
+
+
+
+    &#160;&#160;DataLakePathClient (const std::string &amp;pathUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Bearer token authentication client.  
+
+
+
+    &#160;&#160;DataLakePathClient (const std::string &amp;pathUrl, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Anonymous/SAS/customized pipeline auth.  
+
+
+
+    std::string&#160;&#160;GetUrl () constGets the path's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.  
+
+
+
+    Azure::Response&lt; Models::CreatePathResult &gt;&#160;&#160;Create (Models::PathResourceType type, const CreatePathOptions &amp;options=CreatePathOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates a file or directory. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  
+
+
+
+    Azure::Response&lt; Models::CreatePathResult &gt;&#160;&#160;CreateIfNotExists (Models::PathResourceType type, const CreatePathOptions &amp;options=CreatePathOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates a file or directory. By default, the destination is not changed if it already exists.  
+
+
+
+    Azure::Response&lt; Models::DeletePathResult &gt;&#160;&#160;Delete (const DeletePathOptions &amp;options=DeletePathOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the resource the path points to.  
+
+
+
+    Azure::Response&lt; Models::DeletePathResult &gt;&#160;&#160;DeleteIfExists (const DeletePathOptions &amp;options=DeletePathOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the resource the path points to if it exists.  
+
+
+
+    Azure::Response&lt; Models::SetPathAccessControlListResult &gt;&#160;&#160;SetAccessControlList (std::vector&lt; Models::Acl &gt; acls, const SetPathAccessControlListOptions &amp;options=SetPathAccessControlListOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the owner, group, and access control list for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.  
+
+
+
+    Azure::Response&lt; Models::SetPathPermissionsResult &gt;&#160;&#160;SetPermissions (std::string permissions, const SetPathPermissionsOptions &amp;options=SetPathPermissionsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the owner, group, and permissions for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.  
+
+
+
+    Azure::Response&lt; Models::SetPathHttpHeadersResult &gt;&#160;&#160;SetHttpHeaders (Models::PathHttpHeaders httpHeaders, const SetPathHttpHeadersOptions &amp;options=SetPathHttpHeadersOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the properties of a resource the path points to.  
+
+
+
+    Azure::Response&lt; Models::PathProperties &gt;&#160;&#160;GetProperties (const GetPathPropertiesOptions &amp;options=GetPathPropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGet Properties returns all system and user defined properties for a path. Get Status returns all system defined properties for a path. Get Access Control List returns the access control list for a path.  
+
+
+
+    Azure::Response&lt; Models::PathAccessControlList &gt;&#160;&#160;GetAccessControlList (const GetPathAccessControlListOptions &amp;options=GetPathAccessControlListOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns all access control list stored for the given path.  
+
+
+
+    Azure::Response&lt; Models::SetPathMetadataResult &gt;&#160;&#160;SetMetadata (Storage::Metadata metadata, const SetPathMetadataOptions &amp;options=SetPathMetadataOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the metadata of a resource the path points to.  
+
+
+
+    SetPathAccessControlListRecursivePagedResponse&#160;&#160;SetAccessControlListRecursive (const std::vector&lt; Models::Acl &gt; &amp;acls, const SetPathAccessControlListRecursiveOptions &amp;options=SetPathAccessControlListRecursiveOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets POSIX access control rights on files and directories under given directory recursively.  
+
+
+
+    UpdatePathAccessControlListRecursivePagedResponse&#160;&#160;UpdateAccessControlListRecursive (const std::vector&lt; Models::Acl &gt; &amp;acls, const UpdatePathAccessControlListRecursiveOptions &amp;options=UpdatePathAccessControlListRecursiveOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constUpdates POSIX access control rights on files and directories under given directory recursively.  
+
+
+
+    RemovePathAccessControlListRecursivePagedResponse&#160;&#160;RemoveAccessControlListRecursive (const std::vector&lt; Models::Acl &gt; &amp;acls, const RemovePathAccessControlListRecursiveOptions &amp;options=RemovePathAccessControlListRecursiveOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRemoves POSIX access control rights on files and directories under given directory recursively.
+- section: Static Public Member Functions
+- content: static DataLakePathClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const std::string &amp;fileSystemName, const std::string &amp;path, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Create from connection string.
+- section: Protected Member Functions
+- content: '&#160;&#160;DataLakePathClient (Azure::Core::Url pathUrl, Blobs::BlobClient blobClient, std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt; pipeline, _detail::DatalakeClientConfiguration clientConfiguration)Construct a new DataLakePathClient.'
+- section: Protected Attributes
+- content: >-
+    Azure::Core::Url&#160;&#160;m_pathUrlUrl to the resource on the service. 
+
+
+
+
+    Blobs::BlobClient&#160;&#160;m_blobClientBlob Client for this path client. 
+
+
+
+
+    std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt;&#160;&#160;m_pipelineHttp Pipeline. 
+
+
+
+
+    _detail::DatalakeClientConfiguration&#160;&#160;m_clientConfigurationClient configurations.
+- section: Friends
+- content: >-
+    class&#160;DataLakeFileSystemClient
+
+
+
+    class&#160;DataLakeLeaseClient
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;~DataLakePathClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual Azure::Storage::Files::DataLake::DataLakePathClient::~DataLakePathClient \n          (\n          )\n          \n        \n      \n  \n  \nvirtualdefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DataLakePathClient() [1/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::DataLake::DataLakePathClient::DataLakePathClient \n          (\n          const std::string &amp;&#160;\n          pathUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: pathUrl
+    summary: "The URL of the path this client's request targets. "
+  - name: credential
+    summary: 'The shared key credential used to initialize the client. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DataLakePathClient() [2/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::DataLake::DataLakePathClient::DataLakePathClient \n          (\n          const std::string &amp;&#160;\n          pathUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: pathUrl
+    summary: "The URL of the path this client's request targets. "
+  - name: credential
+    summary: 'The token credential used to initialize the client. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DataLakePathClient() [3/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::DataLake::DataLakePathClient::DataLakePathClient \n          (\n          const std::string &amp;&#160;\n          pathUrl, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: pathUrl
+    summary: "The URL of the path this client's request targets. "
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DataLakePathClient() [4/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::DataLake::DataLakePathClient::DataLakePathClient \n          (\n          Azure::Core::Url&#160;\n          pathUrl, \n        \n        \n          \n          \n          Blobs::BlobClient&#160;\n          blobClient, \n        \n        \n          \n          \n          std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt;&#160;\n          pipeline, \n        \n        \n          \n          \n          _detail::DatalakeClientConfiguration&#160;\n          clientConfiguration&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicitprotected"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: pathUrl
+    summary: 'The URL of the path represented by this client. '
+  - name: blobClient
+    summary: 'The BlobClient needed for blob operations performed on this path. '
+  - name: pipeline
+    summary: 'The HTTP pipeline for sending and receiving REST requests and responses. '
+  - name: clientConfiguration
+    summary: 'Client configurations '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Create()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreatePathResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::Create \n          (\n          Models::PathResourceType&#160;\n          type, \n        \n        \n          \n          \n          const CreatePathOptions &amp;&#160;\n          options = CreatePathOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: type
+    summary: 'Type of resource to create. '
+  - name: options
+    summary: 'Optional parameters to create the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreatePathResult> containing the information returned when creating a path. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateFromConnectionString()'
+- content: ''
+- content: ''
+- content: ''
+- content: "DataLakePathClient Azure::Storage::Files::DataLake::DataLakePathClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          fileSystemName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          path, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: 'Azure Storage connection string. '
+  - name: fileSystemName
+    summary: 'The name of a file system. '
+  - name: path
+    summary: 'The path of a resource within the file system. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html" title="The DataLakePathClient allows you to manipulate Azure Storage DataLake files.">DataLakePathClient</a> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateIfNotExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreatePathResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::CreateIfNotExists \n          (\n          Models::PathResourceType&#160;\n          type, \n        \n        \n          \n          \n          const CreatePathOptions &amp;&#160;\n          options = CreatePathOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: type
+    summary: 'Type of resource to create. '
+  - name: options
+    summary: 'Optional parameters to create the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreatePathResult> containing the information returned when creating a path, the information will only be valid when the create operation is successful. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Delete()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeletePathResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::Delete \n          (\n          const DeletePathOptions &amp;&#160;\n          options = DeletePathOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DeletePathResult> which is current empty but preserved for future usage. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteIfExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeletePathResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::DeleteIfExists \n          (\n          const DeletePathOptions &amp;&#160;\n          options = DeletePathOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DeletePathResult> which is current empty but preserved for future usage. The result will only valid if the delete operation is successful. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetAccessControlList()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::PathAccessControlList &gt; Azure::Storage::Files::DataLake::DataLakePathClient::GetAccessControlList \n          (\n          const GetPathAccessControlListOptions &amp;&#160;\n          options = GetPathAccessControlListOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to get the ACLs from the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::GetPathAccessControlListResult> containing the access control list of the path. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::PathProperties &gt; Azure::Storage::Files::DataLake::DataLakePathClient::GetProperties \n          (\n          const GetPathPropertiesOptions &amp;&#160;\n          options = GetPathPropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to get the properties from the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::PathProperties> containing the properties of the path. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetUrl()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string Azure::Storage::Files::DataLake::DataLakePathClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "The path's primary URL endpoint. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RemoveAccessControlListRecursive()'
+- content: ''
+- content: ''
+- content: ''
+- content: "RemovePathAccessControlListRecursivePagedResponse Azure::Storage::Files::DataLake::DataLakePathClient::RemoveAccessControlListRecursive \n          (\n          const std::vector&lt; Models::Acl &gt; &amp;&#160;\n          acls, \n        \n        \n          \n          \n          const RemovePathAccessControlListRecursiveOptions &amp;&#160;\n          options = RemovePathAccessControlListRecursiveOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: acls
+    summary: 'Removes POSIX access control rights on files and directories. Each access control entry (ACE) consists of a scope, a type, a user or group identifier, and permissions. '
+  - name: options
+    summary: 'Optional parameters to set an access control recursively to the resource the directory points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'RemovePathAccessControlListRecursivePagedResponse containing summary stats of the operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetAccessControlList()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetPathAccessControlListResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::SetAccessControlList \n          (\n          std::vector&lt; Models::Acl &gt;&#160;\n          acls, \n        \n        \n          \n          \n          const SetPathAccessControlListOptions &amp;&#160;\n          options = SetPathAccessControlListOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: acls
+    summary: 'Sets POSIX access control rights on files and directories. Each access control entry (ACE) consists of a scope, a type, a user or group identifier, and permissions. '
+  - name: options
+    summary: 'Optional parameters to set an access control to the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "Azure::Response<Models::SetPathAccessControlListResult> containing the information returned when setting path's access control. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetAccessControlListRecursive()'
+- content: ''
+- content: ''
+- content: ''
+- content: "SetPathAccessControlListRecursivePagedResponse Azure::Storage::Files::DataLake::DataLakePathClient::SetAccessControlListRecursive \n          (\n          const std::vector&lt; Models::Acl &gt; &amp;&#160;\n          acls, \n        \n        \n          \n          \n          const SetPathAccessControlListRecursiveOptions &amp;&#160;\n          options = SetPathAccessControlListRecursiveOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: acls
+    summary: 'Sets POSIX access control rights on files and directories. Each access control entry (ACE) consists of a scope, a type, a user or group identifier, and permissions. '
+  - name: options
+    summary: 'Optional parameters to set an access control recursively to the resource the directory points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html" title="Response type for Azure::Storage::Files::DataLake::DataLakePathClient::SetAccessControlListRecursive.">SetPathAccessControlListRecursivePagedResponse</a> containing summary stats of the operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetHttpHeaders()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetPathHttpHeadersResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::SetHttpHeaders \n          (\n          Models::PathHttpHeaders&#160;\n          httpHeaders, \n        \n        \n          \n          \n          const SetPathHttpHeadersOptions &amp;&#160;\n          options = SetPathHttpHeadersOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: httpHeaders
+    summary: 'Sets the blob HTTP headers. '
+  - name: options
+    summary: 'Optional parameters to set the HTTP headers to the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "Azure::Response<SetPathHttpHeadersResult> containing the information returned when setting the path's HTTP headers. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetMetadata()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetPathMetadataResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::SetMetadata \n          (\n          Storage::Metadata&#160;\n          metadata, \n        \n        \n          \n          \n          const SetPathMetadataOptions &amp;&#160;\n          options = SetPathMetadataOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: metadata
+    summary: 'User-defined metadata to be stored with the filesystem. Note that the string may only contain ASCII characters in the ISO-8859-1 character set. '
+  - name: options
+    summary: 'Optional parameters to set the metadata to the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::SetPathMetadataResult> containing the information returned when setting the metadata. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetPermissions()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetPathPermissionsResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::SetPermissions \n          (\n          std::string&#160;\n          permissions, \n        \n        \n          \n          \n          const SetPathPermissionsOptions &amp;&#160;\n          options = SetPathPermissionsOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: permissions
+    summary: 'Sets the permissions on the path '
+  - name: options
+    summary: 'Optional parameters to set permissions to the resource the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "Azure::Response<Models::SetPathPermissionsResult> containing the information returned when setting path's permissions. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpdateAccessControlListRecursive()'
+- content: ''
+- content: ''
+- content: ''
+- content: "UpdatePathAccessControlListRecursivePagedResponse Azure::Storage::Files::DataLake::DataLakePathClient::UpdateAccessControlListRecursive \n          (\n          const std::vector&lt; Models::Acl &gt; &amp;&#160;\n          acls, \n        \n        \n          \n          \n          const UpdatePathAccessControlListRecursiveOptions &amp;&#160;\n          options = UpdatePathAccessControlListRecursiveOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: acls
+    summary: 'Updates POSIX access control rights on files and directories. Each access control entry (ACE) consists of a scope, a type, a user or group identifier, and permissions. '
+  - name: options
+    summary: 'Optional parameters to set an access control recursively to the resource the directory points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'UpdatePathAccessControlListRecursivePagedResponse containing summary stats of the operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/storage/files/datalake/datalake_path_client.hpp
+
+    src/datalake_path_client.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

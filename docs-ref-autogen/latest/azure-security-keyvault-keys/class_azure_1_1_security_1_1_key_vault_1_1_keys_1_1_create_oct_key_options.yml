@@ -1,0 +1,207 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-keyvault-keys
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityKeyVaultKeysCreateOctKeyOptions
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    The properties needed to create an AES key.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_oct_key_options.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="key__client__options_8hpp_source.html">key_client_options.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Security::KeyVault::Keys::CreateOctKeyOptions:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;CreateOctKeyOptions (std::string const &amp;name, bool hardwareProtected=false)Create a AES Key Options object.  
+
+
+
+    std::string const &amp;&#160;&#160;GetName () constGets the name of the key to create.  
+
+
+
+    KeyVaultKeyType&#160;&#160;GetKeyType () constGets the key type to create, including Oct and OctHsm.  
+
+
+
+    bool&#160;&#160;GetHardwareProtected () constGets a value indicating whether to create a hardware-protected key in a hardware security module (HSM).  
+
+
+
+
+    virtual&#160;~CreateKeyOptions ()=default
+
+    &#160;Destructor.
+- section: Public Attributes
+- content: >-
+    Azure::Nullable&lt; int64_t &gt;&#160;&#160;KeySizeGets or sets the key size in bits, such as 2048, 3072, or 4096.  
+
+
+
+
+    std::vector&lt; KeyOperation &gt;&#160;KeyOperations
+
+    &#160;Define the supported operations for the key.  
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;NotBefore
+
+    &#160;Indicate when the key will be valid and can be used for cryptographic operations.  
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;ExpiresOn
+
+    &#160;Indicate when the key will expire and cannot be used for cryptographic operations.  
+
+
+    Azure::Nullable&lt; bool &gt;&#160;Enabled
+
+    &#160;Indicate whether the key is enabled and useable for cryptographic operations.  
+
+
+    std::unordered_map&lt; std::string, std::string &gt;&#160;Tags
+
+    &#160;Specific metadata about the key.  
+
+
+    Azure::Nullable&lt; KeyReleasePolicy &gt;&#160;ReleasePolicy
+
+    &#160;The policy rules under which the key can be exported.  
+
+
+    Azure::Nullable&lt; bool &gt;&#160;Exportable
+
+    &#160;Indicate if the private key can be exported.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateOctKeyOptions()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Security::KeyVault::Keys::CreateOctKeyOptions::CreateOctKeyOptions \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          bool&#160;\n          hardwareProtected = false&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'Name of the key to create. '
+  - name: hardwareProtected
+    summary: '<code>true</code> to create hardware-protected key in a hardware security module (HSM). The default is false to create a software key. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetHardwareProtected()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Security::KeyVault::Keys::CreateOctKeyOptions::GetHardwareProtected \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetKeyType()'
+- content: ''
+- content: ''
+- content: ''
+- content: "KeyVaultKeyType Azure::Security::KeyVault::Keys::CreateOctKeyOptions::GetKeyType \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetName()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string const  &amp; Azure::Security::KeyVault::Keys::CreateOctKeyOptions::GetName \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeySize'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;int64_t&gt; Azure::Security::KeyVault::Keys::CreateOctKeyOptions::KeySize
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/keyvault/keys/key_client_options.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

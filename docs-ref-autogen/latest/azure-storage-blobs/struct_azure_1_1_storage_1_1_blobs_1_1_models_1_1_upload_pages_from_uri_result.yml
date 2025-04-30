@@ -1,0 +1,177 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-blobs
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageBlobsModelsUploadPagesFromUriResult
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html#a9483bfbfe0885ad556f33957e9d90cb2">Azure::Storage::Blobs::PageBlobClient::UploadPagesFromUri</a>.
+- content: ''
+- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Attributes
+- content: >-
+    Azure::ETag&#160;ETag
+
+
+    DateTime&#160;LastModified
+
+
+    Nullable&lt; ContentHash &gt;&#160;TransactionalContentHash
+
+
+    std::int64_t&#160;SequenceNumber = int64_t()
+
+
+    bool&#160;IsServerEncrypted = bool()
+
+
+    Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;EncryptionKeySha256
+
+
+    Nullable&lt; std::string &gt;&#160;EncryptionScope
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EncryptionKeySha256'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::UploadPagesFromUriResult::EncryptionKeySha256
+- content: ''
+- content: ''
+- content: The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EncryptionScope'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::UploadPagesFromUriResult::EncryptionScope
+- content: ''
+- content: ''
+- content: Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ETag'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::ETag Azure::Storage::Blobs::Models::UploadPagesFromUriResult::ETag
+- content: ''
+- content: ''
+- content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;IsServerEncrypted'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Storage::Blobs::Models::UploadPagesFromUriResult::IsServerEncrypted = bool()
+- content: ''
+- content: ''
+- content: The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LastModified'
+- content: ''
+- content: ''
+- content: ''
+- content: DateTime Azure::Storage::Blobs::Models::UploadPagesFromUriResult::LastModified
+- content: ''
+- content: ''
+- content: Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SequenceNumber'
+- content: ''
+- content: ''
+- content: ''
+- content: std::int64_t Azure::Storage::Blobs::Models::UploadPagesFromUriResult::SequenceNumber = int64_t()
+- content: ''
+- content: ''
+- content: The current sequence number for the page blob.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;TransactionalContentHash'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::UploadPagesFromUriResult::TransactionalContentHash
+- content: ''
+- content: ''
+- content: If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/storage/blobs/rest_client.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

@@ -1,0 +1,361 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreHttpRequest
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    A request message from a client to a server.  
+     <a href="class_azure_1_1_core_1_1_http_1_1_request.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="http_8hpp_source.html">http.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;Request (HttpMethod httpMethod, Url url, Azure::Core::IO::BodyStream *bodyStream, bool shouldBufferResponse)Construct an Azure::Core::Http::Request.  
+
+
+
+    &#160;&#160;Request (HttpMethod httpMethod, Url url, Azure::Core::IO::BodyStream *bodyStream)Constructs a Request.  
+
+
+
+    &#160;&#160;Request (HttpMethod httpMethod, Url url, bool shouldBufferResponse)Constructs a Request.  
+
+
+
+    &#160;&#160;Request (HttpMethod httpMethod, Url url)Constructs a Request.  
+
+
+
+    void&#160;&#160;SetHeader (std::string const &amp;name, std::string const &amp;value)Set an HTTP header to the Azure::Core::Http::Request.  
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;GetHeader (std::string const &amp;name)Gets a specific HTTP header from an Azure::Core::Http::Request.  
+
+
+
+    void&#160;&#160;RemoveHeader (std::string const &amp;name)Remove an HTTP header.  
+
+
+
+    HttpMethod const &amp;&#160;&#160;GetMethod () constGet HttpMethod.  
+
+
+
+    CaseInsensitiveMap&#160;&#160;GetHeaders () constGet HTTP headers.  
+
+
+
+    Azure::Core::IO::BodyStream *&#160;&#160;GetBodyStream ()Get HTTP body as Azure::Core::IO::BodyStream.  
+
+
+
+    Azure::Core::IO::BodyStream const *&#160;&#160;GetBodyStream () constGet HTTP body as Azure::Core::IO::BodyStream.  
+
+
+
+
+    bool&#160;&#160;ShouldBufferResponse () constA value indicating whether the returned raw response for this request will be buffered within a memory buffer or if it will be returned as a body stream instead. 
+
+
+
+    Url &amp;&#160;&#160;GetUrl ()Get URL.  
+
+
+
+    Url const &amp;&#160;&#160;GetUrl () constGet URL.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: Includes, within the first line of the message, the <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> to be applied to the resource, the URL of the resource, and the protocol version in use.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Request() [1/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Http::Request::Request \n          (\n          HttpMethod&#160;\n          httpMethod, \n        \n        \n          \n          \n          Url&#160;\n          url, \n        \n        \n          \n          \n          Azure::Core::IO::BodyStream *&#160;\n          bodyStream, \n        \n        \n          \n          \n          bool&#160;\n          shouldBufferResponse&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: httpMethod
+    summary: '<a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html" title="The method to be performed on the resource identified by the Request.">HttpMethod</a>. '
+  - name: url
+    summary: 'Request URL. '
+  - name: bodyStream
+    summary: '<a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html" title="Used to read data to/from a service.">Azure::Core::IO::BodyStream</a>. '
+  - name: shouldBufferResponse
+    summary: 'A boolean value indicating whether the returned response should be buffered or returned as a body stream instead. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Request() [2/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Http::Request::Request \n          (\n          HttpMethod&#160;\n          httpMethod, \n        \n        \n          \n          \n          Url&#160;\n          url, \n        \n        \n          \n          \n          Azure::Core::IO::BodyStream *&#160;\n          bodyStream&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: httpMethod
+    summary: 'HTTP method. '
+  - name: url
+    summary: 'Request URL. '
+  - name: bodyStream
+    summary: '<a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html" title="Used to read data to/from a service.">Azure::Core::IO::BodyStream</a>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Request() [3/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Request::Request \n          (\n          HttpMethod&#160;\n          httpMethod, \n        \n        \n          \n          \n          Url&#160;\n          url, \n        \n        \n          \n          \n          bool&#160;\n          shouldBufferResponse&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: httpMethod
+    summary: 'HTTP method. '
+  - name: url
+    summary: 'Request URL. '
+  - name: shouldBufferResponse
+    summary: 'A boolean value indicating whether the returned response should be buffered or returned as a body stream instead. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Request() [4/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Request::Request \n          (\n          HttpMethod&#160;\n          httpMethod, \n        \n        \n          \n          \n          Url&#160;\n          url&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: httpMethod
+    summary: 'HTTP method. '
+  - name: url
+    summary: 'Request URL. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetBodyStream() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::IO::BodyStream * Azure::Core::Http::Request::GetBodyStream \n          (\n          )\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetBodyStream() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::IO::BodyStream const  * Azure::Core::Http::Request::GetBodyStream \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetHeader()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Nullable&lt; std::string &gt; Request::GetHeader 
+              (
+              std::string const &amp;&#160;
+              name)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name for the header to be retrieved. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The desired header, or an empty nullable if it is not found..
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetHeaders()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::CaseInsensitiveMap Request::GetHeaders 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetMethod()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    HttpMethod const  &amp; Request::GetMethod 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetUrl() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Url &amp; Azure::Core::Http::Request::GetUrl \n          (\n          )\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetUrl() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Url const  &amp; Azure::Core::Http::Request::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RemoveHeader()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Request::RemoveHeader 
+              (
+              std::string const &amp;&#160;
+              name)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'HTTP header name. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetHeader()'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Request::SetHeader \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          value&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name for the header to be set or added. '
+  - name: value
+    summary: The value for the header to be set or added.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/http/http.hpp
+
+    src/http/request.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

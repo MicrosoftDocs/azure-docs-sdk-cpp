@@ -1,0 +1,664 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-datalake
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesDataLakeDataLakeDirectoryClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: DataLake Directory Client.
+- content: ''
+- content: <code>#include &lt;<a href="datalake__directory__client_8hpp_source.html">datalake_directory_client.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Storage::Files::DataLake::DataLakeDirectoryClient:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;DataLakeDirectoryClient (const std::string &amp;directoryUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Shared key authentication client.  
+
+
+
+    &#160;&#160;DataLakeDirectoryClient (const std::string &amp;directoryUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Bearer token authentication client.  
+
+
+
+    &#160;&#160;DataLakeDirectoryClient (const std::string &amp;directoryUrl, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Anonymous/SAS/customized pipeline auth.  
+
+
+
+    DataLakeFileClient&#160;&#160;GetFileClient (const std::string &amp;fileName) constCreate a FileClient from current DataLakeDirectoryClient.  
+
+
+
+    DataLakeDirectoryClient&#160;&#160;GetSubdirectoryClient (const std::string &amp;subdirectoryName) constCreate a DataLakeDirectoryClient from current DataLakeDirectoryClient.  
+
+
+
+    std::string&#160;&#160;GetUrl () constGets the directory's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.  
+
+
+
+    Azure::Response&lt; Models::CreateDirectoryResult &gt;&#160;&#160;Create (const CreateDirectoryOptions &amp;options=CreateDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreate a directory. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  
+
+
+
+    Azure::Response&lt; Models::CreateDirectoryResult &gt;&#160;&#160;CreateIfNotExists (const CreateDirectoryOptions &amp;options=CreateDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreate a directory. If it already exists, nothing will happen.  
+
+
+
+    Azure::Response&lt; DataLakeFileClient &gt;&#160;&#160;RenameFile (const std::string &amp;fileName, const std::string &amp;destinationFilePath, const RenameFileOptions &amp;options=RenameFileOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRenames a file. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  
+
+
+
+    Azure::Response&lt; DataLakeDirectoryClient &gt;&#160;&#160;RenameSubdirectory (const std::string &amp;subdirectoryName, const std::string &amp;destinationDirectoryPath, const RenameSubdirectoryOptions &amp;options=RenameSubdirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRenames a directory. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  
+
+
+
+    Azure::Response&lt; Models::DeleteDirectoryResult &gt;&#160;&#160;DeleteEmpty (const DeleteDirectoryOptions &amp;options=DeleteDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the empty directory. Throws exception if directory is not empty.  
+
+
+
+    Azure::Response&lt; Models::DeleteDirectoryResult &gt;&#160;&#160;DeleteEmptyIfExists (const DeleteDirectoryOptions &amp;options=DeleteDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the empty directory if it already exists. Throws exception if directory is not empty.  
+
+
+
+    Azure::Response&lt; Models::DeleteDirectoryResult &gt;&#160;&#160;DeleteRecursive (const DeleteDirectoryOptions &amp;options=DeleteDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the directory and all its subdirectories and files.  
+
+
+
+    Azure::Response&lt; Models::DeleteDirectoryResult &gt;&#160;&#160;DeleteRecursiveIfExists (const DeleteDirectoryOptions &amp;options=DeleteDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the directory and all its subdirectories and files if the directory exists.  
+
+
+
+    ListPathsPagedResponse&#160;&#160;ListPaths (bool recursive, const ListPathsOptions &amp;options=ListPathsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns a sequence of paths in this directory. Enumerating the paths may make multiple requests to the service while fetching all the values.  
+
+
+
+
+    virtual&#160;~DataLakePathClient ()=default
+
+    &#160;Destructor.  
+
+
+    &#160;DataLakePathClient (const std::string &amp;pathUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())
+
+    &#160;Shared key authentication client.  
+
+
+    &#160;DataLakePathClient (const std::string &amp;pathUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())
+
+    &#160;Bearer token authentication client.  
+
+
+    &#160;DataLakePathClient (const std::string &amp;pathUrl, const DataLakeClientOptions &amp;options=DataLakeClientOptions())
+
+    &#160;Anonymous/SAS/customized pipeline auth.  
+
+
+    std::string&#160;GetUrl () const
+
+    &#160;Gets the path's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.  
+
+
+    Azure::Response&lt; Models::CreatePathResult &gt;&#160;Create (Models::PathResourceType type, const CreatePathOptions &amp;options=CreatePathOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Creates a file or directory. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  
+
+
+    Azure::Response&lt; Models::CreatePathResult &gt;&#160;CreateIfNotExists (Models::PathResourceType type, const CreatePathOptions &amp;options=CreatePathOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Creates a file or directory. By default, the destination is not changed if it already exists.  
+
+
+    Azure::Response&lt; Models::DeletePathResult &gt;&#160;Delete (const DeletePathOptions &amp;options=DeletePathOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Deletes the resource the path points to.  
+
+
+    Azure::Response&lt; Models::DeletePathResult &gt;&#160;DeleteIfExists (const DeletePathOptions &amp;options=DeletePathOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Deletes the resource the path points to if it exists.  
+
+
+    Azure::Response&lt; Models::SetPathAccessControlListResult &gt;&#160;SetAccessControlList (std::vector&lt; Models::Acl &gt; acls, const SetPathAccessControlListOptions &amp;options=SetPathAccessControlListOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets the owner, group, and access control list for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.  
+
+
+    Azure::Response&lt; Models::SetPathPermissionsResult &gt;&#160;SetPermissions (std::string permissions, const SetPathPermissionsOptions &amp;options=SetPathPermissionsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets the owner, group, and permissions for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.  
+
+
+    Azure::Response&lt; Models::SetPathHttpHeadersResult &gt;&#160;SetHttpHeaders (Models::PathHttpHeaders httpHeaders, const SetPathHttpHeadersOptions &amp;options=SetPathHttpHeadersOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets the properties of a resource the path points to.  
+
+
+    Azure::Response&lt; Models::PathProperties &gt;&#160;GetProperties (const GetPathPropertiesOptions &amp;options=GetPathPropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Get Properties returns all system and user defined properties for a path. Get Status returns all system defined properties for a path. Get Access Control List returns the access control list for a path.  
+
+
+    Azure::Response&lt; Models::PathAccessControlList &gt;&#160;GetAccessControlList (const GetPathAccessControlListOptions &amp;options=GetPathAccessControlListOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Returns all access control list stored for the given path.  
+
+
+    Azure::Response&lt; Models::SetPathMetadataResult &gt;&#160;SetMetadata (Storage::Metadata metadata, const SetPathMetadataOptions &amp;options=SetPathMetadataOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets the metadata of a resource the path points to.  
+
+
+    SetPathAccessControlListRecursivePagedResponse&#160;SetAccessControlListRecursive (const std::vector&lt; Models::Acl &gt; &amp;acls, const SetPathAccessControlListRecursiveOptions &amp;options=SetPathAccessControlListRecursiveOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets POSIX access control rights on files and directories under given directory recursively.  
+
+
+    UpdatePathAccessControlListRecursivePagedResponse&#160;UpdateAccessControlListRecursive (const std::vector&lt; Models::Acl &gt; &amp;acls, const UpdatePathAccessControlListRecursiveOptions &amp;options=UpdatePathAccessControlListRecursiveOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Updates POSIX access control rights on files and directories under given directory recursively.  
+
+
+    RemovePathAccessControlListRecursivePagedResponse&#160;RemoveAccessControlListRecursive (const std::vector&lt; Models::Acl &gt; &amp;acls, const RemovePathAccessControlListRecursiveOptions &amp;options=RemovePathAccessControlListRecursiveOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Removes POSIX access control rights on files and directories under given directory recursively.
+- section: Static Public Member Functions
+- content: >-
+    static DataLakeDirectoryClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const std::string &amp;fileSystemName, const std::string &amp;directoryName, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Create from connection string.  
+
+
+
+
+    static DataLakePathClient&#160;CreateFromConnectionString (const std::string &amp;connectionString, const std::string &amp;fileSystemName, const std::string &amp;path, const DataLakeClientOptions &amp;options=DataLakeClientOptions())
+
+    &#160;Create from connection string.
+- section: Friends
+- content: class&#160;DataLakeFileSystemClient
+- section: Additional Inherited Members
+- content: >-
+    &#160;DataLakePathClient (Azure::Core::Url pathUrl, Blobs::BlobClient blobClient, std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt; pipeline, _detail::DatalakeClientConfiguration clientConfiguration)
+
+    &#160;Construct a new DataLakePathClient.  
+
+
+
+
+    Azure::Core::Url&#160;m_pathUrl
+
+    &#160;Url to the resource on the service. 
+
+
+
+    Blobs::BlobClient&#160;m_blobClient
+
+    &#160;Blob Client for this path client. 
+
+
+
+    std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt;&#160;m_pipeline
+
+    &#160;Http Pipeline. 
+
+
+
+    _detail::DatalakeClientConfiguration&#160;m_clientConfiguration
+
+    &#160;Client configurations.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DataLakeDirectoryClient() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::DataLake::DataLakeDirectoryClient::DataLakeDirectoryClient \n          (\n          const std::string &amp;&#160;\n          directoryUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: directoryUrl
+    summary: "The URL of the file system this client's request targets. "
+  - name: credential
+    summary: 'The shared key credential used to initialize the client. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DataLakeDirectoryClient() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::DataLake::DataLakeDirectoryClient::DataLakeDirectoryClient \n          (\n          const std::string &amp;&#160;\n          directoryUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: directoryUrl
+    summary: "The URL of the file system this client's request targets. "
+  - name: credential
+    summary: 'The token credential used to initialize the client. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DataLakeDirectoryClient() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::DataLake::DataLakeDirectoryClient::DataLakeDirectoryClient \n          (\n          const std::string &amp;&#160;\n          directoryUrl, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: directoryUrl
+    summary: "The URL of the file system this client's request targets. "
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Create()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateDirectoryResult &gt; Azure::Storage::Files::DataLake::DataLakeDirectoryClient::Create \n          (\n          const CreateDirectoryOptions &amp;&#160;\n          options = CreateDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to create the directory the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreateDirectoryResult> containing the information of the created directory '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateFromConnectionString()'
+- content: ''
+- content: ''
+- content: ''
+- content: "DataLakeDirectoryClient Azure::Storage::Files::DataLake::DataLakeDirectoryClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          fileSystemName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          directoryName, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: 'Azure Storage connection string. '
+  - name: fileSystemName
+    summary: 'The name of a file system. '
+  - name: directoryName
+    summary: 'The name of a directory within the file system. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html" title="DataLake Directory Client.">DataLakeDirectoryClient</a> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateIfNotExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateDirectoryResult &gt; Azure::Storage::Files::DataLake::DataLakeDirectoryClient::CreateIfNotExists \n          (\n          const CreateDirectoryOptions &amp;&#160;\n          options = CreateDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to create the directory the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreateDirectoryResult> containing the information of the created directory '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteEmpty()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteDirectoryResult &gt; Azure::Storage::Files::DataLake::DataLakeDirectoryClient::DeleteEmpty \n          (\n          const DeleteDirectoryOptions &amp;&#160;\n          options = DeleteDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete the directory the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DeleteDirectoryResult> containing the information returned when deleting the directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteEmptyIfExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteDirectoryResult &gt; Azure::Storage::Files::DataLake::DataLakeDirectoryClient::DeleteEmptyIfExists \n          (\n          const DeleteDirectoryOptions &amp;&#160;\n          options = DeleteDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete the directory the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DeleteDirectoryResult> containing the information returned when deleting the directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteRecursive()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteDirectoryResult &gt; Azure::Storage::Files::DataLake::DataLakeDirectoryClient::DeleteRecursive \n          (\n          const DeleteDirectoryOptions &amp;&#160;\n          options = DeleteDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete the directory the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DeleteDirectoryResult> containing the information returned when deleting the directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteRecursiveIfExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteDirectoryResult &gt; Azure::Storage::Files::DataLake::DataLakeDirectoryClient::DeleteRecursiveIfExists \n          (\n          const DeleteDirectoryOptions &amp;&#160;\n          options = DeleteDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete the directory the path points to. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DeleteDirectoryResult> containing the information returned when deleting the directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetFileClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    DataLakeFileClient Azure::Storage::Files::DataLake::DataLakeDirectoryClient::GetFileClient 
+              (
+              const std::string &amp;&#160;
+              fileName)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileName
+    summary: 'Name of the file under the directory. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'FileClient '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetSubdirectoryClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    DataLakeDirectoryClient Azure::Storage::Files::DataLake::DataLakeDirectoryClient::GetSubdirectoryClient 
+              (
+              const std::string &amp;&#160;
+              subdirectoryName)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: subdirectoryName
+    summary: 'Name of the directory under the current directory. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html" title="DataLake Directory Client.">DataLakeDirectoryClient</a> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetUrl()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string Azure::Storage::Files::DataLake::DataLakeDirectoryClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "The directory's primary URL endpoint. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ListPaths()'
+- content: ''
+- content: ''
+- content: ''
+- content: "ListPathsPagedResponse Azure::Storage::Files::DataLake::DataLakeDirectoryClient::ListPaths \n          (\n          bool&#160;\n          recursive, \n        \n        \n          \n          \n          const ListPathsOptions &amp;&#160;\n          options = ListPathsOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: recursive
+    summary: 'If "true", all paths are listed; otherwise, the list will only include paths that share the same root. '
+  - name: options
+    summary: 'Optional parameters to list the paths in file system. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_paged_response.html" title="Response type for Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListPaths and Azure::Sto...">ListPathsPagedResponse</a> describing the paths in a directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RenameFile()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; DataLakeFileClient &gt; Azure::Storage::Files::DataLake::DataLakeDirectoryClient::RenameFile \n          (\n          const std::string &amp;&#160;\n          fileName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          destinationFilePath, \n        \n        \n          \n          \n          const RenameFileOptions &amp;&#160;\n          options = RenameFileOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileName
+    summary: 'The file that gets renamed. '
+  - name: destinationFilePath
+    summary: 'The path of the file the source file is renaming to. The destination is an absolute path under the root of the file system, without leading slash. '
+  - name: options
+    summary: 'Optional parameters to rename a file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<DataLakeFileClient> The client targets the renamed file. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RenameSubdirectory()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; DataLakeDirectoryClient &gt; Azure::Storage::Files::DataLake::DataLakeDirectoryClient::RenameSubdirectory \n          (\n          const std::string &amp;&#160;\n          subdirectoryName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          destinationDirectoryPath, \n        \n        \n          \n          \n          const RenameSubdirectoryOptions &amp;&#160;\n          options = RenameSubdirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: subdirectoryName
+    summary: 'The subdirectory that gets renamed. '
+  - name: destinationDirectoryPath
+    summary: 'The destinationPath the source subdirectory is renaming to. The destination is an absolute path under the root of the file system, without leading slash. '
+  - name: options
+    summary: 'Optional parameters to rename a directory. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<DataLakeDirectoryClient> The client targets the renamed directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/storage/files/datalake/datalake_directory_client.hpp
+
+    src/datalake_directory_client.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

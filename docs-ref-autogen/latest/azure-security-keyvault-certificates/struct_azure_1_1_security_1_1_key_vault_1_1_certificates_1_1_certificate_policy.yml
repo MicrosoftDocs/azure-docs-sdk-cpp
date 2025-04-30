@@ -1,0 +1,339 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-keyvault-certificates
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityKeyVaultCertificatesCertificatePolicy
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    A policy which governs the lifecycle a properties of a certificate managed by <a href="namespace_azure.html">Azure</a> Key Vault.  
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code>
+- content: ''
+- section: Public Attributes
+- content: >-
+    Azure::Nullable&lt; CertificateKeyType &gt;&#160;&#160;KeyTypeGet the type of backing key to be generated when issuing new certificates.  
+
+
+
+    Azure::Nullable&lt; bool &gt;&#160;&#160;ReuseKeyGet a value indicating whether the certificate key should be reused when rotating the certificate.  
+
+
+
+    Azure::Nullable&lt; bool &gt;&#160;&#160;ExportableGet a value indicating whether the certificate key is exportable from the vault or secure certificate store.  
+
+
+
+    Azure::Nullable&lt; CertificateKeyCurveName &gt;&#160;&#160;KeyCurveNameGet the curve which back an Elliptic Curve (EC) key.  
+
+
+
+    Azure::Nullable&lt; int32_t &gt;&#160;&#160;KeySizeGet the size of the RSA key. The value must be a valid RSA key length such as 2048 or 4092.  
+
+
+
+    std::string&#160;&#160;SubjectGet the subject name of a certificate.  
+
+
+
+    struct SubjectAlternativeNames&#160;&#160;SubjectAlternativeNamesGet the subject alternative names (SANs) of a certificate.  
+
+
+
+    Azure::Nullable&lt; bool &gt;&#160;&#160;CertificateTransparencyIndicates if the certificates generated under this policy should be published to certificate transparency logs.  
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;CertificateTypeCertificate type as supported by the provider (optional); for example 'OV-SSL', 'EV-SSL'.  
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;IssuerNameName of the referenced issuer object or reserved names; for example, 'Self' or 'Unknown'.  
+
+
+
+    Azure::Nullable&lt; CertificateContentType &gt;&#160;&#160;ContentTypeGet the CertificateContentType of the certificate.  
+
+
+
+    Azure::Nullable&lt; int32_t &gt;&#160;&#160;ValidityInMonthsGet the validity period for a certificate in months.  
+
+
+
+    Azure::Nullable&lt; bool &gt;&#160;&#160;EnabledGet a value indicating whether the certificate is currently enabled. If null, the server default will be used.  
+
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;UpdatedOnGet a DateTime indicating when the certificate was updated.  
+
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;CreatedOnGet a DateTime indicating when the certificate was created.  
+
+
+
+    std::vector&lt; CertificateKeyUsage &gt;&#160;&#160;KeyUsageGets the allowed usages for the key of the certificate.  
+
+
+
+    std::vector&lt; std::string &gt;&#160;&#160;EnhancedKeyUsageGet the allowed enhanced key usages (EKUs) of the certificate.  
+
+
+
+    std::vector&lt; LifetimeAction &gt;&#160;&#160;LifetimeActionsGet the actions to be executed at specified times in the certificates lifetime.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CertificateTransparency'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::CertificateTransparency
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CertificateType'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::CertificateType
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ContentType'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;CertificateContentType&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::ContentType
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreatedOn'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::CreatedOn
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Enabled'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::Enabled
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EnhancedKeyUsage'
+- content: ''
+- content: ''
+- content: ''
+- content: std::vector&lt;std::string&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::EnhancedKeyUsage
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Exportable'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::Exportable
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;IssuerName'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::IssuerName
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeyCurveName'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;CertificateKeyCurveName&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::KeyCurveName
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeySize'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;int32_t&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::KeySize
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeyType'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;CertificateKeyType&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::KeyType
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeyUsage'
+- content: ''
+- content: ''
+- content: ''
+- content: std::vector&lt;CertificateKeyUsage&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::KeyUsage
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LifetimeActions'
+- content: ''
+- content: ''
+- content: ''
+- content: std::vector&lt;LifetimeAction&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::LifetimeActions
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ReuseKey'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::ReuseKey
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Subject'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Security::KeyVault::Certificates::CertificatePolicy::Subject
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SubjectAlternativeNames'
+- content: ''
+- content: ''
+- content: ''
+- content: struct SubjectAlternativeNames Azure::Security::KeyVault::Certificates::CertificatePolicy::SubjectAlternativeNames
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpdatedOn'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::UpdatedOn
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ValidityInMonths'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;int32_t&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::ValidityInMonths
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/keyvault/certificates/certificate_client_models.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

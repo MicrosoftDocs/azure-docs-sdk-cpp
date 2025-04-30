@@ -1,0 +1,1365 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core-amqp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreAmqpModelsAmqpValue
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: <code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;AmqpValue () noexceptConstruct an AMQP null (empty) value.  
+
+
+
+    &#160;&#160;AmqpValue (AmqpValue const &amp;that) noexceptConstruct an AMQP Value from an existing AMQP Value.  
+
+
+
+    &#160;&#160;AmqpValue (AmqpValue &amp;&amp;that) noexceptMove an AMQP Value to another existing AMQP Value.  
+
+
+
+    AmqpValue &amp;&#160;&#160;operator= (AmqpValue const &amp;that)Copy an AMQP value to the current AMQP value.  
+
+
+
+    AmqpValue &amp;&#160;&#160;operator= (AmqpValue &amp;&amp;that) noexceptMove an AMQP value to the current AMQP value.  
+
+
+
+    &#160;&#160;AmqpValue (bool value)Construct an AMQP boolean value.  
+
+
+
+    &#160;&#160;AmqpValue (std::uint8_t value)Construct an AMQP ubyte value, an 8 bit unsigned integer.  
+
+
+
+    &#160;&#160;AmqpValue (std::uint16_t value)Construct an AMQP ushort value.  
+
+
+
+    &#160;&#160;AmqpValue (std::uint32_t value)Construct an AMQP uint value.  
+
+
+
+    &#160;&#160;AmqpValue (std::uint64_t value)Construct an AMQP ulong value, a 64bit unsigned integer.  
+
+
+
+    &#160;&#160;AmqpValue (std::int8_t value)Construct an AMQP byte value, an 8 bit signed integer.  
+
+
+
+    &#160;&#160;AmqpValue (char value)Construct an AMQP byte value, an 8 bit signed integer.  
+
+
+
+    &#160;&#160;AmqpValue (std::int16_t value)Construct an AMQP short value, a 16 bit signed integer.  
+
+
+
+    &#160;&#160;AmqpValue (std::int32_t value)Construct an AMQP int value, a 32 bit signed integer.  
+
+
+
+    &#160;&#160;AmqpValue (std::int64_t value)Construct an AMQP long value, a 64 bit signed integer.  
+
+
+
+    &#160;&#160;AmqpValue (float value)Construct an AMQP float value, an IEEE 754-2008 value.  
+
+
+
+    &#160;&#160;AmqpValue (double value)Construct an AMQP double value, an IEEE 754-2008 value.  
+
+
+
+    &#160;&#160;AmqpValue (std::string const &amp;value)Construct an AMQP string value, a UTF-8 encoded sequence of characters.  
+
+
+
+    &#160;&#160;AmqpValue (const char *value)Construct an AMQP string value, a UTF-8 encoded sequence of characters.  
+
+
+
+    &#160;&#160;AmqpValue (char32_t value)Construct an AMQP Char value, a UTF-32BE encoded Unicode character.  
+
+
+
+    &#160;&#160;AmqpValue (Azure::Core::Uuid const &amp;value)Construct an AMQP Uuid value, an RFC-4122 Universally Unique Identifier.  
+
+
+
+    bool&#160;&#160;operator== (AmqpValue const &amp;that) constEquality comparison operator.  
+
+
+
+    bool&#160;&#160;operator!= (AmqpValue const &amp;that) constEquality comparison operator.  
+
+
+
+    bool&#160;&#160;operator&lt; (AmqpValue const &amp;that) constLess Than comparison operator.  
+
+
+
+    AmqpValueType&#160;&#160;GetType () constReturns the underlying type of the AMQP value.  
+
+
+
+    bool&#160;&#160;IsNull () constReturns 'true' if the AMQP value is "null".  
+
+
+
+    &#160;&#160;operator bool () constconvert the current AMQP Value to a boolean.  
+
+
+
+    &#160;&#160;operator std::uint8_t () constconvert the current AMQP Value to an unsigned 8 bit integer.  
+
+
+
+    &#160;&#160;operator std::int8_t () constconvert the current AMQP Value to a signed 8 bit integer.  
+
+
+
+    &#160;&#160;operator char () constconvert the current AMQP Value to a signed 8 bit integer. Convenience function to allow an AmqpValue to be constructed from a 'char' value.  
+
+
+
+    &#160;&#160;operator std::uint16_t () constconvert the current AMQP Value to an unsigned 16 bit integer.  
+
+
+
+    &#160;&#160;operator std::int16_t () constconvert the current AMQP Value to a signed 16 bit integer.  
+
+
+
+    &#160;&#160;operator std::uint32_t () constconvert the current AMQP Value to an unsigned 32 bit integer.  
+
+
+
+    &#160;&#160;operator std::int32_t () constconvert the current AMQP Value to a signed 32 bit integer.  
+
+
+
+    &#160;&#160;operator std::uint64_t () constconvert the current AMQP Value to an unsigned 64 bit integer.  
+
+
+
+    &#160;&#160;operator std::int64_t () constconvert the current AMQP Value to a signed 64 bit integer.  
+
+
+
+    &#160;&#160;operator float () constconvert the current AMQP Value to a 32 bit IEEE 'float' value..  
+
+
+
+    &#160;&#160;operator double () constconvert the current AMQP Value to a 64 bit IEEE 'double' value.  
+
+
+
+    &#160;&#160;operator char32_t () constconvert the current AMQP Value to a 32bit UCS32 value.  
+
+
+
+    &#160;&#160;operator std::string () constconvert the current AMQP Value to a string.  
+
+
+
+    &#160;&#160;operator Azure::Core::Uuid () constconvert the current AMQP Value to a UUID.  
+
+
+
+    AmqpList&#160;&#160;AsList () constconvert the current AMQP Value to an AmqpList.  
+
+
+
+    AmqpMap&#160;&#160;AsMap () constconvert the current AMQP Value to an AmqpMap.  
+
+
+
+    AmqpArray&#160;&#160;AsArray () constconvert the current AMQP Value to an AmqpArray.  
+
+
+
+    AmqpBinaryData&#160;&#160;AsBinary () constconvert the current AMQP Value to an AmqpBinaryData.  
+
+
+
+    AmqpTimestamp&#160;&#160;AsTimestamp () constconvert the current AMQP Value to an AmqpTimestamp.  
+
+
+
+    AmqpSymbol&#160;&#160;AsSymbol () constconvert the current AMQP Value to an AmqpSymbol.  
+
+
+
+    AmqpComposite&#160;&#160;AsComposite () constconvert the current AMQP Value to an AMQP Composite value.  
+
+
+
+    AmqpDescribed&#160;&#160;AsDescribed () constconvert the current AMQP Value to an AMQP Described value.
+- section: Static Public Member Functions
+- content: >-
+    static std::vector&lt; uint8_t &gt;&#160;&#160;Serialize (AmqpValue const &amp;value)Serialize this AMQP value as an array of bytes. 
+
+
+
+
+    static size_t&#160;&#160;GetSerializedSize (AmqpValue const &amp;value)Returns the size (in bytes) of the serialized form of this value. 
+
+
+
+    static AmqpValue&#160;&#160;Deserialize (uint8_t const *data, size_t size)Deserialize an AMQP value from an array of bytes.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: An AMQP value.
+- content: ''
+- content: An AMQP value is a polymorphic type that can be used to represent any AMQP type.
+- content: ''
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [1/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpValue::AmqpValue \n          (\n          )\n          \n        \n      \n  \n  \nnoexcept"
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-null">AMQP Core Types section 1.6.1</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [2/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpValue::AmqpValue \n          (\n          AmqpValue const &amp;&#160;\n          that)\n          \n        \n      \n  \n  \nnoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- source value to copy. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [3/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpValue::AmqpValue \n          (\n          AmqpValue &amp;&amp;&#160;\n          that)\n          \n        \n      \n  \n  \nnoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- source value to move. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [4/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              bool&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-boolean">AMQP Core Types section 1.6.2</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [5/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              std::uint8_t&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-ubyte">AMQP Core Types section 1.6.3</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [6/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              std::uint16_t&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-ushort">AMQP Core Types section 1.6.4</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [7/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              std::uint32_t&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-ushort">AMQP Core Types section 1.6.5</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [8/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              std::uint64_t&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-ulong">AMQP Core Types section 1.6.6</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [9/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              std::int8_t&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-byte">AMQP Core Types section 1.6.7</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [10/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              char&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-byte">AMQP Core Types section 1.6.7</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: value to be set.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [11/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              std::int16_t&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-short">AMQP Core Types section 1.6.8</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [12/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              std::int32_t&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-int">AMQP Core Types section 1.6.9</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [13/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              std::int64_t&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-long">AMQP Core Types section 1.6.10</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [14/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              float&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-float">AMQP Core Types section 1.6.11</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [15/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              double&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-double">AMQP Core Types section 1.6.12</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [16/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpValue::AmqpValue \n          (\n          std::string const &amp;&#160;\n          value)\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-string">AMQP Core Types section 1.6.20</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [17/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              const char *&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-string">AMQP Core Types section 1.6.20</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: to be set.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [18/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              char32_t&#160;
+              value)
+- content: ''
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-char">AMQP Core Types section 1.6.16</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'UTF-32 encoded unicode value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpValue() [19/19]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::AmqpValue 
+              (
+              Azure::Core::Uuid const &amp;&#160;
+              value)
+- content: ''
+- content: ''
+- content: 'TODO: Decimal32, Decimal64, and Decimal128.'
+- content: ''
+- content: Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-uuid">AMQP Core Types section 1.6.18</a>.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'UTF-32 encoded unicode value to be set. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AsArray()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpArray Azure::Core::Amqp::Models::AmqpValue::AsArray 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_array.html" title="Represents an AMQP array.">AmqpArray</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AsBinary()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpBinaryData Azure::Core::Amqp::Models::AmqpValue::AsBinary 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_binary_data.html" title="An AMQP binary value, a sequence of octets.">AmqpBinaryData</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AsComposite()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpComposite Azure::Core::Amqp::Models::AmqpValue::AsComposite 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- content: An AMQP Composite value is functionally a list with a defined structure. The structure definition can be found via the GetDescriptor method.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AsDescribed()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpDescribed Azure::Core::Amqp::Models::AmqpValue::AsDescribed 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- content: An AMQP Described value is a tuple consisting of a Descriptor and Value.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AsList()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpList Azure::Core::Amqp::Models::AmqpValue::AsList 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_list.html" title="An AMQP List is a sequence of polymorphic values. It has the behavioral characteristics of an AMQP ar...">AmqpList</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AsMap()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpMap Azure::Core::Amqp::Models::AmqpValue::AsMap 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_map.html" title="An AmqpMap represents an AMQP "map" type.">AmqpMap</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AsSymbol()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpSymbol Azure::Core::Amqp::Models::AmqpValue::AsSymbol 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_symbol.html" title="An AMQP symbol value. An AMQP Symbol is a string valued from a constrained domain,...">AmqpSymbol</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AsTimestamp()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpTimestamp Azure::Core::Amqp::Models::AmqpValue::AsTimestamp 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_timestamp.html" title="An AMQP timestamp value.">AmqpTimestamp</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Deserialize()'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpValue Azure::Core::Amqp::Models::AmqpValue::Deserialize \n          (\n          uint8_t const *&#160;\n          data, \n        \n        \n          \n          \n          size_t&#160;\n          size&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: '[in]'
+    summary: data
+  - name: '[in]'
+    summary: size
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetType()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpValueType Azure::Core::Amqp::Models::AmqpValue::GetType 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'AmqpValueType of the AMQP value. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;IsNull()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    bool Azure::Core::Amqp::Models::AmqpValue::IsNull 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'true if the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> is null. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator Azure::Core::Uuid()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator Azure::Core::Uuid 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an Azure::Core::Uuid value.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator bool()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator bool 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: bool true if the AMQP value is true.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator char()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator char 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as a char.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator char32_t()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator char32_t 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as a 32 bit character.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator double()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator double 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as a double.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator float()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator float 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as a float.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::int16_t()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator std::int16_t 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as a signed 16 bit integer.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::int32_t()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator std::int32_t 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as a signed 32 bit integer.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::int64_t()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator std::int64_t 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as a signed 64 bit integer.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::int8_t()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator std::int8_t 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an 8 bit integer.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::string()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpValue::operator std::string \n          (\n          )\n           const\n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as a string.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::uint16_t()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator std::uint16_t 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an unsigned 16 bit integer.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::uint32_t()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator std::uint32_t 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an unsigned 32 bit integer.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::uint64_t()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator std::uint64_t 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an unsigned 64 bit integer.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::uint8_t()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpValue::operator std::uint8_t 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an unsigned 8 bit integer.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator!=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::Amqp::Models::AmqpValue::operator!= \n          (\n          AmqpValue const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- Value to compare to this value. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'true if the that is equal to this. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator&lt;()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    bool Azure::Core::Amqp::Models::AmqpValue::operator&lt; 
+              (
+              AmqpValue const &amp;&#160;
+              that)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- Value to compare to this value. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: true if the that is less than this.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpValue &amp; Azure::Core::Amqp::Models::AmqpValue::operator= \n          (\n          AmqpValue &amp;&amp;&#160;\n          that)\n          \n        \n      \n  \n  \nnoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: 'the other AMQP Value to move. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '"this". '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpValue &amp; Azure::Core::Amqp::Models::AmqpValue::operator= 
+              (
+              AmqpValue const &amp;&#160;
+              that)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: 'the other AMQP Value to copy. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '"this". '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator==()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    bool Azure::Core::Amqp::Models::AmqpValue::operator== 
+              (
+              AmqpValue const &amp;&#160;
+              that)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- Value to compare to this value. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'true if the that is equal to this. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/amqp/models/amqp_value.hpp
+
+    src/models/amqp_value.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

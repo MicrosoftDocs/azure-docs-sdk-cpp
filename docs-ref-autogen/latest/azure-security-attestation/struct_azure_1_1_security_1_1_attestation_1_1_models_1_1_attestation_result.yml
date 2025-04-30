@@ -1,0 +1,200 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-attestation
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityAttestationModelsAttestationResult
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Attributes
+- content: >-
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;NonceThe nonce provided by the client in the attestation operation. 
+
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;VersionThe version of this attestation response. 
+
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;RunTimeClaimsJSON encoded runtime claims - this will be the input RunTimeData parameter decoded and interpreted as JSON. 
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;InitTimeClaimsInitTime claims.  More...
+
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;PolicyClaimsPolicyClaims is the JSON encoded values of all the claims created by attestation policies on this instance. 
+
+
+
+
+    Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;&#160;EnclaveHeldDataIf the RunTimeData parameter is specified as being of DataType::Binary, this will be the value of the RunTimeData input. 
+
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;VerifierTypeThe verifier which generated this AttestationResult. 
+
+
+
+
+    Azure::Nullable&lt; AttestationSigner &gt;&#160;&#160;PolicySignerIf the attestation policy is signed, this will be the certificate chain used to sign the policy. 
+
+
+
+
+    Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;&#160;PolicyHashThe SHA256 hash of the policy which was used generating the attestation result. 
+
+
+
+    Azure::Nullable&lt; bool &gt;&#160;&#160;SgxIsDebuggableIf present, reflects that the enclave being attestated can be debugged.  More...
+
+
+
+    Azure::Nullable&lt; int &gt;&#160;&#160;SgxProductIdIf present, the ProductId for the enclave being attested.  More...
+
+
+
+    Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;&#160;SgxMrEnclaveIf present, the contents of the MRENCLAVE register for the SGX enclave being attested - this reflects the hash of the binary being run in the enclave.  More...
+
+
+
+    Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;&#160;SgxMrSignerIf present, the contents of the MRSIGNER register for the SGX enclave being attested - this reflects the key which was used to sign the enclave image being run in the enclave.  More...
+
+
+
+    Azure::Nullable&lt; int &gt;&#160;&#160;SgxSvnThe security version number of the SGX enclave.  More...
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;SgxCollateralA JSON encoded string representing the collateral which was used to perform the attestation operation.  More...
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;InitTimeClaims'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationResult::InitTimeClaims
+- content: ''
+- content: ''
+- content: this will be the InitTimeData parameter decoded and interpreted as JSON.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;SgxCollateral'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationResult::SgxCollateral
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;SgxIsDebuggable'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;bool&gt; Azure::Security::Attestation::Models::AttestationResult::SgxIsDebuggable
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;SgxMrEnclave'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::vector&lt;uint8_t&gt; &gt; Azure::Security::Attestation::Models::AttestationResult::SgxMrEnclave
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;SgxMrSigner'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::vector&lt;uint8_t&gt; &gt; Azure::Security::Attestation::Models::AttestationResult::SgxMrSigner
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;SgxProductId'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;int&gt; Azure::Security::Attestation::Models::AttestationResult::SgxProductId
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;SgxSvn'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;int&gt; Azure::Security::Attestation::Models::AttestationResult::SgxSvn
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/attestation/attestation_client_models.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by &#160;
+- content: ''
+- content: 1.9.1
+- content: ''
+- content: ''
+- content: ''

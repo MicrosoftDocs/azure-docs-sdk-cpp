@@ -1,0 +1,312 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureDateTime
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Manages date and time in standardized string formats.  
+     <a href="class_azure_1_1_date_time.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="datetime_8hpp_source.html">datetime.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::DateTime:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Types
+- content: >-
+    enum class &#160;&#160;TimeFractionFormat { DropTrailingZeros
+
+    , AllDigits
+
+    , Truncate
+     }Defines the format applied to the fraction part of any Azure::DateTime.  More...
+
+
+    enum class &#160;&#160;DateFormat { Rfc1123
+
+    , Rfc3339
+     }Defines the supported date and time string formats.  More...
+- section: Public Member Functions
+- content: >-
+    constexpr&#160;&#160;DateTime ()Constructs a default instance of DateTime (00:00:00.0000000 on January 1st, 0001).  
+
+
+
+    &#160;&#160;DateTime (int16_t year, int8_t month=1, int8_t day=1, int8_t hour=0, int8_t minute=0, int8_t second=0)Constructs an instance of DateTime.  
+
+
+
+    constexpr&#160;&#160;DateTime (time_point const &amp;timePoint)Constructs an instance of DateTime from a time_point.  
+
+
+
+    &#160;&#160;DateTime (std::chrono::system_clock::time_point const &amp;systemTime)Construct an instance of DateTime from std::chrono::system_clock::time_point.  
+
+
+
+    &#160;&#160;operator std::chrono::system_clock::time_point () constConvert an instance of Azure::DateTime to std::chrono::system_clock::time_point.  
+
+
+
+    std::string&#160;&#160;ToString (DateFormat format=DateFormat::Rfc3339) constGet a string representation of the Azure::DateTime.  
+
+
+
+    std::string&#160;&#160;ToString (DateFormat format, TimeFractionFormat fractionFormat) constGet a string representation of the Azure::DateTime.
+- section: Static Public Member Functions
+- content: static DateTime&#160;&#160;Parse (std::string const &amp;dateTime, DateFormat format)Create Azure::DateTime from a string representing time in UTC in the specified format.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: Supports date range from year 0001 to end of year 9999 with 100ns (7 decimal places for fractional second) precision.
+- content: ''
+- section: Member Enumeration Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DateFormat'
+- content: ''
+- content: ''
+- content: ''
+- content: "enum class Azure::DateTime::DateFormat\n        \n      \n  \n  \nstrong"
+- content: ''
+- content: ''
+- content: >-
+    EnumeratorRfc1123&#160;RFC 1123. 
+
+
+    Rfc3339&#160;RFC 3339.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;TimeFractionFormat'
+- content: ''
+- content: ''
+- content: ''
+- content: "enum class Azure::DateTime::TimeFractionFormat\n        \n      \n  \n  \nstrong"
+- content: ''
+- content: ''
+- content: >-
+    EnumeratorDropTrailingZeros&#160;Include only meaningful fractional time digits, up to and excluding trailing zeroes. 
+
+
+    AllDigits&#160;Include all the fractional time digits up to maximum precision, even if the entire value is zero. 
+
+
+    Truncate&#160;Drop all the fractional time digits.
+- content: ''
+- content: ''
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DateTime() [1/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "constexpr Azure::DateTime::DateTime \n          (\n          )\n          \n        \n      \n  \n  \ninlineconstexpr"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DateTime() [2/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::DateTime::DateTime \n          (\n          int16_t&#160;\n          year, \n        \n        \n          \n          \n          int8_t&#160;\n          month = 1, \n        \n        \n          \n          \n          int8_t&#160;\n          day = 1, \n        \n        \n          \n          \n          int8_t&#160;\n          hour = 0, \n        \n        \n          \n          \n          int8_t&#160;\n          minute = 0, \n        \n        \n          \n          \n          int8_t&#160;\n          second = 0&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: year
+    summary: 'Year. '
+  - name: month
+    summary: 'Month. '
+  - name: day
+    summary: 'Day. '
+  - name: hour
+    summary: 'Hour. '
+  - name: minute
+    summary: 'Minute. '
+  - name: second
+    summary: Seconds.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DateTime() [3/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "constexpr Azure::DateTime::DateTime \n          (\n          time_point const &amp;&#160;\n          timePoint)\n          \n        \n      \n  \n  \ninlineconstexpr"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DateTime() [4/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::DateTime::DateTime \n          (\n          std::chrono::system_clock::time_point const &amp;&#160;\n          systemTime)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: systemTime
+    summary: 'A value of <code>std::chrono::system_clock::time_point</code>. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator std::chrono::system_clock::time_point()'
+- content: ''
+- content: ''
+- content: ''
+- content: "DateTime::operator std::chrono::system_clock::time_point \n          (\n          )\n           const\n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Parse()'
+- content: ''
+- content: ''
+- content: ''
+- content: "DateTime DateTime::Parse \n          (\n          std::string const &amp;&#160;\n          dateTime, \n        \n        \n          \n          \n          DateFormat&#160;\n          format&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: dateTime
+    summary: 'A string with the date and time. '
+  - name: format
+    summary: A format to which <code>dateTime</code> string adheres to.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a class="el" href="class_azure_1_1_date_time.html" title="Manages date and time in standardized string formats.">Azure::DateTime</a> that was constructed from the <code>dateTime</code> string.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ToString() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string DateTime::ToString \n          (\n          DateFormat&#160;\n          format, \n        \n        \n          \n          \n          TimeFractionFormat&#160;\n          fractionFormat&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: format
+    summary: 'The representation format to use. '
+  - name: fractionFormat
+    summary: The format for the fraction part of the <a class="el" href="class_azure_1_1_date_time.html" title="Manages date and time in standardized string formats.">DateTime</a>. Only supported by RFC3339.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ToString() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    std::string DateTime::ToString 
+              (
+              DateFormat&#160;
+              format = DateFormat::Rfc3339)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: format
+    summary: The representation format to use, defaulted to use RFC 3339.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/datetime.hpp
+
+    src/datetime.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

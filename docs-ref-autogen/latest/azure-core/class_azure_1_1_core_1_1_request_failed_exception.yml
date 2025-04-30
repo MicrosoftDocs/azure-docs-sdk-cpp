@@ -1,0 +1,400 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreRequestFailedException
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    An error while trying to send a request to <a href="namespace_azure.html">Azure</a> service.  
+     <a href="class_azure_1_1_core_1_1_request_failed_exception.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="exception_8hpp_source.html">exception.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Core::RequestFailedException:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;RequestFailedException (std::string const &amp;what)Constructs a new RequestFailedException with a message string.  
+
+
+
+    &#160;&#160;RequestFailedException (std::unique_ptr&lt; Azure::Core::Http::RawResponse &gt; &amp;rawResponse)Constructs a new RequestFailedException object with an HTTP raw response.  
+
+
+
+    &#160;&#160;RequestFailedException (const RequestFailedException &amp;other)Constructs a new RequestFailedException by copying from an existing one.  
+
+
+
+    &#160;&#160;RequestFailedException (RequestFailedException &amp;&amp;other)=defaultConstructs a new RequestFailedException by moving in an existing one.  
+
+
+
+    RequestFailedException &amp;&#160;&#160;operator= (const RequestFailedException &amp;)=deleteAn instance of RequestFailedException class cannot be assigned.  
+
+
+
+    RequestFailedException &amp;&#160;&#160;operator= (RequestFailedException &amp;&amp;)=deleteAn instance of RequestFailedException class cannot be moved into another instance after creation.  
+
+
+
+    &#160;&#160;~RequestFailedException () override=defaultDestructs RequestFailedException.
+- section: Public Attributes
+- content: >-
+    std::unique_ptr&lt; Azure::Core::Http::RawResponse &gt;&#160;&#160;RawResponseThe entire HTTP raw response.  
+
+
+
+    Azure::Core::Http::HttpStatusCode&#160;&#160;StatusCode = Azure::Core::Http::HttpStatusCode::NoneThe HTTP response code.  
+
+
+
+    std::string&#160;&#160;ReasonPhraseThe HTTP reason phrase from the response.  
+
+
+
+    std::string&#160;&#160;ClientRequestIdThe client request header (x-ms-client-request-id) from the HTTP response.  
+
+
+
+    std::string&#160;&#160;RequestIdThe request ID header (x-ms-request-id) from the HTTP response.  
+
+
+
+    std::string&#160;&#160;ErrorCodeThe error code from service returned in the HTTP response.  
+
+
+
+    std::string&#160;&#160;MessageThe error message from the service returned in the HTTP response.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: A <a href="class_azure_1_1_core_1_1_request_failed_exception.html">RequestFailedException</a> is sometimes generated as a result of an HTTP response returned from the service, and is sometimes generated for other reasons. The contents of the <a href="class_azure_1_1_core_1_1_request_failed_exception.html">RequestFailedException</a> depend on whether the exception was thrown as a result of an HTTP response error or other reasons.
+- content: ''
+- content: To determine which form of <a href="class_azure_1_1_core_1_1_request_failed_exception.html">RequestFailedException</a> has occurred, a client can check the <code><a href="class_azure_1_1_core_1_1_request_failed_exception.html#a63efd3133353568a5c66689104fcce5d">RequestFailedException::RawResponse</a></code> field - if that value is null, then the request failed for some reason other than an HTTP response, the reason can be determined by calling <code>RequestFailedException::what()</code>.
+- content: ''
+- content: If the request has failed due to an HTTP response code, the client can inspect other fields in the exception to determine the actual failure returned by the service.
+- content: ''
+- content: Most <a href="namespace_azure.html">Azure</a> services follow the [<a href="namespace_azure.html">Azure</a> standards for error condition responses] (<a href="https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#7102-error-condition-responses">https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#7102-error-condition-responses</a>) and return an <code>error</code> object containing two properties, <code>code</code> and <code>message</code>. These properties are used to populate the <a href="class_azure_1_1_core_1_1_request_failed_exception.html#a7a94fb270077a498054481f054f78bd9">RequestFailedException::ErrorCode</a> and <a href="class_azure_1_1_core_1_1_request_failed_exception.html#a5e8fcb788cc82fd39743eb6bded735ac">RequestFailedException::Message</a> fields
+- content: ''
+- content: ''
+- content: catch
+- content: (
+- content: Azure::Core::RequestFailedException
+- content: ''
+- content: const
+- content: '&amp; e)'
+- content: ''
+- content: '{'
+- content: ''
+- content: std::cout &lt;&lt;
+- content: '&quot;Request Failed Exception happened:&quot;'
+- content: '&lt;&lt; std::endl &lt;&lt; e.what() &lt;&lt; std::endl;'
+- content: ''
+- content: ''
+- content: if
+- content: (e.
+- content: RawResponse
+- content: )
+- content: ''
+- content: '{'
+- content: ''
+- content: std::cout &lt;&lt;
+- content: '&quot;Error Code: &quot;'
+- content: '&lt;&lt; e.'
+- content: ErrorCode
+- content: '&lt;&lt; std::endl;'
+- content: ''
+- content: std::cout &lt;&lt;
+- content: '&quot;Error Message: &quot;'
+- content: '&lt;&lt; e.'
+- content: Message
+- content: '&lt;&lt; std::endl;'
+- content: ''
+- content: '}'
+- content: ''
+- content: ''
+- content: return
+- content: 0;
+- content: ''
+- content: '}'
+- content: ''
+- content: Azure::Core::RequestFailedException
+- content: An error while trying to send a request to Azure service.
+- content: Definition
+- content: exception.hpp:57
+- content: ''
+- content: Azure::Core::RequestFailedException::Message
+- content: std::string Message
+- content: The error message from the service returned in the HTTP response.
+- content: Definition
+- content: exception.hpp:112
+- content: ''
+- content: Azure::Core::RequestFailedException::RawResponse
+- content: std::unique_ptr&lt; Azure::Core::Http::RawResponse &gt; RawResponse
+- content: The entire HTTP raw response.
+- content: Definition
+- content: exception.hpp:63
+- content: ''
+- content: Azure::Core::RequestFailedException::ErrorCode
+- content: std::string ErrorCode
+- content: The error code from service returned in the HTTP response.
+- content: Definition
+- content: exception.hpp:99
+- content: ''
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RequestFailedException() [1/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::RequestFailedException::RequestFailedException \n          (\n          std::string const &amp;&#160;\n          what)\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: what
+    summary: 'The explanatory string. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RequestFailedException() [2/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::RequestFailedException::RequestFailedException \n          (\n          std::unique_ptr&lt; Azure::Core::Http::RawResponse &gt; &amp;&#160;\n          rawResponse)\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: rawResponse
+    summary: 'The HTTP raw response from the service. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RequestFailedException() [3/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::RequestFailedException::RequestFailedException \n          (\n          const RequestFailedException &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'The <code>RequestFailedException</code> to be copied. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RequestFailedException() [4/4]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::RequestFailedException::RequestFailedException \n          (\n          RequestFailedException &amp;&amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'The <code>RequestFailedException</code> to move in. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;~RequestFailedException()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::RequestFailedException::~RequestFailedException \n          (\n          )\n          \n        \n      \n  \n  \noverridedefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "RequestFailedException &amp; Azure::Core::RequestFailedException::operator= \n          (\n          const RequestFailedException &amp;&#160;\n          )\n          \n        \n      \n  \n  \ndelete"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "RequestFailedException &amp; Azure::Core::RequestFailedException::operator= \n          (\n          RequestFailedException &amp;&amp;&#160;\n          )\n          \n        \n      \n  \n  \ndelete"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ClientRequestId'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Core::RequestFailedException::ClientRequestId
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ErrorCode'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Core::RequestFailedException::ErrorCode
+- content: ''
+- content: ''
+- content: For more information, see [<a href="namespace_azure.html">Azure</a> standards for error condition responses] (<a href="https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#7102-error-condition-responses">https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#7102-error-condition-responses</a>), specifically the handling of the "code" property.
+- content: ''
+- content: Note that the contents of the <code>ErrorCode</code> is service dependent.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Message'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Core::RequestFailedException::Message
+- content: ''
+- content: ''
+- content: For more information, see [<a href="namespace_azure.html">Azure</a> standards for error condition responses] (<a href="https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#7102-error-condition-responses">https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#7102-error-condition-responses</a>), specifically the handling of the "message" property.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RawResponse'
+- content: ''
+- content: ''
+- content: ''
+- content: std::unique_ptr&lt;Azure::Core::Http::RawResponse&gt; Azure::Core::RequestFailedException::RawResponse
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ReasonPhrase'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Core::RequestFailedException::ReasonPhrase
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RequestId'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Core::RequestFailedException::RequestId
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;StatusCode'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Core::Http::HttpStatusCode Azure::Core::RequestFailedException::StatusCode = Azure::Core::Http::HttpStatusCode::None
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/exception.hpp
+
+    src/exception.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

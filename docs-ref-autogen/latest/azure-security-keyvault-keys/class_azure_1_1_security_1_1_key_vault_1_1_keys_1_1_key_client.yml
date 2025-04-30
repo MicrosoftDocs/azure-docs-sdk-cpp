@@ -1,0 +1,846 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-keyvault-keys
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityKeyVaultKeysKeyClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: The <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_client.html">KeyClient</a> provides synchronous methods to manage a KeyVaultKe in the <a href="namespace_azure.html">Azure</a> Key Vault. The client supports creating, retrieving, updating, deleting, purging, backing up, restoring, and listing the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html">KeyVaultKey</a>.
+- content: ''
+- content: <code>#include &lt;<a href="key__client_8hpp_source.html">key_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    virtual&#160;&#160;~KeyClient ()=defaultDestructor.  
+
+
+
+    &#160;&#160;KeyClient (std::string const &amp;vaultUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt; credential, KeyClientOptions options=KeyClientOptions())Construct a new Key Client object.  
+
+
+
+    &#160;&#160;KeyClient (KeyClient const &amp;keyClient)=defaultConstruct a new Key Client object from another key client.  
+
+
+
+    Cryptography::CryptographyClient&#160;&#160;GetCryptographyClient (std::string const &amp;name, std::string const &amp;version=std::string()) constGet a CryptographyClient for the given key.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;GetKey (std::string const &amp;name, GetKeyOptions const &amp;options=GetKeyOptions(), Azure::Core::Context const &amp;context=Azure::Core::Context()) constGets the public part of a stored key.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;CreateKey (std::string const &amp;name, KeyVaultKeyType keyType, CreateKeyOptions const &amp;options=CreateKeyOptions(), Azure::Core::Context const &amp;context=Azure::Core::Context()) constCreates and stores a new key in Key Vault. The create key operation can be used to create any key type in Azure Key Vault. If the named key already exists, Azure Key Vault creates a new version of the key. It requires the keys/create permission.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;CreateEcKey (CreateEcKeyOptions const &amp;ecKeyOptions, Azure::Core::Context const &amp;context=Azure::Core::Context()) constCreates and stores a new Elliptic Curve key in Key Vault.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;CreateRsaKey (CreateRsaKeyOptions const &amp;rsaKeyOptions, Azure::Core::Context const &amp;context=Azure::Core::Context()) constCreates and stores a new RSA key in Key Vault.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;CreateOctKey (CreateOctKeyOptions const &amp;octKeyOptions, Azure::Core::Context const &amp;context=Azure::Core::Context()) constCreates and stores a new AES key in Key Vault.  
+
+
+
+    KeyPropertiesPagedResponse&#160;&#160;GetPropertiesOfKeys (GetPropertiesOfKeysOptions const &amp;options=GetPropertiesOfKeysOptions(), Azure::Core::Context const &amp;context=Azure::Core::Context()) constGet a single page with the properties of all keys in the specified vault. You can use the returned KeyProperties.Name in subsequent calls to GetKey.  
+
+
+
+    KeyPropertiesPagedResponse&#160;&#160;GetPropertiesOfKeyVersions (std::string const &amp;name, GetPropertiesOfKeyVersionsOptions const &amp;options=GetPropertiesOfKeyVersionsOptions(), Azure::Core::Context const &amp;context=Azure::Core::Context()) constGet one page listing the properties of all the versions of the specified key. You can use the returned KeyProperties.Name and KeyProperties.Version in subsequent calls to GetKey.  
+
+
+
+    Azure::Security::KeyVault::Keys::DeleteKeyOperation&#160;&#160;StartDeleteKey (std::string const &amp;name, Azure::Core::Context const &amp;context=Azure::Core::Context()) constDeletes a key of any type from storage in Azure Key Vault.  
+
+
+
+    Azure::Response&lt; ReleaseKeyResult &gt;&#160;&#160;ReleaseKey (std::string const &amp;name, KeyReleaseOptions const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) constReleases a key.  
+
+
+
+    Azure::Response&lt; DeletedKey &gt;&#160;&#160;GetDeletedKey (std::string const &amp;name, Azure::Core::Context const &amp;context=Azure::Core::Context()) constGets the public part of a deleted key.  
+
+
+
+    DeletedKeyPagedResponse&#160;&#160;GetDeletedKeys (GetDeletedKeysOptions const &amp;options=GetDeletedKeysOptions(), Azure::Core::Context const &amp;context=Azure::Core::Context()) constGet a page listing the deleted keys in the specified vault.  
+
+
+
+    Azure::Response&lt; PurgedKey &gt;&#160;&#160;PurgeDeletedKey (std::string const &amp;name, Azure::Core::Context const &amp;context=Azure::Core::Context()) constPermanently deletes the specified key.  
+
+
+
+    Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation&#160;&#160;StartRecoverDeletedKey (std::string const &amp;name, Azure::Core::Context const &amp;context=Azure::Core::Context()) constRecovers the deleted key to its latest version.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;UpdateKeyProperties (KeyProperties const &amp;properties, Azure::Nullable&lt; std::vector&lt; KeyOperation &gt; &gt; const &amp;keyOperations=Azure::Nullable&lt; std::vector&lt; KeyOperation &gt; &gt;(), Azure::Core::Context const &amp;context=Azure::Core::Context()) constThe update key operation changes specified attributes of a stored key and can be applied to any key type and key version stored in Azure Key Vault.  
+
+
+
+    Azure::Response&lt; Azure::Security::KeyVault::Keys::BackupKeyResult &gt;&#160;&#160;BackupKey (std::string const &amp;name, Azure::Core::Context const &amp;context=Azure::Core::Context()) constRequest that a backup of the specified be downloaded to the client.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;RestoreKeyBackup (std::vector&lt; uint8_t &gt; const &amp;backup, Azure::Core::Context const &amp;context=Azure::Core::Context()) constRestores a backed up key to keyvault.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;ImportKey (std::string const &amp;name, JsonWebKey const &amp;keyMaterial, Azure::Core::Context const &amp;context=Azure::Core::Context()) constImports an externally created ket, stores it, and returns jey parameters and attributes to the client.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;ImportKey (ImportKeyOptions const &amp;importKeyOptions, Azure::Core::Context const &amp;context=Azure::Core::Context()) constImports an externally created key, stores it, and returns key parameters and attributes to the client.  
+
+
+
+    Azure::Response&lt; KeyVaultKey &gt;&#160;&#160;RotateKey (std::string const &amp;name, Azure::Core::Context const &amp;context=Azure::Core::Context()) constCreates a new key version, stores it, then returns key parameters, attributes and policy to the client.  
+
+
+
+    Azure::Response&lt; KeyRotationPolicy &gt;&#160;&#160;GetKeyRotationPolicy (std::string const &amp;name, Azure::Core::Context const &amp;context=Azure::Core::Context()) constLists the policy for a key.  
+
+
+
+    Azure::Response&lt; KeyRotationPolicy &gt;&#160;&#160;UpdateKeyRotationPolicy (std::string const &amp;name, KeyRotationPolicy const &amp;rotationPolicy, Azure::Core::Context const &amp;context=Azure::Core::Context()) constUpdates the rotation policy for a key.  
+
+
+
+    Azure::Response&lt; GetRandomBytesResult &gt;&#160;&#160;GetRandomBytes (GetRandomBytesOptions const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) constGet the requested number of bytes containing random values.  
+
+
+
+    std::string&#160;&#160;GetUrl () constGets the key client's primary URL endpoint.
+- section: Protected Attributes
+- content: >-
+    Azure::Core::Url&#160;&#160;m_vaultUrlthe base URL for this keyvault instance. 
+
+
+
+
+    std::string&#160;&#160;m_apiVersionthe API version used in this KeyClient. 
+
+
+
+
+    std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt;&#160;&#160;m_pipelinethe HTTP Pipeline used in this KeyClient.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;~KeyClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual Azure::Security::KeyVault::Keys::KeyClient::~KeyClient \n          (\n          )\n          \n        \n      \n  \n  \nvirtualdefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeyClient() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "KeyClient::KeyClient \n          (\n          std::string const &amp;&#160;\n          vaultUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt;&#160;\n          credential, \n        \n        \n          \n          \n          KeyClientOptions&#160;\n          options = KeyClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: vaultUrl
+    summary: 'The URL address where the client will send the requests to. '
+  - name: credential
+    summary: 'The authentication method to use. '
+  - name: options
+    summary: 'The options to customize the client behavior. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeyClient() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Security::KeyVault::Keys::KeyClient::KeyClient \n          (\n          KeyClient const &amp;&#160;\n          keyClient)\n          \n        \n      \n  \n  \nexplicitdefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: keyClient
+    summary: 'An existing key vault key client. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;BackupKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; BackupKeyResult &gt; KeyClient::BackupKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Azure::Security::KeyVault::Keys::BackupKeyResult> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateEcKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::CreateEcKey \n          (\n          CreateEcKeyOptions const &amp;&#160;\n          ecKeyOptions, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ecKeyOptions
+    summary: 'The key options object containing information about the Elliptic Curve key being created. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The Key wrapped in the Response. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::CreateKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          KeyVaultKeyType&#160;\n          keyType, \n        \n        \n          \n          \n          CreateKeyOptions const &amp;&#160;\n          options = CreateKeyOptions(), \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: keyType
+    summary: 'The type of key to create. See <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html" title="The JsonWebKey types.">Azure::Security::KeyVault::Keys::KeyVaultKeyType</a>. '
+  - name: options
+    summary: 'Optional parameters for this operation. See <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html" title="Define the specific options for the KeyClient::CreateKey operaion.">Azure::Security::KeyVault::Keys::CreateKeyOptions</a>. '
+  - name: context
+    summary: 'The context for the operation can be used for request cancellation. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The Key wrapped in the Response. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateOctKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::CreateOctKey \n          (\n          CreateOctKeyOptions const &amp;&#160;\n          octKeyOptions, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: octKeyOptions
+    summary: 'The key options object containing information about the AES key being created. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The Key wrapped in the Response. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateRsaKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::CreateRsaKey \n          (\n          CreateRsaKeyOptions const &amp;&#160;\n          rsaKeyOptions, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: rsaKeyOptions
+    summary: 'The key options object containing information about the RSA key being created. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The Key wrapped in the Response. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetCryptographyClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Cryptography::CryptographyClient KeyClient::GetCryptographyClient \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          version = std::string()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: The returned client uses the same options and pipeline as the key client which creates it.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key used to perform cryptographic operations. '
+  - name: version
+    summary: 'Optional version of the key used to perform cryptographic operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html" title="A client used to perform cryptographic operations with Azure Key Vault keys.">Cryptography::CryptographyClient</a> with the same options and re-using the same pipeline. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetDeletedKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; DeletedKey &gt; KeyClient::GetDeletedKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<DeletedKey> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetDeletedKeys()'
+- content: ''
+- content: ''
+- content: ''
+- content: "DeletedKeyPagedResponse KeyClient::GetDeletedKeys \n          (\n          GetDeletedKeysOptions const &amp;&#160;\n          options = GetDeletedKeysOptions(), \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'The <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_get_deleted_keys_options.html" title="The options for calling an operation Azure::Security::KeyVault::Keys::KeyClient::GetDeletedKeys.">Azure::Security::KeyVault::Keys::GetDeletedKeysOptions</a> object to for setting the operation up. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<DeletedKeyPagedResponse> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::GetKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          GetKeyOptions const &amp;&#160;\n          options = GetKeyOptions(), \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: options
+    summary: 'Optional parameters for this operation. '
+  - name: context
+    summary: 'The context for the operation can be used for request cancellation. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The Key wrapped in the Response. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetKeyRotationPolicy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyRotationPolicy &gt; KeyClient::GetKeyRotationPolicy \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key in a given key vault. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<KeyRotationPolicy> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetPropertiesOfKeys()'
+- content: ''
+- content: ''
+- content: ''
+- content: "KeyPropertiesPagedResponse KeyClient::GetPropertiesOfKeys \n          (\n          GetPropertiesOfKeysOptions const &amp;&#160;\n          options = GetPropertiesOfKeysOptions(), \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'The <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_get_properties_of_keys_options.html" title="The options for calling an operation Azure::Security::KeyVault::Keys::KeyClient::GetPropertiesOfKeys.">Azure::Security::KeyVault::Keys::GetPropertiesOfKeysOptions</a> object to for setting the operation up. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties_paged_response.html" title="Define a single page to list the keys from the Key Vault.">KeyPropertiesPagedResponse</a> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetPropertiesOfKeyVersions()'
+- content: ''
+- content: ''
+- content: ''
+- content: "KeyPropertiesPagedResponse KeyClient::GetPropertiesOfKeyVersions \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          GetPropertiesOfKeyVersionsOptions const &amp;&#160;\n          options = GetPropertiesOfKeyVersionsOptions(), \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: options
+    summary: 'The <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_get_properties_of_key_versions_options.html" title="The options for calling an operation Azure::Security::KeyVault::Keys::KeyClient::GetPropertiesOfKeyVe...">Azure::Security::KeyVault::Keys::GetPropertiesOfKeyVersionsOptions</a> object to for setting the operation up. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties_paged_response.html" title="Define a single page to list the keys from the Key Vault.">KeyPropertiesPagedResponse</a> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetRandomBytes()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; GetRandomBytesResult &gt; KeyClient::GetRandomBytes \n          (\n          GetRandomBytesOptions const &amp;&#160;\n          options, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'The request object to get random bytes. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<GetRandomBytesResult> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetUrl()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string Azure::Security::KeyVault::Keys::KeyClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "The key client's primary URL endpoint. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ImportKey() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::ImportKey \n          (\n          ImportKeyOptions const &amp;&#160;\n          importKeyOptions, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: importKeyOptions
+    summary: 'The key import configuration object containing information about the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html" title="Represents a JSON Web Key as defined in http://tools.ietf.org/html/rfc7517.">Azure::Security::KeyVault::Keys::JsonWebKey</a> being imported. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<KeyVaultKey> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ImportKey() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::ImportKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          JsonWebKey const &amp;&#160;\n          keyMaterial, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: keyMaterial
+    summary: 'The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html" title="Represents a JSON Web Key as defined in http://tools.ietf.org/html/rfc7517.">Azure::Security::KeyVault::Keys::JsonWebKey</a> being imported. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<KeyVaultKey> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PurgeDeletedKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; PurgedKey &gt; KeyClient::PurgeDeletedKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<PurgedKey> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ReleaseKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; ReleaseKeyResult &gt; KeyClient::ReleaseKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          KeyReleaseOptions const &amp;&#160;\n          options, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: options
+    summary: 'The options for the key release operation. '
+  - name: context
+    summary: 'A cancellation token controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_release_key_result.html" title="The release result, containing the released key.">ReleaseKeyResult</a> object. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RestoreKeyBackup()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::RestoreKeyBackup \n          (\n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          backup, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: backup
+    summary: 'The backup blob associated with a key. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<KeyVaultKey> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RotateKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::RotateKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<KeyVaultKey> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;StartDeleteKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Security::KeyVault::Keys::DeleteKeyOperation KeyClient::StartDeleteKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: context
+    summary: 'A cancellation token controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html" title="A long running operation to delete a key.">Azure::Security::KeyVault::Keys::DeleteKeyOperation</a> to wait on this long-running operation. If the key is soft delete-enabled, you only need to wait for the operation to complete if you need to recover or purge the key; otherwise, the key is deleted automatically on purge schedule. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;StartRecoverDeletedKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation KeyClient::StartRecoverDeletedKey \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.html" title="A long running operation to recover a key.">Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation</a> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpdateKeyProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyVaultKey &gt; KeyClient::UpdateKeyProperties \n          (\n          KeyProperties const &amp;&#160;\n          properties, \n        \n        \n          \n          \n          Azure::Nullable&lt; std::vector&lt; KeyOperation &gt; &gt; const &amp;&#160;\n          keyOperations = Azure::Nullable&lt;std::vector&lt;KeyOperation&gt;&gt;(), \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: properties
+    summary: 'The <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html" title="The resource containing all the properties of the KeyVaultKey except JsonWebKey properties.">Azure::Security::KeyVault::Keys::KeyProperties</a> object with updated properties. '
+  - name: keyOperations
+    summary: 'Optional list of supported <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html" title="An operation that can be performed with the key.">Azure::Security::KeyVault::Keys::KeyOperation</a>. If no operation list provided, no changes will be made to existing key operations. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<KeyVaultKey> '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpdateKeyRotationPolicy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; KeyRotationPolicy &gt; KeyClient::UpdateKeyRotationPolicy \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          KeyRotationPolicy const &amp;&#160;\n          rotationPolicy, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key in a given key vault. '
+  - name: rotationPolicy
+    summary: 'The policy for the key. '
+  - name: context
+    summary: 'A Azure::Core::Context controlling the request lifetime. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<KeyRotationPolicy> '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/keyvault/keys/key_client.hpp
+
+    src/key_client.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

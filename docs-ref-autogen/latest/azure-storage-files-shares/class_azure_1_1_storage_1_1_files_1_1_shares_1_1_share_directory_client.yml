@@ -1,0 +1,663 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-shares
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesSharesShareDirectoryClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: The <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> allows you to manipulate Azure Storage shares and their directories and files.
+- content: ''
+- content: <code>#include &lt;<a href="share__directory__client_8hpp_source.html">share_directory_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;ShareDirectoryClient (const std::string &amp;shareDirectoryUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareDirectoryClient using shared key authentication.  
+
+
+
+    &#160;&#160;ShareDirectoryClient (const std::string &amp;shareDirectoryUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareDirectoryClient using shared key authentication.  
+
+
+
+    &#160;&#160;ShareDirectoryClient (const std::string &amp;shareDirectoryUrl, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareDirectoryClient using anonymous access or shared access signature.  
+
+
+
+    std::string&#160;&#160;GetUrl () constGets the directory's primary URL endpoint.  
+
+
+
+    ShareDirectoryClient&#160;&#160;GetSubdirectoryClient (const std::string &amp;subdirectoryName) constCreate a ShareDirectoryClient that's a sub directory of the current ShareDirectoryClient.  
+
+
+
+    ShareFileClient&#160;&#160;GetFileClient (const std::string &amp;fileName) constCreate a ShareFileClient from current ShareDirectoryClient.  
+
+
+
+    ShareDirectoryClient&#160;&#160;WithShareSnapshot (const std::string &amp;shareSnapshot) constInitializes a new instance of the ShareDirectoryClient class with an identical URL source but the specified share snapshot timestamp.  
+
+
+
+    Azure::Response&lt; Models::CreateDirectoryResult &gt;&#160;&#160;Create (const CreateDirectoryOptions &amp;options=CreateDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates the directory.  
+
+
+
+    Azure::Response&lt; Models::CreateDirectoryResult &gt;&#160;&#160;CreateIfNotExists (const CreateDirectoryOptions &amp;options=CreateDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates the directory if it does not exist.  
+
+
+
+    Azure::Response&lt; ShareFileClient &gt;&#160;&#160;RenameFile (const std::string &amp;fileName, const std::string &amp;destinationFilePath, const RenameFileOptions &amp;options=RenameFileOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRenames a file. This API does not support renaming a file from one share to another, or between storage accounts.  
+
+
+
+    Azure::Response&lt; ShareDirectoryClient &gt;&#160;&#160;RenameSubdirectory (const std::string &amp;subdirectoryName, const std::string &amp;destinationDirectoryPath, const RenameDirectoryOptions &amp;options=RenameDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRenames a directory. This API does not support renaming a directory from one share to another, or between storage accounts.  
+
+
+
+    Azure::Response&lt; Models::DeleteDirectoryResult &gt;&#160;&#160;Delete (const DeleteDirectoryOptions &amp;options=DeleteDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the directory.  
+
+
+
+    Azure::Response&lt; Models::DeleteDirectoryResult &gt;&#160;&#160;DeleteIfExists (const DeleteDirectoryOptions &amp;options=DeleteDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the directory if it exists.  
+
+
+
+    Azure::Response&lt; Models::DirectoryProperties &gt;&#160;&#160;GetProperties (const GetDirectoryPropertiesOptions &amp;options=GetDirectoryPropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the properties of the directory.  
+
+
+
+    Azure::Response&lt; Models::SetDirectoryPropertiesResult &gt;&#160;&#160;SetProperties (Models::FileSmbProperties smbProperties, const SetDirectoryPropertiesOptions &amp;options=SetDirectoryPropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the properties of the directory.  
+
+
+
+    Azure::Response&lt; Models::SetDirectoryMetadataResult &gt;&#160;&#160;SetMetadata (Storage::Metadata metadata, const SetDirectoryMetadataOptions &amp;options=SetDirectoryMetadataOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the metadata of the directory.  
+
+
+
+    ListFilesAndDirectoriesPagedResponse&#160;&#160;ListFilesAndDirectories (const ListFilesAndDirectoriesOptions &amp;options=ListFilesAndDirectoriesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns a sequence of files and subdirectories in this directory. Enumerating the files and directories may make multiple requests to the service while fetching all the values.  
+
+
+
+    ListDirectoryHandlesPagedResponse&#160;&#160;ListHandles (const ListDirectoryHandlesOptions &amp;options=ListDirectoryHandlesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns a sequence of the open handles on a directory or a file. Enumerating the handles may make multiple requests to the service while fetching all the values.  
+
+
+
+    Azure::Response&lt; Models::ForceCloseDirectoryHandleResult &gt;&#160;&#160;ForceCloseHandle (const std::string &amp;handleId, const ForceCloseDirectoryHandleOptions &amp;options=ForceCloseDirectoryHandleOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCloses a handle opened on a directory at the service.  
+
+
+
+    ForceCloseAllDirectoryHandlesPagedResponse&#160;&#160;ForceCloseAllHandles (const ForceCloseAllDirectoryHandlesOptions &amp;options=ForceCloseAllDirectoryHandlesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCloses all handles opened on a directory at the service. Optionally supports recursively closing handles on subresources.
+- section: Static Public Member Functions
+- content: static ShareDirectoryClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const std::string &amp;shareName, const std::string &amp;directoryName, const ShareClientOptions &amp;options=ShareClientOptions())Create A ShareDirectoryClient from connection string to manage a File Share Directory resource.
+- section: Friends
+- content: class&#160;ShareClient
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareDirectoryClient() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareDirectoryClient::ShareDirectoryClient \n          (\n          const std::string &amp;&#160;\n          shareDirectoryUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareDirectoryUrl
+    summary: "The URL of the directory this client's request targets. "
+  - name: credential
+    summary: 'The shared key credential used to initialize the client. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareDirectoryClient() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareDirectoryClient::ShareDirectoryClient \n          (\n          const std::string &amp;&#160;\n          shareDirectoryUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareDirectoryUrl
+    summary: "The URL of the directory this client's request targets. "
+  - name: credential
+    summary: 'The token credential used to sign requests. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareDirectoryClient() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareDirectoryClient::ShareDirectoryClient \n          (\n          const std::string &amp;&#160;\n          shareDirectoryUrl, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareDirectoryUrl
+    summary: "The URL of the directory this client's request targets. "
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Create()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateDirectoryResult &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::Create \n          (\n          const CreateDirectoryOptions &amp;&#160;\n          options = CreateDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to create this directory. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreateDirectoryResult> containing the information returned when creating the directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateFromConnectionString()'
+- content: ''
+- content: ''
+- content: ''
+- content: "static ShareDirectoryClient Azure::Storage::Files::Shares::ShareDirectoryClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          shareName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          directoryName, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: 'Azure Storage connection string. '
+  - name: shareName
+    summary: 'The name of a file share. '
+  - name: directoryName
+    summary: 'The name of a directory. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> The client that can be used to manage a share resource. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateIfNotExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateDirectoryResult &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::CreateIfNotExists \n          (\n          const CreateDirectoryOptions &amp;&#160;\n          options = CreateDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to create this directory. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreateDirectoryResult> containing the information returned when creating the directory if successfully created. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Delete()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteDirectoryResult &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::Delete \n          (\n          const DeleteDirectoryOptions &amp;&#160;\n          options = DeleteDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete this directory. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DeleteDirectoryResult> containing the information returned when deleting the directory. Currently empty but preserved for future usage. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteIfExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteDirectoryResult &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::DeleteIfExists \n          (\n          const DeleteDirectoryOptions &amp;&#160;\n          options = DeleteDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete this directory. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "Azure::Response<Models::DeleteDirectoryResult> containing the information returned when deleting the directory. Currently empty but preserved for future usage. Only when the delete operation if successful, the returned information other than 'Deleted' is valid. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ForceCloseAllHandles()'
+- content: ''
+- content: ''
+- content: ''
+- content: "ForceCloseAllDirectoryHandlesPagedResponse Azure::Storage::Files::Shares::ShareDirectoryClient::ForceCloseAllHandles \n          (\n          const ForceCloseAllDirectoryHandlesOptions &amp;&#160;\n          options = ForceCloseAllDirectoryHandlesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: "Optional parameters to close all this directory's open handles. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_directory_handles_paged_response.html" title="Response type for Azure::Storage::Files::Shares::ShareDirectoryClient::ForceCloseAllHandles.">ForceCloseAllDirectoryHandlesPagedResponse</a> containing the information of the closed handles. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ForceCloseHandle()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ForceCloseDirectoryHandleResult &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::ForceCloseHandle \n          (\n          const std::string &amp;&#160;\n          handleId, \n        \n        \n          \n          \n          const ForceCloseDirectoryHandleOptions &amp;&#160;\n          options = ForceCloseDirectoryHandleOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: handleId
+    summary: 'The ID of the handle to be closed. '
+  - name: options
+    summary: "Optional parameters to close one of this directory's open handles. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::ForceCloseDirectoryHandleResult> containing the information of the closed handle. Current empty but preserved for future usage. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetFileClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    ShareFileClient Azure::Storage::Files::Shares::ShareDirectoryClient::GetFileClient 
+              (
+              const std::string &amp;&#160;
+              fileName)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileName
+    summary: 'The name of the file. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> A file client that can be used to manage a share file resource. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DirectoryProperties &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::GetProperties \n          (\n          const GetDirectoryPropertiesOptions &amp;&#160;\n          options = GetDirectoryPropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: "Optional parameters to get this directory's properties. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DirectoryProperties> containing the properties of the directory returned from the server. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetSubdirectoryClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    ShareDirectoryClient Azure::Storage::Files::Shares::ShareDirectoryClient::GetSubdirectoryClient 
+              (
+              const std::string &amp;&#160;
+              subdirectoryName)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: subdirectoryName
+    summary: 'The name of the subdirectory. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html" title="The ShareDirectoryClient allows you to manipulate Azure Storage shares and their directories and file...">ShareDirectoryClient</a> A directory client that can be used to manage a share directory resource. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetUrl()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string Azure::Storage::Files::Shares::ShareDirectoryClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "The directory's primary URL endpoint. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ListFilesAndDirectories()'
+- content: ''
+- content: ''
+- content: ''
+- content: "ListFilesAndDirectoriesPagedResponse Azure::Storage::Files::Shares::ShareDirectoryClient::ListFilesAndDirectories \n          (\n          const ListFilesAndDirectoriesOptions &amp;&#160;\n          options = ListFilesAndDirectoriesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to list the files and directories under this directory. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_paged_response.html" title="Response type for Azure::Storage::Files::Shares::ShareDirectoryClient::ListFilesAndDirectories.">ListFilesAndDirectoriesPagedResponse</a> describing the items in the directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ListHandles()'
+- content: ''
+- content: ''
+- content: ''
+- content: "ListDirectoryHandlesPagedResponse Azure::Storage::Files::Shares::ShareDirectoryClient::ListHandles \n          (\n          const ListDirectoryHandlesOptions &amp;&#160;\n          options = ListDirectoryHandlesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: "Optional parameters to list this directory's open handles. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_directory_handles_paged_response.html" title="Response type for Azure::Storage::Files::Shares::ShareDirectoryClient::ListHandles.">ListDirectoryHandlesPagedResponse</a> describing the handles in the directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RenameFile()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; ShareFileClient &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::RenameFile \n          (\n          const std::string &amp;&#160;\n          fileName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          destinationFilePath, \n        \n        \n          \n          \n          const RenameFileOptions &amp;&#160;\n          options = RenameFileOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileName
+    summary: 'The file that gets renamed. '
+  - name: destinationFilePath
+    summary: 'The path of the file the source file is renaming to. The destination is an absolute path under the root of the share, without leading slash. '
+  - name: options
+    summary: 'Optional parameters to rename a file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<ShareFileClient> The client targets the renamed file. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RenameSubdirectory()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; ShareDirectoryClient &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::RenameSubdirectory \n          (\n          const std::string &amp;&#160;\n          subdirectoryName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          destinationDirectoryPath, \n        \n        \n          \n          \n          const RenameDirectoryOptions &amp;&#160;\n          options = RenameDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: subdirectoryName
+    summary: 'The subdirectory that gets renamed. '
+  - name: destinationDirectoryPath
+    summary: 'The destinationPath the source subdirectory is renaming to. The destination is an absolute path under the root of the share, without leading slash. '
+  - name: options
+    summary: 'Optional parameters to rename a directory. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<ShareDirectoryClient> The client targets the renamed directory. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetMetadata()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetDirectoryMetadataResult &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::SetMetadata \n          (\n          Storage::Metadata&#160;\n          metadata, \n        \n        \n          \n          \n          const SetDirectoryMetadataOptions &amp;&#160;\n          options = SetDirectoryMetadataOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: metadata
+    summary: 'User-defined metadata to be stored with the directory. Note that the string may only contain ASCII characters in the ISO-8859-1 character set. '
+  - name: options
+    summary: "Optional parameters to set this directory's metadata. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::SetDirectoryMetadataResult> containing the information of the directory returned from the server. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetDirectoryPropertiesResult &gt; Azure::Storage::Files::Shares::ShareDirectoryClient::SetProperties \n          (\n          Models::FileSmbProperties&#160;\n          smbProperties, \n        \n        \n          \n          \n          const SetDirectoryPropertiesOptions &amp;&#160;\n          options = SetDirectoryPropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: smbProperties
+    summary: 'The SMB properties to be set to the directory. '
+  - name: options
+    summary: "Optional parameters to set this directory's properties. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::SetDirectoryPropertiesResult> containing the properties of the directory returned from the server. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;WithShareSnapshot()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    ShareDirectoryClient Azure::Storage::Files::Shares::ShareDirectoryClient::WithShareSnapshot 
+              (
+              const std::string &amp;&#160;
+              shareSnapshot)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareSnapshot
+    summary: 'The snapshot identifier for a share snapshot. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A new <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html" title="The ShareDirectoryClient allows you to manipulate Azure Storage shares and their directories and file...">ShareDirectoryClient</a> instance. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/storage/files/shares/share_directory_client.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

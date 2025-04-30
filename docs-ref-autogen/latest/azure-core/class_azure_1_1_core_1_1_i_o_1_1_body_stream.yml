@@ -1,0 +1,218 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreIOBodyStream
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Used to read data to/from a service.
+- content: ''
+- content: <code>#include &lt;<a href="body__stream_8hpp_source.html">body_stream.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Core::IO::BodyStream:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    virtual&#160;&#160;~BodyStream ()=defaultDestructs BodyStream.  
+
+
+
+    virtual int64_t&#160;&#160;Length () const =0Get the length of the data.  
+
+
+
+    virtual void&#160;&#160;Rewind ()Resets the stream back to the beginning (for retries).  
+
+
+
+    size_t&#160;&#160;Read (uint8_t *buffer, size_t count, Azure::Core::Context const &amp;context=Azure::Core::Context())Read portion of data into a buffer.  
+
+
+
+    size_t&#160;&#160;ReadToCount (uint8_t *buffer, size_t count, Azure::Core::Context const &amp;context=Azure::Core::Context())Read Azure::Core::IO::BodyStream into a buffer until the buffer is filled, or until the stream is read to end.  
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;ReadToEnd (Azure::Core::Context const &amp;context=Azure::Core::Context())Read Azure::Core::IO::BodyStream until the stream is read to end, allocating memory for the entirety of contents.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;~BodyStream()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual Azure::Core::IO::BodyStream::~BodyStream \n          (\n          )\n          \n        \n      \n  \n  \nvirtualdefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Length()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual int64_t Azure::Core::IO::BodyStream::Length \n          (\n          )\n           const\n        \n      \n  \n  \npure virtual"
+- content: ''
+- content: ''
+- content: ''
+- content: Implemented in <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#aea97ce29a09c0b32a518f7195a9ea8bc">Azure::Core::IO::MemoryBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a4c9ea3f7f807238a662e75d7fa7e72da">Azure::Core::IO::FileBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a3acf5936e8f21a28e75388b4740acd8f">Azure::Core::IO::ProgressBodyStream</a>, and <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#a6d8958274c0aa258f1127558b78d9cb8">Azure::Core::Http::CurlSession</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Read()'
+- content: ''
+- content: ''
+- content: ''
+- content: "size_t Azure::Core::IO::BodyStream::Read \n          (\n          uint8_t *&#160;\n          buffer, \n        \n        \n          \n          \n          size_t&#160;\n          count, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: buffer
+    summary: 'Pointer to a first byte of the byte buffer to read the data into. '
+  - name: count
+    summary: 'Size of the buffer to read the data into. '
+  - name: context
+    summary: A context to control the request lifetime.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Number of bytes read. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ReadToCount()'
+- content: ''
+- content: ''
+- content: ''
+- content: "size_t BodyStream::ReadToCount \n          (\n          uint8_t *&#160;\n          buffer, \n        \n        \n          \n          \n          size_t&#160;\n          count, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: buffer
+    summary: 'Pointer to a first byte of the byte buffer to read the data into. '
+  - name: count
+    summary: 'Size of the buffer to read the data into. '
+  - name: context
+    summary: A context to control the request lifetime.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Number of bytes read. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ReadToEnd()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    std::vector&lt; uint8_t &gt; BodyStream::ReadToEnd 
+              (
+              Azure::Core::Context const &amp;&#160;
+              context = Azure::Core::Context())
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: A context to control the request lifetime.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A vector of bytes containing the entirety of data read from the <code>body</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Rewind()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual void Azure::Core::IO::BodyStream::Rewind \n          (\n          )\n          \n        \n      \n  \n  \ninlinevirtual"
+- content: ''
+- content: ''
+- content: ''
+- content: Reimplemented in <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#acf45328737df39d5ad836644be607f41">Azure::Core::IO::MemoryBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a6a508b86596a8c482ccf2b50f051a620">Azure::Core::IO::FileBodyStream</a>, and <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a95177a860fe067590a2504387936d63c">Azure::Core::IO::ProgressBodyStream</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/io/body_stream.hpp
+
+    src/io/body_stream.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

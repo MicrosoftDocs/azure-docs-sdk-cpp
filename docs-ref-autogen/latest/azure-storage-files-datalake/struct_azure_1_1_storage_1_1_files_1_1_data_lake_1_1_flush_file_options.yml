@@ -1,0 +1,193 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-datalake
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesDataLakeFlushFileOptions
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a86fc020be966025aae11103420afab30">Azure::Storage::Files::DataLake::DataLakeFileClient::Flush</a>.
+- content: ''
+- content: <code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
+- content: ''
+- section: Public Attributes
+- content: >-
+    Azure::Nullable&lt; bool &gt;&#160;RetainUncommittedData
+
+
+    Azure::Nullable&lt; bool &gt;&#160;Close
+
+
+    Azure::Nullable&lt; Storage::ContentHash &gt;&#160;ContentHash
+
+
+    Models::PathHttpHeaders&#160;HttpHeaders
+
+
+    PathAccessConditions&#160;AccessConditions
+
+
+    Azure::Nullable&lt; Models::LeaseAction &gt;&#160;LeaseAction
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;LeaseId
+
+
+    Azure::Nullable&lt; std::chrono::seconds &gt;&#160;LeaseDuration
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AccessConditions'
+- content: ''
+- content: ''
+- content: ''
+- content: PathAccessConditions Azure::Storage::Files::DataLake::FlushFileOptions::AccessConditions
+- content: ''
+- content: ''
+- content: Specify the access condition for the path.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Close'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::FlushFileOptions::Close
+- content: ''
+- content: ''
+- content: Azure Storage Events allow applications to receive notifications when files change. When Azure Storage Events are enabled, a file changed event is raised. This event has a property indicating whether this is the final change to distinguish the difference between an intermediate flush to a file stream and the final close of a file stream. The close query parameter is valid only when the action is "flush" and change notifications are enabled. If the value of close is "true" and the flush operation completes successfully, the service raises a file change notification with a property indicating that this is the final update (the file stream has been closed). If "false" a change notification is raised indicating the file has changed. The default is false. This query parameter is set to true by the Hadoop ABFS driver to indicate that the file stream has been closed."
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ContentHash'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Storage::ContentHash&gt; Azure::Storage::Files::DataLake::FlushFileOptions::ContentHash
+- content: ''
+- content: ''
+- content: The service stores this value and is returned for "Read &amp; Get Properties" operations. If this property is not specified on the request, then the property will be cleared for the file. Subsequent calls to "Read &amp; Get Properties" will not return this property unless it is explicitly set on that file again.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HttpHeaders'
+- content: ''
+- content: ''
+- content: ''
+- content: Models::PathHttpHeaders Azure::Storage::Files::DataLake::FlushFileOptions::HttpHeaders
+- content: ''
+- content: ''
+- content: Specify the HTTP headers for this path.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LeaseAction'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Models::LeaseAction&gt; Azure::Storage::Files::DataLake::FlushFileOptions::LeaseAction
+- content: ''
+- content: ''
+- content: If "acquire" it will acquire the lease. If "auto-renew" it will renew the lease. If "release" it will release the lease only on flush. Only applicable if Flush is set to true. If "acquire-release" it will acquire &amp; complete the operation &amp; release the lease once operation is done. Only applicable if Flush is set to true.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LeaseDuration'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::chrono::seconds&gt; Azure::Storage::Files::DataLake::FlushFileOptions::LeaseDuration
+- content: ''
+- content: ''
+- content: Specifies the duration of the lease, in seconds, or InfiniteLeaseDuration for a lease that never expires. A non-infinite lease can be between 15 and 60 seconds. A lease duration cannot be changed using renew or change.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LeaseId'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::FlushFileOptions::LeaseId
+- content: ''
+- content: ''
+- content: Proposed LeaseId.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RetainUncommittedData'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::FlushFileOptions::RetainUncommittedData
+- content: ''
+- content: ''
+- content: If "true", uncommitted data is retained after the flush operation completes; otherwise, the uncommitted data is deleted after the flush operation. The default is false. Data at offsets less than the specified position are written to the file when flush succeeds, but this optional parameter allows data after the flush position to be retained for a future flush operation.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/storage/files/datalake/datalake_options.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

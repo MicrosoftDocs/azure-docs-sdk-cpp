@@ -1,0 +1,892 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-shares
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesSharesShareFileClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: The <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> allows you to manipulate Azure Storage shares and their directories and files.
+- content: ''
+- content: <code>#include &lt;<a href="share__file__client_8hpp_source.html">share_file_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;ShareFileClient (const std::string &amp;shareFileUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareFileClient using shared key authentication.  
+
+
+
+    &#160;&#160;ShareFileClient (const std::string &amp;shareFileUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareFileClient using shared key authentication.  
+
+
+
+    &#160;&#160;ShareFileClient (const std::string &amp;shareFileUrl, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareFileClient using anonymous access or shared access signature.  
+
+
+
+    std::string&#160;&#160;GetUrl () constGets the file's primary URL endpoint.  
+
+
+
+    ShareFileClient&#160;&#160;WithShareSnapshot (const std::string &amp;shareSnapshot) constInitializes a new instance of the ShareFileClient class with an identical URL source but the specified share snapshot timestamp.  
+
+
+
+    Azure::Response&lt; Models::CreateFileResult &gt;&#160;&#160;Create (int64_t fileSize, const CreateFileOptions &amp;options=CreateFileOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates the file.  
+
+
+
+    Azure::Response&lt; Models::DeleteFileResult &gt;&#160;&#160;Delete (const DeleteFileOptions &amp;options=DeleteFileOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the file.  
+
+
+
+    Azure::Response&lt; Models::DeleteFileResult &gt;&#160;&#160;DeleteIfExists (const DeleteFileOptions &amp;options=DeleteFileOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the file if it exists.  
+
+
+
+    Azure::Response&lt; Models::DownloadFileResult &gt;&#160;&#160;Download (const DownloadFileOptions &amp;options=DownloadFileOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constOpen a stream for the file's content, or a range of the file's content that can be used to download the server end data.  
+
+
+
+    Azure::Response&lt; Models::DownloadFileToResult &gt;&#160;&#160;DownloadTo (uint8_t *buffer, size_t bufferSize, const DownloadFileToOptions &amp;options=DownloadFileToOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDownloads a file or a file range from the service to a memory buffer using parallel requests.  
+
+
+
+    Azure::Response&lt; Models::DownloadFileToResult &gt;&#160;&#160;DownloadTo (const std::string &amp;fileName, const DownloadFileToOptions &amp;options=DownloadFileToOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDownloads a file or a file range from the service to a memory buffer using parallel requests.  
+
+
+
+    Azure::Response&lt; Models::UploadFileFromResult &gt;&#160;&#160;UploadFrom (const uint8_t *buffer, size_t bufferSize, const UploadFileFromOptions &amp;options=UploadFileFromOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.  
+
+
+
+    Azure::Response&lt; Models::UploadFileFromResult &gt;&#160;&#160;UploadFrom (const std::string &amp;fileName, const UploadFileFromOptions &amp;options=UploadFileFromOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.  
+
+
+
+    StartFileCopyOperation&#160;&#160;StartCopy (std::string copySource, const StartFileCopyOptions &amp;options=StartFileCopyOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constStarts copy the file specified from source URI to the file this client points to.  
+
+
+
+    Azure::Response&lt; Models::AbortFileCopyResult &gt;&#160;&#160;AbortCopy (std::string copyId, const AbortFileCopyOptions &amp;options=AbortFileCopyOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constAborts copying the file specified with the copy ID.  
+
+
+
+    Azure::Response&lt; Models::FileProperties &gt;&#160;&#160;GetProperties (const GetFilePropertiesOptions &amp;options=GetFilePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the properties of a file.  
+
+
+
+    Azure::Response&lt; Models::SetFilePropertiesResult &gt;&#160;&#160;SetProperties (const Models::FileHttpHeaders &amp;httpHeaders, const Models::FileSmbProperties &amp;smbProperties, const SetFilePropertiesOptions &amp;options=SetFilePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the properties of the file, or resize a file specifying NewSize in options.  
+
+
+
+    Azure::Response&lt; Models::SetFileMetadataResult &gt;&#160;&#160;SetMetadata (Storage::Metadata metadata, const SetFileMetadataOptions &amp;options=SetFileMetadataOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the metadata of the file.  
+
+
+
+    Azure::Response&lt; Models::UploadFileRangeResult &gt;&#160;&#160;UploadRange (int64_t offset, Azure::Core::IO::BodyStream &amp;content, const UploadFileRangeOptions &amp;options=UploadFileRangeOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constUploads some data to a range of the file.  
+
+
+
+    Azure::Response&lt; Models::ClearFileRangeResult &gt;&#160;&#160;ClearRange (int64_t offset, int64_t length, const ClearFileRangeOptions &amp;options=ClearFileRangeOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constClears some range of data within the file.  
+
+
+
+    Azure::Response&lt; Models::GetFileRangeListResult &gt;&#160;&#160;GetRangeList (const GetFileRangeListOptions &amp;options=GetFileRangeListOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the list of valid range from the file within specified range.  
+
+
+
+    Azure::Response&lt; Models::GetFileRangeListResult &gt;&#160;&#160;GetRangeListDiff (std::string previousShareSnapshot, const GetFileRangeListOptions &amp;options=GetFileRangeListOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the list of valid range from the file within specified range that have changed since previousShareSnapshot was taken.  
+
+
+
+    ListFileHandlesPagedResponse&#160;&#160;ListHandles (const ListFileHandlesOptions &amp;options=ListFileHandlesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns a sequence of the open handles on a directory or a file. Enumerating the handles may make multiple requests to the service while fetching all the values.  
+
+
+
+    Azure::Response&lt; Models::ForceCloseFileHandleResult &gt;&#160;&#160;ForceCloseHandle (const std::string &amp;handleId, const ForceCloseFileHandleOptions &amp;options=ForceCloseFileHandleOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCloses a handle opened on a file at the service.  
+
+
+
+    ForceCloseAllFileHandlesPagedResponse&#160;&#160;ForceCloseAllHandles (const ForceCloseAllFileHandlesOptions &amp;options=ForceCloseAllFileHandlesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCloses all handles opened on a file at the service.  
+
+
+
+    Azure::Response&lt; Models::UploadFileRangeFromUriResult &gt;&#160;&#160;UploadRangeFromUri (int64_t destinationOffset, const std::string &amp;sourceUri, const Azure::Core::Http::HttpRange &amp;sourceRange, const UploadFileRangeFromUriOptions &amp;options=UploadFileRangeFromUriOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constUpload a range from the source URI to this file's specific range.  
+
+
+
+    Azure::Response&lt; Models::CreateFileHardLinkResult &gt;&#160;&#160;CreateHardLink (const std::string &amp;targetFile, const CreateHardLinkOptions &amp;options=CreateHardLinkOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constNFS only. Creates a hard link to the file specified by path.
+- section: Static Public Member Functions
+- content: static ShareFileClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const std::string &amp;shareName, const std::string &amp;fileName, const ShareClientOptions &amp;options=ShareClientOptions())Create A ShareFileClient from connection string to manage a File Share File resource.
+- section: Friends
+- content: >-
+    class&#160;ShareClient
+
+
+
+    class&#160;ShareDirectoryClient
+
+
+
+    class&#160;ShareLeaseClient
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareFileClient() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareFileClient::ShareFileClient \n          (\n          const std::string &amp;&#160;\n          shareFileUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareFileUrl
+    summary: "The URL of the file this client's request targets. "
+  - name: credential
+    summary: 'The shared key credential used to initialize the client. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareFileClient() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareFileClient::ShareFileClient \n          (\n          const std::string &amp;&#160;\n          shareFileUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareFileUrl
+    summary: "The URL of the file this client's request targets. "
+  - name: credential
+    summary: 'The token credential used to sign requests. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareFileClient() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareFileClient::ShareFileClient \n          (\n          const std::string &amp;&#160;\n          shareFileUrl, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareFileUrl
+    summary: "The URL of the file this client's request targets. "
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AbortCopy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::AbortFileCopyResult &gt; Azure::Storage::Files::Shares::ShareFileClient::AbortCopy \n          (\n          std::string&#160;\n          copyId, \n        \n        \n          \n          \n          const AbortFileCopyOptions &amp;&#160;\n          options = AbortFileCopyOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: copyId
+    summary: 'The copy identifier provided in the StartCopyShareFileResult of the original StartCopy operation. '
+  - name: options
+    summary: 'Optional parameters to abort copying the content of this file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::AbortFileCopyResult> containing the abort copy related information, current empty but preserved for future usage. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ClearRange()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ClearFileRangeResult &gt; Azure::Storage::Files::Shares::ShareFileClient::ClearRange \n          (\n          int64_t&#160;\n          offset, \n        \n        \n          \n          \n          int64_t&#160;\n          length, \n        \n        \n          \n          \n          const ClearFileRangeOptions &amp;&#160;\n          options = ClearFileRangeOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: offset
+    summary: 'Specifies the starting offset for the content to be cleared within the file. '
+  - name: length
+    summary: 'Specifies the length for the content to be cleared within the file. '
+  - name: options
+    summary: "Optional parameters to clear this file's range. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::ClearFileRangeResult> containing the information of the cleared range returned from the server. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Create()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateFileResult &gt; Azure::Storage::Files::Shares::ShareFileClient::Create \n          (\n          int64_t&#160;\n          fileSize, \n        \n        \n          \n          \n          const CreateFileOptions &amp;&#160;\n          options = CreateFileOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileSize
+    summary: 'Size of the file in bytes. '
+  - name: options
+    summary: 'Optional parameters to create this file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<CreateFileResult> containing the information returned when creating the file. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateFromConnectionString()'
+- content: ''
+- content: ''
+- content: ''
+- content: "static ShareFileClient Azure::Storage::Files::Shares::ShareFileClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          shareName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          fileName, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: 'Azure Storage connection string. '
+  - name: shareName
+    summary: 'The name of a file share. '
+  - name: fileName
+    summary: 'The name of a file. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> The client that can be used to manage a share resource. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateHardLink()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateFileHardLinkResult &gt; Azure::Storage::Files::Shares::ShareFileClient::CreateHardLink \n          (\n          const std::string &amp;&#160;\n          targetFile, \n        \n        \n          \n          \n          const CreateHardLinkOptions &amp;&#160;\n          options = CreateHardLinkOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: targetFile
+    summary: 'Path of the file to create the hard link to, not including the share. '
+  - name: options
+    summary: "Optional parameters to create this file's symbolic link. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreateFileHardLinkResult> containing the returned information. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Delete()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteFileResult &gt; Azure::Storage::Files::Shares::ShareFileClient::Delete \n          (\n          const DeleteFileOptions &amp;&#160;\n          options = DeleteFileOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete this file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<DeleteFileResult> containing the information returned when deleting the file. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteIfExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteFileResult &gt; Azure::Storage::Files::Shares::ShareFileClient::DeleteIfExists \n          (\n          const DeleteFileOptions &amp;&#160;\n          options = DeleteFileOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete this file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<DeleteFileResult> containing the information returned when deleting the file. Only valid when successfully deleted. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Download()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DownloadFileResult &gt; Azure::Storage::Files::Shares::ShareFileClient::Download \n          (\n          const DownloadFileOptions &amp;&#160;\n          options = DownloadFileOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to get the content of this file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DownloadFileResult> containing the range or full content and the information of the file. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DownloadTo() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DownloadFileToResult &gt; Azure::Storage::Files::Shares::ShareFileClient::DownloadTo \n          (\n          const std::string &amp;&#160;\n          fileName, \n        \n        \n          \n          \n          const DownloadFileToOptions &amp;&#160;\n          options = DownloadFileToOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileName
+    summary: 'A file path to write the downloaded content to. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DownloadFileToResult> containing the information of the downloaded file/file range. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DownloadTo() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DownloadFileToResult &gt; Azure::Storage::Files::Shares::ShareFileClient::DownloadTo \n          (\n          uint8_t *&#160;\n          buffer, \n        \n        \n          \n          \n          size_t&#160;\n          bufferSize, \n        \n        \n          \n          \n          const DownloadFileToOptions &amp;&#160;\n          options = DownloadFileToOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: buffer
+    summary: 'A memory buffer to write the file content to. '
+  - name: bufferSize
+    summary: 'Size of the memory buffer. Size must be larger or equal to size of the file or file range. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DownloadFileToResult> containing the information of the downloaded file/file range. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ForceCloseAllHandles()'
+- content: ''
+- content: ''
+- content: ''
+- content: "ForceCloseAllFileHandlesPagedResponse Azure::Storage::Files::Shares::ShareFileClient::ForceCloseAllHandles \n          (\n          const ForceCloseAllFileHandlesOptions &amp;&#160;\n          options = ForceCloseAllFileHandlesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: "Optional parameters to close all this file's open handles. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_file_handles_paged_response.html" title="Response type for Azure::Storage::Files::Shares::ShareFileClient::ForceCloseAllHandles.">ForceCloseAllFileHandlesPagedResponse</a> containing the information of the closed handles. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ForceCloseHandle()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ForceCloseFileHandleResult &gt; Azure::Storage::Files::Shares::ShareFileClient::ForceCloseHandle \n          (\n          const std::string &amp;&#160;\n          handleId, \n        \n        \n          \n          \n          const ForceCloseFileHandleOptions &amp;&#160;\n          options = ForceCloseFileHandleOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: handleId
+    summary: 'The ID of the handle to be closed. '
+  - name: options
+    summary: "Optional parameters to close one of this file's open handles. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::ForceCloseFileHandleResult> containing the information of the closed handle. Current empty but preserved for future usage. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::FileProperties &gt; Azure::Storage::Files::Shares::ShareFileClient::GetProperties \n          (\n          const GetFilePropertiesOptions &amp;&#160;\n          options = GetFilePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to get the properties of this file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::FileProperties> containing the file properties. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetRangeList()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::GetFileRangeListResult &gt; Azure::Storage::Files::Shares::ShareFileClient::GetRangeList \n          (\n          const GetFileRangeListOptions &amp;&#160;\n          options = GetFileRangeListOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to get the range list of this file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::GetFileRangeListResult> containing the valid ranges within the file for the specified range. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetRangeListDiff()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::GetFileRangeListResult &gt; Azure::Storage::Files::Shares::ShareFileClient::GetRangeListDiff \n          (\n          std::string&#160;\n          previousShareSnapshot, \n        \n        \n          \n          \n          const GetFileRangeListOptions &amp;&#160;\n          options = GetFileRangeListOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: previousShareSnapshot
+    summary: 'Specifies the previous snapshot. '
+  - name: options
+    summary: 'Optional parameters to get the range list of this file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::GetFileRangeListResult> containing the valid ranges within the file for the specified range. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetUrl()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string Azure::Storage::Files::Shares::ShareFileClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "The file's primary URL endpoint. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ListHandles()'
+- content: ''
+- content: ''
+- content: ''
+- content: "ListFileHandlesPagedResponse Azure::Storage::Files::Shares::ShareFileClient::ListHandles \n          (\n          const ListFileHandlesOptions &amp;&#160;\n          options = ListFileHandlesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: "Optional parameters to list this file's open handles. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_file_handles_paged_response.html" title="Response type for Azure::Storage::Files::Shares::ShareFileClient::ListHandles.">ListFileHandlesPagedResponse</a> describing the handles of the file. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetMetadata()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetFileMetadataResult &gt; Azure::Storage::Files::Shares::ShareFileClient::SetMetadata \n          (\n          Storage::Metadata&#160;\n          metadata, \n        \n        \n          \n          \n          const SetFileMetadataOptions &amp;&#160;\n          options = SetFileMetadataOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: metadata
+    summary: 'User-defined metadata to be stored with the file. Note that the string may only contain ASCII characters in the ISO-8859-1 character set. '
+  - name: options
+    summary: "Optional parameters to set this file's metadata. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::SetFileMetadataResult> containing the information of the file returned from the server. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetFilePropertiesResult &gt; Azure::Storage::Files::Shares::ShareFileClient::SetProperties \n          (\n          const Models::FileHttpHeaders &amp;&#160;\n          httpHeaders, \n        \n        \n          \n          \n          const Models::FileSmbProperties &amp;&#160;\n          smbProperties, \n        \n        \n          \n          \n          const SetFilePropertiesOptions &amp;&#160;\n          options = SetFilePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: httpHeaders
+    summary: 'The HTTP headers to be set to the file. '
+  - name: smbProperties
+    summary: 'The SMB properties to be set to the file. '
+  - name: options
+    summary: "Optional parameters to set this file's properties. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::SetFilePropertiesResult> containing the properties of the file returned from the server. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;StartCopy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "StartFileCopyOperation Azure::Storage::Files::Shares::ShareFileClient::StartCopy \n          (\n          std::string&#160;\n          copySource, \n        \n        \n          \n          \n          const StartFileCopyOptions &amp;&#160;\n          options = StartFileCopyOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: copySource
+    summary: 'Specifies the URL of the source file or file, up to 2 KB in length. To copy a file to another file within the same storage account, you may use Shared Key to authenticate the source file. If you are copying a file from another storage account, or if you are copying a file from the same storage account or another storage account, then you must authenticate the source file or file using a shared access signature. If the source is a public file, no authentication is required to perform the copy operation. A file in a share snapshot can also be specified as a copy source. '
+  - name: options
+    summary: 'Optional parameters to copy the content of this file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_start_file_copy_operation.html" title="A long-running operation to copy a file.">StartFileCopyOperation</a> containing the copy related information. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UploadFrom() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::UploadFileFromResult &gt; Azure::Storage::Files::Shares::ShareFileClient::UploadFrom \n          (\n          const std::string &amp;&#160;\n          fileName, \n        \n        \n          \n          \n          const UploadFileFromOptions &amp;&#160;\n          options = UploadFileFromOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileName
+    summary: 'A file containing the content to upload. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::UploadFileFromResult> describing the state of the updated file. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UploadFrom() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::UploadFileFromResult &gt; Azure::Storage::Files::Shares::ShareFileClient::UploadFrom \n          (\n          const uint8_t *&#160;\n          buffer, \n        \n        \n          \n          \n          size_t&#160;\n          bufferSize, \n        \n        \n          \n          \n          const UploadFileFromOptions &amp;&#160;\n          options = UploadFileFromOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: buffer
+    summary: 'A memory buffer containing the content to upload. '
+  - name: bufferSize
+    summary: 'Size of the memory buffer. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::UploadFileFromResult> describing the state of the updated file. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UploadRange()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::UploadFileRangeResult &gt; Azure::Storage::Files::Shares::ShareFileClient::UploadRange \n          (\n          int64_t&#160;\n          offset, \n        \n        \n          \n          \n          Azure::Core::IO::BodyStream &amp;&#160;\n          content, \n        \n        \n          \n          \n          const UploadFileRangeOptions &amp;&#160;\n          options = UploadFileRangeOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: offset
+    summary: 'Specifies the starting offset for the content to be written as a range. '
+  - name: content
+    summary: 'A BodyStream containing the content of the range to upload. '
+  - name: options
+    summary: "Optional parameters to upload this file's range. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::UploadFileRange> containing the information of the uploaded range and the file returned from the server. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UploadRangeFromUri()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::UploadFileRangeFromUriResult &gt; Azure::Storage::Files::Shares::ShareFileClient::UploadRangeFromUri \n          (\n          int64_t&#160;\n          destinationOffset, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          sourceUri, \n        \n        \n          \n          \n          const Azure::Core::Http::HttpRange &amp;&#160;\n          sourceRange, \n        \n        \n          \n          \n          const UploadFileRangeFromUriOptions &amp;&#160;\n          options = UploadFileRangeFromUriOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: destinationOffset
+    summary: 'Specifies the starting offset for the content to be written. '
+  - name: sourceUri
+    summary: 'The source URI of the content to be uploaded. '
+  - name: sourceRange
+    summary: "The source URI's range to be uploaded to file. "
+  - name: options
+    summary: 'Optional parameters to upload a range to file. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::UploadFileRangeFromUriResult> containing the returned information. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;WithShareSnapshot()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    ShareFileClient Azure::Storage::Files::Shares::ShareFileClient::WithShareSnapshot 
+              (
+              const std::string &amp;&#160;
+              shareSnapshot)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareSnapshot
+    summary: 'The snapshot identifier for the share snapshot. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A new <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> instance. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/storage/files/shares/share_file_client.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

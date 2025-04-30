@@ -1,0 +1,221 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreHttpPoliciesHttpPolicy
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    HTTP policy base class.  
+     <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="policy_8hpp_source.html">policy.hpp</a>&gt;</code>
+- content: ''
+- content: Inherited by Azure::Core::Http::Policies::_internal::BearerTokenAuthenticationPolicy, Azure::Core::Http::Policies::_internal::LogPolicy, Azure::Core::Http::Policies::_internal::RequestActivityPolicy, Azure::Core::Http::Policies::_internal::RequestIdPolicy, Azure::Core::Http::Policies::_internal::RetryPolicy, Azure::Core::Http::Policies::_internal::TelemetryPolicy, and Azure::Core::Http::Policies::_internal::TransportPolicy.
+- content: ''
+- section: Public Member Functions
+- content: >-
+    virtual std::unique_ptr&lt; RawResponse &gt;&#160;&#160;Send (Request &amp;request, NextHttpPolicy nextPolicy, Context const &amp;context) const =0Applies this HTTP policy.  
+
+
+
+    virtual&#160;&#160;~HttpPolicy ()Destructs HttpPolicy.  
+
+
+
+    virtual std::unique_ptr&lt; HttpPolicy &gt;&#160;&#160;Clone () const =0Creates a clone of this HttpPolicy.
+- section: Protected Member Functions
+- content: >-
+    &#160;&#160;HttpPolicy ()=defaultConstructs a default instance of HttpPolicy.  
+
+
+
+    &#160;&#160;HttpPolicy (const HttpPolicy &amp;other)=defaultConstructs a copy of other HttpPolicy.  
+
+
+
+    HttpPolicy &amp;&#160;&#160;operator= (const HttpPolicy &amp;other)=defaultAssigns this HttpPolicy to copy the other.  
+
+
+
+    &#160;&#160;HttpPolicy (HttpPolicy &amp;&amp;other)=defaultConstructs HttpPolicy by moving other HttpPolicy.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;~HttpPolicy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual Azure::Core::Http::Policies::HttpPolicy::~HttpPolicy \n          (\n          )\n          \n        \n      \n  \n  \ninlinevirtual"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HttpPolicy() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Http::Policies::HttpPolicy::HttpPolicy \n          (\n          )\n          \n        \n      \n  \n  \nprotecteddefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HttpPolicy() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Http::Policies::HttpPolicy::HttpPolicy \n          (\n          const HttpPolicy &amp;&#160;\n          other)\n          \n        \n      \n  \n  \nprotecteddefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'Other <code>HttpPolicy</code> to copy. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HttpPolicy() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Http::Policies::HttpPolicy::HttpPolicy \n          (\n          HttpPolicy &amp;&amp;&#160;\n          other)\n          \n        \n      \n  \n  \nprotecteddefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'Other <code>HttpPolicy</code> to move. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Clone()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual std::unique_ptr&lt; HttpPolicy &gt; Azure::Core::Http::Policies::HttpPolicy::Clone \n          (\n          )\n           const\n        \n      \n  \n  \npure virtual"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A clone of this <code>HttpPolicy</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "HttpPolicy &amp; Azure::Core::Http::Policies::HttpPolicy::operator= \n          (\n          const HttpPolicy &amp;&#160;\n          other)\n          \n        \n      \n  \n  \nprotecteddefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'Other <code>HttpPolicy</code> to copy. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A reference to this <code>HttpPolicy</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Send()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual std::unique_ptr&lt; RawResponse &gt; Azure::Core::Http::Policies::HttpPolicy::Send \n          (\n          Request &amp;&#160;\n          request, \n        \n        \n          \n          \n          NextHttpPolicy&#160;\n          nextPolicy, \n        \n        \n          \n          \n          Context const &amp;&#160;\n          context&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \npure virtual"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: request
+    summary: 'An HTTP request being sent. '
+  - name: nextPolicy
+    summary: 'The next HTTP to invoke after this policy has been applied. '
+  - name: context
+    summary: A context to control the request lifetime.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'An HTTP response after this policy, and all subsequent HTTP policies in the stack sequence of policies have been applied. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/core/http/policies/policy.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

@@ -1,0 +1,257 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-blobs
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageBlobsModelsBlobContainerProperties
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#acc7441a549d6aa88525c97e6a0d836cc">Azure::Storage::Blobs::BlobContainerClient::GetProperties</a>.
+- content: ''
+- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Attributes
+- content: >-
+    Core::CaseInsensitiveMap&#160;Metadata
+
+
+    Azure::ETag&#160;ETag
+
+
+    DateTime&#160;LastModified
+
+
+    Nullable&lt; LeaseDurationType &gt;&#160;LeaseDuration
+
+
+    Models::LeaseState&#160;LeaseState
+
+
+    Models::LeaseStatus&#160;LeaseStatus
+
+
+    PublicAccessType&#160;AccessType = PublicAccessType::None
+
+
+    bool&#160;HasImmutabilityPolicy = bool()
+
+
+    bool&#160;HasLegalHold = bool()
+
+
+    std::string&#160;DefaultEncryptionScope = &quot;$account-encryption-key&quot;
+
+
+    bool&#160;PreventEncryptionScopeOverride = false
+
+
+    bool&#160;HasImmutableStorageWithVersioning = false
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AccessType'
+- content: ''
+- content: ''
+- content: ''
+- content: PublicAccessType Azure::Storage::Blobs::Models::BlobContainerProperties::AccessType = PublicAccessType::None
+- content: ''
+- content: ''
+- content: Indicated whether data in the container may be accessed publicly and the level of access.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DefaultEncryptionScope'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Storage::Blobs::Models::BlobContainerProperties::DefaultEncryptionScope = &quot;$account-encryption-key&quot;
+- content: ''
+- content: ''
+- content: The default encryption scope for the container.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ETag'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::ETag Azure::Storage::Blobs::Models::BlobContainerProperties::ETag
+- content: ''
+- content: ''
+- content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HasImmutabilityPolicy'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Storage::Blobs::Models::BlobContainerProperties::HasImmutabilityPolicy = bool()
+- content: ''
+- content: ''
+- content: Indicates whether the container has an immutability policy set on it.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HasImmutableStorageWithVersioning'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Storage::Blobs::Models::BlobContainerProperties::HasImmutableStorageWithVersioning = false
+- content: ''
+- content: ''
+- content: Indicates whether version level worm is enabled on a container.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HasLegalHold'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Storage::Blobs::Models::BlobContainerProperties::HasLegalHold = bool()
+- content: ''
+- content: ''
+- content: Indicates whether the container has a legal hold.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LastModified'
+- content: ''
+- content: ''
+- content: ''
+- content: DateTime Azure::Storage::Blobs::Models::BlobContainerProperties::LastModified
+- content: ''
+- content: ''
+- content: Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LeaseDuration'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;LeaseDurationType&gt; Azure::Storage::Blobs::Models::BlobContainerProperties::LeaseDuration
+- content: ''
+- content: ''
+- content: When a blob is leased, specifies whether the lease is of infinite or fixed duration.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LeaseState'
+- content: ''
+- content: ''
+- content: ''
+- content: Models::LeaseState Azure::Storage::Blobs::Models::BlobContainerProperties::LeaseState
+- content: ''
+- content: ''
+- content: Lease state of the blob.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LeaseStatus'
+- content: ''
+- content: ''
+- content: ''
+- content: Models::LeaseStatus Azure::Storage::Blobs::Models::BlobContainerProperties::LeaseStatus
+- content: ''
+- content: ''
+- content: The current lease status of the blob.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Metadata'
+- content: ''
+- content: ''
+- content: ''
+- content: Core::CaseInsensitiveMap Azure::Storage::Blobs::Models::BlobContainerProperties::Metadata
+- content: ''
+- content: ''
+- content: A set of name-value pair associated with this blob container.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PreventEncryptionScopeOverride'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Storage::Blobs::Models::BlobContainerProperties::PreventEncryptionScopeOverride = false
+- content: ''
+- content: ''
+- content: Indicates whether the container's default encryption scope can be overriden.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/storage/blobs/rest_client.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

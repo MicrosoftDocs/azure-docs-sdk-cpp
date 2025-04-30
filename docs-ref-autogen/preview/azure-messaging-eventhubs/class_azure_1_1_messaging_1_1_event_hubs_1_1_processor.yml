@@ -1,0 +1,245 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-messaging-eventhubs
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureMessagingEventHubsProcessor
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> uses a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> and <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> to provide automatic load balancing between multiple <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> instances, even in separate processes or on separate machines.
+- content: ''
+- content: <code>#include &lt;<a href="processor_8hpp_source.html">processor.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;Processor (std::shared_ptr&lt; ConsumerClient &gt; consumerClient, std::shared_ptr&lt; CheckpointStore &gt; checkpointStore, ProcessorOptions const &amp;options={})Construct a new Processor object.  
+
+
+
+    &#160;Processor (Processor const &amp;other)=delete
+
+
+    Processor &amp;&#160;operator= (Processor const &amp;other)=delete
+
+
+    std::shared_ptr&lt; ProcessorPartitionClient &gt;&#160;NextPartitionClient (Azure::Core::Context const &amp;context={})
+
+
+    void&#160;&#160;Run (Core::Context const &amp;context)Executes the processor.  
+
+
+
+    void&#160;&#160;Start (Azure::Core::Context const &amp;context={})Starts the processor.  
+
+
+
+    void&#160;&#160;Stop ()Stops a running processor.  
+
+
+
+    void&#160;&#160;Close (Core::Context const &amp;context={})Closes the processor and cancels any current operations.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Processor() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Messaging::EventHubs::Processor::Processor \n          (\n          std::shared_ptr&lt; ConsumerClient &gt;&#160;\n          consumerClient, \n        \n        \n          \n          \n          std::shared_ptr&lt; CheckpointStore &gt;&#160;\n          checkpointStore, \n        \n        \n          \n          \n          ProcessorOptions const &amp;&#160;\n          options = {}&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: consumerClient
+    summary: 'A [<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html" title="The ConsumerClient class is a high level class used to consume events from an Event Hub.">ConsumerClient</a>] that is used to receive events from the Event Hub. '
+  - name: checkpointStore
+    summary: 'A [<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html" title="CheckpointStore is used by multiple consumers to coordinate progress and ownership for partitions.">CheckpointStore</a>] that is used to load and update checkpoints. '
+  - name: options
+    summary: 'Optional configuration for the processor. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Processor() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Messaging::EventHubs::Processor::Processor \n          (\n          Processor const &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndelete"
+- content: ''
+- content: ''
+- content: Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a>.
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Close()'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Azure::Messaging::EventHubs::Processor::Close \n          (\n          Core::Context const &amp;&#160;\n          context = {})\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;NextPartitionClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    std::shared_ptr&lt; ProcessorPartitionClient &gt; Azure::Messaging::EventHubs::Processor::NextPartitionClient 
+              (
+              Azure::Core::Context const &amp;&#160;
+              context = {})
+- content: ''
+- content: ''
+- content: Move to the next partition client
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: The context to control whether this function is canceled or not.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A shared pointer to the next partition client.
+- content: ''
+- content: NextPartitionClient will retrieve the next <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor_partition_client.html">ProcessorPartitionClient</a> if one is acquired or will block until a new one arrives, or the processor is stopped.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Processor &amp; Azure::Messaging::EventHubs::Processor::operator= \n          (\n          Processor const &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndelete"
+- content: ''
+- content: ''
+- content: Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> to another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Run()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Messaging::EventHubs::Processor::Run 
+              (
+              Core::Context const &amp;&#160;
+              context)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: The context to control the request lifetime.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Start()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Messaging::EventHubs::Processor::Start 
+              (
+              Azure::Core::Context const &amp;&#160;
+              context = {})
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: The context to control the request lifetime of the processor. Cancelling this context will stop the processor from running.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Stop()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Messaging::EventHubs::Processor::Stop 
+              (
+              )
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/messaging/eventhubs/processor.hpp
+
+    src/processor.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

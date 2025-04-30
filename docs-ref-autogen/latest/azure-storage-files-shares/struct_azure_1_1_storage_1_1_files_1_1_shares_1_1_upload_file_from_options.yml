@@ -1,0 +1,216 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-shares
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesSharesUploadFileFromOptions
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a5cbf08a5c5517eecd68057fdcde7f9b0">Azure::Storage::Files::Shares::ShareFileClient::UploadFrom</a>.
+- content: ''
+- content: <code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
+- content: ''
+- section: Public Attributes
+- content: >-
+    Models::FileHttpHeaders&#160;HttpHeaders
+
+
+    Storage::Metadata&#160;Metadata
+
+
+    Models::FileSmbProperties&#160;SmbProperties
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;FilePermission
+
+
+    Nullable&lt; Models::FilePermissionFormat &gt;&#160;FilePermissionFormat
+
+
+    Models::FilePosixProperties&#160;PosixProperties
+
+
+
+    struct {&#160;
+
+
+    &#160;&#160;&#160;int64_t&#160;&#160;&#160;SingleUploadThreshold = 4 * 1024 * 1024&#160;
+
+
+    &#160;&#160;&#160;int64_t&#160;&#160;&#160;ChunkSize = 4 * 1024 * 1024&#160;
+
+
+    &#160;&#160;&#160;int32_t&#160;&#160;&#160;Concurrency = 5&#160;
+
+
+    }&#160;&#160;TransferOptions&#160;Options for parallel transfer.
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ChunkSize'
+- content: ''
+- content: ''
+- content: ''
+- content: int64_t Azure::Storage::Files::Shares::UploadFileFromOptions::ChunkSize = 4 * 1024 * 1024
+- content: ''
+- content: ''
+- content: The maximum number of bytes in a single request.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Concurrency'
+- content: ''
+- content: ''
+- content: ''
+- content: int32_t Azure::Storage::Files::Shares::UploadFileFromOptions::Concurrency = 5
+- content: ''
+- content: ''
+- content: The maximum number of threads that may be used in a parallel transfer.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;FilePermission'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::UploadFileFromOptions::FilePermission
+- content: ''
+- content: ''
+- content: "If specified the permission (security descriptor) shall be set for the directory. This option can be used if Permission size is &lt;= 8KB, else SmbProperties.PermissionKey shall be used. Default value: 'inherit'. If SDDL is specified as input, it must have owner, group and dacl."
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;FilePermissionFormat'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;Models::FilePermissionFormat&gt; Azure::Storage::Files::Shares::UploadFileFromOptions::FilePermissionFormat
+- content: ''
+- content: ''
+- content: Optional. Available for version 2024-11-04 and later. Specifies the format in which the permission is returned.If FilePermissionFormat is unspecified or explicitly set to SDDL format, the permission will be returned in SDDL format.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HttpHeaders'
+- content: ''
+- content: ''
+- content: ''
+- content: Models::FileHttpHeaders Azure::Storage::Files::Shares::UploadFileFromOptions::HttpHeaders
+- content: ''
+- content: ''
+- content: The standard HTTP header system properties to set.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Metadata'
+- content: ''
+- content: ''
+- content: ''
+- content: Storage::Metadata Azure::Storage::Files::Shares::UploadFileFromOptions::Metadata
+- content: ''
+- content: ''
+- content: Name-value pairs associated with the file as metadata.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PosixProperties'
+- content: ''
+- content: ''
+- content: ''
+- content: Models::FilePosixProperties Azure::Storage::Files::Shares::UploadFileFromOptions::PosixProperties
+- content: ''
+- content: ''
+- content: The NFS related properties for the file.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SingleUploadThreshold'
+- content: ''
+- content: ''
+- content: ''
+- content: int64_t Azure::Storage::Files::Shares::UploadFileFromOptions::SingleUploadThreshold = 4 * 1024 * 1024
+- content: ''
+- content: ''
+- content: File smaller than this will be uploaded with a single upload operation. This value cannot be larger than 4 MiB.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SmbProperties'
+- content: ''
+- content: ''
+- content: ''
+- content: Models::FileSmbProperties Azure::Storage::Files::Shares::UploadFileFromOptions::SmbProperties
+- content: ''
+- content: ''
+- content: SMB properties to set for the destination file.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/storage/files/shares/share_options.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

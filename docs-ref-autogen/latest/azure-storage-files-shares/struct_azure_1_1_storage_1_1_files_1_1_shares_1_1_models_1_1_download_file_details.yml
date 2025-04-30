@@ -1,0 +1,305 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-shares
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesSharesModelsDownloadFileDetails
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Detailed information of the downloaded file.
+- content: ''
+- content: <code>#include &lt;<a href="share__responses_8hpp_source.html">share_responses.hpp</a>&gt;</code>
+- content: ''
+- section: Public Attributes
+- content: >-
+    Azure::ETag&#160;ETag
+
+
+    DateTime&#160;LastModified
+
+
+    Core::CaseInsensitiveMap&#160;Metadata
+
+
+    Nullable&lt; std::string &gt;&#160;CopyId
+
+
+    Nullable&lt; std::string &gt;&#160;CopySource
+
+
+    Nullable&lt; Models::CopyStatus &gt;&#160;CopyStatus
+
+
+    Nullable&lt; std::string &gt;&#160;CopyStatusDescription
+
+
+    Nullable&lt; std::string &gt;&#160;CopyProgress
+
+
+    Nullable&lt; DateTime &gt;&#160;CopyCompletedOn
+
+
+    bool&#160;IsServerEncrypted = bool()
+
+
+    FileSmbProperties&#160;SmbProperties
+
+
+    Nullable&lt; LeaseDurationType &gt;&#160;LeaseDuration
+
+
+    Nullable&lt; Models::LeaseState &gt;&#160;LeaseState
+
+
+    Nullable&lt; Models::LeaseStatus &gt;&#160;LeaseStatus
+
+
+    FilePosixProperties&#160;PosixProperties
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CopyCompletedOn'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;DateTime&gt; Azure::Storage::Files::Shares::Models::DownloadFileDetails::CopyCompletedOn
+- content: ''
+- content: ''
+- content: Conclusion time of the last attempted Copy File operation where this file was the destination file. This value can specify the time of a completed, aborted, or failed copy attempt. This header does not appear if a copy is pending, if this file has never been the destination in a Copy File operation, or if this file has been modified after a concluded Copy File operation using Set File Properties, Put File, or Put Block List.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CopyId'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::Models::DownloadFileDetails::CopyId
+- content: ''
+- content: ''
+- content: String identifier for this copy operation. Use with Get File Properties to check the status of this copy operation, or pass to Abort Copy File to abort a pending copy.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CopyProgress'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::Models::DownloadFileDetails::CopyProgress
+- content: ''
+- content: ''
+- content: Contains the number of bytes copied and the total bytes in the source in the last attempted Copy File operation where this file was the destination file. Can show between 0 and Content-Length bytes copied. This header does not appear if this file has never been the destination in a Copy File operation, or if this file has been modified after a concluded Copy File operation using Set File Properties, Put File, or Put Block List.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CopySource'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::Models::DownloadFileDetails::CopySource
+- content: ''
+- content: ''
+- content: URL up to 2 KB in length that specifies the source file or file used in the last attempted Copy File operation where this file was the destination file. This header does not appear if this file has never been the destination in a Copy File operation, or if this file has been modified after a concluded Copy File operation using Set File Properties, Put File, or Put Block List.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CopyStatus'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;Models::CopyStatus&gt; Azure::Storage::Files::Shares::Models::DownloadFileDetails::CopyStatus
+- content: ''
+- content: ''
+- content: Status of a copy operation.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CopyStatusDescription'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::Models::DownloadFileDetails::CopyStatusDescription
+- content: ''
+- content: ''
+- content: Only appears when x-ms-copy-status is failed or pending. Describes the cause of the last fatal or non-fatal copy operation failure. This header does not appear if this file has never been the destination in a Copy File operation, or if this file has been modified after a concluded Copy File operation using Set File Properties, Put File, or Put Block List.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ETag'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::ETag Azure::Storage::Files::Shares::Models::DownloadFileDetails::ETag
+- content: ''
+- content: ''
+- content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;IsServerEncrypted'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Storage::Files::Shares::Models::DownloadFileDetails::IsServerEncrypted = bool()
+- content: ''
+- content: ''
+- content: True if the file data and metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the file is unencrypted, or if only parts of the file/application metadata are encrypted).
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LastModified'
+- content: ''
+- content: ''
+- content: ''
+- content: DateTime Azure::Storage::Files::Shares::Models::DownloadFileDetails::LastModified
+- content: ''
+- content: ''
+- content: Returns the date and time the file was last modified. Any operation that modifies the file, including an update of the file's metadata or properties, changes the last-modified time of the file.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LeaseDuration'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;LeaseDurationType&gt; Azure::Storage::Files::Shares::Models::DownloadFileDetails::LeaseDuration
+- content: ''
+- content: ''
+- content: When a share is leased, specifies whether the lease is of infinite or fixed duration.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LeaseState'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;Models::LeaseState&gt; Azure::Storage::Files::Shares::Models::DownloadFileDetails::LeaseState
+- content: ''
+- content: ''
+- content: Lease state of the share.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;LeaseStatus'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;Models::LeaseStatus&gt; Azure::Storage::Files::Shares::Models::DownloadFileDetails::LeaseStatus
+- content: ''
+- content: ''
+- content: The current lease status of the share.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Metadata'
+- content: ''
+- content: ''
+- content: ''
+- content: Core::CaseInsensitiveMap Azure::Storage::Files::Shares::Models::DownloadFileDetails::Metadata
+- content: ''
+- content: ''
+- content: A set of name-value pairs associated with the share or file.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PosixProperties'
+- content: ''
+- content: ''
+- content: ''
+- content: FilePosixProperties Azure::Storage::Files::Shares::Models::DownloadFileDetails::PosixProperties
+- content: ''
+- content: ''
+- content: The NFS related properties for the file.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SmbProperties'
+- content: ''
+- content: ''
+- content: ''
+- content: FileSmbProperties Azure::Storage::Files::Shares::Models::DownloadFileDetails::SmbProperties
+- content: ''
+- content: ''
+- content: The SMB related properties for the file.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/storage/files/shares/share_responses.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

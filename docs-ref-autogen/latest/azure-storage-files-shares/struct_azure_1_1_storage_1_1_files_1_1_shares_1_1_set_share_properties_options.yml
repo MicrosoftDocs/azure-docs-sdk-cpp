@@ -1,0 +1,209 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-shares
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesSharesSetSharePropertiesOptions
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html#a1df1c9bebaf176be215e8aec6c16e849">Azure::Storage::Files::Shares::ShareClient::SetProperties</a>.
+- content: ''
+- content: <code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
+- content: ''
+- section: Public Attributes
+- content: >-
+    Azure::Nullable&lt; Models::AccessTier &gt;&#160;AccessTier
+
+
+    Azure::Nullable&lt; int64_t &gt;&#160;ShareQuotaInGiB
+
+
+    Azure::Nullable&lt; Models::ShareRootSquash &gt;&#160;RootSquash
+
+
+    Nullable&lt; bool &gt;&#160;EnableSnapshotVirtualDirectoryAccess
+
+
+    Nullable&lt; bool &gt;&#160;EnablePaidBursting
+
+
+    Nullable&lt; std::int64_t &gt;&#160;PaidBurstingMaxIops
+
+
+    Nullable&lt; std::int64_t &gt;&#160;PaidBurstingMaxBandwidthMibps
+
+
+    Nullable&lt; std::int64_t &gt;&#160;ProvisionedMaxIops
+
+
+    Nullable&lt; std::int64_t &gt;&#160;ProvisionedMaxBandwidthMibps
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AccessTier'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Models::AccessTier&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::AccessTier
+- content: ''
+- content: ''
+- content: Specifies the access tier of the share. This is only valid for standard file account and the value can only be one of <code>Hot</code>, <code>Cool</code> or <code>TransactionOptimized</code>
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EnablePaidBursting'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::EnablePaidBursting
+- content: ''
+- content: ''
+- content: Optional. Boolean. Version 2023-11-03 and newer. Default if not specified is false. This property enables paid bursting.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;EnableSnapshotVirtualDirectoryAccess'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::EnableSnapshotVirtualDirectoryAccess
+- content: ''
+- content: ''
+- content: Version 2023-08-03 and newer. Specifies whether the snapshot virtual directory should be accessible at the root of share mount point when NFS is enabled. This header is only returned for shares, not for snapshots.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PaidBurstingMaxBandwidthMibps'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::PaidBurstingMaxBandwidthMibps
+- content: ''
+- content: ''
+- content: Optional. Integer. Version 2023-11-03 and newer. Default if not specified is the maximum throughput the file share can support. Current maximum for a file share is 10,340 MiB/sec.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PaidBurstingMaxIops'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::PaidBurstingMaxIops
+- content: ''
+- content: ''
+- content: Optional. Integer. Version 2023-11-03 and newer. Default if not specified is the maximum IOPS the file share can support. Current maximum for a file share is 102,400 IOPS.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ProvisionedMaxBandwidthMibps'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::ProvisionedMaxBandwidthMibps
+- content: ''
+- content: ''
+- content: Optional. Boolean. Version 2025-01-05 and newer. Sets the max provisioned brandwith for a share. For SSD, min bandwidth is 125 MiB/sec and max is 10,340 MiB/sec. For HDD, min bandwidth is 60 MiB/sec and max is 5,120 MiB/sec.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ProvisionedMaxIops'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::ProvisionedMaxIops
+- content: ''
+- content: ''
+- content: Optional. Boolean. Version 2025-01-05 and newer. Sets the max provisioned IOPs for a share. For SSD, min IOPs is 3,000 and max is 100,000. For HDD, min IOPs is 500 and max is 50,000.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RootSquash'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Models::ShareRootSquash&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::RootSquash
+- content: ''
+- content: ''
+- content: Specifies the root squashing behavior on the share when NFS is enabled. If it's not specified, the default is NoRootSquash.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareQuotaInGiB'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::ShareQuotaInGiB
+- content: ''
+- content: ''
+- content: Specifies the maximum size of the share, in gigabytes.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/storage/files/shares/share_options.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

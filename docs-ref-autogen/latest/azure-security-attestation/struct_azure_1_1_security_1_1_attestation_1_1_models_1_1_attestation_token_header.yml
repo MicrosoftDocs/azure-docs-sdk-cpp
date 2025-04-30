@@ -1,0 +1,236 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-attestation
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityAttestationModelsAttestationTokenHeader
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: An <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header.html">AttestationTokenHeader</a> represents common properties in an the RFC 7515 JSON Web Token.
+- content: ''
+- content: <code>#include &lt;<a href="attestation__client__models_8hpp_source.html">attestation_client_models.hpp</a>&gt;</code>
+- content: ''
+- section: Public Attributes
+- content: >-
+    Azure::Nullable&lt; std::string &gt;&#160;Algorithm
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;KeyIdThe "kid" token header property See RFC 7515 section 4.1.4 
+
+
+
+    Azure::Nullable&lt; AttestationSigner &gt;&#160;Key
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;ContentType
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;KeyURL
+
+
+    Azure::Nullable&lt; std::vector&lt; std::string &gt; &gt;&#160;Critical
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;X509Url
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;Type
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;CertificateThumbprint
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;CertificateSha256Thumbprint
+
+
+    Azure::Nullable&lt; std::vector&lt; std::string &gt; &gt;&#160;X509CertificateChain
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;Algorithm'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::Algorithm
+- content: ''
+- content: ''
+- content: The "" alg " token header property. See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.1">RFC 7515 section 4.1.1</a>
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;CertificateSha256Thumbprint'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::CertificateSha256Thumbprint
+- content: ''
+- content: ''
+- content: Returns the SHA-256 thumbprint of the leaf certificate in the getCertificateChain.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.8">RFC 7515 section 4.1.8</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;CertificateThumbprint'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::CertificateThumbprint
+- content: ''
+- content: ''
+- content: Returns the SHA-1 thumbprint of the leaf certificate in the getCertificateChain.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.7">RFC 7515 section 4.1.7</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;ContentType'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::ContentType
+- content: ''
+- content: ''
+- content: The "cty" header property of the JWS.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.10">RFC 7515 section 4.1.10</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;Critical'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::vector&lt;std::string&gt; &gt; Azure::Security::Attestation::Models::AttestationTokenHeader::Critical
+- content: ''
+- content: ''
+- content: Returns the "crit" header property from the JSON Web Signature object.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.11">RFC 7515 section 4.1.11</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;Key'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;AttestationSigner&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::Key
+- content: ''
+- content: ''
+- content: Returns the signer for this token if the caller provided a JSON Web Key.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.3">RFC 7515 section 4.1.3</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;KeyURL'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::KeyURL
+- content: ''
+- content: ''
+- content: A URI which can be used to retrieve a JSON Web Key which can verify the signature on this token.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.5">RFC 7515 section 4.1.5</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;Type'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::Type
+- content: ''
+- content: ''
+- content: Returns the "typ" header property from the JWS.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.9">RFC 7515 section 4.1.9</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;X509CertificateChain'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::vector&lt;std::string&gt; &gt; Azure::Security::Attestation::Models::AttestationTokenHeader::X509CertificateChain
+- content: ''
+- content: ''
+- content: Returns the signing certificate chain as an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_signer.html">AttestationSigner</a>.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.6">RFC 7515 section 4.1.6</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;X509Url'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::X509Url
+- content: ''
+- content: ''
+- content: Returns a URI which can be used to retrieve an X.509 certificate which can verify the signature on this token.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.5">RFC 7515 section 4.1.5</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/attestation/attestation_client_models.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by &#160;
+- content: ''
+- content: 1.9.1
+- content: ''
+- content: ''
+- content: ''

@@ -1,0 +1,278 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core-amqp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreAmqpModelsMessageHeader
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    The message header section carries standard delivery details about the transfer of a message through the AMQP network.  
+     <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="amqp__header_8hpp_source.html">amqp_header.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;MessageHeader ()=defaultDefault constructor. 
+
+
+
+
+    &#160;&#160;~MessageHeader ()=defaultDestructor. 
+
+
+
+
+    &#160;&#160;MessageHeader (MessageHeader &amp;&amp;other)=defaultMove constructor. 
+
+
+
+
+    MessageHeader &amp;&#160;&#160;operator= (MessageHeader &amp;&amp;other)=defaultMove assignment operator. 
+
+
+
+
+    &#160;&#160;MessageHeader (MessageHeader const &amp;other)=defaultCopy constructor. 
+
+
+
+
+    MessageHeader &amp;&#160;&#160;operator= (MessageHeader const &amp;other)=defaultCopy assignment operator. 
+
+
+
+    bool&#160;&#160;operator== (MessageHeader const &amp;that) const noexceptCompare two AMQP Message Headers for equality.  
+
+
+
+    bool&#160;&#160;ShouldSerialize () const noexceptReturns true if this MessageHeader should be serialized into an AMQP message.
+- section: Static Public Member Functions
+- content: >-
+    static size_t&#160;&#160;GetSerializedSize (MessageHeader const &amp;messageHeader)Returns the serialized size of this MessageHeader.  
+
+
+
+    static std::vector&lt; uint8_t &gt;&#160;&#160;Serialize (MessageHeader const &amp;messageHeader)Serializes this MessageHeader into a vector of bytes.  
+
+
+
+    static MessageHeader&#160;&#160;Deserialize (std::uint8_t const *data, size_t size)Deserializes a vector of bytes into a MessageHeader.
+- section: Public Attributes
+- content: >-
+    bool&#160;&#160;Durable {false}True if the message is considered "durable".  
+
+
+
+    std::uint8_t&#160;&#160;Priority {4}Priority of the message.  
+
+
+
+    Nullable&lt; std::chrono::milliseconds &gt;&#160;&#160;TimeToLiveIf present, defines the time to live for the message.  
+
+
+
+    bool&#160;&#160;IsFirstAcquirer {false}If true, the message has not been acquired by any other link.  
+
+
+
+    std::uint32_t&#160;&#160;DeliveryCount {0}The number of unsuccessful previous attempts to deliver this message.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Deserialize()'
+- content: ''
+- content: ''
+- content: ''
+- content: "MessageHeader Azure::Core::Amqp::Models::MessageHeader::Deserialize \n          (\n          std::uint8_t const *&#160;\n          data, \n        \n        \n          \n          \n          size_t&#160;\n          size&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetSerializedSize()'
+- content: ''
+- content: ''
+- content: ''
+- content: "size_t Azure::Core::Amqp::Models::MessageHeader::GetSerializedSize \n          (\n          MessageHeader const &amp;&#160;\n          messageHeader)\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator==()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::Amqp::Models::MessageHeader::operator== \n          (\n          MessageHeader const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \nnoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- the AMQP Message Header to compare to. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'true if the two headers are equal, false otherwise. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Serialize()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::vector&lt; uint8_t &gt; Azure::Core::Amqp::Models::MessageHeader::Serialize \n          (\n          MessageHeader const &amp;&#160;\n          messageHeader)\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A vector of bytes representing this <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html" title="The message header section carries standard delivery details about the transfer of a message through ...">MessageHeader</a>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShouldSerialize()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::Amqp::Models::MessageHeader::ShouldSerialize \n          (\n          )\n           const\n        \n      \n  \n  \nnoexcept"
+- content: ''
+- content: ''
+- content: Message headers can be serialize if their values are different from the defined default values as specified in the AMQP spec.
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeliveryCount'
+- content: ''
+- content: ''
+- content: ''
+- content: std::uint32_t Azure::Core::Amqp::Models::MessageHeader::DeliveryCount {0}
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Durable'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Core::Amqp::Models::MessageHeader::Durable {false}
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;IsFirstAcquirer'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Core::Amqp::Models::MessageHeader::IsFirstAcquirer {false}
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Priority'
+- content: ''
+- content: ''
+- content: ''
+- content: std::uint8_t Azure::Core::Amqp::Models::MessageHeader::Priority {4}
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;TimeToLive'
+- content: ''
+- content: ''
+- content: ''
+- content: Nullable&lt;std::chrono::milliseconds&gt; Azure::Core::Amqp::Models::MessageHeader::TimeToLive
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following files:'
+- content: >-
+    inc/azure/core/amqp/models/amqp_header.hpp
+
+    src/models/amqp_header.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

@@ -1,0 +1,297 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-shares
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesSharesShareLeaseClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html">ShareLeaseClient</a> allows you to manipulate Azure Storage leases on shares and files.
+- content: ''
+- content: <code>#include &lt;<a href="share__lease__client_8hpp_source.html">share_lease_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;ShareLeaseClient (ShareFileClient fileClient, std::string leaseId)Initializes a new instance of the ShareLeaseClient.  
+
+
+
+    &#160;&#160;ShareLeaseClient (ShareClient shareClient, std::string leaseId)Initializes a new instance of the ShareLeaseClient.  
+
+
+
+    const std::string &amp;&#160;&#160;GetLeaseId ()Get lease ID of this lease client.  
+
+
+
+    Azure::Response&lt; Models::AcquireLeaseResult &gt;&#160;&#160;Acquire (std::chrono::seconds duration, const AcquireLeaseOptions &amp;options=AcquireLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Acquires a lease on the file or share.  
+
+
+
+    Azure::Response&lt; Models::RenewLeaseResult &gt;&#160;&#160;Renew (const RenewLeaseOptions &amp;options=RenewLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Renews the share's previously-acquired lease.  
+
+
+
+    Azure::Response&lt; Models::ReleaseLeaseResult &gt;&#160;&#160;Release (const ReleaseLeaseOptions &amp;options=ReleaseLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Releases the file or share's previously-acquired lease.  
+
+
+
+    Azure::Response&lt; Models::ChangeLeaseResult &gt;&#160;&#160;Change (const std::string &amp;proposedLeaseId, const ChangeLeaseOptions &amp;options=ChangeLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Changes the lease of an active lease.  
+
+
+
+    Azure::Response&lt; Models::BreakLeaseResult &gt;&#160;&#160;Break (const BreakLeaseOptions &amp;options=BreakLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Breaks the previously-acquired lease.
+- section: Static Public Member Functions
+- content: static std::string&#160;&#160;CreateUniqueLeaseId ()Gets a unique lease ID.
+- section: Static Public Attributes
+- content: static AZ_STORAGE_FILES_SHARES_DLLEXPORT const std::chrono::seconds&#160;&#160;InfiniteLeaseDurationA value representing infinite lease duration.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareLeaseClient() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareLeaseClient::ShareLeaseClient \n          (\n          ShareFileClient&#160;\n          fileClient, \n        \n        \n          \n          \n          std::string&#160;\n          leaseId&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileClient
+    summary: 'A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> representing the file being leased. '
+  - name: leaseId
+    summary: 'A lease ID. This is not required for break operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareLeaseClient() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareLeaseClient::ShareLeaseClient \n          (\n          ShareClient&#160;\n          shareClient, \n        \n        \n          \n          \n          std::string&#160;\n          leaseId&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareClient
+    summary: 'A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> representing the share being leased. '
+  - name: leaseId
+    summary: 'A lease ID. This is not required for break operation. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Acquire()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::AcquireLeaseResult &gt; Azure::Storage::Files::Shares::ShareLeaseClient::Acquire \n          (\n          std::chrono::seconds&#160;\n          duration, \n        \n        \n          \n          \n          const AcquireLeaseOptions &amp;&#160;\n          options = AcquireLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: duration
+    summary: 'Specifies the duration of the lease, in seconds, or InfiniteLeaseDuration for a lease that never expires. A non-infinite lease can be between 15 and 60 seconds. A lease duration cannot be changed using renew or change. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'An AcquireLeaseResult describing the lease. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Break()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::BreakLeaseResult &gt; Azure::Storage::Files::Shares::ShareLeaseClient::Break \n          (\n          const BreakLeaseOptions &amp;&#160;\n          options = BreakLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A BreakLeaseResult describing the broken lease. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Change()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ChangeLeaseResult &gt; Azure::Storage::Files::Shares::ShareLeaseClient::Change \n          (\n          const std::string &amp;&#160;\n          proposedLeaseId, \n        \n        \n          \n          \n          const ChangeLeaseOptions &amp;&#160;\n          options = ChangeLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: proposedLeaseId
+    summary: 'Proposed lease ID, in a GUID string format. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A ChangeLeaseResult describing the updated lease. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateUniqueLeaseId()'
+- content: ''
+- content: ''
+- content: ''
+- content: "static std::string Azure::Storage::Files::Shares::ShareLeaseClient::CreateUniqueLeaseId \n          (\n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A unique lease ID. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetLeaseId()'
+- content: ''
+- content: ''
+- content: ''
+- content: "const std::string &amp; Azure::Storage::Files::Shares::ShareLeaseClient::GetLeaseId \n          (\n          )\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Lease ID of this lease client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Release()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ReleaseLeaseResult &gt; Azure::Storage::Files::Shares::ShareLeaseClient::Release \n          (\n          const ReleaseLeaseOptions &amp;&#160;\n          options = ReleaseLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A ReleaseLeaseResult describing the updated share or file. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Renew()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::RenewLeaseResult &gt; Azure::Storage::Files::Shares::ShareLeaseClient::Renew \n          (\n          const RenewLeaseOptions &amp;&#160;\n          options = RenewLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A RenewLeaseResult describing the lease. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/storage/files/shares/share_lease_client.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

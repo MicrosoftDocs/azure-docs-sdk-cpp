@@ -1,0 +1,257 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core-amqp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreAmqpModelsAmqpComposite
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    An <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> represents a sequentially ordered list of values. The values of the composite may have different types.  
+     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Core::Amqp::Models::AmqpComposite:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;AmqpComposite ()Construct a new AmqpComposite object. 
+
+
+
+
+    &#160;&#160;AmqpComposite (AmqpValue const &amp;descriptor, std::initializer_list&lt; AmqpValue &gt; const &amp;values)Construct a new AmqpComposite object with an initializer list. 
+
+
+
+
+    &#160;&#160;AmqpComposite (const AmqpComposite &amp;other)=defaultConstruct a new AmqpComposite object from another. 
+
+
+
+    AmqpComposite &amp;&#160;&#160;operator= (const AmqpComposite &amp;other)=defaultCopy assignment operator.  
+
+
+
+    &#160;&#160;AmqpComposite (AmqpComposite &amp;&amp;other) noexcept=defaultMove constructor.  
+
+
+
+    AmqpComposite &amp;&#160;&#160;operator= (AmqpComposite &amp;&amp;other) noexcept=defaultMove assignment operator.  
+
+
+
+    &#160;&#160;AmqpComposite (AmqpValue const &amp;value)Construct a new AmqpComposite object from an existing uAMQP AMQP_VALUE item.  
+
+
+
+    bool&#160;&#160;operator== (AmqpComposite const &amp;that) constCompare this AmqpComposite value with another.  
+
+
+
+    bool&#160;&#160;operator!= (AmqpComposite const &amp;that) constCompare this AmqpComposite value with another.  
+
+
+
+    AmqpValue const &amp;&#160;&#160;GetDescriptor () constReturns the descriptor for this composite type.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: ''
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpComposite() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpComposite::AmqpComposite \n          (\n          AmqpComposite &amp;&amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefaultnoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'composite value to move. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpComposite() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpComposite::AmqpComposite 
+              (
+              AmqpValue const &amp;&#160;
+              value)
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: '- the AMQP array value to capture. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetDescriptor()'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpValue const  &amp; Azure::Core::Amqp::Models::AmqpComposite::GetDescriptor \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The descriptor for this composite type. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator!=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::Amqp::Models::AmqpComposite::operator!= \n          (\n          AmqpComposite const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> to compare with. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpComposite &amp; Azure::Core::Amqp::Models::AmqpComposite::operator= \n          (\n          AmqpComposite &amp;&amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefaultnoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'composite value to move. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'reference to this composite value. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpComposite &amp; Azure::Core::Amqp::Models::AmqpComposite::operator= \n          (\n          const AmqpComposite &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'composite value to copy. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'reference to this composite value. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator==()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::Amqp::Models::AmqpComposite::operator== \n          (\n          AmqpComposite const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> to compare with. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/amqp/models/amqp_value.hpp
+
+    src/models/amqp_value.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

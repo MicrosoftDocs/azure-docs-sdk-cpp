@@ -1,0 +1,239 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-keyvault-keys
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityKeyVaultKeysJsonWebKey
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Represents a JSON Web Key as defined in <a href="http://tools.ietf.org/html/rfc7517">http://tools.ietf.org/html/rfc7517</a>.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;JsonWebKey ()=defaultConstruct a new Json Web Key object.  
+
+
+
+    void&#160;&#160;SetKeyOperations (std::vector&lt; KeyOperation &gt; const &amp;keyOperations)Set the Key Operations object based on a list of operations.  
+
+
+
+    std::vector&lt; KeyOperation &gt; const &amp;&#160;&#160;KeyOperations () constGet the list of operations from the JsonWebKey.  
+
+
+
+
+    bool&#160;&#160;SupportsOperation (KeyOperation const &amp;operation) constReturns true if the key supports the desired key operation.
+- section: Public Attributes
+- content: >-
+    std::string&#160;&#160;IdThe Identifier of the key. This is not limited to a Url.  
+
+
+
+    KeyVaultKeyType&#160;&#160;KeyTypeThey type of the key.  
+
+
+
+    Azure::Nullable&lt; KeyCurveName &gt;&#160;&#160;CurveNameGets or sets the elliptic curve name.  
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;NThe RSA modulus. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;EThe RSA public exponent. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;DPThe RSA private key parameter. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;DQThe RSA private key parameter. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;QIThe RSA private key parameter. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;PThe RSA secret prime. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;QThe RSA secret prime. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;DThe RSA private exponent or EC private key. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;KGets the symmetric key. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;TGets the protected key used with "Bring Your Own Key". 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;XGets the X coordinate of the elliptic curve point. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;YGets the Y coordinate for the elliptic curve point.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;JsonWebKey()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Security::KeyVault::Keys::JsonWebKey::JsonWebKey \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeyOperations()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::vector&lt; KeyOperation &gt; const  &amp; Azure::Security::KeyVault::Keys::JsonWebKey::KeyOperations \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'std::vector<KeyOperation> const& '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetKeyOperations()'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Azure::Security::KeyVault::Keys::JsonWebKey::SetKeyOperations \n          (\n          std::vector&lt; KeyOperation &gt; const &amp;&#160;\n          keyOperations)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: keyOperations
+    summary: 'The list of key operations. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CurveName'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;KeyCurveName&gt; Azure::Security::KeyVault::Keys::JsonWebKey::CurveName
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Id'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Security::KeyVault::Keys::JsonWebKey::Id
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeyType'
+- content: ''
+- content: ''
+- content: ''
+- content: KeyVaultKeyType Azure::Security::KeyVault::Keys::JsonWebKey::KeyType
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/keyvault/keys/key_client_models.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

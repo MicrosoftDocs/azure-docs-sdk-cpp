@@ -1,0 +1,234 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreHttpCurlTransportOptions
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Set the libcurl connection options like a proxy and CA path.
+- content: ''
+- content: <code>#include &lt;<a href="curl__transport_8hpp_source.html">curl_transport.hpp</a>&gt;</code>
+- content: ''
+- section: Public Attributes
+- content: >-
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;ProxyThe string for the proxy is passed directly to the libcurl handle without any parsing.  
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;ProxyUsernameUsername to be used for proxy connections.  
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;ProxyPasswordPassword to be used for proxy connections.  
+
+
+
+    std::string&#160;&#160;CAInfoPath to a PEM encoded file containing the certificate authorities sent to libcurl handle directly.  
+
+
+
+    std::string&#160;&#160;CAPathPath to a directory which holds PEM encoded file, containing the certificate authorities sent to libcurl handle directly.  
+
+
+
+    bool&#160;&#160;HttpKeepAlive = trueAll HTTP requests will keep the connection channel open to the service.  
+
+
+
+    bool&#160;&#160;SslVerifyPeer = trueThis option determines whether libcurl verifies the authenticity of the peer's certificate.  
+
+
+
+    CurlTransportSslOptions&#160;&#160;SslOptionsDefine the SSL options for the libcurl handle.  
+
+
+
+    bool&#160;&#160;NoSignal = falseWhen true, libcurl will not use any functions that install signal handlers or any functions that cause signals to be sent to the process.  
+
+
+
+    std::chrono::milliseconds&#160;&#160;ConnectionTimeout = _detail::DefaultConnectionTimeoutContain the maximum time that you allow the connection phase to the server to take.  
+
+
+
+
+    bool&#160;&#160;EnableCurlTracing = falseIf set, integrates libcurl's internal tracing with Azure logging.
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CAInfo'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Core::Http::CurlTransportOptions::CAInfo
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CAPath'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Core::Http::CurlTransportOptions::CAPath
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ConnectionTimeout'
+- content: ''
+- content: ''
+- content: ''
+- content: std::chrono::milliseconds Azure::Core::Http::CurlTransportOptions::ConnectionTimeout = _detail::DefaultConnectionTimeout
+- content: ''
+- content: ''
+- content: This only limits the connection phase, it has no impact once it has connected.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HttpKeepAlive'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Core::Http::CurlTransportOptions::HttpKeepAlive = true
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;NoSignal'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Core::Http::CurlTransportOptions::NoSignal = false
+- content: ''
+- content: ''
+- content: This option is here to allow multi-threaded unix applications to still set/use all timeout options etc, without risking getting signals.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Proxy'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Core::Http::CurlTransportOptions::Proxy
+- content: ''
+- content: ''
+- content: libcurl will use system's environment proxy configuration (if it is set) when the <code>Proxy</code> setting is not set (is null). Setting an empty string will make libcurl to ignore any proxy settings from the system (use no proxy).
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ProxyPassword'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Core::Http::CurlTransportOptions::ProxyPassword
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ProxyUsername'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Core::Http::CurlTransportOptions::ProxyUsername
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SslOptions'
+- content: ''
+- content: ''
+- content: ''
+- content: CurlTransportSslOptions Azure::Core::Http::CurlTransportOptions::SslOptions
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SslVerifyPeer'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Core::Http::CurlTransportOptions::SslVerifyPeer = true
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/core/http/curl_transport.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

@@ -1,0 +1,190 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreIOMemoryBodyStream
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> providing data from an initialized memory buffer.
+- content: ''
+- content: <code>#include &lt;<a href="body__stream_8hpp_source.html">body_stream.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Core::IO::MemoryBodyStream:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;MemoryBodyStream (std::vector&lt; uint8_t &gt; const &amp;&amp;)=delete
+
+
+    &#160;&#160;MemoryBodyStream (std::vector&lt; uint8_t &gt; const &amp;buffer)Construct using vector of bytes.  
+
+
+
+    &#160;&#160;MemoryBodyStream (const uint8_t *data, size_t length)Construct using buffer pointer and its size.  
+
+
+
+    int64_t&#160;&#160;Length () const overrideGet the length of the data.  
+
+
+
+    void&#160;&#160;Rewind () overrideRewind seeks the current stream to the start of the buffer.  
+
+
+
+
+    virtual&#160;~BodyStream ()=default
+
+    &#160;Destructs BodyStream.  
+
+
+    virtual int64_t&#160;Length () const =0
+
+    &#160;Get the length of the data.  
+
+
+    virtual void&#160;Rewind ()
+
+    &#160;Resets the stream back to the beginning (for retries).  
+
+
+    size_t&#160;Read (uint8_t *buffer, size_t count, Azure::Core::Context const &amp;context=Azure::Core::Context())
+
+    &#160;Read portion of data into a buffer.  
+
+
+    size_t&#160;ReadToCount (uint8_t *buffer, size_t count, Azure::Core::Context const &amp;context=Azure::Core::Context())
+
+    &#160;Read Azure::Core::IO::BodyStream into a buffer until the buffer is filled, or until the stream is read to end.  
+
+
+    std::vector&lt; uint8_t &gt;&#160;ReadToEnd (Azure::Core::Context const &amp;context=Azure::Core::Context())
+
+    &#160;Read Azure::Core::IO::BodyStream until the stream is read to end, allocating memory for the entirety of contents.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;MemoryBodyStream() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::IO::MemoryBodyStream::MemoryBodyStream \n          (\n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          buffer)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: buffer
+    summary: 'Vector of bytes with the contents to provide the data from to the readers. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;MemoryBodyStream() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::IO::MemoryBodyStream::MemoryBodyStream \n          (\n          const uint8_t *&#160;\n          data, \n        \n        \n          \n          \n          size_t&#160;\n          length&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: data
+    summary: 'Pointer to a first byte of the buffer with the contents to provide the data from to the readers. '
+  - name: length
+    summary: 'Size of the buffer. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Length()'
+- content: ''
+- content: ''
+- content: ''
+- content: "int64_t Azure::Core::IO::MemoryBodyStream::Length \n          (\n          )\n           const\n        \n      \n  \n  \ninlineoverridevirtual"
+- content: ''
+- content: ''
+- content: ''
+- content: Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Rewind()'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Azure::Core::IO::MemoryBodyStream::Rewind \n          (\n          )\n          \n        \n      \n  \n  \ninlineoverridevirtual"
+- content: ''
+- content: ''
+- content: Reimplemented from <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a52c2ce02e8a7dec1f55276f664c7c8b6">Azure::Core::IO::BodyStream</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/io/body_stream.hpp
+
+    src/io/body_stream.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

@@ -1,0 +1,197 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-messaging-eventhubs-checkpointstore-blob
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureMessagingEventHubsBlobCheckpointStore
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html">BlobCheckpointStore</a> is an implementation of a CheckpointStore backed by Azure Blob Storage.
+- content: ''
+- content: <code>#include &lt;<a href="blob__checkpoint__store_8hpp_source.html">blob_checkpoint_store.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Messaging::EventHubs::BlobCheckpointStore:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;BlobCheckpointStore (BlobCheckpointStore const &amp;other)=defaultConstruct a BlobCheckpointStore from another BlobCheckpointStore. 
+
+
+
+
+    BlobCheckpointStore &amp;&#160;&#160;operator= (BlobCheckpointStore const &amp;other)=defaultAssign a BlobCheckpointStore to another BlobCheckpointStore. 
+
+
+
+    &#160;&#160;BlobCheckpointStore (Azure::Storage::Blobs::BlobContainerClient const &amp;containerClient)Construct a BlobCheckpointStore.  
+
+
+
+    std::vector&lt; Models::Ownership &gt;&#160;&#160;ClaimOwnership (std::vector&lt; Models::Ownership &gt; const &amp;partitionOwnership, Core::Context const &amp;context={}) overrideClaimOwnership Claims ownership for a particular partition.  
+
+
+
+    std::vector&lt; Models::Checkpoint &gt;&#160;&#160;ListCheckpoints (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={}) overrideList the checkpoints from storage.  
+
+
+
+    std::vector&lt; Models::Ownership &gt;&#160;&#160;ListOwnership (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={}) overrideListOwnership lists all ownerships.  
+
+
+
+
+    void&#160;&#160;UpdateCheckpoint (Models::Checkpoint const &amp;checkpoint, Core::Context const &amp;context={}) overrideUpdateCheckpoint updates a specific checkpoint with a sequence and offset.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;BlobCheckpointStore()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Messaging::EventHubs::BlobCheckpointStore::BlobCheckpointStore \n          (\n          Azure::Storage::Blobs::BlobContainerClient const &amp;&#160;\n          containerClient)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: containerClient
+    summary: 'An Azure Blob ContainerClient used to hold the checkpoints. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ClaimOwnership()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::vector&lt; Ownership &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ClaimOwnership \n          (\n          std::vector&lt; Models::Ownership &gt; const &amp;&#160;\n          partitionOwnership, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \noverride"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: partitionOwnership
+    summary: '- The list of partition ownerships this instance is claiming. '
+  - name: context
+    summary: '- The context for cancelling long running operations. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ListCheckpoints()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::vector&lt; Checkpoint &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ListCheckpoints \n          (\n          std::string const &amp;&#160;\n          fullyQualifiedNamespace, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          eventHubName, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          consumerGroup, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \noverride"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fullyQualifiedNamespace
+    summary: '- The fully qualified Event Hubs namespace. '
+  - name: eventHubName
+    summary: '- The name of the specific Event Hub. '
+  - name: consumerGroup
+    summary: '- The name of the specific consumer group. '
+  - name: context
+    summary: '- The context for cancelling long running operations.'
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A list of checkpoints. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ListOwnership()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::vector&lt; Ownership &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ListOwnership \n          (\n          std::string const &amp;&#160;\n          fullyQualifiedNamespace, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          eventHubName, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          consumerGroup, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \noverride"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fullyQualifiedNamespace
+    summary: '- The fully qualified Event Hubs namespace. '
+  - name: eventHubName
+    summary: '- The name of the specific Event Hub. '
+  - name: consumerGroup
+    summary: '- The name of the specific consumer group. '
+  - name: context
+    summary: '- The context for cancelling long running operations.'
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A list of ownerships. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/messaging/eventhubs/checkpointstore_blob/blob_checkpoint_store.hpp
+
+    src/blob_checkpoint_store.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

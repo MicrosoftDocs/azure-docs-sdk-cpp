@@ -1,0 +1,396 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-queues
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageQueuesQueueServiceClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: <code>#include &lt;<a href="queue__service__client_8hpp_source.html">queue_service_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;QueueServiceClient (const std::string &amp;serviceUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const QueueClientOptions &amp;options=QueueClientOptions())Initializes a new instance of QueueServiceClient.  
+
+
+
+    &#160;&#160;QueueServiceClient (const std::string &amp;serviceUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const QueueClientOptions &amp;options=QueueClientOptions())Initializes a new instance of QueueServiceClient.  
+
+
+
+    &#160;&#160;QueueServiceClient (const std::string &amp;serviceUrl, const QueueClientOptions &amp;options=QueueClientOptions())Initializes a new instance of QueueServiceClient.  
+
+
+
+    QueueClient&#160;&#160;GetQueueClient (const std::string &amp;queueName) constCreates a new QueueClient object with the same URL as this QueueServiceClient. The new QueueClient uses the same request policy pipeline as this QueueServiceClient.  
+
+
+
+    std::string&#160;&#160;GetUrl () constGets the queue service's primary URL endpoint..  
+
+
+
+    ListQueuesPagedResponse&#160;&#160;ListQueues (const ListQueuesOptions &amp;options=ListQueuesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns a sequence of queues in the storage account. Enumerating the queues may make multiple requests to the service while fetching all the values. Queue names are returned in lexicographic order.  
+
+
+
+    Azure::Response&lt; Models::SetServicePropertiesResult &gt;&#160;&#160;SetProperties (Models::QueueServiceProperties properties, const SetServicePropertiesOptions &amp;options=SetServicePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the properties of the queue service.  
+
+
+
+    Azure::Response&lt; Models::QueueServiceProperties &gt;&#160;&#160;GetProperties (const GetServicePropertiesOptions &amp;options=GetServicePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the properties of a storage account's queue service.  
+
+
+
+    Azure::Response&lt; Models::ServiceStatistics &gt;&#160;&#160;GetStatistics (const GetQueueServiceStatisticsOptions &amp;options=GetQueueServiceStatisticsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRetrieves statistics related to replication for the Queue service. It is only available on the secondary location endpoint when read-access geo-redundant replication is enabled for the storage account.  
+
+
+
+    Azure::Response&lt; QueueClient &gt;&#160;&#160;CreateQueue (const std::string &amp;queueName, const CreateQueueOptions &amp;options=CreateQueueOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates a new queue under the specified account. If the queue with the same name already exists and the metadata is identical to the one of the existing queue, the operation is successful. If the metadata doesn't match the one of the existing queue, the operation fails.  
+
+
+
+    Azure::Response&lt; Models::DeleteQueueResult &gt;&#160;&#160;DeleteQueue (const std::string &amp;queueName, const DeleteQueueOptions &amp;options=DeleteQueueOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constMarks the specified queue for deletion.
+- section: Static Public Member Functions
+- content: static QueueServiceClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const QueueClientOptions &amp;options=QueueClientOptions())Initializes a new instance of QueueServiceClient.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: The <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client.html">QueueServiceClient</a> allows you to manipulate Azure Storage service resources and queues. The storage account provides the top-level namespace for the Queue service.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;QueueServiceClient() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Queues::QueueServiceClient::QueueServiceClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const QueueClientOptions &amp;&#160;\n          options = QueueClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: serviceUrl
+    summary: 'A URL referencing the queue that includes the name of the account. '
+  - name: credential
+    summary: 'The shared key credential used to sign requests. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;QueueServiceClient() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Queues::QueueServiceClient::QueueServiceClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const QueueClientOptions &amp;&#160;\n          options = QueueClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: serviceUrl
+    summary: 'A URL referencing the queue that includes the name of the account. '
+  - name: credential
+    summary: 'The token credential used to sign requests. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;QueueServiceClient() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Queues::QueueServiceClient::QueueServiceClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          const QueueClientOptions &amp;&#160;\n          options = QueueClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: serviceUrl
+    summary: 'A URL referencing the queue that includes the name of the account. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateFromConnectionString()'
+- content: ''
+- content: ''
+- content: ''
+- content: "QueueServiceClient Azure::Storage::Queues::QueueServiceClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const QueueClientOptions &amp;&#160;\n          options = QueueClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: 'A connection string includes the authentication information required for your application to access data in an Azure Storage account at runtime. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A new <a class="el" href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client.html">QueueServiceClient</a> instance. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateQueue()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; QueueClient &gt; Azure::Storage::Queues::QueueServiceClient::CreateQueue \n          (\n          const std::string &amp;&#160;\n          queueName, \n        \n        \n          \n          \n          const CreateQueueOptions &amp;&#160;\n          options = CreateQueueOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: queueName
+    summary: 'The name of the queue to create. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A <a class="el" href="class_azure_1_1_storage_1_1_queues_1_1_queue_client.html">QueueClient</a> referencing the newly created container. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteQueue()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteQueueResult &gt; Azure::Storage::Queues::QueueServiceClient::DeleteQueue \n          (\n          const std::string &amp;&#160;\n          queueName, \n        \n        \n          \n          \n          const DeleteQueueOptions &amp;&#160;\n          options = DeleteQueueOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: queueName
+    summary: 'The name of the queue to delete. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A DeleteQueueResult if successful. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::QueueServiceProperties &gt; Azure::Storage::Queues::QueueServiceClient::GetProperties \n          (\n          const GetServicePropertiesOptions &amp;&#160;\n          options = GetServicePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A QueueServiceProperties describing the service properties. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetQueueClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    QueueClient Azure::Storage::Queues::QueueServiceClient::GetQueueClient 
+              (
+              const std::string &amp;&#160;
+              queueName)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: queueName
+    summary: 'The name of the queue to reference. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A new <a class="el" href="class_azure_1_1_storage_1_1_queues_1_1_queue_client.html">QueueClient</a> instance. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetStatistics()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ServiceStatistics &gt; Azure::Storage::Queues::QueueServiceClient::GetStatistics \n          (\n          const GetQueueServiceStatisticsOptions &amp;&#160;\n          options = GetQueueServiceStatisticsOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A GetServiceStatisticsResult describing the service replication statistics. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetUrl()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string Azure::Storage::Queues::QueueServiceClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "The queue service's primary URL endpoint. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ListQueues()'
+- content: ''
+- content: ''
+- content: ''
+- content: "ListQueuesPagedResponse Azure::Storage::Queues::QueueServiceClient::ListQueues \n          (\n          const ListQueuesOptions &amp;&#160;\n          options = ListQueuesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A <a class="el" href="class_azure_1_1_storage_1_1_queues_1_1_list_queues_paged_response.html" title="Response type for Azure::Storage::Queues::QueueServiceClient::ListQueues.">ListQueuesPagedResponse</a> describing the queues in the storage account. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetServicePropertiesResult &gt; Azure::Storage::Queues::QueueServiceClient::SetProperties \n          (\n          Models::QueueServiceProperties&#160;\n          properties, \n        \n        \n          \n          \n          const SetServicePropertiesOptions &amp;&#160;\n          options = SetServicePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: properties
+    summary: 'The queue service properties. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A SetServicePropertiesResult on successfully setting the properties. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/storage/queues/queue_service_client.hpp
+
+    src/queue_service_client.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

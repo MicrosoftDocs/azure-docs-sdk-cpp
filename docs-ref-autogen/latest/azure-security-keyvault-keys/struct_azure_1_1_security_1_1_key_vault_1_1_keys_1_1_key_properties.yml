@@ -1,0 +1,332 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-keyvault-keys
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityKeyVaultKeysKeyProperties
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    The resource containing all the properties of the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html">KeyVaultKey</a> except <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html">JsonWebKey</a> properties.  
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;KeyProperties ()=defaultConstruct a new Key Properties object.  
+
+
+
+    &#160;&#160;KeyProperties (std::string name)Construct a new Key Properties object.
+- section: Public Attributes
+- content: >-
+    std::string&#160;&#160;NameThe name of the key.  
+
+
+
+    std::string&#160;&#160;IdThe key identifier.  
+
+
+
+    std::string&#160;&#160;VaultUrlThe Key Vault base Url.  
+
+
+
+    std::string&#160;&#160;VersionThe version of the key.  
+
+
+
+    bool&#160;&#160;Managed = falseIndicate whether the key's lifetime is managed by Key Vault. If this key is backing a Key Vault certificate, the value will be true.  
+
+
+
+    std::unordered_map&lt; std::string, std::string &gt;&#160;&#160;TagsDictionary of tags with specific metadata about the key.  
+
+
+
+    Azure::Nullable&lt; bool &gt;&#160;&#160;EnabledIndicate whether the key is enabled and useable for cryptographic operations.  
+
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;NotBeforeIndicate when the key will be valid and can be used for cryptographic operations.  
+
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;ExpiresOnIndicate when the key will expire and cannot be used for cryptographic operations.  
+
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;CreatedOnIndicate when the key was created.  
+
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;UpdatedOnIndicate when the key was updated.  
+
+
+
+    Azure::Nullable&lt; int &gt;&#160;&#160;RecoverableDaysThe number of days a key is retained before being deleted for a soft delete-enabled Key Vault.  
+
+
+
+    std::string&#160;&#160;RecoveryLevelThe recovery level currently in effect for keys in the Key Vault.  
+
+
+
+    Azure::Nullable&lt; KeyReleasePolicy &gt;&#160;&#160;ReleasePolicyThe policy rules under which the key can be exported.  
+
+
+
+    Azure::Nullable&lt; bool &gt;&#160;&#160;ExportableIndicates if the private key can be exported.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeyProperties() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Security::KeyVault::Keys::KeyProperties::KeyProperties \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;KeyProperties() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Security::KeyVault::Keys::KeyProperties::KeyProperties \n          (\n          std::string&#160;\n          name)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'The name of the key. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreatedOn'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::KeyProperties::CreatedOn
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Enabled'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Keys::KeyProperties::Enabled
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ExpiresOn'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::KeyProperties::ExpiresOn
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Exportable'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Keys::KeyProperties::Exportable
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Id'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Security::KeyVault::Keys::KeyProperties::Id
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Managed'
+- content: ''
+- content: ''
+- content: ''
+- content: bool Azure::Security::KeyVault::Keys::KeyProperties::Managed = false
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Name'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Security::KeyVault::Keys::KeyProperties::Name
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;NotBefore'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::KeyProperties::NotBefore
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RecoverableDays'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;int&gt; Azure::Security::KeyVault::Keys::KeyProperties::RecoverableDays
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RecoveryLevel'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Security::KeyVault::Keys::KeyProperties::RecoveryLevel
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ReleasePolicy'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;KeyReleasePolicy&gt; Azure::Security::KeyVault::Keys::KeyProperties::ReleasePolicy
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Tags'
+- content: ''
+- content: ''
+- content: ''
+- content: std::unordered_map&lt;std::string, std::string&gt; Azure::Security::KeyVault::Keys::KeyProperties::Tags
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpdatedOn'
+- content: ''
+- content: ''
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::KeyProperties::UpdatedOn
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;VaultUrl'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Security::KeyVault::Keys::KeyProperties::VaultUrl
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Version'
+- content: ''
+- content: ''
+- content: ''
+- content: std::string Azure::Security::KeyVault::Keys::KeyProperties::Version
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/keyvault/keys/key_client_models.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

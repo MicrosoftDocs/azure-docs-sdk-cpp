@@ -1,0 +1,242 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCorePagedResponse
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    The base type and behavior for a paged response.  
+     <a href="class_azure_1_1_core_1_1_paged_response.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="paged__response_8hpp_source.html">paged_response.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    virtual&#160;&#160;~PagedResponse ()=defaultDestructs PagedResponse.  
+
+
+
+    bool&#160;&#160;HasPage () constChecks if a page exists.  
+
+
+
+    void&#160;&#160;MoveToNextPage (const Azure::Core::Context &amp;context=Azure::Core::Context())Moves to the next page of the response.
+- section: Public Attributes
+- content: >-
+    std::string&#160;&#160;CurrentPageTokenThe token used to fetch the current page.  
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;NextPageTokenThe token for getting the next page.  
+
+
+
+    std::unique_ptr&lt; Azure::Core::Http::RawResponse &gt;&#160;&#160;RawResponseThe HTTP response returned by the service.
+- section: Protected Member Functions
+- content: >-
+    &#160;&#160;PagedResponse ()=defaultConstructs a default instance of PagedResponse.  
+
+
+
+    &#160;&#160;PagedResponse (PagedResponse &amp;&amp;)=defaultConstructs PagedResponse by moving in another instance.  
+
+
+
+    PagedResponse &amp;&#160;&#160;operator= (PagedResponse &amp;&amp;)=defaultAssigns another instance of PagedResponse by moving it in.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: template&lt;class T&gt;
+- content: class Azure::Core::PagedResponse&lt; T &gt;
+- content: ''
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PagedResponse() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;class T &gt;
+- content: ''
+- content: "Azure::Core::PagedResponse&lt; T &gt;::PagedResponse \n          (\n          )\n          \n        \n      \n  \n  \nprotecteddefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PagedResponse() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;class T &gt;
+- content: ''
+- content: "Azure::Core::PagedResponse&lt; T &gt;::PagedResponse \n          (\n          PagedResponse&lt; T &gt; &amp;&amp;&#160;\n          )\n          \n        \n      \n  \n  \nprotecteddefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;~PagedResponse()'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;class T &gt;
+- content: ''
+- content: "virtual Azure::Core::PagedResponse&lt; T &gt;::~PagedResponse \n          (\n          )\n          \n        \n      \n  \n  \nvirtualdefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HasPage()'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;class T &gt;
+- content: ''
+- content: "bool Azure::Core::PagedResponse&lt; T &gt;::HasPage \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<code>true</code> if there are additional pages; otherwise, <code>false</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;MoveToNextPage()'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;class T &gt;
+- content: ''
+- content: "void Azure::Core::PagedResponse&lt; T &gt;::MoveToNextPage \n          (\n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context())\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: 'A context to control the request lifetime. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=()'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;class T &gt;
+- content: ''
+- content: "PagedResponse &amp; Azure::Core::PagedResponse&lt; T &gt;::operator= \n          (\n          PagedResponse&lt; T &gt; &amp;&amp;&#160;\n          )\n          \n        \n      \n  \n  \nprotecteddefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CurrentPageToken'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;class T &gt;
+- content: ''
+- content: std::string Azure::Core::PagedResponse&lt; T &gt;::CurrentPageToken
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;NextPageToken'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;class T &gt;
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Core::PagedResponse&lt; T &gt;::NextPageToken
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;RawResponse'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;class T &gt;
+- content: ''
+- content: std::unique_ptr&lt;Azure::Core::Http::RawResponse&gt; Azure::Core::PagedResponse&lt; T &gt;::RawResponse
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/core/paged_response.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

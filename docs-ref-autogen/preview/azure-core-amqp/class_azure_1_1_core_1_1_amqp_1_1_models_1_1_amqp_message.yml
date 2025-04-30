@@ -1,0 +1,607 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core-amqp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreAmqpModelsAmqpMessage
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    An <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message.html">AmqpMessage</a> object represents a received AMQP message.  
+     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="amqp__message_8hpp_source.html">amqp_message.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;AmqpMessage ()=defaultConstruct a new AMQP Message object. 
+
+
+
+
+    &#160;&#160;~AmqpMessage ()=defaultDestroy an instance of an AMQP Message object. 
+
+
+
+
+    &#160;&#160;AmqpMessage (AmqpMessage &amp;&amp;)=defaultCreate a new AMQP Message from an existing message moving the contents. 
+
+
+
+
+    &#160;&#160;AmqpMessage (AmqpMessage const &amp;)=defaultConstruct a new AMQP message object from an existing object. 
+
+
+
+    AmqpMessage &amp;&#160;&#160;operator= (AmqpMessage const &amp;)=defaultCopy an AMQP message object to another object.  
+
+
+
+    AmqpMessage &amp;&#160;&#160;operator= (AmqpMessage &amp;&amp;)=defaultMove an AMQP message object to another object.  
+
+
+
+
+    bool&#160;&#160;operator== (AmqpMessage const &amp;that) const noexceptCompare two AmqpMessages for equality. 
+
+
+
+
+    bool&#160;&#160;operator!= (AmqpMessage const &amp;that) const noexceptCompare two AmqpMessage values. 
+
+
+
+
+    &#160;&#160;AmqpMessage (std::nullptr_t)Construct an empty AMQP Message. 
+
+
+
+    &#160;&#160;operator bool () const noexceptReturns True if the AMQP message has a value, false otherwise.  
+
+
+
+    void&#160;&#160;SetBody (std::vector&lt; AmqpList &gt; const &amp;bodySequence)Sets the body of the message to a list of sequence sections.  
+
+
+
+    void&#160;&#160;SetBody (AmqpList const &amp;bodySequence)Appends a list to the body of the message.  
+
+
+
+    void&#160;&#160;SetBody (std::vector&lt; AmqpBinaryData &gt; const &amp;bodyBinarySequence)Set the body of the message.  
+
+
+
+    void&#160;&#160;SetBody (AmqpBinaryData const &amp;bodyBinary)Appends a binary value to the body of the message.  
+
+
+
+    void&#160;&#160;SetBody (AmqpValue const &amp;bodyValue)Set the body of the message.  
+
+
+
+    std::vector&lt; AmqpList &gt; const &amp;&#160;&#160;GetBodyAsAmqpList () constReturns a list of Amqp Sequence values.  
+
+
+
+    AmqpValue const &amp;&#160;&#160;GetBodyAsAmqpValue () constReturns an Amqp Value message body.  
+
+
+
+    std::vector&lt; AmqpBinaryData &gt; const &amp;&#160;&#160;GetBodyAsBinary () constReturns an Amqp Binary message body.
+- section: Static Public Member Functions
+- content: >-
+    static std::vector&lt; uint8_t &gt;&#160;&#160;Serialize (AmqpMessage const &amp;message)Serialize the message into a buffer.  
+
+
+
+    static AmqpMessage&#160;&#160;Deserialize (std::uint8_t const *buffer, size_t size)Deserialize the message from a buffer.
+- section: Public Attributes
+- content: >-
+    uint32_t&#160;&#160;MessageFormat = AmqpDefaultMessageFormatValueThe message format.  
+
+
+
+    MessageHeader&#160;&#160;HeaderThe header for the message.  
+
+
+
+    AmqpMap&#160;&#160;DeliveryAnnotationsDelivery Annotations for the message.  
+
+
+
+    AmqpMap&#160;&#160;MessageAnnotationsMessage Annotations for the message.  
+
+
+
+    MessageProperties&#160;&#160;PropertiesImmutable Properties for the message.  
+
+
+
+    std::map&lt; std::string, AmqpValue &gt;&#160;&#160;ApplicationPropertiesApplication Properties for the message.  
+
+
+
+    AmqpValue&#160;&#160;DeliveryTagDelivery Tag for the message.  
+
+
+
+    AmqpMap&#160;&#160;FooterFooter for the message.  
+
+
+
+    MessageBodyType&#160;BodyType {MessageBodyType::None}
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: ''
+- content: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#section-message-format">AMQP Message Format</a>.
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Deserialize()'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpMessage Azure::Core::Amqp::Models::AmqpMessage::Deserialize \n          (\n          std::uint8_t const *&#160;\n          buffer, \n        \n        \n          \n          \n          size_t&#160;\n          size&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetBodyAsAmqpList()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    std::vector&lt; AmqpList &gt; const  &amp; Azure::Core::Amqp::Models::AmqpMessage::GetBodyAsAmqpList 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetBodyAsAmqpValue()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpValue const  &amp; Azure::Core::Amqp::Models::AmqpMessage::GetBodyAsAmqpValue 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetBodyAsBinary()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    std::vector&lt; AmqpBinaryData &gt; const  &amp; Azure::Core::Amqp::Models::AmqpMessage::GetBodyAsBinary 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator bool()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpMessage::operator bool \n          (\n          )\n           const\n        \n      \n  \n  \ninlinenoexcept"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'true if the AMQP message has a value, false otherwise. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpMessage &amp; Azure::Core::Amqp::Models::AmqpMessage::operator= \n          (\n          AmqpMessage &amp;&amp;&#160;\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A reference to this. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpMessage &amp; Azure::Core::Amqp::Models::AmqpMessage::operator= \n          (\n          AmqpMessage const &amp;&#160;\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A reference to this. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Serialize()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::vector&lt; uint8_t &gt; Azure::Core::Amqp::Models::AmqpMessage::Serialize \n          (\n          AmqpMessage const &amp;&#160;\n          message)\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetBody() [1/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Core::Amqp::Models::AmqpMessage::SetBody 
+              (
+              AmqpBinaryData const &amp;&#160;
+              bodyBinary)
+- content: ''
+- content: ''
+- content: 'An AMQP Message Body can be one of the following formats:'
+- content: ''
+- content: >-
+    One or more binary data sections
+
+    One or more sequence sections.
+
+    A single AMQP Value.
+- content: ''
+- content: This method sets the body of the message to a sequence data values. See <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-data">Amqp Data</a> for more information.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: bodyBinary
+    summary: '- a single value binary data.'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetBody() [2/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Core::Amqp::Models::AmqpMessage::SetBody 
+              (
+              AmqpList const &amp;&#160;
+              bodySequence)
+- content: ''
+- content: ''
+- content: 'An AMQP Message Body can be one of the following formats:'
+- content: ''
+- content: >-
+    One or more binary data sections
+
+    One or more sequence sections.
+
+    A single AMQP Value.
+- content: ''
+- content: This method appends the bodySequence value to the sequence of sections. See <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-sequence">Amqp Sequence</a> for more information.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: bodySequence
+    summary: '- the list of AMQP values which make up the body of the message.'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetBody() [3/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Core::Amqp::Models::AmqpMessage::SetBody 
+              (
+              AmqpValue const &amp;&#160;
+              bodyValue)
+- content: ''
+- content: ''
+- content: 'An AMQP Message Body can be one of the following formats:'
+- content: ''
+- content: >-
+    One or more binary data sections
+
+    One or more sequence sections.
+
+    A single AMQP Value.
+- content: ''
+- content: This method sets the body of the message to a single AMQP value. See <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-amqp-value">Amqp Value</a> for more information.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: bodyValue
+    summary: '- a single value binary data. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetBody() [4/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Core::Amqp::Models::AmqpMessage::SetBody 
+              (
+              std::vector&lt; AmqpBinaryData &gt; const &amp;&#160;
+              bodyBinarySequence)
+- content: ''
+- content: ''
+- content: 'An AMQP Message Body can be one of the following formats:'
+- content: ''
+- content: >-
+    One or more binary data sections
+
+    One or more sequence sections.
+
+    A single AMQP Value.
+- content: ''
+- content: This method sets the body of the message to a sequence data values. See <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-data">Amqp Data</a> for more information.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: bodyBinarySequence
+    summary: '- a sequence of binary data which which makes up the body of the message. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetBody() [5/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Core::Amqp::Models::AmqpMessage::SetBody 
+              (
+              std::vector&lt; AmqpList &gt; const &amp;&#160;
+              bodySequence)
+- content: ''
+- content: ''
+- content: 'An AMQP Message Body can be one of the following formats:'
+- content: ''
+- content: >-
+    One or more binary data sections
+
+    One or more sequence sections.
+
+    A single AMQP Value.
+- content: ''
+- content: This method appends the bodySequence value to the sequence of sections. See <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-sequence">Amqp Sequence</a> for more information.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: bodySequence
+    summary: '- the list of AMQP values which make up the body of the message. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ApplicationProperties'
+- content: ''
+- content: ''
+- content: ''
+- content: std::map&lt;std::string, AmqpValue&gt; Azure::Core::Amqp::Models::AmqpMessage::ApplicationProperties
+- content: ''
+- content: ''
+- content: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-application-properties">AMQP Application Properties</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;BodyType'
+- content: ''
+- content: ''
+- content: ''
+- content: MessageBodyType Azure::Core::Amqp::Models::AmqpMessage::BodyType {MessageBodyType::None}
+- content: ''
+- content: ''
+- content: Specifies the type of the body.
+- content: ''
+- content: 'An AMQP Message Body can be one of the following formats:'
+- content: ''
+- content: >-
+    One or more binary data sections
+
+    One or more sequence sections.
+
+    A single AMQP Value.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeliveryAnnotations'
+- content: ''
+- content: ''
+- content: ''
+- content: AmqpMap Azure::Core::Amqp::Models::AmqpMessage::DeliveryAnnotations
+- content: ''
+- content: ''
+- content: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-delivery-annotations">AMQP Delivery Annotations</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeliveryTag'
+- content: ''
+- content: ''
+- content: ''
+- content: AmqpValue Azure::Core::Amqp::Models::AmqpMessage::DeliveryTag
+- content: ''
+- content: ''
+- content: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-transport-v1.0-os.html#type-delivery-tag">AMQP Transport Transfer</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Footer'
+- content: ''
+- content: ''
+- content: ''
+- content: AmqpMap Azure::Core::Amqp::Models::AmqpMessage::Footer
+- content: ''
+- content: ''
+- content: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-footer">AMQP Footer</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Header'
+- content: ''
+- content: ''
+- content: ''
+- content: MessageHeader Azure::Core::Amqp::Models::AmqpMessage::Header
+- content: ''
+- content: ''
+- content: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Message Header</a>
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;MessageAnnotations'
+- content: ''
+- content: ''
+- content: ''
+- content: AmqpMap Azure::Core::Amqp::Models::AmqpMessage::MessageAnnotations
+- content: ''
+- content: ''
+- content: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-message-annotations">AMQP Message Annotations</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;MessageFormat'
+- content: ''
+- content: ''
+- content: ''
+- content: uint32_t Azure::Core::Amqp::Models::AmqpMessage::MessageFormat = AmqpDefaultMessageFormatValue
+- content: ''
+- content: ''
+- content: By default, AMQP uses 0, however services can override this to express additional semantics about the message payload.
+- content: ''
+- content: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#section-message-format">AMQP Message Format</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Properties'
+- content: ''
+- content: ''
+- content: ''
+- content: MessageProperties Azure::Core::Amqp::Models::AmqpMessage::Properties
+- content: ''
+- content: ''
+- content: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-properties">AMQP Properties</a>.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/amqp/models/amqp_message.hpp
+
+    src/models/amqp_message.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

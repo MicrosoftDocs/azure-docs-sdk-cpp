@@ -1,0 +1,767 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-blobs
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageBlobsPageBlobClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: <code>#include &lt;<a href="page__blob__client_8hpp_source.html">page_blob_client.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Storage::Blobs::PageBlobClient:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;PageBlobClient (const std::string &amp;blobUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const BlobClientOptions &amp;options=BlobClientOptions())Initialize a new instance of PageBlobClient.  
+
+
+
+    &#160;&#160;PageBlobClient (const std::string &amp;blobUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const BlobClientOptions &amp;options=BlobClientOptions())Initialize a new instance of PageBlobClient.  
+
+
+
+    &#160;&#160;PageBlobClient (const std::string &amp;blobUrl, const BlobClientOptions &amp;options=BlobClientOptions())Initialize a new instance of PageBlobClient.  
+
+
+
+    PageBlobClient&#160;&#160;WithSnapshot (const std::string &amp;snapshot) constInitializes a new instance of the PageBlobClient class with an identical URL source but the specified snapshot timestamp.  
+
+
+
+    PageBlobClient&#160;&#160;WithVersionId (const std::string &amp;versionId) constCreates a clone of this instance that references a version ID rather than the base blob.  
+
+
+
+    Azure::Response&lt; Models::CreatePageBlobResult &gt;&#160;&#160;Create (int64_t blobSize, const CreatePageBlobOptions &amp;options=CreatePageBlobOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates a new page blob of the specified size. The content of any existing blob is overwritten with the newly initialized page blob.  
+
+
+
+    Azure::Response&lt; Models::CreatePageBlobResult &gt;&#160;&#160;CreateIfNotExists (int64_t blobContentLength, const CreatePageBlobOptions &amp;options=CreatePageBlobOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates a new page blob of the specified size. The content keeps unchanged if the blob already exists.  
+
+
+
+    Azure::Response&lt; Models::UploadPagesResult &gt;&#160;&#160;UploadPages (int64_t offset, Azure::Core::IO::BodyStream &amp;content, const UploadPagesOptions &amp;options=UploadPagesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constWrites content to a range of pages in a page blob, starting at offset.  
+
+
+
+    Azure::Response&lt; Models::UploadPagesFromUriResult &gt;&#160;&#160;UploadPagesFromUri (int64_t destinationOffset, std::string sourceUri, Azure::Core::Http::HttpRange sourceRange, const UploadPagesFromUriOptions &amp;options=UploadPagesFromUriOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constWrites a range of pages to a page blob where the contents are read from a uri.  
+
+
+
+    Azure::Response&lt; Models::ClearPagesResult &gt;&#160;&#160;ClearPages (Azure::Core::Http::HttpRange range, const ClearPagesOptions &amp;options=ClearPagesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constClears one or more pages from the page blob, as specificed by range.  
+
+
+
+    Azure::Response&lt; Models::ResizePageBlobResult &gt;&#160;&#160;Resize (int64_t blobSize, const ResizePageBlobOptions &amp;options=ResizePageBlobOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constResizes the page blob to the specified size (which must be a multiple of 512). If the specified value is less than the current size of the blob, then all pages above the specified value are cleared.  
+
+
+
+    Azure::Response&lt; Models::UpdateSequenceNumberResult &gt;&#160;&#160;UpdateSequenceNumber (Models::SequenceNumberAction action, const UpdatePageBlobSequenceNumberOptions &amp;options=UpdatePageBlobSequenceNumberOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constChanges the sequence number for this page blob.  
+
+
+
+    GetPageRangesPagedResponse&#160;&#160;GetPageRanges (const GetPageRangesOptions &amp;options=GetPageRangesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns the list of valid page ranges for a page blob or snapshot of a page blob.  
+
+
+
+    GetPageRangesDiffPagedResponse&#160;&#160;GetPageRangesDiff (const std::string &amp;previousSnapshot, const GetPageRangesOptions &amp;options=GetPageRangesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns the list of page ranges that differ between a previous snapshot and this page blob. Changes include both updated and cleared pages.  
+
+
+
+    GetPageRangesDiffPagedResponse&#160;&#160;GetManagedDiskPageRangesDiff (const std::string &amp;previousSnapshotUrl, const GetPageRangesOptions &amp;options=GetPageRangesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns the list of page ranges that differ between a previous snapshot URL and this page blob. Changes include both updated and cleared pages. This API only works with managed disk storage accounts.  
+
+
+
+    StartBlobCopyOperation&#160;&#160;StartCopyIncremental (const std::string &amp;sourceUri, const StartBlobCopyIncrementalOptions &amp;options=StartBlobCopyIncrementalOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constStarts copying a snapshot of the sourceUri page blob to this page blob. The snapshot is copied such that only the differential changes between the previously copied snapshot are transferred to the destination. The copied snapshots are complete copies of the original snapshot and can be read or copied from as usual.  
+
+
+
+
+    virtual&#160;~BlobClient ()=default
+
+    &#160;Destructor.  
+
+
+    &#160;BlobClient (const std::string &amp;blobUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const BlobClientOptions &amp;options=BlobClientOptions())
+
+    &#160;Initialize a new instance of BlobClient.  
+
+
+    &#160;BlobClient (const std::string &amp;blobUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const BlobClientOptions &amp;options=BlobClientOptions())
+
+    &#160;Initialize a new instance of BlobClient.  
+
+
+    &#160;BlobClient (const std::string &amp;blobUrl, const BlobClientOptions &amp;options=BlobClientOptions())
+
+    &#160;Initialize a new instance of BlobClient.  
+
+
+    BlockBlobClient&#160;AsBlockBlobClient () const
+
+    &#160;Creates a new BlockBlobClient object with the same URL as this BlobClient. The new BlockBlobClient uses the same request policy pipeline as this BlobClient.  
+
+
+    AppendBlobClient&#160;AsAppendBlobClient () const
+
+    &#160;Creates a new AppendBlobClient object with the same URL as this BlobClient. The new AppendBlobClient uses the same request policy pipeline as this BlobClient.  
+
+
+    PageBlobClient&#160;AsPageBlobClient () const
+
+    &#160;Creates a new PageBlobClient object with the same URL as this BlobClient. The new PageBlobClient uses the same request policy pipeline as this BlobClient.  
+
+
+    std::string&#160;GetUrl () const
+
+    &#160;Gets the blob's primary URL endpoint.  
+
+
+    BlobClient&#160;WithSnapshot (const std::string &amp;snapshot) const
+
+    &#160;Initializes a new instance of the BlobClient class with an identical URL source but the specified snapshot timestamp.  
+
+
+    BlobClient&#160;WithVersionId (const std::string &amp;versionId) const
+
+    &#160;Creates a clone of this instance that references a version ID rather than the base blob.  
+
+
+    Azure::Response&lt; Models::BlobProperties &gt;&#160;GetProperties (const GetBlobPropertiesOptions &amp;options=GetBlobPropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Returns all user-defined metadata, standard HTTP properties, and system properties for the blob. It does not return the content of the blob.  
+
+
+    Azure::Response&lt; Models::SetBlobHttpHeadersResult &gt;&#160;SetHttpHeaders (Models::BlobHttpHeaders httpHeaders, const SetBlobHttpHeadersOptions &amp;options=SetBlobHttpHeadersOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets system properties on the blob.  
+
+
+    Azure::Response&lt; Models::SetBlobMetadataResult &gt;&#160;SetMetadata (Metadata metadata, const SetBlobMetadataOptions &amp;options=SetBlobMetadataOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets user-defined metadata for the specified blob as one or more name-value pairs.  
+
+
+    Azure::Response&lt; Models::SetBlobAccessTierResult &gt;&#160;SetAccessTier (Models::AccessTier accessTier, const SetBlobAccessTierOptions &amp;options=SetBlobAccessTierOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets the tier on a blob. The operation is allowed on a page blob in a premium storage account and on a block blob in a blob storage or general purpose v2 account.  
+
+
+    Azure::Response&lt; Models::CopyBlobFromUriResult &gt;&#160;CopyFromUri (const std::string &amp;sourceUri, const CopyBlobFromUriOptions &amp;options=CopyBlobFromUriOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Copies data from the source to this blob, synchronously.  
+
+
+    StartBlobCopyOperation&#160;StartCopyFromUri (const std::string &amp;sourceUri, const StartBlobCopyFromUriOptions &amp;options=StartBlobCopyFromUriOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Copies data at from the source to this blob.  
+
+
+    Azure::Response&lt; Models::AbortBlobCopyFromUriResult &gt;&#160;AbortCopyFromUri (const std::string &amp;copyId, const AbortBlobCopyFromUriOptions &amp;options=AbortBlobCopyFromUriOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Aborts a pending StartCopyFromUri operation, and leaves this blob with zero length and full metadata.  
+
+
+    Azure::Response&lt; Models::DownloadBlobResult &gt;&#160;Download (const DownloadBlobOptions &amp;options=DownloadBlobOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Downloads a blob or a blob range from the service, including its metadata and properties.  
+
+
+    Azure::Response&lt; Models::DownloadBlobToResult &gt;&#160;DownloadTo (uint8_t *buffer, size_t bufferSize, const DownloadBlobToOptions &amp;options=DownloadBlobToOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Downloads a blob or a blob range from the service to a memory buffer using parallel requests.  
+
+
+    Azure::Response&lt; Models::DownloadBlobToResult &gt;&#160;DownloadTo (const std::string &amp;fileName, const DownloadBlobToOptions &amp;options=DownloadBlobToOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Downloads a blob or a blob range from the service to a file using parallel requests.  
+
+
+    Azure::Response&lt; Models::CreateBlobSnapshotResult &gt;&#160;CreateSnapshot (const CreateBlobSnapshotOptions &amp;options=CreateBlobSnapshotOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Creates a read-only snapshot of a blob.  
+
+
+    Azure::Response&lt; Models::DeleteBlobResult &gt;&#160;Delete (const DeleteBlobOptions &amp;options=DeleteBlobOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Marks the specified blob or snapshot for deletion. The blob is later deleted during garbage collection. Note that in order to delete a blob, you must delete all of its snapshots. You can delete both at the same time using DeleteBlobOptions.DeleteSnapshots.  
+
+
+    Azure::Response&lt; Models::DeleteBlobResult &gt;&#160;DeleteIfExists (const DeleteBlobOptions &amp;options=DeleteBlobOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Marks the specified blob or snapshot for deletion if it exists.  
+
+
+    Azure::Response&lt; Models::UndeleteBlobResult &gt;&#160;Undelete (const UndeleteBlobOptions &amp;options=UndeleteBlobOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Restores the contents and metadata of a soft deleted blob and any associated soft deleted snapshots.  
+
+
+    Azure::Response&lt; Models::SetBlobTagsResult &gt;&#160;SetTags (std::map&lt; std::string, std::string &gt; tags, const SetBlobTagsOptions &amp;options=SetBlobTagsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets tags on the underlying blob.  
+
+
+    Azure::Response&lt; std::map&lt; std::string, std::string &gt; &gt;&#160;GetTags (const GetBlobTagsOptions &amp;options=GetBlobTagsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Gets the tags associated with the underlying blob.  
+
+
+    Azure::Response&lt; Models::SetBlobImmutabilityPolicyResult &gt;&#160;SetImmutabilityPolicy (Models::BlobImmutabilityPolicy immutabilityPolicy, const SetBlobImmutabilityPolicyOptions &amp;options=SetBlobImmutabilityPolicyOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets the immutability policy on a blob, snapshot or version. Note that Blob Versioning must be enabled on your storage account, and the blob must be in a Container with immutable storage with versioning enabled to call this API.  
+
+
+    Azure::Response&lt; Models::DeleteBlobImmutabilityPolicyResult &gt;&#160;DeleteImmutabilityPolicy (const DeleteBlobImmutabilityPolicyOptions &amp;options=DeleteBlobImmutabilityPolicyOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Deletes the Immutability Policy associated with the Blob.  
+
+
+    Azure::Response&lt; Models::SetBlobLegalHoldResult &gt;&#160;SetLegalHold (bool hasLegalHold, const SetBlobLegalHoldOptions &amp;options=SetBlobLegalHoldOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Sets a legal hold on the blob. Note that Blob Versioning must be enabled on your storage account, and the blob must be in a Container with immutable storage with versioning enabled to call this API.  
+
+
+    Azure::Response&lt; Models::AccountInfo &gt;&#160;GetAccountInfo (const GetAccountInfoOptions &amp;options=GetAccountInfoOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+
+    &#160;Returns the sku name and account kind for the specified account.
+- section: Static Public Member Functions
+- content: >-
+    static PageBlobClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const std::string &amp;blobContainerName, const std::string &amp;blobName, const BlobClientOptions &amp;options=BlobClientOptions())Initialize a new instance of PageBlobClient.  
+
+
+
+
+    static BlobClient&#160;CreateFromConnectionString (const std::string &amp;connectionString, const std::string &amp;blobContainerName, const std::string &amp;blobName, const BlobClientOptions &amp;options=BlobClientOptions())
+
+    &#160;Initialize a new instance of BlobClient.
+- section: Friends
+- content: class&#160;BlobClient
+- section: Additional Inherited Members
+- content: >-
+    Azure::Core::Url&#160;m_blobUrl
+
+    &#160;Blob Url. 
+
+
+
+    std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt;&#160;m_pipeline
+
+    &#160;Http Pipeline. 
+
+
+
+    Azure::Nullable&lt; EncryptionKey &gt;&#160;m_customerProvidedKey
+
+    &#160;Customer provided encryption key. 
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;m_encryptionScope
+
+    &#160;Encryption scope.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: The <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> allows you to manipulate Azure Storage page blobs.
+- content: ''
+- content: Page blobs are a collection of 512-byte pages optimized for random read and write operations. To create a page blob, you initialize the page blob and specify the maximum size the page blob will grow. To add or update the contents of a page blob, you write a page or pages by specifying an offset and a range that align to 512-byte page boundaries. Writes to page blobs happen in-place and are immediately committed to the blob.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PageBlobClient() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Blobs::PageBlobClient::PageBlobClient \n          (\n          const std::string &amp;&#160;\n          blobUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const BlobClientOptions &amp;&#160;\n          options = BlobClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobUrl
+    summary: 'A URL referencing the blob that includes the name of the account, the name of the container, and the name of the blob. '
+  - name: credential
+    summary: 'The shared key credential used to sign requests. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PageBlobClient() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Blobs::PageBlobClient::PageBlobClient \n          (\n          const std::string &amp;&#160;\n          blobUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const BlobClientOptions &amp;&#160;\n          options = BlobClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobUrl
+    summary: 'A URL referencing the blob that includes the name of the account, the name of the container, and the name of the blob. '
+  - name: credential
+    summary: 'The token credential used to sign requests. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;PageBlobClient() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Blobs::PageBlobClient::PageBlobClient \n          (\n          const std::string &amp;&#160;\n          blobUrl, \n        \n        \n          \n          \n          const BlobClientOptions &amp;&#160;\n          options = BlobClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobUrl
+    summary: 'A URL referencing the blob that includes the name of the account, the name of the container, and the name of the blob, and possibly also a SAS token. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ClearPages()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ClearPagesResult &gt; Azure::Storage::Blobs::PageBlobClient::ClearPages \n          (\n          Azure::Core::Http::HttpRange&#160;\n          range, \n        \n        \n          \n          \n          const ClearPagesOptions &amp;&#160;\n          options = ClearPagesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: range
+    summary: "Specifies the range of bytes to be cleared. Both the start and end of the range must be specified. For a page clear operation, the page range can be up to the value of the blob's full size. Given that pages must be aligned with 512-byte boundaries, the start and length of the range must be a modulus of 512. "
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A ClearPagesResult describing the state of the updated pages. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Create()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreatePageBlobResult &gt; Azure::Storage::Blobs::PageBlobClient::Create \n          (\n          int64_t&#160;\n          blobSize, \n        \n        \n          \n          \n          const CreatePageBlobOptions &amp;&#160;\n          options = CreatePageBlobOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobSize
+    summary: 'Specifies the maximum size for the page blob. The size must be aligned to a 512-byte boundary. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A CreatePageBlobResult describing the newly created page blob. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateFromConnectionString()'
+- content: ''
+- content: ''
+- content: ''
+- content: "PageBlobClient Azure::Storage::Blobs::PageBlobClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          blobContainerName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          blobName, \n        \n        \n          \n          \n          const BlobClientOptions &amp;&#160;\n          options = BlobClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: 'A connection string includes the authentication information required for your application to access data in an Azure Storage account at runtime. '
+  - name: blobContainerName
+    summary: 'The name of the container containing this blob. '
+  - name: blobName
+    summary: 'The name of this blob. '
+  - name: options
+    summary: 'Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A new <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> instance. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateIfNotExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreatePageBlobResult &gt; Azure::Storage::Blobs::PageBlobClient::CreateIfNotExists \n          (\n          int64_t&#160;\n          blobContentLength, \n        \n        \n          \n          \n          const CreatePageBlobOptions &amp;&#160;\n          options = CreatePageBlobOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobContentLength
+    summary: 'Specifies the maximum size for the page blob. The size must be aligned to a 512-byte boundary. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A CreatePageBlobResult describing the newly created page blob. CreatePageBlobResult.Created is false if the blob already exists. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetManagedDiskPageRangesDiff()'
+- content: ''
+- content: ''
+- content: ''
+- content: "GetPageRangesDiffPagedResponse Azure::Storage::Blobs::PageBlobClient::GetManagedDiskPageRangesDiff \n          (\n          const std::string &amp;&#160;\n          previousSnapshotUrl, \n        \n        \n          \n          \n          const GetPageRangesOptions &amp;&#160;\n          options = GetPageRangesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: previousSnapshotUrl
+    summary: 'This parameter only works with managed disk storage accounts. Specifies that the response will contain only pages that were changed between target blob and previous snapshot. Changed pages include both updated and cleared pages. The target blob may be a snapshot, as long as the snapshot specified by previousSnapshotUrl is the older of the two. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A GetPageRangesResult describing the valid page ranges for this blob. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetPageRanges()'
+- content: ''
+- content: ''
+- content: ''
+- content: "GetPageRangesPagedResponse Azure::Storage::Blobs::PageBlobClient::GetPageRanges \n          (\n          const GetPageRangesOptions &amp;&#160;\n          options = GetPageRangesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A GetPageRangesResult describing the valid page ranges for this blob. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetPageRangesDiff()'
+- content: ''
+- content: ''
+- content: ''
+- content: "GetPageRangesDiffPagedResponse Azure::Storage::Blobs::PageBlobClient::GetPageRangesDiff \n          (\n          const std::string &amp;&#160;\n          previousSnapshot, \n        \n        \n          \n          \n          const GetPageRangesOptions &amp;&#160;\n          options = GetPageRangesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: previousSnapshot
+    summary: 'Specifies that the response will contain only pages that were changed between target blob and previous snapshot. Changed pages include both updated and cleared pages. The target blob may be a snapshot, as long as the snapshot specified by previousSnapshot is the older of the two. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A GetPageRangesResult describing the valid page ranges for this blob. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Resize()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ResizePageBlobResult &gt; Azure::Storage::Blobs::PageBlobClient::Resize \n          (\n          int64_t&#160;\n          blobSize, \n        \n        \n          \n          \n          const ResizePageBlobOptions &amp;&#160;\n          options = ResizePageBlobOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobSize
+    summary: 'Specifies the maximum size for the page blob. The size must be aligned to a 512-byte boundary. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A ResizePageBlobResult describing the resized page blob. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;StartCopyIncremental()'
+- content: ''
+- content: ''
+- content: ''
+- content: "StartBlobCopyOperation Azure::Storage::Blobs::PageBlobClient::StartCopyIncremental \n          (\n          const std::string &amp;&#160;\n          sourceUri, \n        \n        \n          \n          \n          const StartBlobCopyIncrementalOptions &amp;&#160;\n          options = StartBlobCopyIncrementalOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: sourceUri
+    summary: 'Specifies the to the source page blob as a uri up to 2 KB in length. The source blob must either be public or must be authenticated via a shared access signature. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_operation.html" title="A long-running operation to copy a blob.">StartBlobCopyOperation</a> describing the state of the copy operation. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpdateSequenceNumber()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::UpdateSequenceNumberResult &gt; Azure::Storage::Blobs::PageBlobClient::UpdateSequenceNumber \n          (\n          Models::SequenceNumberAction&#160;\n          action, \n        \n        \n          \n          \n          const UpdatePageBlobSequenceNumberOptions &amp;&#160;\n          options = UpdatePageBlobSequenceNumberOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: action
+    summary: "Specifies how the service should modify the blob's sequence number. "
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'An UpdateSequenceNumberResult describing the updated page blob. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UploadPages()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::UploadPagesResult &gt; Azure::Storage::Blobs::PageBlobClient::UploadPages \n          (\n          int64_t&#160;\n          offset, \n        \n        \n          \n          \n          Azure::Core::IO::BodyStream &amp;&#160;\n          content, \n        \n        \n          \n          \n          const UploadPagesOptions &amp;&#160;\n          options = UploadPagesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: offset
+    summary: 'Specifies the starting offset for the content to be written as a page. Given that pages must be aligned with 512-byte boundaries, the start offset must be a modulus of 512. '
+  - name: content
+    summary: 'A BodyStream containing the content of the pages to upload. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A UploadPagesResult describing the state of the updated pages. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UploadPagesFromUri()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::UploadPagesFromUriResult &gt; Azure::Storage::Blobs::PageBlobClient::UploadPagesFromUri \n          (\n          int64_t&#160;\n          destinationOffset, \n        \n        \n          \n          \n          std::string&#160;\n          sourceUri, \n        \n        \n          \n          \n          Azure::Core::Http::HttpRange&#160;\n          sourceRange, \n        \n        \n          \n          \n          const UploadPagesFromUriOptions &amp;&#160;\n          options = UploadPagesFromUriOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: destinationOffset
+    summary: 'Specifies the starting offset for the content to be written. Given that pages must be aligned with 512-byte boundaries, the start offset must be a modulus of 512. '
+  - name: sourceUri
+    summary: 'Specifies the uri of the source blob. The value may be a uri of up to 2 KB in length that specifies a blob. The source blob must either be public or must be authenticated via a shared access signature. If the source blob is public, no authentication is required to perform the operation. '
+  - name: sourceRange
+    summary: 'Only upload the bytes of the blob in the sourceUri in the specified range. '
+  - name: options
+    summary: 'Optional parameters to execute this function. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A UploadPagesFromUriResult describing the state of the updated pages. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;WithSnapshot()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    PageBlobClient Azure::Storage::Blobs::PageBlobClient::WithSnapshot 
+              (
+              const std::string &amp;&#160;
+              snapshot)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: snapshot
+    summary: 'The snapshot identifier. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A new <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> instance. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;WithVersionId()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    PageBlobClient Azure::Storage::Blobs::PageBlobClient::WithVersionId 
+              (
+              const std::string &amp;&#160;
+              versionId)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: versionId
+    summary: 'The version ID returning a URL to the base blob. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A new <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> instance. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/storage/blobs/page_blob_client.hpp
+
+    src/page_blob_client.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

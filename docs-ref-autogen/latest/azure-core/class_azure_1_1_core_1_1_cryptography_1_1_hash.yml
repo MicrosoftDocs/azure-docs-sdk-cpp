@@ -1,0 +1,175 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreCryptographyHash
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Represents the base class for hash algorithms which map binary data of an arbitrary length to small binary data of a fixed length.
+- content: ''
+- content: <code>#include &lt;<a href="hash_8hpp_source.html">hash.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Core::Cryptography::Hash:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Member Functions
+- content: >-
+    void&#160;&#160;Append (const uint8_t *data, size_t length)Used to append partial binary input data to compute the hash in a streaming fashion.  
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;Final (const uint8_t *data, size_t length)Computes the hash value of the specified binary input data, including any previously appended.  
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;Final ()Computes the hash value of all the binary input data appended to the instance so far.  
+
+
+
+    virtual&#160;&#160;~Hash ()=defaultDestructs Hash.
+- section: Protected Member Functions
+- content: '&#160;&#160;Hash ()=defaultConstructs a default instance of Hash.'
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Hash()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Cryptography::Hash::Hash \n          (\n          )\n          \n        \n      \n  \n  \nprotecteddefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;~Hash()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual Azure::Core::Cryptography::Hash::~Hash \n          (\n          )\n          \n        \n      \n  \n  \nvirtualdefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Append()'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Azure::Core::Cryptography::Hash::Append \n          (\n          const uint8_t *&#160;\n          data, \n        \n        \n          \n          \n          size_t&#160;\n          length&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: data
+    summary: 'The pointer to the current block of binary data that is used for hash calculation. '
+  - name: length
+    summary: 'The size of the data provided. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Final() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::vector&lt; uint8_t &gt; Azure::Core::Cryptography::Hash::Final \n          (\n          )\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The computed hash value corresponding to the input provided. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Final() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::vector&lt; uint8_t &gt; Azure::Core::Cryptography::Hash::Final \n          (\n          const uint8_t *&#160;\n          data, \n        \n        \n          \n          \n          size_t&#160;\n          length&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: data
+    summary: 'The pointer to the last block of binary data to compute the hash value for. '
+  - name: length
+    summary: 'The size of the data provided. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The computed hash value corresponding to the input provided, including any previously appended. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/core/cryptography/hash.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

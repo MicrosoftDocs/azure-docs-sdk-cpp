@@ -1,0 +1,281 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureETag
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Represents an HTTP validator.
+- content: ''
+- content: <code>#include &lt;<a href="etag_8hpp_source.html">etag.hpp</a>&gt;</code>
+- content: ''
+- section: Public Types
+- content: >-
+    enum class &#160;&#160;ETagComparison { Strong
+
+    , Weak
+     }The comparison type.  More...
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;ETag ()=defaultConstructs an empty (null) ETag.  
+
+
+
+    &#160;&#160;ETag (std::string etag)Constructs an ETag with string representation.  
+
+
+
+    bool&#160;&#160;HasValue () constWhether ETag is present.  
+
+
+
+    const std::string &amp;&#160;&#160;ToString () constReturns the resource metadata represented as a string.  
+
+
+
+    bool&#160;&#160;operator== (const ETag &amp;other) constCompare with other ETag for equality.  
+
+
+
+    bool&#160;&#160;operator!= (const ETag &amp;other) constCompare with other ETag for inequality.  
+
+
+
+    bool&#160;&#160;IsWeak () constSpecifies whether the Azure::ETag is strong or weak.
+- section: Static Public Member Functions
+- content: >-
+    static bool&#160;&#160;Equals (const ETag &amp;left, const ETag &amp;right, const ETagComparison comparisonKind=ETagComparison::Strong)Indicates whether two Azure::ETag values are equal.  
+
+
+
+    static const ETag &amp;&#160;&#160;Any ()Azure::ETag representing everything.
+- content: ''
+- section: Member Enumeration Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ETagComparison'
+- content: ''
+- content: ''
+- content: ''
+- content: "enum class Azure::ETag::ETagComparison\n        \n      \n  \n  \nstrong"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ETag() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::ETag::ETag \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ETag() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::ETag::ETag \n          (\n          std::string&#160;\n          etag)\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: etag
+    summary: 'The string value representation. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Any()'
+- content: ''
+- content: ''
+- content: ''
+- content: "const ETag &amp; ETag::Any \n          (\n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Equals()'
+- content: ''
+- content: ''
+- content: ''
+- content: "static bool Azure::ETag::Equals \n          (\n          const ETag &amp;&#160;\n          left, \n        \n        \n          \n          \n          const ETag &amp;&#160;\n          right, \n        \n        \n          \n          \n          const ETagComparison&#160;\n          comparisonKind = ETagComparison::Strong&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlinestatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: left
+    summary: '<a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> to compare. '
+  - name: right
+    summary: '<a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> to compare. '
+  - name: comparisonKind
+    summary: 'Determines what <a class="el" href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e" title="The comparison type.">Azure::ETag::ETagComparison</a> to perform, default is <a class="el" href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e" title="The comparison type.">Azure::ETag::ETagComparison</a> Strong. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<code>true</code> if <code>ETag</code> matches; otherwise, <code>false</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;HasValue()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::ETag::HasValue \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<code>true</code> if <code>ETag</code> has a value; otherwise, <code>false</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;IsWeak()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::ETag::IsWeak \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<code>true</code> if <a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> is a weak validator; otherwise, <code>false</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator!=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::ETag::operator!= \n          (\n          const ETag &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'Other <code>ETag</code> to compare with. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<code>true</code> if <code>ETag</code> instances are not equal according to strong validation; otherwise, <code>false</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator==()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::ETag::operator== \n          (\n          const ETag &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: 'Other <code>ETag</code> to compare with. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<code>true</code> if <code>ETag</code> instances are equal according to strong validation; otherwise, <code>false</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ToString()'
+- content: ''
+- content: ''
+- content: ''
+- content: "const std::string &amp; Azure::ETag::ToString \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'std::string '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/etag.hpp
+
+    src/etag.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

@@ -1,0 +1,217 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-data-tables
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureDataTablesSasTablesSasBuilder
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: TableSasBuilder is used to generate a Shared Access Signature (SAS) for an Azure Storage Tables.
+- content: ''
+- content: <code>#include &lt;<a href="tables__sas__builder_8hpp_source.html">tables_sas_builder.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    void&#160;&#160;SetPermissions (TablesSasPermissions permissions)Sets the permissions for the table SAS.  
+
+
+
+    void&#160;&#160;SetPermissions (std::string rawPermissions)Sets the permissions for the SAS using a raw permissions string.  
+
+
+
+    std::string&#160;&#160;GenerateSasToken (const Azure::Data::Tables::Credentials::NamedKeyCredential &amp;credential)Uses the NamedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.  
+
+
+
+    std::string&#160;&#160;GetCanonicalName (const Azure::Data::Tables::Credentials::NamedKeyCredential &amp;credential) constGets the canonical path for the shared access signature.
+- section: Public Attributes
+- content: >-
+    SasProtocol&#160;&#160;ProtocolThe optional signed protocol field specifies the protocol permitted for a request made with the SAS. 
+
+
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;StartsOnOptionally specify the time at which the shared access signature becomes valid. This timestamp will be truncated to second. 
+
+
+
+
+    Azure::DateTime&#160;&#160;ExpiresOnThe time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. This timestamp will be truncated to second. 
+
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;IPRangeSpecifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive. 
+
+
+
+
+    std::string&#160;&#160;IdentifierAn optional unique value up to 64 characters in length that correlates to an access policy specified for the table. 
+
+
+
+
+    std::string&#160;&#160;TableNameThe name of the table being made accessible. 
+
+
+
+
+    std::string&#160;&#160;PartitionKeyStartThe optional start of the partition key values range being made available. 
+
+
+
+
+    std::string&#160;&#160;PartitionKeyEndThe optional end of the partition key values range being made available. 
+
+
+
+
+    std::string&#160;&#160;RowKeyStartThe optional start of the row key values range being made available. 
+
+
+
+
+    std::string&#160;&#160;RowKeyEndThe optional end of the partition key values range being made available.
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GenerateSasToken()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    std::string Azure::Data::Tables::Sas::TablesSasBuilder::GenerateSasToken 
+              (
+              const Azure::Data::Tables::Credentials::NamedKeyCredential &amp;&#160;
+              credential)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: credential
+    summary: 'The named key credential. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The SAS query parameters used for authenticating requests. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetCanonicalName()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string Azure::Data::Tables::Sas::TablesSasBuilder::GetCanonicalName \n          (\n          const Azure::Data::Tables::Credentials::NamedKeyCredential &amp;&#160;\n          credential)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: credential
+    summary: 'The named key credential. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Canonical path. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetPermissions() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Azure::Data::Tables::Sas::TablesSasBuilder::SetPermissions \n          (\n          std::string&#160;\n          rawPermissions)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: rawPermissions
+    summary: 'Raw permissions string for the SAS. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetPermissions() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Data::Tables::Sas::TablesSasBuilder::SetPermissions 
+              (
+              TablesSasPermissions&#160;
+              permissions)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: permissions
+    summary: 'The allowed permissions. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/data/tables/tables_sas_builder.hpp
+
+    src/tables_sas_builder.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

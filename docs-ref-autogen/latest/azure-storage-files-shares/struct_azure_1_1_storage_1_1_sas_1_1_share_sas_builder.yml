@@ -1,0 +1,258 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-shares
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageSasShareSasBuilder
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.html">ShareSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage share or file.
+- content: ''
+- content: <code>#include &lt;<a href="share__sas__builder_8hpp_source.html">share_sas_builder.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    void&#160;&#160;SetPermissions (ShareSasPermissions permissions)Sets the permissions for the share SAS.  
+
+
+
+    void&#160;&#160;SetPermissions (ShareFileSasPermissions permissions)Sets the permissions for the share SAS.  
+
+
+
+    void&#160;&#160;SetPermissions (std::string rawPermissions)Sets the permissions for the SAS using a raw permissions string.  
+
+
+
+    std::string&#160;&#160;GenerateSasToken (const StorageSharedKeyCredential &amp;credential)Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.  
+
+
+
+    std::string&#160;&#160;GenerateSasStringToSign (const StorageSharedKeyCredential &amp;credential)For debugging purposes only.
+- section: Public Attributes
+- content: >-
+    SasProtocol&#160;&#160;ProtocolThe optional signed protocol field specifies the protocol permitted for a request made with the SAS. 
+
+
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;StartsOnOptionally specify the time at which the shared access signature becomes valid. This timestamp will be truncated to second. 
+
+
+
+
+    Azure::DateTime&#160;&#160;ExpiresOnThe time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. This timestamp will be truncated to second. 
+
+
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;&#160;IPRangeSpecifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive. 
+
+
+
+
+    std::string&#160;&#160;IdentifierAn optional unique value up to 64 characters in length that correlates to an access policy specified for the share. 
+
+
+
+
+    std::string&#160;&#160;ShareNameThe name of the file share being made accessible. 
+
+
+
+
+    std::string&#160;&#160;FilePathThe name of the share file being made accessible, or empty for a share SAS.. 
+
+
+
+
+    ShareSasResource&#160;&#160;ResourceSpecifies which resources are accessible via the shared access signature. 
+
+
+
+
+    std::string&#160;&#160;CacheControlOverride the value returned for Cache-Control response header.. 
+
+
+
+
+    std::string&#160;&#160;ContentDispositionOverride the value returned for Content-Disposition response header.. 
+
+
+
+
+    std::string&#160;&#160;ContentEncodingOverride the value returned for Content-Encoding response header.. 
+
+
+
+
+    std::string&#160;&#160;ContentLanguageOverride the value returned for Content-Language response header.. 
+
+
+
+
+    std::string&#160;&#160;ContentTypeOverride the value returned for Content-Type response header..
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GenerateSasStringToSign()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    std::string Azure::Storage::Sas::ShareSasBuilder::GenerateSasStringToSign 
+              (
+              const StorageSharedKeyCredential &amp;&#160;
+              credential)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: credential
+    summary: "The storage account's shared key credential. "
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Returns the string to sign that will be used to generate the signature for the SAS URL. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GenerateSasToken()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    std::string Azure::Storage::Sas::ShareSasBuilder::GenerateSasToken 
+              (
+              const StorageSharedKeyCredential &amp;&#160;
+              credential)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: credential
+    summary: "The storage account's shared key credential. "
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The SAS query parameters used for authenticating requests. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetPermissions() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Storage::Sas::ShareSasBuilder::SetPermissions 
+              (
+              ShareFileSasPermissions&#160;
+              permissions)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: permissions
+    summary: 'The allowed permissions. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetPermissions() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    void Azure::Storage::Sas::ShareSasBuilder::SetPermissions 
+              (
+              ShareSasPermissions&#160;
+              permissions)
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: permissions
+    summary: 'The allowed permissions. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetPermissions() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "void Azure::Storage::Sas::ShareSasBuilder::SetPermissions \n          (\n          std::string&#160;\n          rawPermissions)\n          \n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: rawPermissions
+    summary: 'Raw permissions string for the SAS. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/storage/files/shares/share_sas_builder.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

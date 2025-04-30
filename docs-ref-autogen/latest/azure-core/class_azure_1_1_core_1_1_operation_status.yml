@@ -1,0 +1,275 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreOperationStatus
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Long-running operation states.
+- content: ''
+- content: <code>#include &lt;<a href="operation__status_8hpp_source.html">operation_status.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;OperationStatus (const std::string &amp;value)Constructs an OperationStatus with value.  
+
+
+
+    &#160;&#160;OperationStatus (std::string &amp;&amp;value)Constructs an OperationStatus with value.  
+
+
+
+    &#160;&#160;OperationStatus (const char *value)Constructs an OperationStatus with value.  
+
+
+
+    bool&#160;&#160;operator== (const OperationStatus &amp;other) const noexceptCompares two OperationStatus objects for equality.  
+
+
+
+    bool&#160;&#160;operator!= (const OperationStatus &amp;other) const noexceptCompares two OperationStatus objects for equality.  
+
+
+
+    const std::string &amp;&#160;&#160;Get () const noexceptGets the std::string representation of the operation status.
+- section: Static Public Attributes
+- content: >-
+    static AZ_CORE_DLLEXPORT const OperationStatus&#160;&#160;NotStartedThe Azure::Core::Operation is Not Started.  
+
+
+
+    static AZ_CORE_DLLEXPORT const OperationStatus&#160;&#160;Running {&quot;Running&quot;}The Azure::Core::Operation is Running.  
+
+
+
+    static AZ_CORE_DLLEXPORT const OperationStatus&#160;&#160;Succeeded {&quot;Succeeded&quot;}The Azure::Core::Operation Succeeded.  
+
+
+
+    static AZ_CORE_DLLEXPORT const OperationStatus&#160;&#160;Cancelled {&quot;Cancelled&quot;}The Azure::Core::Operation was Cancelled.  
+
+
+
+    static AZ_CORE_DLLEXPORT const OperationStatus&#160;&#160;Failed {&quot;Failed&quot;}The Azure::Core::Operation Failed.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;OperationStatus() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::OperationStatus::OperationStatus \n          (\n          const std::string &amp;&#160;\n          value)\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'The value to initialize with. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;OperationStatus() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::OperationStatus::OperationStatus \n          (\n          std::string &amp;&amp;&#160;\n          value)\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'The value to initialize with. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;OperationStatus() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::OperationStatus::OperationStatus \n          (\n          const char *&#160;\n          value)\n          \n        \n      \n  \n  \ninlineexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: 'The value to initialize with. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Get()'
+- content: ''
+- content: ''
+- content: ''
+- content: "const std::string &amp; Azure::Core::OperationStatus::Get \n          (\n          )\n           const\n        \n      \n  \n  \ninlinenoexcept"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator!=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::OperationStatus::operator!= \n          (\n          const OperationStatus &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninlinenoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: A <code>OperationStatus</code> to compare with.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<code>false</code> if the states have the same string representation; otherwise, <code>true</code>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator==()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::OperationStatus::operator== \n          (\n          const OperationStatus &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninlinenoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: An <code>OperationStatus</code> to compare with.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<code>true</code> if the states have the same string representation; otherwise,<code>false</code>. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Cancelled'
+- content: ''
+- content: ''
+- content: ''
+- content: "const OperationStatus Azure::Core::OperationStatus::Cancelled {&quot;Cancelled&quot;}\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Failed'
+- content: ''
+- content: ''
+- content: ''
+- content: "const OperationStatus Azure::Core::OperationStatus::Failed {&quot;Failed&quot;}\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;NotStarted'
+- content: ''
+- content: ''
+- content: ''
+- content: "const OperationStatus Azure::Core::OperationStatus::NotStarted\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Running'
+- content: ''
+- content: ''
+- content: ''
+- content: "const OperationStatus Azure::Core::OperationStatus::Running {&quot;Running&quot;}\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Succeeded'
+- content: ''
+- content: ''
+- content: ''
+- content: "const OperationStatus Azure::Core::OperationStatus::Succeeded {&quot;Succeeded&quot;}\n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/operation_status.hpp
+
+    src/operation_status.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

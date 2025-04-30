@@ -1,0 +1,251 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-attestation
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityAttestationModelsAttestationToken
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    An <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html">AttestationResult</a> reflects the result of an Attestation operation.  
+     <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="attestation__client__models_8hpp_source.html">attestation_client_models.hpp</a>&gt;</code>
+- content: ''
+- content: 'Inheritance diagram for Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;:'
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: Public Attributes
+- content: >-
+    std::string&#160;&#160;RawTokenThe full RFC 7515 JWS/JWT token returned by the attestation service. 
+
+
+
+
+    std::string&#160;&#160;SignedElementsThe elements of the raw token which will be signed by the Signature. 
+
+
+
+
+    std::vector&lt; uint8_t &gt;&#160;&#160;SignatureSignature (if present) for the attestation token. 
+
+
+
+
+    Models::AttestationTokenHeader&#160;&#160;HeaderRFC 7515 header properties. 
+
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;ExpiresOn
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;IssuedOn
+
+
+    Azure::Nullable&lt; Azure::DateTime &gt;&#160;NotBefore
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;Issuer
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;UniqueIdentifier
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;Subject
+
+
+    Azure::Nullable&lt; std::string &gt;&#160;Audience
+
+
+
+
+    T&#160;Body
+
+    &#160;The deserialized body of the attestation token.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- section: >-
+    template&lt;typename T&gt;
+
+    struct Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;
+  display: h3
+- content: ''
+- content: The fields in the <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html">AttestationResult</a> represent the claims in the <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">AttestationToken</a> returned by the attestation service.
+- content: ''
+- content: When the attestation service returns a model type to the client, it embeds the response in an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">AttestationToken</a>, which is an <a href="https://www.rfc-editor.org/rfc/rfc7519.html">RFC7519 JSON Web Token</a>. The <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">AttestationToken</a> type represents both the token and the embedded model type. In this scenario, the <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">AttestationToken</a> template will be specialized on the model type (In other words, <code><a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">AttestationToken</a>&lt;ModelType&gt;</code>).
+- content: ''
+- content: There is another use for an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">AttestationToken</a> object. That's when the model type for the attestation token is unknown, or when it is not meaningful in context.
+- content: ''
+- content: For example, when the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client.html#a70ce6c8b9e39e1115e8c1885b15db5ea">AttestationAdministrationClient::SetAttestationPolicy</a> API returns, the resulting <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_policy_result.html">PolicyResult</a> model type contains a PolicyTokenHash field. This field consists of the SHA256 hash of the policy document sent to the attestation service.
+- content: ''
+- content: In order to verify that the attestation service correctly received the attestation policy sent by the client, the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client.html#a7ebfe672a3de7ff6a77c882e0d615551">AttestationAdministrationClient::CreateAttestationPolicyToken</a> API can be used to create an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">AttestationToken</a> object which is not specialized on any type (<code><a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">AttestationToken</a>&lt;&gt;</code>). The RawToken field in that can be used to calculate the hash which was sent to the service.
+- content: ''
+- content: Similarly, the <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html">AttestationTokenValidationOptions</a> object has a TokenValidationCallback method. This callback is called to allow the client to perform additional validations of the attestation token beyond those normally performed by the attestation service. This callback should not know the model type associated with the token, so it receives an AttestationToken&lt;&gt; object.
+- content: ''
+- section: Member Data Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;Audience'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;typename T &gt;
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;::Audience
+- content: ''
+- content: ''
+- content: The audience for this attestation token.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.3">RFC 7519 Section 4.1.3</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;ExpiresOn'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;typename T &gt;
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;::ExpiresOn
+- content: ''
+- content: ''
+- content: The Expiration time for this attestation token.
+- content: ''
+- content: After this time, the token cannot be considered valid.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.4">RFC 7519 Section 4.1.4</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;IssuedOn'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;typename T &gt;
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;::IssuedOn
+- content: ''
+- content: ''
+- content: The time at which this token was issued.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.6">RFC 7519 Section 4.1.6</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;Issuer'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;typename T &gt;
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;::Issuer
+- content: ''
+- content: ''
+- content: The issuer of this attestation token
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.1">RFC 7519 Section 4.1.1</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;NotBefore'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;typename T &gt;
+- content: ''
+- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;::NotBefore
+- content: ''
+- content: ''
+- content: The time before which this token cannot be considered valid.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.5">RFC 7519 Section 4.1.5</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;Subject'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;typename T &gt;
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;::Subject
+- content: ''
+- content: ''
+- content: The subject for this attestation token.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.2">RFC 7519 Section 4.1.2</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&nbsp;UniqueIdentifier'
+- content: ''
+- content: ''
+- content: ''
+- content: template&lt;typename T &gt;
+- content: ''
+- content: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;::UniqueIdentifier
+- content: ''
+- content: ''
+- content: An identifier which uniquely identifies this token.
+- content: ''
+- content: See <a href="https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.7">RFC 7519 Section 4.1.7</a> for more information.
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this struct was generated from the following file:'
+- content: inc/azure/attestation/attestation_client_models.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by &#160;
+- content: ''
+- content: 1.9.1
+- content: ''
+- content: ''
+- content: ''

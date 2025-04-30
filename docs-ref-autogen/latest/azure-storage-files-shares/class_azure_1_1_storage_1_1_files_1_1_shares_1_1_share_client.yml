@@ -1,0 +1,622 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-storage-files-shares
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureStorageFilesSharesShareClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: The <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html">ShareClient</a> allows you to manipulate Azure Storage shares and their directories and files.
+- content: ''
+- content: <code>#include &lt;<a href="share__client_8hpp_source.html">share_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;ShareClient (const std::string &amp;shareUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareClient using shared key authentication.  
+
+
+
+    &#160;&#160;ShareClient (const std::string &amp;shareUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareClient using shared key authentication.  
+
+
+
+    &#160;&#160;ShareClient (const std::string &amp;shareUrl, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareClient using anonymous access or shared access signature.  
+
+
+
+    std::string&#160;&#160;GetUrl () constGets the share's primary URL endpoint.  
+
+
+
+    ShareClient&#160;&#160;WithSnapshot (const std::string &amp;snapshot) constInitializes a new instance of the ShareClient class with an identical URL source but the specified share snapshot timestamp.  
+
+
+
+    ShareDirectoryClient&#160;&#160;GetRootDirectoryClient () constGets the ShareDirectoryClient that's pointing to the root directory of current ShareClient.  
+
+
+
+    Azure::Response&lt; Models::CreateShareResult &gt;&#160;&#160;Create (const CreateShareOptions &amp;options=CreateShareOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates the file share.  
+
+
+
+    Azure::Response&lt; Models::CreateShareResult &gt;&#160;&#160;CreateIfNotExists (const CreateShareOptions &amp;options=CreateShareOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates the file share if it does not exist, nothing will happen if the file share already exists.  
+
+
+
+    Azure::Response&lt; Models::DeleteShareResult &gt;&#160;&#160;Delete (const DeleteShareOptions &amp;options=DeleteShareOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the file share.  
+
+
+
+    Azure::Response&lt; Models::DeleteShareResult &gt;&#160;&#160;DeleteIfExists (const DeleteShareOptions &amp;options=DeleteShareOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the file share if it exists.  
+
+
+
+    Azure::Response&lt; Models::CreateShareSnapshotResult &gt;&#160;&#160;CreateSnapshot (const CreateShareSnapshotOptions &amp;options=CreateShareSnapshotOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates a snapshot for the share.  
+
+
+
+    Azure::Response&lt; Models::SetSharePropertiesResult &gt;&#160;&#160;SetProperties (const SetSharePropertiesOptions &amp;options=SetSharePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the properties of the share.  
+
+
+
+    Azure::Response&lt; Models::ShareProperties &gt;&#160;&#160;GetProperties (const GetSharePropertiesOptions &amp;options=GetSharePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the properties of the share.  
+
+
+
+    Azure::Response&lt; Models::SetShareMetadataResult &gt;&#160;&#160;SetMetadata (Storage::Metadata metadata, const SetShareMetadataOptions &amp;options=SetShareMetadataOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the metadata to the share.  
+
+
+
+    Azure::Response&lt; Models::ShareAccessPolicy &gt;&#160;&#160;GetAccessPolicy (const GetShareAccessPolicyOptions &amp;options=GetShareAccessPolicyOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the access policy of the share.  
+
+
+
+    Azure::Response&lt; Models::SetShareAccessPolicyResult &gt;&#160;&#160;SetAccessPolicy (const std::vector&lt; Models::SignedIdentifier &gt; &amp;accessPolicy, const SetShareAccessPolicyOptions &amp;options=SetShareAccessPolicyOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the access policy of the share.  
+
+
+
+    Azure::Response&lt; Models::ShareStatistics &gt;&#160;&#160;GetStatistics (const GetShareStatisticsOptions &amp;options=GetShareStatisticsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the stats of the share.  
+
+
+
+    Azure::Response&lt; Models::CreateSharePermissionResult &gt;&#160;&#160;CreatePermission (const std::string &amp;permission, const CreateSharePermissionOptions &amp;options=CreateSharePermissionOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates a permission on the share.  
+
+
+
+    Azure::Response&lt; std::string &gt;&#160;&#160;GetPermission (const std::string &amp;permissionKey, const GetSharePermissionOptions &amp;options=GetSharePermissionOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the permission of the share using the specific key.
+- section: Static Public Member Functions
+- content: static ShareClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const std::string &amp;shareName, const ShareClientOptions &amp;options=ShareClientOptions())Create A ShareClient from connection string to manage a File Share resource.
+- section: Friends
+- content: >-
+    class&#160;ShareLeaseClient
+
+
+
+    class&#160;ShareServiceClient
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareClient() [1/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareClient::ShareClient \n          (\n          const std::string &amp;&#160;\n          shareUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareUrl
+    summary: "The URL of the file share this client's request targets. "
+  - name: credential
+    summary: 'The shared key credential used to initialize the client. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareClient() [2/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareClient::ShareClient \n          (\n          const std::string &amp;&#160;\n          shareUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareUrl
+    summary: "The URL of the file share this client's request targets. "
+  - name: credential
+    summary: 'The token credential used to sign requests. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;ShareClient() [3/3]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Storage::Files::Shares::ShareClient::ShareClient \n          (\n          const std::string &amp;&#160;\n          shareUrl, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareUrl
+    summary: "The URL of the file share this client's request targets. "
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Create()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateShareResult &gt; Azure::Storage::Files::Shares::ShareClient::Create \n          (\n          const CreateShareOptions &amp;&#160;\n          options = CreateShareOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to create this file share. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreateShareResult> containing the information including the version and modified time of a share. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateFromConnectionString()'
+- content: ''
+- content: ''
+- content: ''
+- content: "static ShareClient Azure::Storage::Files::Shares::ShareClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          shareName, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: 'Azure Storage connection string. '
+  - name: shareName
+    summary: 'The name of a file share. '
+  - name: options
+    summary: 'Optional parameters used to initialize the client. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> The client that can be used to manage a share resource. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateIfNotExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateShareResult &gt; Azure::Storage::Files::Shares::ShareClient::CreateIfNotExists \n          (\n          const CreateShareOptions &amp;&#160;\n          options = CreateShareOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to create this file share. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreateShareResult> containing the information including the version and modified time of a share if it is successfully created. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreatePermission()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateSharePermissionResult &gt; Azure::Storage::Files::Shares::ShareClient::CreatePermission \n          (\n          const std::string &amp;&#160;\n          permission, \n        \n        \n          \n          \n          const CreateSharePermissionOptions &amp;&#160;\n          options = CreateSharePermissionOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: permission
+    summary: 'Specifies the permission to be created on the share. '
+  - name: options
+    summary: "Optional parameters to create the share's permission. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreateSharePermissionResult> containing the information including the permission key of the permission. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;CreateSnapshot()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::CreateShareSnapshotResult &gt; Azure::Storage::Files::Shares::ShareClient::CreateSnapshot \n          (\n          const CreateShareSnapshotOptions &amp;&#160;\n          options = CreateShareSnapshotOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to create the share snapshot. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::CreateShareSnapshotResult> containing the information for ths snapshot. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;Delete()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteShareResult &gt; Azure::Storage::Files::Shares::ShareClient::Delete \n          (\n          const DeleteShareOptions &amp;&#160;\n          options = DeleteShareOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete this file share. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DeleteShareResult> currently empty and reserved for future usage. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;DeleteIfExists()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::DeleteShareResult &gt; Azure::Storage::Files::Shares::ShareClient::DeleteIfExists \n          (\n          const DeleteShareOptions &amp;&#160;\n          options = DeleteShareOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to delete this file share. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::DeleteShareResult> currently empty and reserved for future usage. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetAccessPolicy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ShareAccessPolicy &gt; Azure::Storage::Files::Shares::ShareClient::GetAccessPolicy \n          (\n          const GetShareAccessPolicyOptions &amp;&#160;\n          options = GetShareAccessPolicyOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: "Optional parameters to get the share's access policy. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::ShareAccessPolicy> containing the access policy of the share. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetPermission()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; std::string &gt; Azure::Storage::Files::Shares::ShareClient::GetPermission \n          (\n          const std::string &amp;&#160;\n          permissionKey, \n        \n        \n          \n          \n          const GetSharePermissionOptions &amp;&#160;\n          options = GetSharePermissionOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: permissionKey
+    summary: 'The permission key of a permission. '
+  - name: options
+    summary: "Optional parameters to get share's permission. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<std::string> containing the permission string with specified key. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ShareProperties &gt; Azure::Storage::Files::Shares::ShareClient::GetProperties \n          (\n          const GetSharePropertiesOptions &amp;&#160;\n          options = GetSharePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to get the share properties. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::ShareProperties> containing the properties for ths share or one of its snapshot. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetRootDirectoryClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    ShareDirectoryClient Azure::Storage::Files::Shares::ShareClient::GetRootDirectoryClient 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html" title="The ShareDirectoryClient allows you to manipulate Azure Storage shares and their directories and file...">ShareDirectoryClient</a> The root directory of the share. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetStatistics()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::ShareStatistics &gt; Azure::Storage::Files::Shares::ShareClient::GetStatistics \n          (\n          const GetShareStatisticsOptions &amp;&#160;\n          options = GetShareStatisticsOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: "Optional parameters to get share's statistics. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::ShareStatistics> containing the information including the bytes used in by the share, the version and modified time of a share. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetUrl()'
+- content: ''
+- content: ''
+- content: ''
+- content: "std::string Azure::Storage::Files::Shares::ShareClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: "The share's primary URL endpoint. "
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetAccessPolicy()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetShareAccessPolicyResult &gt; Azure::Storage::Files::Shares::ShareClient::SetAccessPolicy \n          (\n          const std::vector&lt; Models::SignedIdentifier &gt; &amp;&#160;\n          accessPolicy, \n        \n        \n          \n          \n          const SetShareAccessPolicyOptions &amp;&#160;\n          options = SetShareAccessPolicyOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: accessPolicy
+    summary: 'Specifies the access policy to be set to the share. '
+  - name: options
+    summary: "Optional parameters to Set the share's access policy. "
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::SetShareAccessPolicyResult> containing the information including the version and modified time of a share. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetMetadata()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetShareMetadataResult &gt; Azure::Storage::Files::Shares::ShareClient::SetMetadata \n          (\n          Storage::Metadata&#160;\n          metadata, \n        \n        \n          \n          \n          const SetShareMetadataOptions &amp;&#160;\n          options = SetShareMetadataOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: metadata
+    summary: "A name-value pair to associate with a file storage 'Share' object.. "
+  - name: options
+    summary: 'Optional parameters to set the share metadata. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::SetShareMetadataResult> containing the information including the version and modified time of a share. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SetProperties()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Models::SetSharePropertiesResult &gt; Azure::Storage::Files::Shares::ShareClient::SetProperties \n          (\n          const SetSharePropertiesOptions &amp;&#160;\n          options = SetSharePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: 'Optional parameters to set the share properties. '
+  - name: context
+    summary: 'Context for cancelling long running operations. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Azure::Response<Models::SetSharePropertiesResult> containing the information including the version and modified time of a share. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;WithSnapshot()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    ShareClient Azure::Storage::Files::Shares::ShareClient::WithSnapshot 
+              (
+              const std::string &amp;&#160;
+              snapshot)
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: snapshot
+    summary: 'The snapshot identifier. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'A new <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> instance. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following file:'
+- content: inc/azure/storage/files/shares/share_client.hpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

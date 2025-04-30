@@ -1,0 +1,380 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-core-amqp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureCoreAmqpModelsAmqpDescribed
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    An <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html">AmqpDescribed</a> represents an AMQP described type.  
+     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html#details">More...</a>
+- content: ''
+- content: <code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    &#160;&#160;AmqpDescribed (AmqpSymbol const &amp;descriptor, AmqpValue const &amp;value)Construct a new AmqpDescribed object.  
+
+
+
+    &#160;&#160;AmqpDescribed (AmqpDescribed &amp;&amp;other) noexcept=defaultConstruct a new AmqpDescribed object by moving the contents of another AmqpDescribed object.  
+
+
+
+    &#160;&#160;AmqpDescribed (const AmqpDescribed &amp;other)=defaultCopy constructor for AmqpDescribed.  
+
+
+
+    AmqpDescribed &amp;&#160;&#160;operator= (AmqpDescribed &amp;&amp;other) noexcept=defaultMove assignment operator for AmqpDescribed.  
+
+
+
+    AmqpDescribed &amp;&#160;&#160;operator= (const AmqpDescribed &amp;other)=defaultCopy assignment operator for AmqpDescribed.  
+
+
+
+    &#160;&#160;AmqpDescribed (uint64_t descriptor, AmqpValue const &amp;value)Construct a new AmqpDescribed object with a 64bit descriptor.  
+
+
+
+    &#160;&#160;AmqpDescribed (AmqpValue const &amp;value)Construct a new AmqpDescribed object from an existing uAMQP AMQP_VALUE item.  
+
+
+
+    bool&#160;&#160;operator== (AmqpDescribed const &amp;that) constCompare this AmqpDescribed value with another.  
+
+
+
+    bool&#160;&#160;operator!= (AmqpDescribed const &amp;that) constCompare this AmqpDescribed value with another.  
+
+
+
+
+    &#160;&#160;operator AmqpValue const () constConvert an existing AmqpComposite to an AmqpValue. 
+
+
+
+    AmqpValue const &amp;&#160;&#160;GetDescriptor () constReturns the descriptor for this composite type.  
+
+
+
+    AmqpValue const &amp;&#160;&#160;GetValue () constReturns the descriptor for this composite type.  
+
+
+
+    AmqpValue&#160;&#160;AsAmqpValue () constConvert this AmqpDescribed to an AmqpValue.  
+
+
+
+    bool&#160;&#160;operator&lt; (AmqpDescribed const &amp;that) constCompare this AmqpDescribed value with another.
+- content: ''
+- content: ''
+- section: Detailed Description
+- content: ''
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpDescribed() [1/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpDescribed::AmqpDescribed \n          (\n          AmqpSymbol const &amp;&#160;\n          descriptor, \n        \n        \n          \n          \n          AmqpValue const &amp;&#160;\n          value&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- content: By convention, AMQP Descriptor values are either symbolic or numeric. Other types are reserved.
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: descriptor
+    summary: '- the Descriptor for the described value. '
+  - name: value
+    summary: '- the Value for the described value. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpDescribed() [2/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpDescribed::AmqpDescribed \n          (\n          AmqpDescribed &amp;&amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefaultnoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> object to move. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpDescribed() [3/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpDescribed::AmqpDescribed \n          (\n          const AmqpDescribed &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> object to copy. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpDescribed() [4/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Core::Amqp::Models::AmqpDescribed::AmqpDescribed \n          (\n          uint64_t&#160;\n          descriptor, \n        \n        \n          \n          \n          AmqpValue const &amp;&#160;\n          value&#160;\n        \n        \n          \n          )"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: descriptor
+    summary: '- the Descriptor for the described value. The descriptor value SHOULD be one of the values from the AMQP specification. '
+  - name: value
+    summary: '- the Value for the described value. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AmqpDescribed() [5/5]'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Core::Amqp::Models::AmqpDescribed::AmqpDescribed 
+              (
+              AmqpValue const &amp;&#160;
+              value)
+- content: ''
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: '- the AMQP array value to capture. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;AsAmqpValue()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    AmqpValue Azure::Core::Amqp::Models::AmqpDescribed::AsAmqpValue 
+              (
+              )
+               const
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'An <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> containing this <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a>. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetDescriptor()'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpValue const  &amp; Azure::Core::Amqp::Models::AmqpDescribed::GetDescriptor \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The descriptor for this composite type. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetValue()'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpValue const  &amp; Azure::Core::Amqp::Models::AmqpDescribed::GetValue \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'The descriptor for this composite type. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator!=()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::Amqp::Models::AmqpDescribed::operator!= \n          (\n          AmqpDescribed const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> to compare with. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator&lt;()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::Amqp::Models::AmqpDescribed::operator&lt; \n          (\n          AmqpDescribed const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> to compare with. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'true if this <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> is less than the other. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpDescribed &amp; Azure::Core::Amqp::Models::AmqpDescribed::operator= \n          (\n          AmqpDescribed &amp;&amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefaultnoexcept"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> object to move. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'reference to this <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> object. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator=() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "AmqpDescribed &amp; Azure::Core::Amqp::Models::AmqpDescribed::operator= \n          (\n          const AmqpDescribed &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> object to copy. '
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'reference to this <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> object. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;operator==()'
+- content: ''
+- content: ''
+- content: ''
+- content: "bool Azure::Core::Amqp::Models::AmqpDescribed::operator== \n          (\n          AmqpDescribed const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \ninline"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_described.html" title="An AmqpDescribed represents an AMQP described type.">AmqpDescribed</a> to compare with. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/core/amqp/models/amqp_value.hpp
+
+    src/models/amqp_value.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

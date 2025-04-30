@@ -1,0 +1,219 @@
+### YamlMime:Reference
+title: ''
+components:
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: azure-security-keyvault-administration
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Loading...
+- content: ''
+- content: Searching...
+- content: ''
+- content: No Matches
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: AzureSecurityKeyVaultAdministrationSettingsClient
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Settings Client class.
+- content: ''
+- content: <code>#include &lt;<a href="settings__client_8hpp_source.html">settings_client.hpp</a>&gt;</code>
+- content: ''
+- section: Public Member Functions
+- content: >-
+    virtual&#160;&#160;~SettingsClient ()=defaultDestructor.  
+
+
+
+    &#160;&#160;SettingsClient (std::string const &amp;vaultUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt; credential, SettingsClientOptions options=SettingsClientOptions())Construct a new settings client object.  
+
+
+
+    &#160;&#160;SettingsClient (SettingsClient const &amp;settingsClient)=defaultConstruct a new settings client object from another settings client.  
+
+
+
+    Azure::Response&lt; Models::Setting &gt;&#160;&#160;UpdateSetting (std::string const &amp;name, std::string const &amp;value, const Azure::Core::Context &amp;context=Azure::Core::Context{}) constUpdate a setting.  
+
+
+
+    Azure::Response&lt; Models::Setting &gt;&#160;&#160;GetSetting (std::string const &amp;name, const Azure::Core::Context &amp;context=Azure::Core::Context{}) constGets an existing setting.  
+
+
+
+    Azure::Response&lt; Models::SettingsListResult &gt;&#160;&#160;GetSettings (const Azure::Core::Context &amp;context=Azure::Core::Context{}) constGets all settings.
+- content: ''
+- section: Constructor &amp; Destructor Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;~SettingsClient()'
+- content: ''
+- content: ''
+- content: ''
+- content: "virtual Azure::Security::KeyVault::Administration::SettingsClient::~SettingsClient \n          (\n          )\n          \n        \n      \n  \n  \nvirtualdefault"
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SettingsClient() [1/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "SettingsClient::SettingsClient \n          (\n          std::string const &amp;&#160;\n          vaultUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt;&#160;\n          credential, \n        \n        \n          \n          \n          SettingsClientOptions&#160;\n          options = SettingsClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: vaultUrl
+    summary: 'The URL address where the client will send the requests to. '
+  - name: credential
+    summary: 'The authentication method to use. '
+  - name: options
+    summary: 'The options to customize the client behavior. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;SettingsClient() [2/2]'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Security::KeyVault::Administration::SettingsClient::SettingsClient \n          (\n          SettingsClient const &amp;&#160;\n          settingsClient)\n          \n        \n      \n  \n  \nexplicitdefault"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: settingsClient
+    summary: 'An existing key vault settings client. '
+- content: ''
+- content: ''
+- content: ''
+- section: Member Function Documentation
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetSetting()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Setting &gt; SettingsClient::GetSetting \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context{}&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'Name of setting to get. '
+  - name: context
+    summary: Operation context.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'response containing the setting. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;GetSettings()'
+- content: ''
+- content: ''
+- content: ''
+- content: >-
+    Azure::Response&lt; SettingsListResult &gt; SettingsClient::GetSettings 
+              (
+              const Azure::Core::Context &amp;&#160;
+              context = Azure::Core::Context{})
+               const
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: Operation context.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Response containing a list of settings. '
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- section: '&#9670;&#160;UpdateSetting()'
+- content: ''
+- content: ''
+- content: ''
+- content: "Azure::Response&lt; Setting &gt; SettingsClient::UpdateSetting \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          value, \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context{}&#160;\n        \n        \n          \n          )\n           const"
+- content: ''
+- content: ''
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: 'Name of the setting to update. '
+  - name: value
+    summary: 'Value of the setting . '
+  - name: context
+    summary: Operation Context.
+- content: ''
+- section: Returns
+  display: h4
+- parameters:
+  - summary: 'Response containing the new updated setting. '
+- content: ''
+- content: ''
+- content: ''
+- content: 'The documentation for this class was generated from the following files:'
+- content: >-
+    inc/azure/keyvault/administration/settings_client.hpp
+
+    src/settings_client.cpp
+- content: ''
+- content: ''
+- content: ''
+- content: ''
+- content: Generated by&#160;
+- content: ''
+- content: 1.9.7
+- content: ''
+- content: ''
+- content: ''

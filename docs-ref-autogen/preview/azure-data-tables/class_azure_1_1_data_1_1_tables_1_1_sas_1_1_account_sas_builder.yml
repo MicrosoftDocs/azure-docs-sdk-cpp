@@ -1,189 +1,93 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Data::Tables::Sas::AccountSasBuilder
+title: Azure::Data::Tables::Sas::AccountSasBuilder Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-data-tables
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureDataTablesSasAccountSasBuilder
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: <a href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_account_sas_builder.html">AccountSasBuilder</a> is used to generate an account level Shared Access Signature (SAS) for Azure Storage services.
-- content: ''
-- content: <code>#include &lt;<a href="account__sas__builder_8hpp_source.html">account_sas_builder.hpp</a>&gt;</code>
-- content: ''
+- content: <a href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_account_sas_builder.html">AccountSasBuilder</a> is used to generate an account level Shared Access Signature (SAS) for Azure Storage services.<code>#include &lt;<a href="account__sas__builder_8hpp_source.html">account_sas_builder.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    void&#160;&#160;SetPermissions (AccountSasPermissions permissions)Sets the permissions for an account SAS.  
-
-
-
-    void&#160;&#160;SetPermissions (std::string rawPermissions)Sets the permissions for the SAS using a raw permissions string.  
-
-
-
-    std::string&#160;&#160;GenerateSasToken (const Azure::Data::Tables::Credentials::NamedKeyCredential &amp;credential)Uses the NamedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_account_sas_builder.html#aeb98cbfcfcbdaaf3286ad2c635b850b2">SetPermissions</a> (AccountSasPermissions permissions)
+    summary: Sets the permissions for an account SAS.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_account_sas_builder.html#aebeb2db0d83b91f607ee90003bbefaf4">SetPermissions</a> (std::string rawPermissions)
+    summary: Sets the permissions for the SAS using a raw permissions string.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_account_sas_builder.html#a9cd36154ec9bab07747e0be8dfe41a7d">GenerateSasToken</a> (const <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_credentials_1_1_named_key_credential.html">Azure::Data::Tables::Credentials::NamedKeyCredential</a> &credential)
+    summary: Uses the NamedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.  <br>
+    returnType: std::string 
 - section: Public Attributes
-- content: >-
-    SasProtocol&#160;&#160;Protocol = SasProtocol::HttpsOnlyThe optional signed protocol field specifies the protocol permitted for a request made with the SAS. 
+  display: h2
+- apiList:
+  - declaration: <b>Protocol</b> = SasProtocol::HttpsOnly
+    summary: The optional signed protocol field specifies the protocol permitted for a request made with the SAS. <br>
+    returnType: >-
+      <a id="a8f1dcf69bd6a41bf9f545b933f94e170" name="a8f1dcf69bd6a41bf9f545b933f94e170"></a>
 
+      SasProtocol 
+  - declaration: <b>StartsOn</b>
+    summary: Optionally specify the time at which the shared access signature becomes valid. <br>
+    returnType: >-
+      <a id="a402b3992367005d02603ecf83b7284d3" name="a402b3992367005d02603ecf83b7284d3"></a>
 
+      Azure::Nullable< Azure::DateTime > 
+  - declaration: <b>ExpiresOn</b>
+    summary: The time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. <br>
+    returnType: >-
+      <a id="ae0934657666aad4e9c148a4c027eb39f" name="ae0934657666aad4e9c148a4c027eb39f"></a>
 
+      Azure::DateTime 
+  - declaration: <b>IPRange</b>
+    summary: Specifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive. <br>
+    returnType: >-
+      <a id="aab02e8d496b1b15c6e12635a9d8164e0" name="aab02e8d496b1b15c6e12635a9d8164e0"></a>
 
-    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;StartsOnOptionally specify the time at which the shared access signature becomes valid. 
+      Azure::Nullable< std::string > 
+  - declaration: <b>Services</b>
+    summary: The services associated with the shared access signature. The user is restricted to operations with the specified services. <br>
+    returnType: >-
+      <a id="a3c8128e06eaa266f1ca2081423576956" name="a3c8128e06eaa266f1ca2081423576956"></a>
 
+      AccountSasServices 
+  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_account_sas_builder.html#a23ab56cfb756855242f7fe4dae2c3ee3">ResourceTypes</a>
+    returnType: AccountSasResourceType 
+  - declaration: <b>EncryptionScope</b>
+    summary: Optional encryption scope to use when sending requests authorized with this SAS url. <br>
+    returnType: >-
+      <a id="ac9676d950e8179ae041c56bb30d5cbbc" name="ac9676d950e8179ae041c56bb30d5cbbc"></a>
 
-
-
-    Azure::DateTime&#160;&#160;ExpiresOnThe time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. 
-
-
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;IPRangeSpecifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive. 
-
-
-
-
-    AccountSasServices&#160;&#160;ServicesThe services associated with the shared access signature. The user is restricted to operations with the specified services. 
-
-
-
-    AccountSasResourceType&#160;ResourceTypes
-
-
-
-    std::string&#160;&#160;EncryptionScopeOptional encryption scope to use when sending requests authorized with this SAS url.
-- content: ''
+      std::string 
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;GenerateSasToken()'
-- content: ''
-- content: ''
-- content: ''
-- content: >-
-    std::string Azure::Data::Tables::Sas::AccountSasBuilder::GenerateSasToken 
-              (
-              const Azure::Data::Tables::Credentials::NamedKeyCredential &amp;&#160;
-              credential)
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: credential
-    summary: 'The named key credential. '
-- content: ''
+    summary: The named key credential.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The SAS query parameters used for authenticating requests. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The SAS query parameters used for authenticating requests.
 - section: '&#9670;&#160;SetPermissions() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: >-
-    void Azure::Data::Tables::Sas::AccountSasBuilder::SetPermissions 
-              (
-              AccountSasPermissions&#160;
-              permissions)
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: permissions
-    summary: 'The allowed permissions. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: The allowed permissions.
 - section: '&#9670;&#160;SetPermissions() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "void Azure::Data::Tables::Sas::AccountSasBuilder::SetPermissions \n          (\n          std::string&#160;\n          rawPermissions)\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: rawPermissions
-    summary: 'Raw permissions string for the SAS. '
-- content: ''
-- content: ''
-- content: ''
+    summary: Raw permissions string for the SAS.
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ResourceTypes'
-- content: ''
-- content: ''
-- content: ''
-- content: AccountSasResourceType Azure::Data::Tables::Sas::AccountSasBuilder::ResourceTypes
-- content: ''
-- content: ''
-- content: The resource types associated with the shared access signature. The user is restricted to operations on the specified resources.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+  display: h2
 - content: >-
-    inc/azure/data/tables/account_sas_builder.hpp
+    The resource types associated with the shared access signature. The user is restricted to operations on the specified resources.The documentation for this class was generated from the following files:inc/azure/data/tables/account_sas_builder.hpp
 
-    src/account_sas_builder.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/account_sas_builder.cppGenerated by&#160;1.9.7

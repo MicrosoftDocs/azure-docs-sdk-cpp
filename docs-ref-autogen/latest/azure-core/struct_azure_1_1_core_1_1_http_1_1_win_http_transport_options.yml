@@ -1,142 +1,73 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Core::Http::WinHttpTransportOptions
+title: Azure::Core::Http::WinHttpTransportOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureCoreHttpWinHttpTransportOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Sets the WinHTTP session and connection options used to customize the behavior of the transport.
-- content: ''
-- content: <code>#include &lt;<a href="win__http__transport_8hpp_source.html">win_http_transport.hpp</a>&gt;</code>
-- content: ''
+- content: Sets the WinHTTP session and connection options used to customize the behavior of the transport.<code>#include &lt;<a href="win__http__transport_8hpp_source.html">win_http_transport.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    bool&#160;&#160;IgnoreUnknownCertificateAuthority {false}When true, allows an invalid certificate authority. 
+  display: h2
+- apiList:
+  - declaration: <b>IgnoreUnknownCertificateAuthority</b> {false}
+    summary: When <code>true</code>, allows an invalid certificate authority. <br>
+    returnType: >-
+      <a id="a61b3b8519a98c64c6204ebab417c248b" name="a61b3b8519a98c64c6204ebab417c248b"></a>
 
+      bool 
+  - declaration: <b>IgnoreInvalidCertificateCommonName</b> {false}
+    summary: When <code>true</code>, allows an invalid common name in a certificate. <br>
+    returnType: >-
+      <a id="a8b9852962aaf01fdd50271ec945cd037" name="a8b9852962aaf01fdd50271ec945cd037"></a>
 
+      bool 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html#a841ee45e1fa533932f96c4e59a21598f">EnableSystemDefaultProxy</a> {false}
+    summary: If True, enables the use of the system default proxy.  <br>
+    returnType: bool 
+  - declaration: <b>EnableCertificateRevocationListCheck</b> {false}
+    summary: If True, enables checks for certificate revocation. <br>
+    returnType: >-
+      <a id="a1d00f0e086279a56eb3135331d6d0ca1" name="a1d00f0e086279a56eb3135331d6d0ca1"></a>
 
+      bool 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html#aaee8369faa29d288f349fc88e04a1462">ProxyInformation</a>
+    summary: Proxy information.  <br>
+    returnType: std::string 
+  - declaration: <b>ProxyUserName</b>
+    summary: User name for proxy authentication. <br>
+    returnType: >-
+      <a id="aa2b08dcb78deb040e044538ddfb20536" name="aa2b08dcb78deb040e044538ddfb20536"></a>
 
-    bool&#160;&#160;IgnoreInvalidCertificateCommonName {false}When true, allows an invalid common name in a certificate. 
+      <a class="el" href="class_azure_1_1_nullable.html">Azure::Nullable</a>< std::string > 
+  - declaration: <b>ProxyPassword</b>
+    summary: Password for proxy authentication. <br>
+    returnType: >-
+      <a id="ab34db2c7c64b9e85b4e3b1e67816bacb" name="ab34db2c7c64b9e85b4e3b1e67816bacb"></a>
 
+      <a class="el" href="class_azure_1_1_nullable.html">Azure::Nullable</a>< std::string > 
+  - declaration: <b>ExpectedTlsRootCertificates</b>
+    summary: Array of Base64 encoded DER encoded X.509 certificate. These certificates should form a chain of certificates which will be used to validate the server certificate sent by the server. <br>
+    returnType: >-
+      <a id="a49e20549ca5ccd9dcbc0a7ac08c08976" name="a49e20549ca5ccd9dcbc0a7ac08c08976"></a>
 
+      std::vector< std::string > 
+  - declaration: <b>TlsClientCertificate</b> {nullptr}
+    summary: TLS Client Certificate <a class="el" href="class_azure_1_1_core_1_1_context.html" title="A context is a node within a unidirectional tree that represents deadlines and key/value pairs.">Context</a>, used when the TLS Server requests mTLS client authentication. <br>
+    returnType: >-
+      <a id="a95002735cb31d9cb07b72ca8dd83fa9b" name="a95002735cb31d9cb07b72ca8dd83fa9b"></a>
 
-    bool&#160;&#160;EnableSystemDefaultProxy {false}If True, enables the use of the system default proxy.  
-
-
-
-
-    bool&#160;&#160;EnableCertificateRevocationListCheck {false}If True, enables checks for certificate revocation. 
-
-
-
-    std::string&#160;&#160;ProxyInformationProxy information.  
-
-
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;ProxyUserNameUser name for proxy authentication. 
-
-
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;ProxyPasswordPassword for proxy authentication. 
-
-
-
-
-    std::vector&lt; std::string &gt;&#160;&#160;ExpectedTlsRootCertificatesArray of Base64 encoded DER encoded X.509 certificate. These certificates should form a chain of certificates which will be used to validate the server certificate sent by the server. 
-
-
-
-
-    PCCERT_CONTEXT&#160;&#160;TlsClientCertificate {nullptr}TLS Client Certificate Context, used when the TLS Server requests mTLS client authentication.
-- content: ''
+      <a class="el" href="win__http__transport_8hpp.html#a5922c03c3b133f086f4233942201ad18">PCCERT_CONTEXT</a> 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;EnableSystemDefaultProxy'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Core::Http::WinHttpTransportOptions::EnableSystemDefaultProxy {false}
-- content: ''
-- content: ''
+  display: h2
 - content: Proxy information.
-- content: ''
-- content: ''
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Set this to "true" if you would like to use a local HTTP proxy like "Fiddler" to capture and analyze HTTP traffic.
 - content: Set to "false" by default because it is not recommended to use a proxy for production and Fiddler's proxy interferes with the HTTP functional tests.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ProxyInformation'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Core::Http::WinHttpTransportOptions::ProxyInformation
-- content: ''
-- content: ''
-- content: ''
-- content: (\[\&lt;scheme\&gt;=\]\[\&lt;scheme\&gt;
-- content: '&quot;://&quot;'
-- content: \]\&lt;server\&gt;\[
-- content: '&quot;:&quot;'
-- content: \&lt;port\&gt;\])
-- content: ''
-- content: Each element should be separated with semicolons or whitespace.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/core/http/win_http_transport.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: 'The Proxy Information string is composed of a set of elements formatted as follows:'
+- content: (\[\&lt;scheme\&gt;=\]\[\&lt;scheme\&gt;&quot;://&quot;\]\&lt;server\&gt;\[&quot;:&quot;\&lt;port\&gt;\])Each element should be separated with semicolons or whitespace.The documentation for this struct was generated from the following file:inc/azure/core/http/win_http_transport.hppGenerated by&#160;1.9.7

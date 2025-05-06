@@ -1,149 +1,67 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Blobs::BlobQueryInputTextOptions
+title: Azure::Storage::Blobs::BlobQueryInputTextOptions Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageBlobsBlobQueryInputTextOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Blob Query text configuration for input.
-- content: ''
-- content: <code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code>
-- content: ''
+- content: Blob Query text configuration for input.<code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code>
 - section: Static Public Member Functions
-- content: >-
-    static BlobQueryInputTextOptions&#160;&#160;CreateCsvTextOptions (const std::string &amp;recordSeparator=std::string(), const std::string &amp;columnSeparator=std::string(), const std::string &amp;quotationCharacter=std::string(), const std::string &amp;escapeCharacter=std::string(), bool hasHeaders=false)Creates CSV text configuration.  
-
-
-
-    static BlobQueryInputTextOptions&#160;&#160;CreateJsonTextOptions (const std::string &amp;recordSeparator=std::string())Creates Json text configuration.  
-
-
-
-    static BlobQueryInputTextOptions&#160;&#160;CreateParquetTextOptions ()Creates Parquet text configuration.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_input_text_options.html#a8d982ba94393e5ee6f17dcb09db41270">CreateCsvTextOptions</a> (const std::string &recordSeparator=std::string(), const std::string &columnSeparator=std::string(), const std::string &quotationCharacter=std::string(), const std::string &escapeCharacter=std::string(), bool hasHeaders=false)
+    summary: Creates CSV text configuration.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_input_text_options.html">BlobQueryInputTextOptions</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_input_text_options.html#a212557fe24d923e648784566dae5867f">CreateJsonTextOptions</a> (const std::string &recordSeparator=std::string())
+    summary: Creates Json text configuration.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_input_text_options.html">BlobQueryInputTextOptions</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_input_text_options.html#a2bb5499f29e95c4660535b0440590fb5">CreateParquetTextOptions</a> ()
+    summary: Creates Parquet text configuration.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_input_text_options.html">BlobQueryInputTextOptions</a> 
 - section: Friends
-- content: class&#160;BlockBlobClient
-- content: ''
-- section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
-- section: '&#9670;&#160;CreateCsvTextOptions()'
-- content: ''
-- content: ''
-- content: ''
-- content: "BlobQueryInputTextOptions Azure::Storage::Blobs::BlobQueryInputTextOptions::CreateCsvTextOptions \n          (\n          const std::string &amp;&#160;\n          recordSeparator = std::string(), \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          columnSeparator = std::string(), \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          quotationCharacter = std::string(), \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          escapeCharacter = std::string(), \n        \n        \n          \n          \n          bool&#160;\n          hasHeaders = false&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- section: Parameters
-  display: h4
-- parameters:
-  - name: recordSeparator
-    summary: 'Record separator. '
-  - name: columnSeparator
-    summary: 'Column separator. '
-  - name: quotationCharacter
-    summary: 'Field quote. '
-  - name: escapeCharacter
-    summary: 'Escape character. '
-  - name: hasHeaders
-    summary: 'If CSV file has headers. '
-- content: ''
-- section: Returns
-  display: h4
-- parameters:
-  - summary: 'CSV text configuration. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- section: '&#9670;&#160;CreateJsonTextOptions()'
-- content: ''
-- content: ''
-- content: ''
-- content: "BlobQueryInputTextOptions Azure::Storage::Blobs::BlobQueryInputTextOptions::CreateJsonTextOptions \n          (\n          const std::string &amp;&#160;\n          recordSeparator = std::string())\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- section: Parameters
-  display: h4
-- parameters:
-  - name: recordSeparator
-    summary: 'Record separator. '
-- content: ''
-- section: Returns
-  display: h4
-- parameters:
-  - summary: 'Json text configuration. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- section: '&#9670;&#160;CreateParquetTextOptions()'
-- content: ''
-- content: ''
-- content: ''
-- content: "BlobQueryInputTextOptions Azure::Storage::Blobs::BlobQueryInputTextOptions::CreateParquetTextOptions \n          (\n          )\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- section: Returns
-  display: h4
-- parameters:
-  - summary: 'Parquet text configuration '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
-- content: >-
-    inc/azure/storage/blobs/blob_options.hpp
+  display: h2
+- apiList:
+  - declaration: <b>BlockBlobClient</b>
+    returnType: >-
+      <a id="a4be31ea5fc92e6f527748e209f0142a0" name="a4be31ea5fc92e6f527748e209f0142a0"></a>
 
-    src/blob_options.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+      class 
+- section: Member Function Documentation
+  display: h2
+- section: '&#9670;&#160;CreateCsvTextOptions()'
+  display: h2
+- section: Parameters
+  display: h4
+- parameters:
+  - name: recordSeparator
+    summary: Record separator.
+  - name: columnSeparator
+    summary: Column separator.
+  - name: quotationCharacter
+    summary: Field quote.
+  - name: escapeCharacter
+    summary: Escape character.
+  - name: hasHeaders
+    summary: If CSV file has headers.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: CSV text configuration.
+- section: '&#9670;&#160;CreateJsonTextOptions()'
+  display: h2
+- section: Parameters
+  display: h4
+- parameters:
+  - name: recordSeparator
+    summary: Record separator.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Json text configuration.
+- section: '&#9670;&#160;CreateParquetTextOptions()'
+  display: h2
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Parquet text configuration
+- content: >-
+    The documentation for this class was generated from the following files:inc/azure/storage/blobs/blob_options.hpp
+
+    src/blob_options.cppGenerated by&#160;1.9.7

@@ -1,529 +1,155 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Blobs::Models::DownloadBlobDetails
+title: Azure::Storage::Blobs::Models::DownloadBlobDetails Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageBlobsModelsDownloadBlobDetails
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Detailed information of the downloaded blob.
-- content: ''
-- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
-- content: ''
+- content: Detailed information of the downloaded blob.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::ETag&#160;ETag
-
-
-    DateTime&#160;LastModified
-
-
-    DateTime&#160;CreatedOn
-
-
-    Nullable&lt; DateTime &gt;&#160;ExpiresOn
-
-
-    Nullable&lt; DateTime &gt;&#160;LastAccessedOn
-
-
-    BlobHttpHeaders&#160;HttpHeaders
-
-
-    Core::CaseInsensitiveMap&#160;Metadata
-
-
-    Nullable&lt; std::int64_t &gt;&#160;SequenceNumber
-
-
-    Nullable&lt; std::int32_t &gt;&#160;CommittedBlockCount
-
-
-    Nullable&lt; bool &gt;&#160;IsSealed
-
-
-    Nullable&lt; LeaseDurationType &gt;&#160;LeaseDuration
-
-
-    Nullable&lt; Models::LeaseState &gt;&#160;LeaseState
-
-
-    Nullable&lt; Models::LeaseStatus &gt;&#160;LeaseStatus
-
-
-    bool&#160;IsServerEncrypted = bool()
-
-
-    Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;EncryptionKeySha256
-
-
-    Nullable&lt; std::string &gt;&#160;EncryptionScope
-
-
-    Nullable&lt; std::string &gt;&#160;ObjectReplicationDestinationPolicyId
-
-
-    std::vector&lt; ObjectReplicationPolicy &gt;&#160;ObjectReplicationSourceProperties
-
-
-    Nullable&lt; std::int32_t &gt;&#160;TagCount
-
-
-    Nullable&lt; std::string &gt;&#160;CopyId
-
-
-    Nullable&lt; std::string &gt;&#160;CopySource
-
-
-    Nullable&lt; Models::CopyStatus &gt;&#160;CopyStatus
-
-
-    Nullable&lt; std::string &gt;&#160;CopyStatusDescription
-
-
-    Nullable&lt; std::string &gt;&#160;CopyProgress
-
-
-    Nullable&lt; DateTime &gt;&#160;CopyCompletedOn
-
-
-    Nullable&lt; std::string &gt;&#160;VersionId
-
-
-    Nullable&lt; bool &gt;&#160;IsCurrentVersion
-
-
-    Nullable&lt; BlobImmutabilityPolicy &gt;&#160;ImmutabilityPolicy
-
-
-    bool&#160;HasLegalHold = false
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#ab143312458b3bae9694f3974099528f6">ETag</a>
+    returnType: Azure::ETag 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#aefb9fb822e7bf31dd711ee895badd6e1">LastModified</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a929f534e912a4ed5be75d0e927eb1882">CreatedOn</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#ab48908fef04aa84d34d45853155b0c9d">ExpiresOn</a>
+    returnType: Nullable< DateTime > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#afdc885ac232d422936de4a002f339569">LastAccessedOn</a>
+    returnType: Nullable< DateTime > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#ada1e9e3f14fab4d40b0f1a06ed38fcd6">HttpHeaders</a>
+    returnType: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_http_headers.html">BlobHttpHeaders</a> 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a781f42f502d88f23ff0f9dd1201197fa">Metadata</a>
+    returnType: Core::CaseInsensitiveMap 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#ab26faeb661465aa343b938f135ea9ebd">SequenceNumber</a>
+    returnType: Nullable< std::int64_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a16400f4077471ddc1f43d675cba7d02b">CommittedBlockCount</a>
+    returnType: Nullable< std::int32_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a1eaed2049e3b5c353001774a35ffedea">IsSealed</a>
+    returnType: Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a5c0c39ef69fc3e6535f9a40a99c81fd3">LeaseDuration</a>
+    returnType: Nullable< <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_duration_type.html">LeaseDurationType</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#af0e1cfc75d269111ab47a8dde78cf8e1">LeaseState</a>
+    returnType: Nullable< <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_state.html">Models::LeaseState</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a869f74c6396770a0310498d6343b8070">LeaseStatus</a>
+    returnType: Nullable< <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_status.html">Models::LeaseStatus</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a291e06c4837ca85a9d5db0e33302785c">IsServerEncrypted</a> = bool()
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#ac706728a51d13d09aface31f72d2cf31">EncryptionKeySha256</a>
+    returnType: Nullable< std::vector< std::uint8_t > > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#aa58d78d0c67759d90e10ed22989106d5">EncryptionScope</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#ad96c250d1a8b084a30703625c4fc47ac">ObjectReplicationDestinationPolicyId</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a37efd6a9518eb937acd97b81cc8545e0">ObjectReplicationSourceProperties</a>
+    returnType: std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_object_replication_policy.html">ObjectReplicationPolicy</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a57c9942d75e185624ba2f19f46cf0476">TagCount</a>
+    returnType: Nullable< std::int32_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a63cddfa42b61ff66169b55c18d1259d6">CopyId</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a7619282ab62a791253f2352630899190">CopySource</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a1a975e9d43dfd5be9f8745c15d32818d">CopyStatus</a>
+    returnType: Nullable< <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_copy_status.html">Models::CopyStatus</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#ad6a31700d0fa0c569344ac4c50ba9375">CopyStatusDescription</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a9d349931ca787f29f1cb713eca57bb67">CopyProgress</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#ab730e5604422334e373049644523a160">CopyCompletedOn</a>
+    returnType: Nullable< DateTime > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a1d55d5719c7a1606acda739c08e81064">VersionId</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a349f7ac54be4c7903c30452f2b82c6dd">IsCurrentVersion</a>
+    returnType: Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a7247fe1673f13984b5c6845e550572e3">ImmutabilityPolicy</a>
+    returnType: Nullable< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy.html">BlobImmutabilityPolicy</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html#a14c9ff5a064bbbae4e351c43a77300c0">HasLegalHold</a> = false
+    returnType: bool 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CommittedBlockCount'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::int32_t&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CommittedBlockCount
-- content: ''
-- content: ''
+  display: h2
 - content: The number of committed blocks present in the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;CopyCompletedOn'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyCompletedOn
-- content: ''
-- content: ''
+  display: h2
 - content: Conclusion time of the last attempted Copy Blob operation where this blob was the destination blob. This value can specify the time of a completed, aborted, or failed copy attempt. This header does not appear if a copy is pending, if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;CopyId'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyId
-- content: ''
-- content: ''
+  display: h2
 - content: String identifier for this copy operation. Use with Get Blob Properties to check the status of this copy operation, or pass to Abort Copy Blob to abort a pending copy.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;CopyProgress'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyProgress
-- content: ''
-- content: ''
+  display: h2
 - content: Contains the number of bytes copied and the total bytes in the source in the last attempted Copy Blob operation where this blob was the destination blob. Can show between 0 and Content-Length bytes copied. This header does not appear if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;CopySource'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopySource
-- content: ''
-- content: ''
+  display: h2
 - content: URL up to 2 KB in length that specifies the source blob or file used in the last attempted Copy Blob operation where this blob was the destination blob. This header does not appear if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;CopyStatus'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;Models::CopyStatus&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyStatus
-- content: ''
-- content: ''
+  display: h2
 - content: Status of the copy operation.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;CopyStatusDescription'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyStatusDescription
-- content: ''
-- content: ''
+  display: h2
 - content: Only appears when x-ms-copy-status is failed or pending. Describes the cause of the last fatal or non-fatal copy operation failure. This header does not appear if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;CreatedOn'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Blobs::Models::DownloadBlobDetails::CreatedOn
-- content: ''
-- content: ''
+  display: h2
 - content: The date and time at which the blob was created.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;EncryptionKeySha256'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::EncryptionKeySha256
-- content: ''
-- content: ''
+  display: h2
 - content: SHA-256 hash of the encryption key used to encrypt the blob data and metadata.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;EncryptionScope'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::EncryptionScope
-- content: ''
-- content: ''
+  display: h2
 - content: Name of the encryption scope used to encrypt the blob data and metadata.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ETag'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::ETag Azure::Storage::Blobs::Models::DownloadBlobDetails::ETag
-- content: ''
-- content: ''
+  display: h2
 - content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ExpiresOn'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::ExpiresOn
-- content: ''
-- content: ''
+  display: h2
 - content: The time this blob will expire.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;HasLegalHold'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Storage::Blobs::Models::DownloadBlobDetails::HasLegalHold = false
-- content: ''
-- content: ''
+  display: h2
 - content: Indicates whether the blob has a legal hold.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;HttpHeaders'
-- content: ''
-- content: ''
-- content: ''
-- content: BlobHttpHeaders Azure::Storage::Blobs::Models::DownloadBlobDetails::HttpHeaders
-- content: ''
-- content: ''
+  display: h2
 - content: Standard HTTP properties supported by containers and blobs.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ImmutabilityPolicy'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;BlobImmutabilityPolicy&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::ImmutabilityPolicy
-- content: ''
-- content: ''
+  display: h2
 - content: Immutability policy associated with the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IsCurrentVersion'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::IsCurrentVersion
-- content: ''
-- content: ''
+  display: h2
 - content: Indicates whether version of this blob is the current version.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IsSealed'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::IsSealed
-- content: ''
-- content: ''
+  display: h2
 - content: If the blob has been sealed. This value is null for block blobs or page blobs.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IsServerEncrypted'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Storage::Blobs::Models::DownloadBlobDetails::IsServerEncrypted = bool()
-- content: ''
-- content: ''
+  display: h2
 - content: True if the blob data and metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the blob is unencrypted, or if only parts of the blob/application metadata are encrypted).
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LastAccessedOn'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::LastAccessedOn
-- content: ''
-- content: ''
+  display: h2
 - content: UTC date/time value generated by the service that indicates the time at which the blob was last read or written to.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LastModified'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Blobs::Models::DownloadBlobDetails::LastModified
-- content: ''
-- content: ''
+  display: h2
 - content: Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseDuration'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;LeaseDurationType&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::LeaseDuration
-- content: ''
-- content: ''
+  display: h2
 - content: When a blob is leased, specifies whether the lease is of infinite or fixed duration.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseState'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;Models::LeaseState&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::LeaseState
-- content: ''
-- content: ''
+  display: h2
 - content: The current lease state of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseStatus'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;Models::LeaseStatus&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::LeaseStatus
-- content: ''
-- content: ''
+  display: h2
 - content: The current lease status of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Metadata'
-- content: ''
-- content: ''
-- content: ''
-- content: Core::CaseInsensitiveMap Azure::Storage::Blobs::Models::DownloadBlobDetails::Metadata
-- content: ''
-- content: ''
+  display: h2
 - content: A set of name-value pairs associated with this blob or blob container.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ObjectReplicationDestinationPolicyId'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::ObjectReplicationDestinationPolicyId
-- content: ''
-- content: ''
+  display: h2
 - content: Only valid when Object Replication is enabled and current blob is the destination.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ObjectReplicationSourceProperties'
-- content: ''
-- content: ''
-- content: ''
-- content: std::vector&lt;ObjectReplicationPolicy&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::ObjectReplicationSourceProperties
-- content: ''
-- content: ''
+  display: h2
 - content: Only valid when Object Replication is enabled and current blob is the source.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;SequenceNumber'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::int64_t&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::SequenceNumber
-- content: ''
-- content: ''
+  display: h2
 - content: The current sequence number for a page blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;TagCount'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::int32_t&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::TagCount
-- content: ''
-- content: ''
+  display: h2
 - content: The number of tags associated with the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;VersionId'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::VersionId
-- content: ''
-- content: ''
-- content: A string value returned by the service that uniquely identifies the blob version.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/blobs/rest_client.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: A string value returned by the service that uniquely identifies the blob version.The documentation for this struct was generated from the following file:inc/azure/storage/blobs/rest_client.hppGenerated by&#160;1.9.7

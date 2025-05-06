@@ -1,177 +1,45 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Queues::Models::QueueMessage
+title: Azure::Storage::Queues::Models::QueueMessage Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-queues
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageQueuesModelsQueueMessage
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: The object returned in the QueueMessageList array when calling Get Messages on a Queue.
-- content: ''
-- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
-- content: ''
+- content: The object returned in the QueueMessageList array when calling Get Messages on a Queue.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    std::string&#160;MessageId
-
-
-    DateTime&#160;InsertedOn
-
-
-    DateTime&#160;ExpiresOn
-
-
-    std::string&#160;PopReceipt
-
-
-    DateTime&#160;NextVisibleOn
-
-
-    std::int64_t&#160;DequeueCount = std::int64_t()
-
-
-    std::string&#160;MessageText
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_message.html#a25e3c6559da538353f639ee109513852">MessageId</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_message.html#a302bd14e3f1160d367d6db6da568e746">InsertedOn</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_message.html#ab06d2b53d67e55295f6c8ff1972344b2">ExpiresOn</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_message.html#aa96e7cc99323e9b3d5c43f3e8d5b86f5">PopReceipt</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_message.html#a711730fff900bbe28c467fac9d8c0ac5">NextVisibleOn</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_message.html#a4e27dba680a80f967204ddfdeb39b04e">DequeueCount</a> = std::int64_t()
+    returnType: std::int64_t 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_message.html#a292f97061c620b315ae4ea3f79c5a5c3">MessageText</a>
+    returnType: std::string 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DequeueCount'
-- content: ''
-- content: ''
-- content: ''
-- content: std::int64_t Azure::Storage::Queues::Models::QueueMessage::DequeueCount = std::int64_t()
-- content: ''
-- content: ''
+  display: h2
 - content: The number of times the message has been dequeued.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ExpiresOn'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Queues::Models::QueueMessage::ExpiresOn
-- content: ''
-- content: ''
+  display: h2
 - content: The time that the Message will expire and be automatically deleted.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;InsertedOn'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Queues::Models::QueueMessage::InsertedOn
-- content: ''
-- content: ''
+  display: h2
 - content: The time the Message was inserted into the Queue.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;MessageId'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Queues::Models::QueueMessage::MessageId
-- content: ''
-- content: ''
+  display: h2
 - content: The Id of the Message.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;MessageText'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Queues::Models::QueueMessage::MessageText
-- content: ''
-- content: ''
+  display: h2
 - content: The content of the Message.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;NextVisibleOn'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Queues::Models::QueueMessage::NextVisibleOn
-- content: ''
-- content: ''
+  display: h2
 - content: The time that the message will again become visible in the Queue.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;PopReceipt'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Queues::Models::QueueMessage::PopReceipt
-- content: ''
-- content: ''
-- content: This value is required to delete the Message. If deletion fails using this popreceipt then the message has been dequeued by another client.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/queues/rest_client.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: This value is required to delete the Message. If deletion fails using this popreceipt then the message has been dequeued by another client.The documentation for this struct was generated from the following file:inc/azure/storage/queues/rest_client.hppGenerated by&#160;1.9.7

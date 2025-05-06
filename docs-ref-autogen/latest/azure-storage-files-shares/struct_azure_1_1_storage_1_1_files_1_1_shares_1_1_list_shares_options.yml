@@ -1,129 +1,30 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::Shares::ListSharesOptions
+title: Azure::Storage::Files::Shares::ListSharesOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-shares
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesSharesListSharesOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#a1d926a9af527d1da8c30a261b4bcdda1">Azure::Storage::Files::Shares::ShareServiceClient::ListShares</a>.
-- content: ''
-- content: <code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
-- content: ''
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#a1d926a9af527d1da8c30a261b4bcdda1">Azure::Storage::Files::Shares::ShareServiceClient::ListShares</a>.<code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; std::string &gt;&#160;Prefix
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;ContinuationToken
-
-
-    Azure::Nullable&lt; int32_t &gt;&#160;PageSizeHint
-
-
-    Azure::Nullable&lt; Models::ListSharesIncludeFlags &gt;&#160;ListSharesIncludeFlags
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_shares_options.html#a68df991bc4c36f75319bdc8964e065ba">Prefix</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_shares_options.html#a741bcb9388eaa8cb6a08ac59dc33ab04">ContinuationToken</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_shares_options.html#ae8020468991a9d1cd0983532e4ea9b1f">PageSizeHint</a>
+    returnType: Azure::Nullable< int32_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_shares_options.html#a0a3fa56da646189c4745bea14e180758">ListSharesIncludeFlags</a>
+    returnType: Azure::Nullable< Models::ListSharesIncludeFlags > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ContinuationToken'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::ListSharesOptions::ContinuationToken
-- content: ''
-- content: ''
+  display: h2
 - content: A string value that identifies the portion of the list to be returned with the next list operation. The operation returns a marker value within the response body if the list returned was not complete. The marker value may then be used in a subsequent call to request the next set of list items. The marker value is opaque to the client.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ListSharesIncludeFlags'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;Models::ListSharesIncludeFlags&gt; Azure::Storage::Files::Shares::ListSharesOptions::ListSharesIncludeFlags
-- content: ''
-- content: ''
+  display: h2
 - content: Include this parameter to specify one or more datasets to include in the response.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;PageSizeHint'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::Shares::ListSharesOptions::PageSizeHint
-- content: ''
-- content: ''
+  display: h2
 - content: Specifies the maximum number of entries to return. If the request does not specify PageSizeHint, or specifies a value greater than 5,000, the server will return up to 5,000 items.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Prefix'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::ListSharesOptions::Prefix
-- content: ''
-- content: ''
-- content: Filters the results to return only entries whose name begins with the specified prefix.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/files/shares/share_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: Filters the results to return only entries whose name begins with the specified prefix.The documentation for this struct was generated from the following file:inc/azure/storage/files/shares/share_options.hppGenerated by&#160;1.9.7

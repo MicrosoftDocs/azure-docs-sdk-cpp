@@ -1,239 +1,143 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::KeyVault::Keys::JsonWebKey
+title: Azure::Security::KeyVault::Keys::JsonWebKey Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-keyvault-keys
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityKeyVaultKeysJsonWebKey
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     Represents a JSON Web Key as defined in <a href="http://tools.ietf.org/html/rfc7517">http://tools.ietf.org/html/rfc7517</a>.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>
-- content: ''
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html#details">More...</a><code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;JsonWebKey ()=defaultConstruct a new Json Web Key object.  
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html#a94bc2f1f665ec3b8fade5c4cad5cf861">JsonWebKey</a> ()=default
+    summary: Construct a new Json Web Key object.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html#a8209cb0afc8cb742b014cb52679675f7">SetKeyOperations</a> (std::vector< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> > const &keyOperations)
+    summary: Set the Key Operations object based on a list of operations.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html#a6e4aa16bfae08985042a9b173925b3d6">KeyOperations</a> () const
+    summary: Get the list of operations from the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html" title="Represents a JSON Web Key as defined in http://tools.ietf.org/html/rfc7517.">JsonWebKey</a>.  <br>
+    returnType: std::vector< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> > const & 
+  - declaration: <b>SupportsOperation</b> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> const &operation) const
+    summary: Returns true if the key supports the desired key operation. <br>
+    returnType: >-
+      <a id="a765b0405ecbfa07c67b4172b96bd8224" name="a765b0405ecbfa07c67b4172b96bd8224"></a>
 
-
-
-    void&#160;&#160;SetKeyOperations (std::vector&lt; KeyOperation &gt; const &amp;keyOperations)Set the Key Operations object based on a list of operations.  
-
-
-
-    std::vector&lt; KeyOperation &gt; const &amp;&#160;&#160;KeyOperations () constGet the list of operations from the JsonWebKey.  
-
-
-
-
-    bool&#160;&#160;SupportsOperation (KeyOperation const &amp;operation) constReturns true if the key supports the desired key operation.
+      bool 
 - section: Public Attributes
-- content: >-
-    std::string&#160;&#160;IdThe Identifier of the key. This is not limited to a Url.  
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html#ad103a6266f8eda4e7d30a294dfda78dc">Id</a>
+    summary: The Identifier of the key. This is not limited to a Url.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html#acf2c978cd6ccfff03ded164591b89957">KeyType</a>
+    summary: They type of the key.  <br>
+    returnType: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html#afd7382f49db8cf3705cccbbc4fee287a">CurveName</a>
+    summary: Gets or sets the elliptic curve name.  <br>
+    returnType: Azure::Nullable< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_curve_name.html">KeyCurveName</a> > 
+  - declaration: <b>N</b>
+    summary: The RSA modulus. <br>
+    returnType: >-
+      <a id="aaa2b06634c369bb2f3c6a51ad1d14dc6" name="aaa2b06634c369bb2f3c6a51ad1d14dc6"></a>
 
+      std::vector< uint8_t > 
+  - declaration: <b>E</b>
+    summary: The RSA public exponent. <br>
+    returnType: >-
+      <a id="aac787d44722239f5f3b85d6fa6850ce7" name="aac787d44722239f5f3b85d6fa6850ce7"></a>
 
+      std::vector< uint8_t > 
+  - declaration: <b>DP</b>
+    summary: The RSA private key parameter. <br>
+    returnType: >-
+      <a id="aedc27af430396f5cbb40af41b35fbd28" name="aedc27af430396f5cbb40af41b35fbd28"></a>
 
-    KeyVaultKeyType&#160;&#160;KeyTypeThey type of the key.  
+      std::vector< uint8_t > 
+  - declaration: <b>DQ</b>
+    summary: The RSA private key parameter. <br>
+    returnType: >-
+      <a id="a31d0fc7c10fbea565b1ae65e479abb14" name="a31d0fc7c10fbea565b1ae65e479abb14"></a>
 
+      std::vector< uint8_t > 
+  - declaration: <b>QI</b>
+    summary: The RSA private key parameter. <br>
+    returnType: >-
+      <a id="a20c8957cdd0cc99da7f78861ca6965a7" name="a20c8957cdd0cc99da7f78861ca6965a7"></a>
 
+      std::vector< uint8_t > 
+  - declaration: <b>P</b>
+    summary: The RSA secret prime. <br>
+    returnType: >-
+      <a id="adf5925e1b09d3380bd299108893e389c" name="adf5925e1b09d3380bd299108893e389c"></a>
 
-    Azure::Nullable&lt; KeyCurveName &gt;&#160;&#160;CurveNameGets or sets the elliptic curve name.  
+      std::vector< uint8_t > 
+  - declaration: <b>Q</b>
+    summary: The RSA secret prime. <br>
+    returnType: >-
+      <a id="a275cf04694c43045e65c6615c2d21e5e" name="a275cf04694c43045e65c6615c2d21e5e"></a>
 
+      std::vector< uint8_t > 
+  - declaration: <b>D</b>
+    summary: The RSA private exponent or EC private key. <br>
+    returnType: >-
+      <a id="a65cd4ba022caeea7a190693f30082536" name="a65cd4ba022caeea7a190693f30082536"></a>
 
+      std::vector< uint8_t > 
+  - declaration: <b>K</b>
+    summary: Gets the symmetric key. <br>
+    returnType: >-
+      <a id="aacae931271d615b82195c8e0e72d9e57" name="aacae931271d615b82195c8e0e72d9e57"></a>
 
+      std::vector< uint8_t > 
+  - declaration: <b>T</b>
+    summary: Gets the protected key used with "Bring Your Own Key". <br>
+    returnType: >-
+      <a id="adfc960564622be11830ceef3f55fb357" name="adfc960564622be11830ceef3f55fb357"></a>
 
-    std::vector&lt; uint8_t &gt;&#160;&#160;NThe RSA modulus. 
+      std::vector< uint8_t > 
+  - declaration: <b>X</b>
+    summary: Gets the X coordinate of the elliptic curve point. <br>
+    returnType: >-
+      <a id="a1107959aae402b4cb9ac8a04ae42ffaf" name="a1107959aae402b4cb9ac8a04ae42ffaf"></a>
 
+      std::vector< uint8_t > 
+  - declaration: <b>Y</b>
+    summary: Gets the Y coordinate for the elliptic curve point. <br>
+    returnType: >-
+      <a id="ad132a48df945cabad9e8960035f64dd1" name="ad132a48df945cabad9e8960035f64dd1"></a>
 
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;EThe RSA public exponent. 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;DPThe RSA private key parameter. 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;DQThe RSA private key parameter. 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;QIThe RSA private key parameter. 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;PThe RSA secret prime. 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;QThe RSA secret prime. 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;DThe RSA private exponent or EC private key. 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;KGets the symmetric key. 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;TGets the protected key used with "Bring Your Own Key". 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;XGets the X coordinate of the elliptic curve point. 
-
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;YGets the Y coordinate for the elliptic curve point.
-- content: ''
-- content: ''
+      std::vector< uint8_t > 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;JsonWebKey()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Keys::JsonWebKey::JsonWebKey \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyOperations()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::vector&lt; KeyOperation &gt; const  &amp; Azure::Security::KeyVault::Keys::JsonWebKey::KeyOperations \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'std::vector<KeyOperation> const& '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: std::vector<KeyOperation> const&
 - section: '&#9670;&#160;SetKeyOperations()'
-- content: ''
-- content: ''
-- content: ''
-- content: "void Azure::Security::KeyVault::Keys::JsonWebKey::SetKeyOperations \n          (\n          std::vector&lt; KeyOperation &gt; const &amp;&#160;\n          keyOperations)\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: keyOperations
-    summary: 'The list of key operations. '
-- content: ''
-- content: ''
-- content: ''
+    summary: The list of key operations.
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CurveName'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;KeyCurveName&gt; Azure::Security::KeyVault::Keys::JsonWebKey::CurveName
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: See <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_curve_name.html" title="Elliptic Curve Cryptography (ECC) curve names.">Azure::Security::KeyVault::Keys::KeyCurveName</a> for possible values.
 - section: '&#9670;&#160;Id'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Security::KeyVault::Keys::JsonWebKey::Id
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyType'
-- content: ''
-- content: ''
-- content: ''
-- content: KeyVaultKeyType Azure::Security::KeyVault::Keys::JsonWebKey::KeyType
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/keyvault/keys/key_client_models.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: The documentation for this class was generated from the following file:inc/azure/keyvault/keys/key_client_models.hppGenerated by&#160;1.9.7

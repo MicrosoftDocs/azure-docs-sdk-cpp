@@ -1,151 +1,35 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::Shares::ShareClientOptions
+title: Azure::Storage::Files::Shares::ShareClientOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-shares
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesSharesShareClientOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Client options used to initialize share clients.
-- content: ''
-- content: <code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Storage::Files::Shares::ShareClientOptions:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+- content: 'Client options used to initialize share clients.<code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>Inheritance diagram for Azure::Storage::Files::Shares::ShareClientOptions:'
 - section: Public Attributes
-- content: >-
-    std::string&#160;ApiVersion
-
-
-    Nullable&lt; bool &gt;&#160;AllowTrailingDot
-
-
-    Nullable&lt; bool &gt;&#160;AllowSourceTrailingDot
-
-
-    Nullable&lt; Models::ShareTokenIntent &gt;&#160;ShareTokenIntent
-
-
-    Azure::Nullable&lt; ShareAudience &gt;&#160;Audience
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#a6881b3d2cde478574c18f742f386c34e">ApiVersion</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#a22c65f5be5b1856495b166b6880da8ba">AllowTrailingDot</a>
+    returnType: Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#ae8b91121b37bda234989158c0b774ea8">AllowSourceTrailingDot</a>
+    returnType: Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#af0d64edc97a516eb0c17d8de62ce0cb3">ShareTokenIntent</a>
+    returnType: Nullable< <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_token_intent.html">Models::ShareTokenIntent</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#af6e71424e1b5f6bbae4daf6a29f10fd4">Audience</a>
+    returnType: Azure::Nullable< <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience.html">ShareAudience</a> > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;AllowSourceTrailingDot'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::ShareClientOptions::AllowSourceTrailingDot
-- content: ''
-- content: ''
+  display: h2
 - content: If set to true, trailing dot (.) will be allowed to source file names. If false, the trailing dot will be trimmed. Supported by x-ms-version 2022-11-02 and above.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;AllowTrailingDot'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::ShareClientOptions::AllowTrailingDot
-- content: ''
-- content: ''
+  display: h2
 - content: If set to true, trailing dot (.) will be allowed to suffix directory and file names. If false, the trailing dot will be trimmed. Supported by x-ms-version 2022-11-02 and above.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ApiVersion'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Files::Shares::ShareClientOptions::ApiVersion
-- content: ''
-- content: ''
+  display: h2
 - content: API version used by this client.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Audience'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;ShareAudience&gt; Azure::Storage::Files::Shares::ShareClientOptions::Audience
-- content: ''
-- content: ''
+  display: h2
 - content: The Audience to use for authentication with Azure Active Directory (AAD). <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience.html#addaef20c3c8b192896f8805a32a76b75">Azure::Storage::Files::Shares::ShareAudience::DefaultAudience</a> will be assumed if Audience is not set.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ShareTokenIntent'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;Models::ShareTokenIntent&gt; Azure::Storage::Files::Shares::ShareClientOptions::ShareTokenIntent
-- content: ''
-- content: ''
-- content: Share Token Intent. For use with token authentication. Used to indicate the intent of the request. This is currently required when using token authentication.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/files/shares/share_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: Share Token Intent. For use with token authentication. Used to indicate the intent of the request. This is currently required when using token authentication.The documentation for this struct was generated from the following file:inc/azure/storage/files/shares/share_options.hppGenerated by&#160;1.9.7

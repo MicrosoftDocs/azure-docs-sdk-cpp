@@ -1,148 +1,35 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Core::Http::Policies::RetryOptions
+title: Azure::Core::Http::Policies::RetryOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureCoreHttpPoliciesRetryOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     The set of options that can be specified to influence how retry attempts are made, and a failure is eligible to be retried.  
-     <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="policy_8hpp_source.html">policy.hpp</a>&gt;</code>
-- content: ''
+     <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#details">More...</a><code>#include &lt;<a href="policy_8hpp_source.html">policy.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    int32_t&#160;&#160;MaxRetries = 3The maximum number of retry attempts before giving up.  
-
-
-
-    std::chrono::milliseconds&#160;&#160;RetryDelay = std::chrono::milliseconds(800)The minimum permissible delay between retry attempts.  
-
-
-
-    std::chrono::milliseconds&#160;&#160;MaxRetryDelay = std::chrono::seconds(60)The maximum permissible delay between retry attempts.  
-
-
-
-    std::set&lt; HttpStatusCode &gt;&#160;&#160;StatusCodesThe HTTP status codes that indicate when an operation should be retried.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#a1ae346a844eeeee69972acbdc5bd92e3">MaxRetries</a> = 3
+    summary: The maximum number of retry attempts before giving up.  <br>
+    returnType: int32_t 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#a06ba92fd6194748cabd32bc78390e348">RetryDelay</a> = std::chrono::milliseconds(800)
+    summary: The minimum permissible delay between retry attempts.  <br>
+    returnType: std::chrono::milliseconds 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#a5f90051b3513321e14d257298723b615">MaxRetryDelay</a> = std::chrono::seconds(60)
+    summary: The maximum permissible delay between retry attempts.  <br>
+    returnType: std::chrono::milliseconds 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#a88c82f2eeb65eb9b7819e1c55dcf86ae">StatusCodes</a>
+    summary: The HTTP status codes that indicate when an operation should be retried.  <br>
+    returnType: std::set< <a class="el" href="http__status__code_8hpp.html#a60337476811e1ccf9ed39ce13f678d9d">HttpStatusCode</a> > 
 - section: Detailed Description
-- content: ''
-- content: ''
+  display: h2
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;MaxRetries'
-- content: ''
-- content: ''
-- content: ''
-- content: int32_t Azure::Core::Http::Policies::RetryOptions::MaxRetries = 3
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;MaxRetryDelay'
-- content: ''
-- content: ''
-- content: ''
-- content: std::chrono::milliseconds Azure::Core::Http::Policies::RetryOptions::MaxRetryDelay = std::chrono::seconds(60)
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;RetryDelay'
-- content: ''
-- content: ''
-- content: ''
-- content: std::chrono::milliseconds Azure::Core::Http::Policies::RetryOptions::RetryDelay = std::chrono::milliseconds(800)
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;StatusCodes'
-- content: ''
-- content: ''
-- content: ''
-- content: std::set&lt;HttpStatusCode&gt; Azure::Core::Http::Policies::RetryOptions::StatusCodes
-- content: ''
-- content: ''
-- content: 'Initial value:'
-- content: '{'
-- content: ''
-- content: HttpStatusCode::RequestTimeout,
-- content: ''
-- content: HttpStatusCode::InternalServerError,
-- content: ''
-- content: HttpStatusCode::BadGateway,
-- content: ''
-- content: HttpStatusCode::ServiceUnavailable,
-- content: ''
-- content: HttpStatusCode::GatewayTimeout,
-- content: ''
-- content: '}'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/core/http/policies/policy.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: Initial value:{HttpStatusCode::RequestTimeout,HttpStatusCode::InternalServerError,HttpStatusCode::BadGateway,HttpStatusCode::ServiceUnavailable,HttpStatusCode::GatewayTimeout,}The documentation for this struct was generated from the following file:inc/azure/core/http/policies/policy.hppGenerated by&#160;1.9.7

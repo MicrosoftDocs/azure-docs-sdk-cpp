@@ -1,266 +1,131 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::KeyVault::Administration::BackupClient
+title: Azure::Security::KeyVault::Administration::BackupClient Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-keyvault-administration
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityKeyVaultAdministrationBackupClient
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     Backup restore client.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="backup__client_8hpp_source.html">backup_client.hpp</a>&gt;</code>
-- content: ''
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html#details">More...</a><code>#include &lt;<a href="backup__client_8hpp_source.html">backup_client.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    virtual&#160;&#160;~BackupClient ()=defaultDestructor.  
-
-
-
-    &#160;&#160;BackupClient (std::string const &amp;vaultUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt; credential, BackupClientOptions options=BackupClientOptions())Construct a new BackupClient object.  
-
-
-
-    Response&lt; BackupOperation &gt;&#160;&#160;FullBackup (Azure::Core::Url const &amp;blobContainerUrl, Models::SasTokenParameter const &amp;sasToken, Core::Context const &amp;context={})Creates a full backup using a user-provided SAS token to an Azure blob storage container.  
-
-
-
-    Response&lt; Models::BackupOperationStatus &gt;&#160;&#160;FullBackupStatus (std::string const &amp;jobId=&quot;&quot;, Core::Context const &amp;context={})Returns the status of full backup operation.  
-
-
-
-    Response&lt; BackupOperation &gt;&#160;&#160;FullRestore (Azure::Core::Url const &amp;blobContainerUrl, std::string folderToRestore, Models::SasTokenParameter const &amp;sasToken, Core::Context const &amp;context={})Restores all key materials using the SAS token pointing to a previously stored Azure Blob storage backup folder.  
-
-
-
-    Response&lt; Models::BackupOperationStatus &gt;&#160;&#160;RestoreStatus (std::string const &amp;jobId=&quot;&quot;, Core::Context const &amp;context={})Returns the status of restore operation.  
-
-
-
-    Response&lt; BackupOperation &gt;&#160;&#160;SelectiveKeyRestore (std::string const &amp;keyName, Azure::Core::Url const &amp;blobContainerUrl, std::string folderToRestore, Models::SasTokenParameter const &amp;sasToken, Core::Context const &amp;context={})Restores all key versions of a given key using user supplied SAS token pointing to a previously stored Azure Blob storage backup folder.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html#a245444defc76b4f77aa4d95b9907f0ed">~BackupClient</a> ()=default
+    summary: Destructor.  <br>
+    returnType: virtual 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html#ab7bb4e67ad484428aa240edb4c3e59a3">BackupClient</a> (std::string const &vaultUrl, std::shared_ptr< Core::Credentials::TokenCredential const > credential, <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client_options.html">BackupClientOptions</a> options=<a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client_options.html">BackupClientOptions</a>())
+    summary: Construct a new <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html" title="Backup restore client.">BackupClient</a> object.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html#a65e9c0cf89cb705ff731ba78bb975ec7">FullBackup</a> (Azure::Core::Url const &blobContainerUrl, <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_models_1_1_sas_token_parameter.html">Models::SasTokenParameter</a> const &sasToken, Core::Context const &context={})
+    summary: Creates a full backup using a user-provided SAS token to an <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob storage container.  <br>
+    returnType: Response< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html">BackupOperation</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html#a7b3bf34b75db97bcaa7b02ce2f60f042">FullBackupStatus</a> (std::string const &jobId="", Core::Context const &context={})
+    summary: Returns the status of full backup operation.  <br>
+    returnType: Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_models_1_1_backup_operation_status.html">Models::BackupOperationStatus</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html#ac8a6b08f236933c1aa7acab3830e5226">FullRestore</a> (Azure::Core::Url const &blobContainerUrl, std::string folderToRestore, <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_models_1_1_sas_token_parameter.html">Models::SasTokenParameter</a> const &sasToken, Core::Context const &context={})
+    summary: Restores all key materials using the SAS token pointing to a previously stored <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> Blob storage backup folder.  <br>
+    returnType: Response< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html">BackupOperation</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html#abfd83d8405c8a96f0fe20d4a45537546">RestoreStatus</a> (std::string const &jobId="", Core::Context const &context={})
+    summary: Returns the status of restore operation.  <br>
+    returnType: Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_models_1_1_backup_operation_status.html">Models::BackupOperationStatus</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html#a1a356b9566e86afe002068dae29e48e0">SelectiveKeyRestore</a> (std::string const &keyName, Azure::Core::Url const &blobContainerUrl, std::string folderToRestore, <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_models_1_1_sas_token_parameter.html">Models::SasTokenParameter</a> const &sasToken, Core::Context const &context={})
+    summary: Restores all key versions of a given key using user supplied SAS token pointing to a previously stored <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> Blob storage backup folder.  <br>
+    returnType: Response< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html">BackupOperation</a> > 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;~BackupClient()'
-- content: ''
-- content: ''
-- content: ''
-- content: "virtual Azure::Security::KeyVault::Administration::BackupClient::~BackupClient \n          (\n          )\n          \n        \n      \n  \n  \nvirtualdefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;BackupClient()'
-- content: ''
-- content: ''
-- content: ''
-- content: "BackupClient::BackupClient \n          (\n          std::string const &amp;&#160;\n          vaultUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt;&#160;\n          credential, \n        \n        \n          \n          \n          BackupClientOptions&#160;\n          options = BackupClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: vaultUrl
-    summary: 'The URL address where the client will send the requests to. '
+    summary: The URL address where the client will send the requests to.
   - name: credential
-    summary: 'The authentication method to use. '
+    summary: The authentication method to use.
   - name: options
-    summary: 'The options to customize the client behavior. '
-- content: ''
-- content: ''
-- content: ''
+    summary: The options to customize the client behavior.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;FullBackup()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; BackupOperation &gt; BackupClient::FullBackup \n          (\n          Azure::Core::Url const &amp;&#160;\n          blobContainerUrl, \n        \n        \n          \n          \n          Models::SasTokenParameter const &amp;&#160;\n          sasToken, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: blobContainerUrl
-    summary: 'The URL for the blob storage resource. '
+    summary: The URL for the blob storage resource.
   - name: sasToken
-    summary: '<a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob shared access signature token pointing to a valid <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob container where full backup needs to be stored. This token needs to be valid for at least next 24 hours from the time of making this call. '
+    summary: <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob shared access signature token pointing to a valid <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob container where full backup needs to be stored. This token needs to be valid for at least next 24 hours from the time of making this call.
   - name: context
-    summary: 'The context for the operation can be used for request cancellation. '
-- content: ''
+    summary: The context for the operation can be used for request cancellation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A backup restore operation. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A backup restore operation.
 - section: '&#9670;&#160;FullBackupStatus()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; BackupOperationStatus &gt; BackupClient::FullBackupStatus \n          (\n          std::string const &amp;&#160;\n          jobId = &quot;&quot;, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: jobId
-    summary: 'Identifier for the full backup operation. '
+    summary: Identifier for the full backup operation.
   - name: context
-    summary: 'The context for the operation can be used for request cancellation. '
-- content: ''
+    summary: The context for the operation can be used for request cancellation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Backup restore operation status. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Backup restore operation status.
 - section: '&#9670;&#160;FullRestore()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; BackupOperation &gt; BackupClient::FullRestore \n          (\n          Azure::Core::Url const &amp;&#160;\n          blobContainerUrl, \n        \n        \n          \n          \n          std::string&#160;\n          folderToRestore, \n        \n        \n          \n          \n          Models::SasTokenParameter const &amp;&#160;\n          sasToken, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: blobContainerUrl
-    summary: 'The URL for the blob storage resource, including the path to the blob '
+    summary: The URL for the blob storage resource, including the path to the blob
   - name: folderToRestore
-    summary: 'The path to the blob container where the backup resides. '
+    summary: The path to the blob container where the backup resides.
   - name: sasToken
-    summary: '<a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob shared access signature token pointing to a valid <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob container where full backup needs to be stored. This token needs to be valid for at least next 24 hours from the time of making this call. '
+    summary: <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob shared access signature token pointing to a valid <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob container where full backup needs to be stored. This token needs to be valid for at least next 24 hours from the time of making this call.
   - name: context
-    summary: 'The context for the operation can be used for request cancellation. '
-- content: ''
+    summary: The context for the operation can be used for request cancellation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A backup restore operation. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A backup restore operation.
 - section: '&#9670;&#160;RestoreStatus()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; BackupOperationStatus &gt; BackupClient::RestoreStatus \n          (\n          std::string const &amp;&#160;\n          jobId = &quot;&quot;, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: jobId
-    summary: 'Identifier for the restore operation. '
+    summary: Identifier for the restore operation.
   - name: context
-    summary: 'The context for the operation can be used for request cancellation. '
-- content: ''
+    summary: The context for the operation can be used for request cancellation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A backup restore operation status. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A backup restore operation status.
 - section: '&#9670;&#160;SelectiveKeyRestore()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; BackupOperation &gt; BackupClient::SelectiveKeyRestore \n          (\n          std::string const &amp;&#160;\n          keyName, \n        \n        \n          \n          \n          Azure::Core::Url const &amp;&#160;\n          blobContainerUrl, \n        \n        \n          \n          \n          std::string&#160;\n          folderToRestore, \n        \n        \n          \n          \n          Models::SasTokenParameter const &amp;&#160;\n          sasToken, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: keyName
-    summary: 'The name of the key to be restored from the user supplied backup. '
+    summary: The name of the key to be restored from the user supplied backup.
   - name: blobContainerUrl
-    summary: 'The URL for the blob storage resource, including the path to the blob '
+    summary: The URL for the blob storage resource, including the path to the blob
   - name: folderToRestore
-    summary: 'The path to the blob container where the backup resides. '
+    summary: The path to the blob container where the backup resides.
   - name: sasToken
-    summary: '<a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob shared access signature token pointing to a valid <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob container where full backup needs to be stored. This token needs to be valid for at least next 24 hours from the time of making this call. '
+    summary: <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob shared access signature token pointing to a valid <a class="el" href="namespace_azure.html" title="Provides a wrapper class for the Azure Core Pipeline for all Key Vault services where common function...">Azure</a> blob container where full backup needs to be stored. This token needs to be valid for at least next 24 hours from the time of making this call.
   - name: context
-    summary: 'The context for the operation can be used for request cancellation. '
-- content: ''
+    summary: The context for the operation can be used for request cancellation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A backup restore operation. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+  - summary: A backup restore operation.
 - content: >-
-    inc/azure/keyvault/administration/backup_client.hpp
+    The documentation for this class was generated from the following files:inc/azure/keyvault/administration/backup_client.hpp
 
-    src/backup_client.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/backup_client.cppGenerated by&#160;1.9.7

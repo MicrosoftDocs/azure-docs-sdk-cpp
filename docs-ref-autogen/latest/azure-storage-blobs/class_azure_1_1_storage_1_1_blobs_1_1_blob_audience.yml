@@ -1,126 +1,56 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Blobs::BlobAudience
+title: Azure::Storage::Blobs::BlobAudience Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageBlobsBlobAudience
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     Audiences available for blob service.  
-     <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Storage::Blobs::BlobAudience:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+     <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html#details">More...</a><code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code>Inheritance diagram for Azure::Storage::Blobs::BlobAudience:
 - section: Public Member Functions
-- content: '&#160;&#160;BlobAudience (std::string blobAudience)Construct a new BlobAudience object.'
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html#aac573f95e65a4814bd10bf9b4e1e7253">BlobAudience</a> (std::string blobAudience)
+    summary: Construct a new <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html" title="Audiences available for blob service.">BlobAudience</a> object.  <br>
+    returnType:  
 - section: Static Public Member Functions
-- content: static BlobAudience&#160;&#160;CreateBlobServiceAccountAudience (const std::string &amp;storageAccountName)The service endpoint for a given storage account. Use this method to acquire a token for authorizing requests to that specific Azure Storage account and service only.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html#adba321a734d353b40705543ace563771">CreateBlobServiceAccountAudience</a> (const std::string &storageAccountName)
+    summary: The service endpoint for a given storage account. Use this method to acquire a token for authorizing requests to that specific Azure Storage account and service only.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html">BlobAudience</a> 
 - section: Static Public Attributes
-- content: AZ_STORAGE_BLOBS_DLLEXPORT static const BlobAudience&#160;&#160;DefaultAudienceDefault Audience. Use to acquire a token for authorizing requests to any Azure Storage account.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <b>DefaultAudience</b>
+    summary: Default Audience. Use to acquire a token for authorizing requests to any Azure Storage account. <br>
+    returnType: >-
+      <a id="a56d7257a2bfdad128db751c5e7a03e86" name="a56d7257a2bfdad128db751c5e7a03e86"></a>
+
+      AZ_STORAGE_BLOBS_DLLEXPORT static const <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html">BlobAudience</a> 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;BlobAudience()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Blobs::BlobAudience::BlobAudience \n          (\n          std::string&#160;\n          blobAudience)\n          \n        \n      \n  \n  \ninlineexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: blobAudience
-    summary: 'The Azure Active Directory audience to use when forming authorization scopes. For the Language service, this value corresponds to a URL that identifies the Azure cloud where the resource is located. For more information: See <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory">https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory</a> '
-- content: ''
-- content: ''
-- content: ''
+    summary: 'The Azure Active Directory audience to use when forming authorization scopes. For the Language service, this value corresponds to a URL that identifies the Azure cloud where the resource is located. For more information: See <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory">https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory</a>'
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CreateBlobServiceAccountAudience()'
-- content: ''
-- content: ''
-- content: ''
-- content: "static BlobAudience Azure::Storage::Blobs::BlobAudience::CreateBlobServiceAccountAudience \n          (\n          const std::string &amp;&#160;\n          storageAccountName)\n          \n        \n      \n  \n  \ninlinestatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: storageAccountName
-    summary: 'he storage account name used to populate the service endpoint. '
-- content: ''
+    summary: he storage account name used to populate the service endpoint.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The service endpoint for a given storage account. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+  - summary: The service endpoint for a given storage account.
 - content: >-
-    inc/azure/storage/blobs/blob_options.hpp
+    The documentation for this class was generated from the following files:inc/azure/storage/blobs/blob_options.hpp
 
-    src/blob_options.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/blob_options.cppGenerated by&#160;1.9.7

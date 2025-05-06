@@ -1,177 +1,45 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Blobs::Models::CreateBlobSnapshotResult
+title: Azure::Storage::Blobs::Models::CreateBlobSnapshotResult Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageBlobsModelsCreateBlobSnapshotResult
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a05131f0bfc5f8b6d32c98f18d6d450a7">Azure::Storage::Blobs::BlobClient::CreateSnapshot</a>.
-- content: ''
-- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
-- content: ''
+- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a05131f0bfc5f8b6d32c98f18d6d450a7">Azure::Storage::Blobs::BlobClient::CreateSnapshot</a>.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;EncryptionKeySha256
-
-
-    Nullable&lt; std::string &gt;&#160;EncryptionScope
-
-
-    std::string&#160;Snapshot
-
-
-    Azure::ETag&#160;ETag
-
-
-    DateTime&#160;LastModified
-
-
-    Nullable&lt; std::string &gt;&#160;VersionId
-
-
-    bool&#160;IsServerEncrypted = bool()
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_snapshot_result.html#ae178e7729512beca1fe4204c0af6595e">EncryptionKeySha256</a>
+    returnType: Nullable< std::vector< std::uint8_t > > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_snapshot_result.html#abe6cd63056488062b9e4a0bc4b8e3d5c">EncryptionScope</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_snapshot_result.html#ade44037d6cd1f67b4825117a29fa3964">Snapshot</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_snapshot_result.html#a53c6b91670e78ebef50530184f4293e9">ETag</a>
+    returnType: Azure::ETag 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_snapshot_result.html#ad89bd9ef54fe30320116a778e1bb59f2">LastModified</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_snapshot_result.html#a051c4d4b42aa159e60da9b8fbad0bb89">VersionId</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_snapshot_result.html#ae6df19e697d5f8a2b44e64b4d16bca63">IsServerEncrypted</a> = bool()
+    returnType: bool 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;EncryptionKeySha256'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::CreateBlobSnapshotResult::EncryptionKeySha256
-- content: ''
-- content: ''
+  display: h2
 - content: The field is deprecated and is always null. Use GetProperties() instead to get SHA256 of the encryption key.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;EncryptionScope'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::CreateBlobSnapshotResult::EncryptionScope
-- content: ''
-- content: ''
+  display: h2
 - content: The field is deprecated and is always null. Use GetProperties() instead to check the encryption scope.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ETag'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::ETag Azure::Storage::Blobs::Models::CreateBlobSnapshotResult::ETag
-- content: ''
-- content: ''
+  display: h2
 - content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IsServerEncrypted'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Storage::Blobs::Models::CreateBlobSnapshotResult::IsServerEncrypted = bool()
-- content: ''
-- content: ''
+  display: h2
 - content: True if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. For a snapshot request, this header is set to true when metadata was provided in the request and encrypted with a customer-provided key.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LastModified'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Blobs::Models::CreateBlobSnapshotResult::LastModified
-- content: ''
-- content: ''
+  display: h2
 - content: Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Snapshot'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Blobs::Models::CreateBlobSnapshotResult::Snapshot
-- content: ''
-- content: ''
+  display: h2
 - content: Uniquely identifies the snapshot and indicates the snapshot version. It may be used in subsequent requests to access the snapshot.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;VersionId'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::CreateBlobSnapshotResult::VersionId
-- content: ''
-- content: ''
-- content: A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/blobs/rest_client.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob.The documentation for this struct was generated from the following file:inc/azure/storage/blobs/rest_client.hppGenerated by&#160;1.9.7

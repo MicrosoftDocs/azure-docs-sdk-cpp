@@ -1,145 +1,35 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::Shares::SetFilePropertiesOptions
+title: Azure::Storage::Files::Shares::SetFilePropertiesOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-shares
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesSharesSetFilePropertiesOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a4c115b8c1a638690cf770bf13c7c48c7">Azure::Storage::Files::Shares::ShareFileClient::SetProperties</a>.
-- content: ''
-- content: <code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
-- content: ''
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a4c115b8c1a638690cf770bf13c7c48c7">Azure::Storage::Files::Shares::ShareFileClient::SetProperties</a>.<code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; std::string &gt;&#160;Permission
-
-
-    Nullable&lt; Models ::FilePermissionFormat &gt;&#160;FilePermissionFormat
-
-
-    Azure::Nullable&lt; int64_t &gt;&#160;Size
-
-
-    LeaseAccessConditions&#160;AccessConditions
-
-
-    Models::FilePosixProperties&#160;PosixProperties
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#a94010f27b6f254d2157e066d386aadb9">Permission</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#a05829319f4ff1ef84d8282f8d108bc25">FilePermissionFormat</a>
+    returnType: Nullable< Models ::FilePermissionFormat > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#aa0cb7c8643bf4fa755ce40cacc1f9c10">Size</a>
+    returnType: Azure::Nullable< int64_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#ae64590c0f14c838e812b99c3aaca3a0a">AccessConditions</a>
+    returnType: LeaseAccessConditions 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#a64ab9e617a6044d51d5263151ff75739">PosixProperties</a>
+    returnType: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties.html">Models::FilePosixProperties</a> 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;AccessConditions'
-- content: ''
-- content: ''
-- content: ''
-- content: LeaseAccessConditions Azure::Storage::Files::Shares::SetFilePropertiesOptions::AccessConditions
-- content: ''
-- content: ''
+  display: h2
 - content: The operation will only succeed if the access condition is met.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;FilePermissionFormat'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;Models ::FilePermissionFormat&gt; Azure::Storage::Files::Shares::SetFilePropertiesOptions::FilePermissionFormat
-- content: ''
-- content: ''
+  display: h2
 - content: Optional. Available for version 2024-11-04 and later. Specifies the format in which the permission is returned.If FilePermissionFormat is unspecified or explicitly set to SDDL format format, the permission will be returned in SDDL format.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Permission'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::SetFilePropertiesOptions::Permission
-- content: ''
-- content: ''
+  display: h2
 - content: This permission is the security descriptor for the file specified in the Security Descriptor Definition Language (SDDL) or base64 encoded binary format. If not specified, 'inherit' is used.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;PosixProperties'
-- content: ''
-- content: ''
-- content: ''
-- content: Models::FilePosixProperties Azure::Storage::Files::Shares::SetFilePropertiesOptions::PosixProperties
-- content: ''
-- content: ''
+  display: h2
 - content: The NFS related properties for the file.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Size'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;int64_t&gt; Azure::Storage::Files::Shares::SetFilePropertiesOptions::Size
-- content: ''
-- content: ''
-- content: Specify this to resize a file to the specified value.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/files/shares/share_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: Specify this to resize a file to the specified value.The documentation for this struct was generated from the following file:inc/azure/storage/files/shares/share_options.hppGenerated by&#160;1.9.7

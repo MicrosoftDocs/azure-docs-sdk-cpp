@@ -1,161 +1,40 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::DataLake::Models::FlushFileResult
+title: Azure::Storage::Files::DataLake::Models::FlushFileResult Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-datalake
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesDataLakeModelsFlushFileResult
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a86fc020be966025aae11103420afab30">Azure::Storage::Files::DataLake::DataLakeFileClient::Flush</a>.
-- content: ''
-- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
-- content: ''
+- content: Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a86fc020be966025aae11103420afab30">Azure::Storage::Files::DataLake::DataLakeFileClient::Flush</a>.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::ETag&#160;ETag
-
-
-    DateTime&#160;LastModified
-
-
-    std::int64_t&#160;FileSize = std::int64_t()
-
-
-    bool&#160;IsServerEncrypted = bool()
-
-
-    Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;EncryptionKeySha256
-
-
-    Nullable&lt; bool &gt;&#160;IsLeaseRenewed
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a41b3b9014e3fbbbfe47a9f8881fc6601">ETag</a>
+    returnType: Azure::ETag 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a7d4a2edf44c8ac9f034c8eb4942de04d">LastModified</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a5459e5b1cc4c1448a8c852e15bbb3229">FileSize</a> = std::int64_t()
+    returnType: std::int64_t 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a5e6b67cbdab28daefa09597f5740167f">IsServerEncrypted</a> = bool()
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a29d5f7ca9661c61df0c6258778453d67">EncryptionKeySha256</a>
+    returnType: Nullable< std::vector< std::uint8_t > > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a66d66bb02168e3067924d0847f53c6cc">IsLeaseRenewed</a>
+    returnType: Nullable< bool > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;EncryptionKeySha256'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Files::DataLake::Models::FlushFileResult::EncryptionKeySha256
-- content: ''
-- content: ''
+  display: h2
 - content: The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ETag'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::ETag Azure::Storage::Files::DataLake::Models::FlushFileResult::ETag
-- content: ''
-- content: ''
+  display: h2
 - content: An HTTP entity tag associated with the file or directory.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;FileSize'
-- content: ''
-- content: ''
-- content: ''
-- content: std::int64_t Azure::Storage::Files::DataLake::Models::FlushFileResult::FileSize = std::int64_t()
-- content: ''
-- content: ''
+  display: h2
 - content: The size of the resource in bytes.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IsLeaseRenewed'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::Models::FlushFileResult::IsLeaseRenewed
-- content: ''
-- content: ''
+  display: h2
 - content: If the lease was auto-renewed with this request.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IsServerEncrypted'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Storage::Files::DataLake::Models::FlushFileResult::IsServerEncrypted = bool()
-- content: ''
-- content: ''
+  display: h2
 - content: The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LastModified'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Files::DataLake::Models::FlushFileResult::LastModified
-- content: ''
-- content: ''
-- content: The data and time the file or directory was last modified. Write operations on the file or directory update the last modified time.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/files/datalake/rest_client.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: The data and time the file or directory was last modified. Write operations on the file or directory update the last modified time.The documentation for this struct was generated from the following file:inc/azure/storage/files/datalake/rest_client.hppGenerated by&#160;1.9.7

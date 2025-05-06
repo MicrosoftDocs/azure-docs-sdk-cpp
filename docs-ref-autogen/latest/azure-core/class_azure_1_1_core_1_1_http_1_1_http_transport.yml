@@ -1,200 +1,78 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Core::Http::HttpTransport
+title: Azure::Core::Http::HttpTransport Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureCoreHttpHttpTransport
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Base class for all HTTP transport implementations.
-- content: ''
-- content: <code>#include &lt;<a href="transport_8hpp_source.html">transport.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Core::Http::HttpTransport:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+- content: 'Base class for all HTTP transport implementations.<code>#include &lt;<a href="transport_8hpp_source.html">transport.hpp</a>&gt;</code>Inheritance diagram for Azure::Core::Http::HttpTransport:'
 - section: Public Member Functions
-- content: >-
-    virtual std::unique_ptr&lt; RawResponse &gt;&#160;&#160;Send (Request &amp;request, Context const &amp;context)=0Send an HTTP request over the wire.  
-
-
-
-    virtual&#160;&#160;~HttpTransport ()Destructs HttpTransport.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a class="el" href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &request, <a class="el" href="class_azure_1_1_core_1_1_context.html">Context</a> const &context)=0
+    summary: Send an HTTP request over the wire.  <br>
+    returnType: virtual std::unique_ptr< <a class="el" href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a4c0b2905624416efe1f77e6ef244c0e9">~HttpTransport</a> ()
+    summary: Destructs <code>HttpTransport</code>.  <br>
+    returnType: virtual 
 - section: Protected Member Functions
-- content: >-
-    &#160;&#160;HttpTransport ()=defaultConstructs a default instance of HttpTransport.  
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
+    summary: Constructs a default instance of <code>HttpTransport</code>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#af7fadcff099af67a5e3732642cc42c78">HttpTransport</a> (const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &other)=default
+    summary: Constructs <code>HttpTransport</code> by copying another instance of <code>HttpTransport</code>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a0c6eb7479b5ef2e7359ec5f42fc404b8">HttpTransport</a> (<a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &&other)=default
+    summary: Constructs <code>HttpTransport</code> by moving another instance of <code>HttpTransport</code>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a44e0b2695aa316451ffe3c68e5e3ee30">operator=</a> (const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &other)=default
+    summary: Assigns <code>HttpTransport</code> to another instance of <code>HttpTransport</code>.  <br>
+    returnType: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> & 
+  - declaration: <b>HasWebSocketSupport</b> () const
+    summary: Returns true if the <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html" title="Base class for all HTTP transport implementations.">HttpTransport</a> supports WebSockets (the ability to communicate bidirectionally on the TCP connection used by the HTTP transport). <br>
+    returnType: >-
+      <a id="a8b47565baf7018fdfcad475b9c5d6615" name="a8b47565baf7018fdfcad475b9c5d6615"></a>
 
-
-
-    &#160;&#160;HttpTransport (const HttpTransport &amp;other)=defaultConstructs HttpTransport by copying another instance of HttpTransport.  
-
-
-
-    &#160;&#160;HttpTransport (HttpTransport &amp;&amp;other)=defaultConstructs HttpTransport by moving another instance of HttpTransport.  
-
-
-
-    HttpTransport &amp;&#160;&#160;operator= (const HttpTransport &amp;other)=defaultAssigns HttpTransport to another instance of HttpTransport.  
-
-
-
-
-    virtual bool&#160;&#160;HasWebSocketSupport () constReturns true if the HttpTransport supports WebSockets (the ability to communicate bidirectionally on the TCP connection used by the HTTP transport).
-- content: ''
+      virtual bool 
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;~HttpTransport()'
-- content: ''
-- content: ''
-- content: ''
-- content: "virtual Azure::Core::Http::HttpTransport::~HttpTransport \n          (\n          )\n          \n        \n      \n  \n  \ninlinevirtual"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;HttpTransport() [1/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Core::Http::HttpTransport::HttpTransport \n          (\n          )\n          \n        \n      \n  \n  \nprotecteddefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;HttpTransport() [2/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Core::Http::HttpTransport::HttpTransport \n          (\n          const HttpTransport &amp;&#160;\n          other)\n          \n        \n      \n  \n  \nprotecteddefault"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: 'An instance to copy. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: An instance to copy.
 - section: '&#9670;&#160;HttpTransport() [3/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Core::Http::HttpTransport::HttpTransport \n          (\n          HttpTransport &amp;&amp;&#160;\n          other)\n          \n        \n      \n  \n  \nprotecteddefault"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: 'An instance to move in. '
-- content: ''
-- content: ''
-- content: ''
+    summary: An instance to move in.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;operator=()'
-- content: ''
-- content: ''
-- content: ''
-- content: "HttpTransport &amp; Azure::Core::Http::HttpTransport::operator= \n          (\n          const HttpTransport &amp;&#160;\n          other)\n          \n        \n      \n  \n  \nprotecteddefault"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: An instance to assign.
-- content: ''
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A reference to this instance. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A reference to this instance.
 - section: '&#9670;&#160;Send()'
-- content: ''
-- content: ''
-- content: ''
-- content: "virtual std::unique_ptr&lt; RawResponse &gt; Azure::Core::Http::HttpTransport::Send \n          (\n          Request &amp;&#160;\n          request, \n        \n        \n          \n          \n          Context const &amp;&#160;\n          context&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \npure virtual"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: request
-    summary: 'An <a class="el" href="class_azure_1_1_core_1_1_http_1_1_request.html" title="A request message from a client to a server.">Azure::Core::Http::Request</a> to send. '
+    summary: An <a class="el" href="class_azure_1_1_core_1_1_http_1_1_request.html" title="A request message from a client to a server.">Azure::Core::Http::Request</a> to send.
   - name: context
-    summary: 'A context to control the request lifetime. '
-- content: ''
-- content: Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.html#aa6a92d65b363e50a2293b6bada21ef3e">Azure::Core::Http::CurlTransport</a>, and <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a21027372be541ce167ee62b06e566402">Azure::Core::Http::WinHttpTransport</a>.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/core/http/transport.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    summary: A context to control the request lifetime.
+- content: Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.html#aa6a92d65b363e50a2293b6bada21ef3e">Azure::Core::Http::CurlTransport</a>, and <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a21027372be541ce167ee62b06e566402">Azure::Core::Http::WinHttpTransport</a>.The documentation for this class was generated from the following file:inc/azure/core/http/transport.hppGenerated by&#160;1.9.7

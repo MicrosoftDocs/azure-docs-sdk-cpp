@@ -1,111 +1,58 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Messaging::EventHubs::Models::StartPosition
+title: Azure::Messaging::EventHubs::Models::StartPosition Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-messaging-eventhubs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureMessagingEventHubsModelsStartPosition
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_position.html">StartPosition</a> indicates the position to start receiving events within a partition. The default position is Latest.  
-     <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_position.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="partition__client__models_8hpp_source.html">partition_client_models.hpp</a>&gt;</code>
-- content: ''
+     <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_position.html#details">More...</a><code>#include &lt;<a href="partition__client__models_8hpp_source.html">partition_client_models.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; int64_t &gt;&#160;&#160;OffsetOffset will start the consumer after the specified offset. Can be exclusive or inclusive, based on the Inclusive property.  
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_position.html#a51889a66bad55b1b120c53021e099395">Offset</a>
+    summary: Offset will start the consumer after the specified offset. Can be exclusive or inclusive, based on the Inclusive property.  <br>
+    returnType: Azure::Nullable< int64_t > 
+  - declaration: <b>SequenceNumber</b>
+    summary: SequenceNumber will start the consumer after the specified sequence number. Can be exclusive or inclusive, based on the Inclusive property. <br>
+    returnType: >-
+      <a id="a71c8bab58001ce284d5a0a01963bf46b" name="a71c8bab58001ce284d5a0a01963bf46b"></a>
 
+      Azure::Nullable< int64_t > 
+  - declaration: <b>EnqueuedTime</b>
+    summary: EnqueuedTime will start the consumer before events that were enqueued on or after EnqueuedTime. Can be exclusive or inclusive, based on the Inclusive property. <br>
+    returnType: >-
+      <a id="af56bec46bb65292bd406eb0ba298042c" name="af56bec46bb65292bd406eb0ba298042c"></a>
 
+      Azure::Nullable< Azure::DateTime > 
+  - declaration: <b>Inclusive</b> {false}
+    summary: Inclusive configures whether the events directly at Offset, SequenceNumber or EnqueuedTime will be included (true) or excluded (false). The default is false. <br>
+    returnType: >-
+      <a id="a37d0b764e519a1ccbc208ac68ee3c49e" name="a37d0b764e519a1ccbc208ac68ee3c49e"></a>
 
+      bool 
+  - declaration: <b>Earliest</b>
+    summary: Earliest will start the consumer at the earliest event. <br>
+    returnType: >-
+      <a id="a06de817499f766406ecd929d6cf37ca5" name="a06de817499f766406ecd929d6cf37ca5"></a>
 
-    Azure::Nullable&lt; int64_t &gt;&#160;&#160;SequenceNumberSequenceNumber will start the consumer after the specified sequence number. Can be exclusive or inclusive, based on the Inclusive property. 
+      Azure::Nullable< bool > 
+  - declaration: <b>Latest</b>
+    summary: Latest will start the consumer after the last event. <br>
+    returnType: >-
+      <a id="a254b7789abc69152a432be844af208a8" name="a254b7789abc69152a432be844af208a8"></a>
 
-
-
-
-    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;EnqueuedTimeEnqueuedTime will start the consumer before events that were enqueued on or after EnqueuedTime. Can be exclusive or inclusive, based on the Inclusive property. 
-
-
-
-
-    bool&#160;&#160;Inclusive {false}Inclusive configures whether the events directly at Offset, SequenceNumber or EnqueuedTime will be included (true) or excluded (false). The default is false. 
-
-
-
-
-    Azure::Nullable&lt; bool &gt;&#160;&#160;EarliestEarliest will start the consumer at the earliest event. 
-
-
-
-
-    Azure::Nullable&lt; bool &gt;&#160;&#160;LatestLatest will start the consumer after the last event.
-- content: ''
-- content: ''
+      Azure::Nullable< bool > 
 - section: Detailed Description
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: You can set this in the options for <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a2372850b4f1eace768803dc17c09cdb4" title="Create new Partition client.">ConsumerClient::CreatePartitionClient</a>.
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Offset'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;int64_t&gt; Azure::Messaging::EventHubs::Models::StartPosition::Offset
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/messaging/eventhubs/models/partition_client_models.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: 'NOTE: offsets are not stable values, and might refer to different events over time as the Event Hub events reach their age limit and are discarded.'
+- content: The documentation for this struct was generated from the following file:inc/azure/messaging/eventhubs/models/partition_client_models.hppGenerated by&#160;1.9.7

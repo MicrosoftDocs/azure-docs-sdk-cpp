@@ -1,157 +1,55 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Messaging::EventHubs::EventHubsException
+title: Azure::Messaging::EventHubs::EventHubsException Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-messaging-eventhubs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureMessagingEventHubsEventHubsException
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: An exception thrown when an EventHubs service operation fails.
-- content: ''
-- content: <code>#include &lt;<a href="eventhubs__exception_8hpp_source.html">eventhubs_exception.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Messaging::EventHubs::EventHubsException:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+- content: 'An exception thrown when an EventHubs service operation fails.<code>#include &lt;<a href="eventhubs__exception_8hpp_source.html">eventhubs_exception.hpp</a>&gt;</code>Inheritance diagram for Azure::Messaging::EventHubs::EventHubsException:'
 - section: Public Member Functions
-- content: '&#160;&#160;EventHubsException (const std::string &amp;what)Constructs a EventHubsException with a message.'
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_hubs_exception.html#ae4965d0963fac60ba9e10f109384e856">EventHubsException</a> (const std::string &what)
+    summary: Constructs a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_hubs_exception.html#ae4965d0963fac60ba9e10f109384e856" title="Constructs a EventHubsException with a message.">EventHubsException</a> with a message.  <br>
+    returnType:  
 - section: Public Attributes
-- content: >-
-    std::string&#160;&#160;ErrorCondition {}A symbolic value indicating the error condition.  
-
-
-
-    std::string&#160;&#160;ErrorDescriptionA description of the error intended for the developer to understand what the error refers to and how to fix it.  
-
-
-
-    Azure::Nullable&lt; std::uint32_t &gt;&#160;&#160;StatusCode {}The status code associated with the error, if any.  
-
-
-
-    bool&#160;&#160;IsTransient {}Indicates whether the error is transient in nature.
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_hubs_exception.html#aad8e61cef839cb25f68d7fda0951080c">ErrorCondition</a> {}
+    summary: A symbolic value indicating the error condition.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_hubs_exception.html#a1ea5cc198c9a3c5d39f99becc252a3b0">ErrorDescription</a>
+    summary: A description of the error intended for the developer to understand what the error refers to and how to fix it.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_hubs_exception.html#a7623847e66c6cde6490d34c840ad023e">StatusCode</a> {}
+    summary: The status code associated with the error, if any.  <br>
+    returnType: Azure::Nullable< std::uint32_t > 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_hubs_exception.html#a5d50165583a8ac06a73185a82572eea1">IsTransient</a> {}
+    summary: Indicates whether the error is transient in nature.  <br>
+    returnType: bool 
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;EventHubsException()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Messaging::EventHubs::EventHubsException::EventHubsException \n          (\n          const std::string &amp;&#160;\n          what)\n          \n        \n      \n  \n  \ninlineexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: what
-    summary: 'An explanatory string. '
-- content: ''
-- content: ''
-- content: ''
+    summary: An explanatory string.
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ErrorCondition'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Messaging::EventHubs::EventHubsException::ErrorCondition {}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-transport-v1.0-os.html#type-error">AMQP Section 2.8.14</a>.
 - section: '&#9670;&#160;ErrorDescription'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Messaging::EventHubs::EventHubsException::ErrorDescription
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-transport-v1.0-os.html#type-error">AMQP Section 2.8.15</a>.
 - section: '&#9670;&#160;IsTransient'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Messaging::EventHubs::EventHubsException::IsTransient {}
-- content: ''
-- content: ''
+  display: h2
 - content: If this field is set to true, then retrying the operation may succeed at a later time.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;StatusCode'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::uint32_t&gt; Azure::Messaging::EventHubs::EventHubsException::StatusCode {}
-- content: ''
-- content: ''
-- content: If this field has a value, then it will typically be an HTTP status code with additional information about the failure. This property is only filled in for the GetEventHubProperties and GetEventHubPartitionProperties operations.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/messaging/eventhubs/eventhubs_exception.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: If this field has a value, then it will typically be an HTTP status code with additional information about the failure. This property is only filled in for the GetEventHubProperties and GetEventHubPartitionProperties operations.The documentation for this class was generated from the following file:inc/azure/messaging/eventhubs/eventhubs_exception.hppGenerated by&#160;1.9.7

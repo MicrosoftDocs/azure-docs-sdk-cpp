@@ -1,257 +1,123 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Core::Amqp::Models::AmqpComposite
+title: Azure::Core::Amqp::Models::AmqpComposite Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core-amqp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureCoreAmqpModelsAmqpComposite
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     An <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> represents a sequentially ordered list of values. The values of the composite may have different types.  
-     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Core::Amqp::Models::AmqpComposite:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#details">More...</a><code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code>Inheritance diagram for Azure::Core::Amqp::Models::AmqpComposite:
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;AmqpComposite ()Construct a new AmqpComposite object. 
+  display: h2
+- apiList:
+  - declaration: <b>AmqpComposite</b> ()
+    summary: Construct a new <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> object. <br>
+    returnType: >-
+      <a id="af1eaf835a7e462665dec2358cf4523a3" name="af1eaf835a7e462665dec2358cf4523a3"></a>
 
+       
+  - declaration: <b>AmqpComposite</b> (<a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> const &descriptor, std::initializer_list< <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> > const &values)
+    summary: Construct a new <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> object with an initializer list. <br>
+    returnType: >-
+      <a id="a955132114a0ac94709a312fc322170ba" name="a955132114a0ac94709a312fc322170ba"></a>
 
+       
+  - declaration: <b>AmqpComposite</b> (const <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &other)=default
+    summary: Construct a new <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> object from another. <br>
+    returnType: >-
+      <a id="a098987570b78dc0393b11fa4dc6df2ce" name="a098987570b78dc0393b11fa4dc6df2ce"></a>
 
-
-    &#160;&#160;AmqpComposite (AmqpValue const &amp;descriptor, std::initializer_list&lt; AmqpValue &gt; const &amp;values)Construct a new AmqpComposite object with an initializer list. 
-
-
-
-
-    &#160;&#160;AmqpComposite (const AmqpComposite &amp;other)=defaultConstruct a new AmqpComposite object from another. 
-
-
-
-    AmqpComposite &amp;&#160;&#160;operator= (const AmqpComposite &amp;other)=defaultCopy assignment operator.  
-
-
-
-    &#160;&#160;AmqpComposite (AmqpComposite &amp;&amp;other) noexcept=defaultMove constructor.  
-
-
-
-    AmqpComposite &amp;&#160;&#160;operator= (AmqpComposite &amp;&amp;other) noexcept=defaultMove assignment operator.  
-
-
-
-    &#160;&#160;AmqpComposite (AmqpValue const &amp;value)Construct a new AmqpComposite object from an existing uAMQP AMQP_VALUE item.  
-
-
-
-    bool&#160;&#160;operator== (AmqpComposite const &amp;that) constCompare this AmqpComposite value with another.  
-
-
-
-    bool&#160;&#160;operator!= (AmqpComposite const &amp;that) constCompare this AmqpComposite value with another.  
-
-
-
-    AmqpValue const &amp;&#160;&#160;GetDescriptor () constReturns the descriptor for this composite type.
-- content: ''
-- content: ''
+       
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#a4cb9055ec312fbc435b7f0f916de34b4">operator=</a> (const <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &other)=default
+    summary: Copy assignment operator.  <br>
+    returnType: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> & 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#aaf0cd6821ba2672994b4d50d3125944c">AmqpComposite</a> (<a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &&other) noexcept=default
+    summary: Move constructor.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#a95c3304854cfef475bd44919c3986d78">operator=</a> (<a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &&other) noexcept=default
+    summary: Move assignment operator.  <br>
+    returnType: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> & 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#a2de0902be6b19f27d61f5d8776cbb3c4">AmqpComposite</a> (<a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> const &value)
+    summary: Construct a new <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> object from an existing uAMQP AMQP_VALUE item.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#a67ab366c75e438410feeacfeb9951e6b">operator==</a> (<a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> const &that) const
+    summary: Compare this <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> value with another.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#ab51b0959b471073905028ebb10847cd9">operator!=</a> (<a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> const &that) const
+    summary: Compare this <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> value with another.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#aa534649f2af9e8019a411a20ee827373">GetDescriptor</a> () const
+    summary: Returns the descriptor for this composite type.  <br>
+    returnType: <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> const & 
 - section: Detailed Description
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: An <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#doc-idp42752">AMQP Composite type</a> is a composite value where each value consists of an ordered sequence of fields, each with a specified name, type and multiplicity. They roughly correspond to a C or C++ "struct" type.
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;AmqpComposite() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Core::Amqp::Models::AmqpComposite::AmqpComposite \n          (\n          AmqpComposite &amp;&amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefaultnoexcept"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: 'composite value to move. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: composite value to move.
 - section: '&#9670;&#160;AmqpComposite() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: >-
-    Azure::Core::Amqp::Models::AmqpComposite::AmqpComposite 
-              (
-              AmqpValue const &amp;&#160;
-              value)
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Note that this does NOT capture the passed in AMQP_VALUE object, the caller is responsible for freeing that object.
 - section: Parameters
   display: h4
 - parameters:
   - name: value
-    summary: '- the AMQP array value to capture. '
-- content: ''
-- content: ''
-- content: ''
+    summary: '- the AMQP array value to capture.'
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;GetDescriptor()'
-- content: ''
-- content: ''
-- content: ''
-- content: "AmqpValue const  &amp; Azure::Core::Amqp::Models::AmqpComposite::GetDescriptor \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The descriptor for this composite type. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The descriptor for this composite type.
 - section: '&#9670;&#160;operator!=()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::Core::Amqp::Models::AmqpComposite::operator!= \n          (\n          AmqpComposite const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: that
-    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> to compare with. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> to compare with.'
 - section: '&#9670;&#160;operator=() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "AmqpComposite &amp; Azure::Core::Amqp::Models::AmqpComposite::operator= \n          (\n          AmqpComposite &amp;&amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefaultnoexcept"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: 'composite value to move. '
-- content: ''
+    summary: composite value to move.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'reference to this composite value. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: reference to this composite value.
 - section: '&#9670;&#160;operator=() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "AmqpComposite &amp; Azure::Core::Amqp::Models::AmqpComposite::operator= \n          (\n          const AmqpComposite &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: 'composite value to copy. '
-- content: ''
+    summary: composite value to copy.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'reference to this composite value. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: reference to this composite value.
 - section: '&#9670;&#160;operator==()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::Core::Amqp::Models::AmqpComposite::operator== \n          (\n          AmqpComposite const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: that
-    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> to compare with. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+    summary: '- the <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html" title="An AmqpComposite represents a sequentially ordered list of values. The values of the composite may ha...">AmqpComposite</a> to compare with.'
 - content: >-
-    inc/azure/core/amqp/models/amqp_value.hpp
+    The documentation for this class was generated from the following files:inc/azure/core/amqp/models/amqp_value.hpp
 
-    src/models/amqp_value.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/models/amqp_value.cppGenerated by&#160;1.9.7

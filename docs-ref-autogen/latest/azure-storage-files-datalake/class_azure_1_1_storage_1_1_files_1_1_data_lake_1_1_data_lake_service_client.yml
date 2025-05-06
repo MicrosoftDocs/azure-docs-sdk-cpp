@@ -1,342 +1,178 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::DataLake::DataLakeServiceClient
+title: Azure::Storage::Files::DataLake::DataLakeServiceClient Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-datalake
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesDataLakeDataLakeServiceClient
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     The <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html">DataLakeServiceClient</a> allows you to manipulate Azure Storage DataLake files.  
-     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="datalake__service__client_8hpp_source.html">datalake_service_client.hpp</a>&gt;</code>
-- content: ''
+     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#details">More...</a><code>#include &lt;<a href="datalake__service__client_8hpp_source.html">datalake_service_client.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;DataLakeServiceClient (const std::string &amp;serviceUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Shared key authentication client.  
-
-
-
-    &#160;&#160;DataLakeServiceClient (const std::string &amp;serviceUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Bearer token authentication client.  
-
-
-
-    &#160;&#160;DataLakeServiceClient (const std::string &amp;serviceUrl, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Anonymous/SAS/customized pipeline auth.  
-
-
-
-    DataLakeFileSystemClient&#160;&#160;GetFileSystemClient (const std::string &amp;fileSystemName) constCreate a FileSystemClient from current DataLakeServiceClient.  
-
-
-
-    std::string&#160;&#160;GetUrl () constGets the datalake service's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.  
-
-
-
-    ListFileSystemsPagedResponse&#160;&#160;ListFileSystems (const ListFileSystemsOptions &amp;options=ListFileSystemsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns a sequence of file systems in the storage account. Enumerating the file systems may make multiple requests to the service while fetching all the values. File systems are ordered lexicographically by name.  
-
-
-
-    Azure::Response&lt; Models::UserDelegationKey &gt;&#160;&#160;GetUserDelegationKey (const Azure::DateTime &amp;expiresOn, const GetUserDelegationKeyOptions &amp;options=GetUserDelegationKeyOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRetrieves a key that can be used to delegate Active Directory authorization to shared access signatures.  
-
-
-
-    Azure::Response&lt; Models::SetServicePropertiesResult &gt;&#160;&#160;SetProperties (Models::DataLakeServiceProperties properties, const SetServicePropertiesOptions &amp;options=SetServicePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets properties for a storage account's Blob service endpoint, including properties for Storage Analytics, CORS (Cross-Origin Resource Sharing) rules and soft delete settings. You can also use this operation to set the default request version for all incoming requests to the DataLake service that do not have a version specified.  
-
-
-
-    Azure::Response&lt; Models::DataLakeServiceProperties &gt;&#160;&#160;GetProperties (const GetServicePropertiesOptions &amp;options=GetServicePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the properties of a storage account's datalake service, including properties for Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a74bed929ac4b38f6b61b14a97024daa7">DataLakeServiceClient</a> (const std::string &serviceUrl, std::shared_ptr< StorageSharedKeyCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Shared key authentication client.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a4d754c9dd31b8a0939b2c35ae0651bbb">DataLakeServiceClient</a> (const std::string &serviceUrl, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Bearer token authentication client.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a36c19155ddaa8ab18e6a8b11e6766683">DataLakeServiceClient</a> (const std::string &serviceUrl, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Anonymous/SAS/customized pipeline auth.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a4600d9bb8f31d330b025e08edc40879b">GetFileSystemClient</a> (const std::string &fileSystemName) const
+    summary: Create a FileSystemClient from current <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html" title="The DataLakeServiceClient allows you to manipulate Azure Storage DataLake files.">DataLakeServiceClient</a>.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html">DataLakeFileSystemClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#aeefc282a438e06fa33614496d8723c8d">GetUrl</a> () const
+    summary: Gets the datalake service's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a5dc0b007fd2c41ba633014d908ac25c9">ListFileSystems</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html">ListFileSystemsOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html">ListFileSystemsOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Returns a sequence of file systems in the storage account. Enumerating the file systems may make multiple requests to the service while fetching all the values. File systems are ordered lexicographically by name.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_paged_response.html">ListFileSystemsPagedResponse</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a472cd31297af5be217c4bdeb22012d34">GetUserDelegationKey</a> (const Azure::DateTime &expiresOn, const GetUserDelegationKeyOptions &options=GetUserDelegationKeyOptions(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Retrieves a key that can be used to delegate Active Directory authorization to shared access signatures.  <br>
+    returnType: Azure::Response< Models::UserDelegationKey > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#aede79ef0dc7ab318d2b1c1cc0a3e6f09">SetProperties</a> (Models::DataLakeServiceProperties properties, const SetServicePropertiesOptions &options=SetServicePropertiesOptions(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Sets properties for a storage account's Blob service endpoint, including properties for Storage Analytics, CORS (Cross-Origin Resource Sharing) rules and soft delete settings. You can also use this operation to set the default request version for all incoming requests to the DataLake service that do not have a version specified.  <br>
+    returnType: Azure::Response< Models::SetServicePropertiesResult > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a0c46c3931ad1c3a25c5e8a81d6eb2b11">GetProperties</a> (const GetServicePropertiesOptions &options=GetServicePropertiesOptions(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Gets the properties of a storage account's datalake service, including properties for Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.  <br>
+    returnType: Azure::Response< Models::DataLakeServiceProperties > 
 - section: Static Public Member Functions
-- content: static DataLakeServiceClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Create from connection string.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a45851eec369228eaf6bc7abbc99d1bc0">CreateFromConnectionString</a> (const std::string &connectionString, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Create from connection string.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html">DataLakeServiceClient</a> 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DataLakeServiceClient() [1/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::DataLake::DataLakeServiceClient::DataLakeServiceClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: serviceUrl
-    summary: "The service URL this client's request targets. "
+    summary: The service URL this client's request targets.
   - name: credential
-    summary: 'The shared key credential used to initialize the client. '
+    summary: The shared key credential used to initialize the client.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: '&#9670;&#160;DataLakeServiceClient() [2/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::DataLake::DataLakeServiceClient::DataLakeServiceClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: serviceUrl
-    summary: "The service URL this client's request targets. "
+    summary: The service URL this client's request targets.
   - name: credential
-    summary: 'The token credential used to initialize the client. '
+    summary: The token credential used to initialize the client.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: '&#9670;&#160;DataLakeServiceClient() [3/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::DataLake::DataLakeServiceClient::DataLakeServiceClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: serviceUrl
-    summary: "The service URL this client's request targets. "
+    summary: The service URL this client's request targets.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
-- content: ''
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CreateFromConnectionString()'
-- content: ''
-- content: ''
-- content: ''
-- content: "DataLakeServiceClient Azure::Storage::Files::DataLake::DataLakeServiceClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: connectionString
-    summary: 'Azure Storage connection string. '
+    summary: Azure Storage connection string.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html" title="The DataLakeServiceClient allows you to manipulate Azure Storage DataLake files.">DataLakeServiceClient</a> '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html" title="The DataLakeServiceClient allows you to manipulate Azure Storage DataLake files.">DataLakeServiceClient</a>
 - section: '&#9670;&#160;GetFileSystemClient()'
-- content: ''
-- content: ''
-- content: ''
-- content: >-
-    DataLakeFileSystemClient Azure::Storage::Files::DataLake::DataLakeServiceClient::GetFileSystemClient 
-              (
-              const std::string &amp;&#160;
-              fileSystemName)
-               const
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: fileSystemName
-    summary: 'The name of the file system. '
-- content: ''
+    summary: The name of the file system.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'FileSystemClient '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: FileSystemClient
 - section: '&#9670;&#160;GetProperties()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::DataLakeServiceProperties &gt; Azure::Storage::Files::DataLake::DataLakeServiceClient::GetProperties \n          (\n          const GetServicePropertiesOptions &amp;&#160;\n          options = GetServicePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A DataLakeServiceProperties describing the service properties. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A DataLakeServiceProperties describing the service properties.
 - section: '&#9670;&#160;GetUrl()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string Azure::Storage::Files::DataLake::DataLakeServiceClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: "The datalake service's primary URL endpoint. "
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The datalake service's primary URL endpoint.
 - section: '&#9670;&#160;GetUserDelegationKey()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::UserDelegationKey &gt; Azure::Storage::Files::DataLake::DataLakeServiceClient::GetUserDelegationKey \n          (\n          const Azure::DateTime &amp;&#160;\n          expiresOn, \n        \n        \n          \n          \n          const GetUserDelegationKeyOptions &amp;&#160;\n          options = GetUserDelegationKeyOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: expiresOn
-    summary: "Expiration of the key's validity. The time should be specified in UTC, and will be truncated to second. "
+    summary: Expiration of the key's validity. The time should be specified in UTC, and will be truncated to second.
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<Models::UserDelegationKey> containing the user delegation key. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<Models::UserDelegationKey> containing the user delegation key.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;ListFileSystems()'
-- content: ''
-- content: ''
-- content: ''
-- content: "ListFileSystemsPagedResponse Azure::Storage::Files::DataLake::DataLakeServiceClient::ListFileSystems \n          (\n          const ListFileSystemsOptions &amp;&#160;\n          options = ListFileSystemsOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to list the file systems. '
+    summary: Optional parameters to list the file systems.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_paged_response.html" title="Response type for Azure::Storage::Files::DataLake::DataLakeServiceClient::ListFileSystems.">ListFileSystemsPagedResponse</a> describing the file systems in the storage account. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_paged_response.html" title="Response type for Azure::Storage::Files::DataLake::DataLakeServiceClient::ListFileSystems.">ListFileSystemsPagedResponse</a> describing the file systems in the storage account.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;SetProperties()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::SetServicePropertiesResult &gt; Azure::Storage::Files::DataLake::DataLakeServiceClient::SetProperties \n          (\n          Models::DataLakeServiceProperties&#160;\n          properties, \n        \n        \n          \n          \n          const SetServicePropertiesOptions &amp;&#160;\n          options = SetServicePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: properties
-    summary: 'The DataLake service properties. '
+    summary: The DataLake service properties.
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A SetServicePropertiesResult on successfully setting the properties. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+  - summary: A SetServicePropertiesResult on successfully setting the properties.
 - content: >-
-    inc/azure/storage/files/datalake/datalake_service_client.hpp
+    The documentation for this class was generated from the following files:inc/azure/storage/files/datalake/datalake_service_client.hpp
 
-    src/datalake_service_client.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/datalake_service_client.cppGenerated by&#160;1.9.7

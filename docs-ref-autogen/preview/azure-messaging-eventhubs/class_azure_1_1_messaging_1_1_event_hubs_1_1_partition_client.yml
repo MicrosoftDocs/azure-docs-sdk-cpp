@@ -1,143 +1,70 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Messaging::EventHubs::PartitionClient
+title: Azure::Messaging::EventHubs::PartitionClient Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-messaging-eventhubs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureMessagingEventHubsPartitionClient
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: <code>#include &lt;<a href="partition__client_8hpp_source.html">partition_client.hpp</a>&gt;</code>
-- content: ''
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;PartitionClient (PartitionClient const &amp;other)=deleteCreate a PartitionClient from another PartitionClient. 
+  display: h2
+- apiList:
+  - declaration: <b>PartitionClient</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> const &other)=delete
+    summary: Create a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> from another <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a>. <br>
+    returnType: >-
+      <a id="ac8431a01a5ba3781faee6c795b677d7c" name="ac8431a01a5ba3781faee6c795b677d7c"></a>
 
+       
+  - declaration: <b>PartitionClient</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> &&other)=default
+    summary: Create a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> moving from another <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a>. <br>
+    returnType: >-
+      <a id="a18a061d958b2b5406b94ce613c409ba9" name="a18a061d958b2b5406b94ce613c409ba9"></a>
 
+       
+  - declaration: <b>operator=</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> const &other)=delete
+    summary: Assign a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> to another <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a>. <br>
+    returnType: >-
+      <a id="aa7a0fd43107ee48ec073318656d33cb2" name="aa7a0fd43107ee48ec073318656d33cb2"></a>
 
+      <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> & 
+  - declaration: <b>operator=</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> &&other)=default
+    summary: Move a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> to another <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a>. <br>
+    returnType: >-
+      <a id="aaf88ec870f1f2a4e4ae9b9f3029edcb8" name="aaf88ec870f1f2a4e4ae9b9f3029edcb8"></a>
 
-    &#160;&#160;PartitionClient (PartitionClient &amp;&amp;other)=defaultCreate a PartitionClient moving from another PartitionClient. 
+      <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> & 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html#a5136be98318ec2391971db410542a895">~PartitionClient</a> ()
+    returnType: virtual 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html#a5ffaa9f9a12b6bdc893dc6667e0c6190">ReceiveEvents</a> (uint32_t maxMessages, Core::Context const &context={})
+    returnType: std::vector< std::shared_ptr< const <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_received_event_data.html">Models::ReceivedEventData</a> > > 
+  - declaration: <b>Close</b> (Core::Context const &context)
+    summary: Closes the connection to the Event Hub service. <br>
+    returnType: >-
+      <a id="aed19b514264893a7909a3544c33dba0a" name="aed19b514264893a7909a3544c33dba0a"></a>
 
-
-
-
-    PartitionClient &amp;&#160;&#160;operator= (PartitionClient const &amp;other)=deleteAssign a PartitionClient to another PartitionClient. 
-
-
-
-
-    PartitionClient &amp;&#160;&#160;operator= (PartitionClient &amp;&amp;other)=defaultMove a PartitionClient to another PartitionClient. 
-
-
-
-    virtual&#160;~PartitionClient ()
-
-
-    std::vector&lt; std::shared_ptr&lt; const Models::ReceivedEventData &gt; &gt;&#160;ReceiveEvents (uint32_t maxMessages, Core::Context const &amp;context={})
-
-
-
-    void&#160;&#160;Close (Core::Context const &amp;context)Closes the connection to the Event Hub service.
-- content: ''
-- content: ''
+      void 
 - section: Detailed Description
-- content: ''
-- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> is used to receive events from an Event Hub partition.
-- content: ''
-- content: This type is instantiated from the [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a>] type, using [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a2372850b4f1eace768803dc17c09cdb4">ConsumerClient.CreatePartitionClient</a>].
-- content: ''
+  display: h2
+- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> is used to receive events from an Event Hub partition.This type is instantiated from the [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a>] type, using [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a2372850b4f1eace768803dc17c09cdb4">ConsumerClient.CreatePartitionClient</a>].
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;~PartitionClient()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Messaging::EventHubs::PartitionClient::~PartitionClient \n          (\n          )\n          \n        \n      \n  \n  \nvirtual"
-- content: ''
-- content: ''
+  display: h2
 - content: Destroy this partition client.
-- content: ''
-- content: ''
-- content: ''
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ReceiveEvents()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::vector&lt; std::shared_ptr&lt; const Models::ReceivedEventData &gt; &gt; Azure::Messaging::EventHubs::PartitionClient::ReceiveEvents \n          (\n          uint32_t&#160;\n          maxMessages, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - content: Receive events from the partition.
-- content: ''
 - section: Parameters
   display: h4
 - parameters:
   - name: maxMessages
-    summary: 'The maximum number of messages to receive. '
+    summary: The maximum number of messages to receive.
   - name: context
-    summary: 'A context to control the request lifetime. '
-- content: ''
+    summary: A context to control the request lifetime.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A vector of received events. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+  - summary: A vector of received events.
 - content: >-
-    inc/azure/messaging/eventhubs/partition_client.hpp
+    The documentation for this class was generated from the following files:inc/azure/messaging/eventhubs/partition_client.hpp
 
-    src/partition_client.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/partition_client.cppGenerated by&#160;1.9.7

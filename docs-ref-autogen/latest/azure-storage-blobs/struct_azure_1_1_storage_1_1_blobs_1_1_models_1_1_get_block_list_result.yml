@@ -1,145 +1,35 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Blobs::Models::GetBlockListResult
+title: Azure::Storage::Blobs::Models::GetBlockListResult Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageBlobsModelsGetBlockListResult
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a32ca7784588c0bf6c7d739533be7b07f">Azure::Storage::Blobs::BlockBlobClient::GetBlockList</a>.
-- content: ''
-- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
-- content: ''
+- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a32ca7784588c0bf6c7d739533be7b07f">Azure::Storage::Blobs::BlockBlobClient::GetBlockList</a>.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::ETag&#160;ETag
-
-
-    DateTime&#160;LastModified
-
-
-    std::int64_t&#160;BlobSize = 0
-
-
-    std::vector&lt; BlobBlock &gt;&#160;CommittedBlocks
-
-
-    std::vector&lt; BlobBlock &gt;&#160;UncommittedBlocks
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_get_block_list_result.html#a4ed4b18d141fd268392737b73f8f6745">ETag</a>
+    returnType: Azure::ETag 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_get_block_list_result.html#a7adda25ed3663301ec3c0501490271e5">LastModified</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_get_block_list_result.html#aebf7d5b84f6f8ffda7a10ecf5c0e84d5">BlobSize</a> = 0
+    returnType: std::int64_t 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_get_block_list_result.html#a1005c3acfa799f2378b4ea9e3485637c">CommittedBlocks</a>
+    returnType: std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_block.html">BlobBlock</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_get_block_list_result.html#a848acf81ff9c75616587fc118d299214">UncommittedBlocks</a>
+    returnType: std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_block.html">BlobBlock</a> > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;BlobSize'
-- content: ''
-- content: ''
-- content: ''
-- content: std::int64_t Azure::Storage::Blobs::Models::GetBlockListResult::BlobSize = 0
-- content: ''
-- content: ''
+  display: h2
 - content: Size of the blob in bytes.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;CommittedBlocks'
-- content: ''
-- content: ''
-- content: ''
-- content: std::vector&lt;BlobBlock&gt; Azure::Storage::Blobs::Models::GetBlockListResult::CommittedBlocks
-- content: ''
-- content: ''
+  display: h2
 - content: List of committed blocks.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ETag'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::ETag Azure::Storage::Blobs::Models::GetBlockListResult::ETag
-- content: ''
-- content: ''
+  display: h2
 - content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LastModified'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Blobs::Models::GetBlockListResult::LastModified
-- content: ''
-- content: ''
+  display: h2
 - content: Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;UncommittedBlocks'
-- content: ''
-- content: ''
-- content: ''
-- content: std::vector&lt;BlobBlock&gt; Azure::Storage::Blobs::Models::GetBlockListResult::UncommittedBlocks
-- content: ''
-- content: ''
-- content: List of uncommitted blocks.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/blobs/rest_client.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: List of uncommitted blocks.The documentation for this struct was generated from the following file:inc/azure/storage/blobs/rest_client.hppGenerated by&#160;1.9.7

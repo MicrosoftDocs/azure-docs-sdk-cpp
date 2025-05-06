@@ -1,145 +1,35 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions
+title: Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-shares
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesSharesListFilesAndDirectoriesOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a3d473b63dc78d60ae4238e19c25697d6">Azure::Storage::Files::Shares::ShareDirectoryClient::ListFilesAndDirectories</a>.
-- content: ''
-- content: <code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
-- content: ''
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a3d473b63dc78d60ae4238e19c25697d6">Azure::Storage::Files::Shares::ShareDirectoryClient::ListFilesAndDirectories</a>.<code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; std::string &gt;&#160;Prefix
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;ContinuationToken
-
-
-    Azure::Nullable&lt; int32_t &gt;&#160;PageSizeHint
-
-
-    Models::ListFilesIncludeFlags&#160;Include = Models::ListFilesIncludeFlags ::None
-
-
-    Nullable&lt; bool &gt;&#160;IncludeExtendedInfo
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options.html#a6e1649acd1b4476c676b425942597aad">Prefix</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options.html#af0ecf35e8775651b02c9f02f7e82f701">ContinuationToken</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options.html#aa61962bfc9a03c5e4e4efba3813c1f0e">PageSizeHint</a>
+    returnType: Azure::Nullable< int32_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options.html#a656f9b22c593211c9d48666f3266c254">Include</a> = Models::ListFilesIncludeFlags ::None
+    returnType: Models::ListFilesIncludeFlags 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options.html#a5f7daad62773d27170d007a257242fe7">IncludeExtendedInfo</a>
+    returnType: Nullable< bool > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ContinuationToken'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::ContinuationToken
-- content: ''
-- content: ''
+  display: h2
 - content: A string value that identifies the portion of the list to be returned with the next list operation. The operation returns a marker value within the response body if the list returned was not complete. The marker value may then be used in a subsequent call to request the next set of list items. The marker value is opaque to the client.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Include'
-- content: ''
-- content: ''
-- content: ''
-- content: Models::ListFilesIncludeFlags Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::Include = Models::ListFilesIncludeFlags ::None
-- content: ''
-- content: ''
+  display: h2
 - content: Include this parameter to specify one or more datasets to include in the response.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IncludeExtendedInfo'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::IncludeExtendedInfo
-- content: ''
-- content: ''
+  display: h2
 - content: This header is implicitly assumed to be true if include query parameter is not empty. If true, the Content-Length property will be up to date.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;PageSizeHint'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::PageSizeHint
-- content: ''
-- content: ''
+  display: h2
 - content: Specifies the maximum number of entries to return. If the request does not specify PageSizeHint, or specifies a value greater than 5,000, the server will return up to 5,000 items.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Prefix'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::Prefix
-- content: ''
-- content: ''
-- content: Filters the results to return only entries whose name begins with the specified prefix.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/files/shares/share_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: Filters the results to return only entries whose name begins with the specified prefix.The documentation for this struct was generated from the following file:inc/azure/storage/files/shares/share_options.hppGenerated by&#160;1.9.7

@@ -1,91 +1,45 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Messaging::EventHubs::CheckpointStore
+title: Azure::Messaging::EventHubs::CheckpointStore Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-messaging-eventhubs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureMessagingEventHubsCheckpointStore
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> is used by multiple consumers to coordinate progress and ownership for partitions.
-- content: ''
-- content: <code>#include &lt;<a href="checkpoint__store_8hpp_source.html">checkpoint_store.hpp</a>&gt;</code>
-- content: ''
+- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> is used by multiple consumers to coordinate progress and ownership for partitions.<code>#include &lt;<a href="checkpoint__store_8hpp_source.html">checkpoint_store.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;CheckpointStore (CheckpointStore const &amp;other)=defaultConstruct a CheckpointStore from another CheckpointStore. 
+  display: h2
+- apiList:
+  - declaration: <b>CheckpointStore</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> const &other)=default
+    summary: Construct a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html" title="CheckpointStore is used by multiple consumers to coordinate progress and ownership for partitions.">CheckpointStore</a> from another <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html" title="CheckpointStore is used by multiple consumers to coordinate progress and ownership for partitions.">CheckpointStore</a>. <br>
+    returnType: >-
+      <a id="a4a81493600a94c4bd65f8abfb855ab46" name="a4a81493600a94c4bd65f8abfb855ab46"></a>
 
+       
+  - declaration: <b>operator=</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> const &other)=default
+    summary: Construct a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html" title="CheckpointStore is used by multiple consumers to coordinate progress and ownership for partitions.">CheckpointStore</a> from another <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html" title="CheckpointStore is used by multiple consumers to coordinate progress and ownership for partitions.">CheckpointStore</a>. <br>
+    returnType: >-
+      <a id="af6871595f4dc5b8fb80857554b79eae8" name="af6871595f4dc5b8fb80857554b79eae8"></a>
 
+      <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> & 
+  - declaration: <b>ClaimOwnership</b> (std::vector< <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership.html">Models::Ownership</a> > const &partitionOwnership, Core::Context const &context={})=0
+    summary: ClaimOwnership attempts to claim ownership of the partitions in partitionOwnership and returns the actual partitions that were claimed. <br>
+    returnType: >-
+      <a id="ab8d021c2173bc274362860aea2426aa1" name="ab8d021c2173bc274362860aea2426aa1"></a>
 
+      virtual std::vector< <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership.html">Models::Ownership</a> > 
+  - declaration: <b>ListCheckpoints</b> (std::string const &fullyQualifiedNamespace, std::string const &eventHubName, std::string const &consumerGroup, Core::Context const &context={})=0
+    summary: ListCheckpoints lists all the available checkpoints. <br>
+    returnType: >-
+      <a id="a330df4dead15ee9809bde91155b1977f" name="a330df4dead15ee9809bde91155b1977f"></a>
 
-    CheckpointStore &amp;&#160;&#160;operator= (CheckpointStore const &amp;other)=defaultConstruct a CheckpointStore from another CheckpointStore. 
+      virtual std::vector< <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_checkpoint.html">Models::Checkpoint</a> > 
+  - declaration: <b>ListOwnership</b> (std::string const &fullyQualifiedNamespace, std::string const &eventHubName, std::string const &consumerGroup, Core::Context const &context={})=0
+    summary: ListOwnership lists all ownerships. <br>
+    returnType: >-
+      <a id="afd4fb7368b99a9b73a49c010b86cc332" name="afd4fb7368b99a9b73a49c010b86cc332"></a>
 
+      virtual std::vector< <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership.html">Models::Ownership</a> > 
+  - declaration: <b>UpdateCheckpoint</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_checkpoint.html">Models::Checkpoint</a> const &checkpoint, Core::Context const &context={})=0
+    summary: UpdateCheckpoint updates a specific checkpoint with a sequence and offset. <br>
+    returnType: >-
+      <a id="a057b72aa0a8fc9918ed8212ca7e53b96" name="a057b72aa0a8fc9918ed8212ca7e53b96"></a>
 
-
-
-    virtual std::vector&lt; Models::Ownership &gt;&#160;&#160;ClaimOwnership (std::vector&lt; Models::Ownership &gt; const &amp;partitionOwnership, Core::Context const &amp;context={})=0ClaimOwnership attempts to claim ownership of the partitions in partitionOwnership and returns the actual partitions that were claimed. 
-
-
-
-
-    virtual std::vector&lt; Models::Checkpoint &gt;&#160;&#160;ListCheckpoints (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={})=0ListCheckpoints lists all the available checkpoints. 
-
-
-
-
-    virtual std::vector&lt; Models::Ownership &gt;&#160;&#160;ListOwnership (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={})=0ListOwnership lists all ownerships. 
-
-
-
-
-    virtual void&#160;&#160;UpdateCheckpoint (Models::Checkpoint const &amp;checkpoint, Core::Context const &amp;context={})=0UpdateCheckpoint updates a specific checkpoint with a sequence and offset.
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/messaging/eventhubs/checkpoint_store.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+      virtual void 
+- content: The documentation for this class was generated from the following file:inc/azure/messaging/eventhubs/checkpoint_store.hppGenerated by&#160;1.9.7

@@ -1,177 +1,45 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::DataLake::Models::QueryFileResult
+title: Azure::Storage::Files::DataLake::Models::QueryFileResult Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-datalake
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesDataLakeModelsQueryFileResult
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a4be0127470e8cccea9d11c6a77bbb8b5">Azure::Storage::Files::DataLake::DataLakeFileClient::Query</a>.
-- content: ''
-- content: <code>#include &lt;<a href="datalake__responses_8hpp_source.html">datalake_responses.hpp</a>&gt;</code>
-- content: ''
+- content: Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a4be0127470e8cccea9d11c6a77bbb8b5">Azure::Storage::Files::DataLake::DataLakeFileClient::Query</a>.<code>#include &lt;<a href="datalake__responses_8hpp_source.html">datalake_responses.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    std::unique_ptr&lt; Core::IO::BodyStream &gt;&#160;BodyStream
-
-
-    DateTime&#160;LastModified
-
-
-    Azure::ETag&#160;ETag
-
-
-    Nullable&lt; LeaseDurationType &gt;&#160;LeaseDuration
-
-
-    Models::LeaseState&#160;LeaseState
-
-
-    Models::LeaseStatus&#160;LeaseStatus
-
-
-    bool&#160;IsServerEncrypted = bool()
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_query_file_result.html#ace442a3263526640a7e78f6e5f8d15e9">BodyStream</a>
+    returnType: std::unique_ptr< Core::IO::BodyStream > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_query_file_result.html#a65ece7b71ca1d2b150dfa3157f7a755e">LastModified</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_query_file_result.html#a12ecf086fe5bb8bd96dab67cdfc834bf">ETag</a>
+    returnType: Azure::ETag 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_query_file_result.html#af9b0b93e91148a015fe98650d33f5d34">LeaseDuration</a>
+    returnType: Nullable< LeaseDurationType > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_query_file_result.html#ad277ff89cea9fb33f4208e4b995db7ac">LeaseState</a>
+    returnType: Models::LeaseState 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_query_file_result.html#af257c3151b0aec8740d6a8ac873399e8">LeaseStatus</a>
+    returnType: Models::LeaseStatus 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_query_file_result.html#a0abed0b6c1741292c44b03c3a3b45a52">IsServerEncrypted</a> = bool()
+    returnType: bool 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;BodyStream'
-- content: ''
-- content: ''
-- content: ''
-- content: std::unique_ptr&lt;Core::IO::BodyStream&gt; Azure::Storage::Files::DataLake::Models::QueryFileResult::BodyStream
-- content: ''
-- content: ''
+  display: h2
 - content: The response body stream.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ETag'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::ETag Azure::Storage::Files::DataLake::Models::QueryFileResult::ETag
-- content: ''
-- content: ''
+  display: h2
 - content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IsServerEncrypted'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Storage::Files::DataLake::Models::QueryFileResult::IsServerEncrypted = bool()
-- content: ''
-- content: ''
+  display: h2
 - content: The value of this header is set to true if the file data and application metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the file is unencrypted, or if only parts of the file/application metadata are encrypted).
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LastModified'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Files::DataLake::Models::QueryFileResult::LastModified
-- content: ''
-- content: ''
+  display: h2
 - content: Returns the date and time the container was last modified. Any operation that modifies the file, including an update of the file's metadata or properties, changes the last-modified time of the file.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseDuration'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;LeaseDurationType&gt; Azure::Storage::Files::DataLake::Models::QueryFileResult::LeaseDuration
-- content: ''
-- content: ''
+  display: h2
 - content: When a file is leased, specifies whether the lease is of infinite or fixed duration.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseState'
-- content: ''
-- content: ''
-- content: ''
-- content: Models::LeaseState Azure::Storage::Files::DataLake::Models::QueryFileResult::LeaseState
-- content: ''
-- content: ''
+  display: h2
 - content: Lease state of the file.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseStatus'
-- content: ''
-- content: ''
-- content: ''
-- content: Models::LeaseStatus Azure::Storage::Files::DataLake::Models::QueryFileResult::LeaseStatus
-- content: ''
-- content: ''
-- content: The current lease status of the file.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/files/datalake/datalake_responses.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: The current lease status of the file.The documentation for this struct was generated from the following file:inc/azure/storage/files/datalake/datalake_responses.hppGenerated by&#160;1.9.7

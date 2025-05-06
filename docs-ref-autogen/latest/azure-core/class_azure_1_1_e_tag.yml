@@ -1,281 +1,126 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::ETag
+title: Azure::ETag Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureETag
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Represents an HTTP validator.
-- content: ''
-- content: <code>#include &lt;<a href="etag_8hpp_source.html">etag.hpp</a>&gt;</code>
-- content: ''
+- content: Represents an HTTP validator.<code>#include &lt;<a href="etag_8hpp_source.html">etag.hpp</a>&gt;</code>
 - section: Public Types
-- content: >-
-    enum class &#160;&#160;ETagComparison { Strong
+  display: h2
+- apiList:
+  - declaration: >-
+      <a class="el" href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e">ETagComparison</a> { <b>Strong</b>
 
-    , Weak
-     }The comparison type.  More...
+      , <b>Weak</b>
+       }
+    summary: The comparison type.  <a href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e">More...</a><br>
+    returnType: enum class  
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;ETag ()=defaultConstructs an empty (null) ETag.  
-
-
-
-    &#160;&#160;ETag (std::string etag)Constructs an ETag with string representation.  
-
-
-
-    bool&#160;&#160;HasValue () constWhether ETag is present.  
-
-
-
-    const std::string &amp;&#160;&#160;ToString () constReturns the resource metadata represented as a string.  
-
-
-
-    bool&#160;&#160;operator== (const ETag &amp;other) constCompare with other ETag for equality.  
-
-
-
-    bool&#160;&#160;operator!= (const ETag &amp;other) constCompare with other ETag for inequality.  
-
-
-
-    bool&#160;&#160;IsWeak () constSpecifies whether the Azure::ETag is strong or weak.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_e_tag.html#a5f51ee1a9eaf64372d8cc1d00d1042a6">ETag</a> ()=default
+    summary: Constructs an empty (null) <code>ETag</code>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_e_tag.html#ae17064a85468c70b9ae5e1c739f29282">ETag</a> (std::string etag)
+    summary: Constructs an <code>ETag</code> with string representation.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_e_tag.html#a36ae96279fde0e6c22585b15ccb340fe">HasValue</a> () const
+    summary: Whether <code>ETag</code> is present.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="class_azure_1_1_e_tag.html#a9fc3b3c367ce24ee19b430c8cb36fe9c">ToString</a> () const
+    summary: Returns the resource metadata represented as a string.  <br>
+    returnType: const std::string & 
+  - declaration: <a class="el" href="class_azure_1_1_e_tag.html#aab47574005070ae685e98aa33427ebf6">operator==</a> (const <a class="el" href="class_azure_1_1_e_tag.html">ETag</a> &other) const
+    summary: Compare with <code>other</code> <code>ETag</code> for equality.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="class_azure_1_1_e_tag.html#a83cf243c393b71b92aebcf0eb8b9f786">operator!=</a> (const <a class="el" href="class_azure_1_1_e_tag.html">ETag</a> &other) const
+    summary: Compare with <code>other</code> <code>ETag</code> for inequality.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="class_azure_1_1_e_tag.html#a7e9e0a1e0fe067280a029140d0410aee">IsWeak</a> () const
+    summary: Specifies whether the <a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> is strong or weak.  <br>
+    returnType: bool 
 - section: Static Public Member Functions
-- content: >-
-    static bool&#160;&#160;Equals (const ETag &amp;left, const ETag &amp;right, const ETagComparison comparisonKind=ETagComparison::Strong)Indicates whether two Azure::ETag values are equal.  
-
-
-
-    static const ETag &amp;&#160;&#160;Any ()Azure::ETag representing everything.
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_e_tag.html#a8a099159c1206da752cee1a13a5c5f07">Equals</a> (const <a class="el" href="class_azure_1_1_e_tag.html">ETag</a> &left, const <a class="el" href="class_azure_1_1_e_tag.html">ETag</a> &right, const <a class="el" href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e">ETagComparison</a> comparisonKind=ETagComparison::Strong)
+    summary: Indicates whether two <a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> values are equal.  <br>
+    returnType: static bool 
+  - declaration: <a class="el" href="class_azure_1_1_e_tag.html#a5264a49bd00787f15735f3798537b3b2">Any</a> ()
+    summary: <a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> representing everything.  <br>
+    returnType: static const <a class="el" href="class_azure_1_1_e_tag.html">ETag</a> & 
 - section: Member Enumeration Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ETagComparison'
-- content: ''
-- content: ''
-- content: ''
-- content: "enum class Azure::ETag::ETagComparison\n        \n      \n  \n  \nstrong"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ETag() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::ETag::ETag \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ETag() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::ETag::ETag \n          (\n          std::string&#160;\n          etag)\n          \n        \n      \n  \n  \ninlineexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: etag
-    summary: 'The string value representation. '
-- content: ''
-- content: ''
-- content: ''
+    summary: The string value representation.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Any()'
-- content: ''
-- content: ''
-- content: ''
-- content: "const ETag &amp; ETag::Any \n          (\n          )\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Equals()'
-- content: ''
-- content: ''
-- content: ''
-- content: "static bool Azure::ETag::Equals \n          (\n          const ETag &amp;&#160;\n          left, \n        \n        \n          \n          \n          const ETag &amp;&#160;\n          right, \n        \n        \n          \n          \n          const ETagComparison&#160;\n          comparisonKind = ETagComparison::Strong&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlinestatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: left
-    summary: '<a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> to compare. '
+    summary: <a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> to compare.
   - name: right
-    summary: '<a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> to compare. '
+    summary: <a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> to compare.
   - name: comparisonKind
-    summary: 'Determines what <a class="el" href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e" title="The comparison type.">Azure::ETag::ETagComparison</a> to perform, default is <a class="el" href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e" title="The comparison type.">Azure::ETag::ETagComparison</a> Strong. '
-- content: ''
+    summary: Determines what <a class="el" href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e" title="The comparison type.">Azure::ETag::ETagComparison</a> to perform, default is <a class="el" href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e" title="The comparison type.">Azure::ETag::ETagComparison</a> Strong.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<code>true</code> if <code>ETag</code> matches; otherwise, <code>false</code>. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <code>true</code> if <code>ETag</code> matches; otherwise, <code>false</code>.
 - section: '&#9670;&#160;HasValue()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::ETag::HasValue \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<code>true</code> if <code>ETag</code> has a value; otherwise, <code>false</code>. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <code>true</code> if <code>ETag</code> has a value; otherwise, <code>false</code>.
 - section: '&#9670;&#160;IsWeak()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::ETag::IsWeak \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<code>true</code> if <a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> is a weak validator; otherwise, <code>false</code>. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <code>true</code> if <a class="el" href="class_azure_1_1_e_tag.html" title="Represents an HTTP validator.">Azure::ETag</a> is a weak validator; otherwise, <code>false</code>.
 - section: '&#9670;&#160;operator!=()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::ETag::operator!= \n          (\n          const ETag &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: 'Other <code>ETag</code> to compare with. '
-- content: ''
+    summary: Other <code>ETag</code> to compare with.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<code>true</code> if <code>ETag</code> instances are not equal according to strong validation; otherwise, <code>false</code>. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <code>true</code> if <code>ETag</code> instances are not equal according to strong validation; otherwise, <code>false</code>.
 - section: '&#9670;&#160;operator==()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::ETag::operator== \n          (\n          const ETag &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: 'Other <code>ETag</code> to compare with. '
-- content: ''
+    summary: Other <code>ETag</code> to compare with.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<code>true</code> if <code>ETag</code> instances are equal according to strong validation; otherwise, <code>false</code>. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <code>true</code> if <code>ETag</code> instances are equal according to strong validation; otherwise, <code>false</code>.
 - section: '&#9670;&#160;ToString()'
-- content: ''
-- content: ''
-- content: ''
-- content: "const std::string &amp; Azure::ETag::ToString \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'std::string '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+  - summary: std::string
 - content: >-
-    inc/azure/core/etag.hpp
+    The documentation for this class was generated from the following files:inc/azure/core/etag.hpp
 
-    src/etag.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/etag.cppGenerated by&#160;1.9.7

@@ -1,657 +1,407 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::DataLake::DataLakeFileSystemClient
+title: Azure::Storage::Files::DataLake::DataLakeFileSystemClient Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-datalake
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesDataLakeDataLakeFileSystemClient
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     The <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html">DataLakeFileSystemClient</a> allows you to manipulate Azure Storage DataLake files.  
-     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="datalake__file__system__client_8hpp_source.html">datalake_file_system_client.hpp</a>&gt;</code>
-- content: ''
+     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#details">More...</a><code>#include &lt;<a href="datalake__file__system__client_8hpp_source.html">datalake_file_system_client.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;DataLakeFileSystemClient (const std::string &amp;fileSystemUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Shared key authentication client.  
-
-
-
-    &#160;&#160;DataLakeFileSystemClient (const std::string &amp;fileSystemUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Bearer token authentication client.  
-
-
-
-    &#160;&#160;DataLakeFileSystemClient (const std::string &amp;fileSystemUrl, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Anonymous/SAS/customized pipeline auth.  
-
-
-
-    DataLakeFileClient&#160;&#160;GetFileClient (const std::string &amp;fileName) constCreate a DataLakeFileClient from current DataLakeFileSystemClient.  
-
-
-
-    DataLakeDirectoryClient&#160;&#160;GetDirectoryClient (const std::string &amp;directoryName) constCreate a DataLakeDirectoryClient from current DataLakeFileSystemClient.  
-
-
-
-    std::string&#160;&#160;GetUrl () constGets the filesystem's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.  
-
-
-
-    Azure::Response&lt; Models::CreateFileSystemResult &gt;&#160;&#160;Create (const CreateFileSystemOptions &amp;options=CreateFileSystemOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates the file system.  
-
-
-
-    Azure::Response&lt; Models::CreateFileSystemResult &gt;&#160;&#160;CreateIfNotExists (const CreateFileSystemOptions &amp;options=CreateFileSystemOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constCreates the file system if it does not exists.  
-
-
-
-    Azure::Response&lt; Models::DeleteFileSystemResult &gt;&#160;&#160;Delete (const DeleteFileSystemOptions &amp;options=DeleteFileSystemOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the file system.  
-
-
-
-    Azure::Response&lt; Models::DeleteFileSystemResult &gt;&#160;&#160;DeleteIfExists (const DeleteFileSystemOptions &amp;options=DeleteFileSystemOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constDeletes the file system if it exists.  
-
-
-
-    Azure::Response&lt; Models::SetFileSystemMetadataResult &gt;&#160;&#160;SetMetadata (Storage::Metadata metadata, const SetFileSystemMetadataOptions &amp;options=SetFileSystemMetadataOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the metadata of file system.  
-
-
-
-    Azure::Response&lt; Models::FileSystemProperties &gt;&#160;&#160;GetProperties (const GetFileSystemPropertiesOptions &amp;options=GetFileSystemPropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the properties of file system.  
-
-
-
-    ListPathsPagedResponse&#160;&#160;ListPaths (bool recursive, const ListPathsOptions &amp;options=ListPathsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns a sequence of paths in this file system. Enumerating the paths may make multiple requests to the service while fetching all the values.  
-
-
-
-    Azure::Response&lt; Models::FileSystemAccessPolicy &gt;&#160;&#160;GetAccessPolicy (const GetFileSystemAccessPolicyOptions &amp;options=GetFileSystemAccessPolicyOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the permissions for this file system. The permissions indicate whether file system data may be accessed publicly.  
-
-
-
-    Azure::Response&lt; Models::SetFileSystemAccessPolicyResult &gt;&#160;&#160;SetAccessPolicy (const SetFileSystemAccessPolicyOptions &amp;options=SetFileSystemAccessPolicyOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSets the permissions for the specified file system. The permissions indicate whether file system's data may be accessed publicly.  
-
-
-
-    Azure::Response&lt; DataLakeFileClient &gt;&#160;&#160;RenameFile (const std::string &amp;fileName, const std::string &amp;destinationFilePath, const RenameFileOptions &amp;options=RenameFileOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRenames a file. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  
-
-
-
-    Azure::Response&lt; DataLakeDirectoryClient &gt;&#160;&#160;RenameDirectory (const std::string &amp;directoryName, const std::string &amp;destinationDirectoryPath, const RenameDirectoryOptions &amp;options=RenameDirectoryOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRenames a directory. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  
-
-
-
-    ListDeletedPathsPagedResponse&#160;&#160;ListDeletedPaths (const ListDeletedPathsOptions &amp;options=ListDeletedPathsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGets the paths that have recently been soft deleted in this file system.  
-
-
-
-    Azure::Response&lt; DataLakePathClient &gt;&#160;&#160;UndeletePath (const std::string &amp;deletedPath, const std::string &amp;deletionId, const UndeletePathOptions &amp;options=UndeletePathOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constRestores a soft deleted path.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a030f4745a0d3acac7be36005bae33e07">DataLakeFileSystemClient</a> (const std::string &fileSystemUrl, std::shared_ptr< StorageSharedKeyCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Shared key authentication client.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#aac580d5bc52e362df521c30459dbc0d1">DataLakeFileSystemClient</a> (const std::string &fileSystemUrl, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Bearer token authentication client.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a5ed58cc7bec53175297613aa971e1ad7">DataLakeFileSystemClient</a> (const std::string &fileSystemUrl, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Anonymous/SAS/customized pipeline auth.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#ae6feab5cf0d6fe102df019b6f72c4a2d">GetFileClient</a> (const std::string &fileName) const
+    summary: Create a <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html" title="The DataLakeFileClient allows you to manipulate Azure Storage DataLake files.">DataLakeFileClient</a> from current <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html" title="The DataLakeFileSystemClient allows you to manipulate Azure Storage DataLake files.">DataLakeFileSystemClient</a>.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html">DataLakeFileClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#ac4454af180f8e9bd707061268074f11e">GetDirectoryClient</a> (const std::string &directoryName) const
+    summary: Create a <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html" title="DataLake Directory Client.">DataLakeDirectoryClient</a> from current <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html" title="The DataLakeFileSystemClient allows you to manipulate Azure Storage DataLake files.">DataLakeFileSystemClient</a>.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html">DataLakeDirectoryClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#abdd31ec1cc19048af89689063c212866">GetUrl</a> () const
+    summary: Gets the filesystem's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a35b22a8e2a05cb04b79991dba63c60b9">Create</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_file_system_options.html">CreateFileSystemOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_file_system_options.html">CreateFileSystemOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Creates the file system.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_file_system_result.html">Models::CreateFileSystemResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a3e061bc10d3272a754df89a01093ac3e">CreateIfNotExists</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_file_system_options.html">CreateFileSystemOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_file_system_options.html">CreateFileSystemOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Creates the file system if it does not exists.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_file_system_result.html">Models::CreateFileSystemResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a091eccad4bcb673d712f7d26715450c4">Delete</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_system_options.html">DeleteFileSystemOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_system_options.html">DeleteFileSystemOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Deletes the file system.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_file_system_result.html">Models::DeleteFileSystemResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a5d29bff5691e4e6d8891850c19fe0b33">DeleteIfExists</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_system_options.html">DeleteFileSystemOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_system_options.html">DeleteFileSystemOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Deletes the file system if it exists.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_file_system_result.html">Models::DeleteFileSystemResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#ae92a1f90c6c7824a72089a637e427383">SetMetadata</a> (Storage::Metadata metadata, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_file_system_metadata_options.html">SetFileSystemMetadataOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_file_system_metadata_options.html">SetFileSystemMetadataOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Sets the metadata of file system.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_file_system_metadata_result.html">Models::SetFileSystemMetadataResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a8b9c96a4b036af80d157ab671f78aeb0">GetProperties</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_file_system_properties_options.html">GetFileSystemPropertiesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_file_system_properties_options.html">GetFileSystemPropertiesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Gets the properties of file system.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_file_system_properties.html">Models::FileSystemProperties</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#aa7192b386a4397b70836463809b6c9cc">ListPaths</a> (bool recursive, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_options.html">ListPathsOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_options.html">ListPathsOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Returns a sequence of paths in this file system. Enumerating the paths may make multiple requests to the service while fetching all the values.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_paged_response.html">ListPathsPagedResponse</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a07f94a0efff02c3862b11abb2ae24494">GetAccessPolicy</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_file_system_access_policy_options.html">GetFileSystemAccessPolicyOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_file_system_access_policy_options.html">GetFileSystemAccessPolicyOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Gets the permissions for this file system. The permissions indicate whether file system data may be accessed publicly.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_file_system_access_policy.html">Models::FileSystemAccessPolicy</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a494bd07a0e93119abd349474572559d0">SetAccessPolicy</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_file_system_access_policy_options.html">SetFileSystemAccessPolicyOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_file_system_access_policy_options.html">SetFileSystemAccessPolicyOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Sets the permissions for the specified file system. The permissions indicate whether file system's data may be accessed publicly.  <br>
+    returnType: Azure::Response< Models::SetFileSystemAccessPolicyResult > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a328a92aec7675c86572e751ab8f782bd">RenameFile</a> (const std::string &fileName, const std::string &destinationFilePath, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_rename_file_options.html">RenameFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_rename_file_options.html">RenameFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Renames a file. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  <br>
+    returnType: Azure::Response< <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html">DataLakeFileClient</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a68a6da90c9a27c42680cf2d83c3c2697">RenameDirectory</a> (const std::string &directoryName, const std::string &destinationDirectoryPath, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_rename_directory_options.html">RenameDirectoryOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_rename_directory_options.html">RenameDirectoryOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Renames a directory. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  <br>
+    returnType: Azure::Response< <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html">DataLakeDirectoryClient</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#a541bcae356de8d9cbcb0574ac632e50e">ListDeletedPaths</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_deleted_paths_options.html">ListDeletedPathsOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_deleted_paths_options.html">ListDeletedPathsOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Gets the paths that have recently been soft deleted in this file system.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_deleted_paths_paged_response.html">ListDeletedPathsPagedResponse</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#adef66e57f3259075176b9ba4665d0002">UndeletePath</a> (const std::string &deletedPath, const std::string &deletionId, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_undelete_path_options.html">UndeletePathOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_undelete_path_options.html">UndeletePathOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Restores a soft deleted path.  <br>
+    returnType: Azure::Response< <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a> > 
 - section: Static Public Member Functions
-- content: static DataLakeFileSystemClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const std::string &amp;fileSystemName, const DataLakeClientOptions &amp;options=DataLakeClientOptions())Create from connection string.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#aaa8bdee92508724b810407f444bee095">CreateFromConnectionString</a> (const std::string &connectionString, const std::string &fileSystemName, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Create from connection string.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html">DataLakeFileSystemClient</a> 
 - section: Friends
-- content: >-
-    class&#160;DataLakeLeaseClient
+  display: h2
+- apiList:
+  - declaration: <b>DataLakeLeaseClient</b>
+    returnType: >-
+      <a id="a8e5e221f57a342c730c1add118809b9f" name="a8e5e221f57a342c730c1add118809b9f"></a>
 
+      class 
+  - declaration: <b>DataLakeServiceClient</b>
+    returnType: >-
+      <a id="a0fc96ce0b69934d668c774583561044a" name="a0fc96ce0b69934d668c774583561044a"></a>
 
-
-    class&#160;DataLakeServiceClient
-- content: ''
-- content: ''
+      class 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DataLakeFileSystemClient() [1/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DataLakeFileSystemClient \n          (\n          const std::string &amp;&#160;\n          fileSystemUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: fileSystemUrl
-    summary: "The URL of the file system this client's request targets. "
+    summary: The URL of the file system this client's request targets.
   - name: credential
-    summary: 'The shared key credential used to initialize the client. '
+    summary: The shared key credential used to initialize the client.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: '&#9670;&#160;DataLakeFileSystemClient() [2/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DataLakeFileSystemClient \n          (\n          const std::string &amp;&#160;\n          fileSystemUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: fileSystemUrl
-    summary: "The URL of the file system this client's request targets. "
+    summary: The URL of the file system this client's request targets.
   - name: credential
-    summary: 'The token credential used to initialize the client. '
+    summary: The token credential used to initialize the client.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: '&#9670;&#160;DataLakeFileSystemClient() [3/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DataLakeFileSystemClient \n          (\n          const std::string &amp;&#160;\n          fileSystemUrl, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: fileSystemUrl
-    summary: "The URL of the file system this client's request targets. "
+    summary: The URL of the file system this client's request targets.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
-- content: ''
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Create()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::CreateFileSystemResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::Create \n          (\n          const CreateFileSystemOptions &amp;&#160;\n          options = CreateFileSystemOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to create this file system. '
+    summary: Optional parameters to create this file system.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<Models::CreateFileSystemResult> containing the information of create a file system. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<Models::CreateFileSystemResult> containing the information of create a file system.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;CreateFromConnectionString()'
-- content: ''
-- content: ''
-- content: ''
-- content: "DataLakeFileSystemClient Azure::Storage::Files::DataLake::DataLakeFileSystemClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          fileSystemName, \n        \n        \n          \n          \n          const DataLakeClientOptions &amp;&#160;\n          options = DataLakeClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: connectionString
-    summary: 'Azure Storage connection string. '
+    summary: Azure Storage connection string.
   - name: fileSystemName
-    summary: 'The name of a file system. '
+    summary: The name of a file system.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'FileSystemClient '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: FileSystemClient
 - section: '&#9670;&#160;CreateIfNotExists()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::CreateFileSystemResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::CreateIfNotExists \n          (\n          const CreateFileSystemOptions &amp;&#160;\n          options = CreateFileSystemOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to create this file system. '
+    summary: Optional parameters to create this file system.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<Models::CreateFileSystemResult> containing the information of create a file system. Only valid when successfully created the file system. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<Models::CreateFileSystemResult> containing the information of create a file system. Only valid when successfully created the file system.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;Delete()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::DeleteFileSystemResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::Delete \n          (\n          const DeleteFileSystemOptions &amp;&#160;\n          options = DeleteFileSystemOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to delete this file system. '
+    summary: Optional parameters to delete this file system.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<Models::DeleteFileSystemResult> containing the information returned when deleting file systems. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<Models::DeleteFileSystemResult> containing the information returned when deleting file systems.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;DeleteIfExists()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::DeleteFileSystemResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DeleteIfExists \n          (\n          const DeleteFileSystemOptions &amp;&#160;\n          options = DeleteFileSystemOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to delete this file system. '
+    summary: Optional parameters to delete this file system.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<Models::DeleteFileSystemResult> containing the information returned when deleting file systems. Only valid when successfully deleted the file system. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<Models::DeleteFileSystemResult> containing the information returned when deleting file systems. Only valid when successfully deleted the file system.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;GetAccessPolicy()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::FileSystemAccessPolicy &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetAccessPolicy \n          (\n          const GetFileSystemAccessPolicyOptions &amp;&#160;\n          options = GetFileSystemAccessPolicyOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: "A FileSystemAccessPolicy describing the container's access policy. "
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A FileSystemAccessPolicy describing the container's access policy.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;GetDirectoryClient()'
-- content: ''
-- content: ''
-- content: ''
-- content: >-
-    DataLakeDirectoryClient Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetDirectoryClient 
-              (
-              const std::string &amp;&#160;
-              directoryName)
-               const
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: directoryName
-    summary: 'Name of the directory within the file system. '
-- content: ''
+    summary: Name of the directory within the file system.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html" title="DataLake Directory Client.">DataLakeDirectoryClient</a> '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html" title="DataLake Directory Client.">DataLakeDirectoryClient</a>
 - section: '&#9670;&#160;GetFileClient()'
-- content: ''
-- content: ''
-- content: ''
-- content: >-
-    DataLakeFileClient Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetFileClient 
-              (
-              const std::string &amp;&#160;
-              fileName)
-               const
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: fileName
-    summary: 'Name of the file within the file system. '
-- content: ''
+    summary: Name of the file within the file system.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html" title="The DataLakeFileClient allows you to manipulate Azure Storage DataLake files.">DataLakeFileClient</a> '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html" title="The DataLakeFileClient allows you to manipulate Azure Storage DataLake files.">DataLakeFileClient</a>
 - section: '&#9670;&#160;GetProperties()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::FileSystemProperties &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetProperties \n          (\n          const GetFileSystemPropertiesOptions &amp;&#160;\n          options = GetFileSystemPropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to get the metadata of this file system. '
+    summary: Optional parameters to get the metadata of this file system.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: "Azure::Response<Models::FileSystemProperties> containing the information when getting the file system's properties. "
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<Models::FileSystemProperties> containing the information when getting the file system's properties.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;GetUrl()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: "The filesystem's primary URL endpoint. "
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The filesystem's primary URL endpoint.
 - section: '&#9670;&#160;ListDeletedPaths()'
-- content: ''
-- content: ''
-- content: ''
-- content: "ListDeletedPathsPagedResponse Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListDeletedPaths \n          (\n          const ListDeletedPathsOptions &amp;&#160;\n          options = ListDeletedPathsOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to list deleted paths. '
+    summary: Optional parameters to list deleted paths.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<DataLakePathClient> The client targets the restored path. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<DataLakePathClient> The client targets the restored path.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to Blob endpoint.
 - section: '&#9670;&#160;ListPaths()'
-- content: ''
-- content: ''
-- content: ''
-- content: "ListPathsPagedResponse Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListPaths \n          (\n          bool&#160;\n          recursive, \n        \n        \n          \n          \n          const ListPathsOptions &amp;&#160;\n          options = ListPathsOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: recursive
-    summary: 'If "true", all paths are listed; otherwise, only paths at the root of the filesystem are listed. '
+    summary: If "true", all paths are listed; otherwise, only paths at the root of the filesystem are listed.
   - name: options
-    summary: 'Optional parameters to list the paths in file system. '
+    summary: Optional parameters to list the paths in file system.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_paged_response.html" title="Response type for Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListPaths and Azure::Sto...">ListPathsPagedResponse</a> describing the paths in this filesystem. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_paged_response.html" title="Response type for Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListPaths and Azure::Sto...">ListPathsPagedResponse</a> describing the paths in this filesystem.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to dfs endpoint.
 - section: '&#9670;&#160;RenameDirectory()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; DataLakeDirectoryClient &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::RenameDirectory \n          (\n          const std::string &amp;&#160;\n          directoryName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          destinationDirectoryPath, \n        \n        \n          \n          \n          const RenameDirectoryOptions &amp;&#160;\n          options = RenameDirectoryOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: directoryName
-    summary: 'The directory that gets renamed. '
+    summary: The directory that gets renamed.
   - name: destinationDirectoryPath
-    summary: 'The destinationPath the source directory is renaming to. '
+    summary: The destinationPath the source directory is renaming to.
   - name: options
-    summary: 'Optional parameters to rename a directory. '
+    summary: Optional parameters to rename a directory.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<DataLakeDirectoryClient> The client targets the renamed directory. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<DataLakeDirectoryClient> The client targets the renamed directory.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to dfs endpoint.
 - section: '&#9670;&#160;RenameFile()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; DataLakeFileClient &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::RenameFile \n          (\n          const std::string &amp;&#160;\n          fileName, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          destinationFilePath, \n        \n        \n          \n          \n          const RenameFileOptions &amp;&#160;\n          options = RenameFileOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: fileName
-    summary: 'The file that gets renamed. '
+    summary: The file that gets renamed.
   - name: destinationFilePath
-    summary: 'The path of the file the source file is renaming to. '
+    summary: The path of the file the source file is renaming to.
   - name: options
-    summary: 'Optional parameters to rename a file '
+    summary: Optional parameters to rename a file
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<DataLakeFileClient> The client targets the renamed file. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<DataLakeFileClient> The client targets the renamed file.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to dfs endpoint.
 - section: '&#9670;&#160;SetAccessPolicy()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::SetFileSystemAccessPolicyResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::SetAccessPolicy \n          (\n          const SetFileSystemAccessPolicyOptions &amp;&#160;\n          options = SetFileSystemAccessPolicyOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A SetFileSystemAccessPolicyResult describing the updated file system. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A SetFileSystemAccessPolicyResult describing the updated file system.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;SetMetadata()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::SetFileSystemMetadataResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::SetMetadata \n          (\n          Storage::Metadata&#160;\n          metadata, \n        \n        \n          \n          \n          const SetFileSystemMetadataOptions &amp;&#160;\n          options = SetFileSystemMetadataOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: metadata
-    summary: 'User-defined metadata to be stored with the filesystem. Note that the string may only contain ASCII characters in the ISO-8859-1 character set. '
+    summary: User-defined metadata to be stored with the filesystem. Note that the string may only contain ASCII characters in the ISO-8859-1 character set.
   - name: options
-    summary: 'Optional parameters to set the metadata to this file system. '
+    summary: Optional parameters to set the metadata to this file system.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<Models::SetFileSystemMetadataResult> containing the information returned when setting the metadata onto the file system. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<Models::SetFileSystemMetadataResult> containing the information returned when setting the metadata onto the file system.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - section: '&#9670;&#160;UndeletePath()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; DataLakePathClient &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::UndeletePath \n          (\n          const std::string &amp;&#160;\n          deletedPath, \n        \n        \n          \n          \n          const std::string &amp;&#160;\n          deletionId, \n        \n        \n          \n          \n          const UndeletePathOptions &amp;&#160;\n          options = UndeletePathOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: deletedPath
-    summary: 'The path of the deleted path. '
+    summary: The path of the deleted path.
   - name: deletionId
-    summary: 'The deletion ID associated with the soft deleted path. You can get soft deleted paths and their associated deletion IDs with ListDeletedPaths. '
+    summary: The deletion ID associated with the soft deleted path. You can get soft deleted paths and their associated deletion IDs with ListDeletedPaths.
   - name: options
-    summary: 'Options to configure the restore operation. '
+    summary: Options to configure the restore operation.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<DataLakePathClient> The client targets the restored path. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+  - summary: Azure::Response<DataLakePathClient> The client targets the restored path.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to Blob endpoint.
 - content: >-
-    inc/azure/storage/files/datalake/datalake_file_system_client.hpp
+    The documentation for this class was generated from the following files:inc/azure/storage/files/datalake/datalake_file_system_client.hpp
 
-    src/datalake_file_system_client.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/datalake_file_system_client.cppGenerated by&#160;1.9.7

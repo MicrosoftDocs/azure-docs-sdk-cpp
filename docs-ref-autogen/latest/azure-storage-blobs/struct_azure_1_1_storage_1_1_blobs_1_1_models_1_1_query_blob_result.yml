@@ -1,177 +1,45 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Blobs::Models::QueryBlobResult
+title: Azure::Storage::Blobs::Models::QueryBlobResult Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageBlobsModelsQueryBlobResult
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a6188259279eab1bd8dbff684258ea673">Azure::Storage::Blobs::BlockBlobClient::Query</a>.
-- content: ''
-- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
-- content: ''
+- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a6188259279eab1bd8dbff684258ea673">Azure::Storage::Blobs::BlockBlobClient::Query</a>.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    std::unique_ptr&lt; Core::IO::BodyStream &gt;&#160;BodyStream
-
-
-    DateTime&#160;LastModified
-
-
-    Azure::ETag&#160;ETag
-
-
-    Nullable&lt; LeaseDurationType &gt;&#160;LeaseDuration
-
-
-    Models::LeaseState&#160;LeaseState
-
-
-    Models::LeaseStatus&#160;LeaseStatus
-
-
-    bool&#160;IsServerEncrypted = bool()
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a9be87fe5cafa285b1fbf4a9651b16505">BodyStream</a>
+    returnType: std::unique_ptr< Core::IO::BodyStream > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a0acb0e32460a6ce6680e897cb8e83769">LastModified</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a449da03757431dd84049c92bdb657d77">ETag</a>
+    returnType: Azure::ETag 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a5639414824199dbae57ea6a26b94a8cb">LeaseDuration</a>
+    returnType: Nullable< <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_duration_type.html">LeaseDurationType</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a81fde1ed6a4ecc3cb1f23b513eadc094">LeaseState</a>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_state.html">Models::LeaseState</a> 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#ae6f2eb3d9e53a560968daae26ed2c0af">LeaseStatus</a>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_status.html">Models::LeaseStatus</a> 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a02f30b591b62a5359c74f17eb3c0b947">IsServerEncrypted</a> = bool()
+    returnType: bool 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;BodyStream'
-- content: ''
-- content: ''
-- content: ''
-- content: std::unique_ptr&lt;Core::IO::BodyStream&gt; Azure::Storage::Blobs::Models::QueryBlobResult::BodyStream
-- content: ''
-- content: ''
+  display: h2
 - content: The response body stream.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ETag'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::ETag Azure::Storage::Blobs::Models::QueryBlobResult::ETag
-- content: ''
-- content: ''
+  display: h2
 - content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IsServerEncrypted'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Storage::Blobs::Models::QueryBlobResult::IsServerEncrypted = bool()
-- content: ''
-- content: ''
+  display: h2
 - content: The value of this header is set to true if the blob data and application metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the blob is unencrypted, or if only parts of the blob/application metadata are encrypted).
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LastModified'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Blobs::Models::QueryBlobResult::LastModified
-- content: ''
-- content: ''
+  display: h2
 - content: Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseDuration'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;LeaseDurationType&gt; Azure::Storage::Blobs::Models::QueryBlobResult::LeaseDuration
-- content: ''
-- content: ''
+  display: h2
 - content: When a blob is leased, specifies whether the lease is of infinite or fixed duration.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseState'
-- content: ''
-- content: ''
-- content: ''
-- content: Models::LeaseState Azure::Storage::Blobs::Models::QueryBlobResult::LeaseState
-- content: ''
-- content: ''
+  display: h2
 - content: Lease state of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseStatus'
-- content: ''
-- content: ''
-- content: ''
-- content: Models::LeaseStatus Azure::Storage::Blobs::Models::QueryBlobResult::LeaseStatus
-- content: ''
-- content: ''
-- content: The current lease status of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/blobs/rest_client.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: The current lease status of the blob.The documentation for this struct was generated from the following file:inc/azure/storage/blobs/rest_client.hppGenerated by&#160;1.9.7

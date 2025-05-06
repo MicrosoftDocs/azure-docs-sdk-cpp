@@ -1,237 +1,94 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::DataLake::Models::Acl
+title: Azure::Storage::Files::DataLake::Models::Acl Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-datalake
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesDataLakeModelsAcl
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: An access control object.
-- content: ''
-- content: <code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
-- content: ''
+- content: An access control object.<code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
 - section: Static Public Member Functions
-- content: >-
-    static Acl&#160;&#160;FromString (const std::string &amp;aclString)Creates an Acl based on acl input string.  
-
-
-
-    static std::string&#160;&#160;ToString (const Acl &amp;acl)Creates a string from an Acl.  
-
-
-
-    static std::vector&lt; Acl &gt;&#160;&#160;DeserializeAcls (const std::string &amp;aclsString)Creates a vector of Acl from a string that indicates multiple acls.  
-
-
-
-    static std::string&#160;&#160;SerializeAcls (const std::vector&lt; Acl &gt; &amp;aclsArray)Creates a string that contains several Acls.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#a67e35eae234cc7a52961f0d073079f7e">FromString</a> (const std::string &aclString)
+    summary: Creates an <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html" title="An access control object.">Acl</a> based on acl input string.  <br>
+    returnType: static <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a> 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#a056e034d2949974ba082f8e61a494b11">ToString</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a> &acl)
+    summary: Creates a string from an <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html" title="An access control object.">Acl</a>.  <br>
+    returnType: static std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#a497cb93f299518d80db872224db26fa4">DeserializeAcls</a> (const std::string &aclsString)
+    summary: Creates a vector of <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html" title="An access control object.">Acl</a> from a string that indicates multiple acls.  <br>
+    returnType: static std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#ae9ebb24556e109ff148c50bc9491da13">SerializeAcls</a> (const std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a> > &aclsArray)
+    summary: Creates a string that contains several Acls.  <br>
+    returnType: static std::string 
 - section: Public Attributes
-- content: >-
-    std::string&#160;Scope
-
-
-    std::string&#160;Type
-
-
-    std::string&#160;Id
-
-
-    std::string&#160;Permissions
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#aca555d40f8c96b5dca49b30d38064516">Scope</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#aa7186a6cf4da399d69e8810d8e727e10">Type</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#acfc5f1903559ba916a6cba17f82f2e1d">Id</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#a83ef29bd8fcc6c4dd95bf4790b8ca98e">Permissions</a>
+    returnType: std::string 
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DeserializeAcls()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::vector&lt; Acl &gt; Azure::Storage::Files::DataLake::Models::Acl::DeserializeAcls \n          (\n          const std::string &amp;&#160;\n          aclsString)\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: aclsString
-    summary: 'the string that contains multiple acls. '
-- content: ''
+    summary: the string that contains multiple acls.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'std::vector<Acl> '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: std::vector<Acl>
 - section: '&#9670;&#160;FromString()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Acl Azure::Storage::Files::DataLake::Models::Acl::FromString \n          (\n          const std::string &amp;&#160;\n          aclString)\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: aclString
-    summary: 'the string to be parsed to <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html" title="An access control object.">Acl</a>. '
-- content: ''
+    summary: the string to be parsed to <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html" title="An access control object.">Acl</a>.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html" title="An access control object.">Acl</a> '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html" title="An access control object.">Acl</a>
 - section: '&#9670;&#160;SerializeAcls()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string Azure::Storage::Files::DataLake::Models::Acl::SerializeAcls \n          (\n          const std::vector&lt; Acl &gt; &amp;&#160;\n          aclsArray)\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: aclsArray
-    summary: 'the acls to be serialized into a string. '
-- content: ''
+    summary: the acls to be serialized into a string.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'std::string '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: std::string
 - section: '&#9670;&#160;ToString()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string Azure::Storage::Files::DataLake::Models::Acl::ToString \n          (\n          const Acl &amp;&#160;\n          acl)\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: acl
-    summary: 'the acl object to be serialized to a string. '
-- content: ''
+    summary: the acl object to be serialized to a string.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'std::string '
-- content: ''
-- content: ''
-- content: ''
+  - summary: std::string
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Id'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Files::DataLake::Models::Acl::Id
-- content: ''
-- content: ''
+  display: h2
 - content: The ID of the ACL.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Permissions'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Files::DataLake::Models::Acl::Permissions
-- content: ''
-- content: ''
+  display: h2
 - content: The permissions of the ACL.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Scope'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Files::DataLake::Models::Acl::Scope
-- content: ''
-- content: ''
+  display: h2
 - content: The scope of the ACL.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Type'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Files::DataLake::Models::Acl::Type
-- content: ''
-- content: ''
-- content: The type of the ACL.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following files:'
+  display: h2
 - content: >-
-    inc/azure/storage/files/datalake/datalake_options.hpp
+    The type of the ACL.The documentation for this struct was generated from the following files:inc/azure/storage/files/datalake/datalake_options.hpp
 
-    src/datalake_responses.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/datalake_responses.cppGenerated by&#160;1.9.7

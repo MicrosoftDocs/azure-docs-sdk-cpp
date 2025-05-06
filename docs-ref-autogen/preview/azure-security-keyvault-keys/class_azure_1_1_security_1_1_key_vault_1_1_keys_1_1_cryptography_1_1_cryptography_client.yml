@@ -1,416 +1,218 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient
+title: Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-keyvault-keys
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityKeyVaultKeysCryptographyCryptographyClient
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     A client used to perform cryptographic operations with Azure Key Vault keys.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="cryptography__client_8hpp_source.html">cryptography_client.hpp</a>&gt;</code>
-- content: ''
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#details">More...</a><code>#include &lt;<a href="cryptography__client_8hpp_source.html">cryptography_client.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;CryptographyClient (std::string const &amp;keyId, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, CryptographyClientOptions const &amp;options=CryptographyClientOptions())Initializes a new instance of the CryptographyClient class.  
-
-
-
-    &#160;&#160;~CryptographyClient ()Destructs CryptographyClient.  
-
-
-
-    Azure::Response&lt; EncryptResult &gt;&#160;&#160;Encrypt (EncryptParameters const &amp;parameters, Azure::Core::Context const &amp;context=Azure::Core::Context())Encrypts plaintext.  
-
-
-
-    Azure::Response&lt; DecryptResult &gt;&#160;&#160;Decrypt (DecryptParameters const &amp;parameters, Azure::Core::Context const &amp;context=Azure::Core::Context())Decrypts ciphertext.  
-
-
-
-    Azure::Response&lt; WrapResult &gt;&#160;&#160;WrapKey (KeyWrapAlgorithm const &amp;algorithm, std::vector&lt; uint8_t &gt; const &amp;key, Azure::Core::Context const &amp;context=Azure::Core::Context())Encrypts the specified key.  
-
-
-
-    Azure::Response&lt; UnwrapResult &gt;&#160;&#160;UnwrapKey (KeyWrapAlgorithm const &amp;algorithm, std::vector&lt; uint8_t &gt; const &amp;encryptedKey, Azure::Core::Context const &amp;context=Azure::Core::Context())Decrypts the specified encrypted key.  
-
-
-
-    Azure::Response&lt; SignResult &gt;&#160;&#160;Sign (SignatureAlgorithm const &amp;algorithm, std::vector&lt; uint8_t &gt; const &amp;digest, Azure::Core::Context const &amp;context=Azure::Core::Context())Signs the specified digest.  
-
-
-
-    Azure::Response&lt; SignResult &gt;&#160;&#160;SignData (SignatureAlgorithm const &amp;algorithm, Azure::Core::IO::BodyStream &amp;data, Azure::Core::Context const &amp;context=Azure::Core::Context())Signs the specified data.  
-
-
-
-    Azure::Response&lt; SignResult &gt;&#160;&#160;SignData (SignatureAlgorithm const &amp;algorithm, std::vector&lt; uint8_t &gt; const &amp;data, Azure::Core::Context const &amp;context=Azure::Core::Context())Signs the specified data.  
-
-
-
-    Azure::Response&lt; VerifyResult &gt;&#160;&#160;Verify (SignatureAlgorithm const &amp;algorithm, std::vector&lt; uint8_t &gt; const &amp;digest, std::vector&lt; uint8_t &gt; const &amp;signature, Azure::Core::Context const &amp;context=Azure::Core::Context())Verifies the specified signature.  
-
-
-
-    Azure::Response&lt; VerifyResult &gt;&#160;&#160;VerifyData (SignatureAlgorithm const &amp;algorithm, Azure::Core::IO::BodyStream &amp;data, std::vector&lt; uint8_t &gt; const &amp;signature, Azure::Core::Context const &amp;context=Azure::Core::Context())Verifies the specified signature.  
-
-
-
-    Azure::Response&lt; VerifyResult &gt;&#160;&#160;VerifyData (SignatureAlgorithm const &amp;algorithm, std::vector&lt; uint8_t &gt; const &amp;data, std::vector&lt; uint8_t &gt; const &amp;signature, Azure::Core::Context const &amp;context=Azure::Core::Context())Verifies the specified signature.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#ab212be5e894df0b40ba9c6943a10ca59">CryptographyClient</a> (std::string const &keyId, std::shared_ptr< const Core::Credentials::TokenCredential > credential, <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client_options.html">CryptographyClientOptions</a> const &options=<a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client_options.html">CryptographyClientOptions</a>())
+    summary: Initializes a new instance of the CryptographyClient class.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#ab630a6eb4a9e6ec042c4431319b9ffa4">~CryptographyClient</a> ()
+    summary: Destructs <code>CryptographyClient</code>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#a7640f75b43354b7df382ed66f80cbe68">Encrypt</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_parameters.html">EncryptParameters</a> const &parameters, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Encrypts plaintext.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html">EncryptResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#ad11871c80f04593a5ae4508239317afd">Decrypt</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> const &parameters, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Decrypts ciphertext.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_result.html">DecryptResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#a1fdf06270f0daa2856df650e52aec2a6">WrapKey</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_key_wrap_algorithm.html">KeyWrapAlgorithm</a> const &algorithm, std::vector< uint8_t > const &key, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Encrypts the specified key.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_wrap_result.html">WrapResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#ad5c56d473f580b3636c0ea6f10293772">UnwrapKey</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_key_wrap_algorithm.html">KeyWrapAlgorithm</a> const &algorithm, std::vector< uint8_t > const &encryptedKey, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Decrypts the specified encrypted key.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_unwrap_result.html">UnwrapResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#a0fd4527a8c91e6e713a3956972958d9a">Sign</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a> const &algorithm, std::vector< uint8_t > const &digest, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Signs the specified digest.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_sign_result.html">SignResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#a99fcfb69969cd12ce8e2979bbe2c9660">SignData</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a> const &algorithm, Azure::Core::IO::BodyStream &data, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Signs the specified data.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_sign_result.html">SignResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#a6407103a98ff6198755e5af46d7c69cf">SignData</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a> const &algorithm, std::vector< uint8_t > const &data, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Signs the specified data.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_sign_result.html">SignResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#a66d19fe0e996648153298f356ce3325e">Verify</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a> const &algorithm, std::vector< uint8_t > const &digest, std::vector< uint8_t > const &signature, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Verifies the specified signature.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html">VerifyResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#a48950dbaed5461f87fa6edb90665b827">VerifyData</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a> const &algorithm, Azure::Core::IO::BodyStream &data, std::vector< uint8_t > const &signature, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Verifies the specified signature.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html">VerifyResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html#a299a948f71198e43bd600b62e0f98574">VerifyData</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a> const &algorithm, std::vector< uint8_t > const &data, std::vector< uint8_t > const &signature, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Verifies the specified signature.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html">VerifyResult</a> > 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CryptographyClient()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::CryptographyClient \n          (\n          std::string const &amp;&#160;\n          keyId, \n        \n        \n          \n          \n          std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          CryptographyClientOptions const &amp;&#160;\n          options = CryptographyClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: keyId
-    summary: 'The key identifier of the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html" title="A key resource and its properties.">Azure::Security::KeyVault::Keys::KeyVaultKey</a> which will be used for cryptographic operations. '
+    summary: The key identifier of the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html" title="A key resource and its properties.">Azure::Security::KeyVault::Keys::KeyVaultKey</a> which will be used for cryptographic operations.
   - name: credential
-    summary: 'An Azure::Core::Credentials::TokenCredential used to authenticate requests to the vault, like DefaultAzureCredential. '
+    summary: An Azure::Core::Credentials::TokenCredential used to authenticate requests to the vault, like DefaultAzureCredential.
   - name: options
-    summary: '<a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client_options.html" title="Options that allow you to configure the Azure::Security::KeyVault::Keys::Cryptography::CryptographyCl...">Azure::Security::KeyVault::Keys::Cryptography::CryptographyClientOptions</a> for the CryptographyClient for local or remote operations on Key Vault. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client_options.html" title="Options that allow you to configure the Azure::Security::KeyVault::Keys::Cryptography::CryptographyCl...">Azure::Security::KeyVault::Keys::Cryptography::CryptographyClientOptions</a> for the CryptographyClient for local or remote operations on Key Vault.
 - section: '&#9670;&#160;~CryptographyClient()'
-- content: ''
-- content: ''
-- content: ''
-- content: >-
-    Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::~CryptographyClient 
-              (
-              )
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Decrypt()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; DecryptResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::Decrypt \n          (\n          DecryptParameters const &amp;&#160;\n          parameters, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: parameters
-    summary: 'A <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_result.html" title="Represents information about an encryption operation.">Azure::Security::KeyVault::Keys::Cryptography::DecryptResult</a> containing the data to decrypt and other parameters for algorithm-dependent Decryption. '
+    summary: A <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_result.html" title="Represents information about an encryption operation.">Azure::Security::KeyVault::Keys::Cryptography::DecryptResult</a> containing the data to decrypt and other parameters for algorithm-dependent Decryption.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'An <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_result.html" title="Represents information about an encryption operation.">Azure::Security::KeyVault::Keys::Cryptography::DecryptResult</a> containing the decrypted data along with all other information needed to decrypt it. This information should be stored with the Decrypted data. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: An <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_result.html" title="Represents information about an encryption operation.">Azure::Security::KeyVault::Keys::Cryptography::DecryptResult</a> containing the decrypted data along with all other information needed to decrypt it. This information should be stored with the Decrypted data.
 - section: '&#9670;&#160;Encrypt()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; EncryptResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::Encrypt \n          (\n          EncryptParameters const &amp;&#160;\n          parameters, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: parameters
-    summary: 'An <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_parameters.html" title="Parameters for encrypting plaintext.">Azure::Security::KeyVault::Keys::Cryptography::EncryptParameters</a> containing the data to encrypt and other parameters for algorithm-dependent encryption. '
+    summary: An <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_parameters.html" title="Parameters for encrypting plaintext.">Azure::Security::KeyVault::Keys::Cryptography::EncryptParameters</a> containing the data to encrypt and other parameters for algorithm-dependent encryption.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'An <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html" title="Represents information about an encryption operation.">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> containing the encrypted data along with all other information needed to decrypt it. This information should be stored with the encrypted data. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: An <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html" title="Represents information about an encryption operation.">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> containing the encrypted data along with all other information needed to decrypt it. This information should be stored with the encrypted data.
 - section: '&#9670;&#160;Sign()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; SignResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::Sign \n          (\n          SignatureAlgorithm const &amp;&#160;\n          algorithm, \n        \n        \n          \n          \n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          digest, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: algorithm
-    summary: 'The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use. '
+    summary: The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use.
   - name: digest
-    summary: 'The pre-hashed digest to sign. The hash algorithm used to compute the digest must be compatable with the specified algorithm. '
+    summary: The pre-hashed digest to sign. The hash algorithm used to compute the digest must be compatable with the specified algorithm.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The result of the sign operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_sign_result.html" title="Represents information about a sign operation.">Azure::Security::KeyVault::Keys::Cryptography::SignResult</a> contains the signature along with all other information needed to verify it. This information should be stored with the signature. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The result of the sign operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_sign_result.html" title="Represents information about a sign operation.">Azure::Security::KeyVault::Keys::Cryptography::SignResult</a> contains the signature along with all other information needed to verify it. This information should be stored with the signature.
 - section: '&#9670;&#160;SignData() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; SignResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::SignData \n          (\n          SignatureAlgorithm const &amp;&#160;\n          algorithm, \n        \n        \n          \n          \n          Azure::Core::IO::BodyStream &amp;&#160;\n          data, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: algorithm
-    summary: 'The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use. '
+    summary: The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use.
   - name: data
-    summary: 'The data to sign. '
+    summary: The data to sign.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The result of the sign operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_sign_result.html" title="Represents information about a sign operation.">Azure::Security::KeyVault::Keys::Cryptography::SignResult</a> contains the signature along with all other information needed to verify it. This information should be stored with the signature. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The result of the sign operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_sign_result.html" title="Represents information about a sign operation.">Azure::Security::KeyVault::Keys::Cryptography::SignResult</a> contains the signature along with all other information needed to verify it. This information should be stored with the signature.
 - section: '&#9670;&#160;SignData() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; SignResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::SignData \n          (\n          SignatureAlgorithm const &amp;&#160;\n          algorithm, \n        \n        \n          \n          \n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          data, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: algorithm
-    summary: 'The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use. '
+    summary: The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use.
   - name: data
-    summary: 'The data to sign. '
+    summary: The data to sign.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The result of the sign operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_sign_result.html" title="Represents information about a sign operation.">Azure::Security::KeyVault::Keys::Cryptography::SignResult</a> contains the signature along with all other information needed to verify it. This information should be stored with the signature. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The result of the sign operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_sign_result.html" title="Represents information about a sign operation.">Azure::Security::KeyVault::Keys::Cryptography::SignResult</a> contains the signature along with all other information needed to verify it. This information should be stored with the signature.
 - section: '&#9670;&#160;UnwrapKey()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; UnwrapResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::UnwrapKey \n          (\n          KeyWrapAlgorithm const &amp;&#160;\n          algorithm, \n        \n        \n          \n          \n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          encryptedKey, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: algorithm
-    summary: 'The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_key_wrap_algorithm.html" title="An algorithm used for key wrap and unwrap.">Azure::Security::KeyVault::Keys::Cryptography::KeyWrapAlgorithm</a> to use. '
+    summary: The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_key_wrap_algorithm.html" title="An algorithm used for key wrap and unwrap.">Azure::Security::KeyVault::Keys::Cryptography::KeyWrapAlgorithm</a> to use.
   - name: encryptedKey
-    summary: 'The encrypted key. '
+    summary: The encrypted key.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The result of the unwrap operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_unwrap_result.html" title="Represents information about an unwrap operation.">Azure::Security::KeyVault::Keys::Cryptography::UnwrapResult</a> contains the key along with information regarding the algorithm and key used to unwrap it. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The result of the unwrap operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_unwrap_result.html" title="Represents information about an unwrap operation.">Azure::Security::KeyVault::Keys::Cryptography::UnwrapResult</a> contains the key along with information regarding the algorithm and key used to unwrap it.
 - section: '&#9670;&#160;Verify()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; VerifyResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::Verify \n          (\n          SignatureAlgorithm const &amp;&#160;\n          algorithm, \n        \n        \n          \n          \n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          digest, \n        \n        \n          \n          \n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          signature, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: algorithm
-    summary: 'The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use. This must be the same algorithm used to sign the digest. '
+    summary: The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use. This must be the same algorithm used to sign the digest.
   - name: digest
-    summary: 'The pre-hashed digest corresponding to the signature. The hash algorithm used to compute the digest must be compatable with the specified algorithm. '
+    summary: The pre-hashed digest corresponding to the signature. The hash algorithm used to compute the digest must be compatable with the specified algorithm.
   - name: signature
-    summary: 'The signature to verify. '
+    summary: The signature to verify.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The result of the verify operation. If the signature is valid the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html#a7855765d91b5c36cd8b24d9f284abe2d" title="Gets a value indicating whether the specified signature is valid.">VerifyResult.IsValid</a> property of the returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html" title="Represents information about a verify operation.">Azure::Security::KeyVault::Keys::Cryptography::VerifyResult</a> will be set to true. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The result of the verify operation. If the signature is valid the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html#a7855765d91b5c36cd8b24d9f284abe2d" title="Gets a value indicating whether the specified signature is valid.">VerifyResult.IsValid</a> property of the returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html" title="Represents information about a verify operation.">Azure::Security::KeyVault::Keys::Cryptography::VerifyResult</a> will be set to true.
 - section: '&#9670;&#160;VerifyData() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; VerifyResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::VerifyData \n          (\n          SignatureAlgorithm const &amp;&#160;\n          algorithm, \n        \n        \n          \n          \n          Azure::Core::IO::BodyStream &amp;&#160;\n          data, \n        \n        \n          \n          \n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          signature, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: algorithm
-    summary: 'The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use. This must be the same algorithm used to sign the data. '
+    summary: The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use. This must be the same algorithm used to sign the data.
   - name: data
-    summary: 'The data corresponding to the signature. '
+    summary: The data corresponding to the signature.
   - name: signature
-    summary: 'The signature to verify. '
+    summary: The signature to verify.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The result of the verify operation. If the signature is valid the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html#a7855765d91b5c36cd8b24d9f284abe2d" title="Gets a value indicating whether the specified signature is valid.">VerifyResult.IsValid</a> property of the returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html" title="Represents information about a verify operation.">Azure::Security::KeyVault::Keys::Cryptography::VerifyResult</a> will be set to true. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The result of the verify operation. If the signature is valid the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html#a7855765d91b5c36cd8b24d9f284abe2d" title="Gets a value indicating whether the specified signature is valid.">VerifyResult.IsValid</a> property of the returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html" title="Represents information about a verify operation.">Azure::Security::KeyVault::Keys::Cryptography::VerifyResult</a> will be set to true.
 - section: '&#9670;&#160;VerifyData() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; VerifyResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::VerifyData \n          (\n          SignatureAlgorithm const &amp;&#160;\n          algorithm, \n        \n        \n          \n          \n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          data, \n        \n        \n          \n          \n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          signature, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: algorithm
-    summary: 'The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use. This must be the same algorithm used to sign the data. '
+    summary: The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html" title="An algorithm used for signing and verification.">Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm</a> to use. This must be the same algorithm used to sign the data.
   - name: data
-    summary: 'The data corresponding to the signature. '
+    summary: The data corresponding to the signature.
   - name: signature
-    summary: 'The signature to verify. '
+    summary: The signature to verify.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The result of the verify operation. If the signature is valid the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html#a7855765d91b5c36cd8b24d9f284abe2d" title="Gets a value indicating whether the specified signature is valid.">VerifyResult.IsValid</a> property of the returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html" title="Represents information about a verify operation.">Azure::Security::KeyVault::Keys::Cryptography::VerifyResult</a> will be set to true. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The result of the verify operation. If the signature is valid the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html#a7855765d91b5c36cd8b24d9f284abe2d" title="Gets a value indicating whether the specified signature is valid.">VerifyResult.IsValid</a> property of the returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_verify_result.html" title="Represents information about a verify operation.">Azure::Security::KeyVault::Keys::Cryptography::VerifyResult</a> will be set to true.
 - section: '&#9670;&#160;WrapKey()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; WrapResult &gt; Azure::Security::KeyVault::Keys::Cryptography::CryptographyClient::WrapKey \n          (\n          KeyWrapAlgorithm const &amp;&#160;\n          algorithm, \n        \n        \n          \n          \n          std::vector&lt; uint8_t &gt; const &amp;&#160;\n          key, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: algorithm
-    summary: 'The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_key_wrap_algorithm.html" title="An algorithm used for key wrap and unwrap.">Azure::Security::KeyVault::Keys::Cryptography::KeyWrapAlgorithm</a> to use. '
+    summary: The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_key_wrap_algorithm.html" title="An algorithm used for key wrap and unwrap.">Azure::Security::KeyVault::Keys::Cryptography::KeyWrapAlgorithm</a> to use.
   - name: key
-    summary: 'The key to encrypt. '
+    summary: The key to encrypt.
   - name: context
-    summary: 'A Azure::Core::Context to cancel the operation. '
-- content: ''
+    summary: A Azure::Core::Context to cancel the operation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The result of the wrap operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_wrap_result.html" title="Represents information about a wrap operation.">Azure::Security::KeyVault::Keys::Cryptography::WrapResult</a> contains the wrapped key along with all other information needed to unwrap it. This information should be stored with the wrapped key. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/keyvault/keys/cryptography/cryptography_client.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  - summary: The result of the wrap operation. The returned <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_wrap_result.html" title="Represents information about a wrap operation.">Azure::Security::KeyVault::Keys::Cryptography::WrapResult</a> contains the wrapped key along with all other information needed to unwrap it. This information should be stored with the wrapped key.
+- content: The documentation for this class was generated from the following file:inc/azure/keyvault/keys/cryptography/cryptography_client.hppGenerated by&#160;1.9.7

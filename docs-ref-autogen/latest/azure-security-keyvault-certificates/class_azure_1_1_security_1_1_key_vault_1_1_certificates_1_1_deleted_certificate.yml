@@ -1,203 +1,64 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::KeyVault::Certificates::DeletedCertificate
+title: Azure::Security::KeyVault::Certificates::DeletedCertificate Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-keyvault-certificates
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityKeyVaultCertificatesDeletedCertificate
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     Represents a deleted certificate in a KeyVault.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Security::KeyVault::Certificates::DeletedCertificate:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.html#details">More...</a><code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Certificates::DeletedCertificate:
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;DeletedCertificate ()=defaultDefault constructor.  
-
-
-
-
-    &#160;KeyVaultCertificateWithPolicy (CertificateProperties const &amp;properties)
-
-    &#160;Construct a new Key Vault Certificate With Policy object.  
-
-
-    &#160;KeyVaultCertificateWithPolicy ()=default
-
-    &#160;Default constructorfor Key Vault Certificate With Policy object.  
-
-
-
-    std::string const &amp;&#160;Name () const
-
-    &#160;Get the name of the certificate.  
-
-
-    std::string const &amp;&#160;IdUrl () const
-
-    &#160;Get the certificate Id,.  
-
-
-    &#160;KeyVaultCertificate (CertificateProperties const &amp;properties)
-
-    &#160;Construct a new Key Vault Certificate object.  
-
-
-    &#160;KeyVaultCertificate ()=default
-
-    &#160;Construct a new Key Vault Certificate object.  
-
-
-    virtual&#160;~KeyVaultCertificate ()=default
-
-    &#160;Destroy the Key Vault Certificate object.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.html#a3f6df28d67e3f72109f8a8cddae3da72">DeletedCertificate</a> ()=default
+    summary: Default constructor.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html#a3b96c6acccc69dbfa40cf38a1470b1d3">KeyVaultCertificateWithPolicy</a> (<a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html">CertificateProperties</a> const &properties)
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html#a8c1990183d4c1a24b17074103dbcb519">KeyVaultCertificateWithPolicy</a> ()=default
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html#ae3ebdc463055e63c32b0a805c536a8a5">Name</a> () const
+    returnType: std::string const & 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html#a5058cda9ab17a26fc9edb39026fb5f26">IdUrl</a> () const
+    returnType: std::string const & 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html#a0e9a5b4e7aa4668ebaccbccaeae52818">KeyVaultCertificate</a> (<a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html">CertificateProperties</a> const &properties)
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html#a5d2c39140cd36c9eb81b1c4e5eef505c">KeyVaultCertificate</a> ()=default
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html#a039817d300cd008f32babb2d25af53b5">~KeyVaultCertificate</a> ()=default
+    returnType: virtual 
 - section: Public Attributes
-- content: >-
-    std::string&#160;&#160;RecoveryIdUrlGets the identifier of the deleted certificate.  
-
-
-
-    Azure::Nullable&lt; DateTime &gt;&#160;&#160;DeletedOnDateTime indicating when the certificate was deleted.  
-
-
-
-    Azure::Nullable&lt; DateTime &gt;&#160;&#160;ScheduledPurgeDateDateTime for when the deleted certificate will be purged.  
-
-
-
-
-    CertificatePolicy&#160;Policy
-
-    &#160;Gets the current policy for the certificate.  
-
-
-
-    std::string&#160;KeyIdUrl
-
-    &#160;Get the identifier of the certificate.  
-
-
-    std::string&#160;SecretIdUrl
-
-    &#160;Get the identifier of the Key Vault Secret which contains the PEM of PFX formatted content of the certificate and its private key.  
-
-
-    CertificateProperties&#160;Properties
-
-    &#160;Additional fields for the certificate.  
-
-
-    std::vector&lt; uint8_t &gt;&#160;Cer
-
-    &#160;Get the CER formatted public X509 certificate.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.html#ac2273ece5d40f896e47b5527c151af18">RecoveryIdUrl</a>
+    summary: Gets the identifier of the deleted certificate.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.html#abd7422ed10dffef2937bddc1ba03e671">DeletedOn</a>
+    summary: DateTime indicating when the certificate was deleted.  <br>
+    returnType: Azure::Nullable< DateTime > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.html#a933cae1d0e491b880bfd3266dcc67e68">ScheduledPurgeDate</a>
+    summary: DateTime for when the deleted certificate will be purged.  <br>
+    returnType: Azure::Nullable< DateTime > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html#aeb58e312a8c63e750fb45ea091595101">Policy</a>
+    returnType: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html">CertificatePolicy</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html#a777c048fc1f650d3c819231be75b80cd">KeyIdUrl</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html#a83ccce19d42fefd640d1e69fdb8e41b5">SecretIdUrl</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html#ab58bd036c0f883cf47c45dbe5f43ef48">Properties</a>
+    returnType: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html">CertificateProperties</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html#a57c34ae32de565af72d185ae9927591d">Cer</a>
+    returnType: std::vector< uint8_t > 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DeletedCertificate()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Certificates::DeletedCertificate::DeletedCertificate \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DeletedOn'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;DateTime&gt; Azure::Security::KeyVault::Certificates::DeletedCertificate::DeletedOn
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;RecoveryIdUrl'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Security::KeyVault::Certificates::DeletedCertificate::RecoveryIdUrl
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ScheduledPurgeDate'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;DateTime&gt; Azure::Security::KeyVault::Certificates::DeletedCertificate::ScheduledPurgeDate
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/keyvault/certificates/certificate_client_models.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: The documentation for this class was generated from the following file:inc/azure/keyvault/certificates/certificate_client_models.hppGenerated by&#160;1.9.7

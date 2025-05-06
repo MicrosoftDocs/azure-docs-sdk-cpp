@@ -1,177 +1,74 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Core::Http::Policies::TransportOptions
+title: Azure::Core::Http::Policies::TransportOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureCoreHttpPoliciesTransportOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: HTTP transport options parameterize the HTTP transport adapter being used.
-- content: ''
-- content: <code>#include &lt;<a href="policy_8hpp_source.html">policy.hpp</a>&gt;</code>
-- content: ''
+- content: HTTP transport options parameterize the HTTP transport adapter being used.<code>#include &lt;<a href="policy_8hpp_source.html">policy.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;HttpProxy {}The URL for the proxy server to use for this connection.  
-
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;ProxyUserName {}The username to use when authenticating with the proxy server.  
-
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;ProxyPassword {}The password to use when authenticating with the proxy server.  
-
-
-
-    bool&#160;&#160;EnableCertificateRevocationListCheck {false}Enable TLS Certificate validation against a certificate revocation list.  
-
-
-
-    bool&#160;&#160;DisableTlsCertificateValidation {false}Disable SSL/TLS certificate verification. This option allows transport layer to perform insecure SSL/TLS connections and skip SSL/TLS certificate checks while still having SSL/TLS-encrypted communications.  
-
-
-
-    std::string&#160;&#160;ExpectedTlsRootCertificate {}Base64 encoded DER representation of an X.509 certificate expected in the certificate chain used in TLS connections.  
-
-
-
-    std::shared_ptr&lt; HttpTransport &gt;&#160;&#160;TransportAzure::Core::Http::HttpTransport that the transport policy will use to send and receive requests and responses over the wire.
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html#ab25c172097ae8c8b86b9d26265397b84">HttpProxy</a> {}
+    summary: The URL for the proxy server to use for this connection.  <br>
+    returnType: <a class="el" href="class_azure_1_1_nullable.html">Azure::Nullable</a>< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html#af07684ad257ce136b94aa2b83c17b772">ProxyUserName</a> {}
+    summary: The username to use when authenticating with the proxy server.  <br>
+    returnType: <a class="el" href="class_azure_1_1_nullable.html">Azure::Nullable</a>< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html#a2aa3c57ba8e4e21b76c67a0c1fa623ad">ProxyPassword</a> {}
+    summary: The password to use when authenticating with the proxy server.  <br>
+    returnType: <a class="el" href="class_azure_1_1_nullable.html">Azure::Nullable</a>< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html#a810a2213c70ab96dc5b46f54114da57c">EnableCertificateRevocationListCheck</a> {false}
+    summary: Enable TLS Certificate validation against a certificate revocation list.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html#a0ee73cd033f55386522d129b9c13af0e">DisableTlsCertificateValidation</a> {false}
+    summary: Disable SSL/TLS certificate verification. This option allows transport layer to perform insecure SSL/TLS connections and skip SSL/TLS certificate checks while still having SSL/TLS-encrypted communications.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html#a9c3f25825627b024790cb13fb58fe837">ExpectedTlsRootCertificate</a> {}
+    summary: Base64 encoded DER representation of an X.509 certificate expected in the certificate chain used in TLS connections.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html#a117e90dea642f92200ba49afbf4ffc3a">Transport</a>
+    summary: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html" title="Base class for all HTTP transport implementations.">Azure::Core::Http::HttpTransport</a> that the transport policy will use to send and receive requests and responses over the wire.  <br>
+    returnType: std::shared_ptr< <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DisableTlsCertificateValidation'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Core::Http::Policies::TransportOptions::DisableTlsCertificateValidation {false}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Disabling TLS security is generally a bad idea because it allows malicious actors to spoof the target server and should never be enabled in production code.
 - section: '&#9670;&#160;EnableCertificateRevocationListCheck'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Core::Http::Policies::TransportOptions::EnableCertificateRevocationListCheck {false}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Note that by default, CRL validation is <em>disabled</em>.
 - section: '&#9670;&#160;ExpectedTlsRootCertificate'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Core::Http::Policies::TransportOptions::ExpectedTlsRootCertificate {}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Note that with the schannel and sectransp crypto backends, setting the expected root certificate disables access to the system certificate store. This means that the expected root certificate is the only certificate that will be trusted.
 - section: '&#9670;&#160;HttpProxy'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Core::Http::Policies::TransportOptions::HttpProxy {}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: If an empty string is specified, it instructs the transport to disable all proxies, including system proxies.
 - section: '&#9670;&#160;ProxyPassword'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Core::Http::Policies::TransportOptions::ProxyPassword {}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This field is only used if the customer has not specified a default transport adapter. If the customer has set a Transport adapter, this option is ignored.
 - section: '&#9670;&#160;ProxyUserName'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Core::Http::Policies::TransportOptions::ProxyUserName {}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This field is only used if the customer has not specified a default transport adapter. If the customer has set a Transport adapter, this option is ignored.
 - section: '&#9670;&#160;Transport'
-- content: ''
-- content: ''
-- content: ''
-- content: std::shared_ptr&lt;HttpTransport&gt; Azure::Core::Http::Policies::TransportOptions::Transport
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/core/http/policies/policy.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: When using a custom transport adapter, the implementation for <code><a class="el" href="policy_8hpp.html#a8fdb3bdd9092e835bb253e12f13a5042">AzureSdkGetCustomHttpTransport()</a></code> must be linked in the end-user application.
+- content: The documentation for this struct was generated from the following file:inc/azure/core/http/policies/policy.hppGenerated by&#160;1.9.7

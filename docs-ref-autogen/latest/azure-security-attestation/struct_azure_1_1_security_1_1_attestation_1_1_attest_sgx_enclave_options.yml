@@ -1,89 +1,40 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::Attestation::AttestSgxEnclaveOptions
+title: Azure::Security::Attestation::AttestSgxEnclaveOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-attestation
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityAttestationAttestSgxEnclaveOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Parameters sent to the attestation service for the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a33951d2025a60565df78c0dc3ff2ec18">AttestationClient::AttestSgxEnclave</a> API.
-- content: ''
-- content: <code>#include &lt;<a href="attestation__client__options_8hpp_source.html">attestation_client_options.hpp</a>&gt;</code>
-- content: ''
+- content: Parameters sent to the attestation service for the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a33951d2025a60565df78c0dc3ff2ec18">AttestationClient::AttestSgxEnclave</a> API.<code>#include &lt;<a href="attestation__client__options_8hpp_source.html">attestation_client_options.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; AttestationData &gt;&#160;&#160;RunTimeData {}Data created dynamically within the enclave. 
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attest_sgx_enclave_options.html#a6a273c299b25c1ab1b93ccc3f69d7dfa">RunTimeData</a> {}
+    summary: Data created dynamically within the enclave. <br>
+    returnType: >-
+      <a id="a6a273c299b25c1ab1b93ccc3f69d7dfa"></a>
 
+      Azure::Nullable< <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_data.html">AttestationData</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attest_sgx_enclave_options.html#a4039b68255f49dfcb10b03f0d133c373">InitTimeData</a> {}
+    summary: Data created when the enclave was created. Not supported on Coffeelake processors. <br>
+    returnType: >-
+      <a id="a4039b68255f49dfcb10b03f0d133c373"></a>
 
+      Azure::Nullable< <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_data.html">AttestationData</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attest_sgx_enclave_options.html#aba1eb5f3b962c626b64b02482792b5cc">Nonce</a> {}
+    summary: Nonce which is sent to the attestation service to allow a caller to prevent replay attacks. <br>
+    returnType: >-
+      <a id="aba1eb5f3b962c626b64b02482792b5cc"></a>
 
+      Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attest_sgx_enclave_options.html#a7fca3c426f276de03eb2e2a64e9a71af">DraftPolicyForAttestation</a> {}
+    summary: A test hook which allows developers to test attestation policies before they commit them to the service. <br>
+    returnType: >-
+      <a id="a7fca3c426f276de03eb2e2a64e9a71af"></a>
 
-    Azure::Nullable&lt; AttestationData &gt;&#160;&#160;InitTimeData {}Data created when the enclave was created. Not supported on Coffeelake processors. 
-
-
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;Nonce {}Nonce which is sent to the attestation service to allow a caller to prevent replay attacks. 
-
-
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;DraftPolicyForAttestation {}A test hook which allows developers to test attestation policies before they commit them to the service. 
-
-
-
-
-    Azure::Nullable&lt; AttestationTokenValidationOptions &gt;&#160;&#160;TokenValidationOptionsOverride {}Specifies the options which should be used to validate the attestation token returned by the attestation service. Overrides the value specified in the AttestationClient.  More...
-- content: ''
+      Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attest_sgx_enclave_options.html#a6a9b873374202ce1dd185265fa3d833a">TokenValidationOptionsOverride</a> {}
+    summary: Specifies the options which should be used to validate the attestation token returned by the attestation service. Overrides the value specified in the <a class="el" href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html">AttestationClient</a>.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_sgx_enclave_options.html#a6a9b873374202ce1dd185265fa3d833a">More...</a><br>
+    returnType: Azure::Nullable< <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html">AttestationTokenValidationOptions</a> > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&nbsp;TokenValidationOptionsOverride'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;AttestationTokenValidationOptions&gt; Azure::Security::Attestation::AttestSgxEnclaveOptions::TokenValidationOptionsOverride {}
-- content: ''
-- content: ''
-- content: If not provided by the caller, the token validation options specified when thelink <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html">AttestationClient</a>} was created will be used.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/attestation/attestation_client_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by &#160;
-- content: ''
-- content: 1.9.1
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: If not provided by the caller, the token validation options specified when thelink <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html">AttestationClient</a>} was created will be used.The documentation for this struct was generated from the following file:inc/azure/attestation/attestation_client_options.hppGenerated by &#160;1.9.1

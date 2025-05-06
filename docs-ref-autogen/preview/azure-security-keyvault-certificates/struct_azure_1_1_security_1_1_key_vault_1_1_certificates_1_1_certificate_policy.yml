@@ -1,369 +1,138 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::KeyVault::Certificates::CertificatePolicy
+title: Azure::Security::KeyVault::Certificates::CertificatePolicy Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-keyvault-certificates
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityKeyVaultCertificatesCertificatePolicy
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     A policy which governs the lifecycle a properties of a certificate managed by Azure Key Vault.  
-     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code>
-- content: ''
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#details">More...</a><code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: '&#160;&#160;CertificatePolicy ()=defaultDefault constructor.'
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a88d2f32109833a09b4d0250ab8f52d26">CertificatePolicy</a> ()=default
+    summary: Default constructor.  <br>
+    returnType:  
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; CertificateKeyType &gt;&#160;&#160;KeyTypeGet the type of backing key to be generated when issuing new certificates.  
-
-
-
-    Azure::Nullable&lt; bool &gt;&#160;&#160;ReuseKeyGet a value indicating whether the certificate key should be reused when rotating the certificate.  
-
-
-
-    Azure::Nullable&lt; bool &gt;&#160;&#160;ExportableGet a value indicating whether the certificate key is exportable from the vault or secure certificate store.  
-
-
-
-    Azure::Nullable&lt; CertificateKeyCurveName &gt;&#160;&#160;KeyCurveNameGet the curve which back an Elliptic Curve (EC) key.  
-
-
-
-    Azure::Nullable&lt; int32_t &gt;&#160;&#160;KeySizeGet the size of the RSA key. The value must be a valid RSA key length such as 2048 or 4092.  
-
-
-
-    std::string&#160;&#160;SubjectGet the subject name of a certificate.  
-
-
-
-    struct SubjectAlternativeNames&#160;&#160;SubjectAlternativeNamesGet the subject alternative names (SANs) of a certificate.  
-
-
-
-    Azure::Nullable&lt; bool &gt;&#160;&#160;CertificateTransparencyIndicates if the certificates generated under this policy should be published to certificate transparency logs.  
-
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;CertificateTypeCertificate type as supported by the provider (optional); for example 'OV-SSL', 'EV-SSL'.  
-
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;IssuerNameName of the referenced issuer object or reserved names; for example, 'Self' or 'Unknown'.  
-
-
-
-    Azure::Nullable&lt; CertificateContentType &gt;&#160;&#160;ContentTypeGet the CertificateContentType of the certificate.  
-
-
-
-    Azure::Nullable&lt; int32_t &gt;&#160;&#160;ValidityInMonthsGet the validity period for a certificate in months.  
-
-
-
-    Azure::Nullable&lt; bool &gt;&#160;&#160;EnabledGet a value indicating whether the certificate is currently enabled. If null, the server default will be used.  
-
-
-
-    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;UpdatedOnGet a DateTime indicating when the certificate was updated.  
-
-
-
-    Azure::Nullable&lt; Azure::DateTime &gt;&#160;&#160;CreatedOnGet a DateTime indicating when the certificate was created.  
-
-
-
-    std::vector&lt; CertificateKeyUsage &gt;&#160;&#160;KeyUsageGets the allowed usages for the key of the certificate.  
-
-
-
-    std::vector&lt; std::string &gt;&#160;&#160;EnhancedKeyUsageGet the allowed enhanced key usages (EKUs) of the certificate.  
-
-
-
-    std::vector&lt; LifetimeAction &gt;&#160;&#160;LifetimeActionsGet the actions to be executed at specified times in the certificates lifetime.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a7472db88a7a1fba42cb149ed475613b2">KeyType</a>
+    summary: Get the type of backing key to be generated when issuing new certificates.  <br>
+    returnType: Azure::Nullable< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_type.html">CertificateKeyType</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a0439f881916195174a27364ef9874212">ReuseKey</a>
+    summary: Get a value indicating whether the certificate key should be reused when rotating the certificate.  <br>
+    returnType: Azure::Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#ac9a8203203d3ad44ad583dda85b933ee">Exportable</a>
+    summary: Get a value indicating whether the certificate key is exportable from the vault or secure certificate store.  <br>
+    returnType: Azure::Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#acb8eb6b333dca0026a3e4fc8989178be">KeyCurveName</a>
+    summary: Get the curve which back an Elliptic Curve (EC) key.  <br>
+    returnType: Azure::Nullable< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_curve_name.html">CertificateKeyCurveName</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a457ba7aa1c00f9c9302977464977d755">KeySize</a>
+    summary: Get the size of the RSA key. The value must be a valid RSA key length such as 2048 or 4092.  <br>
+    returnType: Azure::Nullable< int32_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a398f374498d39c8b606f34a24108b072">Subject</a>
+    summary: Get the subject name of a certificate.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a0bb1149e960ae3f13ef4ae1bbb6a1f55">SubjectAlternativeNames</a>
+    summary: Get the subject alternative names (SANs) of a certificate.  <br>
+    returnType: struct <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_subject_alternative_names.html">SubjectAlternativeNames</a> 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a528a587dabed8b2d41e693ed2a15f924">CertificateTransparency</a>
+    summary: Indicates if the certificates generated under this policy should be published to certificate transparency logs.  <br>
+    returnType: Azure::Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a8a450714a1504ea60de8f526ce6594d3">CertificateType</a>
+    summary: Certificate type as supported by the provider (optional); for example 'OV-SSL', 'EV-SSL'.  <br>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#aae475930589a814732ab5a593cef1ea9">IssuerName</a>
+    summary: Name of the referenced issuer object or reserved names; for example, 'Self' or 'Unknown'.  <br>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a72cb726c525dc596ad726dd68d207fa0">ContentType</a>
+    summary: Get the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html" title="Content type of the certificate when downloaded from getsecret.">CertificateContentType</a> of the certificate.  <br>
+    returnType: Azure::Nullable< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html">CertificateContentType</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a072ebf952f45764346e938437b438ea4">ValidityInMonths</a>
+    summary: Get the validity period for a certificate in months.  <br>
+    returnType: Azure::Nullable< int32_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a6479cd873802ec7740b9a32d7b627151">Enabled</a>
+    summary: Get a value indicating whether the certificate is currently enabled. If null, the server default will be used.  <br>
+    returnType: Azure::Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a1a03973a8330fdc9dab1e4ba98c74a4a">UpdatedOn</a>
+    summary: Get a DateTime indicating when the certificate was updated.  <br>
+    returnType: Azure::Nullable< Azure::DateTime > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a798bdc5baf59e1c9a31ddbe782eda57d">CreatedOn</a>
+    summary: Get a DateTime indicating when the certificate was created.  <br>
+    returnType: Azure::Nullable< Azure::DateTime > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a8f553d182721a4c184966b06283321ea">KeyUsage</a>
+    summary: Gets the allowed usages for the key of the certificate.  <br>
+    returnType: std::vector< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a29be9e2b190da65d9413990702749c3b">EnhancedKeyUsage</a>
+    summary: Get the allowed enhanced key usages (EKUs) of the certificate.  <br>
+    returnType: std::vector< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html#a95af9653fcaba0106840fa32dc662397">LifetimeActions</a>
+    summary: Get the actions to be executed at specified times in the certificates lifetime.  <br>
+    returnType: std::vector< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_lifetime_action.html">LifetimeAction</a> > 
 - section: Friends
-- content: >-
-    class&#160;CertificateClient
+  display: h2
+- apiList:
+  - declaration: <b>CertificateClient</b>
+    returnType: >-
+      <a id="a8812873e00c04ea628594c5c16c8909f" name="a8812873e00c04ea628594c5c16c8909f"></a>
 
+      class 
+  - declaration: <b>KeyVaultCertificateWithPolicy</b>
+    returnType: >-
+      <a id="a43e118716b52f265afc14361ad8ea34e" name="a43e118716b52f265afc14361ad8ea34e"></a>
 
+      class 
+  - declaration: <b>ImportCertificateOptions</b>
+    returnType: >-
+      <a id="a7aacf8a9a7743d46bf0540455dec49e1" name="a7aacf8a9a7743d46bf0540455dec49e1"></a>
 
-    class&#160;KeyVaultCertificateWithPolicy
+      struct 
+  - declaration: <b>CertificateCreateOptions</b>
+    returnType: >-
+      <a id="a0fad7296e7b44f571456f5c9f6582d20" name="a0fad7296e7b44f571456f5c9f6582d20"></a>
 
-
-
-    struct&#160;ImportCertificateOptions
-
-
-
-    class&#160;CertificateCreateOptions
-- content: ''
-- content: ''
+      class 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CertificatePolicy()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Certificates::CertificatePolicy::CertificatePolicy \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CertificateTransparency'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::CertificateTransparency
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CertificateType'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::CertificateType
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ContentType'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;CertificateContentType&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::ContentType
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CreatedOn'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::CreatedOn
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Enabled'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::Enabled
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;EnhancedKeyUsage'
-- content: ''
-- content: ''
-- content: ''
-- content: std::vector&lt;std::string&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::EnhancedKeyUsage
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Exportable'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::Exportable
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;IssuerName'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::IssuerName
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyCurveName'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;CertificateKeyCurveName&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::KeyCurveName
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeySize'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;int32_t&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::KeySize
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyType'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;CertificateKeyType&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::KeyType
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyUsage'
-- content: ''
-- content: ''
-- content: ''
-- content: std::vector&lt;CertificateKeyUsage&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::KeyUsage
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;LifetimeActions'
-- content: ''
-- content: ''
-- content: ''
-- content: std::vector&lt;LifetimeAction&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::LifetimeActions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ReuseKey'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::ReuseKey
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Subject'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Security::KeyVault::Certificates::CertificatePolicy::Subject
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;SubjectAlternativeNames'
-- content: ''
-- content: ''
-- content: ''
-- content: struct SubjectAlternativeNames Azure::Security::KeyVault::Certificates::CertificatePolicy::SubjectAlternativeNames
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;UpdatedOn'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::UpdatedOn
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ValidityInMonths'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;int32_t&gt; Azure::Security::KeyVault::Certificates::CertificatePolicy::ValidityInMonths
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/keyvault/certificates/certificate_client_models.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: The documentation for this struct was generated from the following file:inc/azure/keyvault/certificates/certificate_client_models.hppGenerated by&#160;1.9.7

@@ -1,147 +1,70 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::KeyVault::Keys::DeleteKeyOperation
+title: Azure::Security::KeyVault::Keys::DeleteKeyOperation Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-keyvault-keys
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityKeyVaultKeysDeleteKeyOperation
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     A long running operation to delete a key.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Security::KeyVault::Keys::DeleteKeyOperation:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html#details">More...</a><code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Keys::DeleteKeyOperation:
 - section: Public Member Functions
-- content: >-
-    Azure::Security::KeyVault::Keys::DeletedKey&#160;&#160;Value () const overrideGet the Azure::Security::KeyVault::Keys::DeletedKey object.  
-
-
-
-    std::string&#160;&#160;GetResumeToken () const overrideGet an Url as string which can be used to get the status of the delete key operation.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html#a878016e88e83f14dc341e2a677c73925">Value</a> () const override
+    summary: Get the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_deleted_key.html" title="Represents a Key Vault key that has been deleted, allowing it to be recovered, if needed.">Azure::Security::KeyVault::Keys::DeletedKey</a> object.  <br>
+    returnType: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_deleted_key.html">Azure::Security::KeyVault::Keys::DeletedKey</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html#aaf2c6f6f6341d224f09e3969be194729">GetResumeToken</a> () const override
+    summary: Get an Url as string which can be used to get the status of the delete key operation.  <br>
+    returnType: std::string 
 - section: Static Public Member Functions
-- content: static DeleteKeyOperation&#160;&#160;CreateFromResumeToken (std::string const &amp;resumeToken, Azure::Security::KeyVault::Keys::KeyClient const &amp;client, Azure::Core::Context const &amp;context=Azure::Core::Context())Create a DeleteKeyOperation from the resumeToken fetched from another Operation&lt;T&gt;, updated to the the latest operation status.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html#aa8a2e761ea0cdc37fafcaec42dfb3fbf">CreateFromResumeToken</a> (std::string const &resumeToken, <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_client.html">Azure::Security::KeyVault::Keys::KeyClient</a> const &client, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Create a DeleteKeyOperation from the <code>resumeToken</code> fetched from another <code>Operation<T></code>, updated to the the latest operation status.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html">DeleteKeyOperation</a> 
 - section: Friends
-- content: class&#160;KeyClient
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <b>KeyClient</b>
+    returnType: >-
+      <a id="ae15f2ce61c68fbee9013860b5c37c16d" name="ae15f2ce61c68fbee9013860b5c37c16d"></a>
+
+      class 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CreateFromResumeToken()'
-- content: ''
-- content: ''
-- content: ''
-- content: "static DeleteKeyOperation Azure::Security::KeyVault::Keys::DeleteKeyOperation::CreateFromResumeToken \n          (\n          std::string const &amp;&#160;\n          resumeToken, \n        \n        \n          \n          \n          Azure::Security::KeyVault::Keys::KeyClient const &amp;&#160;\n          client, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: After the operation is initialized, it is used to poll the last update from the server using the <code>context</code>.
 - section: Parameters
   display: h4
 - parameters:
   - name: resumeToken
-    summary: 'A previously generated token used to resume the polling of the operation. '
+    summary: A previously generated token used to resume the polling of the operation.
   - name: client
-    summary: 'A KeyClient that is used for getting status updates. '
+    summary: A KeyClient that is used for getting status updates.
   - name: context
-    summary: 'A Azure::Core::Context controlling the request lifetime. '
-- content: ''
+    summary: A Azure::Core::Context controlling the request lifetime.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html" title="A long running operation to delete a key.">DeleteKeyOperation</a> '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html" title="A long running operation to delete a key.">DeleteKeyOperation</a>
 - section: '&#9670;&#160;GetResumeToken()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string Azure::Security::KeyVault::Keys::DeleteKeyOperation::GetResumeToken \n          (\n          )\n           const\n        \n      \n  \n  \ninlineoverride"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'std::string '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: std::string
 - section: '&#9670;&#160;Value()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Keys::DeletedKey Azure::Security::KeyVault::Keys::DeleteKeyOperation::Value \n          (\n          )\n           const\n        \n      \n  \n  \ninlineoverride"
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: The deleted key contains the recovery id if the key can be recovered.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A deleted key object. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/keyvault/keys/key_client_models.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  - summary: A deleted key object.
+- content: The documentation for this class was generated from the following file:inc/azure/keyvault/keys/key_client_models.hppGenerated by&#160;1.9.7

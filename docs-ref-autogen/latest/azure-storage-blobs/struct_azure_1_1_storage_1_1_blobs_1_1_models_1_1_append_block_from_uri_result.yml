@@ -1,193 +1,50 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Blobs::Models::AppendBlockFromUriResult
+title: Azure::Storage::Blobs::Models::AppendBlockFromUriResult Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageBlobsModelsAppendBlockFromUriResult
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a992f3d7948d8e301778f0a3a08aa6347">Azure::Storage::Blobs::AppendBlobClient::AppendBlockFromUri</a>.
-- content: ''
-- content: <code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
-- content: ''
+- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a992f3d7948d8e301778f0a3a08aa6347">Azure::Storage::Blobs::AppendBlobClient::AppendBlockFromUri</a>.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::ETag&#160;ETag
-
-
-    DateTime&#160;LastModified
-
-
-    Nullable&lt; ContentHash &gt;&#160;TransactionalContentHash
-
-
-    std::int64_t&#160;AppendOffset = std::int64_t()
-
-
-    std::int32_t&#160;CommittedBlockCount = std::int32_t()
-
-
-    Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;EncryptionKeySha256
-
-
-    Nullable&lt; std::string &gt;&#160;EncryptionScope
-
-
-    bool&#160;IsServerEncrypted = bool()
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.html#a1bd833e0cba79ac3023755924fca2490">ETag</a>
+    returnType: Azure::ETag 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.html#a2ebb4a5d82b17fddb21f32c704ef04c0">LastModified</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.html#ab2d375d2f691822ccc6ce08ba05196c2">TransactionalContentHash</a>
+    returnType: Nullable< ContentHash > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.html#a29e7e46455309e5092533ae8c590e101">AppendOffset</a> = std::int64_t()
+    returnType: std::int64_t 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.html#ac9ce0a638078222a10687138261087a2">CommittedBlockCount</a> = std::int32_t()
+    returnType: std::int32_t 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.html#ac74f9beb5e74cb35de060e216df98191">EncryptionKeySha256</a>
+    returnType: Nullable< std::vector< std::uint8_t > > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.html#a9d24c68c5f78986722eb2bc57a1da9b9">EncryptionScope</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.html#a383dd24682fc51d3d4f11affbaa9c1c6">IsServerEncrypted</a> = bool()
+    returnType: bool 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;AppendOffset'
-- content: ''
-- content: ''
-- content: ''
-- content: std::int64_t Azure::Storage::Blobs::Models::AppendBlockFromUriResult::AppendOffset = std::int64_t()
-- content: ''
-- content: ''
+  display: h2
 - content: This response header is returned only for append operations. It returns the offset at which the block was committed, in bytes.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;CommittedBlockCount'
-- content: ''
-- content: ''
-- content: ''
-- content: std::int32_t Azure::Storage::Blobs::Models::AppendBlockFromUriResult::CommittedBlockCount = std::int32_t()
-- content: ''
-- content: ''
+  display: h2
 - content: The number of committed blocks present in the blob. This header is returned only for append blobs.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;EncryptionKeySha256'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::AppendBlockFromUriResult::EncryptionKeySha256
-- content: ''
-- content: ''
+  display: h2
 - content: The SHA-256 hash of the encryption key used to encrypt the block. This header is only returned when the block was encrypted with a customer-provided key.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;EncryptionScope'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::AppendBlockFromUriResult::EncryptionScope
-- content: ''
-- content: ''
+  display: h2
 - content: Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ETag'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::ETag Azure::Storage::Blobs::Models::AppendBlockFromUriResult::ETag
-- content: ''
-- content: ''
+  display: h2
 - content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;IsServerEncrypted'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Storage::Blobs::Models::AppendBlockFromUriResult::IsServerEncrypted = bool()
-- content: ''
-- content: ''
+  display: h2
 - content: The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LastModified'
-- content: ''
-- content: ''
-- content: ''
-- content: DateTime Azure::Storage::Blobs::Models::AppendBlockFromUriResult::LastModified
-- content: ''
-- content: ''
+  display: h2
 - content: Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;TransactionalContentHash'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::AppendBlockFromUriResult::TransactionalContentHash
-- content: ''
-- content: ''
-- content: If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/blobs/rest_client.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity.The documentation for this struct was generated from the following file:inc/azure/storage/blobs/rest_client.hppGenerated by&#160;1.9.7

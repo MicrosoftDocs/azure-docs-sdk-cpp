@@ -1,240 +1,88 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::KeyVault::Keys::KeyVaultKey
+title: Azure::Security::KeyVault::Keys::KeyVaultKey Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-keyvault-keys
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityKeyVaultKeysKeyVaultKey
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     A key resource and its properties.  
-     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Security::KeyVault::Keys::KeyVaultKey:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#details">More...</a><code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Keys::KeyVaultKey:
 - section: Public Member Functions
-- content: >-
-    virtual&#160;&#160;~KeyVaultKey ()=defaultDestructor.  
-
-
-
-    &#160;&#160;KeyVaultKey ()=defaultConstruct an empty Key.  
-
-
-
-    &#160;&#160;KeyVaultKey (std::string name)Construct a new Key Vault Key object.  
-
-
-
-    std::string const &amp;&#160;&#160;Id () constGet the Key identifier.  
-
-
-
-    std::string const &amp;&#160;&#160;Name () constGets the name of the Key.  
-
-
-
-    KeyVaultKeyType const &amp;&#160;&#160;GetKeyType () constGet the Key Type.  
-
-
-
-    std::vector&lt; KeyOperation &gt; const &amp;&#160;&#160;KeyOperations () constGets the operations you can perform using the key.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#a5d2f0f80c542f7ba19fbecf4f29e465f">~KeyVaultKey</a> ()=default
+    summary: Destructor.  <br>
+    returnType: virtual 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#a6074a9ead56914735bfebe93260f2d37">KeyVaultKey</a> ()=default
+    summary: Construct an empty Key.  <br>
+    returnType:  
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#abff35e856b9a30b8b9e398c9ed0901ef">KeyVaultKey</a> (std::string name)
+    summary: Construct a new Key Vault Key object.  <br>
+    returnType:  
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#ac13080d67e71f32e538dce0319a18001">Id</a> () const
+    summary: Get the Key identifier.  <br>
+    returnType: std::string const & 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#aa96ca5a8cafee462af19dbc6e221cef7">Name</a> () const
+    summary: Gets the name of the Key.  <br>
+    returnType: std::string const & 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#abb115b5d0fc52c12f37b4e375f70a0de">GetKeyType</a> () const
+    summary: Get the Key Type.  <br>
+    returnType: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> const & 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#a5302296947e517eb010ff593346d05fe">KeyOperations</a> () const
+    summary: Gets the operations you can perform using the key.  <br>
+    returnType: std::vector< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> > const & 
 - section: Public Attributes
-- content: >-
-    JsonWebKey&#160;&#160;KeyThe cryptographic key, the key type, and the operations you can perform using the key.  
-
-
-
-    KeyProperties&#160;&#160;PropertiesThe additional properties.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#a4f365204c4cca9fdc878575b861b1aea">Key</a>
+    summary: The cryptographic key, the key type, and the operations you can perform using the key.  <br>
+    returnType: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html">JsonWebKey</a> 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html#a17f14597f3fd56fa01489fd1fefb4e6f">Properties</a>
+    summary: The additional properties.  <br>
+    returnType: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html">KeyProperties</a> 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;~KeyVaultKey()'
-- content: ''
-- content: ''
-- content: ''
-- content: "virtual Azure::Security::KeyVault::Keys::KeyVaultKey::~KeyVaultKey \n          (\n          )\n          \n        \n      \n  \n  \nvirtualdefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyVaultKey() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Keys::KeyVaultKey::KeyVaultKey \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyVaultKey() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Keys::KeyVaultKey::KeyVaultKey \n          (\n          std::string&#160;\n          name)\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: name
-    summary: 'The name of the key. '
-- content: ''
-- content: ''
-- content: ''
+    summary: The name of the key.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;GetKeyType()'
-- content: ''
-- content: ''
-- content: ''
-- content: "KeyVaultKeyType const  &amp; Azure::Security::KeyVault::Keys::KeyVaultKey::GetKeyType \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The type of the key. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The type of the key.
 - section: '&#9670;&#160;Id()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string const  &amp; Azure::Security::KeyVault::Keys::KeyVaultKey::Id \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The key ID. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The key ID.
 - section: '&#9670;&#160;KeyOperations()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::vector&lt; KeyOperation &gt; const  &amp; Azure::Security::KeyVault::Keys::KeyVaultKey::KeyOperations \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A vector with the supported operations for the key. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A vector with the supported operations for the key.
 - section: '&#9670;&#160;Name()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string const  &amp; Azure::Security::KeyVault::Keys::KeyVaultKey::Name \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The name of the key. '
-- content: ''
-- content: ''
-- content: ''
+  - summary: The name of the key.
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Key'
-- content: ''
-- content: ''
-- content: ''
-- content: JsonWebKey Azure::Security::KeyVault::Keys::KeyVaultKey::Key
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Properties'
-- content: ''
-- content: ''
-- content: ''
-- content: KeyProperties Azure::Security::KeyVault::Keys::KeyVaultKey::Properties
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/keyvault/keys/key_client_models.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: The documentation for this struct was generated from the following file:inc/azure/keyvault/keys/key_client_models.hppGenerated by&#160;1.9.7

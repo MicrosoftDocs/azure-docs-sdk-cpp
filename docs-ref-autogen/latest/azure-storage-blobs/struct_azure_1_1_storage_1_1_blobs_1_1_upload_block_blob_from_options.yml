@@ -1,139 +1,61 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Blobs::UploadBlockBlobFromOptions
+title: Azure::Storage::Blobs::UploadBlockBlobFromOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageBlobsUploadBlockBlobFromOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a400fd66a74a7fae192d4934332ed5321">Azure::Storage::Blobs::BlockBlobClient::UploadFrom</a>.
-- content: ''
-- content: <code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code>
-- content: ''
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a400fd66a74a7fae192d4934332ed5321">Azure::Storage::Blobs::BlockBlobClient::UploadFrom</a>.<code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Models::BlobHttpHeaders&#160;&#160;HttpHeadersThe standard HTTP header system properties to set. 
+  display: h2
+- apiList:
+  - declaration: <b>HttpHeaders</b>
+    summary: The standard HTTP header system properties to set. <br>
+    returnType: >-
+      <a id="a82de8ef403d66c0e27bb29603d2d0463" name="a82de8ef403d66c0e27bb29603d2d0463"></a>
 
+      <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_http_headers.html">Models::BlobHttpHeaders</a> 
+  - declaration: <b>Metadata</b>
+    summary: Name-value pairs associated with the blob as metadata. <br>
+    returnType: >-
+      <a id="af724c1f855c8386c125390ed54a3bc6d" name="af724c1f855c8386c125390ed54a3bc6d"></a>
 
+      Storage::Metadata 
+  - declaration: <b>Tags</b>
+    summary: The tags to set for this blob. <br>
+    returnType: >-
+      <a id="ae7c6f9f3aba469b72aa2bf98f44e4001" name="ae7c6f9f3aba469b72aa2bf98f44e4001"></a>
 
+      std::map< std::string, std::string > 
+  - declaration: <b>AccessTier</b>
+    summary: Indicates the tier to be set on blob. <br>
+    returnType: >-
+      <a id="ada88b80ee397b3c85f96873eb7277b36" name="ada88b80ee397b3c85f96873eb7277b36"></a>
 
-    Storage::Metadata&#160;&#160;MetadataName-value pairs associated with the blob as metadata. 
+      Azure::Nullable< <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.html">Models::AccessTier</a> > 
+  - declaration: ''
+    returnType: >-
+      <a id="a0461708a48420c035da6aed4adc99b31" name="a0461708a48420c035da6aed4adc99b31"></a>
 
-
-
-
-    std::map&lt; std::string, std::string &gt;&#160;&#160;TagsThe tags to set for this blob. 
-
-
-
-
-    Azure::Nullable&lt; Models::AccessTier &gt;&#160;&#160;AccessTierIndicates the tier to be set on blob. 
-
-
-
-
-    struct {&#160;
-
-
-
-    &#160;&#160;&#160;int64_t&#160;&#160;&#160;SingleUploadThreshold = 256 * 1024 * 1024&#160;&#160;Blob smaller than this will be uploaded with a single upload operation. This value cannot be larger than 5000 MiB. 
-
-
-
-
-    &#160;&#160;&#160;Azure::Nullable&lt; int64_t &gt;&#160;&#160;&#160;ChunkSize&#160;&#160;The maximum number of bytes in a single request. This value cannot be larger than 4000 MiB. 
-
-
-
-
-    &#160;&#160;&#160;int32_t&#160;&#160;&#160;Concurrency = 5&#160;&#160;The maximum number of threads that may be used in a parallel transfer. 
-
-
-
-    }&#160;&#160;TransferOptions&#160;Options for parallel transfer. 
-
-
-
-    Azure::Nullable&lt; Models::BlobImmutabilityPolicy &gt;&#160;ImmutabilityPolicy
-
-
-    Azure::Nullable&lt; bool &gt;&#160;HasLegalHold
-- content: ''
+      struct { 
+  - declaration: ''
+    summary: Blob smaller than this will be uploaded with a single upload operation. This value cannot be larger than 5000 MiB. <br>
+    returnType:    int64_t   <b>SingleUploadThreshold</b> = 256 * 1024 * 1024 
+  - declaration: ''
+    summary: The maximum number of bytes in a single request. This value cannot be larger than 4000 MiB. <br>
+    returnType:    Azure::Nullable< int64_t >   <b>ChunkSize</b> 
+  - declaration: ''
+    summary: The maximum number of threads that may be used in a parallel transfer. <br>
+    returnType:    int32_t   <b>Concurrency</b> = 5 
+  - declaration: <b>TransferOptions</b> 
+    summary: Options for parallel transfer. <br>
+    returnType: '} '
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_from_options.html#aab6f7ee48b49834550d700af330f5298">ImmutabilityPolicy</a>
+    returnType: Azure::Nullable< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy.html">Models::BlobImmutabilityPolicy</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_from_options.html#a1660c6c290e3688efe3ed087e8f98e8e">HasLegalHold</a>
+    returnType: Azure::Nullable< bool > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;HasLegalHold'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;bool&gt; Azure::Storage::Blobs::UploadBlockBlobFromOptions::HasLegalHold
-- content: ''
-- content: ''
+  display: h2
 - content: Indicates whether the blob has a legal hold.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ImmutabilityPolicy'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;Models::BlobImmutabilityPolicy&gt; Azure::Storage::Blobs::UploadBlockBlobFromOptions::ImmutabilityPolicy
-- content: ''
-- content: ''
-- content: Immutability policy to set on the blob.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/blobs/blob_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: Immutability policy to set on the blob.The documentation for this struct was generated from the following file:inc/azure/storage/blobs/blob_options.hppGenerated by&#160;1.9.7

@@ -1,423 +1,197 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Core::Amqp::Models::MessageProperties
+title: Azure::Core::Amqp::Models::MessageProperties Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core-amqp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureCoreAmqpModelsMessageProperties
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     Represents the immutable properties of an AMQP message.  
-     <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="amqp__properties_8hpp_source.html">amqp_properties.hpp</a>&gt;</code>
-- content: ''
+     <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#details">More...</a><code>#include &lt;<a href="amqp__properties_8hpp_source.html">amqp_properties.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;MessageProperties ()=defaultDefault constructor.  
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#ae105a05c696d58d94ee532f3e065fa45">MessageProperties</a> ()=default
+    summary: Default constructor.  <br>
+    returnType:  
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a2113c91bd1d405656383bdae8e11ac5b">~MessageProperties</a> ()=default
+    summary: Destructor.  <br>
+    returnType:  
+  - declaration: <b>MessageProperties</b> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> &&other)=default
+    summary: Move Constructor. <br>
+    returnType: >-
+      <a id="a33ff93970b74fd3015a4b0fd29a481c3" name="a33ff93970b74fd3015a4b0fd29a481c3"></a>
 
+       
+  - declaration: <b>operator=</b> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> &&other)=default
+    summary: Move Assignment operator. <br>
+    returnType: >-
+      <a id="af69d98a7feaabee392fd837519192146" name="af69d98a7feaabee392fd837519192146"></a>
 
+      <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> & 
+  - declaration: <b>MessageProperties</b> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> const &other)=default
+    summary: Copy Constructor. <br>
+    returnType: >-
+      <a id="a17f59f7dd0d41951281d971623811629" name="a17f59f7dd0d41951281d971623811629"></a>
 
-    &#160;&#160;~MessageProperties ()=defaultDestructor.  
+       
+  - declaration: <b>operator=</b> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> const &other)=default
+    summary: Copy Assignment operator. <br>
+    returnType: >-
+      <a id="a0117132e0c6fb0703b41ec455c89ac3f" name="a0117132e0c6fb0703b41ec455c89ac3f"></a>
 
-
-
-
-    &#160;&#160;MessageProperties (MessageProperties &amp;&amp;other)=defaultMove Constructor. 
-
-
-
-
-    MessageProperties &amp;&#160;&#160;operator= (MessageProperties &amp;&amp;other)=defaultMove Assignment operator. 
-
-
-
-
-    &#160;&#160;MessageProperties (MessageProperties const &amp;other)=defaultCopy Constructor. 
-
-
-
-
-    MessageProperties &amp;&#160;&#160;operator= (MessageProperties const &amp;other)=defaultCopy Assignment operator. 
-
-
-
-    bool&#160;&#160;operator== (MessageProperties const &amp;that) const noexceptCompare two message properties objects.  
-
-
-
-    bool&#160;&#160;ShouldSerialize () const noexceptShould this MessageProperties object be serialized.
+      <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> & 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a62bef3d909e3e178cfa5b52145cb6938">operator==</a> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> const &that) const noexcept
+    summary: Compare two message properties objects.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a34a525ce6059bef8579618618bdcfb97">ShouldSerialize</a> () const noexcept
+    summary: Should this <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object be serialized.  <br>
+    returnType: bool 
 - section: Static Public Member Functions
-- content: >-
-    static std::vector&lt; uint8_t &gt;&#160;&#160;Serialize (MessageProperties const &amp;properties)Serialize a MessageProperties object into a vector of bytes.  
-
-
-
-    static MessageProperties&#160;&#160;Deserialize (uint8_t const *data, size_t size)Deserialize a MessageProperties object from a vector of bytes.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#ac61d8ac28a8cd2c3c642b5e81270d983">Serialize</a> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> const &properties)
+    summary: Serialize a <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object into a vector of bytes.  <br>
+    returnType: static std::vector< uint8_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a031d29a25d10f5bbc12a2f94b89405a7">Deserialize</a> (uint8_t const *data, size_t size)
+    summary: Deserialize a <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object from a vector of bytes.  <br>
+    returnType: static <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> 
 - section: Public Attributes
-- content: >-
-    Nullable&lt; AmqpValue &gt;&#160;&#160;MessageIdThe message-id, if set, uniquely identifies a message within the message system. The message producer is usually responsible for setting the message-id in such a way that it is assured to be globally unique. A broker MAY discard a message as a duplicate if the value of the message-id matches that of a previously received message sent to the same node.  
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#ac02c58781c8e3cf4b9ecf65918031454">MessageId</a>
+    summary: The message-id, if set, uniquely identifies a message within the message system. The message producer is usually responsible for setting the message-id in such a way that it is assured to be globally unique. A broker MAY discard a message as a duplicate if the value of the message-id matches that of a previously received message sent to the same node.  <br>
+    returnType: Nullable< <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a2107fb94db44097732eab2bd48047a08">UserId</a>
+    summary: User ID.  <br>
+    returnType: Nullable< std::vector< uint8_t > > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a259a52af66937ea622d0ff5cf62c61de">To</a>
+    summary: The to field identifies the node that is the intended destination of the message.  <br>
+    returnType: Nullable< <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a24c55f080b159147463ccb206945622c">Subject</a>
+    summary: The subject of the message.  <br>
+    returnType: Nullable< std::string > 
+  - declaration: <b>CorrelationId</b>
+    summary: This is a client-specific id that can be used to mark or identify messages between clients. <br>
+    returnType: >-
+      <a id="a9d33fddfca4dfe2314807a7e578e4594" name="a9d33fddfca4dfe2314807a7e578e4594"></a>
 
+      Nullable< <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> > 
+  - declaration: <b>ReplyTo</b>
+    summary: The address of the node to send replies to. <br>
+    returnType: >-
+      <a id="a902a1e942fe754faf3c41b7df895d02d" name="a902a1e942fe754faf3c41b7df895d02d"></a>
 
+      Nullable< <a class="el" href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a274d2f1a5ae6f08f43d7180bc317803b">ContentType</a>
+    summary: The content-type field describes the payload type.  <br>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a51a7211ebd81e52554d85388ba638307">ContentEncoding</a>
+    summary: MIME Content Encoding.  <br>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a4767c3c8ac57aa89f1a7c0ff354b1ec6">AbsoluteExpiryTime</a>
+    summary: The absolute expiry time of the message.  <br>
+    returnType: Nullable< std::chrono::system_clock::time_point > 
+  - declaration: <b>CreationTime</b>
+    summary: the time when this message was created. <br>
+    returnType: >-
+      <a id="aeeb1e882d029362420a15470155ae473" name="aeeb1e882d029362420a15470155ae473"></a>
 
-    Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;&#160;UserIdUser ID.  
-
-
-
-    Nullable&lt; AmqpValue &gt;&#160;&#160;ToThe to field identifies the node that is the intended destination of the message.  
-
-
-
-    Nullable&lt; std::string &gt;&#160;&#160;SubjectThe subject of the message.  
-
-
-
-
-    Nullable&lt; AmqpValue &gt;&#160;&#160;CorrelationIdThis is a client-specific id that can be used to mark or identify messages between clients. 
-
-
-
-
-    Nullable&lt; AmqpValue &gt;&#160;&#160;ReplyToThe address of the node to send replies to. 
-
-
-
-    Nullable&lt; std::string &gt;&#160;&#160;ContentTypeThe content-type field describes the payload type.  
-
-
-
-    Nullable&lt; std::string &gt;&#160;&#160;ContentEncodingMIME Content Encoding.  
-
-
-
-    Nullable&lt; std::chrono::system_clock::time_point &gt;&#160;&#160;AbsoluteExpiryTimeThe absolute expiry time of the message.  
-
-
-
-
-    Nullable&lt; std::chrono::system_clock::time_point &gt;&#160;&#160;CreationTimethe time when this message was created. 
-
-
-
-    Nullable&lt; std::string &gt;&#160;&#160;GroupIdThe group this message belongs to.  
-
-
-
-    Nullable&lt; uint32_t &gt;&#160;&#160;GroupSequenceThe sequence-number of this message within its group .  
-
-
-
-    Nullable&lt; std::string &gt;&#160;&#160;ReplyToGroupIdThe group the reply message belongs to.
-- content: ''
-- content: ''
+      Nullable< std::chrono::system_clock::time_point > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a7af7aac183b5b9b9524029f4923fc662">GroupId</a>
+    summary: The group this message belongs to.  <br>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#ad4a79413f7ae45ae76fc04f04d8be081">GroupSequence</a>
+    summary: The sequence-number of this message within its group .  <br>
+    returnType: Nullable< uint32_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html#a7ede07bd770ba23c02bb671bdbaea607">ReplyToGroupId</a>
+    summary: The group the reply message belongs to.  <br>
+    returnType: Nullable< std::string > 
 - section: Detailed Description
-- content: ''
+  display: h2
 - content: The properties section is part of the bare message used for a range of features including reliable delivery, routing and security.
-- content: ''
-- content: ''
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;MessageProperties()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Core::Amqp::Models::MessageProperties::MessageProperties \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
+  display: h2
 - content: Creates an empty <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> object.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;~MessageProperties()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Core::Amqp::Models::MessageProperties::~MessageProperties \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
+  display: h2
 - content: Destroys the <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html">MessageProperties</a> object.
-- content: ''
-- content: ''
-- content: ''
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Deserialize()'
-- content: ''
-- content: ''
-- content: ''
-- content: "MessageProperties Azure::Core::Amqp::Models::MessageProperties::Deserialize \n          (\n          uint8_t const *&#160;\n          data, \n        \n        \n          \n          \n          size_t&#160;\n          size&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: data
-    summary: 'The vector of bytes representing the serialized <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object. '
+    summary: The vector of bytes representing the serialized <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object.
   - name: size
-    summary: 'The size of the vector of bytes. '
-- content: ''
+    summary: The size of the vector of bytes.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The deserialized <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The deserialized <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object.
 - section: '&#9670;&#160;operator==()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::Core::Amqp::Models::MessageProperties::operator== \n          (\n          MessageProperties const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \nnoexcept"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: that
-    summary: 'The other message properties object to compare with. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: The other message properties object to compare with.
 - section: '&#9670;&#160;Serialize()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::vector&lt; uint8_t &gt; Azure::Core::Amqp::Models::MessageProperties::Serialize \n          (\n          MessageProperties const &amp;&#160;\n          properties)\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: properties
-    summary: 'The <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object to serialize. '
-- content: ''
+    summary: The <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object to serialize.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A vector of bytes representing the serialized <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A vector of bytes representing the serialized <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties.html" title="Represents the immutable properties of an AMQP message.">MessageProperties</a> object.
 - section: '&#9670;&#160;ShouldSerialize()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::Core::Amqp::Models::MessageProperties::ShouldSerialize \n          (\n          )\n           const\n        \n      \n  \n  \nnoexcept"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'true if the object should be serialized, false otherwise. '
-- content: ''
-- content: ''
-- content: ''
+  - summary: true if the object should be serialized, false otherwise.
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;AbsoluteExpiryTime'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::chrono::system_clock::time_point&gt; Azure::Core::Amqp::Models::MessageProperties::AbsoluteExpiryTime
-- content: ''
-- content: ''
+  display: h2
 - content: An absolute time when this message is considered to be expired.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ContentEncoding'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Core::Amqp::Models::MessageProperties::ContentEncoding
-- content: ''
-- content: ''
-- content: The content-encoding property is used as a modifier to the content-type. When present, its value indicates what additional content encodings have been applied to the application-data, and thus what decoding mechanisms need to be applied in order to obtain the media-type referenced by the content-type header field.
-- content: ''
-- content: Content-encoding is primarily used to allow a document to be compressed without losing the identity of its underlying content type.
-- content: ''
-- content: Content-encodings are to be interpreted as per section 3.5 of RFC 2616 [RFC2616]. Valid content-encodings are registered at IANA [IANAHTTPPARAMS].
-- content: ''
-- content: The content-encoding MUST NOT be set when the application-data section is other than data. The binary representation of all other application-data section types is defined completely in terms of the AMQP type system.
-- content: ''
-- content: Implementations MUST NOT use the identity encoding. Instead, implementations SHOULD NOT set this property. Implementations SHOULD NOT use the compress encoding, except as to remain compatible with messages originally sent with other protocols, e.g. HTTP or SMTP.
-- content: ''
-- content: Implementations SHOULD NOT specify multiple content-encoding values except as to be compatible with messages originally sent with other protocols, e.g. HTTP or SMTP.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: The content-encoding property is used as a modifier to the content-type. When present, its value indicates what additional content encodings have been applied to the application-data, and thus what decoding mechanisms need to be applied in order to obtain the media-type referenced by the content-type header field.Content-encoding is primarily used to allow a document to be compressed without losing the identity of its underlying content type.Content-encodings are to be interpreted as per section 3.5 of RFC 2616 [RFC2616]. Valid content-encodings are registered at IANA [IANAHTTPPARAMS].The content-encoding MUST NOT be set when the application-data section is other than data. The binary representation of all other application-data section types is defined completely in terms of the AMQP type system.Implementations MUST NOT use the identity encoding. Instead, implementations SHOULD NOT set this property. Implementations SHOULD NOT use the compress encoding, except as to remain compatible with messages originally sent with other protocols, e.g. HTTP or SMTP.Implementations SHOULD NOT specify multiple content-encoding values except as to be compatible with messages originally sent with other protocols, e.g. HTTP or SMTP.
 - section: '&#9670;&#160;ContentType'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Core::Amqp::Models::MessageProperties::ContentType
-- content: ''
-- content: ''
-- content: "The RFC-2046 <a href=\"http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html#anchor-RFC2046\">RFC2046</a> MIME type for the message's application-data section (body). As per RFC-2046 [RFC2046] this can contain a charset parameter defining the character encoding used: e.g., 'text/plain; charset=\"utf-8\"'."
-- content: ''
-- content: For clarity, as per section 7.2.1 of RFC-2616 <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html#anchor-RFC2046">RFC2046</a>, where the content type is unknown the content-type SHOULD NOT be set. This allows the recipient the opportunity to determine the actual type. Where the section is known to be truly opaque binary data, the content-type SHOULD be set to application/octet-stream.
-- content: ''
-- content: When using an application-data section with a section code other than data, content-type SHOULD NOT be set
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: "The RFC-2046 <a href=\"http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html#anchor-RFC2046\">RFC2046</a> MIME type for the message's application-data section (body). As per RFC-2046 [RFC2046] this can contain a charset parameter defining the character encoding used: e.g., 'text/plain; charset=\"utf-8\"'.For clarity, as per section 7.2.1 of RFC-2616 <a href=\"http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html#anchor-RFC2046\">RFC2046</a>, where the content type is unknown the content-type SHOULD NOT be set. This allows the recipient the opportunity to determine the actual type. Where the section is known to be truly opaque binary data, the content-type SHOULD be set to application/octet-stream.When using an application-data section with a section code other than data, content-type SHOULD NOT be set"
 - section: '&#9670;&#160;GroupId'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Core::Amqp::Models::MessageProperties::GroupId
-- content: ''
-- content: ''
+  display: h2
 - content: Identifies the group the message belongs to.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;GroupSequence'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;uint32_t&gt; Azure::Core::Amqp::Models::MessageProperties::GroupSequence
-- content: ''
-- content: ''
+  display: h2
 - content: The relative position of this message within its group.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;MessageId'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;AmqpValue&gt; Azure::Core::Amqp::Models::MessageProperties::MessageId
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: The message producer is usually responsible for setting the message-id in such a way that it is assured to be globally unique.
 - section: '&#9670;&#160;ReplyToGroupId'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Core::Amqp::Models::MessageProperties::ReplyToGroupId
-- content: ''
-- content: ''
+  display: h2
 - content: This is a client-specific id that is used so that client can send replies to this message to a specific group
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Subject'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::string&gt; Azure::Core::Amqp::Models::MessageProperties::Subject
-- content: ''
-- content: ''
+  display: h2
 - content: A common field for summary information about the message content and purpose.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;To'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;AmqpValue&gt; Azure::Core::Amqp::Models::MessageProperties::To
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: A message with no to field is interpreted as being addressed to the implied "anonymous" node.
 - section: '&#9670;&#160;UserId'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::vector&lt;uint8_t&gt; &gt; Azure::Core::Amqp::Models::MessageProperties::UserId
-- content: ''
-- content: ''
-- content: The identity of the user responsible for producing the message. The client sets this value, and it MAY be authenticated by intermediaries.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following files:'
+  display: h2
 - content: >-
-    inc/azure/core/amqp/models/amqp_properties.hpp
+    The identity of the user responsible for producing the message. The client sets this value, and it MAY be authenticated by intermediaries.The documentation for this struct was generated from the following files:inc/azure/core/amqp/models/amqp_properties.hpp
 
-    src/models/amqp_properties.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/models/amqp_properties.cppGenerated by&#160;1.9.7

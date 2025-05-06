@@ -1,207 +1,74 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::KeyVault::Keys::CreateEcKeyOptions
+title: Azure::Security::KeyVault::Keys::CreateEcKeyOptions Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-keyvault-keys
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityKeyVaultKeysCreateEcKeyOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     The properties needed to create an Elliptic Curve key.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_ec_key_options.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="key__client__options_8hpp_source.html">key_client_options.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Security::KeyVault::Keys::CreateEcKeyOptions:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_ec_key_options.html#details">More...</a><code>#include &lt;<a href="key__client__options_8hpp_source.html">key_client_options.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Keys::CreateEcKeyOptions:
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;CreateEcKeyOptions (std::string const &amp;name, bool hardwareProtected=false)Create a Ec Key Options object.  
-
-
-
-    std::string const &amp;&#160;&#160;GetName () constGets the name of the key to create.  
-
-
-
-    KeyVaultKeyType&#160;&#160;GetKeyType () constGets the key type to create, including Ec and EcHsm.  
-
-
-
-    bool&#160;&#160;GetHardwareProtected () constGets a value indicating whether to create a hardware-protected key in a hardware security module (HSM).  
-
-
-
-
-    virtual&#160;~CreateKeyOptions ()=default
-
-    &#160;Destructor.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_ec_key_options.html#aa7c54198ecbad0bf528a6d141ec7ad19">CreateEcKeyOptions</a> (std::string const &name, bool hardwareProtected=false)
+    summary: Create a Ec Key Options object.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_ec_key_options.html#a37d70c53fd3620cf50e47e9bdea3aa22">GetName</a> () const
+    summary: Gets the name of the key to create.  <br>
+    returnType: std::string const & 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_ec_key_options.html#aecb2b79bccc4982a8a09a5f7744bd89b">GetKeyType</a> () const
+    summary: Gets the key type to create, including Ec and EcHsm.  <br>
+    returnType: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_ec_key_options.html#aba20041a13d8fd8e4b663a4c187e9666">GetHardwareProtected</a> () const
+    summary: Gets a value indicating whether to create a hardware-protected key in a hardware security module (HSM).  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a378292547e78fb7c5d377322f0923341">~CreateKeyOptions</a> ()=default
+    returnType: virtual 
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; KeyCurveName &gt;&#160;&#160;CurveNameGets or sets the elliptic curve name.  
-
-
-
-
-    std::vector&lt; KeyOperation &gt;&#160;KeyOperations
-
-    &#160;Define the supported operations for the key.  
-
-
-    Azure::Nullable&lt; Azure::DateTime &gt;&#160;NotBefore
-
-    &#160;Indicate when the key will be valid and can be used for cryptographic operations.  
-
-
-    Azure::Nullable&lt; Azure::DateTime &gt;&#160;ExpiresOn
-
-    &#160;Indicate when the key will expire and cannot be used for cryptographic operations.  
-
-
-    Azure::Nullable&lt; bool &gt;&#160;Enabled
-
-    &#160;Indicate whether the key is enabled and useable for cryptographic operations.  
-
-
-    std::unordered_map&lt; std::string, std::string &gt;&#160;Tags
-
-    &#160;Specific metadata about the key.  
-
-
-    Azure::Nullable&lt; KeyReleasePolicy &gt;&#160;ReleasePolicy
-
-    &#160;The policy rules under which the key can be exported.  
-
-
-    Azure::Nullable&lt; bool &gt;&#160;Exportable
-
-    &#160;Indicate if the private key can be exported.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_ec_key_options.html#afa58ded17115b33a84867bbf8ffbffac">CurveName</a>
+    summary: Gets or sets the elliptic curve name.  <br>
+    returnType: Azure::Nullable< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_curve_name.html">KeyCurveName</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a41ab95d047874549a7defd402af45875">KeyOperations</a>
+    returnType: std::vector< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#ab432cfe1d18736ab9a015afd1e6ce7de">NotBefore</a>
+    returnType: Azure::Nullable< Azure::DateTime > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a7045e14e4ad196730dda5a3cf3135def">ExpiresOn</a>
+    returnType: Azure::Nullable< Azure::DateTime > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a239b6546652d15f63035a620caaa320f">Enabled</a>
+    returnType: Azure::Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a1ccecc2246ffd9bc437c5b74f5d9d99b">Tags</a>
+    returnType: std::unordered_map< std::string, std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#af29f98452b74bc7fc53f0efa9e936524">ReleasePolicy</a>
+    returnType: Azure::Nullable< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_release_policy.html">KeyReleasePolicy</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a43e1fe409a9686202641c692c4e3213d">Exportable</a>
+    returnType: Azure::Nullable< bool > 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CreateEcKeyOptions()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Keys::CreateEcKeyOptions::CreateEcKeyOptions \n          (\n          std::string const &amp;&#160;\n          name, \n        \n        \n          \n          \n          bool&#160;\n          hardwareProtected = false&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: name
-    summary: 'Name of the key to create. '
+    summary: Name of the key to create.
   - name: hardwareProtected
-    summary: '<code>true</code> to create hardware-protected key in a hardware security module (HSM). The default is false to create a software key. '
-- content: ''
-- content: ''
-- content: ''
+    summary: <code>true</code> to create hardware-protected key in a hardware security module (HSM). The default is false to create a software key.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;GetHardwareProtected()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::Security::KeyVault::Keys::CreateEcKeyOptions::GetHardwareProtected \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;GetKeyType()'
-- content: ''
-- content: ''
-- content: ''
-- content: "KeyVaultKeyType Azure::Security::KeyVault::Keys::CreateEcKeyOptions::GetKeyType \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;GetName()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string const  &amp; Azure::Security::KeyVault::Keys::CreateEcKeyOptions::GetName \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CurveName'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;KeyCurveName&gt; Azure::Security::KeyVault::Keys::CreateEcKeyOptions::CurveName
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/keyvault/keys/key_client_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: See <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_curve_name.html" title="Elliptic Curve Cryptography (ECC) curve names.">Azure::Security::KeyVault::Keys::KeyCurveName</a> for possible values.
+- content: The documentation for this class was generated from the following file:inc/azure/keyvault/keys/key_client_options.hppGenerated by&#160;1.9.7

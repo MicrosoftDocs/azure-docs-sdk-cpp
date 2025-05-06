@@ -1,94 +1,45 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::Attestation::Models::AttestationType
+title: Azure::Security::Attestation::Models::AttestationType Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-attestation
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityAttestationModelsAttestationType
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: The <a href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html">AttestationType</a> type represent a Trusted Execution Environment supported by the attestation service.
-- content: ''
-- content: <code>#include &lt;<a href="attestation__client__models_8hpp_source.html">attestation_client_models.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Security::Attestation::Models::AttestationType:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+- content: 'The <a href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html">AttestationType</a> type represent a Trusted Execution Environment supported by the attestation service.<code>#include &lt;<a href="attestation__client__models_8hpp_source.html">attestation_client_models.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::Attestation::Models::AttestationType:'
 - section: Public Member Functions
-- content: '&#160;&#160;AttestationType (std::string attestationType)Construct a new AttestationType object.  More...'
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html#a2a866259bbf26ed42daad76735d0a5f5">AttestationType</a> (std::string attestationType)
+    summary: Construct a new <a class="el" href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html" title="The AttestationType type represent a Trusted Execution Environment supported by the attestation servi...">AttestationType</a> object.  <a href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html#a2a866259bbf26ed42daad76735d0a5f5">More...</a><br>
+    returnType:  
 - section: Static Public Attributes
-- content: >-
-    static AZ_ATTESTATION_DLLEXPORT const AttestationType&#160;&#160;SgxEnclaveSpecifies that this should apply to SGX enclaves. 
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html#a8ebf9d7b67130f07b7c10c8087d53f29">SgxEnclave</a>
+    summary: Specifies that this should apply to SGX enclaves. <br>
+    returnType: >-
+      <a id="a8ebf9d7b67130f07b7c10c8087d53f29"></a>
 
+      static <a class="el" href="dll__import__export_8hpp.html#a7642c79688bb0f1befd00cf55985d511">AZ_ATTESTATION_DLLEXPORT</a> const <a class="el" href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html">AttestationType</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html#af6af3975e947f5faf455f736e47062bd">OpenEnclave</a>
+    summary: Specifies that this should apply to SGX enclaves using the OpenEnclave APIs. <br>
+    returnType: >-
+      <a id="af6af3975e947f5faf455f736e47062bd"></a>
 
+      static <a class="el" href="dll__import__export_8hpp.html#a7642c79688bb0f1befd00cf55985d511">AZ_ATTESTATION_DLLEXPORT</a> const <a class="el" href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html">AttestationType</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html#a39cf142cc207b361ba9142855c9e8357">Tpm</a>
+    summary: Specifies that this should apply to TPM enclaves. <br>
+    returnType: >-
+      <a id="a39cf142cc207b361ba9142855c9e8357"></a>
 
-
-    static AZ_ATTESTATION_DLLEXPORT const AttestationType&#160;&#160;OpenEnclaveSpecifies that this should apply to SGX enclaves using the OpenEnclave APIs. 
-
-
-
-
-    static AZ_ATTESTATION_DLLEXPORT const AttestationType&#160;&#160;TpmSpecifies that this should apply to TPM enclaves.
-- content: ''
+      static <a class="el" href="dll__import__export_8hpp.html#a7642c79688bb0f1befd00cf55985d511">AZ_ATTESTATION_DLLEXPORT</a> const <a class="el" href="class_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_type.html">AttestationType</a> 
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&nbsp;AttestationType()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::Attestation::Models::AttestationType::AttestationType \n          (\n          std::string&#160;\n          attestationType)\n          \n        \n      \n  \n  \ninlineexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: attestationType
-    summary: 'The string attestationType used for the attestation policy operation. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+    summary: The string attestationType used for the attestation policy operation.
 - content: >-
-    inc/azure/attestation/attestation_client_models.hpp
+    The documentation for this class was generated from the following files:inc/azure/attestation/attestation_client_models.hpp
 
-    src/attestation_administration_client.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by &#160;
-- content: ''
-- content: 1.9.1
-- content: ''
-- content: ''
-- content: ''
+    src/attestation_administration_client.cppGenerated by &#160;1.9.1

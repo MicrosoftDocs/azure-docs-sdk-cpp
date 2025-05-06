@@ -1,144 +1,52 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Core::Diagnostics::Logger
+title: Azure::Core::Diagnostics::Logger Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureCoreDiagnosticsLogger
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Log message handler.
-- content: ''
-- content: <code>#include &lt;<a href="logger_8hpp_source.html">logger.hpp</a>&gt;</code>
-- content: ''
+- content: Log message handler.<code>#include &lt;<a href="logger_8hpp_source.html">logger.hpp</a>&gt;</code>
 - section: Public Types
-- content: >-
-    enum class &#160;&#160;Level : int { Verbose = 1
+  display: h2
+- apiList:
+  - declaration: >-
+      <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">Level</a> : int { <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569ad4a9fa383ab700c5bdd6f31cf7df0faf">Verbose</a> = 1
 
-    , Informational = 2
+      , <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569a5391f9a882a54c787b206138ed6d28b0">Informational</a> = 2
 
-    , Warning = 3
+      , <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569a0eaadb4fcb48a0a0ed7bc9868be9fbaa">Warning</a> = 3
 
-    , Error = 4
-     }Log message level.  More...
+      , <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569a902b0d55fddef6f8d651fe1035b7d4bd">Error</a> = 4
+       }
+    summary: Log message level.  <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">More...</a><br>
+    returnType: enum class  
 - section: Static Public Member Functions
-- content: >-
-    static void&#160;&#160;SetListener (std::function&lt; void(Level level, std::string const &amp;message)&gt; listener)Sets the function that will be invoked to report an Azure SDK log message.  
-
-
-
-    static void&#160;&#160;SetLevel (Level level)Sets the log message level an application is interested in receiving.
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#a6e5b3340f691b3003ce0c0f4354d74b3">SetListener</a> (std::function< void(<a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">Level</a> level, std::string const &message)> listener)
+    summary: Sets the function that will be invoked to report an <a class="el" href="namespace_azure.html" title="Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.">Azure</a> SDK log message.  <br>
+    returnType: static void 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#a04c04d487a84eb71da1951acff3a6660">SetLevel</a> (<a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">Level</a> level)
+    summary: Sets the log message level an application is interested in receiving.  <br>
+    returnType: static void 
 - section: Member Enumeration Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Level'
-- content: ''
-- content: ''
-- content: ''
-- content: "enum class Azure::Core::Diagnostics::Logger::Level : int\n        \n      \n  \n  \nstrong"
-- content: ''
-- content: ''
-- content: >-
-    EnumeratorVerbose&#160;Logging level for detailed troubleshooting scenarios. 
-
-
-    Informational&#160;Logging level when a function operates normally. 
-
-
-    Warning&#160;Logging level when a function fails to perform its intended task. 
-
-
-    Error&#160;Logging level for failures that the application is unlikely to recover from.
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;SetLevel()'
-- content: ''
-- content: ''
-- content: ''
-- content: "void Logger::SetLevel \n          (\n          Logger::Level&#160;\n          level)\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: level
-    summary: 'The most verbose level to receive log messages for. Least verbose levels will be included, more verbose levels will be not. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: The most verbose level to receive log messages for. Least verbose levels will be included, more verbose levels will be not.
 - section: '&#9670;&#160;SetListener()'
-- content: ''
-- content: ''
-- content: ''
-- content: "void Logger::SetListener \n          (\n          std::function&lt; void(Level level, std::string const &amp;message)&gt;&#160;\n          listener)\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: listener
-    summary: 'A callback function that will be invoked when the SDK reports a log message. If <code>nullptr</code>, no function will be invoked. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+    summary: A callback function that will be invoked when the SDK reports a log message. If <code>nullptr</code>, no function will be invoked.
 - content: >-
-    inc/azure/core/diagnostics/logger.hpp
+    The documentation for this class was generated from the following files:inc/azure/core/diagnostics/logger.hpp
 
-    src/logger.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/logger.cppGenerated by&#160;1.9.7

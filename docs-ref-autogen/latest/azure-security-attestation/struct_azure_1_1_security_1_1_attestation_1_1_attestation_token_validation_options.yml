@@ -1,178 +1,58 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::Attestation::AttestationTokenValidationOptions
+title: Azure::Security::Attestation::AttestationTokenValidationOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-attestation
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityAttestationAttestationTokenValidationOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: The <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html">AttestationTokenValidationOptions</a> represents a set of options which control how attestation tokens are validated.
-- content: ''
-- content: <code>#include &lt;<a href="attestation__client__options_8hpp_source.html">attestation_client_options.hpp</a>&gt;</code>
-- content: ''
+- content: The <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html">AttestationTokenValidationOptions</a> represents a set of options which control how attestation tokens are validated.<code>#include &lt;<a href="attestation__client__options_8hpp_source.html">attestation_client_options.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    bool&#160;&#160;ValidateToken {true}Controls whether attestation tokens are validated at all.  More...
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a48a64cf1f96045b9b18c18f2c1d2ed4f">ValidateToken</a> {true}
+    summary: Controls whether attestation tokens are validated at all.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a48a64cf1f96045b9b18c18f2c1d2ed4f">More...</a><br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a0b8609e9b28c8cb6c401141b130fe131">ValidateSigner</a> {true}
+    summary: Controls whether the signature for the attestation token should be validated.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a0b8609e9b28c8cb6c401141b130fe131">More...</a><br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a9415005cc0fedef1bf7d9c126ebe0ccc">ValidateExpirationTime</a> {true}
+    summary: Controls whether the attestation token expiration time is checked.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a9415005cc0fedef1bf7d9c126ebe0ccc">More...</a><br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#abe7b66fd7dbf5ccaa44d0e6afc7b7cba">ValidateNotBeforeTime</a> {true}
+    summary: Controls whether or not the attestation token start time is checked.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#abe7b66fd7dbf5ccaa44d0e6afc7b7cba">More...</a><br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a21113f423738b2b13012a89167fa2c70">ValidateIssuer</a> {false}
+    summary: Controls whether the issuer of the attestation token is checked.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a21113f423738b2b13012a89167fa2c70">More...</a><br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a9329d33326d02a2ef2737c06cbfb8ff7">ExpectedIssuer</a>
+    summary: The expected issuer for this attestation token.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a9329d33326d02a2ef2737c06cbfb8ff7">More...</a><br>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#ab3ca465c366c22884523330cadabe558">TimeValidationSlack</a> {0}
+    summary: The slack used when comparing two time elements. <br>
+    returnType: >-
+      <a id="ab3ca465c366c22884523330cadabe558"></a>
 
-
-
-    bool&#160;&#160;ValidateSigner {true}Controls whether the signature for the attestation token should be validated.  More...
-
-
-
-    bool&#160;&#160;ValidateExpirationTime {true}Controls whether the attestation token expiration time is checked.  More...
-
-
-
-    bool&#160;&#160;ValidateNotBeforeTime {true}Controls whether or not the attestation token start time is checked.  More...
-
-
-
-    bool&#160;&#160;ValidateIssuer {false}Controls whether the issuer of the attestation token is checked.  More...
-
-
-
-    std::string&#160;&#160;ExpectedIssuerThe expected issuer for this attestation token.  More...
-
-
-
-
-    std::chrono::seconds&#160;&#160;TimeValidationSlack {0}The slack used when comparing two time elements. 
-
-
-
-    TokenValidationCallbackFn&#160;&#160;ValidationCallbackThe TokenValidationCallback specifies a callback function which can perform additional token validation actions.  More...
-- content: ''
+      std::chrono::seconds 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#ae16bce0e351d223464b3c2bb7c36d04b">ValidationCallback</a>
+    summary: The TokenValidationCallback specifies a callback function which can perform additional token validation actions.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#ae16bce0e351d223464b3c2bb7c36d04b">More...</a><br>
+    returnType: <a class="el" href="attestation__client__options_8hpp.html#a12cdbdc768baad3638094b5322434fbf">TokenValidationCallbackFn</a> 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&nbsp;ExpectedIssuer'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Security::Attestation::AttestationTokenValidationOptions::ExpectedIssuer
-- content: ''
-- content: ''
+  display: h2
 - content: Ignored unless <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a21113f423738b2b13012a89167fa2c70">AttestationTokenValidationOptions::ValidateIssuer</a> is true.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&nbsp;ValidateExpirationTime'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Security::Attestation::AttestationTokenValidationOptions::ValidateExpirationTime {true}
-- content: ''
-- content: ''
+  display: h2
 - content: 'Default value: true.'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&nbsp;ValidateIssuer'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Security::Attestation::AttestationTokenValidationOptions::ValidateIssuer {false}
-- content: ''
-- content: ''
+  display: h2
 - content: 'Default value: false.'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&nbsp;ValidateNotBeforeTime'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Security::Attestation::AttestationTokenValidationOptions::ValidateNotBeforeTime {true}
-- content: ''
-- content: ''
+  display: h2
 - content: 'Default value: true.'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&nbsp;ValidateSigner'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Security::Attestation::AttestationTokenValidationOptions::ValidateSigner {true}
-- content: ''
-- content: ''
+  display: h2
 - content: 'Default Value: true:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&nbsp;ValidateToken'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Security::Attestation::AttestationTokenValidationOptions::ValidateToken {true}
-- content: ''
-- content: ''
+  display: h2
 - content: 'Default value: true.'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&nbsp;ValidationCallback'
-- content: ''
-- content: ''
-- content: ''
-- content: TokenValidationCallbackFn Azure::Security::Attestation::AttestationTokenValidationOptions::ValidationCallback
-- content: ''
-- content: ''
-- content: This callback is called to allow the client to perform additional validations of the attestation token beyond those normally performed by the attestation service.
-- content: ''
-- content: Possible additional validations include validating the attestation token certificate with the <a href="https://openenclave.github.io/openenclave/api/enclave_8h_a3b75c5638360adca181a0d945b45ad86.html#a3b75c5638360adca181a0d945b45ad86">oe_verify_attestation_certificate API</a>, verifying that the certificate issuer matches the expected certificate issuer, etc.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/attestation/attestation_client_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by &#160;
-- content: ''
-- content: 1.9.1
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: This callback is called to allow the client to perform additional validations of the attestation token beyond those normally performed by the attestation service.Possible additional validations include validating the attestation token certificate with the <a href="https://openenclave.github.io/openenclave/api/enclave_8h_a3b75c5638360adca181a0d945b45ad86.html#a3b75c5638360adca181a0d945b45ad86">oe_verify_attestation_certificate API</a>, verifying that the certificate issuer matches the expected certificate issuer, etc.The documentation for this struct was generated from the following file:inc/azure/attestation/attestation_client_options.hppGenerated by &#160;1.9.1

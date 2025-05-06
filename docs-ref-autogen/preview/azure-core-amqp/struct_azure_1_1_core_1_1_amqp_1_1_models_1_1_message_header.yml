@@ -1,278 +1,162 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Core::Amqp::Models::MessageHeader
+title: Azure::Core::Amqp::Models::MessageHeader Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core-amqp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureCoreAmqpModelsMessageHeader
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     The message header section carries standard delivery details about the transfer of a message through the AMQP network.  
-     <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="amqp__header_8hpp_source.html">amqp_header.hpp</a>&gt;</code>
-- content: ''
+     <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#details">More...</a><code>#include &lt;<a href="amqp__header_8hpp_source.html">amqp_header.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;MessageHeader ()=defaultDefault constructor. 
+  display: h2
+- apiList:
+  - declaration: <b>MessageHeader</b> ()=default
+    summary: Default constructor. <br>
+    returnType: >-
+      <a id="aebd63a9a80a499519fc4a900f5521998" name="aebd63a9a80a499519fc4a900f5521998"></a>
 
+       
+  - declaration: <b>~MessageHeader</b> ()=default
+    summary: Destructor. <br>
+    returnType: >-
+      <a id="a5ef6ecaac594401fb09f3d731b10b3f8" name="a5ef6ecaac594401fb09f3d731b10b3f8"></a>
 
+       
+  - declaration: <b>MessageHeader</b> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> &&other)=default
+    summary: Move constructor. <br>
+    returnType: >-
+      <a id="a2997b8a720342bcf0ca3b88649746409" name="a2997b8a720342bcf0ca3b88649746409"></a>
 
+       
+  - declaration: <b>operator=</b> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> &&other)=default
+    summary: Move assignment operator. <br>
+    returnType: >-
+      <a id="afdc33564e1d03e866fb950ece6d75401" name="afdc33564e1d03e866fb950ece6d75401"></a>
 
-    &#160;&#160;~MessageHeader ()=defaultDestructor. 
+      <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> & 
+  - declaration: <b>MessageHeader</b> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> const &other)=default
+    summary: Copy constructor. <br>
+    returnType: >-
+      <a id="a5ef7a7bd29e6a564e81885c631396a1e" name="a5ef7a7bd29e6a564e81885c631396a1e"></a>
 
+       
+  - declaration: <b>operator=</b> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> const &other)=default
+    summary: Copy assignment operator. <br>
+    returnType: >-
+      <a id="ab2c9cd841e4123c1d1bd48d385ecb085" name="ab2c9cd841e4123c1d1bd48d385ecb085"></a>
 
-
-
-    &#160;&#160;MessageHeader (MessageHeader &amp;&amp;other)=defaultMove constructor. 
-
-
-
-
-    MessageHeader &amp;&#160;&#160;operator= (MessageHeader &amp;&amp;other)=defaultMove assignment operator. 
-
-
-
-
-    &#160;&#160;MessageHeader (MessageHeader const &amp;other)=defaultCopy constructor. 
-
-
-
-
-    MessageHeader &amp;&#160;&#160;operator= (MessageHeader const &amp;other)=defaultCopy assignment operator. 
-
-
-
-    bool&#160;&#160;operator== (MessageHeader const &amp;that) const noexceptCompare two AMQP Message Headers for equality.  
-
-
-
-    bool&#160;&#160;ShouldSerialize () const noexceptReturns true if this MessageHeader should be serialized into an AMQP message.
+      <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> & 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#a5431446cbd4e03f5de910d4d3733c221">operator==</a> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> const &that) const noexcept
+    summary: Compare two AMQP Message Headers for equality.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#af5339681b0757afcc2d82d424c3b059a">ShouldSerialize</a> () const noexcept
+    summary: Returns true if this <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html" title="The message header section carries standard delivery details about the transfer of a message through ...">MessageHeader</a> should be serialized into an AMQP message.  <br>
+    returnType: bool 
 - section: Static Public Member Functions
-- content: >-
-    static size_t&#160;&#160;GetSerializedSize (MessageHeader const &amp;messageHeader)Returns the serialized size of this MessageHeader.  
-
-
-
-    static std::vector&lt; uint8_t &gt;&#160;&#160;Serialize (MessageHeader const &amp;messageHeader)Serializes this MessageHeader into a vector of bytes.  
-
-
-
-    static MessageHeader&#160;&#160;Deserialize (std::uint8_t const *data, size_t size)Deserializes a vector of bytes into a MessageHeader.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#ac1ae94d1b15c36f8ba79da30d7bca133">GetSerializedSize</a> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> const &messageHeader)
+    summary: Returns the serialized size of this <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html" title="The message header section carries standard delivery details about the transfer of a message through ...">MessageHeader</a>.  <br>
+    returnType: static size_t 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#a5d98ecdc9b12e04a2dc04528b2dc2fb0">Serialize</a> (<a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> const &messageHeader)
+    summary: Serializes this <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html" title="The message header section carries standard delivery details about the transfer of a message through ...">MessageHeader</a> into a vector of bytes.  <br>
+    returnType: static std::vector< uint8_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#aad697f201d5332c6c06d1b85bc79ea00">Deserialize</a> (std::uint8_t const *data, size_t size)
+    summary: Deserializes a vector of bytes into a <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html" title="The message header section carries standard delivery details about the transfer of a message through ...">MessageHeader</a>.  <br>
+    returnType: static <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a> 
 - section: Public Attributes
-- content: >-
-    bool&#160;&#160;Durable {false}True if the message is considered "durable".  
-
-
-
-    std::uint8_t&#160;&#160;Priority {4}Priority of the message.  
-
-
-
-    Nullable&lt; std::chrono::milliseconds &gt;&#160;&#160;TimeToLiveIf present, defines the time to live for the message.  
-
-
-
-    bool&#160;&#160;IsFirstAcquirer {false}If true, the message has not been acquired by any other link.  
-
-
-
-    std::uint32_t&#160;&#160;DeliveryCount {0}The number of unsuccessful previous attempts to deliver this message.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#a5f40f2afecd60bdb6c91981e59caa49b">Durable</a> {false}
+    summary: True if the message is considered "durable".  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#ab28f0903d806e5c1d38e9ace1dde2627">Priority</a> {4}
+    summary: Priority of the message.  <br>
+    returnType: std::uint8_t 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#a720635f08ae0438a87b9b69fac3a3519">TimeToLive</a>
+    summary: If present, defines the time to live for the message.  <br>
+    returnType: Nullable< std::chrono::milliseconds > 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#a8070e66fe6930ad138e3aec4f3dd29cb">IsFirstAcquirer</a> {false}
+    summary: If true, the message has not been acquired by any other link.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html#a16c9479e3368ca97e70fa4de31bd39c1">DeliveryCount</a> {0}
+    summary: The number of unsuccessful previous attempts to deliver this message.  <br>
+    returnType: std::uint32_t 
 - section: Detailed Description
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Deserialize()'
-- content: ''
-- content: ''
-- content: ''
-- content: "MessageHeader Azure::Core::Amqp::Models::MessageHeader::Deserialize \n          (\n          std::uint8_t const *&#160;\n          data, \n        \n        \n          \n          \n          size_t&#160;\n          size&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This is used to create an AMQP message header from a vector of bytes.
 - section: '&#9670;&#160;GetSerializedSize()'
-- content: ''
-- content: ''
-- content: ''
-- content: "size_t Azure::Core::Amqp::Models::MessageHeader::GetSerializedSize \n          (\n          MessageHeader const &amp;&#160;\n          messageHeader)\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This is used to calculate the AMQP message size.
 - section: '&#9670;&#160;operator==()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::Core::Amqp::Models::MessageHeader::operator== \n          (\n          MessageHeader const &amp;&#160;\n          that)\n           const\n        \n      \n  \n  \nnoexcept"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: that
-    summary: '- the AMQP Message Header to compare to. '
-- content: ''
+    summary: '- the AMQP Message Header to compare to.'
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'true if the two headers are equal, false otherwise. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: true if the two headers are equal, false otherwise.
 - section: '&#9670;&#160;Serialize()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::vector&lt; uint8_t &gt; Azure::Core::Amqp::Models::MessageHeader::Serialize \n          (\n          MessageHeader const &amp;&#160;\n          messageHeader)\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This is used to serialize the AMQP message header.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A vector of bytes representing this <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html" title="The message header section carries standard delivery details about the transfer of a message through ...">MessageHeader</a>. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A vector of bytes representing this <a class="el" href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html" title="The message header section carries standard delivery details about the transfer of a message through ...">MessageHeader</a>.
 - section: '&#9670;&#160;ShouldSerialize()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::Core::Amqp::Models::MessageHeader::ShouldSerialize \n          (\n          )\n           const\n        \n      \n  \n  \nnoexcept"
-- content: ''
-- content: ''
+  display: h2
 - content: Message headers can be serialize if their values are different from the defined default values as specified in the AMQP spec.
-- content: ''
-- content: ''
-- content: ''
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DeliveryCount'
-- content: ''
-- content: ''
-- content: ''
-- content: std::uint32_t Azure::Core::Amqp::Models::MessageHeader::DeliveryCount {0}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - section: '&#9670;&#160;Durable'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Core::Amqp::Models::MessageHeader::Durable {false}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - section: '&#9670;&#160;IsFirstAcquirer'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Core::Amqp::Models::MessageHeader::IsFirstAcquirer {false}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - section: '&#9670;&#160;Priority'
-- content: ''
-- content: ''
-- content: ''
-- content: std::uint8_t Azure::Core::Amqp::Models::MessageHeader::Priority {4}
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - section: '&#9670;&#160;TimeToLive'
-- content: ''
-- content: ''
-- content: ''
-- content: Nullable&lt;std::chrono::milliseconds&gt; Azure::Core::Amqp::Models::MessageHeader::TimeToLive
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following files:'
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - content: >-
-    inc/azure/core/amqp/models/amqp_header.hpp
+    The documentation for this struct was generated from the following files:inc/azure/core/amqp/models/amqp_header.hpp
 
-    src/models/amqp_header.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/models/amqp_header.cppGenerated by&#160;1.9.7

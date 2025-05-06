@@ -1,377 +1,173 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Messaging::EventHubs::ProducerClient
+title: Azure::Messaging::EventHubs::ProducerClient Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-messaging-eventhubs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureMessagingEventHubsProducerClient
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> can be used to send events to an Event Hub.
-- content: ''
-- content: <code>#include &lt;<a href="producer__client_8hpp_source.html">producer_client.hpp</a>&gt;</code>
-- content: ''
+- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> can be used to send events to an Event Hub.<code>#include &lt;<a href="producer__client_8hpp_source.html">producer_client.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    std::string const &amp;&#160;GetEventHubName ()
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a69b172fea0a7e97125f3fff772f6776a">GetEventHubName</a> ()
+    returnType: std::string const & 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a19ca616a32d5277529459aba74286950">GetRetryOptions</a> () const
+    returnType: Azure::Core::Http::Policies::RetryOptions const & 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a658ce7f7f520d5a0f07cf17fd55cf1e5">ProducerClient</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> const &other)=delete
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a37beee60888c9a7ffb13da3828cffb70">operator=</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> const &other)=delete
+    returnType: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> & 
+  - declaration: <b>ProducerClient</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> &&other)=delete
+    returnType: >-
+      <a id="aba5cf7a00c881101d4347d2d6b713b8b" name="aba5cf7a00c881101d4347d2d6b713b8b"></a>
 
+       
+  - declaration: <b>operator=</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> &&other)=delete
+    returnType: >-
+      <a id="aa13ea425033b4eae8c6e1a2937fdb6fc" name="aa13ea425033b4eae8c6e1a2937fdb6fc"></a>
 
-    Azure::Core::Http::Policies::RetryOptions const &amp;&#160;GetRetryOptions () const
-
-
-    &#160;ProducerClient (ProducerClient const &amp;other)=delete
-
-
-    ProducerClient &amp;&#160;operator= (ProducerClient const &amp;other)=delete
-
-
-
-    &#160;ProducerClient (ProducerClient &amp;&amp;other)=delete
-
-
-
-    ProducerClient &amp;&#160;operator= (ProducerClient &amp;&amp;other)=delete
-
-
-    &#160;ProducerClient ()=default
-
-
-    &#160;&#160;ProducerClient (std::string const &amp;connectionString, std::string const &amp;eventHub, ProducerClientOptions options={})Constructs a new ProducerClient instance.  
-
-
-
-    &#160;&#160;ProducerClient (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHub, std::shared_ptr&lt; Azure::Core::Credentials::TokenCredential &gt; credential, ProducerClientOptions options={})Constructs a new ProducerClient instance.  
-
-
-
-    void&#160;&#160;Close (Azure::Core::Context const &amp;context={})Close all the connections and sessions.  
-
-
-
-    EventDataBatch&#160;&#160;CreateBatch (EventDataBatchOptions const &amp;options={}, Azure::Core::Context const &amp;context={})Create a new EventDataBatch to be sent to the Event Hub.  
-
-
-
-    void&#160;&#160;Send (EventDataBatch const &amp;eventDataBatch, Core::Context const &amp;context={})Send an EventDataBatch to the remote Event Hub.  
-
-
-
-    void&#160;&#160;Send (Models::EventData const &amp;eventData, Core::Context const &amp;context={})Send an EventData to the remote Event Hub.  
-
-
-
-    void&#160;&#160;Send (std::vector&lt; Models::EventData &gt; const &amp;eventData, Core::Context const &amp;context={})Send a vector of EventData items to the remote Event Hub.  
-
-
-
-    Models::EventHubProperties&#160;&#160;GetEventHubProperties (Core::Context const &amp;context={})GetEventHubProperties gets properties of an eventHub. This includes data like name, and partitions.  
-
-
-
-    Models::EventHubPartitionProperties&#160;&#160;GetPartitionProperties (std::string const &amp;partitionID, Core::Context const &amp;context={})GetPartitionProperties gets properties for a specific partition. This includes data like the last enqueued sequence number, the first sequence number and when an event was last enqueued to the partition.
-- content: ''
+      <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> & 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a7d029425c74012ce34c254dc4a3af287">ProducerClient</a> ()=default
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#adef8dcb6133fab926506eba8767300bc">ProducerClient</a> (std::string const &connectionString, std::string const &eventHub, <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client_options.html">ProducerClientOptions</a> options={})
+    summary: Constructs a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html" title="ProducerClient can be used to send events to an Event Hub.">ProducerClient</a> instance.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a2a7ae74d9dd19c91c2976b234ec615fa">ProducerClient</a> (std::string const &fullyQualifiedNamespace, std::string const &eventHub, std::shared_ptr< Azure::Core::Credentials::TokenCredential > credential, <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client_options.html">ProducerClientOptions</a> options={})
+    summary: Constructs a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html" title="ProducerClient can be used to send events to an Event Hub.">ProducerClient</a> instance.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#ab093869993ed33fa1a3417786d5979d8">Close</a> (Azure::Core::Context const &context={})
+    summary: Close all the connections and sessions.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a767f2e1ff09b8f61c4958c855520bd9c">CreateBatch</a> (<a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch_options.html">EventDataBatchOptions</a> const &options={}, Azure::Core::Context const &context={})
+    summary: Create a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> to be sent to the Event Hub.  <br>
+    returnType: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#ab05c430be37b72ca6cd4a5f52fd44546">Send</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> const &eventDataBatch, Core::Context const &context={})
+    summary: Send an <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> to the remote Event Hub.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a9fc2a45174d9279fc8d96f5ac4f5eaf0">Send</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">Models::EventData</a> const &eventData, Core::Context const &context={})
+    summary: Send an EventData to the remote Event Hub.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#acd561f3a375ba2a9e2302584433de69c">Send</a> (std::vector< <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">Models::EventData</a> > const &eventData, Core::Context const &context={})
+    summary: Send a vector of EventData items to the remote Event Hub.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#abed4f211a9b44d3e6d41027c941163fe">GetEventHubProperties</a> (Core::Context const &context={})
+    summary: GetEventHubProperties gets properties of an eventHub. This includes data like name, and partitions.  <br>
+    returnType: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_properties.html">Models::EventHubProperties</a> 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a0e81f3bff0d7edbf4fb729a7696926e1">GetPartitionProperties</a> (std::string const &partitionID, Core::Context const &context={})
+    summary: GetPartitionProperties gets properties for a specific partition. This includes data like the last enqueued sequence number, the first sequence number and when an event was last enqueued to the partition.  <br>
+    returnType: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html">Models::EventHubPartitionProperties</a> 
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ProducerClient() [1/4]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Messaging::EventHubs::ProducerClient::ProducerClient \n          (\n          ProducerClient const &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndelete"
-- content: ''
-- content: ''
+  display: h2
 - content: Create a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a>.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ProducerClient() [2/4]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Messaging::EventHubs::ProducerClient::ProducerClient \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
+  display: h2
 - content: Default Constructor for a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a>
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;ProducerClient() [3/4]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Messaging::EventHubs::ProducerClient::ProducerClient \n          (\n          std::string const &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          eventHub, \n        \n        \n          \n          \n          ProducerClientOptions&#160;\n          options = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: connectionString
-    summary: 'Event hubs connection string '
+    summary: Event hubs connection string
   - name: eventHub
-    summary: 'Event hub name '
+    summary: Event hub name
   - name: options
-    summary: 'Additional options for creating the client '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Additional options for creating the client
 - section: '&#9670;&#160;ProducerClient() [4/4]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Messaging::EventHubs::ProducerClient::ProducerClient \n          (\n          std::string const &amp;&#160;\n          fullyQualifiedNamespace, \n        \n        \n          \n          \n          std::string const &amp;&#160;\n          eventHub, \n        \n        \n          \n          \n          std::shared_ptr&lt; Azure::Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          ProducerClientOptions&#160;\n          options = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: fullyQualifiedNamespace
-    summary: 'Fully qualified namespace name '
+    summary: Fully qualified namespace name
   - name: eventHub
-    summary: 'Event hub name '
+    summary: Event hub name
   - name: credential
-    summary: 'Credential to use for authentication '
+    summary: Credential to use for authentication
   - name: options
-    summary: 'Additional options for creating the client '
-- content: ''
-- content: ''
-- content: ''
+    summary: Additional options for creating the client
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Close()'
-- content: ''
-- content: ''
-- content: ''
-- content: "void Azure::Messaging::EventHubs::ProducerClient::Close \n          (\n          Azure::Core::Context const &amp;&#160;\n          context = {})\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
-  - name: context
-    summary: 'Context for the operation can be used for request cancellation. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- section: '&#9670;&#160;CreateBatch()'
-- content: ''
-- content: ''
-- content: ''
-- content: "EventDataBatch Azure::Messaging::EventHubs::ProducerClient::CreateBatch \n          (\n          EventDataBatchOptions const &amp;&#160;\n          options = {}, \n        \n        \n          \n          \n          Azure::Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
-- section: Parameters
-  display: h4
-- parameters:
-  - name: options
-    summary: 'Optional batch options '
   - name: context
     summary: Context for the operation can be used for request cancellation.
-- content: ''
+- section: '&#9670;&#160;CreateBatch()'
+  display: h2
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional batch options
+  - name: context
+    summary: Context for the operation can be used for request cancellation.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'newly created <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> object. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: newly created <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> object.
 - section: '&#9670;&#160;GetEventHubName()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string const  &amp; Azure::Messaging::EventHubs::ProducerClient::GetEventHubName \n          (\n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - content: Get the fully qualified namespace from the connection string
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;GetEventHubProperties()'
-- content: ''
-- content: ''
-- content: ''
-- content: >-
-    Models::EventHubProperties Azure::Messaging::EventHubs::ProducerClient::GetEventHubProperties 
-              (
-              Core::Context const &amp;&#160;
-              context = {})
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: context
-    summary: 'Context for the operation can be used for request cancellation. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Context for the operation can be used for request cancellation.
 - section: '&#9670;&#160;GetPartitionProperties()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Models::EventHubPartitionProperties Azure::Messaging::EventHubs::ProducerClient::GetPartitionProperties \n          (\n          std::string const &amp;&#160;\n          partitionID, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: partitionID
-    summary: 'partition ID to detail. '
+    summary: partition ID to detail.
   - name: context
-    summary: 'Context for the operation can be used for request cancellation. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Context for the operation can be used for request cancellation.
 - section: '&#9670;&#160;GetRetryOptions()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Core::Http::Policies::RetryOptions const  &amp; Azure::Messaging::EventHubs::ProducerClient::GetRetryOptions \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - content: Get Retry options for this <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a>
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;operator=()'
-- content: ''
-- content: ''
-- content: ''
-- content: "ProducerClient &amp; Azure::Messaging::EventHubs::ProducerClient::operator= \n          (\n          ProducerClient const &amp;&#160;\n          other)\n          \n        \n      \n  \n  \ndelete"
-- content: ''
-- content: ''
+  display: h2
 - content: Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a>.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Send() [1/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "void Azure::Messaging::EventHubs::ProducerClient::Send \n          (\n          EventDataBatch const &amp;&#160;\n          eventDataBatch, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: eventDataBatch
-    summary: 'Batch to send '
+    summary: Batch to send
   - name: context
-    summary: 'Request context '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Request context
 - section: '&#9670;&#160;Send() [2/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "void Azure::Messaging::EventHubs::ProducerClient::Send \n          (\n          Models::EventData const &amp;&#160;\n          eventData, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This method will create a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> and add the event to it. If the event exceeds the maximum size allowed by the Event Hubs service, an exception will be thrown.
 - section: Parameters
   display: h4
 - parameters:
   - name: eventData
-    summary: 'event to send '
+    summary: event to send
   - name: context
-    summary: 'Request context '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Request context
 - section: '&#9670;&#160;Send() [3/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "void Azure::Messaging::EventHubs::ProducerClient::Send \n          (\n          std::vector&lt; Models::EventData &gt; const &amp;&#160;\n          eventData, \n        \n        \n          \n          \n          Core::Context const &amp;&#160;\n          context = {}&#160;\n        \n        \n          \n          )"
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This method will create a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> and add the events to it. If the events exceeds the maximum size allowed by the Event Hubs service, an exception will be thrown.
 - section: Parameters
   display: h4
 - parameters:
   - name: eventData
-    summary: 'events to send '
+    summary: events to send
   - name: context
-    summary: 'Request context '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+    summary: Request context
 - content: >-
-    inc/azure/messaging/eventhubs/producer_client.hpp
+    The documentation for this class was generated from the following files:inc/azure/messaging/eventhubs/producer_client.hpp
 
-    src/producer_client.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/producer_client.cppGenerated by&#160;1.9.7

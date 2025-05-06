@@ -1,124 +1,58 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::DeferredResponse&lt;
+title: Azure::Storage::DeferredResponse&lt; T &gt; Class Template Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageDeferredResponse
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Base type for a deferred response.
-- content: ''
-- content: <code>#include &lt;<a href="deferred__response_8hpp_source.html">deferred_response.hpp</a>&gt;</code>
-- content: ''
+- content: Base type for a deferred response.<code>#include &lt;<a href="deferred__response_8hpp_source.html">deferred_response.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;DeferredResponse (const DeferredResponse &amp;)=delete
+  display: h2
+- apiList:
+  - declaration: <b>DeferredResponse</b> (const <a class="el" href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &)=delete
+    returnType: >-
+      <a id="a1d437c14ae4639a1000afa2c98b05259" name="a1d437c14ae4639a1000afa2c98b05259"></a>
 
+       
+  - declaration: <b>DeferredResponse</b> (<a class="el" href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &&)=default
+    summary: Construct a new deferred response, moving from an existing <a class="el" href="class_azure_1_1_storage_1_1_deferred_response.html" title="Base type for a deferred response.">DeferredResponse</a>. <br>
+    returnType: >-
+      <a id="a55e55534cc7cbece26746d7d32bcb3f4" name="a55e55534cc7cbece26746d7d32bcb3f4"></a>
 
+       
+  - declaration: <b>operator=</b> (const <a class="el" href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &)=delete
+    returnType: >-
+      <a id="ae3ee6e4e6e5f591b9068206551092b21" name="ae3ee6e4e6e5f591b9068206551092b21"></a>
 
-    &#160;&#160;DeferredResponse (DeferredResponse &amp;&amp;)=defaultConstruct a new deferred response, moving from an existing DeferredResponse. 
-
-
-
-
-    DeferredResponse &amp;&#160;operator= (const DeferredResponse &amp;)=delete
-
-
-    DeferredResponse &amp;&#160;operator= (DeferredResponse &amp;&amp;)=default
-
-
-    Response&lt; T &gt;&#160;&#160;GetResponse () constGets the deferred response.
+      <a class="el" href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> & 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_deferred_response.html#a50c39f1d247c6f4bde6d076d2456d8de">operator=</a> (<a class="el" href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &&)=default
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> & 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_deferred_response.html#a878e28905d252a18945cffe3584180e5">GetResponse</a> () const
+    summary: Gets the deferred response.  <br>
+    returnType: Response< T > 
 - section: Friends
-- content: >-
-    class&#160;Blobs::BlobServiceBatch
+  display: h2
+- apiList:
+  - declaration: <b>Blobs::BlobServiceBatch</b>
+    returnType: >-
+      <a id="adcc3fc584430a972caaaa61046e4bdaa" name="adcc3fc584430a972caaaa61046e4bdaa"></a>
 
+      class 
+  - declaration: <b>Blobs::BlobContainerBatch</b>
+    returnType: >-
+      <a id="a04377fb2bc0a3bfee82cdf3f4ee8c1d9" name="a04377fb2bc0a3bfee82cdf3f4ee8c1d9"></a>
 
-
-    class&#160;Blobs::BlobContainerBatch
-- content: ''
+      class 
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;GetResponse()'
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - content: template&lt;typename T &gt;
-- content: ''
-- content: "Response&lt; T &gt; Azure::Storage::DeferredResponse&lt; T &gt;::GetResponse \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
-- content: ''
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: It's undefined behavior to call this function before the response or exception is available.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The deferred response. An exception is thrown if error occurred. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The deferred response. An exception is thrown if error occurred.
 - section: '&#9670;&#160;operator=()'
-- content: ''
-- content: ''
-- content: ''
-- content: template&lt;typename T &gt;
-- content: ''
-- content: "DeferredResponse &amp; Azure::Storage::DeferredResponse&lt; T &gt;::operator= \n          (\n          DeferredResponse&lt; T &gt; &amp;&amp;&#160;\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
-- content: Move a <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> to another <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> object..
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/storage/blobs/deferred_response.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: template&lt;typename T &gt;Move a <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> to another <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> object..The documentation for this class was generated from the following file:inc/azure/storage/blobs/deferred_response.hppGenerated by&#160;1.9.7

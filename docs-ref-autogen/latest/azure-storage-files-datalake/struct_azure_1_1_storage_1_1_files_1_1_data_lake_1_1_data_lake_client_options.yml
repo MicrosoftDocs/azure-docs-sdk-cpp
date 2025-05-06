@@ -1,140 +1,36 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::DataLake::DataLakeClientOptions
+title: Azure::Storage::Files::DataLake::DataLakeClientOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-datalake
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesDataLakeDataLakeClientOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Client options used to initialize all DataLake clients.
-- content: ''
-- content: <code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Storage::Files::DataLake::DataLakeClientOptions:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+- content: 'Client options used to initialize all DataLake clients.<code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>Inheritance diagram for Azure::Storage::Files::DataLake::DataLakeClientOptions:'
 - section: Public Attributes
-- content: >-
-    std::string&#160;SecondaryHostForRetryReads
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html#af849a3339c1ae0186162bbbf86b1cadc">SecondaryHostForRetryReads</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html#a9efeb472714df968b3213cd9e3933abd">ApiVersion</a>
+    returnType: std::string 
+  - declaration: <b>CustomerProvidedKey</b>
+    summary: Holds the customer provided key used when making requests. <br>
+    returnType: >-
+      <a id="a1908b91f502d3e9c8ce428babbd0b7d8" name="a1908b91f502d3e9c8ce428babbd0b7d8"></a>
 
-
-    std::string&#160;ApiVersion
-
-
-
-    Azure::Nullable&lt; EncryptionKey &gt;&#160;&#160;CustomerProvidedKeyHolds the customer provided key used when making requests. 
-
-
-
-    bool&#160;EnableTenantDiscovery = false
-
-
-    Azure::Nullable&lt; DataLakeAudience &gt;&#160;Audience
-- content: ''
+      Azure::Nullable< EncryptionKey > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html#aeb7403fb385aa7944b6b3fbada5e6d03">EnableTenantDiscovery</a> = false
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html#acb08912dcbb0b7a624a4cecfe1aff605">Audience</a>
+    returnType: Azure::Nullable< <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_audience.html">DataLakeAudience</a> > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ApiVersion'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Files::DataLake::DataLakeClientOptions::ApiVersion
-- content: ''
-- content: ''
+  display: h2
 - content: API version used by this client.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Audience'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;DataLakeAudience&gt; Azure::Storage::Files::DataLake::DataLakeClientOptions::Audience
-- content: ''
-- content: ''
+  display: h2
 - content: The Audience to use for authentication with Azure Active Directory (AAD). <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_audience.html#a9d6f994eca0002734d79176d91b36f01">Azure::Storage::Files::DataLake::DataLakeAudience::DefaultAudience</a> will be assumed if Audience is not set.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;EnableTenantDiscovery'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Storage::Files::DataLake::DataLakeClientOptions::EnableTenantDiscovery = false
-- content: ''
-- content: ''
+  display: h2
 - content: Enables tenant discovery through the authorization challenge when the client is configured to use a TokenCredential. When enabled, the client will attempt an initial un-authorized request to prompt a challenge in order to discover the correct tenant for the resource.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;SecondaryHostForRetryReads'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Files::DataLake::DataLakeClientOptions::SecondaryHostForRetryReads
-- content: ''
-- content: ''
-- content: 'SecondaryHostForRetryReads specifies whether the retry policy should retry a read operation against another host. If SecondaryHostForRetryReads is "" (the default) then operations are not retried against another host. NOTE: Before setting this field, make sure you understand the issues around reading stale &amp; potentially-inconsistent data at this webpage: <a href="https://docs.microsoft.com/azure/storage/common/geo-redundant-design">https://docs.microsoft.com/azure/storage/common/geo-redundant-design</a>.'
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/files/datalake/datalake_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: 'SecondaryHostForRetryReads specifies whether the retry policy should retry a read operation against another host. If SecondaryHostForRetryReads is "" (the default) then operations are not retried against another host. NOTE: Before setting this field, make sure you understand the issues around reading stale &amp; potentially-inconsistent data at this webpage: <a href="https://docs.microsoft.com/azure/storage/common/geo-redundant-design">https://docs.microsoft.com/azure/storage/common/geo-redundant-design</a>.The documentation for this struct was generated from the following file:inc/azure/storage/files/datalake/datalake_options.hppGenerated by&#160;1.9.7'

@@ -1,144 +1,42 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Blobs::BlobClientOptions
+title: Azure::Storage::Blobs::BlobClientOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-blobs
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageBlobsBlobClientOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Client options used to initialize all kinds of blob clients.
-- content: ''
-- content: <code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Storage::Blobs::BlobClientOptions:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+- content: 'Client options used to initialize all kinds of blob clients.<code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code>Inheritance diagram for Azure::Storage::Blobs::BlobClientOptions:'
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; EncryptionKey &gt;&#160;&#160;CustomerProvidedKeyHolds the customer provided key used when making requests. 
+  display: h2
+- apiList:
+  - declaration: <b>CustomerProvidedKey</b>
+    summary: Holds the customer provided key used when making requests. <br>
+    returnType: >-
+      <a id="a9fb8ce9173472df602fe8c2f59d835a8" name="a9fb8ce9173472df602fe8c2f59d835a8"></a>
 
+      Azure::Nullable< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_encryption_key.html">EncryptionKey</a> > 
+  - declaration: <b>EncryptionScope</b>
+    summary: Holds the encryption scope used when making requests. <br>
+    returnType: >-
+      <a id="aec52aad18582bd0134500105c54f3514" name="aec52aad18582bd0134500105c54f3514"></a>
 
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;&#160;EncryptionScopeHolds the encryption scope used when making requests. 
-
-
-
-    std::string&#160;SecondaryHostForRetryReads
-
-
-    std::string&#160;ApiVersion
-
-
-    bool&#160;EnableTenantDiscovery = false
-
-
-    Azure::Nullable&lt; BlobAudience &gt;&#160;Audience
-- content: ''
+      Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html#a9800cdc7a1c10129071305c877a9b5d7">SecondaryHostForRetryReads</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html#a19f05101fc3a0a1da3989ffa3ac0e33a">ApiVersion</a>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html#ad052fd7e685881f8336474f5b6c36b67">EnableTenantDiscovery</a> = false
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html#a8c66d700e909fb436be895edc1c04c5a">Audience</a>
+    returnType: Azure::Nullable< <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html">BlobAudience</a> > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ApiVersion'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Blobs::BlobClientOptions::ApiVersion
-- content: ''
-- content: ''
+  display: h2
 - content: API version used by this client.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Audience'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;BlobAudience&gt; Azure::Storage::Blobs::BlobClientOptions::Audience
-- content: ''
-- content: ''
+  display: h2
 - content: The Audience to use for authentication with Azure Active Directory (AAD). <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html#a56d7257a2bfdad128db751c5e7a03e86">Azure::Storage::Blobs::BlobAudience::DefaultAudience</a> will be assumed if Audience is not set.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;EnableTenantDiscovery'
-- content: ''
-- content: ''
-- content: ''
-- content: bool Azure::Storage::Blobs::BlobClientOptions::EnableTenantDiscovery = false
-- content: ''
-- content: ''
+  display: h2
 - content: Enables tenant discovery through the authorization challenge when the client is configured to use a TokenCredential. When enabled, the client will attempt an initial un-authorized request to prompt a challenge in order to discover the correct tenant for the resource.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;SecondaryHostForRetryReads'
-- content: ''
-- content: ''
-- content: ''
-- content: std::string Azure::Storage::Blobs::BlobClientOptions::SecondaryHostForRetryReads
-- content: ''
-- content: ''
-- content: 'SecondaryHostForRetryReads specifies whether the retry policy should retry a read operation against another host. If SecondaryHostForRetryReads is "" (the default) then operations are not retried against another host. NOTE: Before setting this field, make sure you understand the issues around reading stale &amp; potentially-inconsistent data at this webpage: <a href="https://docs.microsoft.com/azure/storage/common/geo-redundant-design">https://docs.microsoft.com/azure/storage/common/geo-redundant-design</a>.'
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/blobs/blob_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: 'SecondaryHostForRetryReads specifies whether the retry policy should retry a read operation against another host. If SecondaryHostForRetryReads is "" (the default) then operations are not retried against another host. NOTE: Before setting this field, make sure you understand the issues around reading stale &amp; potentially-inconsistent data at this webpage: <a href="https://docs.microsoft.com/azure/storage/common/geo-redundant-design">https://docs.microsoft.com/azure/storage/common/geo-redundant-design</a>.The documentation for this struct was generated from the following file:inc/azure/storage/blobs/blob_options.hppGenerated by&#160;1.9.7'

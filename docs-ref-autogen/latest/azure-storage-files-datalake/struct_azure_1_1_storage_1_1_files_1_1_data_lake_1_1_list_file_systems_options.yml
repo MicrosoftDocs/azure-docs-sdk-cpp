@@ -1,129 +1,30 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::DataLake::ListFileSystemsOptions
+title: Azure::Storage::Files::DataLake::ListFileSystemsOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-datalake
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesDataLakeListFileSystemsOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a5dc0b007fd2c41ba633014d908ac25c9">Azure::Storage::Files::DataLake::DataLakeServiceClient::ListFileSystems</a>.
-- content: ''
-- content: <code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
-- content: ''
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a5dc0b007fd2c41ba633014d908ac25c9">Azure::Storage::Files::DataLake::DataLakeServiceClient::ListFileSystems</a>.<code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; std::string &gt;&#160;Prefix
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;ContinuationToken
-
-
-    Azure::Nullable&lt; int32_t &gt;&#160;PageSizeHint
-
-
-    Models::ListFileSystemsIncludeFlags&#160;Include = Models::ListFileSystemsIncludeFlags::None
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html#a083f4d8fe85196609f2936913d4d8e8e">Prefix</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html#aa905812c02a0262fbb86b2920d0f6f6a">ContinuationToken</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html#aad0653c4127b52460bb42e0a207bef69">PageSizeHint</a>
+    returnType: Azure::Nullable< int32_t > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html#a18aa55fb264ef1f888ddb7bc60a39e64">Include</a> = Models::ListFileSystemsIncludeFlags::None
+    returnType: Models::ListFileSystemsIncludeFlags 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ContinuationToken'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::ListFileSystemsOptions::ContinuationToken
-- content: ''
-- content: ''
+  display: h2
 - content: The number of filesystems returned with each invocation is limited. If the number of filesystems to be returned exceeds this limit, a continuation token is returned in the response header x-ms-continuation. When a continuation token is returned in the response, it must be specified in a subsequent invocation of the list operation to continue listing the filesystems.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Include'
-- content: ''
-- content: ''
-- content: ''
-- content: Models::ListFileSystemsIncludeFlags Azure::Storage::Files::DataLake::ListFileSystemsOptions::Include = Models::ListFileSystemsIncludeFlags::None
-- content: ''
-- content: ''
+  display: h2
 - content: Specifies that the filesystem's metadata be returned.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;PageSizeHint'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::DataLake::ListFileSystemsOptions::PageSizeHint
-- content: ''
-- content: ''
+  display: h2
 - content: An optional value that specifies the maximum number of items to return. If omitted or greater than 5,000, the response will include up to 5,000 items.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Prefix'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::ListFileSystemsOptions::Prefix
-- content: ''
-- content: ''
-- content: Filters results to filesystems within the specified prefix.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/files/datalake/datalake_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: Filters results to filesystems within the specified prefix.The documentation for this struct was generated from the following file:inc/azure/storage/files/datalake/datalake_options.hppGenerated by&#160;1.9.7

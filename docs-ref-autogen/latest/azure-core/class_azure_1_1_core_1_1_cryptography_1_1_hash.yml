@@ -1,175 +1,75 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Core::Cryptography::Hash
+title: Azure::Core::Cryptography::Hash Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-core
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureCoreCryptographyHash
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Represents the base class for hash algorithms which map binary data of an arbitrary length to small binary data of a fixed length.
-- content: ''
-- content: <code>#include &lt;<a href="hash_8hpp_source.html">hash.hpp</a>&gt;</code>
-- content: ''
-- content: 'Inheritance diagram for Azure::Core::Cryptography::Hash:'
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+- content: 'Represents the base class for hash algorithms which map binary data of an arbitrary length to small binary data of a fixed length.<code>#include &lt;<a href="hash_8hpp_source.html">hash.hpp</a>&gt;</code>Inheritance diagram for Azure::Core::Cryptography::Hash:'
 - section: Public Member Functions
-- content: >-
-    void&#160;&#160;Append (const uint8_t *data, size_t length)Used to append partial binary input data to compute the hash in a streaming fashion.  
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;Final (const uint8_t *data, size_t length)Computes the hash value of the specified binary input data, including any previously appended.  
-
-
-
-    std::vector&lt; uint8_t &gt;&#160;&#160;Final ()Computes the hash value of all the binary input data appended to the instance so far.  
-
-
-
-    virtual&#160;&#160;~Hash ()=defaultDestructs Hash.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#ac3c9cb8298ea1f02b9751d2aeada5e28">Append</a> (const uint8_t *data, size_t length)
+    summary: Used to append partial binary input data to compute the hash in a streaming fashion.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#aae186272ffc97535f4c289803ea3bed7">Final</a> (const uint8_t *data, size_t length)
+    summary: Computes the hash value of the specified binary input data, including any previously appended.  <br>
+    returnType: std::vector< uint8_t > 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#aca46d119e62d3e34126adc07a9917414">Final</a> ()
+    summary: Computes the hash value of all the binary input data appended to the instance so far.  <br>
+    returnType: std::vector< uint8_t > 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#a5d4a624d64e23e0063fd9a3f9bfee3aa">~Hash</a> ()=default
+    summary: Destructs <code>Hash</code>.  <br>
+    returnType: virtual 
 - section: Protected Member Functions
-- content: '&#160;&#160;Hash ()=defaultConstructs a default instance of Hash.'
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#a713b9700af1c65cd6fff998d8e91cfd1">Hash</a> ()=default
+    summary: Constructs a default instance of <code>Hash</code>.  <br>
+    returnType:  
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Hash()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Core::Cryptography::Hash::Hash \n          (\n          )\n          \n        \n      \n  \n  \nprotecteddefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;~Hash()'
-- content: ''
-- content: ''
-- content: ''
-- content: "virtual Azure::Core::Cryptography::Hash::~Hash \n          (\n          )\n          \n        \n      \n  \n  \nvirtualdefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Append()'
-- content: ''
-- content: ''
-- content: ''
-- content: "void Azure::Core::Cryptography::Hash::Append \n          (\n          const uint8_t *&#160;\n          data, \n        \n        \n          \n          \n          size_t&#160;\n          length&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Once all the data has been added, call <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#aca46d119e62d3e34126adc07a9917414" title="Computes the hash value of all the binary input data appended to the instance so far.">Azure::Core::Cryptography::Hash::Final()</a> to get the computed hash value.
 - section: Parameters
   display: h4
 - parameters:
   - name: data
-    summary: 'The pointer to the current block of binary data that is used for hash calculation. '
+    summary: The pointer to the current block of binary data that is used for hash calculation.
   - name: length
-    summary: 'The size of the data provided. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: The size of the data provided.
 - section: '&#9670;&#160;Final() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::vector&lt; uint8_t &gt; Azure::Core::Cryptography::Hash::Final \n          (\n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Use <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#ac3c9cb8298ea1f02b9751d2aeada5e28" title="Used to append partial binary input data to compute the hash in a streaming fashion.">Azure::Core::Cryptography::Hash::Append()</a> to add more partial data before calling this function.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The computed hash value corresponding to the input provided. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The computed hash value corresponding to the input provided.
 - section: '&#9670;&#160;Final() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::vector&lt; uint8_t &gt; Azure::Core::Cryptography::Hash::Final \n          (\n          const uint8_t *&#160;\n          data, \n        \n        \n          \n          \n          size_t&#160;\n          length&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Do not call this function multiple times.
 - section: Parameters
   display: h4
 - parameters:
   - name: data
-    summary: 'The pointer to the last block of binary data to compute the hash value for. '
+    summary: The pointer to the last block of binary data to compute the hash value for.
   - name: length
-    summary: 'The size of the data provided. '
-- content: ''
+    summary: The size of the data provided.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'The computed hash value corresponding to the input provided, including any previously appended. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/core/cryptography/hash.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  - summary: The computed hash value corresponding to the input provided, including any previously appended.
+- content: The documentation for this class was generated from the following file:inc/azure/core/cryptography/hash.hppGenerated by&#160;1.9.7

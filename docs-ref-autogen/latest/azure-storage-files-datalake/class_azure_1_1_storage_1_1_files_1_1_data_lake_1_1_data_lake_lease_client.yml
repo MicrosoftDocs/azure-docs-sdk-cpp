@@ -1,300 +1,158 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::DataLake::DataLakeLeaseClient
+title: Azure::Storage::Files::DataLake::DataLakeLeaseClient Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-datalake
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesDataLakeDataLakeLeaseClient
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html">DataLakeLeaseClient</a> allows you to manipulate Azure Storage leases on filesystems and paths.
-- content: ''
-- content: <code>#include &lt;<a href="datalake__lease__client_8hpp_source.html">datalake_lease_client.hpp</a>&gt;</code>
-- content: ''
+- content: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html">DataLakeLeaseClient</a> allows you to manipulate Azure Storage leases on filesystems and paths.<code>#include &lt;<a href="datalake__lease__client_8hpp_source.html">datalake_lease_client.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;DataLakeLeaseClient (DataLakePathClient pathClient, std::string leaseId)Initializes a new instance of the DataLakeLeaseClient.  
-
-
-
-    &#160;&#160;DataLakeLeaseClient (DataLakeFileSystemClient fileSystemClient, std::string leaseId)Initializes a new instance of the DataLakeLeaseClient.  
-
-
-
-    std::string&#160;&#160;GetLeaseId ()Get lease ID of this lease client.  
-
-
-
-    Azure::Response&lt; Models::AcquireLeaseResult &gt;&#160;&#160;Acquire (std::chrono::seconds duration, const AcquireLeaseOptions &amp;options=AcquireLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Acquires a lease on the datalake path or datalake path container.  
-
-
-
-    Azure::Response&lt; Models::RenewLeaseResult &gt;&#160;&#160;Renew (const RenewLeaseOptions &amp;options=RenewLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Renews the datalake path or datalake path container's previously-acquired lease.  
-
-
-
-    Azure::Response&lt; Models::ReleaseLeaseResult &gt;&#160;&#160;Release (const ReleaseLeaseOptions &amp;options=ReleaseLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Releases the datalake path or datalake path container's previously-acquired lease.  
-
-
-
-    Azure::Response&lt; Models::ChangeLeaseResult &gt;&#160;&#160;Change (const std::string &amp;proposedLeaseId, const ChangeLeaseOptions &amp;options=ChangeLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Changes the lease of an active lease.  
-
-
-
-    Azure::Response&lt; Models::BreakLeaseResult &gt;&#160;&#160;Break (const BreakLeaseOptions &amp;options=BreakLeaseOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context())Breaks the previously-acquired lease.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html#a68666450df7d29613798077b80c4f5a8">DataLakeLeaseClient</a> (<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a> pathClient, std::string leaseId)
+    summary: Initializes a new instance of the <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html" title="DataLakeLeaseClient allows you to manipulate Azure Storage leases on filesystems and paths.">DataLakeLeaseClient</a>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html#ae9254b943a30ab84cf293a82d18fda16">DataLakeLeaseClient</a> (<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html">DataLakeFileSystemClient</a> fileSystemClient, std::string leaseId)
+    summary: Initializes a new instance of the <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html" title="DataLakeLeaseClient allows you to manipulate Azure Storage leases on filesystems and paths.">DataLakeLeaseClient</a>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html#a6a552b6643f6687f7b72c3de1d8bbefe">GetLeaseId</a> ()
+    summary: Get lease ID of this lease client.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html#aee0739664d16847133eaac98ed23d446">Acquire</a> (std::chrono::seconds duration, const AcquireLeaseOptions &options=AcquireLeaseOptions(), const Azure::Core::Context &context=Azure::Core::Context())
+    summary: Acquires a lease on the datalake path or datalake path container.  <br>
+    returnType: Azure::Response< Models::AcquireLeaseResult > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html#af23603e174c321d8e90c2f0f1cff8c18">Renew</a> (const RenewLeaseOptions &options=RenewLeaseOptions(), const Azure::Core::Context &context=Azure::Core::Context())
+    summary: Renews the datalake path or datalake path container's previously-acquired lease.  <br>
+    returnType: Azure::Response< Models::RenewLeaseResult > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html#ae75dd615ed2ee3f428debf363d614277">Release</a> (const ReleaseLeaseOptions &options=ReleaseLeaseOptions(), const Azure::Core::Context &context=Azure::Core::Context())
+    summary: Releases the datalake path or datalake path container's previously-acquired lease.  <br>
+    returnType: Azure::Response< Models::ReleaseLeaseResult > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html#ae1e446f068102869300e201b1aa45c2c">Change</a> (const std::string &proposedLeaseId, const ChangeLeaseOptions &options=ChangeLeaseOptions(), const Azure::Core::Context &context=Azure::Core::Context())
+    summary: Changes the lease of an active lease.  <br>
+    returnType: Azure::Response< Models::ChangeLeaseResult > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html#a9272766e5afc3a0232b8b13201db02fd">Break</a> (const BreakLeaseOptions &options=BreakLeaseOptions(), const Azure::Core::Context &context=Azure::Core::Context())
+    summary: Breaks the previously-acquired lease.  <br>
+    returnType: Azure::Response< Models::BreakLeaseResult > 
 - section: Static Public Member Functions
-- content: static std::string&#160;&#160;CreateUniqueLeaseId ()Gets a unique lease ID.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html#a2b35410ef96190cffcdd6067ad4744ad">CreateUniqueLeaseId</a> ()
+    summary: Gets a unique lease ID.  <br>
+    returnType: static std::string 
 - section: Static Public Attributes
-- content: AZ_STORAGE_FILES_DATALAKE_DLLEXPORT static const std::chrono::seconds&#160;&#160;InfiniteLeaseDuration {-1}A value representing infinite lease duration.
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <b>InfiniteLeaseDuration</b> {-1}
+    summary: A value representing infinite lease duration. <br>
+    returnType: >-
+      <a id="aaa481be85caac4144901665ae3c7f668" name="aaa481be85caac4144901665ae3c7f668"></a>
+
+      AZ_STORAGE_FILES_DATALAKE_DLLEXPORT static const std::chrono::seconds 
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DataLakeLeaseClient() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::DataLake::DataLakeLeaseClient::DataLakeLeaseClient \n          (\n          DataLakePathClient&#160;\n          pathClient, \n        \n        \n          \n          \n          std::string&#160;\n          leaseId&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: pathClient
-    summary: 'A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html" title="The DataLakePathClient allows you to manipulate Azure Storage DataLake files.">DataLakePathClient</a> representing the datalake path being leased. '
+    summary: A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html" title="The DataLakePathClient allows you to manipulate Azure Storage DataLake files.">DataLakePathClient</a> representing the datalake path being leased.
   - name: leaseId
-    summary: 'A lease ID. This is not required for break operation. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: A lease ID. This is not required for break operation.
 - section: '&#9670;&#160;DataLakeLeaseClient() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::DataLake::DataLakeLeaseClient::DataLakeLeaseClient \n          (\n          DataLakeFileSystemClient&#160;\n          fileSystemClient, \n        \n        \n          \n          \n          std::string&#160;\n          leaseId&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninlineexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: fileSystemClient
-    summary: 'A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html" title="The DataLakeFileSystemClient allows you to manipulate Azure Storage DataLake files.">DataLakeFileSystemClient</a> representing the filesystem being leased. '
+    summary: A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html" title="The DataLakeFileSystemClient allows you to manipulate Azure Storage DataLake files.">DataLakeFileSystemClient</a> representing the filesystem being leased.
   - name: leaseId
-    summary: 'A lease ID. This is not required for break operation. '
-- content: ''
-- content: ''
-- content: ''
+    summary: A lease ID. This is not required for break operation.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;Acquire()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::AcquireLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Acquire \n          (\n          std::chrono::seconds&#160;\n          duration, \n        \n        \n          \n          \n          const AcquireLeaseOptions &amp;&#160;\n          options = AcquireLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: duration
-    summary: 'Specifies the duration of the lease, in seconds, or InfiniteLeaseDuration for a lease that never expires. A non-infinite lease can be between 15 and 60 seconds. A lease duration cannot be changed using renew or change. '
+    summary: Specifies the duration of the lease, in seconds, or InfiniteLeaseDuration for a lease that never expires. A non-infinite lease can be between 15 and 60 seconds. A lease duration cannot be changed using renew or change.
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'An AcquireLeaseResult describing the lease. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: An AcquireLeaseResult describing the lease.
 - section: '&#9670;&#160;Break()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::BreakLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Break \n          (\n          const BreakLeaseOptions &amp;&#160;\n          options = BreakLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A BreakLeaseResult describing the broken lease. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A BreakLeaseResult describing the broken lease.
 - section: '&#9670;&#160;Change()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::ChangeLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Change \n          (\n          const std::string &amp;&#160;\n          proposedLeaseId, \n        \n        \n          \n          \n          const ChangeLeaseOptions &amp;&#160;\n          options = ChangeLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: proposedLeaseId
-    summary: 'Proposed lease ID, in a GUID string format. '
+    summary: Proposed lease ID, in a GUID string format.
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A ChangeLeaseResult describing the changed lease. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A ChangeLeaseResult describing the changed lease.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: The current <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html" title="DataLakeLeaseClient allows you to manipulate Azure Storage leases on filesystems and paths.">DataLakeLeaseClient</a> becomes invalid if this operation succeeds.
 - section: '&#9670;&#160;CreateUniqueLeaseId()'
-- content: ''
-- content: ''
-- content: ''
-- content: "static std::string Azure::Storage::Files::DataLake::DataLakeLeaseClient::CreateUniqueLeaseId \n          (\n          )\n          \n        \n      \n  \n  \ninlinestatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A unique lease ID. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A unique lease ID.
 - section: '&#9670;&#160;GetLeaseId()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string Azure::Storage::Files::DataLake::DataLakeLeaseClient::GetLeaseId \n          (\n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Lease ID of this lease client. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Lease ID of this lease client.
 - section: '&#9670;&#160;Release()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::ReleaseLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Release \n          (\n          const ReleaseLeaseOptions &amp;&#160;\n          options = ReleaseLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A ReleaseLeaseResult describing the updated container or blob. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: A ReleaseLeaseResult describing the updated container or blob.
 - section: '&#9670;&#160;Renew()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::RenewLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Renew \n          (\n          const RenewLeaseOptions &amp;&#160;\n          options = RenewLeaseOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to execute this function. '
+    summary: Optional parameters to execute this function.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'A RenewLeaseResult describing the lease. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+  - summary: A RenewLeaseResult describing the lease.
 - content: >-
-    inc/azure/storage/files/datalake/datalake_lease_client.hpp
+    The documentation for this class was generated from the following files:inc/azure/storage/files/datalake/datalake_lease_client.hpp
 
-    src/datalake_lease_client.cpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/datalake_lease_client.cppGenerated by&#160;1.9.7

@@ -1,303 +1,110 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Security::KeyVault::Certificates::CertificateKeyUsage
+title: Azure::Security::KeyVault::Certificates::CertificateKeyUsage Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-security-keyvault-certificates
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureSecurityKeyVaultCertificatesCertificateKeyUsage
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - content: >-
     Supported usages of a certificate key.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#details">More...</a>
-- content: ''
-- content: <code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code>
-- content: ''
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#details">More...</a><code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;CertificateKeyUsage (std::string value)Construct a new Key Curve Name object.  
-
-
-
-    &#160;&#160;CertificateKeyUsage ()=defaultConstruct a default key curve.  
-
-
-
-    bool&#160;&#160;operator== (const CertificateKeyUsage &amp;other) const noexceptEnables using the equal operator for key curve.  
-
-
-
-    bool&#160;&#160;operator!= (const CertificateKeyUsage &amp;other) const noexceptEnables using the not equal operator for JWT.  
-
-
-
-    std::string const &amp;&#160;&#160;ToString () constGet the string value of the key curve.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#a399520a711bdbea4feee98bc3528edaa">CertificateKeyUsage</a> (std::string value)
+    summary: Construct a new Key Curve Name object.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#a53e7dd67a4212ee9e3d2036305080fb6">CertificateKeyUsage</a> ()=default
+    summary: Construct a default key curve.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#aaad1f961f5c2f569a4f6a8c77de67cba">operator==</a> (const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> &other) const noexcept
+    summary: Enables using the equal operator for key curve.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#a7071f8de04086304752b1fcae40b7e2c">operator!=</a> (const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> &other) const noexcept
+    summary: Enables using the not equal operator for JWT.  <br>
+    returnType: bool 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#aee640988290c2690746acfde6b916447">ToString</a> () const
+    summary: Get the string value of the key curve.  <br>
+    returnType: std::string const & 
 - section: Static Public Attributes
-- content: >-
-    static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const CertificateKeyUsage&#160;&#160;DigitalSignatureGet a CertificateKeyUsage indicating that the certificate key can be used as a digital signatures.  
-
-
-
-    static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const CertificateKeyUsage&#160;&#160;NonRepudiationGet a CertificateKeyUsage indicating that the certificate key can be used for authentication.  
-
-
-
-    static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const CertificateKeyUsage&#160;&#160;KeyEnciphermentGet a CertificateKeyUsage indicating that the certificate key can be used for key encryption.  
-
-
-
-    static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const CertificateKeyUsage&#160;&#160;DataEnciphermentGet a CertificateKeyUsage indicating that the certificate key can be used for data encryption.  
-
-
-
-    static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const CertificateKeyUsage&#160;&#160;KeyAgreementGet a CertificateKeyUsage indicating that the certificate key can be used to determine key agreement, such as a key created using the Diffie-Hellman key agreement algorithm.  
-
-
-
-    static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const CertificateKeyUsage&#160;&#160;KeyCertSignGet a CertificateKeyUsage indicating that the certificate key can be used to sign certificates.  
-
-
-
-    static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const CertificateKeyUsage&#160;&#160;CrlSignGet a CertificateKeyUsage indicating that the certificate key can be used to sign a certificate revocation list.  
-
-
-
-    static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const CertificateKeyUsage&#160;&#160;EncipherOnlyGet a CertificateKeyUsage indicating that the certificate key can be used for encryption only.  
-
-
-
-    static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const CertificateKeyUsage&#160;&#160;DecipherOnlyGet a CertificateKeyUsage indicating that the certificate key can be used for decryption only.
-- content: ''
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#a9325db1bef810b771c35db7f525989b0">DigitalSignature</a>
+    summary: Get a <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html" title="Supported usages of a certificate key.">CertificateKeyUsage</a> indicating that the certificate key can be used as a digital signatures.  <br>
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#aa0dfba9ac763fb45ebc23cfd43fcf07d">NonRepudiation</a>
+    summary: Get a <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html" title="Supported usages of a certificate key.">CertificateKeyUsage</a> indicating that the certificate key can be used for authentication.  <br>
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#a02d609bb954777331e6206b13d1fbf6a">KeyEncipherment</a>
+    summary: Get a <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html" title="Supported usages of a certificate key.">CertificateKeyUsage</a> indicating that the certificate key can be used for key encryption.  <br>
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#a08e03fa03f4db9a6cf412cdf8cf5221a">DataEncipherment</a>
+    summary: Get a <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html" title="Supported usages of a certificate key.">CertificateKeyUsage</a> indicating that the certificate key can be used for data encryption.  <br>
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#afd9f28956c90766e5e460d2883951ca7">KeyAgreement</a>
+    summary: Get a <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html" title="Supported usages of a certificate key.">CertificateKeyUsage</a> indicating that the certificate key can be used to determine key agreement, such as a key created using the Diffie-Hellman key agreement algorithm.  <br>
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#a8d72dc9544f6638b864c1a025ee5016e">KeyCertSign</a>
+    summary: Get a <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html" title="Supported usages of a certificate key.">CertificateKeyUsage</a> indicating that the certificate key can be used to sign certificates.  <br>
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#abb92e0f2b7d555b45ce5eb9370f58b9f">CrlSign</a>
+    summary: Get a <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html" title="Supported usages of a certificate key.">CertificateKeyUsage</a> indicating that the certificate key can be used to sign a certificate revocation list.  <br>
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#a9a28727c282f06654c05268027733962">EncipherOnly</a>
+    summary: Get a <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html" title="Supported usages of a certificate key.">CertificateKeyUsage</a> indicating that the certificate key can be used for encryption only.  <br>
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html#ad9a4b5a54c79cc3bbb13b2b2459762b3">DecipherOnly</a>
+    summary: Get a <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html" title="Supported usages of a certificate key.">CertificateKeyUsage</a> indicating that the certificate key can be used for decryption only.  <br>
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.html">CertificateKeyUsage</a> 
 - section: Detailed Description
-- content: ''
+  display: h2
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CertificateKeyUsage() [1/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Certificates::CertificateKeyUsage::CertificateKeyUsage \n          (\n          std::string&#160;\n          value)\n          \n        \n      \n  \n  \ninlineexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: value
-    summary: 'The string value of the instance. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: The string value of the instance.
 - section: '&#9670;&#160;CertificateKeyUsage() [2/2]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Security::KeyVault::Certificates::CertificateKeyUsage::CertificateKeyUsage \n          (\n          )\n          \n        \n      \n  \n  \ndefault"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;operator!=()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::Security::KeyVault::Certificates::CertificateKeyUsage::operator!= \n          (\n          const CertificateKeyUsage &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninlinenoexcept"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: 'A JWT to be compared. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: A JWT to be compared.
 - section: '&#9670;&#160;operator==()'
-- content: ''
-- content: ''
-- content: ''
-- content: "bool Azure::Security::KeyVault::Certificates::CertificateKeyUsage::operator== \n          (\n          const CertificateKeyUsage &amp;&#160;\n          other)\n           const\n        \n      \n  \n  \ninlinenoexcept"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: 'A key curve to be compared. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: A key curve to be compared.
 - section: '&#9670;&#160;ToString()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string const  &amp; Azure::Security::KeyVault::Certificates::CertificateKeyUsage::ToString \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CrlSign'
-- content: ''
-- content: ''
-- content: ''
-- content: "const CertificateKeyUsage Azure::Security::KeyVault::Certificates::CertificateKeyUsage::CrlSign\n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DataEncipherment'
-- content: ''
-- content: ''
-- content: ''
-- content: "const CertificateKeyUsage Azure::Security::KeyVault::Certificates::CertificateKeyUsage::DataEncipherment\n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DecipherOnly'
-- content: ''
-- content: ''
-- content: ''
-- content: "const CertificateKeyUsage Azure::Security::KeyVault::Certificates::CertificateKeyUsage::DecipherOnly\n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;DigitalSignature'
-- content: ''
-- content: ''
-- content: ''
-- content: "const CertificateKeyUsage Azure::Security::KeyVault::Certificates::CertificateKeyUsage::DigitalSignature\n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;EncipherOnly'
-- content: ''
-- content: ''
-- content: ''
-- content: "const CertificateKeyUsage Azure::Security::KeyVault::Certificates::CertificateKeyUsage::EncipherOnly\n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyAgreement'
-- content: ''
-- content: ''
-- content: ''
-- content: "const CertificateKeyUsage Azure::Security::KeyVault::Certificates::CertificateKeyUsage::KeyAgreement\n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyCertSign'
-- content: ''
-- content: ''
-- content: ''
-- content: "const CertificateKeyUsage Azure::Security::KeyVault::Certificates::CertificateKeyUsage::KeyCertSign\n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;KeyEncipherment'
-- content: ''
-- content: ''
-- content: ''
-- content: "const CertificateKeyUsage Azure::Security::KeyVault::Certificates::CertificateKeyUsage::KeyEncipherment\n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;NonRepudiation'
-- content: ''
-- content: ''
-- content: ''
-- content: "const CertificateKeyUsage Azure::Security::KeyVault::Certificates::CertificateKeyUsage::NonRepudiation\n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following files:'
+  display: h2
 - content: >-
-    inc/azure/keyvault/certificates/certificate_client_models.hpp
+    The documentation for this class was generated from the following files:inc/azure/keyvault/certificates/certificate_client_models.hpp
 
-    src/private/certificate_key_usage.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+    src/private/certificate_key_usage.hppGenerated by&#160;1.9.7

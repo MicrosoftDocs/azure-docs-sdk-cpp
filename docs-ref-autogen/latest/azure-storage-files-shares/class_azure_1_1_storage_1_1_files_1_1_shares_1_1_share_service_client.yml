@@ -1,302 +1,145 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::Shares::ShareServiceClient
+title: Azure::Storage::Files::Shares::ShareServiceClient Class Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-shares
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesSharesShareServiceClient
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: The <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html">ShareServiceClient</a> allows you to manipulate Azure Storage shares and their directories and files.
-- content: ''
-- content: <code>#include &lt;<a href="share__service__client_8hpp_source.html">share_service_client.hpp</a>&gt;</code>
-- content: ''
+- content: The <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html">ShareServiceClient</a> allows you to manipulate Azure Storage shares and their directories and files.<code>#include &lt;<a href="share__service__client_8hpp_source.html">share_service_client.hpp</a>&gt;</code>
 - section: Public Member Functions
-- content: >-
-    &#160;&#160;ShareServiceClient (const std::string &amp;serviceUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareServiceClient using shared key authentication.  
-
-
-
-    &#160;&#160;ShareServiceClient (const std::string &amp;serviceUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareServiceClient using shared key authentication.  
-
-
-
-    &#160;&#160;ShareServiceClient (const std::string &amp;serviceUrl, const ShareClientOptions &amp;options=ShareClientOptions())Initialize a new instance of ShareServiceClient using anonymous access or shared access signature.  
-
-
-
-    ShareClient&#160;&#160;GetShareClient (const std::string &amp;shareName) constCreate a ShareClient from current ShareServiceClient.  
-
-
-
-    std::string&#160;&#160;GetUrl () constGets the file share service's primary URL endpoint.  
-
-
-
-    ListSharesPagedResponse&#160;&#160;ListShares (const ListSharesOptions &amp;options=ListSharesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constReturns a paginated collection of the shares in the storage account. Enumerating the shares may make multiple requests to the service while fetching all the values.  
-
-
-
-    Azure::Response&lt; Models::SetServicePropertiesResult &gt;&#160;&#160;SetProperties (Models::ShareServiceProperties properties, const SetServicePropertiesOptions &amp;options=SetServicePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constSet the service's properties.  
-
-
-
-    Azure::Response&lt; Models::ShareServiceProperties &gt;&#160;&#160;GetProperties (const GetServicePropertiesOptions &amp;options=GetServicePropertiesOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) constGet the service's properties.
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#a23b3616ec4db127eae25cd231480a779">ShareServiceClient</a> (const std::string &serviceUrl, std::shared_ptr< StorageSharedKeyCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html" title="The ShareServiceClient allows you to manipulate Azure Storage shares and their directories and files.">ShareServiceClient</a> using shared key authentication.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#a75803d186f28ebbb1196e48d9884ad9b">ShareServiceClient</a> (const std::string &serviceUrl, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html" title="The ShareServiceClient allows you to manipulate Azure Storage shares and their directories and files.">ShareServiceClient</a> using shared key authentication.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#ace41efddfdb5234ca8287a895f43f372">ShareServiceClient</a> (const std::string &serviceUrl, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html" title="The ShareServiceClient allows you to manipulate Azure Storage shares and their directories and files.">ShareServiceClient</a> using anonymous access or shared access signature.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#a11d093b84e131f660e8bf53ca88cd58b">GetShareClient</a> (const std::string &shareName) const
+    summary: Create a <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> from current <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html" title="The ShareServiceClient allows you to manipulate Azure Storage shares and their directories and files.">ShareServiceClient</a>.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html">ShareClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#a44ffa4e9df457345cbae60a0f30d0c0d">GetUrl</a> () const
+    summary: Gets the file share service's primary URL endpoint.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#a1d926a9af527d1da8c30a261b4bcdda1">ListShares</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_shares_options.html">ListSharesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_shares_options.html">ListSharesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Returns a paginated collection of the shares in the storage account. Enumerating the shares may make multiple requests to the service while fetching all the values.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_shares_paged_response.html">ListSharesPagedResponse</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#abb5e96ede714b26fe603618df5d26481">SetProperties</a> (<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties.html">Models::ShareServiceProperties</a> properties, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_service_properties_options.html">SetServicePropertiesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_service_properties_options.html">SetServicePropertiesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Set the service's properties.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_service_properties_result.html">Models::SetServicePropertiesResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#af2da7b9bbaa7f8a6aed04d4414299d65">GetProperties</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_service_properties_options.html">GetServicePropertiesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_service_properties_options.html">GetServicePropertiesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Get the service's properties.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties.html">Models::ShareServiceProperties</a> > 
 - section: Static Public Member Functions
-- content: static ShareServiceClient&#160;&#160;CreateFromConnectionString (const std::string &amp;connectionString, const ShareClientOptions &amp;options=ShareClientOptions())Create A ShareServiceClient from connection string to manage the service related attributes.
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html#a166fbd47d517100df454158dde0ec2eb">CreateFromConnectionString</a> (const std::string &connectionString, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Create A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html" title="The ShareServiceClient allows you to manipulate Azure Storage shares and their directories and files.">ShareServiceClient</a> from connection string to manage the service related attributes.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html">ShareServiceClient</a> 
 - section: Constructor &amp; Destructor Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;ShareServiceClient() [1/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::Shares::ShareServiceClient::ShareServiceClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: serviceUrl
-    summary: "The service URL this client's request targets. "
+    summary: The service URL this client's request targets.
   - name: credential
-    summary: 'The shared key credential used to initialize the client. '
+    summary: The shared key credential used to initialize the client.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: '&#9670;&#160;ShareServiceClient() [2/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::Shares::ShareServiceClient::ShareServiceClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;\n          credential, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: serviceUrl
-    summary: "The service URL this client's request targets. "
+    summary: The service URL this client's request targets.
   - name: credential
-    summary: 'The token credential used to sign requests. '
+    summary: The token credential used to sign requests.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: '&#9670;&#160;ShareServiceClient() [3/3]'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Storage::Files::Shares::ShareServiceClient::ShareServiceClient \n          (\n          const std::string &amp;&#160;\n          serviceUrl, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nexplicit"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: serviceUrl
-    summary: "The service URL this client's request targets. "
+    summary: The service URL this client's request targets.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
-- content: ''
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: Member Function Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;CreateFromConnectionString()'
-- content: ''
-- content: ''
-- content: ''
-- content: "static ShareServiceClient Azure::Storage::Files::Shares::ShareServiceClient::CreateFromConnectionString \n          (\n          const std::string &amp;&#160;\n          connectionString, \n        \n        \n          \n          \n          const ShareClientOptions &amp;&#160;\n          options = ShareClientOptions()&#160;\n        \n        \n          \n          )\n          \n        \n      \n  \n  \nstatic"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: connectionString
-    summary: 'Azure Storage connection string. '
+    summary: Azure Storage connection string.
   - name: options
-    summary: 'Optional parameters used to initialize the client. '
-- content: ''
+    summary: Optional parameters used to initialize the client.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html" title="The ShareServiceClient allows you to manipulate Azure Storage shares and their directories and files.">ShareServiceClient</a> '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client.html" title="The ShareServiceClient allows you to manipulate Azure Storage shares and their directories and files.">ShareServiceClient</a>
 - section: '&#9670;&#160;GetProperties()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::ShareServiceProperties &gt; Azure::Storage::Files::Shares::ShareServiceClient::GetProperties \n          (\n          const GetServicePropertiesOptions &amp;&#160;\n          options = GetServicePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to get the properties of the service. '
+    summary: Optional parameters to get the properties of the service.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<Models::FileServiceProperties> The properties of the service. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<Models::FileServiceProperties> The properties of the service.
 - section: '&#9670;&#160;GetShareClient()'
-- content: ''
-- content: ''
-- content: ''
-- content: >-
-    ShareClient Azure::Storage::Files::Shares::ShareServiceClient::GetShareClient 
-              (
-              const std::string &amp;&#160;
-              shareName)
-               const
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: shareName
-    summary: 'The name of the file share. '
-- content: ''
+    summary: The name of the file share.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> A share client that can be used to manage a share resource. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> A share client that can be used to manage a share resource.
 - section: '&#9670;&#160;GetUrl()'
-- content: ''
-- content: ''
-- content: ''
-- content: "std::string Azure::Storage::Files::Shares::ShareServiceClient::GetUrl \n          (\n          )\n           const\n        \n      \n  \n  \ninline"
-- content: ''
-- content: ''
+  display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: "The file share service's primary URL endpoint. "
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: The file share service's primary URL endpoint.
 - section: '&#9670;&#160;ListShares()'
-- content: ''
-- content: ''
-- content: ''
-- content: "ListSharesPagedResponse Azure::Storage::Files::Shares::ShareServiceClient::ListShares \n          (\n          const ListSharesOptions &amp;&#160;\n          options = ListSharesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
-    summary: 'Optional parameters to list the shares. '
+    summary: Optional parameters to list the shares.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: '<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_shares_paged_response.html" title="Response type for Azure::Storage::Files::Shares::ShareServiceClient::ListShares.">ListSharesPagedResponse</a> describing the shares in this storage account. '
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
+  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_shares_paged_response.html" title="Response type for Azure::Storage::Files::Shares::ShareServiceClient::ListShares.">ListSharesPagedResponse</a> describing the shares in this storage account.
 - section: '&#9670;&#160;SetProperties()'
-- content: ''
-- content: ''
-- content: ''
-- content: "Azure::Response&lt; Models::SetServicePropertiesResult &gt; Azure::Storage::Files::Shares::ShareServiceClient::SetProperties \n          (\n          Models::ShareServiceProperties&#160;\n          properties, \n        \n        \n          \n          \n          const SetServicePropertiesOptions &amp;&#160;\n          options = SetServicePropertiesOptions(), \n        \n        \n          \n          \n          const Azure::Core::Context &amp;&#160;\n          context = Azure::Core::Context()&#160;\n        \n        \n          \n          )\n           const"
-- content: ''
-- content: ''
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: properties
-    summary: 'The properties of the service that is to be set. '
+    summary: The properties of the service that is to be set.
   - name: options
-    summary: 'Optional parameters to set the properties of the service. '
+    summary: Optional parameters to set the properties of the service.
   - name: context
-    summary: 'Context for cancelling long running operations. '
-- content: ''
+    summary: Context for cancelling long running operations.
 - section: Returns
   display: h4
 - parameters:
-  - summary: 'Azure::Response<Models::SetServicePropertiesResult> The information returned when setting the service properties. '
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this class was generated from the following file:'
-- content: inc/azure/storage/files/shares/share_service_client.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  - summary: Azure::Response<Models::SetServicePropertiesResult> The information returned when setting the service properties.
+- content: The documentation for this class was generated from the following file:inc/azure/storage/files/shares/share_service_client.hppGenerated by&#160;1.9.7

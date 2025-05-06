@@ -1,161 +1,40 @@
 ### YamlMime:Reference
-title: ''
+uid: Azure::Storage::Files::DataLake::AppendFileOptions
+title: Azure::Storage::Files::DataLake::AppendFileOptions Struct Reference
 components:
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: azure-storage-files-datalake
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Loading...
-- content: ''
-- content: Searching...
-- content: ''
-- content: No Matches
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: AzureStorageFilesDataLakeAppendFileOptions
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a54d30b7659e43ad83016c3a32983efc2">Azure::Storage::Files::DataLake::DataLakeFileClient::Append</a>.
-- content: ''
-- content: <code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
-- content: ''
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a54d30b7659e43ad83016c3a32983efc2">Azure::Storage::Files::DataLake::DataLakeFileClient::Append</a>.<code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
 - section: Public Attributes
-- content: >-
-    Azure::Nullable&lt; Storage::ContentHash &gt;&#160;TransactionalContentHash
-
-
-    LeaseAccessConditions&#160;AccessConditions
-
-
-    Azure::Nullable&lt; bool &gt;&#160;Flush
-
-
-    Azure::Nullable&lt; Models::LeaseAction &gt;&#160;LeaseAction
-
-
-    Azure::Nullable&lt; std::string &gt;&#160;LeaseId
-
-
-    Azure::Nullable&lt; std::chrono::seconds &gt;&#160;LeaseDuration
-- content: ''
+  display: h2
+- apiList:
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#adfc677a93d16cf3a1ce850cdb990cd2e">TransactionalContentHash</a>
+    returnType: Azure::Nullable< Storage::ContentHash > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#a1f0d6f01494af8ff34d56b9b81bb6133">AccessConditions</a>
+    returnType: LeaseAccessConditions 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#a9e6eaa132c1ad00f40c80684a3307aa9">Flush</a>
+    returnType: Azure::Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#af9556708cf002953d69d384ebaefb3b3">LeaseAction</a>
+    returnType: Azure::Nullable< <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_lease_action.html">Models::LeaseAction</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#a5374632c4fdeb9670823144ca59af52f">LeaseId</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#a45371e7a414977997fa7cb7c6d52e611">LeaseDuration</a>
+    returnType: Azure::Nullable< std::chrono::seconds > 
 - section: Member Data Documentation
-- content: ''
-- content: ''
-- content: ''
+  display: h2
 - section: '&#9670;&#160;AccessConditions'
-- content: ''
-- content: ''
-- content: ''
-- content: LeaseAccessConditions Azure::Storage::Files::DataLake::AppendFileOptions::AccessConditions
-- content: ''
-- content: ''
+  display: h2
 - content: Specify the lease access conditions.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;Flush'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::AppendFileOptions::Flush
-- content: ''
-- content: ''
+  display: h2
 - content: If true, the file will be flushed after the append.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseAction'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;Models::LeaseAction&gt; Azure::Storage::Files::DataLake::AppendFileOptions::LeaseAction
-- content: ''
-- content: ''
+  display: h2
 - content: If "acquire" it will acquire the lease. If "auto-renew" it will renew the lease. If "release" it will release the lease only on flush. Only applicable if Flush is set to true. If "acquire-release" it will acquire &amp; complete the operation &amp; release the lease once operation is done. Only applicable if Flush is set to true.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseDuration'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::chrono::seconds&gt; Azure::Storage::Files::DataLake::AppendFileOptions::LeaseDuration
-- content: ''
-- content: ''
+  display: h2
 - content: Specifies the duration of the lease, in seconds, or InfiniteLeaseDuration for a lease that never expires. A non-infinite lease can be between 15 and 60 seconds. A lease duration cannot be changed using renew or change.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;LeaseId'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::AppendFileOptions::LeaseId
-- content: ''
-- content: ''
+  display: h2
 - content: Proposed LeaseId.
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: ''
 - section: '&#9670;&#160;TransactionalContentHash'
-- content: ''
-- content: ''
-- content: ''
-- content: Azure::Nullable&lt;Storage::ContentHash&gt; Azure::Storage::Files::DataLake::AppendFileOptions::TransactionalContentHash
-- content: ''
-- content: ''
-- content: Specify the transactional hash for the body, to be validated by the service.
-- content: ''
-- content: ''
-- content: ''
-- content: 'The documentation for this struct was generated from the following file:'
-- content: inc/azure/storage/files/datalake/datalake_options.hpp
-- content: ''
-- content: ''
-- content: ''
-- content: ''
-- content: Generated by&#160;
-- content: ''
-- content: 1.9.7
-- content: ''
-- content: ''
-- content: ''
+  display: h2
+- content: Specify the transactional hash for the body, to be validated by the service.The documentation for this struct was generated from the following file:inc/azure/storage/files/datalake/datalake_options.hppGenerated by&#160;1.9.7

@@ -3,84 +3,84 @@ uid: Azure::Messaging::EventHubs::EventDataBatch
 title: Azure::Messaging::EventHubs::EventDataBatch Class Reference
 components:
 - content: >-
-    <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> is used to efficiently pack up EventData before sending it to Event Hubs.  
-     <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#details">More...</a><code>#include &lt;<a href="event__data__batch_8hpp_source.html">event_data_batch.hpp</a>&gt;</code>
+    <p><a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> is used to efficiently pack up EventData before sending it to Event Hubs.  
+     <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#details">More...</a></p><p><code>#include &lt;<a href="event__data__batch_8hpp_source.html">event_data_batch.hpp</a>&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a32fc9bf93a78e7391b421c5f733199ce">EventDataBatch</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> const &other)
-    summary: Constructs an <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> from another <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a>.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a3ba7a24d6e9d3834867c2918215d2078">operator=</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> const &other)
-    returnType: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> & 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#aec672eb31c811fb0a0293629a9a865c1">GetPartitionId</a> () const
-    summary: Gets the partition ID for the data batch.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a5d5ba3efe7cb9c6ff4a4d513aa655f48">GetPartitionKey</a> () const
-    summary: Gets the partition key for the data batch.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a3480f5b77ddddcf32012a3de5f00815d">GetMaxBytes</a> () const
-    summary: Gets the maximum size of the data batch.  <br>
-    returnType: uint64_t 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#aa807508f3648b3c8116597b25b41dd99">TryAdd</a> (std::shared_ptr< Azure::Core::Amqp::Models::AmqpMessage const > const &message)
-    summary: Attempts to add a raw AMQP message to the data batch.  <br>
-    returnType: _azure_NODISCARD bool 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a6f946f7966a3f9aeb594f9be7d85abbf">TryAdd</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">Azure::Messaging::EventHubs::Models::EventData</a> const &message)
-    summary: Attempts to add a message to the data batch.  <br>
-    returnType: _azure_NODISCARD bool 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a923760006fcd3de48dd9a1b110591f00">NumberOfEvents</a> ()
-    summary: Gets the number of messages in the batch.  <br>
-    returnType: size_t 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a928993525e784ff3f95634c6c2cc3aab">ToAmqpMessage</a> () const
-    summary: Serializes the <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> to a single AmqpMessage to be sent to the EventHubs service.  <br>
-    returnType: Azure::Core::Amqp::Models::AmqpMessage 
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a32fc9bf93a78e7391b421c5f733199ce">EventDataBatch</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> const &amp;other)
+    summary: Constructs an <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a3ba7a24d6e9d3834867c2918215d2078">operator=</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> const &amp;other)
+    returnType: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#aec672eb31c811fb0a0293629a9a865c1">GetPartitionId</a> () const
+    summary: Gets the partition ID for the data batch.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a5d5ba3efe7cb9c6ff4a4d513aa655f48">GetPartitionKey</a> () const
+    summary: Gets the partition key for the data batch.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a3480f5b77ddddcf32012a3de5f00815d">GetMaxBytes</a> () const
+    summary: Gets the maximum size of the data batch.
+    returnType: uint64_t&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#aa807508f3648b3c8116597b25b41dd99">TryAdd</a> (std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;message)
+    summary: Attempts to add a raw AMQP message to the data batch.
+    returnType: _azure_NODISCARD bool&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a6f946f7966a3f9aeb594f9be7d85abbf">TryAdd</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">Azure::Messaging::EventHubs::Models::EventData</a> const &amp;message)
+    summary: Attempts to add a message to the data batch.
+    returnType: _azure_NODISCARD bool&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a923760006fcd3de48dd9a1b110591f00">NumberOfEvents</a> ()
+    summary: Gets the number of messages in the batch.
+    returnType: size_t&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html#a928993525e784ff3f95634c6c2cc3aab">ToAmqpMessage</a> () const
+    summary: Serializes the <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> to a single AmqpMessage to be sent to the EventHubs service.
+    returnType: Azure::Core::Amqp::Models::AmqpMessage&#160;
 - section: Detailed Description
   display: h2
 - section: Remarks
   display: h4
 - parameters:
-  - summary: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a>'s are not meant to be created directly. Use [ProducerClient.CreateEventDataBatch], which will create them with the proper size limit for your Event Hub.
+  - summary: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a>'s are not meant to be created directly. Use [ProducerClient.CreateEventDataBatch], which will create them with the proper size limit for your Event Hub.
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;EventDataBatch()'
+- section: EventDataBatch()
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: The <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> to copy
+    summary: The <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> to copy
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;GetMaxBytes()'
+- section: GetMaxBytes()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: uint64_t
-- section: '&#9670;&#160;GetPartitionId()'
+- section: GetPartitionId()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string
-- section: '&#9670;&#160;GetPartitionKey()'
+- section: GetPartitionKey()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string
-- section: '&#9670;&#160;NumberOfEvents()'
+- section: NumberOfEvents()
   display: h2
-- section: '&#9670;&#160;operator=()'
+- section: operator=()
   display: h2
-- content: Copy an <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> to another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a>
-- section: '&#9670;&#160;ToAmqpMessage()'
+- content: <p>Copy an <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> to another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> </p>
+- section: ToAmqpMessage()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: Azure::Core::Amqp::Models::AmqpMessage
-- section: '&#9670;&#160;TryAdd() [1/2]'
+- section: TryAdd() [1/2]
   display: h2
 - section: Parameters
   display: h4
@@ -91,7 +91,7 @@ components:
   display: h4
 - parameters:
   - summary: true if the message was added to the batch, false otherwise.
-- section: '&#9670;&#160;TryAdd() [2/2]'
+- section: TryAdd() [2/2]
   display: h2
 - section: Parameters
   display: h4
@@ -103,6 +103,10 @@ components:
 - parameters:
   - summary: true if the message was added to the batch, false otherwise.
 - content: >-
-    The documentation for this class was generated from the following files:inc/azure/messaging/eventhubs/event_data_batch.hpp
+    The documentation for this class was generated from the following files:<ul>
 
-    src/event_data_batch.cppGenerated by&#160;1.9.7
+    <li>inc/azure/messaging/eventhubs/<a href="event__data__batch_8hpp_source.html">event_data_batch.hpp</a></li>
+
+    <li>src/event_data_batch.cpp</li>
+
+    </ul>

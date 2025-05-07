@@ -2,44 +2,47 @@
 uid: Azure::Core::Diagnostics::Logger
 title: Azure::Core::Diagnostics::Logger Class Reference
 components:
-- content: Log message handler.<code>#include &lt;<a href="logger_8hpp_source.html">logger.hpp</a>&gt;</code>
+- content: >-
+    <p>Log message handler.  
+
+    </p><p><code>#include &lt;<a href="logger_8hpp_source.html">logger.hpp</a>&gt;</code></p>
 - section: Public Types
   display: h2
 - apiList:
   - declaration: >-
-      <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">Level</a> : int { <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569ad4a9fa383ab700c5bdd6f31cf7df0faf">Verbose</a> = 1
+      <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">Level</a> : int { <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569ad4a9fa383ab700c5bdd6f31cf7df0faf">Verbose</a> = 1
 
-      , <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569a5391f9a882a54c787b206138ed6d28b0">Informational</a> = 2
+      , <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569a5391f9a882a54c787b206138ed6d28b0">Informational</a> = 2
 
-      , <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569a0eaadb4fcb48a0a0ed7bc9868be9fbaa">Warning</a> = 3
+      , <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569a0eaadb4fcb48a0a0ed7bc9868be9fbaa">Warning</a> = 3
 
-      , <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569a902b0d55fddef6f8d651fe1035b7d4bd">Error</a> = 4
+      , <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569a902b0d55fddef6f8d651fe1035b7d4bd">Error</a> = 4
        }
-    summary: Log message level.  <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">More...</a><br>
-    returnType: enum class  
+    summary: Log message level.  <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">More...</a>
+    returnType: enum class &#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#a6e5b3340f691b3003ce0c0f4354d74b3">SetListener</a> (std::function< void(<a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">Level</a> level, std::string const &message)> listener)
-    summary: Sets the function that will be invoked to report an <a class="el" href="namespace_azure.html" title="Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.">Azure</a> SDK log message.  <br>
-    returnType: static void 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#a04c04d487a84eb71da1951acff3a6660">SetLevel</a> (<a class="el" href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">Level</a> level)
-    summary: Sets the log message level an application is interested in receiving.  <br>
-    returnType: static void 
+  - declaration: <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#a6e5b3340f691b3003ce0c0f4354d74b3">SetListener</a> (std::function&lt; void(<a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">Level</a> level, std::string const &amp;message)&gt; listener)
+    summary: Sets the function that will be invoked to report an <a href="namespace_azure.html">Azure</a> SDK log message.
+    returnType: static void&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#a04c04d487a84eb71da1951acff3a6660">SetLevel</a> (<a href="class_azure_1_1_core_1_1_diagnostics_1_1_logger.html#acd22a5abeec67ee2b56ef08de0c9c569">Level</a> level)
+    summary: Sets the log message level an application is interested in receiving.
+    returnType: static void&#160;
 - section: Member Enumeration Documentation
   display: h2
-- section: '&#9670;&#160;Level'
+- section: Level
   display: h2
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;SetLevel()'
+- section: SetLevel()
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: level
     summary: The most verbose level to receive log messages for. Least verbose levels will be included, more verbose levels will be not.
-- section: '&#9670;&#160;SetListener()'
+- section: SetListener()
   display: h2
 - section: Parameters
   display: h4
@@ -47,6 +50,10 @@ components:
   - name: listener
     summary: A callback function that will be invoked when the SDK reports a log message. If <code>nullptr</code>, no function will be invoked.
 - content: >-
-    The documentation for this class was generated from the following files:inc/azure/core/diagnostics/logger.hpp
+    The documentation for this class was generated from the following files:<ul>
 
-    src/logger.cppGenerated by&#160;1.9.7
+    <li>inc/azure/core/diagnostics/<a href="logger_8hpp_source.html">logger.hpp</a></li>
+
+    <li>src/logger.cpp</li>
+
+    </ul>

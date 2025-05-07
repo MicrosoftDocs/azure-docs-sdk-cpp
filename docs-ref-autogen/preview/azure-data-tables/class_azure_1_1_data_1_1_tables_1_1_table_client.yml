@@ -2,46 +2,49 @@
 uid: Azure::Data::Tables::TableClient
 title: Azure::Data::Tables::TableClient Class Reference
 components:
-- content: Table Client.<code>#include &lt;<a href="table__client_8hpp_source.html">table_client.hpp</a>&gt;</code>
+- content: >-
+    <p>Table Client.  
+
+    </p><p><code>#include &lt;<a href="table__client_8hpp_source.html">table_client.hpp</a>&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#af0ac5fbf1eab9d9cfab608333022fbdb">TableClient</a> (std::string const &serviceUrl, std::string const &tableName, const <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options.html">TableClientOptions</a> &options={})
-    summary: Initializes a new instance of tableClient.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a25d0c6bcf7dbd1f463941ce67b75958f">TableClient</a> (const std::string &serviceUrl, const std::string &tableName, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options.html">TableClientOptions</a> &options={})
-    summary: Initializes a new instance of tableClient.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#af78e93a288096a6d1d3c62a5a584ef3e">TableClient</a> (const std::string &serviceUrl, std::shared_ptr< <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_credentials_1_1_azure_sas_credential.html">Azure::Data::Tables::Credentials::AzureSasCredential</a> > credential, const std::string &tableName, const <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options.html">TableClientOptions</a> &options={})
-    summary: Initializes a new instance of tableClient.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a2a1d74ed87884c3becda12955f8dd0f1">AddEntity</a> (<a class="el" href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &tableEntity, <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_add_entity_options.html">Models::AddEntityOptions</a> const &options={}, Core::Context const &context={})
-    summary: Add entity in a table.  <br>
-    returnType: Response< <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_add_entity_result.html">Models::AddEntityResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#ad925399151bd0df0f3718659161603ef">UpdateEntity</a> (<a class="el" href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &tableEntity, <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_update_entity_options.html">Models::UpdateEntityOptions</a> const &options={}, Core::Context const &context={})
-    summary: Update entity in a table.  <br>
-    returnType: Response< <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_update_entity_result.html">Models::UpdateEntityResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#abf4a585d4c97a1a70bc4cd0bdb6ea4d5">MergeEntity</a> (<a class="el" href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &tableEntity, <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_merge_entity_options.html">Models::MergeEntityOptions</a> const &options={}, Core::Context const &context={})
-    summary: Merge entity in a table.  <br>
-    returnType: Response< <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_merge_entity_result.html">Models::MergeEntityResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a5bcdc701d0f9eb8a2531d315200befdf">DeleteEntity</a> (<a class="el" href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &tableEntity, Core::Context const &context={})
-    summary: Deletes the specified entity in a table.  <br>
-    returnType: Response< <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_delete_entity_result.html">Models::DeleteEntityResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a093e171fcdadcb3baf4111865a49d688">UpsertEntity</a> (<a class="el" href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &tableEntity, <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_upsert_entity_options.html">Models::UpsertEntityOptions</a> const &options={}, Core::Context const &context={})
-    summary: Upsert specified entity in a table.  <br>
-    returnType: Response< <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_upsert_entity_result.html">Models::UpsertEntityResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a1155e57aae54356a9721271b29ec951a">QueryEntities</a> (<a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_query_entities_options.html">Models::QueryEntitiesOptions</a> const &options={}, Core::Context const &context={})
-    summary: Queries entities in a table.  <br>
-    returnType: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_query_entities_paged_response.html">Models::QueryEntitiesPagedResponse</a> 
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#af2b9394f2d64d6f16653fb86479f139e">GetEntity</a> (std::string const &partitionKey, std::string const &rowKey, Core::Context const &context={})
-    summary: Queries a single entity in a table.  <br>
-    returnType: Response< <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#adb9efe2901f3f6769ca3d0e1713445bb">SubmitTransaction</a> (std::vector< <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_transaction_step.html">Models::TransactionStep</a> > const &steps, Core::Context const &context={})
-    summary: Submits a transaction.  <br>
-    returnType: Response< <a class="el" href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_submit_transaction_result.html">Models::SubmitTransactionResult</a> > 
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#af0ac5fbf1eab9d9cfab608333022fbdb">TableClient</a> (std::string const &amp;serviceUrl, std::string const &amp;tableName, const <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options.html">TableClientOptions</a> &amp;options={})
+    summary: Initializes a new instance of tableClient.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a25d0c6bcf7dbd1f463941ce67b75958f">TableClient</a> (const std::string &amp;serviceUrl, const std::string &amp;tableName, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options.html">TableClientOptions</a> &amp;options={})
+    summary: Initializes a new instance of tableClient.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#af78e93a288096a6d1d3c62a5a584ef3e">TableClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; <a href="class_azure_1_1_data_1_1_tables_1_1_credentials_1_1_azure_sas_credential.html">Azure::Data::Tables::Credentials::AzureSasCredential</a> &gt; credential, const std::string &amp;tableName, const <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options.html">TableClientOptions</a> &amp;options={})
+    summary: Initializes a new instance of tableClient.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a2a1d74ed87884c3becda12955f8dd0f1">AddEntity</a> (<a href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &amp;tableEntity, <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_add_entity_options.html">Models::AddEntityOptions</a> const &amp;options={}, Core::Context const &amp;context={})
+    summary: Add entity in a table.
+    returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_add_entity_result.html">Models::AddEntityResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#ad925399151bd0df0f3718659161603ef">UpdateEntity</a> (<a href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &amp;tableEntity, <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_update_entity_options.html">Models::UpdateEntityOptions</a> const &amp;options={}, Core::Context const &amp;context={})
+    summary: Update entity in a table.
+    returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_update_entity_result.html">Models::UpdateEntityResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#abf4a585d4c97a1a70bc4cd0bdb6ea4d5">MergeEntity</a> (<a href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &amp;tableEntity, <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_merge_entity_options.html">Models::MergeEntityOptions</a> const &amp;options={}, Core::Context const &amp;context={})
+    summary: Merge entity in a table.
+    returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_merge_entity_result.html">Models::MergeEntityResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a5bcdc701d0f9eb8a2531d315200befdf">DeleteEntity</a> (<a href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &amp;tableEntity, Core::Context const &amp;context={})
+    summary: Deletes the specified entity in a table.
+    returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_delete_entity_result.html">Models::DeleteEntityResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a093e171fcdadcb3baf4111865a49d688">UpsertEntity</a> (<a href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> const &amp;tableEntity, <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_upsert_entity_options.html">Models::UpsertEntityOptions</a> const &amp;options={}, Core::Context const &amp;context={})
+    summary: Upsert specified entity in a table.
+    returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_upsert_entity_result.html">Models::UpsertEntityResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#a1155e57aae54356a9721271b29ec951a">QueryEntities</a> (<a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_query_entities_options.html">Models::QueryEntitiesOptions</a> const &amp;options={}, Core::Context const &amp;context={})
+    summary: Queries entities in a table.
+    returnType: <a href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_query_entities_paged_response.html">Models::QueryEntitiesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#af2b9394f2d64d6f16653fb86479f139e">GetEntity</a> (std::string const &amp;partitionKey, std::string const &amp;rowKey, Core::Context const &amp;context={})
+    summary: Queries a single entity in a table.
+    returnType: Response&lt; <a href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_table_entity.html">Models::TableEntity</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client.html#adb9efe2901f3f6769ca3d0e1713445bb">SubmitTransaction</a> (std::vector&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_transaction_step.html">Models::TransactionStep</a> &gt; const &amp;steps, Core::Context const &amp;context={})
+    summary: Submits a transaction.
+    returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_submit_transaction_result.html">Models::SubmitTransactionResult</a> &gt;&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;TableClient() [1/3]'
+- section: TableClient() [1/3]
   display: h2
 - section: Parameters
   display: h4
@@ -52,7 +55,7 @@ components:
     summary: The name of the table.
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
-- section: '&#9670;&#160;TableClient() [2/3]'
+- section: TableClient() [2/3]
   display: h2
 - section: Parameters
   display: h4
@@ -65,7 +68,7 @@ components:
     summary: The shared key credential used to sign requests.
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
-- section: '&#9670;&#160;TableClient() [3/3]'
+- section: TableClient() [3/3]
   display: h2
 - section: Parameters
   display: h4
@@ -80,7 +83,7 @@ components:
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;AddEntity()'
+- section: AddEntity()
   display: h2
 - section: Parameters
   display: h4
@@ -95,7 +98,7 @@ components:
   display: h4
 - parameters:
   - summary: Add entity result.
-- section: '&#9670;&#160;DeleteEntity()'
+- section: DeleteEntity()
   display: h2
 - section: Parameters
   display: h4
@@ -108,7 +111,7 @@ components:
   display: h4
 - parameters:
   - summary: Delete entity result.
-- section: '&#9670;&#160;GetEntity()'
+- section: GetEntity()
   display: h2
 - section: Parameters
   display: h4
@@ -123,7 +126,7 @@ components:
   display: h4
 - parameters:
   - summary: Table entity.
-- section: '&#9670;&#160;MergeEntity()'
+- section: MergeEntity()
   display: h2
 - section: Parameters
   display: h4
@@ -138,7 +141,7 @@ components:
   display: h4
 - parameters:
   - summary: Merge entity result.
-- section: '&#9670;&#160;QueryEntities()'
+- section: QueryEntities()
   display: h2
 - section: Parameters
   display: h4
@@ -151,7 +154,7 @@ components:
   display: h4
 - parameters:
   - summary: Entity list paged response.
-- section: '&#9670;&#160;SubmitTransaction()'
+- section: SubmitTransaction()
   display: h2
 - section: Parameters
   display: h4
@@ -164,7 +167,7 @@ components:
   display: h4
 - parameters:
   - summary: Submit transaction result.
-- section: '&#9670;&#160;UpdateEntity()'
+- section: UpdateEntity()
   display: h2
 - section: Parameters
   display: h4
@@ -179,7 +182,7 @@ components:
   display: h4
 - parameters:
   - summary: Update entity result.
-- section: '&#9670;&#160;UpsertEntity()'
+- section: UpsertEntity()
   display: h2
 - section: Parameters
   display: h4
@@ -195,6 +198,10 @@ components:
 - parameters:
   - summary: Upsert entity result.
 - content: >-
-    The documentation for this class was generated from the following files:inc/azure/data/tables/table_client.hpp
+    The documentation for this class was generated from the following files:<ul>
 
-    src/table_clients.cppGenerated by&#160;1.9.7
+    <li>inc/azure/data/tables/<a href="table__client_8hpp_source.html">table_client.hpp</a></li>
+
+    <li>src/table_clients.cpp</li>
+
+    </ul>

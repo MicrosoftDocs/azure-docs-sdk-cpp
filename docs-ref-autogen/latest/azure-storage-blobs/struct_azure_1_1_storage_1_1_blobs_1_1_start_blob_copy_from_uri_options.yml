@@ -2,61 +2,51 @@
 uid: Azure::Storage::Blobs::StartBlobCopyFromUriOptions
 title: Azure::Storage::Blobs::StartBlobCopyFromUriOptions Struct Reference
 components:
-- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#af1c432cf82637be1c954b94ea57fee1a">Azure::Storage::Blobs::BlobClient::StartCopyFromUri</a>.<code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code>
+- content: >-
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#af1c432cf82637be1c954b94ea57fee1a">Azure::Storage::Blobs::BlobClient::StartCopyFromUri</a>.  
+
+    </p><p><code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <b>Metadata</b>
-    summary: Specifies user-defined name-value pairs associated with the blob. If no name-value pairs are specified, the operation will copy the metadata from the source blob or file to the destination blob. If one or more name-value pairs are specified, the destination blob is created with the specified metadata, and metadata is not copied from the source blob or file. <br>
-    returnType: >-
-      <a id="a9a4b1e738029abb044376753883b2dd4" name="a9a4b1e738029abb044376753883b2dd4"></a>
-
-      Storage::Metadata 
-  - declaration: <b>Tags</b>
-    summary: The tags to set for this blob. <br>
-    returnType: >-
-      <a id="a7895785d7e4680e8c02a33cd020648b9" name="a7895785d7e4680e8c02a33cd020648b9"></a>
-
-      std::map< std::string, std::string > 
-  - declaration: <b>AccessConditions</b>
-    summary: Optional conditions that must be met to perform this operation. <br>
-    returnType: >-
-      <a id="a29e10c7db42bd4497e4a9fb48ae5d92e" name="a29e10c7db42bd4497e4a9fb48ae5d92e"></a>
-
-      <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions.html">BlobAccessConditions</a> 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.html#a23d6834b17703043fe7adf2065a6c5da">SourceAccessConditions</a>
-    summary: Optional conditions that the source must meet to perform this operation.  <br>
-    returnType:  
-  - declaration: <b>AccessTier</b>
-    summary: Specifies the tier to be set on the target blob. <br>
-    returnType: >-
-      <a id="ac0e54baceeafb1881b9289767e7d90bc" name="ac0e54baceeafb1881b9289767e7d90bc"></a>
-
-      Azure::Nullable< <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.html">Models::AccessTier</a> > 
-  - declaration: <b>RehydratePriority</b>
-    summary: Indicates the priority with which to rehydrate an archived blob. The priority can be set on a blob only once. This header will be ignored on subsequent requests to the same blob. <br>
-    returnType: >-
-      <a id="a305f469343ff35893d56eae9a7982ab3" name="a305f469343ff35893d56eae9a7982ab3"></a>
-
-      Azure::Nullable< <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_rehydrate_priority.html">Models::RehydratePriority</a> > 
-  - declaration: <b>ShouldSealDestination</b>
-    summary: If the destination blob should be sealed. Only applicable for Append Blobs. <br>
-    returnType: >-
-      <a id="a7bb288d96f950e869cec8cd98e305e15" name="a7bb288d96f950e869cec8cd98e305e15"></a>
-
-      Azure::Nullable< bool > 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.html#a3a22922d87eecf799071a91d91593125">ImmutabilityPolicy</a>
-    returnType: Azure::Nullable< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy.html">Models::BlobImmutabilityPolicy</a> > 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.html#ae675100e127aac6e311bb6af5649ef58">HasLegalHold</a>
-    returnType: Azure::Nullable< bool > 
+  - declaration: Metadata
+    summary: Specifies user-defined name-value pairs associated with the blob. If no name-value pairs are specified, the operation will copy the metadata from the source blob or file to the destination blob. If one or more name-value pairs are specified, the destination blob is created with the specified metadata, and metadata is not copied from the source blob or file.
+    returnType: Storage::Metadata&#160;
+  - declaration: Tags
+    summary: The tags to set for this blob.
+    returnType: std::map&lt; std::string, std::string &gt;&#160;
+  - declaration: AccessConditions
+    summary: Optional conditions that must be met to perform this operation.
+    returnType: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions.html">BlobAccessConditions</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.html#a23d6834b17703043fe7adf2065a6c5da">SourceAccessConditions</a>
+    summary: Optional conditions that the source must meet to perform this operation.
+    returnType: '&#160;'
+  - declaration: AccessTier
+    summary: Specifies the tier to be set on the target blob.
+    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.html">Models::AccessTier</a> &gt;&#160;
+  - declaration: RehydratePriority
+    summary: Indicates the priority with which to rehydrate an archived blob. The priority can be set on a blob only once. This header will be ignored on subsequent requests to the same blob.
+    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_rehydrate_priority.html">Models::RehydratePriority</a> &gt;&#160;
+  - declaration: ShouldSealDestination
+    summary: If the destination blob should be sealed. Only applicable for Append Blobs.
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.html#a3a22922d87eecf799071a91d91593125">ImmutabilityPolicy</a>
+    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy.html">Models::BlobImmutabilityPolicy</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.html#ae675100e127aac6e311bb6af5649ef58">HasLegalHold</a>
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;HasLegalHold'
+- section: HasLegalHold
   display: h2
-- content: Indicates whether the destination blob has a legal hold.
-- section: '&#9670;&#160;ImmutabilityPolicy'
+- content: <p>Indicates whether the destination blob has a legal hold. </p>
+- section: ImmutabilityPolicy
   display: h2
-- content: Immutability policy to set on the destination blob.
-- section: '&#9670;&#160;SourceAccessConditions'
+- content: <p>Immutability policy to set on the destination blob. </p>
+- section: SourceAccessConditions
   display: h2
-- content: The documentation for this struct was generated from the following file:inc/azure/storage/blobs/blob_options.hppGenerated by&#160;1.9.7
+- content: >-
+    The documentation for this struct was generated from the following file:<ul>
+
+    <li>inc/azure/storage/blobs/<a href="blob__options_8hpp_source.html">blob_options.hpp</a></li>
+
+    </ul>

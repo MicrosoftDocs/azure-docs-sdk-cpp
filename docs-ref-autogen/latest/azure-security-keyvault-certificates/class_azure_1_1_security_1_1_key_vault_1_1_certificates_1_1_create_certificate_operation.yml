@@ -2,49 +2,49 @@
 uid: Azure::Security::KeyVault::Certificates::CreateCertificateOperation
 title: Azure::Security::KeyVault::Certificates::CreateCertificateOperation Class Reference
 components:
-- content: 'Represents a create certificate long running operation.<code>#include &lt;<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Certificates::CreateCertificateOperation:'
+- content: >-
+    <p>Represents a create certificate long running operation.  
+
+    </p><p><code>#include &lt;<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Security::KeyVault::Certificates::CreateCertificateOperation:
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#a057a5642013714aeae1c22a06ab350c7">Value</a> () const override
-    summary: Get the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html" title="A certificate operation.">Azure::Security::KeyVault::Certificates::CertificateOperationProperties</a> object.  <br>
-    returnType: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html">CertificateOperationProperties</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#a73e99559997c9fe1654c581fa88e181f">GetResumeToken</a> () const override
-    summary: Get an Url as string which can be used to get the status of the operation.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#acf7b639697ceb38d3afced30528c5260">Cancel</a> (Azure::Core::Context const &context=Azure::Core::Context())
-    summary: Cancels the operation.  <br>
-    returnType: void 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#af2323bad7988729124aad24909b425ca">Delete</a> (Azure::Core::Context const &context=Azure::Core::Context())
-    summary: Delete operation.  <br>
-    returnType: void 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#a71a42e3e37eab471b413357fdd9f854c">IsCompleted</a> () const
-    summary: Determines if the operation has completed.  <br>
-    returnType: bool 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#a057a5642013714aeae1c22a06ab350c7">Value</a> () const override
+    summary: Get the <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html">Azure::Security::KeyVault::Certificates::CertificateOperationProperties</a> object.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html">CertificateOperationProperties</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#a73e99559997c9fe1654c581fa88e181f">GetResumeToken</a> () const override
+    summary: Get an Url as string which can be used to get the status of the operation.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#acf7b639697ceb38d3afced30528c5260">Cancel</a> (Azure::Core::Context const &amp;context=Azure::Core::Context())
+    summary: Cancels the operation.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#af2323bad7988729124aad24909b425ca">Delete</a> (Azure::Core::Context const &amp;context=Azure::Core::Context())
+    summary: Delete operation.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#a71a42e3e37eab471b413357fdd9f854c">IsCompleted</a> () const
+    summary: Determines if the operation has completed.
+    returnType: bool&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#af594dfb2db28c454f443606d7b6f9e49">CreateFromResumeToken</a> (std::string const &resumeToken, <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html">CertificateClient</a> const &client, Azure::Core::Context const &context=Azure::Core::Context())
-    summary: Create a CreateCertificateOperation from the <code>resumeToken</code> fetched from another <code>Operation<T></code>, updated to the the latest operation status.  <br>
-    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html">CreateCertificateOperation</a> 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html#af594dfb2db28c454f443606d7b6f9e49">CreateFromResumeToken</a> (std::string const &amp;resumeToken, <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html">CertificateClient</a> const &amp;client, Azure::Core::Context const &amp;context=Azure::Core::Context())
+    summary: Create a CreateCertificateOperation from the <code>resumeToken</code> fetched from another <code>Operation&lt;T&gt;</code>, updated to the the latest operation status.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html">CreateCertificateOperation</a>&#160;
 - section: Friends
   display: h2
 - apiList:
-  - declaration: <b>CertificateClient</b>
-    returnType: >-
-      <a id="a8812873e00c04ea628594c5c16c8909f" name="a8812873e00c04ea628594c5c16c8909f"></a>
-
-      class 
+  - declaration: CertificateClient
+    returnType: class&#160;
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;Cancel()'
+- section: Cancel()
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: context
     summary: A Azure::Core::Context controlling the request lifetime.
-- section: '&#9670;&#160;CreateFromResumeToken()'
+- section: CreateFromResumeToken()
   display: h2
 - section: Remarks
   display: h4
@@ -62,33 +62,37 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html" title="Represents a create certificate long running operation.">CreateCertificateOperation</a>
-- section: '&#9670;&#160;Delete()'
+  - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html">CreateCertificateOperation</a>
+- section: Delete()
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: context
     summary: A Azure::Core::Context controlling the request lifetime.
-- section: '&#9670;&#160;GetResumeToken()'
+- section: GetResumeToken()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string
-- section: '&#9670;&#160;IsCompleted()'
+- section: IsCompleted()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: Completed status.
-- section: '&#9670;&#160;Value()'
+- section: Value()
   display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: A <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html" title="A certificate operation.">CertificateOperationProperties</a> object.
+  - summary: A <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html">CertificateOperationProperties</a> object.
 - content: >-
-    The documentation for this class was generated from the following files:inc/azure/keyvault/certificates/certificate_client_operations.hpp
+    The documentation for this class was generated from the following files:<ul>
 
-    src/certificate_client_operations.cppGenerated by&#160;1.9.7
+    <li>inc/azure/keyvault/certificates/<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a></li>
+
+    <li>src/certificate_client_operations.cpp</li>
+
+    </ul>

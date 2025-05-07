@@ -2,54 +2,57 @@
 uid: Azure::Messaging::EventHubs::Processor
 title: Azure::Messaging::EventHubs::Processor Class Reference
 components:
-- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> uses a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> and <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> to provide automatic load balancing between multiple <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> instances, even in separate processes or on separate machines.<code>#include &lt;<a href="processor_8hpp_source.html">processor.hpp</a>&gt;</code>
+- content: >-
+    <p><a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> uses a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> and <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> to provide automatic load balancing between multiple <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> instances, even in separate processes or on separate machines.  
+
+    </p><p><code>#include &lt;<a href="processor_8hpp_source.html">processor.hpp</a>&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a02bff3c20f2451ef65b5d092b187d02f">Processor</a> (std::shared_ptr< <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> > consumerClient, std::shared_ptr< <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> > checkpointStore, <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options.html">ProcessorOptions</a> const &options={})
-    summary: Construct a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html" title="Processor uses a ConsumerClient and CheckpointStore to provide automatic load balancing between multi...">Processor</a> object.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a16a4dca6956ad3932bb4048beea2756f">Processor</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> const &other)=delete
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#aa9999645d39bd668af2e35dd0837446c">operator=</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> const &other)=delete
-    returnType: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> & 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a89bf35ff8cf3b323c1f7da994ef47f56">NextPartitionClient</a> (Azure::Core::Context const &context={})
-    returnType: std::shared_ptr< <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor_partition_client.html">ProcessorPartitionClient</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#af08cdb608a4b5a050ffac5fe743f6ffb">Run</a> (Core::Context const &context)
-    summary: Executes the processor.  <br>
-    returnType: void 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#afd68980891dab66e055434f427b64182">Start</a> (Azure::Core::Context const &context={})
-    summary: Starts the processor.  <br>
-    returnType: void 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a74a31ddc1a295d7529a23fb44f3c97ae">Stop</a> ()
-    summary: Stops a running processor.  <br>
-    returnType: void 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#af569ff15398c71a96a30d552ba703fb6">Close</a> (Core::Context const &context={})
-    summary: Closes the processor and cancels any current operations.  <br>
-    returnType: void 
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a02bff3c20f2451ef65b5d092b187d02f">Processor</a> (std::shared_ptr&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> &gt; consumerClient, std::shared_ptr&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a> &gt; checkpointStore, <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options.html">ProcessorOptions</a> const &amp;options={})
+    summary: Construct a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a16a4dca6956ad3932bb4048beea2756f">Processor</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> const &amp;other)=delete
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#aa9999645d39bd668af2e35dd0837446c">operator=</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> const &amp;other)=delete
+    returnType: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a89bf35ff8cf3b323c1f7da994ef47f56">NextPartitionClient</a> (Azure::Core::Context const &amp;context={})
+    returnType: std::shared_ptr&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor_partition_client.html">ProcessorPartitionClient</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#af08cdb608a4b5a050ffac5fe743f6ffb">Run</a> (Core::Context const &amp;context)
+    summary: Executes the processor.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#afd68980891dab66e055434f427b64182">Start</a> (Azure::Core::Context const &amp;context={})
+    summary: Starts the processor.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a74a31ddc1a295d7529a23fb44f3c97ae">Stop</a> ()
+    summary: Stops a running processor.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#af569ff15398c71a96a30d552ba703fb6">Close</a> (Core::Context const &amp;context={})
+    summary: Closes the processor and cancels any current operations.
+    returnType: void&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;Processor() [1/2]'
+- section: Processor() [1/2]
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: consumerClient
-    summary: A [<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html" title="The ConsumerClient class is a high level class used to consume events from an Event Hub.">ConsumerClient</a>] that is used to receive events from the Event Hub.
+    summary: A [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a>] that is used to receive events from the Event Hub.
   - name: checkpointStore
-    summary: A [<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html" title="CheckpointStore is used by multiple consumers to coordinate progress and ownership for partitions.">CheckpointStore</a>] that is used to load and update checkpoints.
+    summary: A [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a>] that is used to load and update checkpoints.
   - name: options
     summary: Optional configuration for the processor.
-- section: '&#9670;&#160;Processor() [2/2]'
+- section: Processor() [2/2]
   display: h2
-- content: Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a>.
+- content: <p>Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a>. </p>
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;Close()'
+- section: Close()
   display: h2
-- section: '&#9670;&#160;NextPartitionClient()'
+- section: NextPartitionClient()
   display: h2
-- content: Move to the next partition client
+- content: <p>Move to the next partition client</p>
 - section: Parameters
   display: h4
 - parameters:
@@ -59,11 +62,11 @@ components:
   display: h4
 - parameters:
   - summary: A shared pointer to the next partition client.
-- content: NextPartitionClient will retrieve the next <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor_partition_client.html">ProcessorPartitionClient</a> if one is acquired or will block until a new one arrives, or the processor is stopped.
-- section: '&#9670;&#160;operator=()'
+- content: <p>NextPartitionClient will retrieve the next <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor_partition_client.html">ProcessorPartitionClient</a> if one is acquired or will block until a new one arrives, or the processor is stopped. </p>
+- section: operator=()
   display: h2
-- content: Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> to another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a>.
-- section: '&#9670;&#160;Run()'
+- content: <p>Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a> to another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a>. </p>
+- section: Run()
   display: h2
 - section: Parameters
   display: h4
@@ -73,8 +76,8 @@ components:
 - section: Remarks
   display: h4
 - parameters:
-  - summary: This function will block until <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a74a31ddc1a295d7529a23fb44f3c97ae" title="Stops a running processor.">Stop()</a> is called. It is intended for customers who would prefer to manage the call to Run from their own threads.
-- section: '&#9670;&#160;Start()'
+  - summary: This function will block until <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html#a74a31ddc1a295d7529a23fb44f3c97ae">Stop()</a> is called. It is intended for customers who would prefer to manage the call to Run from their own threads.
+- section: Start()
   display: h2
 - section: Parameters
   display: h4
@@ -85,13 +88,17 @@ components:
   display: h4
 - parameters:
   - summary: This function starts the processor running in a new thread.
-- section: '&#9670;&#160;Stop()'
+- section: Stop()
   display: h2
 - section: Remarks
   display: h4
 - parameters:
   - summary: This function stops the processor. If the Start method has been called, it will wait for the thread to complete.
 - content: >-
-    The documentation for this class was generated from the following files:inc/azure/messaging/eventhubs/processor.hpp
+    The documentation for this class was generated from the following files:<ul>
 
-    src/processor.cppGenerated by&#160;1.9.7
+    <li>inc/azure/messaging/eventhubs/<a href="processor_8hpp_source.html">processor.hpp</a></li>
+
+    <li>src/processor.cpp</li>
+
+    </ul>

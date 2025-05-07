@@ -2,105 +2,110 @@
 uid: Azure::Core::Http::CurlTransportOptions
 title: Azure::Core::Http::CurlTransportOptions Struct Reference
 components:
-- content: Set the libcurl connection options like a proxy and CA path.<code>#include &lt;<a href="curl__transport_8hpp_source.html">curl_transport.hpp</a>&gt;</code>
+- content: >-
+    <p>Set the libcurl connection options like a proxy and CA path.  
+
+    </p><p><code>#include &lt;<a href="curl__transport_8hpp_source.html">curl_transport.hpp</a>&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#ac6eb38a8ef89772e7e24f77950d550e9">Proxy</a>
-    summary: The string for the proxy is passed directly to the libcurl handle without any parsing.  <br>
-    returnType: <a class="el" href="class_azure_1_1_nullable.html">Azure::Nullable</a>< std::string > 
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a6d0619f5f09ffdcc9a7fb87b97b59a1d">ProxyUsername</a>
-    summary: Username to be used for proxy connections.  <br>
-    returnType: <a class="el" href="class_azure_1_1_nullable.html">Azure::Nullable</a>< std::string > 
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#aa6718b6de792b57dccf7b7648f43f2d9">ProxyPassword</a>
-    summary: Password to be used for proxy connections.  <br>
-    returnType: <a class="el" href="class_azure_1_1_nullable.html">Azure::Nullable</a>< std::string > 
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#aa0559cf03611e7b68f42094991e208fe">CAInfo</a>
-    summary: Path to a PEM encoded file containing the certificate authorities sent to libcurl handle directly.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a7e43d75e4f8ecfb96322d5b92b2aee17">CAPath</a>
-    summary: Path to a directory which holds PEM encoded file, containing the certificate authorities sent to libcurl handle directly.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a6822790c8f34f241ddd5261b54b05c66">HttpKeepAlive</a> = true
-    summary: All HTTP requests will keep the connection channel open to the service.  <br>
-    returnType: bool 
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a4be09cd52603cc58eeb66139650d7d16">SslVerifyPeer</a> = true
-    summary: This option determines whether libcurl verifies the authenticity of the peer's certificate.  <br>
-    returnType: bool 
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a8e5e6b74029a927bb6635eeff2a898fd">SslOptions</a>
-    summary: Define the SSL options for the libcurl handle.  <br>
-    returnType: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_ssl_options.html">CurlTransportSslOptions</a> 
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#ab78a134dd0c79a4a391f0f2cd55e9843">NoSignal</a> = false
-    summary: When true, libcurl will not use any functions that install signal handlers or any functions that cause signals to be sent to the process.  <br>
-    returnType: bool 
-  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#adef7d1b687f06d8072888c14dfbbc856">ConnectionTimeout</a> = _detail::DefaultConnectionTimeout
-    summary: Contain the maximum time that you allow the connection phase to the server to take.  <br>
-    returnType: std::chrono::milliseconds 
-  - declaration: <b>EnableCurlTracing</b> = false
-    summary: If set, integrates libcurl's internal tracing with <a class="el" href="namespace_azure.html" title="Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.">Azure</a> logging. <br>
-    returnType: >-
-      <a id="aaeda7fcfc4ac51ac45966d34464d5b50" name="aaeda7fcfc4ac51ac45966d34464d5b50"></a>
-
-      bool 
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#ac6eb38a8ef89772e7e24f77950d550e9">Proxy</a>
+    summary: The string for the proxy is passed directly to the libcurl handle without any parsing.
+    returnType: <a href="class_azure_1_1_nullable.html">Azure::Nullable</a>&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a6d0619f5f09ffdcc9a7fb87b97b59a1d">ProxyUsername</a>
+    summary: Username to be used for proxy connections.
+    returnType: <a href="class_azure_1_1_nullable.html">Azure::Nullable</a>&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#aa6718b6de792b57dccf7b7648f43f2d9">ProxyPassword</a>
+    summary: Password to be used for proxy connections.
+    returnType: <a href="class_azure_1_1_nullable.html">Azure::Nullable</a>&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#aa0559cf03611e7b68f42094991e208fe">CAInfo</a>
+    summary: Path to a PEM encoded file containing the certificate authorities sent to libcurl handle directly.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a7e43d75e4f8ecfb96322d5b92b2aee17">CAPath</a>
+    summary: Path to a directory which holds PEM encoded file, containing the certificate authorities sent to libcurl handle directly.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a6822790c8f34f241ddd5261b54b05c66">HttpKeepAlive</a> = true
+    summary: All HTTP requests will keep the connection channel open to the service.
+    returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a4be09cd52603cc58eeb66139650d7d16">SslVerifyPeer</a> = true
+    summary: This option determines whether libcurl verifies the authenticity of the peer's certificate.
+    returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#a8e5e6b74029a927bb6635eeff2a898fd">SslOptions</a>
+    summary: Define the SSL options for the libcurl handle.
+    returnType: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_ssl_options.html">CurlTransportSslOptions</a>&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#ab78a134dd0c79a4a391f0f2cd55e9843">NoSignal</a> = false
+    summary: When true, libcurl will not use any functions that install signal handlers or any functions that cause signals to be sent to the process.
+    returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html#adef7d1b687f06d8072888c14dfbbc856">ConnectionTimeout</a> = _detail::DefaultConnectionTimeout
+    summary: Contain the maximum time that you allow the connection phase to the server to take.
+    returnType: std::chrono::milliseconds&#160;
+  - declaration: EnableCurlTracing = false
+    summary: If set, integrates libcurl's internal tracing with <a href="namespace_azure.html">Azure</a> logging.
+    returnType: bool&#160;
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;CAInfo'
+- section: CAInfo
   display: h2
 - section: Remarks
   display: h4
 - parameters:
-  - summary: The <a class="el" href="namespace_azure.html" title="Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.">Azure</a> SDK will not check if the path is valid or not.
-- section: '&#9670;&#160;CAPath'
+  - summary: The <a href="namespace_azure.html">Azure</a> SDK will not check if the path is valid or not.
+- section: CAPath
   display: h2
 - section: Remarks
   display: h4
 - parameters:
-  - summary: The <a class="el" href="namespace_azure.html" title="Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.">Azure</a> SDK will not check if the path is valid or not.
-- section: '&#9670;&#160;ConnectionTimeout'
+  - summary: The <a href="namespace_azure.html">Azure</a> SDK will not check if the path is valid or not.
+- section: ConnectionTimeout
   display: h2
-- content: This only limits the connection phase, it has no impact once it has connected.
+- content: <p>This only limits the connection phase, it has no impact once it has connected.</p>
 - section: Remarks
   display: h4
 - parameters:
   - summary: The default timeout is 300 seconds and using <code>0</code> would set this default value.
-- section: '&#9670;&#160;HttpKeepAlive'
+- section: HttpKeepAlive
   display: h2
 - section: Remarks
   display: h4
 - parameters:
   - summary: The channel might be closed by the server if the server response has an error code. A connection won't be re-used if it is abandoned in the middle of an operation. operation.
-- section: '&#9670;&#160;NoSignal'
+- section: NoSignal
   display: h2
-- content: This option is here to allow multi-threaded unix applications to still set/use all timeout options etc, without risking getting signals.
-- section: '&#9670;&#160;Proxy'
+- content: <p>This option is here to allow multi-threaded unix applications to still set/use all timeout options etc, without risking getting signals. </p>
+- section: Proxy
   display: h2
-- content: libcurl will use system's environment proxy configuration (if it is set) when the <code>Proxy</code> setting is not set (is null). Setting an empty string will make libcurl to ignore any proxy settings from the system (use no proxy).
+- content: <p>libcurl will use system's environment proxy configuration (if it is set) when the <code>Proxy</code> setting is not set (is null). Setting an empty string will make libcurl to ignore any proxy settings from the system (use no proxy).</p>
 - section: Remarks
   display: h4
 - parameters:
-  - summary: 'No validation for the string is done by the <a class="el" href="namespace_azure.html" title="Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.">Azure</a> SDK. More about this option: <a href="https://curl.se/libcurl/c/CURLOPT_PROXY.html">https://curl.se/libcurl/c/CURLOPT_PROXY.html</a>.'
-- section: '&#9670;&#160;ProxyPassword'
-  display: h2
-- section: Remarks
-  display: h4
-- parameters:
-  - summary: 'No validation for the string is done by the <a class="el" href="namespace_azure.html" title="Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.">Azure</a> SDK. More about this option: <a href="https://curl.se/libcurl/c/CURLOPT_PROXYPASSWORD.html">https://curl.se/libcurl/c/CURLOPT_PROXYPASSWORD.html</a>.'
-- section: '&#9670;&#160;ProxyUsername'
+  - summary: 'No validation for the string is done by the <a href="namespace_azure.html">Azure</a> SDK. More about this option: <a href="https://curl.se/libcurl/c/CURLOPT_PROXY.html">https://curl.se/libcurl/c/CURLOPT_PROXY.html</a>.'
+- section: ProxyPassword
   display: h2
 - section: Remarks
   display: h4
 - parameters:
-  - summary: 'No validation for the string is done by the <a class="el" href="namespace_azure.html" title="Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.">Azure</a> SDK. More about this option: <a href="https://curl.se/libcurl/c/CURLOPT_PROXYUSERNAME.html">https://curl.se/libcurl/c/CURLOPT_PROXYUSERNAME.html</a>.'
-- section: '&#9670;&#160;SslOptions'
+  - summary: 'No validation for the string is done by the <a href="namespace_azure.html">Azure</a> SDK. More about this option: <a href="https://curl.se/libcurl/c/CURLOPT_PROXYPASSWORD.html">https://curl.se/libcurl/c/CURLOPT_PROXYPASSWORD.html</a>.'
+- section: ProxyUsername
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: 'No validation for the string is done by the <a href="namespace_azure.html">Azure</a> SDK. More about this option: <a href="https://curl.se/libcurl/c/CURLOPT_PROXYUSERNAME.html">https://curl.se/libcurl/c/CURLOPT_PROXYUSERNAME.html</a>.'
+- section: SslOptions
   display: h2
 - section: Remarks
   display: h4
 - parameters:
   - summary: 'See more info here: <a href="https://curl.se/libcurl/c/CURLOPT_SSL_OPTIONS.html">https://curl.se/libcurl/c/CURLOPT_SSL_OPTIONS.html</a>. The default option is all options <code>false</code>.'
-- section: '&#9670;&#160;SslVerifyPeer'
+- section: SslVerifyPeer
   display: h2
 - section: Remarks
   display: h4
 - parameters:
   - summary: 'The default value is <code>true</code>. More about this option: <a href="https://curl.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html">https://curl.se/libcurl/c/CURLOPT_SSL_VERIFYPEER.html</a>'
-- content: The documentation for this struct was generated from the following file:inc/azure/core/http/curl_transport.hppGenerated by&#160;1.9.7
+- content: >-
+    The documentation for this struct was generated from the following file:<ul>
+
+    <li>inc/azure/core/http/<a href="curl__transport_8hpp_source.html">curl_transport.hpp</a></li>
+
+    </ul>

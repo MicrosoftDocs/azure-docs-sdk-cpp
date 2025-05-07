@@ -2,73 +2,52 @@
 uid: Azure::Core::Http::HttpMethod
 title: Azure::Core::Http::HttpMethod Class Reference
 components:
-- content: The method to be performed on the resource identified by the <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a>.<code>#include &lt;<a href="http_8hpp_source.html">http.hpp</a>&gt;</code>
+- content: >-
+    <p>The method to be performed on the resource identified by the <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a>.  
+
+    </p><p><code>#include &lt;<a href="http_8hpp_source.html">http.hpp</a>&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html#a0fe0adc3ebc9e9d7deee51f2887ea4dc">HttpMethod</a> (std::string value)
-    summary: Constructs <code>HttpMethod</code> from string.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html#a4b8361490adcd7f95ebc773ec5727af2">operator==</a> (const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> &other) const
-    summary: Compares two instances of <code>HttpMethod</code> for equality.  <br>
-    returnType: bool 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html#a568a9b89fec9c5dd891f54026dfbfbf3">operator!=</a> (const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> &other) const
-    summary: Compares two instances of <code>HttpMethod</code> for equality.  <br>
-    returnType: bool 
-  - declaration: <b>ToString</b> () const
-    summary: Returns the <code>HttpMethod</code> represented as a string. <br>
-    returnType: >-
-      <a id="a354e1fd2e96072492a5971ee84350d13" name="a354e1fd2e96072492a5971ee84350d13"></a>
-
-      const std::string & 
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html#a0fe0adc3ebc9e9d7deee51f2887ea4dc">HttpMethod</a> (std::string value)
+    summary: Constructs <code>HttpMethod</code> from string.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html#a4b8361490adcd7f95ebc773ec5727af2">operator==</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> &amp;other) const
+    summary: Compares two instances of <code>HttpMethod</code> for equality.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html#a568a9b89fec9c5dd891f54026dfbfbf3">operator!=</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> &amp;other) const
+    summary: Compares two instances of <code>HttpMethod</code> for equality.
+    returnType: bool&#160;
+  - declaration: ToString () const
+    summary: Returns the <code>HttpMethod</code> represented as a string.
+    returnType: const std::string &amp;&#160;
 - section: Static Public Attributes
   display: h2
 - apiList:
-  - declaration: <b>Get</b>
-    summary: The representation of a <code>GET</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1</a>). <br>
-    returnType: >-
-      <a id="ada8654593eac435bae2a7a44d80592c5" name="ada8654593eac435bae2a7a44d80592c5"></a>
-
-      AZ_CORE_DLLEXPORT static const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> 
-  - declaration: <b>Head</b>
-    summary: The representation of a <code>HEAD</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.2">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.2</a>). <br>
-    returnType: >-
-      <a id="a2e526e34bd316e1a4984524efa25f515" name="a2e526e34bd316e1a4984524efa25f515"></a>
-
-      AZ_CORE_DLLEXPORT static const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> 
-  - declaration: <b>Post</b>
-    summary: The representation of a <code>POST</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.3">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.3</a>). <br>
-    returnType: >-
-      <a id="ab323913669a353f2f39c96b82a2841ac" name="ab323913669a353f2f39c96b82a2841ac"></a>
-
-      AZ_CORE_DLLEXPORT static const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> 
-  - declaration: <b>Put</b>
-    summary: The representation of a <code>PUT</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.4">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.4</a>). <br>
-    returnType: >-
-      <a id="a9a4dc215ef7e998073d584efc991cb8b" name="a9a4dc215ef7e998073d584efc991cb8b"></a>
-
-      AZ_CORE_DLLEXPORT static const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> 
-  - declaration: <b>Delete</b>
-    summary: The representation of a <code>DELETE</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.5">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.5</a>). <br>
-    returnType: >-
-      <a id="a214b92af05937d6685990909fbc2432b" name="a214b92af05937d6685990909fbc2432b"></a>
-
-      AZ_CORE_DLLEXPORT static const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> 
-  - declaration: <b>Patch</b>
-    summary: The representation of a <code>PATCH</code> HTTP method based on [RFC 5789] (<a href="https://datatracker.ietf.org/doc/html/rfc5789">https://datatracker.ietf.org/doc/html/rfc5789</a>). <br>
-    returnType: >-
-      <a id="a1d4836af87109f9114bff66cfa8bc92d" name="a1d4836af87109f9114bff66cfa8bc92d"></a>
-
-      AZ_CORE_DLLEXPORT static const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> 
-  - declaration: <b>Options</b>
-    summary: The representation of an <code>OPTIONS</code> HTTP method based on [RFC 2616] (<a href="https://datatracker.ietf.org/doc/html/rfc2616">https://datatracker.ietf.org/doc/html/rfc2616</a>). <br>
-    returnType: >-
-      <a id="ab4386f58cab4f3cbd95aab05ee1a1fea" name="ab4386f58cab4f3cbd95aab05ee1a1fea"></a>
-
-      AZ_CORE_DLLEXPORT static const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> 
+  - declaration: Get
+    summary: The representation of a <code>GET</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1</a>).
+    returnType: AZ_CORE_DLLEXPORT static const <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a>&#160;
+  - declaration: Head
+    summary: The representation of a <code>HEAD</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.2">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.2</a>).
+    returnType: AZ_CORE_DLLEXPORT static const <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a>&#160;
+  - declaration: Post
+    summary: The representation of a <code>POST</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.3">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.3</a>).
+    returnType: AZ_CORE_DLLEXPORT static const <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a>&#160;
+  - declaration: Put
+    summary: The representation of a <code>PUT</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.4">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.4</a>).
+    returnType: AZ_CORE_DLLEXPORT static const <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a>&#160;
+  - declaration: Delete
+    summary: The representation of a <code>DELETE</code> HTTP method based on [RFC 7231] (<a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.5">https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.5</a>).
+    returnType: AZ_CORE_DLLEXPORT static const <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a>&#160;
+  - declaration: Patch
+    summary: The representation of a <code>PATCH</code> HTTP method based on [RFC 5789] (<a href="https://datatracker.ietf.org/doc/html/rfc5789">https://datatracker.ietf.org/doc/html/rfc5789</a>).
+    returnType: AZ_CORE_DLLEXPORT static const <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a>&#160;
+  - declaration: Options
+    summary: The representation of an <code>OPTIONS</code> HTTP method based on [RFC 2616] (<a href="https://datatracker.ietf.org/doc/html/rfc2616">https://datatracker.ietf.org/doc/html/rfc2616</a>).
+    returnType: AZ_CORE_DLLEXPORT static const <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a>&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;HttpMethod()'
+- section: HttpMethod()
   display: h2
 - section: Parameters
   display: h4
@@ -77,7 +56,7 @@ components:
     summary: A given string to represent the <code>HttpMethod</code>.
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;operator!=()'
+- section: operator!=()
   display: h2
 - section: Parameters
   display: h4
@@ -88,7 +67,7 @@ components:
   display: h4
 - parameters:
   - summary: <code>false</code> if instances are equal; otherwise, <code>true</code>.
-- section: '&#9670;&#160;operator==()'
+- section: operator==()
   display: h2
 - section: Parameters
   display: h4
@@ -100,6 +79,10 @@ components:
 - parameters:
   - summary: <code>true</code> if instances are equal; otherwise, <code>false</code>.
 - content: >-
-    The documentation for this class was generated from the following files:inc/azure/core/http/http.hpp
+    The documentation for this class was generated from the following files:<ul>
 
-    src/http/http.cppGenerated by&#160;1.9.7
+    <li>inc/azure/core/http/<a href="http_8hpp_source.html">http.hpp</a></li>
+
+    <li>src/http/http.cpp</li>
+
+    </ul>

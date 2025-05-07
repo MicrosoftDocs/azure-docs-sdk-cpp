@@ -2,39 +2,47 @@
 uid: Azure::Storage::Files::Shares::Models::DirectoryProperties
 title: Azure::Storage::Files::Shares::Models::DirectoryProperties Struct Reference
 components:
-- content: Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#ac0d172b7a45cab3a29c921cf1d12d1bc">Azure::Storage::Files::Shares::ShareDirectoryClient::GetProperties</a>.<code>#include &lt;<a href="share__responses_8hpp_source.html">share_responses.hpp</a>&gt;</code>
+- content: >-
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#ac0d172b7a45cab3a29c921cf1d12d1bc">Azure::Storage::Files::Shares::ShareDirectoryClient::GetProperties</a>.  
+
+    </p><p><code>#include &lt;<a href="share__responses_8hpp_source.html">share_responses.hpp</a>&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#a435b6063f5221bcc521518b5309fdaee">SmbProperties</a>
-    returnType: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_smb_properties.html">FileSmbProperties</a> 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#ade13814143cd7e16e44ca67f0e3ad969">Metadata</a>
-    returnType: Core::CaseInsensitiveMap 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#a2f883a2a58f1fd25f508a6fc904b26d8">ETag</a>
-    returnType: Azure::ETag 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#aadf192a4392bbcf57423c919758b9154">LastModified</a>
-    returnType: DateTime 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#a5a8235f821c6b653a940893db5911e8e">IsServerEncrypted</a> = bool()
-    returnType: bool 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#accfe04f25783203fe8d2807ed05e7b1c">PosixProperties</a>
-    returnType: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties.html">FilePosixProperties</a> 
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#a435b6063f5221bcc521518b5309fdaee">SmbProperties</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_smb_properties.html">FileSmbProperties</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#ade13814143cd7e16e44ca67f0e3ad969">Metadata</a>
+    returnType: Core::CaseInsensitiveMap&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#a2f883a2a58f1fd25f508a6fc904b26d8">ETag</a>
+    returnType: Azure::ETag&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#aadf192a4392bbcf57423c919758b9154">LastModified</a>
+    returnType: DateTime&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#a5a8235f821c6b653a940893db5911e8e">IsServerEncrypted</a> = bool()
+    returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html#accfe04f25783203fe8d2807ed05e7b1c">PosixProperties</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties.html">FilePosixProperties</a>&#160;
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;ETag'
+- section: ETag
   display: h2
-- content: The ETag contains a value that you can use to perform operations conditionally, in quotes.
-- section: '&#9670;&#160;IsServerEncrypted'
+- content: <p>The ETag contains a value that you can use to perform operations conditionally, in quotes. </p>
+- section: IsServerEncrypted
   display: h2
-- content: The value of this header is set to true if the directory metadata is completely encrypted using the specified algorithm. Otherwise, the value is set to false.
-- section: '&#9670;&#160;LastModified'
+- content: <p>The value of this header is set to true if the directory metadata is completely encrypted using the specified algorithm. Otherwise, the value is set to false. </p>
+- section: LastModified
   display: h2
-- content: Returns the date and time the Directory was last modified. Operations on files within the directory do not affect the last modified time of the directory.
-- section: '&#9670;&#160;Metadata'
+- content: <p>Returns the date and time the Directory was last modified. Operations on files within the directory do not affect the last modified time of the directory. </p>
+- section: Metadata
   display: h2
-- content: A set of name-value pairs that contain metadata for the directory.
-- section: '&#9670;&#160;PosixProperties'
+- content: <p>A set of name-value pairs that contain metadata for the directory. </p>
+- section: PosixProperties
   display: h2
-- content: The NFS related properties for the file.
-- section: '&#9670;&#160;SmbProperties'
+- content: <p>The NFS related properties for the file. </p>
+- section: SmbProperties
   display: h2
-- content: The SMB related properties for the file.The documentation for this struct was generated from the following file:inc/azure/storage/files/shares/share_responses.hppGenerated by&#160;1.9.7
+- content: >-
+    <p>The SMB related properties for the file. </p>The documentation for this struct was generated from the following file:<ul>
+
+    <li>inc/azure/storage/files/shares/<a href="share__responses_8hpp_source.html">share_responses.hpp</a></li>
+
+    </ul>

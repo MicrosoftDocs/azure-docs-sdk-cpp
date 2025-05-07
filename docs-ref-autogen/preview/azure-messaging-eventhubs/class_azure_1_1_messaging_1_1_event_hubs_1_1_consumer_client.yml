@@ -3,61 +3,61 @@ uid: Azure::Messaging::EventHubs::ConsumerClient
 title: Azure::Messaging::EventHubs::ConsumerClient Class Reference
 components:
 - content: >-
-    The <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> class is a high level class used to consume events from an Event Hub.  
-     <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#details">More...</a><code>#include &lt;<a href="consumer__client_8hpp_source.html">consumer_client.hpp</a>&gt;</code>
+    <p>The <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> class is a high level class used to consume events from an Event Hub.  
+     <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#details">More...</a></p><p><code>#include &lt;<a href="consumer__client_8hpp_source.html">consumer_client.hpp</a>&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a6e61ff5bdf91bce47070a1e6d3da8f25">ConsumerClient</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> const &other)=delete
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a275beec3a2b2d9f955bac921e1afd46f">ConsumerClient</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> &&other)=delete
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a0265874bcb8accb5dc50f31fd4c8c794">operator=</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> const &other)=delete
-    returnType: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> & 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a50c9ca21e344f5f4573d0656e4f6c871">operator=</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> &&other)=delete
-    returnType: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> & 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#ad81e439139360f9b9d146d7e54fac390">GetEventHubName</a> () const
-    summary: Getter for event hub name.  <br>
-    returnType: std::string const & 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a0593d9885282eecdd8327130a70d5a80">GetConsumerGroup</a> () const
-    summary: Getter for consumer group name.  <br>
-    returnType: std::string const & 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#aec15a3cd53272a612e0f934ca32e10c8">GetDetails</a> () const
-    summary: Getter for client details.  <br>
-    returnType: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_consumer_client_details.html">Models::ConsumerClientDetails</a> 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#af5603f8b1432c35019666deb0d71a99a">GetRetryOptions</a> () const
-    summary: Getter for retry options.  <br>
-    returnType: Azure::Core::Http::Policies::RetryOptions const & 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a65f588c4cba90cd75c2d3e82fa0e6179">ConsumerClient</a> (std::string const &connectionString, std::string const &eventHub={}, std::string const &consumerGroup=DefaultConsumerGroup, <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client_options.html">ConsumerClientOptions</a> const &options={})
-    summary: creates a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html" title="The ConsumerClient class is a high level class used to consume events from an Event Hub.">ConsumerClient</a> from a connection string.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#ab08005c99bb8c82e63c9a73af83c465d">ConsumerClient</a> (std::string const &fullyQualifiedNamespace, std::string const &eventHub, std::shared_ptr< Azure::Core::Credentials::TokenCredential > credential, std::string const &consumerGroup=DefaultConsumerGroup, <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client_options.html">ConsumerClientOptions</a> const &options={})
-    summary: creates a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html" title="The ConsumerClient class is a high level class used to consume events from an Event Hub.">ConsumerClient</a> from a token credential.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a2372850b4f1eace768803dc17c09cdb4">CreatePartitionClient</a> (std::string const &partitionId, <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html">PartitionClientOptions</a> const &options={}, Azure::Core::Context const &context={})
-    summary: Create new Partition client.  <br>
-    returnType: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a> 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a4f30e551583265918d95050aa3271c6a">Close</a> (Azure::Core::Context const &context)
-    summary: Closes the consumer client canceling any operations outstanding on any of the existing partition clients.  <br>
-    returnType: void 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a73b6a136884febb56e125ffbfa36622d">GetEventHubProperties</a> (Core::Context const &context={})
-    summary: GetEventHubProperties gets properties of an eventHub. This includes data like name, and partitions.  <br>
-    returnType: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_properties.html">Models::EventHubProperties</a> 
-  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a03b3f269f3f14eaab3492805e58480fe">GetPartitionProperties</a> (std::string const &partitionID, Core::Context const &context={})
-    summary: GetPartitionProperties gets properties for a specific partition. This includes data like the last enqueued sequence number, the first sequence number and when an event was last enqueued to the partition.  <br>
-    returnType: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html">Models::EventHubPartitionProperties</a> 
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a6e61ff5bdf91bce47070a1e6d3da8f25">ConsumerClient</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> const &amp;other)=delete
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a275beec3a2b2d9f955bac921e1afd46f">ConsumerClient</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> &amp;&amp;other)=delete
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a0265874bcb8accb5dc50f31fd4c8c794">operator=</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> const &amp;other)=delete
+    returnType: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a50c9ca21e344f5f4573d0656e4f6c871">operator=</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> &amp;&amp;other)=delete
+    returnType: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#ad81e439139360f9b9d146d7e54fac390">GetEventHubName</a> () const
+    summary: Getter for event hub name.
+    returnType: std::string const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a0593d9885282eecdd8327130a70d5a80">GetConsumerGroup</a> () const
+    summary: Getter for consumer group name.
+    returnType: std::string const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#aec15a3cd53272a612e0f934ca32e10c8">GetDetails</a> () const
+    summary: Getter for client details.
+    returnType: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_consumer_client_details.html">Models::ConsumerClientDetails</a>&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#af5603f8b1432c35019666deb0d71a99a">GetRetryOptions</a> () const
+    summary: Getter for retry options.
+    returnType: Azure::Core::Http::Policies::RetryOptions const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a65f588c4cba90cd75c2d3e82fa0e6179">ConsumerClient</a> (std::string const &amp;connectionString, std::string const &amp;eventHub={}, std::string const &amp;consumerGroup=DefaultConsumerGroup, <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client_options.html">ConsumerClientOptions</a> const &amp;options={})
+    summary: creates a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> from a connection string.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#ab08005c99bb8c82e63c9a73af83c465d">ConsumerClient</a> (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHub, std::shared_ptr&lt; Azure::Core::Credentials::TokenCredential &gt; credential, std::string const &amp;consumerGroup=DefaultConsumerGroup, <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client_options.html">ConsumerClientOptions</a> const &amp;options={})
+    summary: creates a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> from a token credential.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a2372850b4f1eace768803dc17c09cdb4">CreatePartitionClient</a> (std::string const &amp;partitionId, <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html">PartitionClientOptions</a> const &amp;options={}, Azure::Core::Context const &amp;context={})
+    summary: Create new Partition client.
+    returnType: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">PartitionClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a4f30e551583265918d95050aa3271c6a">Close</a> (Azure::Core::Context const &amp;context)
+    summary: Closes the consumer client canceling any operations outstanding on any of the existing partition clients.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a73b6a136884febb56e125ffbfa36622d">GetEventHubProperties</a> (Core::Context const &amp;context={})
+    summary: GetEventHubProperties gets properties of an eventHub. This includes data like name, and partitions.
+    returnType: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_properties.html">Models::EventHubProperties</a>&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a03b3f269f3f14eaab3492805e58480fe">GetPartitionProperties</a> (std::string const &amp;partitionID, Core::Context const &amp;context={})
+    summary: GetPartitionProperties gets properties for a specific partition. This includes data like the last enqueued sequence number, the first sequence number and when an event was last enqueued to the partition.
+    returnType: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html">Models::EventHubPartitionProperties</a>&#160;
 - section: Detailed Description
   display: h2
-- content: The <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> class uses a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">Azure::Messaging::EventHubs::PartitionClient</a> to receive events from a specific partition of an Event Hub. The <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">Azure::Messaging::EventHubs::PartitionClient</a> is created by the <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a6e61ff5bdf91bce47070a1e6d3da8f25">ConsumerClient</a> and is available via the NewPartitionClient method. The <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> is also responsible for managing the connection to the Event Hub and will reconnect as necessary.
+- content: <p>The <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> class uses a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">Azure::Messaging::EventHubs::PartitionClient</a> to receive events from a specific partition of an Event Hub. The <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client.html">Azure::Messaging::EventHubs::PartitionClient</a> is created by the <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a6e61ff5bdf91bce47070a1e6d3da8f25">ConsumerClient</a> and is available via the NewPartitionClient method. The <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> is also responsible for managing the connection to the Event Hub and will reconnect as necessary. </p>
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;ConsumerClient() [1/4]'
+- section: ConsumerClient() [1/4]
   display: h2
-- content: Copy a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> from an existing one.
-- section: '&#9670;&#160;ConsumerClient() [2/4]'
+- content: <p>Copy a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> from an existing one. </p>
+- section: ConsumerClient() [2/4]
   display: h2
-- content: Move a consumer client
-- section: '&#9670;&#160;ConsumerClient() [3/4]'
+- content: <p>Move a consumer client </p>
+- section: ConsumerClient() [3/4]
   display: h2
 - section: Parameters
   display: h4
@@ -73,8 +73,8 @@ components:
 - section: Remarks
   display: h4
 - parameters:
-  - summary: connectionString can be one of two formats - with or without an EntityPath key. When the connection string does not have an entity path, as shown below, the eventHub parameter cannot be empty and should contain the name of your event hub. Endpoint=sb://<your-namespace>.servicebus.windows.net/;SharedAccessKeyName=<key-name>;SharedAccessKey=<key> When the connection string DOES have an entity path, as shown below, the eventHub parameter must match the entity path. Endpoint=sb://<your-namespace>.servicebus.windows.net/; SharedAccessKeyName=<key-name>;SharedAccessKey=<key>;EntityPath=<entitypath>;
-- section: '&#9670;&#160;ConsumerClient() [4/4]'
+  - summary: connectionString can be one of two formats - with or without an EntityPath key. When the connection string does not have an entity path, as shown below, the eventHub parameter cannot be empty and should contain the name of your event hub. Endpoint=sb://&lt;your-namespace&gt;.servicebus.windows.net/;SharedAccessKeyName=&lt;key-name&gt;;SharedAccessKey=&lt;key&gt; When the connection string DOES have an entity path, as shown below, the eventHub parameter must match the entity path. Endpoint=sb://&lt;your-namespace&gt;.servicebus.windows.net/; SharedAccessKeyName=&lt;key-name&gt;;SharedAccessKey=&lt;key&gt;;EntityPath=&lt;entitypath&gt;;
+- section: ConsumerClient() [4/4]
   display: h2
 - section: Parameters
   display: h4
@@ -91,14 +91,14 @@ components:
     summary: client options
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;Close()'
+- section: Close()
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: context
     summary: The context for the operation can be used for request cancellation.
-- section: '&#9670;&#160;CreatePartitionClient()'
+- section: CreatePartitionClient()
   display: h2
 - section: Parameters
   display: h4
@@ -109,27 +109,27 @@ components:
     summary: client options
   - name: context
     summary: The context for the operation can be used for request cancellation.
-- section: '&#9670;&#160;GetConsumerGroup()'
+- section: GetConsumerGroup()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: Consumer group name for client
-- section: '&#9670;&#160;GetDetails()'
+- section: GetDetails()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: Client details for client
-- section: '&#9670;&#160;GetEventHubName()'
+- section: GetEventHubName()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: Event hub name for client
-- section: '&#9670;&#160;GetEventHubProperties()'
+- section: GetEventHubProperties()
   display: h2
-- section: '&#9670;&#160;GetPartitionProperties()'
+- section: GetPartitionProperties()
   display: h2
 - section: Parameters
   display: h4
@@ -138,18 +138,22 @@ components:
     summary: partition ID to detail.
   - name: context
     summary: The context for the operation can be used for request cancellation.
-- section: '&#9670;&#160;GetRetryOptions()'
+- section: GetRetryOptions()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: Retry options for client
-- section: '&#9670;&#160;operator=() [1/2]'
+- section: operator=() [1/2]
   display: h2
-- content: Move a consumer client
-- section: '&#9670;&#160;operator=() [2/2]'
+- content: <p>Move a consumer client </p>
+- section: operator=() [2/2]
   display: h2
 - content: >-
-    Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> to an existing one.The documentation for this class was generated from the following files:inc/azure/messaging/eventhubs/consumer_client.hpp
+    <p>Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> to an existing one. </p>The documentation for this class was generated from the following files:<ul>
 
-    src/consumer_client.cppGenerated by&#160;1.9.7
+    <li>inc/azure/messaging/eventhubs/<a href="consumer__client_8hpp_source.html">consumer_client.hpp</a></li>
+
+    <li>src/consumer_client.cpp</li>
+
+    </ul>

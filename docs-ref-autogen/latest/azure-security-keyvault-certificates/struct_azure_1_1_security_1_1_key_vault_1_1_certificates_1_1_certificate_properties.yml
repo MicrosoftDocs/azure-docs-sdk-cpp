@@ -3,66 +3,66 @@ uid: Azure::Security::KeyVault::Certificates::CertificateProperties
 title: Azure::Security::KeyVault::Certificates::CertificateProperties Struct Reference
 components:
 - content: >-
-    Contains identity and other basic properties of a Certificate.  
-     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#details">More...</a><code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code>
+    <p>Contains identity and other basic properties of a Certificate.  
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#details">More...</a></p><p><code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a8e108abd506d5cfa4519a3efb3f8199e">CertificateProperties</a> ()=default
-    summary: Construct a new Certificate Properties object.  <br>
-    returnType:  
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#ae3580296a594435a05d75cac46999d2c">CertificateProperties</a> (std::string const &name)
-    summary: Construct a new Certificate Properties object.  <br>
-    returnType:  
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a8e108abd506d5cfa4519a3efb3f8199e">CertificateProperties</a> ()=default
+    summary: Construct a new Certificate Properties object.
+    returnType: '&#160;'
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#ae3580296a594435a05d75cac46999d2c">CertificateProperties</a> (std::string const &amp;name)
+    summary: Construct a new Certificate Properties object.
+    returnType: '&#160;'
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a30807b007e156797b424e34ed96c5f71">NotBefore</a>
-    summary: Indicate when the certificate will be valid and can be used for cryptographic operations.  <br>
-    returnType: Azure::Nullable< Azure::DateTime > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a8e16aedf2198218f28808e1fb07ea63e">ExpiresOn</a>
-    summary: Indicate when the certificate will expire and cannot be used for cryptographic operations.  <br>
-    returnType: Azure::Nullable< Azure::DateTime > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a820b5462fbf601cc10935eb3b210103b">CreatedOn</a>
-    summary: Indicate when the certificate was created.  <br>
-    returnType: Azure::Nullable< Azure::DateTime > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a95d2179cdd028047c8b2bef597fccb10">UpdatedOn</a>
-    summary: Indicate when the certificate was updated.  <br>
-    returnType: Azure::Nullable< Azure::DateTime > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#adbc04d3c5617c4e138d4f429948d44b6">RecoverableDays</a>
-    summary: The number of days a certificate is retained before being deleted for a soft delete-enabled Key Vault.  <br>
-    returnType: Azure::Nullable< int32_t > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a4580301ab50ff3ccf1d8d388e46bc691">RecoveryLevel</a>
-    summary: The recovery level currently in effect for keys in the Key Vault.  <br>
-    returnType: Azure::Nullable< std::string > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a45e3a66fcd291f6114df92ccbe420694">Tags</a>
-    summary: Dictionary of tags with specific metadata about the certificate.  <br>
-    returnType: std::unordered_map< std::string, std::string > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#abe20fb4a02cbf01c400786a507cd7367">Name</a>
-    summary: The name of the certificate.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a1f2bcf4449b1ae48915812a79b22f842">IdUrl</a>
-    summary: The certificate identifier.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#af15b1a2faeaed39cff9f2cb89bbdfad4">VaultUrl</a>
-    summary: The Key Vault base Url.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a55070d418096af57456eeac52582c5b9">Version</a>
-    summary: The version of the certificate.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a8f5e34f66f75c3fb95d12bd3586b03b4">X509Thumbprint</a>
-    summary: Get the digital thumbprint of the certificate which can be used to uniquely identify it.  <br>
-    returnType: std::vector< uint8_t > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a780420b0305093b9a98f18947f4d05c1">Enabled</a>
-    summary: Indicate whether the certificate is enabled and useable for cryptographic operations.  <br>
-    returnType: Azure::Nullable< bool > 
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a30807b007e156797b424e34ed96c5f71">NotBefore</a>
+    summary: Indicate when the certificate will be valid and can be used for cryptographic operations.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a8e16aedf2198218f28808e1fb07ea63e">ExpiresOn</a>
+    summary: Indicate when the certificate will expire and cannot be used for cryptographic operations.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a820b5462fbf601cc10935eb3b210103b">CreatedOn</a>
+    summary: Indicate when the certificate was created.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a95d2179cdd028047c8b2bef597fccb10">UpdatedOn</a>
+    summary: Indicate when the certificate was updated.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#adbc04d3c5617c4e138d4f429948d44b6">RecoverableDays</a>
+    summary: The number of days a certificate is retained before being deleted for a soft delete-enabled Key Vault.
+    returnType: Azure::Nullable&lt; int32_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a4580301ab50ff3ccf1d8d388e46bc691">RecoveryLevel</a>
+    summary: The recovery level currently in effect for keys in the Key Vault.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a45e3a66fcd291f6114df92ccbe420694">Tags</a>
+    summary: Dictionary of tags with specific metadata about the certificate.
+    returnType: std::unordered_map&lt; std::string, std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#abe20fb4a02cbf01c400786a507cd7367">Name</a>
+    summary: The name of the certificate.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a1f2bcf4449b1ae48915812a79b22f842">IdUrl</a>
+    summary: The certificate identifier.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#af15b1a2faeaed39cff9f2cb89bbdfad4">VaultUrl</a>
+    summary: The Key Vault base Url.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a55070d418096af57456eeac52582c5b9">Version</a>
+    summary: The version of the certificate.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a8f5e34f66f75c3fb95d12bd3586b03b4">X509Thumbprint</a>
+    summary: Get the digital thumbprint of the certificate which can be used to uniquely identify it.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html#a780420b0305093b9a98f18947f4d05c1">Enabled</a>
+    summary: Indicate whether the certificate is enabled and useable for cryptographic operations.
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;CertificateProperties() [1/2]'
+- section: CertificateProperties() [1/2]
   display: h2
-- section: '&#9670;&#160;CertificateProperties() [2/2]'
+- section: CertificateProperties() [2/2]
   display: h2
 - section: Parameters
   display: h4
@@ -71,34 +71,39 @@ components:
     summary: The name of the certificate.
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;CreatedOn'
+- section: CreatedOn
   display: h2
-- section: '&#9670;&#160;Enabled'
+- section: Enabled
   display: h2
-- section: '&#9670;&#160;ExpiresOn'
+- section: ExpiresOn
   display: h2
-- section: '&#9670;&#160;IdUrl'
+- section: IdUrl
   display: h2
-- section: '&#9670;&#160;Name'
+- section: Name
   display: h2
-- section: '&#9670;&#160;NotBefore'
+- section: NotBefore
   display: h2
-- section: '&#9670;&#160;RecoverableDays'
+- section: RecoverableDays
   display: h2
-- section: '&#9670;&#160;RecoveryLevel'
+- section: RecoveryLevel
   display: h2
 - section: Remarks
   display: h4
 - parameters:
   - summary: If Purgeable, the certificate can be permanently deleted by an authorized user; otherwise, only the service can purge the keys at the end of the retention interval.
-- section: '&#9670;&#160;Tags'
+- section: Tags
   display: h2
-- section: '&#9670;&#160;UpdatedOn'
+- section: UpdatedOn
   display: h2
-- section: '&#9670;&#160;VaultUrl'
+- section: VaultUrl
   display: h2
-- section: '&#9670;&#160;Version'
+- section: Version
   display: h2
-- section: '&#9670;&#160;X509Thumbprint'
+- section: X509Thumbprint
   display: h2
-- content: The documentation for this struct was generated from the following file:inc/azure/keyvault/certificates/certificate_client_models.hppGenerated by&#160;1.9.7
+- content: >-
+    The documentation for this struct was generated from the following file:<ul>
+
+    <li>inc/azure/keyvault/certificates/<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a></li>
+
+    </ul>

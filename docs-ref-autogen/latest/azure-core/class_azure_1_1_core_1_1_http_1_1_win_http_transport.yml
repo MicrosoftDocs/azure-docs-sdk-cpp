@@ -2,62 +2,69 @@
 uid: Azure::Core::Http::WinHttpTransport
 title: Azure::Core::Http::WinHttpTransport Class Reference
 components:
-- content: 'Concrete implementation of an HTTP transport that uses WinHTTP when sending and receiving requests and responses over the wire.<code>#include &lt;<a href="win__http__transport_8hpp_source.html">win_http_transport.hpp</a>&gt;</code>Inheritance diagram for Azure::Core::Http::WinHttpTransport:'
+- content: >-
+    <p>Concrete implementation of an HTTP transport that uses WinHTTP when sending and receiving requests and responses over the wire.  
+
+    </p><p><code>#include &lt;<a href="win__http__transport_8hpp_source.html">win_http_transport.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Core::Http::WinHttpTransport:
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a42ba2ab57cdbc23d84e5fe8a86abaf44">WinHttpTransport</a> (<a class="el" href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html">WinHttpTransportOptions</a> const &options=<a class="el" href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html">WinHttpTransportOptions</a>())
-    summary: Constructs <code>WinHttpTransport</code>.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a7389a13501d5339ce872ec25610850f6">WinHttpTransport</a> (<a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html">Azure::Core::Http::Policies::TransportOptions</a> const &options)
-    summary: Constructs <code>WinHttpTransport</code> object based on common <a class="el" href="namespace_azure.html" title="Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.">Azure</a> HTTP Transport Options.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a21027372be541ce167ee62b06e566402">Send</a> (<a class="el" href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &request, <a class="el" href="class_azure_1_1_core_1_1_context.html">Context</a> const &context) override
-    summary: Implements the HTTP transport interface to send an HTTP <a class="el" href="class_azure_1_1_core_1_1_http_1_1_request.html" title="A request message from a client to a server.">Request</a> and produce an HTTP <a class="el" href="class_azure_1_1_core_1_1_http_1_1_raw_response.html" title="After receiving and interpreting a request message, a server responds with an HTTP response message.">RawResponse</a>.  <br>
-    returnType: virtual std::unique_ptr< <a class="el" href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a class="el" href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &request, <a class="el" href="class_azure_1_1_core_1_1_context.html">Context</a> const &context)=0
-    returnType: virtual std::unique_ptr< <a class="el" href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a4c0b2905624416efe1f77e6ef244c0e9">~HttpTransport</a> ()
-    returnType: virtual 
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a42ba2ab57cdbc23d84e5fe8a86abaf44">WinHttpTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html">WinHttpTransportOptions</a> const &amp;options=<a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html">WinHttpTransportOptions</a>())
+    summary: Constructs <code>WinHttpTransport</code>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a7389a13501d5339ce872ec25610850f6">WinHttpTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html">Azure::Core::Http::Policies::TransportOptions</a> const &amp;options)
+    summary: Constructs <code>WinHttpTransport</code> object based on common <a href="namespace_azure.html">Azure</a> HTTP Transport Options.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a21027372be541ce167ee62b06e566402">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.html">Context</a> const &amp;context) override
+    summary: Implements the HTTP transport interface to send an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> and produce an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a>.
+    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.html">Context</a> const &amp;context)=0
+    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a4c0b2905624416efe1f77e6ef244c0e9">~HttpTransport</a> ()
+    returnType: virtual&#160;
 - section: Protected Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#aebe91a3b2960e25431b6106c70c003e3">OnUpgradedConnection</a> (std::unique_ptr< _detail::WinHttpRequest > const &request) const
-    summary: Callback to allow a derived transport to extract the request handle. Used for WebSocket transports.  <br>
-    returnType: virtual void 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#af7fadcff099af67a5e3732642cc42c78">HttpTransport</a> (const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &other)=default
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a0c6eb7479b5ef2e7359ec5f42fc404b8">HttpTransport</a> (<a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &&other)=default
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a44e0b2695aa316451ffe3c68e5e3ee30">operator=</a> (const <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &other)=default
-    returnType: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> & 
-  - declaration: <b>HasWebSocketSupport</b> () const
-    returnType: virtual bool 
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#aebe91a3b2960e25431b6106c70c003e3">OnUpgradedConnection</a> (std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;request) const
+    summary: Callback to allow a derived transport to extract the request handle. Used for WebSocket transports.
+    returnType: virtual void&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#af7fadcff099af67a5e3732642cc42c78">HttpTransport</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;other)=default
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a0c6eb7479b5ef2e7359ec5f42fc404b8">HttpTransport</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;&amp;other)=default
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a44e0b2695aa316451ffe3c68e5e3ee30">operator=</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;other)=default
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;&#160;
+  - declaration: HasWebSocketSupport () const
+    returnType: virtual bool&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;WinHttpTransport() [1/2]'
+- section: WinHttpTransport() [1/2]
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: options
     summary: Optional parameter to override the default settings.
-- section: '&#9670;&#160;WinHttpTransport() [2/2]'
+- section: WinHttpTransport() [2/2]
   display: h2
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;OnUpgradedConnection()'
+- section: OnUpgradedConnection()
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: request
-    summary: '- <a class="el" href="class_azure_1_1_core_1_1_http_1_1_request.html" title="A request message from a client to a server.">Request</a> which contains the WinHttp request handle.'
-- section: '&#9670;&#160;Send()'
+    summary: '- <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> which contains the WinHttp request handle.'
+- section: Send()
   display: h2
 - content: >-
-    Implements <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#aab0a38b3e67079a9ede743c3e8de909d">Azure::Core::Http::HttpTransport</a>.The documentation for this class was generated from the following files:inc/azure/core/http/win_http_transport.hpp
+    <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#aab0a38b3e67079a9ede743c3e8de909d">Azure::Core::Http::HttpTransport</a>.</p>The documentation for this class was generated from the following files:<ul>
 
-    src/http/winhttp/win_http_transport.cppGenerated by&#160;1.9.7
+    <li>inc/azure/core/http/<a href="win__http__transport_8hpp_source.html">win_http_transport.hpp</a></li>
+
+    <li>src/http/winhttp/win_http_transport.cpp</li>
+
+    </ul>

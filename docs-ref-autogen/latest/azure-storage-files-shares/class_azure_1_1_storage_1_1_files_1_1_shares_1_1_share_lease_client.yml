@@ -2,72 +2,72 @@
 uid: Azure::Storage::Files::Shares::ShareLeaseClient
 title: Azure::Storage::Files::Shares::ShareLeaseClient Class Reference
 components:
-- content: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html">ShareLeaseClient</a> allows you to manipulate Azure Storage leases on shares and files.<code>#include &lt;<a href="share__lease__client_8hpp_source.html">share_lease_client.hpp</a>&gt;</code>
+- content: >-
+    <p><a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html">ShareLeaseClient</a> allows you to manipulate Azure Storage leases on shares and files.  
+
+    </p><p><code>#include &lt;<a href="share__lease__client_8hpp_source.html">share_lease_client.hpp</a>&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a490ac5c86465aa1943f626fe53185c12">ShareLeaseClient</a> (<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> fileClient, std::string leaseId)
-    summary: Initializes a new instance of the <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html" title="ShareLeaseClient allows you to manipulate Azure Storage leases on shares and files.">ShareLeaseClient</a>.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a7e57e884181a84bd7c9cb545deccac04">ShareLeaseClient</a> (<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html">ShareClient</a> shareClient, std::string leaseId)
-    summary: Initializes a new instance of the <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html" title="ShareLeaseClient allows you to manipulate Azure Storage leases on shares and files.">ShareLeaseClient</a>.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a2a99e3eb3b8df91bd082aad23337832e">GetLeaseId</a> ()
-    summary: Get lease ID of this lease client.  <br>
-    returnType: const std::string & 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#af4a3ad9cda047b4c4fe638efe4dbf29d">Acquire</a> (std::chrono::seconds duration, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_acquire_lease_options.html">AcquireLeaseOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_acquire_lease_options.html">AcquireLeaseOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context())
-    summary: Acquires a lease on the file or share.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_acquire_lease_result.html">Models::AcquireLeaseResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a3fdb8bbb26a45634eda39c3ddd094541">Renew</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_renew_lease_options.html">RenewLeaseOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_renew_lease_options.html">RenewLeaseOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context())
-    summary: Renews the share's previously-acquired lease.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_renew_lease_result.html">Models::RenewLeaseResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a6d6d2c30e0a45964d855e6a3ded3e946">Release</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_release_lease_options.html">ReleaseLeaseOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_release_lease_options.html">ReleaseLeaseOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context())
-    summary: Releases the file or share's previously-acquired lease.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_release_lease_result.html">Models::ReleaseLeaseResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a34fe601399804b8f92b09d4cfe4e67bf">Change</a> (const std::string &proposedLeaseId, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_change_lease_options.html">ChangeLeaseOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_change_lease_options.html">ChangeLeaseOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context())
-    summary: Changes the lease of an active lease.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_change_lease_result.html">Models::ChangeLeaseResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a41f450d38ebe54f4270d342202166e3f">Break</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_break_lease_options.html">BreakLeaseOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_break_lease_options.html">BreakLeaseOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context())
-    summary: Breaks the previously-acquired lease.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_break_lease_result.html">Models::BreakLeaseResult</a> > 
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a490ac5c86465aa1943f626fe53185c12">ShareLeaseClient</a> (<a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> fileClient, std::string leaseId)
+    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html">ShareLeaseClient</a>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a7e57e884181a84bd7c9cb545deccac04">ShareLeaseClient</a> (<a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html">ShareClient</a> shareClient, std::string leaseId)
+    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html">ShareLeaseClient</a>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a2a99e3eb3b8df91bd082aad23337832e">GetLeaseId</a> ()
+    summary: Get lease ID of this lease client.
+    returnType: const std::string &amp;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#af4a3ad9cda047b4c4fe638efe4dbf29d">Acquire</a> (std::chrono::seconds duration, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_acquire_lease_options.html">AcquireLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_acquire_lease_options.html">AcquireLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+    summary: Acquires a lease on the file or share.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_acquire_lease_result.html">Models::AcquireLeaseResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a3fdb8bbb26a45634eda39c3ddd094541">Renew</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_renew_lease_options.html">RenewLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_renew_lease_options.html">RenewLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+    summary: Renews the share's previously-acquired lease.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_renew_lease_result.html">Models::RenewLeaseResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a6d6d2c30e0a45964d855e6a3ded3e946">Release</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_release_lease_options.html">ReleaseLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_release_lease_options.html">ReleaseLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+    summary: Releases the file or share's previously-acquired lease.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_release_lease_result.html">Models::ReleaseLeaseResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a34fe601399804b8f92b09d4cfe4e67bf">Change</a> (const std::string &amp;proposedLeaseId, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_change_lease_options.html">ChangeLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_change_lease_options.html">ChangeLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+    summary: Changes the lease of an active lease.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_change_lease_result.html">Models::ChangeLeaseResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a41f450d38ebe54f4270d342202166e3f">Break</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_break_lease_options.html">BreakLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_break_lease_options.html">BreakLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+    summary: Breaks the previously-acquired lease.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_break_lease_result.html">Models::BreakLeaseResult</a> &gt;&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#ac7aec423969e376821ed2e2080254fae">CreateUniqueLeaseId</a> ()
-    summary: Gets a unique lease ID.  <br>
-    returnType: static std::string 
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#ac7aec423969e376821ed2e2080254fae">CreateUniqueLeaseId</a> ()
+    summary: Gets a unique lease ID.
+    returnType: static std::string&#160;
 - section: Static Public Attributes
   display: h2
 - apiList:
-  - declaration: <b>InfiniteLeaseDuration</b>
-    summary: A value representing infinite lease duration. <br>
-    returnType: >-
-      <a id="af1120a93d1829b64a8cfccd3b0850a20" name="af1120a93d1829b64a8cfccd3b0850a20"></a>
-
-      static AZ_STORAGE_FILES_SHARES_DLLEXPORT const std::chrono::seconds 
+  - declaration: InfiniteLeaseDuration
+    summary: A value representing infinite lease duration.
+    returnType: static AZ_STORAGE_FILES_SHARES_DLLEXPORT const std::chrono::seconds&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;ShareLeaseClient() [1/2]'
+- section: ShareLeaseClient() [1/2]
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: fileClient
-    summary: A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> representing the file being leased.
+    summary: A <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> representing the file being leased.
   - name: leaseId
     summary: A lease ID. This is not required for break operation.
-- section: '&#9670;&#160;ShareLeaseClient() [2/2]'
+- section: ShareLeaseClient() [2/2]
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: shareClient
-    summary: A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> representing the share being leased.
+    summary: A <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html">ShareClient</a> representing the share being leased.
   - name: leaseId
     summary: A lease ID. This is not required for break operation.
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;Acquire()'
+- section: Acquire()
   display: h2
 - section: Parameters
   display: h4
@@ -82,7 +82,7 @@ components:
   display: h4
 - parameters:
   - summary: An AcquireLeaseResult describing the lease.
-- section: '&#9670;&#160;Break()'
+- section: Break()
   display: h2
 - section: Parameters
   display: h4
@@ -95,7 +95,7 @@ components:
   display: h4
 - parameters:
   - summary: A BreakLeaseResult describing the broken lease.
-- section: '&#9670;&#160;Change()'
+- section: Change()
   display: h2
 - section: Parameters
   display: h4
@@ -113,20 +113,20 @@ components:
 - section: Remarks
   display: h4
 - parameters:
-  - summary: The current <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html" title="ShareLeaseClient allows you to manipulate Azure Storage leases on shares and files.">ShareLeaseClient</a> becomes invalid if this operation succeeds.
-- section: '&#9670;&#160;CreateUniqueLeaseId()'
+  - summary: The current <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html">ShareLeaseClient</a> becomes invalid if this operation succeeds.
+- section: CreateUniqueLeaseId()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: A unique lease ID.
-- section: '&#9670;&#160;GetLeaseId()'
+- section: GetLeaseId()
   display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: Lease ID of this lease client.
-- section: '&#9670;&#160;Release()'
+- section: Release()
   display: h2
 - section: Parameters
   display: h4
@@ -139,7 +139,7 @@ components:
   display: h4
 - parameters:
   - summary: A ReleaseLeaseResult describing the updated share or file.
-- section: '&#9670;&#160;Renew()'
+- section: Renew()
   display: h2
 - section: Parameters
   display: h4
@@ -152,4 +152,9 @@ components:
   display: h4
 - parameters:
   - summary: A RenewLeaseResult describing the lease.
-- content: The documentation for this class was generated from the following file:inc/azure/storage/files/shares/share_lease_client.hppGenerated by&#160;1.9.7
+- content: >-
+    The documentation for this class was generated from the following file:<ul>
+
+    <li>inc/azure/storage/files/shares/<a href="share__lease__client_8hpp_source.html">share_lease_client.hpp</a></li>
+
+    </ul>

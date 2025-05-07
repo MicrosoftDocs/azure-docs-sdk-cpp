@@ -2,49 +2,57 @@
 uid: Azure::Storage::Blobs::Models::CreatePageBlobResult
 title: Azure::Storage::Blobs::Models::CreatePageBlobResult Struct Reference
 components:
-- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html#aeabef65efdfb4fd8f2283205bd188c15">Azure::Storage::Blobs::PageBlobClient::Create</a>.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
+- content: >-
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html#aeabef65efdfb4fd8f2283205bd188c15">Azure::Storage::Blobs::PageBlobClient::Create</a>.  
+
+    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a67b5374480ea4038fd7535ec2d5f127c">Created</a> = true
-    returnType: bool 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#add956e628d2558058390f5c738607c6e">SequenceNumber</a>
-    returnType: Nullable< std::int64_t > 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a7d92165e2fcd70b71705077b76f352c2">ETag</a>
-    returnType: Azure::ETag 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a97d8a48fc4dd3b1e5d4ee5e899d2e284">LastModified</a>
-    returnType: DateTime 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a48ec1f335c50e47a1ea373038e1cdf0f">VersionId</a>
-    returnType: Nullable< std::string > 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a3ac57d7235e53014b438e7c1fcdb4c83">IsServerEncrypted</a> = bool()
-    returnType: bool 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a4406be6745f7db0f2ad0124e2800761c">EncryptionKeySha256</a>
-    returnType: Nullable< std::vector< std::uint8_t > > 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a8e1368ceee3f1e0a23960ddd08a6ac5b">EncryptionScope</a>
-    returnType: Nullable< std::string > 
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a67b5374480ea4038fd7535ec2d5f127c">Created</a> = true
+    returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#add956e628d2558058390f5c738607c6e">SequenceNumber</a>
+    returnType: Nullable&lt; std::int64_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a7d92165e2fcd70b71705077b76f352c2">ETag</a>
+    returnType: Azure::ETag&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a97d8a48fc4dd3b1e5d4ee5e899d2e284">LastModified</a>
+    returnType: DateTime&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a48ec1f335c50e47a1ea373038e1cdf0f">VersionId</a>
+    returnType: Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a3ac57d7235e53014b438e7c1fcdb4c83">IsServerEncrypted</a> = bool()
+    returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a4406be6745f7db0f2ad0124e2800761c">EncryptionKeySha256</a>
+    returnType: Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_page_blob_result.html#a8e1368ceee3f1e0a23960ddd08a6ac5b">EncryptionScope</a>
+    returnType: Nullable&lt; std::string &gt;&#160;
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;Created'
+- section: Created
   display: h2
-- content: Indicates if the page blob was successfully created by this operation.
-- section: '&#9670;&#160;EncryptionKeySha256'
+- content: <p>Indicates if the page blob was successfully created by this operation. </p>
+- section: EncryptionKeySha256
   display: h2
-- content: The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key.
-- section: '&#9670;&#160;EncryptionScope'
+- content: <p>The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key. </p>
+- section: EncryptionScope
   display: h2
-- content: Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope.
-- section: '&#9670;&#160;ETag'
+- content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p>
+- section: ETag
   display: h2
-- content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
-- section: '&#9670;&#160;IsServerEncrypted'
+- content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p>
+- section: IsServerEncrypted
   display: h2
-- content: The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise.
-- section: '&#9670;&#160;LastModified'
+- content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p>
+- section: LastModified
   display: h2
-- content: Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
-- section: '&#9670;&#160;SequenceNumber'
+- content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p>
+- section: SequenceNumber
   display: h2
-- content: The field is deprecated and is always null. Use GetProperties() instead to check sequence number for a page blob.
-- section: '&#9670;&#160;VersionId'
+- content: <p>The field is deprecated and is always null. Use GetProperties() instead to check sequence number for a page blob. </p>
+- section: VersionId
   display: h2
-- content: A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob.The documentation for this struct was generated from the following file:inc/azure/storage/blobs/rest_client.hppGenerated by&#160;1.9.7
+- content: >-
+    <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>The documentation for this struct was generated from the following file:<ul>
+
+    <li>inc/azure/storage/blobs/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
+
+    </ul>

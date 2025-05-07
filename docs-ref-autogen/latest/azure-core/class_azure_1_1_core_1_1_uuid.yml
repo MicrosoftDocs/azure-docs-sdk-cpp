@@ -2,101 +2,108 @@
 uid: Azure::Core::Uuid
 title: Azure::Core::Uuid Class Reference
 components:
-- content: Universally unique identifier.<code>#include &lt;<a href="uuid_8hpp_source.html">uuid.hpp</a>&gt;</code>
+- content: >-
+    <p>Universally unique identifier.  
+
+    </p><p><code>#include &lt;<a href="uuid_8hpp_source.html">uuid.hpp</a>&gt;</code></p>
 - section: Public Types
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> = std::array< std::uint8_t, 16 >
-    summary: Represents a byte array where the UUID value can be stored.  <br>
-    returnType: using 
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> = std::array&lt; std::uint8_t, 16 &gt;
+    summary: Represents a byte array where the UUID value can be stored.
+    returnType: using&#160;
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#af8a42f0bdcaa60d848b19177bcb2ca31">Uuid</a> ()
-    summary: Constructs a Nil UUID (<code>00000000-0000-0000-0000-000000000000</code>).  <br>
-    returnType: constexpr 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#a166b3c559eaa821055414f6b1d6c6cb5">ToString</a> () const
-    summary: Gets <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a> as a string.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#ab486a367256c05541915b9dc557a8471">AsArray</a> () const
-    summary: Returns the binary value of the <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a> for consumption by clients who need non-string representation of the <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a>.  <br>
-    returnType: constexpr <a class="el" href="class_azure_1_1_core_1_1_uuid.html#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> const & 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#afd71c50049bbc4493b800c2456b39107">operator==</a> (<a class="el" href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> const &other) const
-    summary: Compares with another instance of <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a> for equality.  <br>
-    returnType: constexpr bool 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#a960fe3373403bed0e1fa8b4444e4f642">operator!=</a> (<a class="el" href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> const &other) const
-    summary: Compares with another instance of <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a> for inequality.  <br>
-    returnType: constexpr bool 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#a749a51a3cd6b6ea2640cb2c2071fdd1d">IsNil</a> () const
-    summary: Checks if the value represents a Nil UUID (<code>00000000-0000-0000-0000-000000000000</code>).  <br>
-    returnType: constexpr bool 
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#af8a42f0bdcaa60d848b19177bcb2ca31">Uuid</a> ()
+    summary: Constructs a Nil UUID (<code>00000000-0000-0000-0000-000000000000</code>).
+    returnType: constexpr&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a166b3c559eaa821055414f6b1d6c6cb5">ToString</a> () const
+    summary: Gets <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> as a string.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#ab486a367256c05541915b9dc557a8471">AsArray</a> () const
+    summary: Returns the binary value of the <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> for consumption by clients who need non-string representation of the <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>.
+    returnType: constexpr <a href="class_azure_1_1_core_1_1_uuid.html#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#afd71c50049bbc4493b800c2456b39107">operator==</a> (<a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> const &amp;other) const
+    summary: Compares with another instance of <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> for equality.
+    returnType: constexpr bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a960fe3373403bed0e1fa8b4444e4f642">operator!=</a> (<a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> const &amp;other) const
+    summary: Compares with another instance of <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> for inequality.
+    returnType: constexpr bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a749a51a3cd6b6ea2640cb2c2071fdd1d">IsNil</a> () const
+    summary: Checks if the value represents a Nil UUID (<code>00000000-0000-0000-0000-000000000000</code>).
+    returnType: constexpr bool&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#a911dd11d09db4ed8ef0fd157a9de678f">CreateUuid</a> ()
-    summary: Creates a new random UUID.  <br>
-    returnType: static <a class="el" href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#a881c12a2203b931b0d1c4cf519559d29">CreateFromArray</a> (<a class="el" href="class_azure_1_1_core_1_1_uuid.html#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> const &uuid)
-    summary: Construct a <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a> from an existing UUID represented as an array of bytes.  <br>
-    returnType: static constexpr <a class="el" href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_uuid.html#a9788875259c8fad5930d0d39987a7d79">Parse</a> (std::string const &uuidString)
-    summary: Construct a <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a> by parsing its representation.  <br>
-    returnType: static <a class="el" href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> 
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a911dd11d09db4ed8ef0fd157a9de678f">CreateUuid</a> ()
+    summary: Creates a new random UUID.
+    returnType: static <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a881c12a2203b931b0d1c4cf519559d29">CreateFromArray</a> (<a href="class_azure_1_1_core_1_1_uuid.html#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> const &amp;uuid)
+    summary: Construct a <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> from an existing UUID represented as an array of bytes.
+    returnType: static constexpr <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a9788875259c8fad5930d0d39987a7d79">Parse</a> (std::string const &amp;uuidString)
+    summary: Construct a <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> by parsing its representation.
+    returnType: static <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>&#160;
 - section: Member Typedef Documentation
   display: h2
-- section: '&#9670;&#160;ValueArray'
+- section: ValueArray
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;Uuid()'
+- section: Uuid()
   display: h2
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;AsArray()'
+- section: AsArray()
   display: h2
 - section: Returns
   display: h4
 - parameters:
-  - summary: An array with the binary representation of the <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a>.
-- section: '&#9670;&#160;CreateFromArray()'
+  - summary: An array with the binary representation of the <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>.
+- section: CreateFromArray()
   display: h2
-- content: Creates a <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> from a UUID created in an external scope.
-- section: '&#9670;&#160;CreateUuid()'
+- content: <p>Creates a <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> from a UUID created in an external scope. </p>
+- section: CreateUuid()
   display: h2
-- section: '&#9670;&#160;IsNil()'
+- section: IsNil()
   display: h2
-- section: '&#9670;&#160;operator!=()'
+- section: operator!=()
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: another instance of <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a>.
+    summary: another instance of <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>.
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if values of two Uuids are not equal, <code>false</code> otherwise.
-- section: '&#9670;&#160;operator==()'
+- section: operator==()
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: another instance of <a class="el" href="class_azure_1_1_core_1_1_uuid.html" title="Universally unique identifier.">Uuid</a>.
+    summary: another instance of <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>.
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if values of two Uuids are equal, <code>false</code> otherwise.
-- section: '&#9670;&#160;Parse()'
+- section: Parse()
   display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: uuidString
     summary: a string in <code>8-4-4-4-12</code> hex characters format.
-- section: '&#9670;&#160;ToString()'
+- section: ToString()
   display: h2
 - content: >-
-    A string is in canonical format (<code>8-4-4-4-12</code> lowercase hex and dashes only).The documentation for this class was generated from the following files:inc/azure/core/uuid.hpp
+    <p>A string is in canonical format (<code>8-4-4-4-12</code> lowercase hex and dashes only). </p>The documentation for this class was generated from the following files:<ul>
 
-    src/uuid.cppGenerated by&#160;1.9.7
+    <li>inc/azure/core/<a href="uuid_8hpp_source.html">uuid.hpp</a></li>
+
+    <li>src/uuid.cpp</li>
+
+    </ul>

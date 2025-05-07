@@ -2,44 +2,52 @@
 uid: Azure::Messaging::EventHubs::Models::EventHubPartitionProperties
 title: Azure::Messaging::EventHubs::Models::EventHubPartitionProperties Struct Reference
 components:
-- content: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html">EventHubPartitionProperties</a> represents properties of an Event Hub partition.<code>#include &lt;<a href="management__models_8hpp_source.html">management_models.hpp</a>&gt;</code>
+- content: >-
+    <p><a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html">EventHubPartitionProperties</a> represents properties of an Event Hub partition.  
+
+    </p><p><code>#include &lt;<a href="management__models_8hpp_source.html">management_models.hpp</a>&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a4381ba486e9603af7ad8a0eed6b11b27">Name</a>
-    returnType: std::string 
-  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a44df2124bb2ce0fb404515cc69c1f5b0">PartitionId</a>
-    returnType: std::string 
-  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a9ddf634f948b9a792f8487a8bab64e46">BeginningSequenceNumber</a> {}
-    returnType: int64_t 
-  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a5ffae9fb23655991603d931447c3fe40">LastEnqueuedSequenceNumber</a> {}
-    returnType: int64_t 
-  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#ad5da25e5e42e09326221efff85c6162c">LastEnqueuedOffset</a> {}
-    returnType: int64_t 
-  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a66561023d8a5ea8344fb1892db27be20">LastEnqueuedTimeUtc</a>
-    returnType: Azure::DateTime 
-  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a34c70835668cf9cec3466f75c6d59a3d">IsEmpty</a> {}
-    returnType: bool 
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a4381ba486e9603af7ad8a0eed6b11b27">Name</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a44df2124bb2ce0fb404515cc69c1f5b0">PartitionId</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a9ddf634f948b9a792f8487a8bab64e46">BeginningSequenceNumber</a> {}
+    returnType: int64_t&#160;
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a5ffae9fb23655991603d931447c3fe40">LastEnqueuedSequenceNumber</a> {}
+    returnType: int64_t&#160;
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#ad5da25e5e42e09326221efff85c6162c">LastEnqueuedOffset</a> {}
+    returnType: int64_t&#160;
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a66561023d8a5ea8344fb1892db27be20">LastEnqueuedTimeUtc</a>
+    returnType: Azure::DateTime&#160;
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html#a34c70835668cf9cec3466f75c6d59a3d">IsEmpty</a> {}
+    returnType: bool&#160;
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;BeginningSequenceNumber'
+- section: BeginningSequenceNumber
   display: h2
-- content: The first sequence number available for events in the partition.
-- section: '&#9670;&#160;IsEmpty'
+- content: <p>The first sequence number available for events in the partition. </p>
+- section: IsEmpty
   display: h2
-- content: Indicates whether or not the partition is currently empty.
-- section: '&#9670;&#160;LastEnqueuedOffset'
+- content: <p>Indicates whether or not the partition is currently empty. </p>
+- section: LastEnqueuedOffset
   display: h2
-- content: The offset of the last observed event to be enqueued in the partition
-- section: '&#9670;&#160;LastEnqueuedSequenceNumber'
+- content: <p>The offset of the last observed event to be enqueued in the partition </p>
+- section: LastEnqueuedSequenceNumber
   display: h2
-- content: The sequence number of the last observed event to be enqueued in the partition.
-- section: '&#9670;&#160;LastEnqueuedTimeUtc'
+- content: <p>The sequence number of the last observed event to be enqueued in the partition. </p>
+- section: LastEnqueuedTimeUtc
   display: h2
-- content: The date and time, in UTC, that the last observed event was enqueued in the partition.
-- section: '&#9670;&#160;Name'
+- content: <p>The date and time, in UTC, that the last observed event was enqueued in the partition. </p>
+- section: Name
   display: h2
-- content: The name of the Event Hub where the partitions reside, specific to the Event Hubs namespace that contains it.
-- section: '&#9670;&#160;PartitionId'
+- content: <p>The name of the Event Hub where the partitions reside, specific to the Event Hubs namespace that contains it. </p>
+- section: PartitionId
   display: h2
-- content: The identifier of the partition, unique to the Event Hub which contains it.The documentation for this struct was generated from the following file:inc/azure/messaging/eventhubs/models/management_models.hppGenerated by&#160;1.9.7
+- content: >-
+    <p>The identifier of the partition, unique to the Event Hub which contains it. </p>The documentation for this struct was generated from the following file:<ul>
+
+    <li>inc/azure/messaging/eventhubs/models/<a href="management__models_8hpp_source.html">management_models.hpp</a></li>
+
+    </ul>

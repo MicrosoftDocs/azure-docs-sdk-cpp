@@ -2,34 +2,36 @@
 uid: Azure::Messaging::EventHubs::PartitionClientOptions
 title: Azure::Messaging::EventHubs::PartitionClientOptions Struct Reference
 components:
-- content: <code>#include &lt;<a href="partition__client_8hpp_source.html">partition_client.hpp</a>&gt;</code>
+- content: <p><code>#include &lt;<a href="partition__client_8hpp_source.html">partition_client.hpp</a>&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html#aecd8fe32e5b5c22af3d8182940418302">StartPosition</a>
-    summary: StartPosition is the position we will start receiving events from, either an offset (inclusive) with Offset, or receiving events received after a specific time using EnqueuedTime.  <br>
-    returnType: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_position.html">Models::StartPosition</a> 
-  - declaration: <b>OwnerLevel</b> {}
-    summary: OwnerLevel is the priority for this partition client, also known as the 'epoch' level. When used, a partition client with a higher OwnerLevel will take ownership of a partition from partition clients with a lower OwnerLevel. Default is off. <br>
-    returnType: >-
-      <a id="a9f93b3a0168faa4e78cb7c93016b1fac" name="a9f93b3a0168faa4e78cb7c93016b1fac"></a>
-
-      Azure::Nullable< std::int64_t > 
-  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html#ab20bc3b43f3141d012699e25046b47eb">Prefetch</a> = 300
-    summary: Prefetch represents the size of the internal prefetch buffer. When set, this client will attempt to always maintain an internal cache of events of this size, asynchronously, increasing the odds that ReceiveEvents() will use a locally stored cache of events, rather than having to wait for events to arrive from the network.  <br>
-    returnType: int32_t 
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html#aecd8fe32e5b5c22af3d8182940418302">StartPosition</a>
+    summary: StartPosition is the position we will start receiving events from, either an offset (inclusive) with Offset, or receiving events received after a specific time using EnqueuedTime.
+    returnType: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_position.html">Models::StartPosition</a>&#160;
+  - declaration: OwnerLevel {}
+    summary: OwnerLevel is the priority for this partition client, also known as the 'epoch' level. When used, a partition client with a higher OwnerLevel will take ownership of a partition from partition clients with a lower OwnerLevel. Default is off.
+    returnType: Azure::Nullable&lt; std::int64_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html#ab20bc3b43f3141d012699e25046b47eb">Prefetch</a> = 300
+    summary: Prefetch represents the size of the internal prefetch buffer. When set, this client will attempt to always maintain an internal cache of events of this size, asynchronously, increasing the odds that ReceiveEvents() will use a locally stored cache of events, rather than having to wait for events to arrive from the network.
+    returnType: int32_t&#160;
 - section: Detailed Description
   display: h2
-- content: brief <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html">PartitionClientOptions</a> provides options for the <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a2372850b4f1eace768803dc17c09cdb4">ConsumerClient::CreatePartitionClient</a> function.
+- content: <p>brief <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html">PartitionClientOptions</a> provides options for the <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a2372850b4f1eace768803dc17c09cdb4">ConsumerClient::CreatePartitionClient</a> function. </p>
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;Prefetch'
+- section: Prefetch
   display: h2
-- content: Defaults to 300 events if Prefetch == 0. Disabled if Prefetch &lt; 0.
-- section: '&#9670;&#160;StartPosition'
+- content: <p>Defaults to 300 events if Prefetch == 0. Disabled if Prefetch &lt; 0. </p>
+- section: StartPosition
   display: h2
 - section: Remarks
   display: h4
 - parameters:
-  - summary: 'NOTE: you can also use the [<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html" title="Processor uses a ConsumerClient and CheckpointStore to provide automatic load balancing between multi...">Processor</a>], which will automatically manage the start value using a [<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html" title="CheckpointStore is used by multiple consumers to coordinate progress and ownership for partitions.">CheckpointStore</a>]. See [example_consuming_with_checkpoints_test.go] for an example.'
-- content: The documentation for this struct was generated from the following file:inc/azure/messaging/eventhubs/partition_client.hppGenerated by&#160;1.9.7
+  - summary: 'NOTE: you can also use the [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a>], which will automatically manage the start value using a [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a>]. See [example_consuming_with_checkpoints_test.go] for an example.'
+- content: >-
+    The documentation for this struct was generated from the following file:<ul>
+
+    <li>inc/azure/messaging/eventhubs/<a href="partition__client_8hpp_source.html">partition_client.hpp</a></li>
+
+    </ul>

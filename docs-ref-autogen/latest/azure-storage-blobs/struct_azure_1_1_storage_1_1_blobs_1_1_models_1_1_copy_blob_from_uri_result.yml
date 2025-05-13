@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::Models::CopyBlobFromUriResult
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACopyBlobFromUriResult
 title: Azure::Storage::Blobs::Models::CopyBlobFromUriResult Struct Reference
 components:
 - content: >-
@@ -26,28 +26,23 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: CopyId
-  display: h2
+  display: h3
 - content: <p>String identifier for this copy operation. </p>
 - section: CopyStatus
-  display: h2
+  display: h3
 - content: <p>State of the copy operation identified by x-ms-copy-id. </p>
 - section: EncryptionScope
-  display: h2
+  display: h3
 - content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p>
 - section: ETag
-  display: h2
+  display: h3
 - content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p>
 - section: LastModified
-  display: h2
+  display: h3
 - content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p>
 - section: TransactionalContentHash
-  display: h2
+  display: h3
 - content: <p>This response header is returned so that the client can check for the integrity of the copied content. This header is only returned if the source content MD5 was specified. </p>
 - section: VersionId
-  display: h2
-- content: >-
-    <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- content: <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>

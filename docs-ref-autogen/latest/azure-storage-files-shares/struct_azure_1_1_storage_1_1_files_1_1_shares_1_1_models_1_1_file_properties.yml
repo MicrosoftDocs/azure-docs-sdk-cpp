@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::FileProperties
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AFileProperties
 title: Azure::Storage::Files::Shares::Models::FileProperties Struct Reference
 components:
 - content: >-
@@ -46,58 +46,53 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: CopyCompletedOn
-  display: h2
+  display: h3
 - content: <p>Conclusion time of the last attempted Copy File operation where this file was the destination file. This value can specify the time of a completed, aborted, or failed copy attempt. </p>
 - section: CopyId
-  display: h2
+  display: h3
 - content: <p>String identifier for the last attempted Copy File operation where this file was the destination file. </p>
 - section: CopyProgress
-  display: h2
+  display: h3
 - content: <p>Contains the number of bytes copied and the total bytes in the source in the last attempted Copy File operation where this file was the destination file. Can show between 0 and Content-Length bytes copied. </p>
 - section: CopySource
-  display: h2
+  display: h3
 - content: <p>URL up to 2KB in length that specifies the source file used in the last attempted Copy File operation where this file was the destination file. </p>
 - section: CopyStatus
-  display: h2
+  display: h3
 - content: <p>State of the copy operation identified by 'x-ms-copy-id'. </p>
 - section: CopyStatusDescription
-  display: h2
+  display: h3
 - content: <p>Only appears when x-ms-copy-status is failed or pending. Describes cause of fatal or non-fatal copy operation failure. </p>
 - section: ETag
-  display: h2
+  display: h3
 - content: <p>The ETag contains a value that you can use to perform operations conditionally, in quotes. </p>
 - section: FileSize
-  display: h2
+  display: h3
 - content: <p>The size of the file in bytes. This header returns the value of the 'x-ms-content-length' header that is stored with the file. </p>
 - section: HttpHeaders
-  display: h2
+  display: h3
 - content: <p>Standard HTTP properties supported files. </p>
 - section: IsServerEncrypted
-  display: h2
+  display: h3
 - content: <p>The value of this header is set to true if the file data and application metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the file is unencrypted, or if only parts of the file/application metadata are encrypted). </p>
 - section: LastModified
-  display: h2
+  display: h3
 - content: <p>Returns the date and time the file was last modified. The date format follows RFC 1123. Any operation that modifies the file or its properties updates the last modified time. </p>
 - section: LeaseDuration
-  display: h2
+  display: h3
 - content: <p>When a file is leased, specifies whether the lease is of infinite or fixed duration. </p>
 - section: LeaseState
-  display: h2
+  display: h3
 - content: <p>Lease state of the file. </p>
 - section: LeaseStatus
-  display: h2
+  display: h3
 - content: <p>The current lease status of the file. </p>
 - section: Metadata
-  display: h2
+  display: h3
 - content: <p>A set of name-value pairs associated with this file as user-defined metadata. </p>
 - section: PosixProperties
-  display: h2
+  display: h3
 - content: <p>The NFS related properties for the file. </p>
 - section: SmbProperties
-  display: h2
-- content: >-
-    <p>The SMB related properties for the file. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="share__responses_8hpp_source.html">share_responses.hpp</a></li>
-
-    </ul>
+  display: h3
+- content: <p>The SMB related properties for the file. </p>

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::Http::Policies::TransportOptions
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ATransportOptions
 title: Azure::Core::Http::Policies::TransportOptions Struct Reference
 components:
 - content: >-
@@ -33,50 +33,44 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: DisableTlsCertificateValidation
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
   - summary: Disabling TLS security is generally a bad idea because it allows malicious actors to spoof the target server and should never be enabled in production code.
 - section: EnableCertificateRevocationListCheck
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
   - summary: Note that by default, CRL validation is disabled.
 - section: ExpectedTlsRootCertificate
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
   - summary: Note that with the schannel and sectransp crypto backends, setting the expected root certificate disables access to the system certificate store. This means that the expected root certificate is the only certificate that will be trusted.
 - section: HttpProxy
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
   - summary: If an empty string is specified, it instructs the transport to disable all proxies, including system proxies.
 - section: ProxyPassword
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
   - summary: This field is only used if the customer has not specified a default transport adapter. If the customer has set a Transport adapter, this option is ignored.
 - section: ProxyUserName
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
   - summary: This field is only used if the customer has not specified a default transport adapter. If the customer has set a Transport adapter, this option is ignored.
 - section: Transport
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
   - summary: When using a custom transport adapter, the implementation for <code><a href="policy_8hpp.html#a8fdb3bdd9092e835bb253e12f13a5042">AzureSdkGetCustomHttpTransport()</a></code> must be linked in the end-user application.
-- content: >-
-    The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/core/http/policies/<a href="policy_8hpp_source.html">policy.hpp</a></li>
-
-    </ul>

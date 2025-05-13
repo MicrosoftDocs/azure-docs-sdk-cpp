@@ -1,10 +1,13 @@
 ### YamlMime:Reference
-uid: Azure::Core::Http::CurlSession
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlSession
 title: Azure::Core::Http::CurlSession Class Reference
 components:
 - content: >-
     <p>Stateful component that controls sending an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> with libcurl over the wire.  
-     <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#details">More...</a></p><p><code>#include &lt;<a href="curl__session__private_8hpp_source.html">curl_session_private.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Core::Http::CurlSession:
+     <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#details">More...</a></p><p><code>#include &lt;<a href="curl__session__private_8hpp_source.html">curl_session_private.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::IO::BodyStream
+    href: class_azure_1_1_core_1_1_i_o_1_1_body_stream.html
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -44,7 +47,7 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: CurlSession()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -57,26 +60,26 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: ExtractConnection()
-  display: h2
+  display: h3
 - section: Returns
   display: h4
 - parameters:
   - summary: The network connection, or null if the connection was not upgraded.
 - section: ExtractResponse()
-  display: h2
+  display: h3
 - section: Returns
   display: h4
 - parameters:
   - summary: the unique ptr to the HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> or null if the HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> is not yet created or was moved before.
 - section: Length()
-  display: h2
+  display: h3
 - section: Returns
   display: h4
 - parameters:
   - summary: The size of the payload.
 - content: <p>Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.</p>
 - section: Perform()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -86,11 +89,3 @@ components:
   display: h4
 - parameters:
   - summary: CURLE_OK when the network call is completed successfully.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>src/http/curl/<a href="curl__session__private_8hpp_source.html">curl_session_private.hpp</a></li>
-
-    <li>src/http/curl/curl.cpp</li>
-
-    </ul>

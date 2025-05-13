@@ -1,10 +1,13 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::AppendBlobClient
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient
 title: Azure::Storage::Blobs::AppendBlobClient Class Reference
 components:
 - content: >-
     <p>The <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> allows you to manipulate Azure Storage append blobs.  
-     <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#details">More...</a></p><p><code>#include &lt;<a href="append__blob__client_8hpp_source.html">append_blob_client.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Storage::Blobs::AppendBlobClient:
+     <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#details">More...</a></p><p><code>#include &lt;<a href="append__blob__client_8hpp_source.html">append_blob_client.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Storage::Blobs::BlobClient
+    href: class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -128,7 +131,7 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: AppendBlobClient() [1/3]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -139,7 +142,7 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: AppendBlobClient() [2/3]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -150,7 +153,7 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: AppendBlobClient() [3/3]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -161,7 +164,7 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: AppendBlock()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -176,7 +179,7 @@ components:
 - parameters:
   - summary: An AppendBlockResult describing the state of the updated append blob.
 - section: AppendBlockFromUri()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -191,7 +194,7 @@ components:
 - parameters:
   - summary: An AppendBlockFromUriResult describing the state of the updated append blob.
 - section: Create()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -204,7 +207,7 @@ components:
 - parameters:
   - summary: A CreateAppendBlobResult describing the newly created append blob.
 - section: CreateFromConnectionString()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -221,7 +224,7 @@ components:
 - parameters:
   - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> instance.
 - section: CreateIfNotExists()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -234,7 +237,7 @@ components:
 - parameters:
   - summary: A CreateAppendBlobResult describing the newly created append blob. CreateAppendBlobResult.Created is false if the blob already exists.
 - section: Seal()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -247,7 +250,7 @@ components:
 - parameters:
   - summary: A SealAppendBlobResult describing the state of the sealed append blob.
 - section: WithSnapshot()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -262,7 +265,7 @@ components:
 - parameters:
   - summary: Pass empty string to remove the snapshot returning the base blob.
 - section: WithVersionId()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -276,11 +279,3 @@ components:
   display: h4
 - parameters:
   - summary: Pass empty string to remove the version ID returning the base blob.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="append__blob__client_8hpp_source.html">append_blob_client.hpp</a></li>
-
-    <li>src/append_blob_client.cpp</li>
-
-    </ul>

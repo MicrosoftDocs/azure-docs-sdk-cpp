@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::UploadFileRangeOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AUploadFileRangeOptions
 title: Azure::Storage::Files::Shares::UploadFileRangeOptions Struct Reference
 components:
 - content: >-
@@ -18,16 +18,11 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessConditions
-  display: h2
+  display: h3
 - content: <p>The operation will only succeed if the access condition is met. </p>
 - section: FileLastWrittenMode
-  display: h2
+  display: h3
 - content: <p>Specifies if the file last write time should be set to the current time, or the last write time currently associated with the file should be preserved. </p>
 - section: TransactionalContentHash
-  display: h2
-- content: >-
-    <p>An MD5 hash of the content. This hash is used to verify the integrity of the data during transport. When the TransactionalContentHash parameter is specified, the File service compares the hash of the content that has arrived with the header value that was sent. If the two hashes do not match, the operation will fail with error code 400 (Bad Request). </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="share__options_8hpp_source.html">share_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- content: <p>An MD5 hash of the content. This hash is used to verify the integrity of the data during transport. When the TransactionalContentHash parameter is specified, the File service compares the hash of the content that has arrived with the header value that was sent. If the two hashes do not match, the operation will fail with error code 400 (Bad Request). </p>

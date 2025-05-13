@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::KeyClient
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyClient
 title: Azure::Security::KeyVault::Keys::KeyClient Class Reference
 components:
 - content: >-
@@ -105,9 +105,9 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~KeyClient()
-  display: h2
+  display: h3
 - section: KeyClient() [1/2]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -118,7 +118,7 @@ components:
   - name: options
     summary: The options to customize the client behavior.
 - section: KeyClient() [2/2]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -127,7 +127,7 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: BackupKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -144,7 +144,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;Azure::Security::KeyVault::Keys::BackupKeyResult&gt;
 - section: CreateEcKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -161,7 +161,7 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: CreateKey()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -178,7 +178,7 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: CreateOctKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -195,7 +195,7 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: CreateRsaKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -212,7 +212,7 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: GetCryptographyClient()
-  display: h2
+  display: h3
 - content: <p>The returned client uses the same options and pipeline as the key client which creates it.</p>
 - section: Parameters
   display: h4
@@ -226,7 +226,7 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html">Cryptography::CryptographyClient</a> with the same options and re-using the same pipeline.
 - section: GetDeletedKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -243,7 +243,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;DeletedKey&gt;
 - section: GetDeletedKeys()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -260,7 +260,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;DeletedKeyPagedResponse&gt;
 - section: GetKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -279,7 +279,7 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: GetKeyRotationPolicy()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -296,7 +296,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyRotationPolicy&gt;
 - section: GetPropertiesOfKeys()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -313,7 +313,7 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties_paged_response.html">KeyPropertiesPagedResponse</a>
 - section: GetPropertiesOfKeyVersions()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -332,7 +332,7 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties_paged_response.html">KeyPropertiesPagedResponse</a>
 - section: GetRandomBytes()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -349,13 +349,13 @@ components:
 - parameters:
   - summary: Azure::Response&lt;GetRandomBytesResult&gt;
 - section: GetUrl()
-  display: h2
+  display: h3
 - section: Returns
   display: h4
 - parameters:
   - summary: The key client's primary URL endpoint.
 - section: ImportKey() [1/2]
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -372,7 +372,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: ImportKey() [2/2]
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -391,7 +391,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: PurgeDeletedKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -408,7 +408,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;PurgedKey&gt;
 - section: ReleaseKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -427,7 +427,7 @@ components:
 - parameters:
   - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_release_key_result.html">ReleaseKeyResult</a> object.
 - section: RestoreKeyBackup()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -444,7 +444,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: RotateKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -461,7 +461,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: StartDeleteKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -478,7 +478,7 @@ components:
 - parameters:
   - summary: A <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html">Azure::Security::KeyVault::Keys::DeleteKeyOperation</a> to wait on this long-running operation. If the key is soft delete-enabled, you only need to wait for the operation to complete if you need to recover or purge the key; otherwise, the key is deleted automatically on purge schedule.
 - section: StartRecoverDeletedKey()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -495,7 +495,7 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.html">Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation</a>
 - section: UpdateKeyProperties()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -514,7 +514,7 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: UpdateKeyRotationPolicy()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -532,9 +532,3 @@ components:
   display: h4
 - parameters:
   - summary: Azure::Response&lt;KeyRotationPolicy&gt;
-- content: >-
-    The documentation for this class was generated from the following file:<ul>
-
-    <li>inc/azure/keyvault/keys/<a href="key__client_8hpp_source.html">key_client.hpp</a></li>
-
-    </ul>

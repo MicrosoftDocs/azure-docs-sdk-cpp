@@ -1,8 +1,11 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::PageBlobClient
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3APageBlobClient
 title: Azure::Storage::Blobs::PageBlobClient Class Reference
 components:
-- content: '<p><code>#include &lt;<a href="page__blob__client_8hpp_source.html">page_blob_client.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Storage::Blobs::PageBlobClient:'
+- content: <p><code>#include &lt;<a href="page__blob__client_8hpp_source.html">page_blob_client.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Storage::Blobs::BlobClient
+    href: class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -144,7 +147,7 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: PageBlobClient() [1/3]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -155,7 +158,7 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: PageBlobClient() [2/3]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -166,7 +169,7 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: PageBlobClient() [3/3]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -177,7 +180,7 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: ClearPages()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -192,7 +195,7 @@ components:
 - parameters:
   - summary: A ClearPagesResult describing the state of the updated pages.
 - section: Create()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -207,7 +210,7 @@ components:
 - parameters:
   - summary: A CreatePageBlobResult describing the newly created page blob.
 - section: CreateFromConnectionString()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -224,7 +227,7 @@ components:
 - parameters:
   - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> instance.
 - section: CreateIfNotExists()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -239,7 +242,7 @@ components:
 - parameters:
   - summary: A CreatePageBlobResult describing the newly created page blob. CreatePageBlobResult.Created is false if the blob already exists.
 - section: GetManagedDiskPageRangesDiff()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -254,7 +257,7 @@ components:
 - parameters:
   - summary: A GetPageRangesResult describing the valid page ranges for this blob.
 - section: GetPageRanges()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -267,7 +270,7 @@ components:
 - parameters:
   - summary: A GetPageRangesResult describing the valid page ranges for this blob.
 - section: GetPageRangesDiff()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -282,7 +285,7 @@ components:
 - parameters:
   - summary: A GetPageRangesResult describing the valid page ranges for this blob.
 - section: Resize()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -297,7 +300,7 @@ components:
 - parameters:
   - summary: A ResizePageBlobResult describing the resized page blob.
 - section: StartCopyIncremental()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -312,7 +315,7 @@ components:
 - parameters:
   - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_operation.html">StartBlobCopyOperation</a> describing the state of the copy operation.
 - section: UpdateSequenceNumber()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -327,7 +330,7 @@ components:
 - parameters:
   - summary: An UpdateSequenceNumberResult describing the updated page blob.
 - section: UploadPages()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -344,7 +347,7 @@ components:
 - parameters:
   - summary: A UploadPagesResult describing the state of the updated pages.
 - section: UploadPagesFromUri()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -363,7 +366,7 @@ components:
 - parameters:
   - summary: A UploadPagesFromUriResult describing the state of the updated pages.
 - section: WithSnapshot()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -378,7 +381,7 @@ components:
 - parameters:
   - summary: Pass empty string to remove the snapshot returning the base blob.
 - section: WithVersionId()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -392,11 +395,3 @@ components:
   display: h4
 - parameters:
   - summary: Pass empty string to remove the version ID returning the base blob.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="page__blob__client_8hpp_source.html">page_blob_client.hpp</a></li>
-
-    <li>src/page_blob_client.cpp</li>
-
-    </ul>

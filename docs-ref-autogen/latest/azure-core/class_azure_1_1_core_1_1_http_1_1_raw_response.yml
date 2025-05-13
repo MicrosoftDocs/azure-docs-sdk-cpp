@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::Http::RawResponse
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3ARawResponse
 title: Azure::Core::Http::RawResponse Class Reference
 components:
 - content: >-
@@ -63,7 +63,7 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: RawResponse() [1/3]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -76,7 +76,7 @@ components:
   - name: reasonPhrase
     summary: HTTP reason phrase.
 - section: RawResponse() [2/3]
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -87,52 +87,52 @@ components:
   - name: response
     summary: A reference for copying the raw response.
 - section: RawResponse() [3/3]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
   - name: response
     summary: Another <code>RawResponse</code> to move in.
 - section: ~RawResponse()
-  display: h2
+  display: h3
 - section: Member Function Documentation
   display: h2
 - section: ExtractBodyStream()
-  display: h2
+  display: h3
 - section: GetBody() [1/2]
-  display: h2
+  display: h3
 - section: GetBody() [2/2]
-  display: h2
+  display: h3
 - section: GetHeaders()
-  display: h2
+  display: h3
 - section: GetMajorVersion()
-  display: h2
+  display: h3
 - section: GetMinorVersion()
-  display: h2
+  display: h3
 - section: GetReasonPhrase()
-  display: h2
+  display: h3
 - section: GetStatusCode()
-  display: h2
+  display: h3
 - section: operator=() [1/2]
-  display: h2
+  display: h3
 - section: operator=() [2/2]
-  display: h2
+  display: h3
 - section: SetBody()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
   - name: body
     summary: HTTP response body bytes.
 - section: SetBodyStream()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
   - name: stream
     summary: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a>.
 - section: SetHeader()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -144,11 +144,8 @@ components:
     summary: The name for the header to be set or added.
   - name: value
     summary: The value for the header to be set or added.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/core/http/<a href="raw__response_8hpp_source.html">raw_response.hpp</a></li>
-
-    <li>src/http/raw_response.cpp</li>
-
-    </ul>
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: if
+    summary: <code>name</code> contains invalid characters.

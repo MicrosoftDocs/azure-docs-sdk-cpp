@@ -1,10 +1,13 @@
 ### YamlMime:Reference
-uid: Azure::DateTime
+uid: Azure%3A%3ADateTime
 title: Azure::DateTime Class Reference
 components:
 - content: >-
     <p>Manages date and time in standardized string formats.  
-     <a href="class_azure_1_1_date_time.html#details">More...</a></p><p><code>#include &lt;<a href="datetime_8hpp_source.html">datetime.hpp</a>&gt;</code></p>Inheritance diagram for Azure::DateTime:
+     <a href="class_azure_1_1_date_time.html#details">More...</a></p><p><code>#include &lt;<a href="datetime_8hpp_source.html">datetime.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: _detail::Clock::time_point
+    href: ''
 - section: Public Types
   display: h2
 - apiList:
@@ -64,15 +67,15 @@ components:
 - section: Member Enumeration Documentation
   display: h2
 - section: DateFormat
-  display: h2
+  display: h3
 - section: TimeFractionFormat
-  display: h2
+  display: h3
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: DateTime() [1/4]
-  display: h2
+  display: h3
 - section: DateTime() [2/4]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -88,10 +91,15 @@ components:
     summary: Minute.
   - name: second
     summary: Seconds.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: If any parameter is invalid.
 - section: DateTime() [3/4]
-  display: h2
+  display: h3
 - section: DateTime() [4/4]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -100,9 +108,14 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: operator std::chrono::system_clock::time_point()
-  display: h2
+  display: h3
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: if <a href="class_azure_1_1_date_time.html">Azure::DateTime</a> is outside of the range that can be represented.
 - section: Parse()
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -114,8 +127,13 @@ components:
   display: h4
 - parameters:
   - summary: <a href="class_azure_1_1_date_time.html">Azure::DateTime</a> that was constructed from the <code>dateTime</code> string.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: If <code>format</code> is not recognized, or if parsing error.
 - section: ToString() [1/2]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -123,18 +141,20 @@ components:
     summary: The representation format to use.
   - name: fractionFormat
     summary: The format for the fraction part of the <a href="class_azure_1_1_date_time.html">DateTime</a>. Only supported by RFC3339.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: If year exceeds 9999, or if <code>format</code> is not recognized.
 - section: ToString() [2/2]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
   - name: format
     summary: The representation format to use, defaulted to use RFC 3339.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/core/<a href="datetime_8hpp_source.html">datetime.hpp</a></li>
-
-    <li>src/datetime.cpp</li>
-
-    </ul>
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: If year exceeds 9999, or if <code>format</code> is not recognized.

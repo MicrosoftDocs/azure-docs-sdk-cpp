@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Certificates::CertificateClient
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient
 title: Azure::Security::KeyVault::Certificates::CertificateClient Class Reference
 components:
 - content: >-
@@ -103,9 +103,9 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~CertificateClient()
-  display: h2
+  display: h3
 - section: CertificateClient() [1/2]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -116,7 +116,7 @@ components:
   - name: options
     summary: The options to customize the client behavior.
 - section: CertificateClient() [2/2]
-  display: h2
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -125,7 +125,7 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: BackupCertificate()
-  display: h2
+  display: h3
 - content: <p>Request that a backup of the specified certificate be downloaded to the client. All versions of the certificate will be downloaded.</p>
 - section: Remarks
   display: h4
@@ -143,7 +143,7 @@ components:
 - parameters:
   - summary: Certificate backup.
 - section: CreateIssuer()
-  display: h2
+  display: h3
 - content: <p>The operation adds or updates the specified certificate issuer.</p>
 - section: Remarks
   display: h4
@@ -163,7 +163,7 @@ components:
 - parameters:
   - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> instance used to determine create status.
 - section: DeleteContacts()
-  display: h2
+  display: h3
 - content: <p>Deletes the certificate contacts for a specified key vault certificate.</p>
 - section: Remarks
   display: h4
@@ -179,7 +179,7 @@ components:
 - parameters:
   - summary: The contacts for the key vault certificate.
 - section: DeleteIssuer()
-  display: h2
+  display: h3
 - content: <p>The operation permanently removes the specified certificate issuer from the vault.</p>
 - section: Remarks
   display: h4
@@ -197,7 +197,7 @@ components:
 - parameters:
   - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> instance.
 - section: GetCertificate()
-  display: h2
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -214,7 +214,7 @@ components:
 - parameters:
   - summary: A response containing the certificate and policy as a <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">KeyVaultCertificateWithPolicy</a> instance.
 - section: GetCertificatePolicy()
-  display: h2
+  display: h3
 - content: <p>The GetCertificatePolicy operation returns the specified certificate policy resources in the specified key vault.</p>
 - section: Remarks
   display: h4
@@ -232,7 +232,7 @@ components:
 - parameters:
   - summary: The contact properties.
 - section: GetCertificateVersion()
-  display: h2
+  display: h3
 - content: <p>If the version is not set in the options, the latest version is returned.</p>
 - section: Remarks
   display: h4
@@ -252,7 +252,7 @@ components:
 - parameters:
   - summary: A response containing the certificate as a <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html">KeyVaultCertificate</a> instance.
 - section: GetContacts()
-  display: h2
+  display: h3
 - content: <p>The GetContacts operation returns the set of certificate contact resources in the specified key vault.</p>
 - section: Remarks
   display: h4
@@ -268,7 +268,7 @@ components:
 - parameters:
   - summary: The contacts list for the key vault certificate.
 - section: GetDeletedCertificate()
-  display: h2
+  display: h3
 - content: <p>The GetDeletedCertificate operation retrieves the deleted certificate information plus its attributes, such as retention interval, scheduled permanent deletion and the current deletion recovery level.</p>
 - section: Remarks
   display: h4
@@ -286,7 +286,7 @@ components:
 - parameters:
   - summary: The deleted certificate.
 - section: GetDeletedCertificates()
-  display: h2
+  display: h3
 - content: <p>The GetDeletedCertificates operation retrieves the certificates in the current vault which are in a deleted state and ready for recovery or purging. This operation includes deletion-specific information. This operation requires the certificates/get/list permission.</p>
 - section: Remarks
   display: h4
@@ -304,7 +304,7 @@ components:
 - parameters:
   - summary: A response message containing a list of deleted certificates in the vault along with a link to the next page of deleted certificates.
 - section: GetIssuer()
-  display: h2
+  display: h3
 - content: <p>The GetCertificateIssuer operation returns the specified certificate issuer resources in the specified key vault.</p>
 - section: Remarks
   display: h4
@@ -322,7 +322,7 @@ components:
 - parameters:
   - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> instance.
 - section: GetPropertiesOfCertificates()
-  display: h2
+  display: h3
 - content: <p>The GetPropertiesOfCertificates operation returns the set of certificates resources in the specified key vault.</p>
 - section: Remarks
   display: h4
@@ -340,7 +340,7 @@ components:
 - parameters:
   - summary: A response message containing a list of certificates along with a link to the next page of certificates.
 - section: GetPropertiesOfCertificateVersions()
-  display: h2
+  display: h3
 - content: <p>The GetCertificateVersions operation returns the versions of a certificate in the specified key vault.</p>
 - section: Remarks
   display: h4
@@ -360,7 +360,7 @@ components:
 - parameters:
   - summary: A response message containing a list of certificate versions along with a link to the next page of certificates.
 - section: GetPropertiesOfIssuers()
-  display: h2
+  display: h3
 - content: <p>The GetPropertiesOfIssuers operation returns the set of certificate issuer resources in the specified key vault.</p>
 - section: Remarks
   display: h4
@@ -378,7 +378,7 @@ components:
 - parameters:
   - summary: A response message containing a list of issuers along with a link to the next page of certificates.
 - section: ImportCertificate()
-  display: h2
+  display: h3
 - content: <p>Imports an existing valid certificate, containing a private key, into <a href="namespace_azure.html">Azure</a> Key Vault. This operation requires the certificates/import permission. The certificate to be imported can be in either PFX or PEM format. If the certificate is in PEM format the PEM file must contain the key as well as x509 certificates. Key Vault will only accept a key in PKCS#8 format.</p>
 - section: Remarks
   display: h4
@@ -398,7 +398,7 @@ components:
 - parameters:
   - summary: Imported certificate bundle to the vault.
 - section: MergeCertificate()
-  display: h2
+  display: h3
 - content: <p>The MergeCertificate operation performs the merging of a certificate or certificate chain with a key pair currently available in the service.</p>
 - section: Remarks
   display: h4
@@ -418,7 +418,7 @@ components:
 - parameters:
   - summary: Merged certificate bundle to the vault.
 - section: PurgeDeletedCertificate()
-  display: h2
+  display: h3
 - content: <p>The PurgeDeletedCertificate operation performs an irreversible deletion of the specified certificate, without possibility for recovery. The operation is not available if the recovery level does not specify 'Purgeable'.</p>
 - section: Remarks
   display: h4
@@ -436,7 +436,7 @@ components:
 - parameters:
   - summary: Empty object.
 - section: RestoreCertificateBackup()
-  display: h2
+  display: h3
 - content: <p>Restore a backed up certificate, and all its versions, to a vault.</p>
 - section: Remarks
   display: h4
@@ -454,7 +454,7 @@ components:
 - parameters:
   - summary: The restored certificate.
 - section: SetContacts()
-  display: h2
+  display: h3
 - content: <p>Set the certificate contacts for the specified key vault.</p>
 - section: Remarks
   display: h4
@@ -472,7 +472,7 @@ components:
 - parameters:
   - summary: The contacts for the key vault certificate.
 - section: StartCreateCertificate()
-  display: h2
+  display: h3
 - content: <p>If this is the first version, the certificate resource is created.</p>
 - section: Remarks
   display: h4
@@ -492,7 +492,7 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html">CreateCertificateOperation</a> instance used to determine create status.
 - section: StartDeleteCertificate()
-  display: h2
+  display: h3
 - content: <p>Deletes all versions of a certificate object along with its associated policy. Delete certificate cannot be used to remove individual versions of a certificate object.</p>
 - section: Remarks
   display: h4
@@ -510,7 +510,7 @@ components:
 - parameters:
   - summary: Delete Certificate operation.
 - section: StartRecoverDeletedCertificate()
-  display: h2
+  display: h3
 - content: <p>The StartRecoverDeletedCertificate operation performs the reversal of the Delete operation. The operation is applicable in vaults enabled for soft-delete, and must be issued during the retention interval (available in the deleted certificate's attributes).</p>
 - section: Remarks
   display: h4
@@ -528,7 +528,7 @@ components:
 - parameters:
   - summary: Recover deleted certificate operation.
 - section: UpdateCertificatePolicy()
-  display: h2
+  display: h3
 - content: <p>Set specified members in the certificate policy. Leave others as null.</p>
 - section: Remarks
   display: h4
@@ -548,7 +548,7 @@ components:
 - parameters:
   - summary: The updated contact properties.
 - section: UpdateCertificateProperties()
-  display: h2
+  display: h3
 - content: <p>The UpdateCertificate operation applies the specified update on the given certificate; the only elements updated are the certificate's attributes.</p>
 - section: Remarks
   display: h4
@@ -570,7 +570,7 @@ components:
 - parameters:
   - summary: The updated certificate.
 - section: UpdateIssuer()
-  display: h2
+  display: h3
 - content: <p>The operation performs an update on the specified certificate issuer entity.</p>
 - section: Remarks
   display: h4
@@ -589,11 +589,3 @@ components:
   display: h4
 - parameters:
   - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> instance.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/keyvault/certificates/<a href="certificate__client_8hpp_source.html">certificate_client.hpp</a></li>
-
-    <li>src/certificate_client.cpp</li>
-
-    </ul>

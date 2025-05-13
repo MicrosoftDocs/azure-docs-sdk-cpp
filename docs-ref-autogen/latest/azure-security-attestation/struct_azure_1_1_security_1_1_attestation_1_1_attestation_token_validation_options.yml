@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::Attestation::AttestationTokenValidationOptions
+uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationTokenValidationOptions
 title: Azure::Security::Attestation::AttestationTokenValidationOptions Struct Reference
 components:
 - content: >-
@@ -35,29 +35,24 @@ components:
     returnType: <a href="attestation__client__options_8hpp.html#a12cdbdc768baad3638094b5322434fbf">TokenValidationCallbackFn</a>&#160;
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&nbsp;ExpectedIssuer'
-  display: h2
+- section: ExpectedIssuer
+  display: h3
 - content: <p>Ignored unless <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html#a21113f423738b2b13012a89167fa2c70">AttestationTokenValidationOptions::ValidateIssuer</a> is true. </p>
-- section: '&#9670;&nbsp;ValidateExpirationTime'
-  display: h2
+- section: ValidateExpirationTime
+  display: h3
 - content: '<p>Default value: true. </p>'
-- section: '&#9670;&nbsp;ValidateIssuer'
-  display: h2
+- section: ValidateIssuer
+  display: h3
 - content: '<p>Default value: false. </p>'
-- section: '&#9670;&nbsp;ValidateNotBeforeTime'
-  display: h2
+- section: ValidateNotBeforeTime
+  display: h3
 - content: '<p>Default value: true. </p>'
-- section: '&#9670;&nbsp;ValidateSigner'
-  display: h2
+- section: ValidateSigner
+  display: h3
 - content: '<p>Default Value: true: </p>'
-- section: '&#9670;&nbsp;ValidateToken'
-  display: h2
+- section: ValidateToken
+  display: h3
 - content: '<p>Default value: true. </p>'
-- section: '&#9670;&nbsp;ValidationCallback'
-  display: h2
-- content: >-
-    <p>This callback is called to allow the client to perform additional validations of the attestation token beyond those normally performed by the attestation service.</p><p>Possible additional validations include validating the attestation token certificate with the <a href="https://openenclave.github.io/openenclave/api/enclave_8h_a3b75c5638360adca181a0d945b45ad86.html#a3b75c5638360adca181a0d945b45ad86">oe_verify_attestation_certificate API</a>, verifying that the certificate issuer matches the expected certificate issuer, etc. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/attestation/<a href="attestation__client__options_8hpp_source.html">attestation_client_options.hpp</a></li>
-
-    </ul>
+- section: ValidationCallback
+  display: h3
+- content: <p>This callback is called to allow the client to perform additional validations of the attestation token beyond those normally performed by the attestation service.</p><p>Possible additional validations include validating the attestation token certificate with the <a href="https://openenclave.github.io/openenclave/api/enclave_8h_a3b75c5638360adca181a0d945b45ad86.html#a3b75c5638360adca181a0d945b45ad86">oe_verify_attestation_certificate API</a>, verifying that the certificate issuer matches the expected certificate issuer, etc. </p>

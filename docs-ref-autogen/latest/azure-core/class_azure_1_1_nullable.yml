@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Nullable&lt;
+uid: Azure%3A%3ANullable%3C%20T%20%3E
 title: Azure::Nullable&lt; T &gt; Class Template Reference
 components:
 - content: >-
@@ -80,10 +80,10 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: Nullable() [1/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Nullable() [2/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Parameters
   display: h4
@@ -91,7 +91,7 @@ components:
   - name: initialValue
     summary: A non-absent value to initialize with.
 - section: Nullable() [3/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Parameters
   display: h4
@@ -99,7 +99,7 @@ components:
   - name: other
     summary: Another <code>Nullable</code> instance to copy.
 - section: Nullable() [4/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Parameters
   display: h4
@@ -107,67 +107,67 @@ components:
   - name: other
     summary: A <code>Nullable</code> instance to move into the instance being constructed.
 - section: ~Nullable()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Member Function Documentation
   display: h2
 - section: Emplace()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;template&lt;class... U&gt;<p>If this instance already contains a value before the call, the contained value is destroyed by calling its destructor. </p>
 - section: HasValue()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> If a value is contained, <code>false</code> if value is absent.
 - section: operator bool()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: operator*() [1/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a reference to the contained value.
 - section: operator*() [2/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a reference to the contained value.
 - section: operator*() [3/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a reference to the contained value.
 - section: operator*() [4/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a reference to the contained value.
 - section: operator-&gt;() [1/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a pointer to the contained value.
 - section: operator-&gt;() [2/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a pointer to the contained value.
 - section: operator=()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;template&lt;class U  = T, typename std::enable_if&lt; !std::is_same&lt;Nullable, typename std::remove_cv&lt; typename std::remove_reference&lt; U &gt;::type &gt;::type &gt;::value &amp;&amp;!(std::is_scalar&lt; U &gt;::value &amp;&amp;std::is_same&lt; T, typename std::decay&lt; U &gt;::type &gt;::value) &amp;&amp;std::is_constructible&lt; T, U &gt;::value &amp;&amp;std::is_assignable&lt; T &amp;, U &gt;::value, int &gt;::type  = 0&gt;
 - section: Parameters
   display: h4
@@ -175,10 +175,10 @@ components:
   - name: other
     summary: Other <a href="class_azure_1_1_nullable.html">Azure::Nullable</a>.
 - section: Reset()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Swap()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Parameters
   display: h4
@@ -186,16 +186,16 @@ components:
   - name: other
     summary: An instance to exchange the contents with.
 - section: Value() [1/3]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Value() [2/3]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: Value() [3/3]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
 - section: ValueOr() [1/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;template&lt;class U  = T, typename std::enable_if&lt; std::is_convertible&lt; T, typename std::remove_cv&lt; T &gt;::type &gt;::value &amp;&amp;std::is_convertible&lt; U, T &gt;::value, int &gt;::type  = 0&gt;
 - section: Parameters
   display: h4
@@ -207,7 +207,7 @@ components:
 - parameters:
   - summary: A contained value (when present), or <code>other</code>.
 - section: ValueOr() [2/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;template&lt;class U  = T, typename std::enable_if&lt; std::is_convertible&lt; const T &amp;, typename std::remove_cv&lt; T &gt;::type &gt;::value &amp;&amp;std::is_convertible&lt; U, T &gt;::value, int &gt;::type  = 0&gt;
 - section: Parameters
   display: h4
@@ -221,10 +221,5 @@ components:
 - section: Friends And Related Symbol Documentation
   display: h2
 - section: swap
-  display: h2
-- content: >-
-    template&lt;class T &gt;<p>Swappable requirements: <a href="https://en.cppreference.com/w/cpp/named_req/Swappable">https://en.cppreference.com/w/cpp/named_req/Swappable</a> </p>The documentation for this class was generated from the following file:<ul>
-
-    <li>inc/azure/core/<a href="nullable_8hpp_source.html">nullable.hpp</a></li>
-
-    </ul>
+  display: h3
+- content: 'template&lt;class T &gt;<p>Swappable requirements: <a href="https://en.cppreference.com/w/cpp/named_req/Swappable">https://en.cppreference.com/w/cpp/named_req/Swappable</a> </p>'

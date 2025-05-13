@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::Models::CommitBlockListResult
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACommitBlockListResult
 title: Azure::Storage::Blobs::Models::CommitBlockListResult Struct Reference
 components:
 - content: >-
@@ -26,28 +26,23 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: EncryptionKeySha256
-  display: h2
+  display: h3
 - content: <p>The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key. </p>
 - section: EncryptionScope
-  display: h2
+  display: h3
 - content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p>
 - section: ETag
-  display: h2
+  display: h3
 - content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p>
 - section: IsServerEncrypted
-  display: h2
+  display: h3
 - content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p>
 - section: LastModified
-  display: h2
+  display: h3
 - content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p>
 - section: TransactionalContentHash
-  display: h2
+  display: h3
 - content: <p>This header is returned so that the client can check for message content integrity. This header refers to the content of the request, meaning, in this case, the list of blocks, and not the content of the blob itself. </p>
 - section: VersionId
-  display: h2
-- content: >-
-    <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- content: <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>

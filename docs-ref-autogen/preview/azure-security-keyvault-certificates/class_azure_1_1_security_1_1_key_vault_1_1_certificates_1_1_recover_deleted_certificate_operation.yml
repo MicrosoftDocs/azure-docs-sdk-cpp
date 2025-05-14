@@ -1,35 +1,38 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ARecoverDeletedCertificateOperation
 title: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation Class Reference
 components:
-- content: 'Represents a recover deleted certificate long running operation.<code>#include &lt;<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation:'
+- content: >-
+    <p>Represents a recover deleted certificate long running operation.  
+
+    </p><p><code>#include &lt;<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::Operation
+    href: ''
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html#ac6922ec3e12ffdd43ec01fa3e4fa652e">Value</a> () const override
-    summary: Get the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html" title="A KeyVaultCertificate along with its CertificatePolicy.">Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy</a> object.  <br>
-    returnType: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">KeyVaultCertificateWithPolicy</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html#acb88d8d19a0e170f2be3d2c805ae2e7b">GetResumeToken</a> () const override
-    summary: Get an Url as string which can be used to get the status of the operation.  <br>
-    returnType: std::string 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html#ac6922ec3e12ffdd43ec01fa3e4fa652e">Value</a> () const override
+    summary: Get the <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy</a> object.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">KeyVaultCertificateWithPolicy</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html#acb88d8d19a0e170f2be3d2c805ae2e7b">GetResumeToken</a> () const override
+    summary: Get an Url as string which can be used to get the status of the operation.
+    returnType: std::string&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html#af8a0c15264569209b6a81d5ff2bce5d4">CreateFromResumeToken</a> (std::string const &resumeToken, <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html">CertificateClient</a> const &client, Azure::Core::Context const &context=Azure::Core::Context())
-    summary: Create a RecoverDeletedCertificateOperation from the <code>resumeToken</code> fetched from another <code>Operation<T></code>, updated to the the latest operation status.  <br>
-    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html">RecoverDeletedCertificateOperation</a> 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html#af8a0c15264569209b6a81d5ff2bce5d4">CreateFromResumeToken</a> (std::string const &amp;resumeToken, <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html">CertificateClient</a> const &amp;client, Azure::Core::Context const &amp;context=Azure::Core::Context())
+    summary: Create a RecoverDeletedCertificateOperation from the <code>resumeToken</code> fetched from another <code>Operation&lt;T&gt;</code>, updated to the the latest operation status.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html">RecoverDeletedCertificateOperation</a>&#160;
 - section: Friends
   display: h2
 - apiList:
-  - declaration: <b>CertificateClient</b>
-    returnType: >-
-      <a id="a8812873e00c04ea628594c5c16c8909f" name="a8812873e00c04ea628594c5c16c8909f"></a>
-
-      class 
+  - declaration: CertificateClient
+    returnType: class&#160;
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;CreateFromResumeToken()'
-  display: h2
+- section: CreateFromResumeToken()
+  display: h3
 - section: Remarks
   display: h4
 - parameters:
@@ -46,17 +49,16 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html" title="Represents a recover deleted certificate long running operation.">RecoverDeletedCertificateOperation</a>
-- section: '&#9670;&#160;GetResumeToken()'
-  display: h2
+  - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html">RecoverDeletedCertificateOperation</a>
+- section: GetResumeToken()
+  display: h3
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string
-- section: '&#9670;&#160;Value()'
-  display: h2
+- section: Value()
+  display: h3
 - section: Returns
   display: h4
 - parameters:
   - summary: A key vault certificate object.
-- content: The documentation for this class was generated from the following file:inc/azure/keyvault/certificates/certificate_client_operations.hppGenerated by&#160;1.9.7

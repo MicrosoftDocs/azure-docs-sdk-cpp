@@ -1,68 +1,53 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Sas::AccountSasBuilder
+uid: Azure%3A%3AStorage%3A%3ASas%3A%3AAccountSasBuilder
 title: Azure::Storage::Sas::AccountSasBuilder Struct Reference
 components:
-- content: <a href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html">AccountSasBuilder</a> is used to generate an account level Shared Access Signature (SAS) for Azure Storage services.<code>#include &lt;<a href="account__sas__builder_8hpp_source.html">account_sas_builder.hpp</a>&gt;</code>
+- content: >-
+    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html">AccountSasBuilder</a> is used to generate an account level Shared Access Signature (SAS) for Azure Storage services.  
+
+    </p><p><code>#include &lt;<a href="account__sas__builder_8hpp_source.html">account_sas_builder.hpp</a>&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#a584a82dcdebf712914ee05126f3c85ea">SetPermissions</a> (AccountSasPermissions permissions)
-    summary: Sets the permissions for an account SAS.  <br>
-    returnType: void 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#a953c1e1d6692f1416a7ebaad91d7b382">SetPermissions</a> (std::string rawPermissions)
-    summary: Sets the permissions for the SAS using a raw permissions string.  <br>
-    returnType: void 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#a910a5c073fef7b29112d63cdaf353e92">GenerateSasToken</a> (const <a class="el" href="class_azure_1_1_storage_1_1_storage_shared_key_credential.html">StorageSharedKeyCredential</a> &credential)
-    summary: Uses the <a class="el" href="class_azure_1_1_storage_1_1_storage_shared_key_credential.html" title="A StorageSharedKeyCredential is a credential backed by a storage account's name and one of its access...">StorageSharedKeyCredential</a> to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#ab1ec90687a2032585d6d8e5fdb89cd06">GenerateSasStringToSign</a> (const <a class="el" href="class_azure_1_1_storage_1_1_storage_shared_key_credential.html">StorageSharedKeyCredential</a> &credential)
-    summary: For debugging purposes only.  <br>
-    returnType: std::string 
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#a584a82dcdebf712914ee05126f3c85ea">SetPermissions</a> (AccountSasPermissions permissions)
+    summary: Sets the permissions for an account SAS.
+    returnType: void&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#a953c1e1d6692f1416a7ebaad91d7b382">SetPermissions</a> (std::string rawPermissions)
+    summary: Sets the permissions for the SAS using a raw permissions string.
+    returnType: void&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#a910a5c073fef7b29112d63cdaf353e92">GenerateSasToken</a> (const <a href="class_azure_1_1_storage_1_1_storage_shared_key_credential.html">StorageSharedKeyCredential</a> &amp;credential)
+    summary: Uses the <a href="class_azure_1_1_storage_1_1_storage_shared_key_credential.html">StorageSharedKeyCredential</a> to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#ab1ec90687a2032585d6d8e5fdb89cd06">GenerateSasStringToSign</a> (const <a href="class_azure_1_1_storage_1_1_storage_shared_key_credential.html">StorageSharedKeyCredential</a> &amp;credential)
+    summary: For debugging purposes only.
+    returnType: std::string&#160;
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <b>Protocol</b> = SasProtocol::HttpsOnly
-    summary: The optional signed protocol field specifies the protocol permitted for a request made with the SAS. <br>
-    returnType: >-
-      <a id="a19db3f3ff8d0cf309256f41395e7e4c9" name="a19db3f3ff8d0cf309256f41395e7e4c9"></a>
-
-      SasProtocol 
-  - declaration: <b>StartsOn</b>
-    summary: Optionally specify the time at which the shared access signature becomes valid. <br>
-    returnType: >-
-      <a id="a4f0e2b64d5b06f0c5e806d6d8673bf08" name="a4f0e2b64d5b06f0c5e806d6d8673bf08"></a>
-
-      Azure::Nullable< Azure::DateTime > 
-  - declaration: <b>ExpiresOn</b>
-    summary: The time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. <br>
-    returnType: >-
-      <a id="a38613203bd110955b7e2de659e735be9" name="a38613203bd110955b7e2de659e735be9"></a>
-
-      Azure::DateTime 
-  - declaration: <b>IPRange</b>
-    summary: Specifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive. <br>
-    returnType: >-
-      <a id="ae5aa03f5e20a8d9d4c3be445df051af2" name="ae5aa03f5e20a8d9d4c3be445df051af2"></a>
-
-      Azure::Nullable< std::string > 
-  - declaration: <b>Services</b>
-    summary: The services associated with the shared access signature. The user is restricted to operations with the specified services. <br>
-    returnType: >-
-      <a id="ab14102b5bcaf537755f2318487a8b1e4" name="ab14102b5bcaf537755f2318487a8b1e4"></a>
-
-      AccountSasServices 
-  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#ae6141aae5cbcdb063cae5757abb57f70">ResourceTypes</a>
-    returnType: AccountSasResource 
-  - declaration: <b>EncryptionScope</b>
-    summary: Optional encryption scope to use when sending requests authorized with this SAS url. <br>
-    returnType: >-
-      <a id="a1a73879d487ff46a8f76fa0116562af2" name="a1a73879d487ff46a8f76fa0116562af2"></a>
-
-      std::string 
+  - declaration: Protocol = SasProtocol::HttpsOnly
+    summary: The optional signed protocol field specifies the protocol permitted for a request made with the SAS.
+    returnType: SasProtocol&#160;
+  - declaration: StartsOn
+    summary: Optionally specify the time at which the shared access signature becomes valid.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: ExpiresOn
+    summary: The time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy.
+    returnType: Azure::DateTime&#160;
+  - declaration: IPRange
+    summary: Specifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: Services
+    summary: The services associated with the shared access signature. The user is restricted to operations with the specified services.
+    returnType: AccountSasServices&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_account_sas_builder.html#ae6141aae5cbcdb063cae5757abb57f70">ResourceTypes</a>
+    returnType: AccountSasResource&#160;
+  - declaration: EncryptionScope
+    summary: Optional encryption scope to use when sending requests authorized with this SAS url.
+    returnType: std::string&#160;
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;GenerateSasStringToSign()'
-  display: h2
+- section: GenerateSasStringToSign()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -72,8 +57,8 @@ components:
   display: h4
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
-- section: '&#9670;&#160;GenerateSasToken()'
-  display: h2
+- section: GenerateSasToken()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -83,15 +68,15 @@ components:
   display: h4
 - parameters:
   - summary: The SAS query parameters used for authenticating requests.
-- section: '&#9670;&#160;SetPermissions() [1/2]'
-  display: h2
+- section: SetPermissions() [1/2]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
   - name: permissions
     summary: The allowed permissions.
-- section: '&#9670;&#160;SetPermissions() [2/2]'
-  display: h2
+- section: SetPermissions() [2/2]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -99,6 +84,6 @@ components:
     summary: Raw permissions string for the SAS.
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;ResourceTypes'
-  display: h2
-- content: The resource types associated with the shared access signature. The user is restricted to operations on the specified resources.The documentation for this struct was generated from the following file:inc/azure/storage/common/account_sas_builder.hppGenerated by&#160;1.9.7
+- section: ResourceTypes
+  display: h3
+- content: <p>The resource types associated with the shared access signature. The user is restricted to operations on the specified resources. </p>

@@ -1,127 +1,114 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::DataLakePathClient
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakePathClient
 title: Azure::Storage::Files::DataLake::DataLakePathClient Class Reference
 components:
 - content: >-
-    The <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a> allows you to manipulate Azure Storage DataLake files.  
-     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#details">More...</a><code>#include &lt;<a href="datalake__path__client_8hpp_source.html">datalake_path_client.hpp</a>&gt;</code>Inheritance diagram for Azure::Storage::Files::DataLake::DataLakePathClient:
+    <p>The <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a> allows you to manipulate Azure Storage DataLake files.  
+     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#details">More...</a></p><p><code>#include &lt;<a href="datalake__path__client_8hpp_source.html">datalake_path_client.hpp</a>&gt;</code></p><p>This class is inherited by:</p>
+- linkList:
+  - name: Azure::Storage::Files::DataLake::DataLakeDirectoryClient
+    href: class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html
+  - name: Azure::Storage::Files::DataLake::DataLakeFileClient
+    href: class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#af5e9971f778d1636dd8370884a761a77">~DataLakePathClient</a> ()=default
-    summary: Destructor.  <br>
-    returnType: virtual 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#acaf505bf8822fe3fcf34613592c2ac75">DataLakePathClient</a> (const std::string &pathUrl, std::shared_ptr< StorageSharedKeyCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
-    summary: Shared key authentication client.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a55d4aea9dc98e6d9a53195f400eb8ba2">DataLakePathClient</a> (const std::string &pathUrl, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
-    summary: Bearer token authentication client.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a6e4c02064f3693d12649236b156e96c8">DataLakePathClient</a> (const std::string &pathUrl, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
-    summary: Anonymous/SAS/customized pipeline auth.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#acf192776f131134acc5a1aef9d814a6a">GetUrl</a> () const
-    summary: Gets the path's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#ae85e279eb0435b0be540f6e29d8bba39">Create</a> (<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_resource_type.html">Models::PathResourceType</a> type, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Creates a file or directory. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.html">Models::CreatePathResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#ad14dab3d63389726c7aa3d3262ec0e6e">CreateIfNotExists</a> (<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_resource_type.html">Models::PathResourceType</a> type, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Creates a file or directory. By default, the destination is not changed if it already exists.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.html">Models::CreatePathResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#ad99df0236714e424ba6a7d11789a9df1">Delete</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Deletes the resource the path points to.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.html">Models::DeletePathResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#abc8de1ed2bb48d8636554a130e110633">DeleteIfExists</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Deletes the resource the path points to if it exists.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.html">Models::DeletePathResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a042b3e55e6a868c32b698641ad6ed979">SetAccessControlList</a> (std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> > acls, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_options.html">SetPathAccessControlListOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_options.html">SetPathAccessControlListOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Sets the owner, group, and access control list for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_access_control_list_result.html">Models::SetPathAccessControlListResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a853ebf8917562f86d11ef92d56f45b8b">SetPermissions</a> (std::string permissions, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_permissions_options.html">SetPathPermissionsOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_permissions_options.html">SetPathPermissionsOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Sets the owner, group, and permissions for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_access_control_list_result.html">Models::SetPathPermissionsResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a8b71fd066745a75ae8e38ec00ea4048b">SetHttpHeaders</a> (Models::PathHttpHeaders httpHeaders, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_http_headers_options.html">SetPathHttpHeadersOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_http_headers_options.html">SetPathHttpHeadersOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Sets the properties of a resource the path points to.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_http_headers_result.html">Models::SetPathHttpHeadersResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a1f0096cdfa5298f8d69da36e599887d6">GetProperties</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_properties_options.html">GetPathPropertiesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_properties_options.html">GetPathPropertiesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Get Properties returns all system and user defined properties for a path. Get Status returns all system defined properties for a path. Get Access Control List returns the access control list for a path.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_properties.html">Models::PathProperties</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a78cd2ebce95319d5a056040a3cd6299e">GetAccessControlList</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.html">GetPathAccessControlListOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.html">GetPathAccessControlListOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Returns all access control list stored for the given path.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_access_control_list.html">Models::PathAccessControlList</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a1656d63269d2888e8cf64be4399b378c">SetMetadata</a> (Storage::Metadata metadata, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options.html">SetPathMetadataOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options.html">SetPathMetadataOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Sets the metadata of a resource the path points to.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_metadata_result.html">Models::SetPathMetadataResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a7f1710b8cfee44668d5954bf25fbd645">SetAccessControlListRecursive</a> (const std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> > &acls, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">SetPathAccessControlListRecursiveOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">SetPathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Sets POSIX access control rights on files and directories under given directory recursively.  <br>
-    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">SetPathAccessControlListRecursivePagedResponse</a> 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#aebd5805fc6c4d462b9b0a606e2d68527">UpdateAccessControlListRecursive</a> (const std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> > &acls, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">UpdatePathAccessControlListRecursiveOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">UpdatePathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Updates POSIX access control rights on files and directories under given directory recursively.  <br>
-    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">UpdatePathAccessControlListRecursivePagedResponse</a> 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a42cf17848af5bbdb3e86344dc36e044b">RemoveAccessControlListRecursive</a> (const std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> > &acls, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">RemovePathAccessControlListRecursiveOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">RemovePathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Removes POSIX access control rights on files and directories under given directory recursively.  <br>
-    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">RemovePathAccessControlListRecursivePagedResponse</a> 
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#af5e9971f778d1636dd8370884a761a77">~DataLakePathClient</a> ()=default
+    summary: Destructor.
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#acaf505bf8822fe3fcf34613592c2ac75">DataLakePathClient</a> (const std::string &amp;pathUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Shared key authentication client.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a55d4aea9dc98e6d9a53195f400eb8ba2">DataLakePathClient</a> (const std::string &amp;pathUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Bearer token authentication client.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a6e4c02064f3693d12649236b156e96c8">DataLakePathClient</a> (const std::string &amp;pathUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Anonymous/SAS/customized pipeline auth.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#acf192776f131134acc5a1aef9d814a6a">GetUrl</a> () const
+    summary: Gets the path's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#ae85e279eb0435b0be540f6e29d8bba39">Create</a> (<a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_resource_type.html">Models::PathResourceType</a> type, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates a file or directory. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.html">Models::CreatePathResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#ad14dab3d63389726c7aa3d3262ec0e6e">CreateIfNotExists</a> (<a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_resource_type.html">Models::PathResourceType</a> type, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates a file or directory. By default, the destination is not changed if it already exists.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.html">Models::CreatePathResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#ad99df0236714e424ba6a7d11789a9df1">Delete</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Deletes the resource the path points to.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.html">Models::DeletePathResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#abc8de1ed2bb48d8636554a130e110633">DeleteIfExists</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Deletes the resource the path points to if it exists.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.html">Models::DeletePathResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a042b3e55e6a868c32b698641ad6ed979">SetAccessControlList</a> (std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> &gt; acls, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_options.html">SetPathAccessControlListOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_options.html">SetPathAccessControlListOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets the owner, group, and access control list for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_access_control_list_result.html">Models::SetPathAccessControlListResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a853ebf8917562f86d11ef92d56f45b8b">SetPermissions</a> (std::string permissions, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_permissions_options.html">SetPathPermissionsOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_permissions_options.html">SetPathPermissionsOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets the owner, group, and permissions for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_access_control_list_result.html">Models::SetPathPermissionsResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a8b71fd066745a75ae8e38ec00ea4048b">SetHttpHeaders</a> (Models::PathHttpHeaders httpHeaders, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_http_headers_options.html">SetPathHttpHeadersOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_http_headers_options.html">SetPathHttpHeadersOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets the properties of a resource the path points to.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_http_headers_result.html">Models::SetPathHttpHeadersResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a1f0096cdfa5298f8d69da36e599887d6">GetProperties</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_properties_options.html">GetPathPropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_properties_options.html">GetPathPropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Get Properties returns all system and user defined properties for a path. Get Status returns all system defined properties for a path. Get Access Control List returns the access control list for a path.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_properties.html">Models::PathProperties</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a78cd2ebce95319d5a056040a3cd6299e">GetAccessControlList</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.html">GetPathAccessControlListOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.html">GetPathAccessControlListOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns all access control list stored for the given path.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_access_control_list.html">Models::PathAccessControlList</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a1656d63269d2888e8cf64be4399b378c">SetMetadata</a> (Storage::Metadata metadata, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options.html">SetPathMetadataOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options.html">SetPathMetadataOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets the metadata of a resource the path points to.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_metadata_result.html">Models::SetPathMetadataResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a7f1710b8cfee44668d5954bf25fbd645">SetAccessControlListRecursive</a> (const std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> &gt; &amp;acls, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">SetPathAccessControlListRecursiveOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">SetPathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets POSIX access control rights on files and directories under given directory recursively.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">SetPathAccessControlListRecursivePagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#aebd5805fc6c4d462b9b0a606e2d68527">UpdateAccessControlListRecursive</a> (const std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> &gt; &amp;acls, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">UpdatePathAccessControlListRecursiveOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">UpdatePathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Updates POSIX access control rights on files and directories under given directory recursively.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">UpdatePathAccessControlListRecursivePagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a42cf17848af5bbdb3e86344dc36e044b">RemoveAccessControlListRecursive</a> (const std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> &gt; &amp;acls, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">RemovePathAccessControlListRecursiveOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">RemovePathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Removes POSIX access control rights on files and directories under given directory recursively.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">RemovePathAccessControlListRecursivePagedResponse</a>&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a4fe147e78c32acfb1f8e774f1dd8d30c">CreateFromConnectionString</a> (const std::string &connectionString, const std::string &fileSystemName, const std::string &path, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
-    summary: Create from connection string.  <br>
-    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a> 
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a4fe147e78c32acfb1f8e774f1dd8d30c">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;fileSystemName, const std::string &amp;path, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Create from connection string.
+    returnType: static <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a>&#160;
 - section: Protected Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#aa72ef64a0b3a135d2e4f24fd98089e71">DataLakePathClient</a> (Azure::Core::Url pathUrl, Blobs::BlobClient blobClient, std::shared_ptr< Azure::Core::Http::_internal::HttpPipeline > pipeline, _detail::DatalakeClientConfiguration clientConfiguration)
-    summary: Construct a new <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html" title="The DataLakePathClient allows you to manipulate Azure Storage DataLake files.">DataLakePathClient</a>.  <br>
-    returnType:  
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#aa72ef64a0b3a135d2e4f24fd98089e71">DataLakePathClient</a> (Azure::Core::Url pathUrl, Blobs::BlobClient blobClient, std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt; pipeline, _detail::DatalakeClientConfiguration clientConfiguration)
+    summary: Construct a new <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a>.
+    returnType: '&#160;'
 - section: Protected Attributes
   display: h2
 - apiList:
-  - declaration: <b>m_pathUrl</b>
-    summary: Url to the resource on the service. <br>
-    returnType: >-
-      <a id="af327201edd5e64f229622a123d1c3c4d" name="af327201edd5e64f229622a123d1c3c4d"></a>
-
-      Azure::Core::Url 
-  - declaration: <b>m_blobClient</b>
-    summary: Blob Client for this path client. <br>
-    returnType: >-
-      <a id="a63d4cb9240b4e5f29a5d289c8e0143ad" name="a63d4cb9240b4e5f29a5d289c8e0143ad"></a>
-
-      Blobs::BlobClient 
-  - declaration: <b>m_pipeline</b>
-    summary: Http Pipeline. <br>
-    returnType: >-
-      <a id="a719091d8b5d13bbab5bd0246744bb43e" name="a719091d8b5d13bbab5bd0246744bb43e"></a>
-
-      std::shared_ptr< Azure::Core::Http::_internal::HttpPipeline > 
-  - declaration: <b>m_clientConfiguration</b>
-    summary: Client configurations. <br>
-    returnType: >-
-      <a id="aaea4a66af33667aca0631139f4a1d7c1" name="aaea4a66af33667aca0631139f4a1d7c1"></a>
-
-      _detail::DatalakeClientConfiguration 
+  - declaration: m_pathUrl
+    summary: Url to the resource on the service.
+    returnType: Azure::Core::Url&#160;
+  - declaration: m_blobClient
+    summary: Blob Client for this path client.
+    returnType: Blobs::BlobClient&#160;
+  - declaration: m_pipeline
+    summary: Http Pipeline.
+    returnType: std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt;&#160;
+  - declaration: m_clientConfiguration
+    summary: Client configurations.
+    returnType: _detail::DatalakeClientConfiguration&#160;
 - section: Friends
   display: h2
 - apiList:
-  - declaration: <b>DataLakeFileSystemClient</b>
-    returnType: >-
-      <a id="aeb2b079d58319835ffb246aab06073a5" name="aeb2b079d58319835ffb246aab06073a5"></a>
-
-      class 
-  - declaration: <b>DataLakeLeaseClient</b>
-    returnType: >-
-      <a id="a8e5e221f57a342c730c1add118809b9f" name="a8e5e221f57a342c730c1add118809b9f"></a>
-
-      class 
+  - declaration: DataLakeFileSystemClient
+    returnType: class&#160;
+  - declaration: DataLakeLeaseClient
+    returnType: class&#160;
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;~DataLakePathClient()'
-  display: h2
-- section: '&#9670;&#160;DataLakePathClient() [1/4]'
-  display: h2
+- section: ~DataLakePathClient()
+  display: h3
+- section: DataLakePathClient() [1/4]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -131,8 +118,8 @@ components:
     summary: The shared key credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- section: '&#9670;&#160;DataLakePathClient() [2/4]'
-  display: h2
+- section: DataLakePathClient() [2/4]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -142,8 +129,8 @@ components:
     summary: The token credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- section: '&#9670;&#160;DataLakePathClient() [3/4]'
-  display: h2
+- section: DataLakePathClient() [3/4]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -151,8 +138,8 @@ components:
     summary: The URL of the path this client's request targets.
   - name: options
     summary: Optional parameters used to initialize the client.
-- section: '&#9670;&#160;DataLakePathClient() [4/4]'
-  display: h2
+- section: DataLakePathClient() [4/4]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -166,8 +153,8 @@ components:
     summary: Client configurations
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;Create()'
-  display: h2
+- section: Create()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -180,13 +167,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::CreatePathResult> containing the information returned when creating a path.
+  - summary: Azure::Response&lt;Models::CreatePathResult&gt; containing the information returned when creating a path.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- section: '&#9670;&#160;CreateFromConnectionString()'
-  display: h2
+- section: CreateFromConnectionString()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -201,9 +188,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html" title="The DataLakePathClient allows you to manipulate Azure Storage DataLake files.">DataLakePathClient</a>
-- section: '&#9670;&#160;CreateIfNotExists()'
-  display: h2
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a>
+- section: CreateIfNotExists()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -216,13 +203,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::CreatePathResult> containing the information returned when creating a path, the information will only be valid when the create operation is successful.
+  - summary: Azure::Response&lt;Models::CreatePathResult&gt; containing the information returned when creating a path, the information will only be valid when the create operation is successful.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- section: '&#9670;&#160;Delete()'
-  display: h2
+- section: Delete()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -233,13 +220,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::DeletePathResult> which is current empty but preserved for future usage.
+  - summary: Azure::Response&lt;Models::DeletePathResult&gt; which is current empty but preserved for future usage.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- section: '&#9670;&#160;DeleteIfExists()'
-  display: h2
+- section: DeleteIfExists()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -250,13 +237,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::DeletePathResult> which is current empty but preserved for future usage. The result will only valid if the delete operation is successful.
+  - summary: Azure::Response&lt;Models::DeletePathResult&gt; which is current empty but preserved for future usage. The result will only valid if the delete operation is successful.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- section: '&#9670;&#160;GetAccessControlList()'
-  display: h2
+- section: GetAccessControlList()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -267,13 +254,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::GetPathAccessControlListResult> containing the access control list of the path.
+  - summary: Azure::Response&lt;Models::GetPathAccessControlListResult&gt; containing the access control list of the path.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- section: '&#9670;&#160;GetProperties()'
-  display: h2
+- section: GetProperties()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -284,19 +271,19 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::PathProperties> containing the properties of the path.
+  - summary: Azure::Response&lt;Models::PathProperties&gt; containing the properties of the path.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
-- section: '&#9670;&#160;GetUrl()'
-  display: h2
+- section: GetUrl()
+  display: h3
 - section: Returns
   display: h4
 - parameters:
   - summary: The path's primary URL endpoint.
-- section: '&#9670;&#160;RemoveAccessControlListRecursive()'
-  display: h2
+- section: RemoveAccessControlListRecursive()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -314,8 +301,8 @@ components:
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- section: '&#9670;&#160;SetAccessControlList()'
-  display: h2
+- section: SetAccessControlList()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -328,13 +315,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::SetPathAccessControlListResult> containing the information returned when setting path's access control.
+  - summary: Azure::Response&lt;Models::SetPathAccessControlListResult&gt; containing the information returned when setting path's access control.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- section: '&#9670;&#160;SetAccessControlListRecursive()'
-  display: h2
+- section: SetAccessControlListRecursive()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -347,13 +334,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html" title="Response type for Azure::Storage::Files::DataLake::DataLakePathClient::SetAccessControlListRecursive.">SetPathAccessControlListRecursivePagedResponse</a> containing summary stats of the operation.
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">SetPathAccessControlListRecursivePagedResponse</a> containing summary stats of the operation.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- section: '&#9670;&#160;SetHttpHeaders()'
-  display: h2
+- section: SetHttpHeaders()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -366,13 +353,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<SetPathHttpHeadersResult> containing the information returned when setting the path's HTTP headers.
+  - summary: Azure::Response&lt;SetPathHttpHeadersResult&gt; containing the information returned when setting the path's HTTP headers.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
-- section: '&#9670;&#160;SetMetadata()'
-  display: h2
+- section: SetMetadata()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -385,13 +372,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::SetPathMetadataResult> containing the information returned when setting the metadata.
+  - summary: Azure::Response&lt;Models::SetPathMetadataResult&gt; containing the information returned when setting the metadata.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
-- section: '&#9670;&#160;SetPermissions()'
-  display: h2
+- section: SetPermissions()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -404,13 +391,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::SetPathPermissionsResult> containing the information returned when setting path's permissions.
+  - summary: Azure::Response&lt;Models::SetPathPermissionsResult&gt; containing the information returned when setting path's permissions.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- section: '&#9670;&#160;UpdateAccessControlListRecursive()'
-  display: h2
+- section: UpdateAccessControlListRecursive()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -428,7 +415,3 @@ components:
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- content: >-
-    The documentation for this class was generated from the following files:inc/azure/storage/files/datalake/datalake_path_client.hpp
-
-    src/datalake_path_client.cppGenerated by&#160;1.9.7

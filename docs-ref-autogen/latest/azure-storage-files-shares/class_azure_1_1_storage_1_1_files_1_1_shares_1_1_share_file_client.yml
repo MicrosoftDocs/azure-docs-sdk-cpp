@@ -1,120 +1,114 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::ShareFileClient
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareFileClient
 title: Azure::Storage::Files::Shares::ShareFileClient Class Reference
 components:
-- content: The <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> allows you to manipulate Azure Storage shares and their directories and files.<code>#include &lt;<a href="share__file__client_8hpp_source.html">share_file_client.hpp</a>&gt;</code>
+- content: >-
+    <p>The <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> allows you to manipulate Azure Storage shares and their directories and files.  
+
+    </p><p><code>#include &lt;<a href="share__file__client_8hpp_source.html">share_file_client.hpp</a>&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#affdcaf9a88cfa721662d289d002a4abb">ShareFileClient</a> (const std::string &shareFileUrl, std::shared_ptr< StorageSharedKeyCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
-    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> using shared key authentication.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a409b8482de53d2a705c2d829376119b5">ShareFileClient</a> (const std::string &shareFileUrl, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
-    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> using shared key authentication.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a0f3daeabdfccf2a9f2ad874f1d97a42d">ShareFileClient</a> (const std::string &shareFileUrl, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
-    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> using anonymous access or shared access signature.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#af5c6e696a07ff5c54a5e5e85c8e1d9d5">GetUrl</a> () const
-    summary: Gets the file's primary URL endpoint.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a333318af2900a195c76f32990c4850ad">WithShareSnapshot</a> (const std::string &shareSnapshot) const
-    summary: Initializes a new instance of the <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> class with an identical URL source but the specified share snapshot timestamp.  <br>
-    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#afb6fae79f3ef85e2d4d47c62b443b7a9">Create</a> (int64_t fileSize, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_file_options.html">CreateFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_file_options.html">CreateFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Creates the file.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_file_result.html">Models::CreateFileResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a86036b445dce67a96f7bf6c45f163f59">Delete</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_file_options.html">DeleteFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_file_options.html">DeleteFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Deletes the file.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_delete_file_result.html">Models::DeleteFileResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a088a7288b150d93d8ab0260dbb4ad366">DeleteIfExists</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_file_options.html">DeleteFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_file_options.html">DeleteFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Deletes the file if it exists.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_delete_file_result.html">Models::DeleteFileResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a2a3f6d631faed04a755fe7536d196212">Download</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_options.html">DownloadFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_options.html">DownloadFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Open a stream for the file's content, or a range of the file's content that can be used to download the server end data.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_download_file_result.html">Models::DownloadFileResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a256e7b317fbf762c4f8f5023a2cd8cb9">DownloadTo</a> (uint8_t *buffer, size_t bufferSize, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options.html">DownloadFileToOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options.html">DownloadFileToOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Downloads a file or a file range from the service to a memory buffer using parallel requests.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_download_file_to_result.html">Models::DownloadFileToResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a3ac07bac7e372d6e15e9cddd420c3fdf">DownloadTo</a> (const std::string &fileName, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options.html">DownloadFileToOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options.html">DownloadFileToOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Downloads a file or a file range from the service to a memory buffer using parallel requests.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_download_file_to_result.html">Models::DownloadFileToResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a5cbf08a5c5517eecd68057fdcde7f9b0">UploadFrom</a> (const uint8_t *buffer, size_t bufferSize, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options.html">UploadFileFromOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options.html">UploadFileFromOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Creates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_upload_file_from_result.html">Models::UploadFileFromResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#aa80c1f0da6e6784aa0a67cff03d128ba">UploadFrom</a> (const std::string &fileName, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options.html">UploadFileFromOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options.html">UploadFileFromOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Creates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_upload_file_from_result.html">Models::UploadFileFromResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#abad2034b3b7c0b170cae75f35d9a3883">StartCopy</a> (std::string copySource, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_start_file_copy_options.html">StartFileCopyOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_start_file_copy_options.html">StartFileCopyOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Starts copy the file specified from source URI to the file this client points to.  <br>
-    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_start_file_copy_operation.html">StartFileCopyOperation</a> 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#af1ab32ca87c929175422f5736ce1937b">AbortCopy</a> (std::string copyId, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_abort_file_copy_options.html">AbortFileCopyOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_abort_file_copy_options.html">AbortFileCopyOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Aborts copying the file specified with the copy ID.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_abort_file_copy_result.html">Models::AbortFileCopyResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a220017815847877cfe8f244b482fb45c">GetProperties</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_properties_options.html">GetFilePropertiesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_properties_options.html">GetFilePropertiesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Gets the properties of a file.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_properties.html">Models::FileProperties</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a4c115b8c1a638690cf770bf13c7c48c7">SetProperties</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_http_headers.html">Models::FileHttpHeaders</a> &httpHeaders, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_smb_properties.html">Models::FileSmbProperties</a> &smbProperties, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html">SetFilePropertiesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html">SetFilePropertiesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Sets the properties of the file, or resize a file specifying NewSize in options.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result.html">Models::SetFilePropertiesResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a2f5a40b71040003e41ba8495101f67bb">SetMetadata</a> (Storage::Metadata metadata, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_metadata_options.html">SetFileMetadataOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_metadata_options.html">SetFileMetadataOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Sets the metadata of the file.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_metadata_result.html">Models::SetFileMetadataResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a111082673e45b2e2fb13ca68feb4d155">UploadRange</a> (int64_t offset, Azure::Core::IO::BodyStream &content, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_options.html">UploadFileRangeOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_options.html">UploadFileRangeOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Uploads some data to a range of the file.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_upload_file_range_result.html">Models::UploadFileRangeResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a0fba2001f473cbb741a3836ecfcdd40f">ClearRange</a> (int64_t offset, int64_t length, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_clear_file_range_options.html">ClearFileRangeOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_clear_file_range_options.html">ClearFileRangeOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Clears some range of data within the file.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_clear_file_range_result.html">Models::ClearFileRangeResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a197f85c826e2bd8e850c4bfcd0c6637c">GetRangeList</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options.html">GetFileRangeListOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options.html">GetFileRangeListOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Gets the list of valid range from the file within specified range.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_get_file_range_list_result.html">Models::GetFileRangeListResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a4452d4a1b6d4ce99b5bdb5cd4b453480">GetRangeListDiff</a> (std::string previousShareSnapshot, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options.html">GetFileRangeListOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options.html">GetFileRangeListOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Gets the list of valid range from the file within specified range that have changed since previousShareSnapshot was taken.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_get_file_range_list_result.html">Models::GetFileRangeListResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a48e4a3381ad9c9ee7f3f8679c60f9ade">ListHandles</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_file_handles_options.html">ListFileHandlesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_file_handles_options.html">ListFileHandlesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Returns a sequence of the open handles on a directory or a file. Enumerating the handles may make multiple requests to the service while fetching all the values.  <br>
-    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_file_handles_paged_response.html">ListFileHandlesPagedResponse</a> 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a69d13e17efbba6fe0e379d9f92048aab">ForceCloseHandle</a> (const std::string &handleId, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_file_handle_options.html">ForceCloseFileHandleOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_file_handle_options.html">ForceCloseFileHandleOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Closes a handle opened on a file at the service.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_force_close_file_handle_result.html">Models::ForceCloseFileHandleResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a5ce65e366809e08a6de0d4e3360af5eb">ForceCloseAllHandles</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_file_handles_options.html">ForceCloseAllFileHandlesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_file_handles_options.html">ForceCloseAllFileHandlesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Closes all handles opened on a file at the service.  <br>
-    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_file_handles_paged_response.html">ForceCloseAllFileHandlesPagedResponse</a> 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#ae2d684bbf2ab3d6e1531c91b567af03a">UploadRangeFromUri</a> (int64_t destinationOffset, const std::string &sourceUri, const Azure::Core::Http::HttpRange &sourceRange, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_from_uri_options.html">UploadFileRangeFromUriOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_from_uri_options.html">UploadFileRangeFromUriOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: Upload a range from the source URI to this file's specific range.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_upload_file_range_from_uri_result.html">Models::UploadFileRangeFromUriResult</a> > 
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a83a2d195080e52e2164d3c878563066d">CreateHardLink</a> (const std::string &targetFile, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_hard_link_options.html">CreateHardLinkOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_hard_link_options.html">CreateHardLinkOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
-    summary: NFS only. Creates a hard link to the file specified by path.  <br>
-    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_file_hard_link_result.html">Models::CreateFileHardLinkResult</a> > 
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#affdcaf9a88cfa721662d289d002a4abb">ShareFileClient</a> (const std::string &amp;shareFileUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> using shared key authentication.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a409b8482de53d2a705c2d829376119b5">ShareFileClient</a> (const std::string &amp;shareFileUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> using shared key authentication.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a0f3daeabdfccf2a9f2ad874f1d97a42d">ShareFileClient</a> (const std::string &amp;shareFileUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> using anonymous access or shared access signature.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#af5c6e696a07ff5c54a5e5e85c8e1d9d5">GetUrl</a> () const
+    summary: Gets the file's primary URL endpoint.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a333318af2900a195c76f32990c4850ad">WithShareSnapshot</a> (const std::string &amp;shareSnapshot) const
+    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> class with an identical URL source but the specified share snapshot timestamp.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#afb6fae79f3ef85e2d4d47c62b443b7a9">Create</a> (int64_t fileSize, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_file_options.html">CreateFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_file_options.html">CreateFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates the file.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_file_result.html">Models::CreateFileResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a86036b445dce67a96f7bf6c45f163f59">Delete</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_file_options.html">DeleteFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_file_options.html">DeleteFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Deletes the file.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_delete_file_result.html">Models::DeleteFileResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a088a7288b150d93d8ab0260dbb4ad366">DeleteIfExists</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_file_options.html">DeleteFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_file_options.html">DeleteFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Deletes the file if it exists.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_delete_file_result.html">Models::DeleteFileResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a2a3f6d631faed04a755fe7536d196212">Download</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_options.html">DownloadFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_options.html">DownloadFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Open a stream for the file's content, or a range of the file's content that can be used to download the server end data.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_download_file_result.html">Models::DownloadFileResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a256e7b317fbf762c4f8f5023a2cd8cb9">DownloadTo</a> (uint8_t *buffer, size_t bufferSize, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options.html">DownloadFileToOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options.html">DownloadFileToOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Downloads a file or a file range from the service to a memory buffer using parallel requests.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_download_file_to_result.html">Models::DownloadFileToResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a3ac07bac7e372d6e15e9cddd420c3fdf">DownloadTo</a> (const std::string &amp;fileName, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options.html">DownloadFileToOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options.html">DownloadFileToOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Downloads a file or a file range from the service to a memory buffer using parallel requests.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_download_file_to_result.html">Models::DownloadFileToResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a5cbf08a5c5517eecd68057fdcde7f9b0">UploadFrom</a> (const uint8_t *buffer, size_t bufferSize, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options.html">UploadFileFromOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options.html">UploadFileFromOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_upload_file_from_result.html">Models::UploadFileFromResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#aa80c1f0da6e6784aa0a67cff03d128ba">UploadFrom</a> (const std::string &amp;fileName, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options.html">UploadFileFromOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options.html">UploadFileFromOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_upload_file_from_result.html">Models::UploadFileFromResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#abad2034b3b7c0b170cae75f35d9a3883">StartCopy</a> (std::string copySource, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_start_file_copy_options.html">StartFileCopyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_start_file_copy_options.html">StartFileCopyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Starts copy the file specified from source URI to the file this client points to.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_start_file_copy_operation.html">StartFileCopyOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#af1ab32ca87c929175422f5736ce1937b">AbortCopy</a> (std::string copyId, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_abort_file_copy_options.html">AbortFileCopyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_abort_file_copy_options.html">AbortFileCopyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Aborts copying the file specified with the copy ID.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_abort_file_copy_result.html">Models::AbortFileCopyResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a220017815847877cfe8f244b482fb45c">GetProperties</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_properties_options.html">GetFilePropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_properties_options.html">GetFilePropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Gets the properties of a file.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_properties.html">Models::FileProperties</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a4c115b8c1a638690cf770bf13c7c48c7">SetProperties</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_http_headers.html">Models::FileHttpHeaders</a> &amp;httpHeaders, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_smb_properties.html">Models::FileSmbProperties</a> &amp;smbProperties, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html">SetFilePropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html">SetFilePropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets the properties of the file, or resize a file specifying NewSize in options.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result.html">Models::SetFilePropertiesResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a2f5a40b71040003e41ba8495101f67bb">SetMetadata</a> (Storage::Metadata metadata, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_metadata_options.html">SetFileMetadataOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_metadata_options.html">SetFileMetadataOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets the metadata of the file.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_metadata_result.html">Models::SetFileMetadataResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a111082673e45b2e2fb13ca68feb4d155">UploadRange</a> (int64_t offset, Azure::Core::IO::BodyStream &amp;content, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_options.html">UploadFileRangeOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_options.html">UploadFileRangeOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Uploads some data to a range of the file.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_upload_file_range_result.html">Models::UploadFileRangeResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a0fba2001f473cbb741a3836ecfcdd40f">ClearRange</a> (int64_t offset, int64_t length, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_clear_file_range_options.html">ClearFileRangeOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_clear_file_range_options.html">ClearFileRangeOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Clears some range of data within the file.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_clear_file_range_result.html">Models::ClearFileRangeResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a197f85c826e2bd8e850c4bfcd0c6637c">GetRangeList</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options.html">GetFileRangeListOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options.html">GetFileRangeListOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Gets the list of valid range from the file within specified range.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_get_file_range_list_result.html">Models::GetFileRangeListResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a4452d4a1b6d4ce99b5bdb5cd4b453480">GetRangeListDiff</a> (std::string previousShareSnapshot, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options.html">GetFileRangeListOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options.html">GetFileRangeListOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Gets the list of valid range from the file within specified range that have changed since previousShareSnapshot was taken.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_get_file_range_list_result.html">Models::GetFileRangeListResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a48e4a3381ad9c9ee7f3f8679c60f9ade">ListHandles</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_file_handles_options.html">ListFileHandlesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_file_handles_options.html">ListFileHandlesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns a sequence of the open handles on a directory or a file. Enumerating the handles may make multiple requests to the service while fetching all the values.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_file_handles_paged_response.html">ListFileHandlesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a69d13e17efbba6fe0e379d9f92048aab">ForceCloseHandle</a> (const std::string &amp;handleId, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_file_handle_options.html">ForceCloseFileHandleOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_file_handle_options.html">ForceCloseFileHandleOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Closes a handle opened on a file at the service.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_force_close_file_handle_result.html">Models::ForceCloseFileHandleResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a5ce65e366809e08a6de0d4e3360af5eb">ForceCloseAllHandles</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_file_handles_options.html">ForceCloseAllFileHandlesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_file_handles_options.html">ForceCloseAllFileHandlesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Closes all handles opened on a file at the service.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_file_handles_paged_response.html">ForceCloseAllFileHandlesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#ae2d684bbf2ab3d6e1531c91b567af03a">UploadRangeFromUri</a> (int64_t destinationOffset, const std::string &amp;sourceUri, const Azure::Core::Http::HttpRange &amp;sourceRange, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_from_uri_options.html">UploadFileRangeFromUriOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_from_uri_options.html">UploadFileRangeFromUriOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Upload a range from the source URI to this file's specific range.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_upload_file_range_from_uri_result.html">Models::UploadFileRangeFromUriResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a83a2d195080e52e2164d3c878563066d">CreateHardLink</a> (const std::string &amp;targetFile, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_hard_link_options.html">CreateHardLinkOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_hard_link_options.html">CreateHardLinkOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: NFS only. Creates a hard link to the file specified by path.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_file_hard_link_result.html">Models::CreateFileHardLinkResult</a> &gt;&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a65c4c7b6d608c600bf4362081f386125">CreateFromConnectionString</a> (const std::string &connectionString, const std::string &shareName, const std::string &fileName, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
-    summary: Create A <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> from connection string to manage a File Share File resource.  <br>
-    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> 
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a65c4c7b6d608c600bf4362081f386125">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;shareName, const std::string &amp;fileName, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Create A <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> from connection string to manage a File Share File resource.
+    returnType: static <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a>&#160;
 - section: Friends
   display: h2
 - apiList:
-  - declaration: <b>ShareClient</b>
-    returnType: >-
-      <a id="a145bfb84b15975e259c6400e95780e47" name="a145bfb84b15975e259c6400e95780e47"></a>
-
-      class 
-  - declaration: <b>ShareDirectoryClient</b>
-    returnType: >-
-      <a id="a685f2e688ac04b1ce9cec0eea1c05f11" name="a685f2e688ac04b1ce9cec0eea1c05f11"></a>
-
-      class 
-  - declaration: <b>ShareLeaseClient</b>
-    returnType: >-
-      <a id="a0dc8fbb4e71f5692a95ca674750e25d4" name="a0dc8fbb4e71f5692a95ca674750e25d4"></a>
-
-      class 
+  - declaration: ShareClient
+    returnType: class&#160;
+  - declaration: ShareDirectoryClient
+    returnType: class&#160;
+  - declaration: ShareLeaseClient
+    returnType: class&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;ShareFileClient() [1/3]'
-  display: h2
+- section: ShareFileClient() [1/3]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -124,8 +118,8 @@ components:
     summary: The shared key credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- section: '&#9670;&#160;ShareFileClient() [2/3]'
-  display: h2
+- section: ShareFileClient() [2/3]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -135,8 +129,8 @@ components:
     summary: The token credential used to sign requests.
   - name: options
     summary: Optional parameters used to initialize the client.
-- section: '&#9670;&#160;ShareFileClient() [3/3]'
-  display: h2
+- section: ShareFileClient() [3/3]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -146,8 +140,8 @@ components:
     summary: Optional parameters used to initialize the client.
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;AbortCopy()'
-  display: h2
+- section: AbortCopy()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -160,9 +154,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::AbortFileCopyResult> containing the abort copy related information, current empty but preserved for future usage.
-- section: '&#9670;&#160;ClearRange()'
-  display: h2
+  - summary: Azure::Response&lt;Models::AbortFileCopyResult&gt; containing the abort copy related information, current empty but preserved for future usage.
+- section: ClearRange()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -177,9 +171,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::ClearFileRangeResult> containing the information of the cleared range returned from the server.
-- section: '&#9670;&#160;Create()'
-  display: h2
+  - summary: Azure::Response&lt;Models::ClearFileRangeResult&gt; containing the information of the cleared range returned from the server.
+- section: Create()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -192,9 +186,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<CreateFileResult> containing the information returned when creating the file.
-- section: '&#9670;&#160;CreateFromConnectionString()'
-  display: h2
+  - summary: Azure::Response&lt;CreateFileResult&gt; containing the information returned when creating the file.
+- section: CreateFromConnectionString()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -209,9 +203,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html" title="The ShareClient allows you to manipulate Azure Storage shares and their directories and files.">ShareClient</a> The client that can be used to manage a share resource.
-- section: '&#9670;&#160;CreateHardLink()'
-  display: h2
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html">ShareClient</a> The client that can be used to manage a share resource.
+- section: CreateHardLink()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -224,9 +218,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::CreateFileHardLinkResult> containing the returned information.
-- section: '&#9670;&#160;Delete()'
-  display: h2
+  - summary: Azure::Response&lt;Models::CreateFileHardLinkResult&gt; containing the returned information.
+- section: Delete()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -237,9 +231,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<DeleteFileResult> containing the information returned when deleting the file.
-- section: '&#9670;&#160;DeleteIfExists()'
-  display: h2
+  - summary: Azure::Response&lt;DeleteFileResult&gt; containing the information returned when deleting the file.
+- section: DeleteIfExists()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -250,9 +244,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<DeleteFileResult> containing the information returned when deleting the file. Only valid when successfully deleted.
-- section: '&#9670;&#160;Download()'
-  display: h2
+  - summary: Azure::Response&lt;DeleteFileResult&gt; containing the information returned when deleting the file. Only valid when successfully deleted.
+- section: Download()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -263,9 +257,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::DownloadFileResult> containing the range or full content and the information of the file.
-- section: '&#9670;&#160;DownloadTo() [1/2]'
-  display: h2
+  - summary: Azure::Response&lt;Models::DownloadFileResult&gt; containing the range or full content and the information of the file.
+- section: DownloadTo() [1/2]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -278,9 +272,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::DownloadFileToResult> containing the information of the downloaded file/file range.
-- section: '&#9670;&#160;DownloadTo() [2/2]'
-  display: h2
+  - summary: Azure::Response&lt;Models::DownloadFileToResult&gt; containing the information of the downloaded file/file range.
+- section: DownloadTo() [2/2]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -295,9 +289,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::DownloadFileToResult> containing the information of the downloaded file/file range.
-- section: '&#9670;&#160;ForceCloseAllHandles()'
-  display: h2
+  - summary: Azure::Response&lt;Models::DownloadFileToResult&gt; containing the information of the downloaded file/file range.
+- section: ForceCloseAllHandles()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -308,9 +302,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_file_handles_paged_response.html" title="Response type for Azure::Storage::Files::Shares::ShareFileClient::ForceCloseAllHandles.">ForceCloseAllFileHandlesPagedResponse</a> containing the information of the closed handles.
-- section: '&#9670;&#160;ForceCloseHandle()'
-  display: h2
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_file_handles_paged_response.html">ForceCloseAllFileHandlesPagedResponse</a> containing the information of the closed handles.
+- section: ForceCloseHandle()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -323,9 +317,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::ForceCloseFileHandleResult> containing the information of the closed handle. Current empty but preserved for future usage.
-- section: '&#9670;&#160;GetProperties()'
-  display: h2
+  - summary: Azure::Response&lt;Models::ForceCloseFileHandleResult&gt; containing the information of the closed handle. Current empty but preserved for future usage.
+- section: GetProperties()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -336,9 +330,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::FileProperties> containing the file properties.
-- section: '&#9670;&#160;GetRangeList()'
-  display: h2
+  - summary: Azure::Response&lt;Models::FileProperties&gt; containing the file properties.
+- section: GetRangeList()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -349,9 +343,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::GetFileRangeListResult> containing the valid ranges within the file for the specified range.
-- section: '&#9670;&#160;GetRangeListDiff()'
-  display: h2
+  - summary: Azure::Response&lt;Models::GetFileRangeListResult&gt; containing the valid ranges within the file for the specified range.
+- section: GetRangeListDiff()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -364,15 +358,15 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::GetFileRangeListResult> containing the valid ranges within the file for the specified range.
-- section: '&#9670;&#160;GetUrl()'
-  display: h2
+  - summary: Azure::Response&lt;Models::GetFileRangeListResult&gt; containing the valid ranges within the file for the specified range.
+- section: GetUrl()
+  display: h3
 - section: Returns
   display: h4
 - parameters:
   - summary: The file's primary URL endpoint.
-- section: '&#9670;&#160;ListHandles()'
-  display: h2
+- section: ListHandles()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -383,9 +377,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_file_handles_paged_response.html" title="Response type for Azure::Storage::Files::Shares::ShareFileClient::ListHandles.">ListFileHandlesPagedResponse</a> describing the handles of the file.
-- section: '&#9670;&#160;SetMetadata()'
-  display: h2
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_file_handles_paged_response.html">ListFileHandlesPagedResponse</a> describing the handles of the file.
+- section: SetMetadata()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -398,9 +392,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::SetFileMetadataResult> containing the information of the file returned from the server.
-- section: '&#9670;&#160;SetProperties()'
-  display: h2
+  - summary: Azure::Response&lt;Models::SetFileMetadataResult&gt; containing the information of the file returned from the server.
+- section: SetProperties()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -415,9 +409,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::SetFilePropertiesResult> containing the properties of the file returned from the server.
-- section: '&#9670;&#160;StartCopy()'
-  display: h2
+  - summary: Azure::Response&lt;Models::SetFilePropertiesResult&gt; containing the properties of the file returned from the server.
+- section: StartCopy()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -430,9 +424,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_start_file_copy_operation.html" title="A long-running operation to copy a file.">StartFileCopyOperation</a> containing the copy related information.
-- section: '&#9670;&#160;UploadFrom() [1/2]'
-  display: h2
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_start_file_copy_operation.html">StartFileCopyOperation</a> containing the copy related information.
+- section: UploadFrom() [1/2]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -445,9 +439,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::UploadFileFromResult> describing the state of the updated file.
-- section: '&#9670;&#160;UploadFrom() [2/2]'
-  display: h2
+  - summary: Azure::Response&lt;Models::UploadFileFromResult&gt; describing the state of the updated file.
+- section: UploadFrom() [2/2]
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -462,9 +456,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::UploadFileFromResult> describing the state of the updated file.
-- section: '&#9670;&#160;UploadRange()'
-  display: h2
+  - summary: Azure::Response&lt;Models::UploadFileFromResult&gt; describing the state of the updated file.
+- section: UploadRange()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -479,9 +473,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::UploadFileRange> containing the information of the uploaded range and the file returned from the server.
-- section: '&#9670;&#160;UploadRangeFromUri()'
-  display: h2
+  - summary: Azure::Response&lt;Models::UploadFileRange&gt; containing the information of the uploaded range and the file returned from the server.
+- section: UploadRangeFromUri()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -498,9 +492,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response<Models::UploadFileRangeFromUriResult> containing the returned information.
-- section: '&#9670;&#160;WithShareSnapshot()'
-  display: h2
+  - summary: Azure::Response&lt;Models::UploadFileRangeFromUriResult&gt; containing the returned information.
+- section: WithShareSnapshot()
+  display: h3
 - section: Parameters
   display: h4
 - parameters:
@@ -509,9 +503,8 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: A new <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html" title="The ShareFileClient allows you to manipulate Azure Storage shares and their directories and files.">ShareFileClient</a> instance.
+  - summary: A new <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> instance.
 - section: Remarks
   display: h4
 - parameters:
   - summary: Pass empty string to remove the snapshot returning the file client without specifying the share snapshot.
-- content: The documentation for this class was generated from the following file:inc/azure/storage/files/shares/share_file_client.hppGenerated by&#160;1.9.7

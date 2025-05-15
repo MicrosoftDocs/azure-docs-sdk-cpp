@@ -1,0 +1,28 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3ACreateShareSnapshotResult
+title: Azure::Storage::Files::Shares::Models::CreateShareSnapshotResult Struct Reference
+components:
+- content: >-
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html#ac2978bad448dc0cf27147f1f6e4d2d79">Azure::Storage::Files::Shares::ShareClient::CreateSnapshot</a>.  
+
+    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_share_snapshot_result.html#af96a6be93b507a105570d3289d0e16cf">Snapshot</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_share_snapshot_result.html#aaca7f9712dc28f2a4073468573b80e6a">ETag</a>
+    returnType: Azure::ETag&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_share_snapshot_result.html#af236abe1654c85df67dd56ab7b6cf397">LastModified</a>
+    returnType: DateTime&#160;
+- section: Member Data Documentation
+  display: h2
+- section: ETag
+  display: h3
+- content: <p>The ETag contains a value which represents the version of the share snapshot, in quotes. A share snapshot cannot be modified, so the ETag of a given share snapshot never changes. However, if new metadata was supplied with the Snapshot Share request then the ETag of the share snapshot differs from that of the base share. If no metadata was specified with the request, the ETag of the share snapshot is identical to that of the base share at the time the share snapshot was taken. </p>
+- section: LastModified
+  display: h3
+- content: <p>Returns the date and time the share was last modified. A share snapshot cannot be modified, so the last modified time of a given share snapshot never changes. However, if new metadata was supplied with the Snapshot Share request then the last modified time of the share snapshot differs from that of the base share. If no metadata was specified with the request, the last modified time of the share snapshot is identical to that of the base share at the time the share snapshot was taken. </p>
+- section: Snapshot
+  display: h3
+- content: <p>This header is a DateTime value that uniquely identifies the share snapshot. The value of this header may be used in subsequent requests to access the share snapshot. This value is opaque. </p>

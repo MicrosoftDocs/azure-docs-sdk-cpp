@@ -1,0 +1,79 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateContentType
+title: Azure::Security::KeyVault::Certificates::CertificateContentType Class Reference
+components:
+- content: >-
+    <p>Content type of the certificate when downloaded from getsecret.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html#details">More...</a></p><p><code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html#a18a52db32e06bd939338601e2005362d">CertificateContentType</a> (std::string value)
+    summary: Construct a new Key Curve Name object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html#a6ac0691231092c9270fb67d506c8980e">CertificateContentType</a> ()=default
+    summary: Construct a default key curve.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html#a5f78b1f2662e13ce974069ad8bd76467">operator==</a> (const <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html">CertificateContentType</a> &amp;other) const noexcept
+    summary: Enables using the equal operator for key curve.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html#a9120e6a91d7c3629c2971450cfd75f4a">operator!=</a> (const <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html">CertificateContentType</a> &amp;other) const noexcept
+    summary: Enables using the not equal operator for JWT.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html#a143adfb9edc9ce4460a068620395845d">ToString</a> () const
+    summary: Get the string value of the key curve.
+    returnType: std::string const &amp;&#160;
+- section: Static Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html#a1e2bf5eebb3403d5aa65ce68fa136595">Pkcs12</a>
+    summary: Get the NIST P-256 elliptic curve, AKA SECG curve SECP256R1.
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html">CertificateContentType</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html#a8eb3d971926c0fc729b3b79c323ff1af">Pem</a>
+    summary: Get the SECG SECP256K1 elliptic curve.
+    returnType: static AZ_SECURITY_KEYVAULT_CERTIFICATES_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.html">CertificateContentType</a>&#160;
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: CertificateContentType() [1/2]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: The string value of the instance.
+- section: CertificateContentType() [2/2]
+  display: h3
+- section: Member Function Documentation
+  display: h2
+- section: operator!=()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: A JWT to be compared.
+- section: operator==()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: A key curve to be compared.
+- section: ToString()
+  display: h3
+- section: Member Data Documentation
+  display: h2
+- section: Pem
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="https://learn.microsoft.com/azure/key-vault/keys/about-keys#curve-types">Curve types</a>.
+- section: Pkcs12
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: For more information, see <a href="https://learn.microsoft.com/azure/key-vault/keys/about-keys#curve-types">Curve types</a>.

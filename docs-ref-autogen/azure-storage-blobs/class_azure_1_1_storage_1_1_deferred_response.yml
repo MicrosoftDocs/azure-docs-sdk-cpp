@@ -1,0 +1,46 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ADeferredResponse%3C%20T%20%3E
+title: Azure::Storage::DeferredResponse&lt; T &gt; Class Template Reference
+components:
+- content: >-
+    <p>Base type for a deferred response.  
+
+    </p><p><code>#include &lt;<a href="deferred__response_8hpp_source.html">deferred_response.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: DeferredResponse (const <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;)=delete
+    returnType: '&#160;'
+  - declaration: DeferredResponse (<a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;&amp;)=default
+    summary: Construct a new deferred response, moving from an existing <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a>.
+    returnType: '&#160;'
+  - declaration: operator= (const <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;)=delete
+    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_deferred_response.html#a50c39f1d247c6f4bde6d076d2456d8de">operator=</a> (<a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;&amp;)=default
+    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_deferred_response.html#a878e28905d252a18945cffe3584180e5">GetResponse</a> () const
+    summary: Gets the deferred response.
+    returnType: Response&lt; T &gt;&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: Blobs::BlobServiceBatch
+    returnType: class&#160;
+  - declaration: Blobs::BlobContainerBatch
+    returnType: class&#160;
+- section: Member Function Documentation
+  display: h2
+- section: GetResponse()
+  display: h3
+- content: template&lt;typename T &gt;
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: It's undefined behavior to call this function before the response or exception is available.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The deferred response. An exception is thrown if error occurred.
+- section: operator=()
+  display: h3
+- content: template&lt;typename T &gt;<p>Move a <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> to another <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> object.. </p>

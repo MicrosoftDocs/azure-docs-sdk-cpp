@@ -1,0 +1,178 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient
+title: Azure::Security::Attestation::AttestationClient Class Reference
+components:
+- content: <p><code>#include &lt;<a href="attestation__client_8hpp_source.html">attestation_client.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a2263d4e111e5f9fe715044852f55bc3a">~AttestationClient</a> ()=default
+    summary: Destructor.
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a00b2c2654f756849edfd69be16986338">AttestationClient</a> (<a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html">AttestationClient</a> const &amp;attestationClient)=default
+    summary: Construct a new Attestation Client object from an existing attestation client.  <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a00b2c2654f756849edfd69be16986338">More...</a>
+    returnType: '&#160;'
+  - declaration: Endpoint () const
+    returnType: std::string const&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#ab8e7607e328cdb56004ff71570b8c4a8">GetOpenIdMetadata</a> (Azure::Core::Context const &amp;context=Azure::Core::Context::ApplicationContext) const
+    returnType: Response&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_open_id_metadata.html">Models::OpenIdMetadata</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a67787c727edc1db49d06a6274c6f2224">GetTokenValidationCertificates</a> (Azure::Core::Context const &amp;context=Azure::Core::Context{}) const
+    summary: Retrieve the attestation signing certificates for this attestation instance.  <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a67787c727edc1db49d06a6274c6f2224">More...</a>
+    returnType: Response&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_token_validation_certificate_result.html">Models::TokenValidationCertificateResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a33951d2025a60565df78c0dc3ff2ec18">AttestSgxEnclave</a> (std::vector&lt; uint8_t &gt; const &amp;sgxQuoteToAttest, <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_sgx_enclave_options.html">AttestSgxEnclaveOptions</a> options=<a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_sgx_enclave_options.html">AttestSgxEnclaveOptions</a>{}, Azure::Core::Context const &amp;context=Azure::Core::Context{}) const
+    summary: Attest an SGX enclave, returning an attestation token representing the result of the attestation operation.  <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a33951d2025a60565df78c0dc3ff2ec18">More...</a>
+    returnType: Response&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">Models::AttestationToken</a>&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html">Models::AttestationResult</a> &gt; &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a8b1339a75a29d04a11748b2b1e0ea0eb">AttestOpenEnclave</a> (std::vector&lt; uint8_t &gt; const &amp;openEnclaveReportToAttest, <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.html">AttestOpenEnclaveOptions</a> options=<a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.html">AttestOpenEnclaveOptions</a>{}, Azure::Core::Context const &amp;context=Azure::Core::Context{}) const
+    summary: Attest an OpenEnclave report, returning an attestation token representing the result of the attestation operation.  <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a8b1339a75a29d04a11748b2b1e0ea0eb">More...</a>
+    returnType: Response&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.html">Models::AttestationToken</a>&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html">Models::AttestationResult</a> &gt; &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#ab8c5c71a28ab168dc4fe3e1d648afd62">AttestTpm</a> (std::vector&lt; uint8_t &gt; const &amp;dataToAttest, <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_tpm_options.html">AttestTpmOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_tpm_options.html">AttestTpmOptions</a>{}, Azure::Core::Context const &amp;context=Azure::Core::Context{}) const
+    summary: Sends TPM-based attestation data to the service. The TPM attestation protocol is defined <a href="https://docs.microsoft.com/azure/attestation/virtualization-based-security-protocol">here</a>  <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#ab8c5c71a28ab168dc4fe3e1d648afd62">More...</a>
+    returnType: Response&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_tpm_attestation_result.html">Models::TpmAttestationResult</a> &gt;&#160;
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a15d7efd10c95952b2e2bdaff7d87217a">Create</a> (std::string const &amp;endpoint, std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt; credential, <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_client_options.html">AttestationClientOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_client_options.html">AttestationClientOptions</a>{}, Azure::Core::Context const &amp;constext=Azure::Core::Context{})
+    summary: Construct a new Attestation Client object.  <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a15d7efd10c95952b2e2bdaff7d87217a">More...</a>
+    returnType: static <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html">AttestationClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#aef03bb25d81d8878e818881872f30da3">Create</a> (std::string const &amp;endpoint, <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_client_options.html">AttestationClientOptions</a> options=<a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_client_options.html">AttestationClientOptions</a>{}, Azure::Core::Context const &amp;constext=Azure::Core::Context{})
+    summary: Construct a new anonymous Attestation Client object.  <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#aef03bb25d81d8878e818881872f30da3">More...</a>
+    returnType: static <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html">AttestationClient</a>&#160;
+- section: Detailed Description
+  display: h2
+- content: >-
+    <p>The AttestationAsyncClient implements the functionality required by the "Attest" family of APIs.</p><p>An enclave (or Trusted Execution Environment) is a chunk of code that is isolated from the host (think: "encrypted VM" or "encrypted container"). But there's one key attribute of the enclave: It is encrypted.That means that if data is sent from the enclave, there is no way of knowing that the data came from the enclave. And even worse, there is no way of securely communicating with the enclave (since the enclave is fully isolated from the host, all information passed into the enclave has to go through its host first).</p><p>To solve the communication problem, the Attest API can be used to facilitate what is known as the "Secure Key Release" (SKR) protocol.</p><p>There are 4 parties involved in an attestation operation:</p><ul>
+
+    <li>The host (which hosts the enclave)</li>
+
+    <li>The enclave (which is the enclave :) - encrypted, nobody can see what goes on inside it),</li>
+
+    <li>The "verifier" which verifies the evidence from the enclave (this is the attestation service) and generates a token which can be received by a relying party, and</li>
+
+    <li>The "relying party" which will interpret the token from the service. For the Secure Key Release Protocol, this is the entity which wishes to communicate with the enclave.</li>
+
+    </ul><p>It's possible that all these parties are on the same computer, it's possible they're on multiple computers.
+     It's possible that the host is also the relying party. It's possible that the relying party is a component like <a href="namespace_azure.html">Azure</a> Managed HSM.</p><p>There are three primary pieces of data received by the service for the Attest family of APIs. All of them are arrays of bytes, and all of them originate from code running in the enclave (thus they need to be treated as opaque arrays of bytes by the SDK):</p><ol>
+    <li>Evidence. For Intel SGX enclaves, this has two forms, either an SGX 'Quote' or an OpenEnclave 'Report'. It is required for attestation operations.</li>
+
+    <li>InitTimeData - This is data which is specified at Initialization Time. It is optional (and not currently supported on all enclave types in <a href="namespace_azure.html">Azure</a>)</li>
+
+    <li>RunTimeData - this is data which is specified at the time the quote is generated (at "runtime"). It is optional, but required for the Secure Key Release protocol.</li>
+
+    </ol><p>The Evidence is cryptographically signed by a known authority (for Intel SGX Quotes or OpenEnclave reports, this is a key owned by Intel which represents that the SGX enclave is valid and can be trusted).
+     The core idea for all attestation operations is to take advantage of a region within the Evidence which is controlled by enclave. For SGX Enclaves, this is the 64 bytes of "user data" contained within SGX quote.</p><p>For the Secure Key Release protocol, code inside the enclave generates an asymmetric key and serializes the public key into a byte buffer. It then calculates the SHA256 hash of the serialized key and creates a quote containing that SHA256 hash. We now have a cryptographically validated indication that the contents of the byte buffer was known inside the enclave.</p><p>The enclave then hands the byte buffer and the quote to its host. The host sends the quote and byte buffer as the "RunTime Data" to the via the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a33951d2025a60565df78c0dc3ff2ec18">AttestationClient.AttestSgxEnclave</a> or <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a8b1339a75a29d04a11748b2b1e0ea0eb">AttestationClient.AttestOpenEnclave</a>} API. Assuming the byte buffer and quote are valid, and the quote contains the hash of the byte buffer, the attestation service responds with an AttestationToken signed by the attestation service, whose body is an AttestationResult.</p><p>The token generated also includes the contents of the InitTimeData and/or RunTimeData if it was provided in the Attest API call.</p><p>The host then sends the token to the relying party. The relying party verifies the token and verifies the claims within the token indicate that the enclave is the correct enclave. It then takes the key from the token and uses it to encrypt the data to be sent to the enclave and sends that back to the host, which passes it into the enclave.</p><p>That completes the secure key release protocol.</p><p>When the Attestation Token is generated by the attestation service, as mentioned, it contains the InitTime and RunTime data.</p><p>There are two possible representations for RunTime Data in the attestation token, depending on the requirements of the relying party:
+     The first is as JSON formatted data. That can be convenient if the relying party expects to receive its public key as a JSON Web Key The second is as a binary blob of data. That is needed if either the data sent by the enclave isn't a JSON object - for instance, if the RunTime data contained an asymmetric key which is formatted as a PEM encoded key, it should be interpreted as a binary blob</p><p>If you ask for the RunTime data to be included in the token as binary, then it will be base64url encoded in the "x-ms-maa-enclavehelddata" claim in the output token (the AttestationResult::EnclaveHeldData property).</p><p>If you ask for the RunTime data to be included in the token as JSON, then it will be included in the "x-ms-maa-runtimeClaims" claim in the output token (the AttestationResult::RunTimeClaims property).</p><p>In addition to the Attest APIs, the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html">AttestationClient</a> object also contains helper APIs which can be used to retrieve the OpenId Metadata document and signing keys from the service.</p><p>The OpenId Metadata document contains properties which describe the attestation service.</p><p>The Attestation Signing Keys describe the keys which will be used to sign tokens generated by the attestation service. All tokens emitted by the attestation service will be signed by one of the certificates listed in the attestation signing keys. </p>
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: AttestationClient()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: attestationClient
+    summary: An existing attestation client.
+- section: Member Function Documentation
+  display: h2
+- section: AttestOpenEnclave()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: openEnclaveReportToAttest
+    summary: '- OpenEnclave Report to be validated by the attestation service.'
+  - name: options
+    summary: '- Options to the attestation request (runtime data, inittime data, etc).'
+  - name: context
+    summary: '- Context for the operation.'
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Response&lt;AttestationToken&lt;AttestationResult&gt;&gt; - The result of the attestation operation
+- section: AttestSgxEnclave()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: sgxQuoteToAttest
+    summary: '- SGX Quote to be validated by the attestation service.'
+  - name: options
+    summary: '- Options to the attestation request (runtime data, inittime data, etc).'
+  - name: context
+    summary: '- Context for the operation.'
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Response&lt;AttestationToken&lt;AttestationResult&gt;&gt; - The result of the attestation operation.
+- section: AttestTpm()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: dataToAttest
+    summary: '- Attestation request data.'
+  - name: options
+    summary: '- Options to the attestation request.'
+  - name: context
+    summary: '- Context for the operation.'
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Response&lt;TpmAttestationResult&gt; - The result of the attestation operation
+- section: Create() [1/2]
+  display: h3
+- content: <p>Constructs a new anonymous (unauthenticated) attestation client. Follows the factory pattern in <a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c50-use-a-factory-function-if-you-need-virtual-behavior-during-initialization">C++ Core Guidelines C.50</a></p>
+- section: Parameters
+  display: h4
+- parameters:
+  - name: endpoint
+    summary: The URL address where the client will send the requests to.
+  - name: options
+    summary: The options to customize the client behavior.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The newly created attestation client.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: endpoint
+    summary: The URL address where the client will send the requests to.
+  - name: options
+    summary: The options to customize the client behavior.
+- section: Create() [2/2]
+  display: h3
+- content: <p>Constructs a new attestation client. Follows the factory pattern in <a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c50-use-a-factory-function-if-you-need-virtual-behavior-during-initialization">C++ Core Guidelines C.50</a></p>
+- section: Parameters
+  display: h4
+- parameters:
+  - name: endpoint
+    summary: The URL address where the client will send the requests to.
+  - name: credential
+    summary: The authentication method to use (required for TPM attestation). If the credential parameter is not supplied, the connection will be unauthenticated.
+  - name: options
+    summary: The options to customize the client behavior.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The newly created client.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: endpoint
+    summary: The URL address where the client will send the requests to.
+  - name: credential
+    summary: The authentication method to use (required for TPM attestation).
+  - name: options
+    summary: The options to customize the client behavior.
+- section: GetOpenIdMetadata()
+  display: h3
+- content: <p>Retrieves metadata about the attestation signing keys in use by the attestation service.</p><p>Retrieve the OpenID metadata for this attestation service instance..</p>
+- section: Returns
+  display: h4
+- parameters:
+  - summary: an Models::AttestationOpenIdMetadata object containing metadata about the specified service instance.
+- section: GetTokenValidationCertificates()
+  display: h3
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A Models::AttestationSigningCertificateResult containing a list of certificates one of which will be used to validate tokens received by the attestation service.

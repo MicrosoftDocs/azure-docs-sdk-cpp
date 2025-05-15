@@ -1,0 +1,52 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobAudience
+title: Azure::Storage::Blobs::BlobAudience Class Reference
+components:
+- content: >-
+    <p>Audiences available for blob service.  
+     <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html#details">More...</a></p><p><code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::_internal::ExtendableEnumeration
+    href: ''
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html#aac573f95e65a4814bd10bf9b4e1e7253">BlobAudience</a> (std::string blobAudience)
+    summary: Construct a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html">BlobAudience</a> object.
+    returnType: '&#160;'
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html#adba321a734d353b40705543ace563771">CreateBlobServiceAccountAudience</a> (const std::string &amp;storageAccountName)
+    summary: The service endpoint for a given storage account. Use this method to acquire a token for authorizing requests to that specific Azure Storage account and service only.
+    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html">BlobAudience</a>&#160;
+- section: Static Public Attributes
+  display: h2
+- apiList:
+  - declaration: DefaultAudience
+    summary: Default Audience. Use to acquire a token for authorizing requests to any Azure Storage account.
+    returnType: AZ_STORAGE_BLOBS_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.html">BlobAudience</a>&#160;
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: BlobAudience()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobAudience
+    summary: 'The Azure Active Directory audience to use when forming authorization scopes. For the Language service, this value corresponds to a URL that identifies the Azure cloud where the resource is located. For more information: See <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory">https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory</a>'
+- section: Member Function Documentation
+  display: h2
+- section: CreateBlobServiceAccountAudience()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: storageAccountName
+    summary: he storage account name used to populate the service endpoint.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The service endpoint for a given storage account.

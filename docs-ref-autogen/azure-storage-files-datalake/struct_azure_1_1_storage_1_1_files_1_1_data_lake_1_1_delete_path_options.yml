@@ -1,0 +1,28 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADeletePathOptions
+title: Azure::Storage::Files::DataLake::DeletePathOptions Struct Reference
+components:
+- content: >-
+    <p>Optional parameters for Azure::Storage::Files::DataLake::DirectoryClient::Delete.  
+     <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html#details">More...</a></p><p><code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html#a3fa895ff900d96e8ba9f74db7a45ceec">Recursive</a>
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html#ab2ec0d48ee540e1aed037a839a0149e0">AccessConditions</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_path_access_conditions.html">PathAccessConditions</a>&#160;
+- section: Detailed Description
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: 'Some optional parameter is mandatory in certain combination. More details: <a href="https://docs.microsoft.com/rest/api/storageservices/datalakestoragegen2/path/delete">https://docs.microsoft.com/rest/api/storageservices/datalakestoragegen2/path/delete</a>'
+- section: Member Data Documentation
+  display: h2
+- section: AccessConditions
+  display: h3
+- content: <p>Specify the access condition for the path. </p>
+- section: Recursive
+  display: h3
+- content: <p>Required and valid only when the resource is a directory. If "true", all paths beneath the directory will be deleted. If "false" and the directory is non-empty, an error occurs. </p>

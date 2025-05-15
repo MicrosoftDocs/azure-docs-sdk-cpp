@@ -1,0 +1,160 @@
+### YamlMime:Reference
+uid: Azure%3A%3ADateTime
+title: Azure::DateTime Class Reference
+components:
+- content: >-
+    <p>Manages date and time in standardized string formats.  
+     <a href="class_azure_1_1_date_time.html#details">More...</a></p><p><code>#include &lt;<a href="datetime_8hpp_source.html">datetime.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: _detail::Clock::time_point
+    href: ''
+- section: Public Types
+  display: h2
+- apiList:
+  - declaration: >-
+      <a href="class_azure_1_1_date_time.html#a5f0fff7186f08a21b26057923d3c6507">TimeFractionFormat</a> { <a href="class_azure_1_1_date_time.html#a5f0fff7186f08a21b26057923d3c6507ad2036c99295a7229c20dfecbbb2eb11f">DropTrailingZeros</a>
+
+      , <a href="class_azure_1_1_date_time.html#a5f0fff7186f08a21b26057923d3c6507ac2d00adea7dc680aca053d273a441d57">AllDigits</a>
+
+      , <a href="class_azure_1_1_date_time.html#a5f0fff7186f08a21b26057923d3c6507aa8156810bfee2bd2b44765b9e91db3bd">Truncate</a>
+       }
+    summary: Defines the format applied to the fraction part of any <a href="class_azure_1_1_date_time.html">Azure::DateTime</a>.  <a href="class_azure_1_1_date_time.html#a5f0fff7186f08a21b26057923d3c6507">More...</a>
+    returnType: enum class &#160;
+  - declaration: >-
+      <a href="class_azure_1_1_date_time.html#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> { <a href="class_azure_1_1_date_time.html#a9dd0e5265e6c5cf2ef419a30b7f806e5a550760bbd51d117ffb22059b91d79d9f">Rfc1123</a>
+
+      , <a href="class_azure_1_1_date_time.html#a9dd0e5265e6c5cf2ef419a30b7f806e5ac8d161c49f2f3a896d3848046f84feaa">Rfc3339</a>
+       }
+    summary: Defines the supported date and time string formats.  <a href="class_azure_1_1_date_time.html#a9dd0e5265e6c5cf2ef419a30b7f806e5">More...</a>
+    returnType: enum class &#160;
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_date_time.html#a4a47aa28681164fad63a17ff3b04df02">DateTime</a> ()
+    summary: Constructs a default instance of <code>DateTime</code> (<code>00:00:00.0000000 on January 1st, 0001</code>).
+    returnType: constexpr&#160;
+  - declaration: <a href="class_azure_1_1_date_time.html#a31d945351b8c6061a69f1954a5984432">DateTime</a> (int16_t year, int8_t month=1, int8_t day=1, int8_t hour=0, int8_t minute=0, int8_t second=0)
+    summary: Constructs an instance of <code>DateTime</code>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_date_time.html#a2fd52469cf778230bcc178d7795c98c1">DateTime</a> (<a href="class_azure_1_1_date_time.html#a47ebd257a65488440d2a00bdde9342d2">time_point</a> const &amp;timePoint)
+    summary: Constructs an instance of <code>DateTime</code> from a <code>time_point</code>.
+    returnType: constexpr&#160;
+  - declaration: <a href="class_azure_1_1_date_time.html#a480dea5c0d4099e8c0a91194eece5b91">DateTime</a> (std::chrono::system_clock::time_point const &amp;systemTime)
+    summary: Construct an instance of <code>DateTime</code> from <code>std::chrono::system_clock::time_point</code>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_date_time.html#a47ebd257a65488440d2a00bdde9342d2">operator std::chrono::system_clock::time_point</a> () const
+    summary: Convert an instance of <a href="class_azure_1_1_date_time.html">Azure::DateTime</a> to <code>std::chrono::system_clock::time_point</code>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_date_time.html#aea9897a8e5668dc7ba30fa631d27482b">ToString</a> (<a href="class_azure_1_1_date_time.html#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> format=<a href="class_azure_1_1_date_time.html#a9dd0e5265e6c5cf2ef419a30b7f806e5ac8d161c49f2f3a896d3848046f84feaa">DateFormat::Rfc3339</a>) const
+    summary: Get a string representation of the <a href="class_azure_1_1_date_time.html">Azure::DateTime</a>.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_date_time.html#a09adcc030765e491d9f340db5e8a0db7">ToString</a> (<a href="class_azure_1_1_date_time.html#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> format, <a href="class_azure_1_1_date_time.html#a5f0fff7186f08a21b26057923d3c6507">TimeFractionFormat</a> fractionFormat) const
+    summary: Get a string representation of the <a href="class_azure_1_1_date_time.html">Azure::DateTime</a>.
+    returnType: std::string&#160;
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_date_time.html#abe9f1e977e70d30c8efada1f41b4b30f">Parse</a> (std::string const &amp;dateTime, <a href="class_azure_1_1_date_time.html#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> format)
+    summary: Create <a href="class_azure_1_1_date_time.html">Azure::DateTime</a> from a string representing time in UTC in the specified format.
+    returnType: static <a href="class_azure_1_1_date_time.html">DateTime</a>&#160;
+- section: Detailed Description
+  display: h2
+- content: <p>Supports date range from year 0001 to end of year 9999 with 100ns (7 decimal places for fractional second) precision. </p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: <code>std::chrono::system_clock::time_point</code> can't be used, because there is no guarantees for the date range and precision.
+- section: Member Enumeration Documentation
+  display: h2
+- section: DateFormat
+  display: h3
+- section: TimeFractionFormat
+  display: h3
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: DateTime() [1/4]
+  display: h3
+- section: DateTime() [2/4]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: year
+    summary: Year.
+  - name: month
+    summary: Month.
+  - name: day
+    summary: Day.
+  - name: hour
+    summary: Hour.
+  - name: minute
+    summary: Minute.
+  - name: second
+    summary: Seconds.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: If any parameter is invalid.
+- section: DateTime() [3/4]
+  display: h3
+- section: DateTime() [4/4]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: systemTime
+    summary: A value of <code>std::chrono::system_clock::time_point</code>.
+- section: Member Function Documentation
+  display: h2
+- section: operator std::chrono::system_clock::time_point()
+  display: h3
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: if <a href="class_azure_1_1_date_time.html">Azure::DateTime</a> is outside of the range that can be represented.
+- section: Parse()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: dateTime
+    summary: A string with the date and time.
+  - name: format
+    summary: A format to which <code>dateTime</code> string adheres to.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_date_time.html">Azure::DateTime</a> that was constructed from the <code>dateTime</code> string.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: If <code>format</code> is not recognized, or if parsing error.
+- section: ToString() [1/2]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: format
+    summary: The representation format to use.
+  - name: fractionFormat
+    summary: The format for the fraction part of the <a href="class_azure_1_1_date_time.html">DateTime</a>. Only supported by RFC3339.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: If year exceeds 9999, or if <code>format</code> is not recognized.
+- section: ToString() [2/2]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: format
+    summary: The representation format to use, defaulted to use RFC 3339.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: If year exceeds 9999, or if <code>format</code> is not recognized.

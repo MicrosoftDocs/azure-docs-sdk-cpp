@@ -1,0 +1,38 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ASetFilePropertiesOptions
+title: Azure::Storage::Files::Shares::SetFilePropertiesOptions Struct Reference
+components:
+- content: >-
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a4c115b8c1a638690cf770bf13c7c48c7">Azure::Storage::Files::Shares::ShareFileClient::SetProperties</a>.  
+
+    </p><p><code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#a94010f27b6f254d2157e066d386aadb9">Permission</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#a05829319f4ff1ef84d8282f8d108bc25">FilePermissionFormat</a>
+    returnType: Nullable&lt; Models ::FilePermissionFormat &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#aa0cb7c8643bf4fa755ce40cacc1f9c10">Size</a>
+    returnType: Azure::Nullable&lt; int64_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#ae64590c0f14c838e812b99c3aaca3a0a">AccessConditions</a>
+    returnType: LeaseAccessConditions&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_file_properties_options.html#a64ab9e617a6044d51d5263151ff75739">PosixProperties</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties.html">Models::FilePosixProperties</a>&#160;
+- section: Member Data Documentation
+  display: h2
+- section: AccessConditions
+  display: h3
+- content: <p>The operation will only succeed if the access condition is met. </p>
+- section: FilePermissionFormat
+  display: h3
+- content: <p>Optional. Available for version 2024-11-04 and later. Specifies the format in which the permission is returned.If FilePermissionFormat is unspecified or explicitly set to SDDL format format, the permission will be returned in SDDL format. </p>
+- section: Permission
+  display: h3
+- content: <p>This permission is the security descriptor for the file specified in the Security Descriptor Definition Language (SDDL) or base64 encoded binary format. If not specified, 'inherit' is used. </p>
+- section: PosixProperties
+  display: h3
+- content: <p>The NFS related properties for the file. </p>
+- section: Size
+  display: h3
+- content: <p>Specify this to resize a file to the specified value. </p>

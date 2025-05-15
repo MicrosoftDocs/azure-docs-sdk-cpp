@@ -1,0 +1,419 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobContainerClient
+title: Azure::Storage::Blobs::BlobContainerClient Class Reference
+components:
+- content: <p><code>#include &lt;<a href="blob__container__client_8hpp_source.html">blob_container_client.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#ac2986de67a0ebe0521bcff63d5037fb2">BlobContainerClient</a> (const std::string &amp;blobContainerUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a6a4e44cbf0062868a7fe685c61b35148">BlobContainerClient</a> (const std::string &amp;blobContainerUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#ad58f17faab40f56b891b3ba442b8bf8a">BlobContainerClient</a> (const std::string &amp;blobContainerUrl, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#addf98af36f8bd90cc953204809d705dd">GetBlobClient</a> (const std::string &amp;blobName) const
+    summary: Create a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html">BlobClient</a> object by appending blobName to the end of URL. The new <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html">BlobClient</a> uses the same request policy pipeline as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a>.
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html">BlobClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#acd8c68e3f37268fde0010dd478ff048f">GetBlockBlobClient</a> (const std::string &amp;blobName) const
+    summary: Create a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html">BlockBlobClient</a> object by appending blobName to the end of URL. The new <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html">BlockBlobClient</a> uses the same request policy pipeline as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a>.
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html">BlockBlobClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a53e8718a8cbe7dc96ca55535582f75e2">GetAppendBlobClient</a> (const std::string &amp;blobName) const
+    summary: Create a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> object by appending blobName to the end of URL. The new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> uses the same request policy pipeline as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a>.
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a1c69c3a4efa80a7bde5714868b9a8ee0">GetPageBlobClient</a> (const std::string &amp;blobName) const
+    summary: Create a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> object by appending blobName to the end of URL. The new <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> uses the same request policy pipeline as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a>.
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a2df0855f5aa91a09129a02bdb3e7c814">GetUrl</a> () const
+    summary: Gets the container's primary URL endpoint.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a5bbdaedaf31f8ba92e2a3b56189e3131">Create</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_blob_container_options.html">CreateBlobContainerOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_blob_container_options.html">CreateBlobContainerOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates a new container under the specified account. If the container with the same name already exists, the operation fails.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_container_result.html">Models::CreateBlobContainerResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#ab3ef187d2e30e1a19ebadf45d0fdf9c4">CreateIfNotExists</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_blob_container_options.html">CreateBlobContainerOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_blob_container_options.html">CreateBlobContainerOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates a new container under the specified account. If the container with the same name already exists, it is not changed.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_container_result.html">Models::CreateBlobContainerResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#ae7661b6d8f37213b409504c0e9a68d69">Delete</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_container_options.html">DeleteBlobContainerOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_container_options.html">DeleteBlobContainerOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Marks the specified container for deletion. The container and any blobs contained within it are later deleted during garbage collection.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_container_result.html">Models::DeleteBlobContainerResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#ab8461247280f1c62e653b1cb16fc642e">DeleteIfExists</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_container_options.html">DeleteBlobContainerOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_container_options.html">DeleteBlobContainerOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Marks the specified container for deletion if it exists. The container and any blobs contained within it are later deleted during garbage collection.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_container_result.html">Models::DeleteBlobContainerResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#acc7441a549d6aa88525c97e6a0d836cc">GetProperties</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_container_properties_options.html">GetBlobContainerPropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_container_properties_options.html">GetBlobContainerPropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns all user-defined metadata and system properties for the specified container. The data returned does not include the container's list of blobs.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_container_properties.html">Models::BlobContainerProperties</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#adeab65cb3661d6f6563c44444cb9a615">SetMetadata</a> (Metadata metadata, <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_container_metadata_options.html">SetBlobContainerMetadataOptions</a> options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_container_metadata_options.html">SetBlobContainerMetadataOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets one or more user-defined name-value pairs for the specified container.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_container_metadata_result.html">Models::SetBlobContainerMetadataResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a8f7e6653ef69788cb4fb23ec85d4fd96">ListBlobs</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_list_blobs_options.html">ListBlobsOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_list_blobs_options.html">ListBlobsOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns a sequence of blobs in this container. Enumerating the blobs may make multiple requests to the service while fetching all the values. Blobs are ordered lexicographically by name.
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blobs_paged_response.html">ListBlobsPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a06666233dc90f9848c6b207673b25a75">ListBlobsByHierarchy</a> (const std::string &amp;delimiter, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_list_blobs_options.html">ListBlobsOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_list_blobs_options.html">ListBlobsOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns a collection of blobs in this container. Enumerating the blobs may make multiple requests to the service while fetching all the values. Blobs are ordered lexicographically by name. A delimiter can be used to traverse a virtual hierarchy of blobs as though it were a file system.
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blobs_by_hierarchy_paged_response.html">ListBlobsByHierarchyPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#ac1f49d3f4623660efb12dc84619f4d01">GetAccessPolicy</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_container_access_policy_options.html">GetBlobContainerAccessPolicyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_container_access_policy_options.html">GetBlobContainerAccessPolicyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Gets the permissions for this container. The permissions indicate whether container data may be accessed publicly.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_container_access_policy.html">Models::BlobContainerAccessPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#ab178fc558887607e2ed2142e81643aa0">SetAccessPolicy</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_container_access_policy_options.html">SetBlobContainerAccessPolicyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_container_access_policy_options.html">SetBlobContainerAccessPolicyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets the permissions for the specified container. The permissions indicate whether blob container data may be accessed publicly.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_container_access_policy_result.html">Models::SetBlobContainerAccessPolicyResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a22cacfe0ce12b7ac4cb8e3e20c96492d">DeleteBlob</a> (const std::string &amp;blobName, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Marks the specified blob or snapshot for deletion. The blob is later deleted during garbage collection. Note that in order to delete a blob, you must delete all of its snapshots. You can delete both at the same time using <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html#a0e9337de60f8c7d67d7a040d8b316b90">DeleteBlobOptions.DeleteSnapshots</a>.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_result.html">Models::DeleteBlobResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a35f233d50a95cce4a7e9408e0a053bb1">UploadBlob</a> (const std::string &amp;blobName, Azure::Core::IO::BodyStream &amp;content, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_options.html">UploadBlockBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_options.html">UploadBlockBlobOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates a new block blob under this container. For partial block blob updates and other advanced features, please see <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html">BlockBlobClient</a>. To create or modify page or see <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> or <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a>.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html">BlockBlobClient</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a25931e6b33a9728843a591bf45f6c6ea">FindBlobsByTags</a> (const std::string &amp;tagFilterSqlExpression, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_find_blobs_by_tags_options.html">FindBlobsByTagsOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_find_blobs_by_tags_options.html">FindBlobsByTagsOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: The Filter Blobs operation enables callers to list blobs in a container whose tags match a given search expression.
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_find_blobs_by_tags_paged_response.html">FindBlobsByTagsPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a7000c5d99f716e065872c3d83de283df">CreateBatch</a> () const
+    summary: Creates a new batch object to collect subrequests that can be submitted together via SubmitBatch.
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_batch.html">BlobContainerBatch</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a24234b36441e1bba5e5cb5515901664f">SubmitBatch</a> (const <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_batch.html">BlobContainerBatch</a> &amp;batch, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_submit_blob_batch_options.html">SubmitBlobBatchOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_submit_blob_batch_options.html">SubmitBlobBatchOptions</a>(), const Core::Context &amp;context=Core::Context()) const
+    summary: Submits a batch of subrequests.
+    returnType: Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_submit_blob_batch_result.html">Models::SubmitBlobBatchResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a95b65bae24b8c0ccd9f13e3e72d15b99">GetAccountInfo</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_account_info_options.html">GetAccountInfoOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_account_info_options.html">GetAccountInfoOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns the sku name and account kind for the specified account.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_account_info.html">Models::AccountInfo</a> &gt;&#160;
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html#a5d253aacb6e20578b7f5f233547be3e2">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;blobContainerName, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a>.
+    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a>&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: BlobServiceClient
+    returnType: class&#160;
+  - declaration: BlobLeaseClient
+    returnType: class&#160;
+  - declaration: BlobContainerBatch
+    returnType: class&#160;
+  - declaration: Files::DataLake::DataLakeFileSystemClient
+    returnType: class&#160;
+- section: Detailed Description
+  display: h2
+- content: <p>The <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a> allows you to manipulate Azure Storage containers and their blobs. </p>
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: BlobContainerClient() [1/3]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobContainerUrl
+    summary: A url referencing the blob container that includes the name of the account and the name of the container.
+  - name: credential
+    summary: The shared key credential used to sign requests.
+  - name: options
+    summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
+- section: BlobContainerClient() [2/3]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobContainerUrl
+    summary: A url referencing the blob container that includes the name of the account and the name of the container.
+  - name: credential
+    summary: The token credential used to sign requests.
+  - name: options
+    summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
+- section: BlobContainerClient() [3/3]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobContainerUrl
+    summary: A url referencing the blob that includes the name of the account and the name of the container, and possibly also a SAS token.
+  - name: options
+    summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
+- section: Member Function Documentation
+  display: h2
+- section: Create()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A CreateBlobContainerResult describing the newly created blob container.
+- section: CreateBatch()
+  display: h3
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A new batch object.
+- section: CreateFromConnectionString()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: A connection string includes the authentication information required for your application to access data in an Azure Storage account at runtime.
+  - name: blobContainerName
+    summary: The name of the container containing this blob.
+  - name: options
+    summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a> instance.
+- section: CreateIfNotExists()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A CreateBlobContainerResult describing the newly created blob container if the container doesn't exist. CreateBlobContainerResult.Created is false if the container already exists.
+- section: Delete()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A DeleteBlobContainerResult if successful.
+- section: DeleteBlob()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobName
+    summary: The name of the blob to delete.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A DeleteBlobResult on successfully deleting.
+- section: DeleteIfExists()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A DeleteBlobContainerResult if the container exists. DeleteBlobContainerResult.Deleted is false if the container doesn't exist.
+- section: FindBlobsByTags()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tagFilterSqlExpression
+    summary: The where parameter enables the caller to query blobs whose tags match a given expression. The given expression must evaluate to true for a blob to be returned in the results. The [OData - ABNF] filter syntax rule defines the formal grammar for the value of the where query parameter, however, only a subset of the OData filter syntax is supported in the Blob service.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_find_blobs_by_tags_paged_response.html">FindBlobsByTagsPagedResponse</a> describing the blobs.
+- section: GetAccessPolicy()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A BlobContainerAccessPolicy describing the container's access policy.
+- section: GetAccountInfo()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: AccountInfo describing the account.
+- section: GetAppendBlobClient()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobName
+    summary: The name of the blob.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> instance.
+- section: GetBlobClient()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobName
+    summary: The name of the blob.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html">BlobClient</a> instance.
+- section: GetBlockBlobClient()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobName
+    summary: The name of the blob.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html">BlockBlobClient</a> instance.
+- section: GetPageBlobClient()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobName
+    summary: The name of the blob.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> instance.
+- section: GetProperties()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A BlobContainerProperties describing the container and its properties.
+- section: GetUrl()
+  display: h3
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The container's primary URL endpoint.
+- section: ListBlobs()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blobs_paged_response.html">ListBlobsPagedResponse</a> describing the blobs in the container.
+- section: ListBlobsByHierarchy()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: delimiter
+    summary: This can be used to to traverse a virtual hierarchy of blobs as though it were a file system. The delimiter may be a single character or a string.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blobs_by_hierarchy_paged_response.html">ListBlobsByHierarchyPagedResponse</a> describing the blobs in the container.
+- section: SetAccessPolicy()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A SetBlobContainerAccessPolicyResult describing the updated container.
+- section: SetMetadata()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: metadata
+    summary: Custom metadata to set for this container.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A SetBlobContainerMetadataResult if successful.
+- section: SubmitBatch()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: batch
+    summary: The batch object containing subrequests.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A SubmitBlobBatchResult.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This function will throw only if there's something wrong with the batch request (parent request).
+- section: UploadBlob()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: blobName
+    summary: The name of the blob to create.
+  - name: content
+    summary: A BodyStream containing the content to upload.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html">BlockBlobClient</a> referencing the newly created block blob.

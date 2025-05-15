@@ -1,0 +1,75 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ABackupOperation
+title: Azure::Security::KeyVault::Administration::BackupOperation Class Reference
+components:
+- content: >-
+    <p><a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html">BackupOperation</a> : The backup / restore long running operation.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html#details">More...</a></p><p><code>#include &lt;<a href="backup__operation_8hpp_source.html">backup_operation.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::Operation
+    href: ''
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html#a134d5d89adc8bdf4af9bd1779402782c">Value</a> () const override
+    summary: Get the BackupOperationStatus object.
+    returnType: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_models_1_1_backup_operation_status.html">Models::BackupOperationStatus</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html#a465dfe71aaf081a3f8e846e4f7c0fe5e">GetResumeToken</a> () const override
+    summary: Get the continuation token used for further status inquiries.
+    returnType: std::string&#160;
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html#aa5ee01f1191fb203972e5819f9aa222e">CreateFromResumeToken</a> (std::string const &amp;resumeToken, <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html">BackupClient</a> const &amp;client, bool isBackupOperation, Azure::Core::Context const &amp;context=Azure::Core::Context())
+    summary: Create a <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html">BackupOperation</a> from the <code>resumeToken</code> fetched from another <code>Operation&lt;T&gt;</code>, updated to the the latest operation status.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html">BackupOperation</a>&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: Azure::Security::KeyVault::Administration::BackupClient
+    returnType: class&#160;
+- section: Detailed Description
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Used to handle both backup and restore operations due to the similarity in patterns and return values.
+- section: Member Function Documentation
+  display: h2
+- section: CreateFromResumeToken()
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: After the operation is initialized, it is used to poll the last update from the server using the <code>context</code>.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: resumeToken
+    summary: A previously generated token used to resume the polling of the operation.
+  - name: client
+    summary: A <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_client.html">BackupClient</a> that is used for getting status updates.
+  - name: isBackupOperation
+    summary: A boolean indicating if the operation is a backup operation if false it is considered a restore operation.
+  - name: context
+    summary: A Azure::Core::Context controlling the request lifetime.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_backup_operation.html">BackupOperation</a>
+- section: GetResumeToken()
+  display: h3
+- section: Returns
+  display: h4
+- parameters:
+  - summary: std::string
+- section: Value()
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: The status contains the current progress result at the time of the call.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A BackupOperationStatus object.

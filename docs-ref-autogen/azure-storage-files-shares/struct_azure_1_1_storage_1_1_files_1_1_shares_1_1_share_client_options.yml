@@ -1,0 +1,41 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareClientOptions
+title: Azure::Storage::Files::Shares::ShareClientOptions Struct Reference
+components:
+- content: >-
+    <p>Client options used to initialize share clients.  
+
+    </p><p><code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::_internal::ClientOptions
+    href: ''
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#a6881b3d2cde478574c18f742f386c34e">ApiVersion</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#a22c65f5be5b1856495b166b6880da8ba">AllowTrailingDot</a>
+    returnType: Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#ae8b91121b37bda234989158c0b774ea8">AllowSourceTrailingDot</a>
+    returnType: Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#af0d64edc97a516eb0c17d8de62ce0cb3">ShareTokenIntent</a>
+    returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_token_intent.html">Models::ShareTokenIntent</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html#af6e71424e1b5f6bbae4daf6a29f10fd4">Audience</a>
+    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience.html">ShareAudience</a> &gt;&#160;
+- section: Member Data Documentation
+  display: h2
+- section: AllowSourceTrailingDot
+  display: h3
+- content: <p>If set to true, trailing dot (.) will be allowed to source file names. If false, the trailing dot will be trimmed. Supported by x-ms-version 2022-11-02 and above. </p>
+- section: AllowTrailingDot
+  display: h3
+- content: <p>If set to true, trailing dot (.) will be allowed to suffix directory and file names. If false, the trailing dot will be trimmed. Supported by x-ms-version 2022-11-02 and above. </p>
+- section: ApiVersion
+  display: h3
+- content: <p>API version used by this client. </p>
+- section: Audience
+  display: h3
+- content: <p>The Audience to use for authentication with Azure Active Directory (AAD). <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience.html#addaef20c3c8b192896f8805a32a76b75">Azure::Storage::Files::Shares::ShareAudience::DefaultAudience</a> will be assumed if Audience is not set. </p>
+- section: ShareTokenIntent
+  display: h3
+- content: <p>Share Token Intent. For use with token authentication. Used to indicate the intent of the request. This is currently required when using token authentication. </p>

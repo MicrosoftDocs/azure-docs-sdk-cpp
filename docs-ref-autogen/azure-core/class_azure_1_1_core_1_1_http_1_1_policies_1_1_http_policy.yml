@@ -1,0 +1,90 @@
+### YamlMime:Reference
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3AHttpPolicy
+title: Azure::Core::Http::Policies::HttpPolicy Class Reference
+components:
+- content: >-
+    <p>HTTP policy base class.  
+     <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html#details">More...</a></p><p><code>#include &lt;<a href="policy_8hpp_source.html">policy.hpp</a>&gt;</code></p><p>Inherited by Azure::Core::Http::Policies::_internal::BearerTokenAuthenticationPolicy, Azure::Core::Http::Policies::_internal::LogPolicy, Azure::Core::Http::Policies::_internal::RequestActivityPolicy, Azure::Core::Http::Policies::_internal::RequestIdPolicy, Azure::Core::Http::Policies::_internal::RetryPolicy, Azure::Core::Http::Policies::_internal::TelemetryPolicy, and Azure::Core::Http::Policies::_internal::TransportPolicy.</p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html#ae7cff2dc6590af4427a41d7eaeabc886">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy.html">NextHttpPolicy</a> nextPolicy, <a href="class_azure_1_1_core_1_1_context.html">Context</a> const &amp;context) const =0
+    summary: Applies this HTTP policy.
+    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html#a3ac12b6638c7bd3d63823ce74309cd6b">~HttpPolicy</a> ()
+    summary: Destructs <code>HttpPolicy</code>.
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html#a9a3b46c83e17a3f1f4b44fbb0f724129">Clone</a> () const =0
+    summary: Creates a clone of this <code>HttpPolicy</code>.
+    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html">HttpPolicy</a> &gt;&#160;
+- section: Protected Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html#a3c0015149b62cd05c18ee02ecbdbc5ac">HttpPolicy</a> ()=default
+    summary: Constructs a default instance of <code>HttpPolicy</code>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html#ab0181d999f0091c4482b3fd225245c26">HttpPolicy</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html">HttpPolicy</a> &amp;other)=default
+    summary: Constructs a copy of <code>other</code> <code>HttpPolicy</code>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html#a610652f959893897ebe4538bcaf441f6">operator=</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html">HttpPolicy</a> &amp;other)=default
+    summary: Assigns this <code>HttpPolicy</code> to copy the <code>other</code>.
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html">HttpPolicy</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html#aade142834e113c84d2bfe4165fcbd257">HttpPolicy</a> (<a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html">HttpPolicy</a> &amp;&amp;other)=default
+    summary: Constructs <code>HttpPolicy</code> by moving <code>other</code> <code>HttpPolicy</code>.
+    returnType: '&#160;'
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: ~HttpPolicy()
+  display: h3
+- section: HttpPolicy() [1/3]
+  display: h3
+- section: HttpPolicy() [2/3]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: Other <code>HttpPolicy</code> to copy.
+- section: HttpPolicy() [3/3]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: Other <code>HttpPolicy</code> to move.
+- section: Member Function Documentation
+  display: h2
+- section: Clone()
+  display: h3
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A clone of this <code>HttpPolicy</code>.
+- section: operator=()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: Other <code>HttpPolicy</code> to copy.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A reference to this <code>HttpPolicy</code>.
+- section: Send()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: request
+    summary: An HTTP request being sent.
+  - name: nextPolicy
+    summary: The next HTTP to invoke after this policy has been applied.
+  - name: context
+    summary: A context to control the request lifetime.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An HTTP response after this policy, and all subsequent HTTP policies in the stack sequence of policies have been applied.

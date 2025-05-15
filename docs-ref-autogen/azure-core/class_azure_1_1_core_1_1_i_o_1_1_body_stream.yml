@@ -1,0 +1,103 @@
+### YamlMime:Reference
+uid: Azure%3A%3ACore%3A%3AIO%3A%3ABodyStream
+title: Azure::Core::IO::BodyStream Class Reference
+components:
+- content: >-
+    <p>Used to read data to/from a service.  
+
+    </p><p><code>#include &lt;<a href="body__stream_8hpp_source.html">body_stream.hpp</a>&gt;</code></p><p>This class is inherited by:</p>
+- linkList:
+  - name: Azure::Core::Http::CurlSession
+    href: class_azure_1_1_core_1_1_http_1_1_curl_session.html
+  - name: Azure::Core::IO::FileBodyStream
+    href: class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html
+  - name: Azure::Core::IO::MemoryBodyStream
+    href: class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html
+  - name: Azure::Core::IO::ProgressBodyStream
+    href: class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a54e16528af689c00f5190858fff85e92">~BodyStream</a> ()=default
+    summary: Destructs <code>BodyStream</code>.
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Length</a> () const =0
+    summary: Get the length of the data.
+    returnType: virtual int64_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a52c2ce02e8a7dec1f55276f664c7c8b6">Rewind</a> ()
+    summary: Resets the stream back to the beginning (for retries).
+    returnType: virtual void&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ab7c962004d984d3bd1d32f33e6aa485d">Read</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+    summary: Read portion of data into a buffer.
+    returnType: size_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ac02611cf3f72c181dcf393c571df6226">ReadToCount</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> into a buffer until the buffer is filled, or until the stream is read to end.
+    returnType: size_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a6d2138790b0c79e24f7fbc0f776bb069">ReadToEnd</a> (<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> until the stream is read to end, allocating memory for the entirety of contents.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: ~BodyStream()
+  display: h3
+- section: Member Function Documentation
+  display: h2
+- section: Length()
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Used with the HTTP <code>Content-Length</code> header.
+- content: <p>Implemented in <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#aea97ce29a09c0b32a518f7195a9ea8bc">Azure::Core::IO::MemoryBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a4c9ea3f7f807238a662e75d7fa7e72da">Azure::Core::IO::FileBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a3acf5936e8f21a28e75388b4740acd8f">Azure::Core::IO::ProgressBodyStream</a>, and <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#a6d8958274c0aa258f1127558b78d9cb8">Azure::Core::Http::CurlSession</a>.</p>
+- section: Read()
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Throws if error/cancelled.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: buffer
+    summary: Pointer to a first byte of the byte buffer to read the data into.
+  - name: count
+    summary: Size of the buffer to read the data into.
+  - name: context
+    summary: A context to control the request lifetime.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Number of bytes read.
+- section: ReadToCount()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: buffer
+    summary: Pointer to a first byte of the byte buffer to read the data into.
+  - name: count
+    summary: Size of the buffer to read the data into.
+  - name: context
+    summary: A context to control the request lifetime.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Number of bytes read.
+- section: ReadToEnd()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: A context to control the request lifetime.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A vector of bytes containing the entirety of data read from the <code>body</code>.
+- section: Rewind()
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Derived classes that send data in an HTTP request MUST override this and implement it properly.
+- content: <p>Reimplemented in <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#acf45328737df39d5ad836644be607f41">Azure::Core::IO::MemoryBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a6a508b86596a8c482ccf2b50f051a620">Azure::Core::IO::FileBodyStream</a>, and <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a95177a860fe067590a2504387936d63c">Azure::Core::IO::ProgressBodyStream</a>.</p>

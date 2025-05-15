@@ -1,0 +1,43 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3AFlushFileResult
+title: Azure::Storage::Files::DataLake::Models::FlushFileResult Struct Reference
+components:
+- content: >-
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a86fc020be966025aae11103420afab30">Azure::Storage::Files::DataLake::DataLakeFileClient::Flush</a>.  
+
+    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a41b3b9014e3fbbbfe47a9f8881fc6601">ETag</a>
+    returnType: Azure::ETag&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a7d4a2edf44c8ac9f034c8eb4942de04d">LastModified</a>
+    returnType: DateTime&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a5459e5b1cc4c1448a8c852e15bbb3229">FileSize</a> = std::int64_t()
+    returnType: std::int64_t&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a5e6b67cbdab28daefa09597f5740167f">IsServerEncrypted</a> = bool()
+    returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a29d5f7ca9661c61df0c6258778453d67">EncryptionKeySha256</a>
+    returnType: Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html#a66d66bb02168e3067924d0847f53c6cc">IsLeaseRenewed</a>
+    returnType: Nullable&lt; bool &gt;&#160;
+- section: Member Data Documentation
+  display: h2
+- section: EncryptionKeySha256
+  display: h3
+- content: <p>The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key. </p>
+- section: ETag
+  display: h3
+- content: <p>An HTTP entity tag associated with the file or directory. </p>
+- section: FileSize
+  display: h3
+- content: <p>The size of the resource in bytes. </p>
+- section: IsLeaseRenewed
+  display: h3
+- content: <p>If the lease was auto-renewed with this request. </p>
+- section: IsServerEncrypted
+  display: h3
+- content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p>
+- section: LastModified
+  display: h3
+- content: <p>The data and time the file or directory was last modified. Write operations on the file or directory update the last modified time. </p>

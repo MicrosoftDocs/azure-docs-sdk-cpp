@@ -1,0 +1,64 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ADeleteCertificateOperation
+title: Azure::Security::KeyVault::Certificates::DeleteCertificateOperation Class Reference
+components:
+- content: >-
+    <p>Represents a delete certificate long running operation.  
+
+    </p><p><code>#include &lt;<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::Operation
+    href: ''
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_delete_certificate_operation.html#a56516bae538e8078e60a36e2a8db7966">Value</a> () const override
+    summary: Get the <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.html">Azure::Security::KeyVault::Certificates::DeletedCertificate</a> object.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.html">DeletedCertificate</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_delete_certificate_operation.html#a24ddc7edfa5a35db02f44dab42a50fb6">GetResumeToken</a> () const override
+    summary: Get an Url as string which can be used to get the status of the operation.
+    returnType: std::string&#160;
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_delete_certificate_operation.html#a2ac70e029cfeddcd0c3d0d3a5b3b68e7">CreateFromResumeToken</a> (std::string const &amp;resumeToken, <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html">CertificateClient</a> const &amp;client, Azure::Core::Context const &amp;context=Azure::Core::Context())
+    summary: Create a DeleteCertificateOperation from the <code>resumeToken</code> fetched from another <code>Operation&lt;T&gt;</code>, updated to the the latest operation status.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_delete_certificate_operation.html">DeleteCertificateOperation</a>&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: CertificateClient
+    returnType: class&#160;
+- section: Member Function Documentation
+  display: h2
+- section: CreateFromResumeToken()
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: After the operation is initialized, it is used to poll the last update from the server using the <code>context</code>.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: resumeToken
+    summary: A previously generated token used to resume the polling of the operation.
+  - name: client
+    summary: A CertificateClient that is used for getting status updates.
+  - name: context
+    summary: A Azure::Core::Context controlling the request lifetime.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_delete_certificate_operation.html">DeleteCertificateOperation</a>
+- section: GetResumeToken()
+  display: h3
+- section: Returns
+  display: h4
+- parameters:
+  - summary: std::string
+- section: Value()
+  display: h3
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A deleted certificate object.

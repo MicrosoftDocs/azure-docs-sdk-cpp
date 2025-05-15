@@ -1,0 +1,38 @@
+### YamlMime:Reference
+uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AModels%3A%3ACheckpoint
+title: Azure::Messaging::EventHubs::Models::Checkpoint Class Reference
+components:
+- content: >-
+    <p><a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_checkpoint.html">Checkpoint</a> tracks the last successfully processed event in a partition.  
+
+    </p><p><code>#include &lt;<a href="checkpoint__store__models_8hpp_source.html">checkpoint_store_models.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: GetCheckpointBlobPrefixName () const
+    summary: Returns the prefix for the name of the blob that stores the checkpoint.
+    returnType: std::string&#160;
+  - declaration: GetCheckpointBlobName () const
+    summary: Returns the name of the blob that stores the checkpoint.
+    returnType: std::string&#160;
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: ConsumerGroup
+    summary: The consumer group name.
+    returnType: std::string&#160;
+  - declaration: EventHubName
+    summary: The event hub name.
+    returnType: std::string&#160;
+  - declaration: FullyQualifiedNamespaceName
+    summary: The fully qualified namespace for the event hub.
+    returnType: std::string&#160;
+  - declaration: PartitionId {}
+    summary: The partition ID for the corresponding checkpoint.
+    returnType: std::string&#160;
+  - declaration: Offset {}
+    summary: The offset of the last successfully processed event.
+    returnType: Azure::Nullable&lt; int64_t &gt;&#160;
+  - declaration: SequenceNumber {}
+    summary: The sequence number of the last successfully processed event.
+    returnType: Azure::Nullable&lt; int64_t &gt;&#160;

@@ -1,0 +1,38 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ACreateDirectoryOptions
+title: Azure::Storage::Files::Shares::CreateDirectoryOptions Struct Reference
+components:
+- content: >-
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#ae8beb2bebca49f9ca26e3f401f378b8e">Azure::Storage::Files::Shares::ShareDirectoryClient::Create</a>.  
+
+    </p><p><code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options.html#a02c70d55849774fb3a5f8ede82bf30ad">Metadata</a>
+    returnType: Storage::Metadata&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options.html#a31b8d74fdc64efe6b9770d2a044ae7ed">DirectoryPermission</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options.html#a7228a0dbb230f74c9b91dd2be02ce3f2">DirectoryPermissionFormat</a>
+    returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_permission_format.html">Models::FilePermissionFormat</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options.html#afe031807631ed3fdeafdbfce8e994ae7">SmbProperties</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_smb_properties.html">Models::FileSmbProperties</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options.html#a7d3a268d9d3d213d1290d58f577406ce">PosixProperties</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties.html">Models::FilePosixProperties</a>&#160;
+- section: Member Data Documentation
+  display: h2
+- section: DirectoryPermission
+  display: h3
+- content: <p>This permission is the security descriptor for the directory specified in the Security Descriptor Definition Language (SDDL). If not specified, 'inherit' is used. </p>
+- section: DirectoryPermissionFormat
+  display: h3
+- content: <p>Optional. Available for version 2024-11-04 and later. Specifies the format in which the permission is returned.If DirectoryPermissionFormat is unspecified or explicitly set to SDDL format, the permission will be returned in SDDL format. </p>
+- section: Metadata
+  display: h3
+- content: <p>A name-value pair to associate with a directory object. </p>
+- section: PosixProperties
+  display: h3
+- content: <p>The NFS related properties for the file. </p>
+- section: SmbProperties
+  display: h3
+- content: <p>SMB properties to set for the directory. </p>

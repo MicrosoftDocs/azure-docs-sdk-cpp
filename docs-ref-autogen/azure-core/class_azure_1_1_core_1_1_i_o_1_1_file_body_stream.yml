@@ -1,0 +1,65 @@
+### YamlMime:Reference
+uid: Azure%3A%3ACore%3A%3AIO%3A%3AFileBodyStream
+title: Azure::Core::IO::FileBodyStream Class Reference
+components:
+- content: >-
+    <p>A concrete implementation of <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> used for reading data from a file.  
+
+    </p><p><code>#include &lt;<a href="body__stream_8hpp_source.html">body_stream.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::IO::BodyStream
+    href: class_azure_1_1_core_1_1_i_o_1_1_body_stream.html
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a31798d744f57846908d91dbbb1ae8d83">FileBodyStream</a> (const std::string &amp;filename)
+    summary: Constructs <code>FileBodyStream</code> from a file name.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a0736e4b3b4ba731c9f12a750bf20d399">~FileBodyStream</a> () override
+    summary: Closes the file and cleans up any resources.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a6a508b86596a8c482ccf2b50f051a620">Rewind</a> () override
+    summary: Rewind seeks the current stream to the start of the file.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a4c9ea3f7f807238a662e75d7fa7e72da">Length</a> () const override
+    summary: Get the length of the data.
+    returnType: int64_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a54e16528af689c00f5190858fff85e92">~BodyStream</a> ()=default
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Length</a> () const =0
+    returnType: virtual int64_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a52c2ce02e8a7dec1f55276f664c7c8b6">Rewind</a> ()
+    returnType: virtual void&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ab7c962004d984d3bd1d32f33e6aa485d">Read</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+    returnType: size_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ac02611cf3f72c181dcf393c571df6226">ReadToCount</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+    returnType: size_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a6d2138790b0c79e24f7fbc0f776bb069">ReadToEnd</a> (<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: FileBodyStream()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: filename
+    summary: A reference to a file name string used to identify the file, which needs to have the necessary file path specified to locate the file.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: The <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html">Azure::Core::IO::FileBodyStream</a> owns the file object and is responsible for opening and closing the file.
+- section: ~FileBodyStream()
+  display: h3
+- section: Member Function Documentation
+  display: h2
+- section: Length()
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Used with the HTTP <code>Content-Length</code> header.
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.</p>
+- section: Rewind()
+  display: h3
+- content: <p>Reimplemented from <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a52c2ce02e8a7dec1f55276f664c7c8b6">Azure::Core::IO::BodyStream</a>.</p>

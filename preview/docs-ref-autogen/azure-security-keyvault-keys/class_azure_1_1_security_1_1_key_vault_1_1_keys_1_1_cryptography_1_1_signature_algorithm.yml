@@ -1,0 +1,110 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ASignatureAlgorithm
+title: Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm Class Reference
+components:
+- content: >-
+    <p>An algorithm used for signing and verification.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#details">More...</a></p><p><code>#include &lt;<a href="cryptography__client__models_8hpp_source.html">cryptography_client_models.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a> (std::string value)
+    summary: Construct a new <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a> object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a09a4be23efe245bf51af93408f182fc4">SignatureAlgorithm</a> ()=default
+    summary: Construct a default signature algorithm.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a61e7571508149ec72a0da3a10afabc6d">operator==</a> (const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a> &amp;other) const noexcept
+    summary: Enables using the equal operator for signature algorithm.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a8c500f0cd5f7bf4d67e35f8c88965014">ToString</a> () const
+    summary: Get the string value of the signature algorithm.
+    returnType: std::string const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#aaf20010212ad37a8f9ae783436446efe">GetHashAlgorithm</a> () const
+    summary: Get the Hash Algorithm associated with the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: std::unique_ptr&lt; Azure::Core::Cryptography::Hash &gt;&#160;
+- section: Static Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a0a7eb1a37f2746c3a62b5c7b5c9ebddc">RS256</a>
+    summary: An RSA SHA-256 <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a5b7410910ebe54226f0a43e0256305e5">RS384</a>
+    summary: An RSA SHA-384 <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a92cfab3a177d8519c360b717fe6467d8">RS512</a>
+    summary: An RSA SHA-512 <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a2ad2197e3c3a0094eacfd458399d69d3">PS256</a>
+    summary: An RSASSA-PSS using SHA-256 and MGF1 with SHA-256 <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a02f278ee56741d9fb989da7a198ed413">PS384</a>
+    summary: An RSASSA-PSS using SHA-384 and MGF1 with SHA-384 <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a69d71e78824d228ab55dc4da2b2b0837">PS512</a>
+    summary: An RSASSA-PSS using SHA-512 and MGF1 with SHA-512 <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a296cb6fe49abae37218a7967273763f4">ES256</a>
+    summary: An ECDSA with a P-256 curve <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a55112ef8b4ee19e47f0e22329ef6b365">ES384</a>
+    summary: An ECDSA with a P-384 curve <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#ada7445334cd6176ed182eb28a72b471a">ES512</a>
+    summary: An ECDSA with a P-512 curve <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#aef5b4ae4a883d7ba28e1b60d175ac8b1">ES256K</a>
+    summary: An ECDSA with a secp256k1 curve <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html#a70d17862186d2f8b4e6b7606a55c5928">SignatureAlgorithm</a>.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_signature_algorithm.html">SignatureAlgorithm</a>&#160;
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: SignatureAlgorithm() [1/2]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: The string value of the instance.
+- section: SignatureAlgorithm() [2/2]
+  display: h3
+- section: Member Function Documentation
+  display: h2
+- section: GetHashAlgorithm()
+  display: h3
+- section: operator==()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: A signature algorithm to be compared.
+- section: ToString()
+  display: h3
+- section: Member Data Documentation
+  display: h2
+- section: ES256
+  display: h3
+- section: ES256K
+  display: h3
+- content: '<p>cspell: disable-next-line  </p>'
+- section: ES384
+  display: h3
+- section: ES512
+  display: h3
+- section: PS256
+  display: h3
+- content: '<p>cspell: disable-next-line  </p>'
+- section: PS384
+  display: h3
+- content: '<p>cspell: disable-next-line  </p>'
+- section: PS512
+  display: h3
+- content: '<p>cspell: disable-next-line  </p>'
+- section: RS256
+  display: h3
+- section: RS384
+  display: h3
+- section: RS512
+  display: h3

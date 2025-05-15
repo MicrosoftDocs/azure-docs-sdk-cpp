@@ -1,0 +1,43 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AAppendFileOptions
+title: Azure::Storage::Files::DataLake::AppendFileOptions Struct Reference
+components:
+- content: >-
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a54d30b7659e43ad83016c3a32983efc2">Azure::Storage::Files::DataLake::DataLakeFileClient::Append</a>.  
+
+    </p><p><code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#adfc677a93d16cf3a1ce850cdb990cd2e">TransactionalContentHash</a>
+    returnType: Azure::Nullable&lt; Storage::ContentHash &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#a1f0d6f01494af8ff34d56b9b81bb6133">AccessConditions</a>
+    returnType: LeaseAccessConditions&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#a9e6eaa132c1ad00f40c80684a3307aa9">Flush</a>
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#af9556708cf002953d69d384ebaefb3b3">LeaseAction</a>
+    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_lease_action.html">Models::LeaseAction</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#a5374632c4fdeb9670823144ca59af52f">LeaseId</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html#a45371e7a414977997fa7cb7c6d52e611">LeaseDuration</a>
+    returnType: Azure::Nullable&lt; std::chrono::seconds &gt;&#160;
+- section: Member Data Documentation
+  display: h2
+- section: AccessConditions
+  display: h3
+- content: <p>Specify the lease access conditions. </p>
+- section: Flush
+  display: h3
+- content: <p>If true, the file will be flushed after the append. </p>
+- section: LeaseAction
+  display: h3
+- content: <p>If "acquire" it will acquire the lease. If "auto-renew" it will renew the lease. If "release" it will release the lease only on flush. Only applicable if Flush is set to true. If "acquire-release" it will acquire &amp; complete the operation &amp; release the lease once operation is done. Only applicable if Flush is set to true. </p>
+- section: LeaseDuration
+  display: h3
+- content: <p>Specifies the duration of the lease, in seconds, or InfiniteLeaseDuration for a lease that never expires. A non-infinite lease can be between 15 and 60 seconds. A lease duration cannot be changed using renew or change. </p>
+- section: LeaseId
+  display: h3
+- content: <p>Proposed LeaseId. </p>
+- section: TransactionalContentHash
+  display: h3
+- content: <p>Specify the transactional hash for the body, to be validated by the service. </p>

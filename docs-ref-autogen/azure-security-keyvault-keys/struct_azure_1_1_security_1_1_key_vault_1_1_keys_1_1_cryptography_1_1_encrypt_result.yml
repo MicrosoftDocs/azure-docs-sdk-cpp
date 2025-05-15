@@ -1,0 +1,44 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3AEncryptResult
+title: Azure::Security::KeyVault::Keys::Cryptography::EncryptResult Struct Reference
+components:
+- content: >-
+    <p>Represents information about an encryption operation.  
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html#details">More...</a></p><p><code>#include &lt;<a href="cryptography__client__models_8hpp_source.html">cryptography_client_models.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html#a54d6c4183581f6062a6f176ca0809a6b">KeyId</a>
+    summary: Gets the key identifier of the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html">Azure::Security::KeyVault::Keys::KeyVaultKey</a> used to encrypt. This must be stored alongside the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a467c11dcfb2c81dafc0dc69b48ed80e4">DecryptParameters::Ciphertext</a> as the same key must be used to decrypt it.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html#a00ef1f851e9234bc60a7acc23f6b077e">Ciphertext</a>
+    summary: Gets the ciphertext that is the result of the encryption.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html#a035f07e4b4428c6b3687da2446d8d8ae">Iv</a>
+    summary: Gets the initialization vector for encryption.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html#abb66911818b46a1edcbe991eff41b4b8">AuthenticationTag</a>
+    summary: Gets the authentication tag resulting from encryption with a symmetric key including <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a0605e558304bf20e5c65d02f83b63c94">EncryptionAlgorithm.A128Gcm</a>, <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a64395beb114d3832328e19c38e98dbf3">EncryptionAlgorithm.A192Gcm</a>, or <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a6fd409cabbe735987bec19e727345a98">EncryptionAlgorithm.A256Gcm</a>.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html#a23158cd93cdf8318c7c3b6218deabc7d">AdditionalAuthenticatedData</a>
+    summary: Gets additional data that is authenticated during decryption but not encrypted.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html#ae7fbaf466183b80bb6e065300c9dc910">Algorithm</a>
+    summary: Gets the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm</a> used for encryption. This must be stored alongside the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html#a00ef1f851e9234bc60a7acc23f6b077e">Ciphertext</a> as the same algorithm must be used to decrypt it.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html">EncryptionAlgorithm</a>&#160;
+- section: Detailed Description
+  display: h2
+- section: Member Data Documentation
+  display: h2
+- section: AdditionalAuthenticatedData
+  display: h3
+- section: Algorithm
+  display: h3
+- section: AuthenticationTag
+  display: h3
+- section: Ciphertext
+  display: h3
+- section: Iv
+  display: h3
+- section: KeyId
+  display: h3

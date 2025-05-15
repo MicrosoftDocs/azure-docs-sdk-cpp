@@ -1,0 +1,63 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3ANfsFileMode
+title: Azure::Storage::Files::Shares::Models::NfsFileMode Struct Reference
+components:
+- content: >-
+    <p>The mode permissions of the file or directory.  
+
+    </p><p><code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: ToOctalFileMode () const
+    summary: Returns the octal representation of <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a> as a string.
+    returnType: std::string&#160;
+  - declaration: ToSymbolicFileMode () const
+    summary: Returns <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a> as a string in symbolic notation.
+    returnType: std::string&#160;
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html#a57ae413338da994b6c85802a4edb8311">ParseOctalFileMode</a> (const std::string &amp;modeString)
+    summary: Returns a <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a> from the octal string representation.
+    returnType: static <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html#aa80ba6339372441b6f0f5ca5a733fa28">ParseSymbolicFileMode</a> (const std::string &amp;modeString)
+    summary: Returns a <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a> from the symbolic string representation.
+    returnType: static <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a>&#160;
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: Owner
+    summary: Permissions the owner has over the file or directory.
+    returnType: RolePermissions&#160;
+  - declaration: Group
+    summary: Permissions the group has over the file or directory.
+    returnType: RolePermissions&#160;
+  - declaration: Other
+    summary: Permissions other have over the file or directory.
+    returnType: RolePermissions&#160;
+  - declaration: EffectiveUserIdentity = false
+    summary: Set effective user ID (setuid) on the file or directory.
+    returnType: bool&#160;
+  - declaration: EffectiveGroupIdentity = false
+    summary: Set effective group ID (setgid) on the file or directory.
+    returnType: bool&#160;
+  - declaration: StickyBit = false
+    summary: The sticky bit may be set on directories. The files in that directory may only be renamed or deleted by the file's owner, the directory's owner, or the root user.
+    returnType: bool&#160;
+- section: Member Function Documentation
+  display: h2
+- section: ParseOctalFileMode()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: modeString
+    summary: A 4-digit octal string representation of a File Mode.
+- section: ParseSymbolicFileMode()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: modeString
+    summary: A 9-character symbolic string representation of a File Mode.

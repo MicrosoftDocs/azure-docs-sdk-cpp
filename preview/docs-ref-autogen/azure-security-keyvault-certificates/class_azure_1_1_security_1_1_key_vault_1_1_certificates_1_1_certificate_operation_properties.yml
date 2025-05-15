@@ -1,0 +1,94 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateOperationProperties
+title: Azure::Security::KeyVault::Certificates::CertificateOperationProperties Class Reference
+components:
+- content: >-
+    <p>A certificate operation.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#details">More...</a></p><p><code>#include &lt;<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#af8a00a8867e63d0d92c29e85e001681d">CertificateOperationProperties</a> ()=default
+    summary: Default constructor.
+    returnType: '&#160;'
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#a4b26e54208494dd12787c8b87f2bd677">IdUrl</a>
+    summary: The certificate id.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#a0dc1a635bb4db811d7c768df3bc56ff0">Name</a>
+    summary: The certificate name.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#ac2f3262afeeb7abcf45a3a04a25ceee7">VaultUrl</a>
+    summary: The vault URI.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#a7cd42e86814def2d6a6d69d175a1b670">Csr</a>
+    summary: The certificate signing request (CSR) that is being used in the certificate operation.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#a19bdf4fce6b249831a95c5f8cd257ee1">CancellationRequested</a>
+    summary: Indicates if cancellation was requested on the certificate operation.
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#afc8ec87100c2b8e9f955280cf69f5612">Status</a>
+    summary: Status of the certificate operation.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#ab09c298da8d925e36648a08757164b16">StatusDetails</a>
+    summary: The status details of the certificate operation.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#aee5acf6631a8a33f185aa6c84ac8ecd6">Target</a>
+    summary: Location which contains the result of the certificate operation.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#ab8428ed6dccec8c5b9ee47082170c83a">RequestIdUrl</a>
+    summary: Identifier for the certificate operation.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#a4d561af37ed96a305ad3ab59f55403b5">IssuerName</a>
+    summary: Name of the referenced issuer object or reserved names; for example, 'Self' or 'Unknown'.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#aa5eeee8124f1e0a4cd3d147af1988e9a">CertificateType</a>
+    summary: Certificate type as supported by the provider (optional); for example 'OV-SSL', 'EV-SSL'.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#a74d8f4254beb26c40b2c3c68f609820e">CertificateTransparency</a>
+    summary: Indicates if the certificates generated under this policy should be published to certificate transparency logs.
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.html#aa6ae530ea660d67dab9d9fb84360d2ec">Error</a>
+    summary: Error encountered, if any, during the certificate operation.
+    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_server_error.html">ServerError</a> &gt;&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: CertificateClient
+    returnType: class&#160;
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: CertificateOperationProperties()
+  display: h3
+- section: Member Data Documentation
+  display: h2
+- section: CancellationRequested
+  display: h3
+- section: CertificateTransparency
+  display: h3
+- section: CertificateType
+  display: h3
+- section: Csr
+  display: h3
+- section: Error
+  display: h3
+- section: IdUrl
+  display: h3
+- section: IssuerName
+  display: h3
+- section: Name
+  display: h3
+- section: RequestIdUrl
+  display: h3
+- section: Status
+  display: h3
+- section: StatusDetails
+  display: h3
+- section: Target
+  display: h3
+- section: VaultUrl
+  display: h3

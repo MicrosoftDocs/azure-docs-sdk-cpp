@@ -1,0 +1,113 @@
+### YamlMime:Reference
+uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpComposite
+title: Azure::Core::Amqp::Models::AmqpComposite Class Reference
+components:
+- content: >-
+    <p>An <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> represents a sequentially ordered list of values. The values of the composite may have different types.  
+     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#details">More...</a></p><p><code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::Amqp::Models::_detail::AmqpCollectionBase< std::vector< AmqpValue >, AmqpComposite >
+    href: ''
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: AmqpComposite ()
+    summary: Construct a new <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> object.
+    returnType: '&#160;'
+  - declaration: AmqpComposite (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> const &amp;descriptor, std::initializer_list&lt; <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> &gt; const &amp;values)
+    summary: Construct a new <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> object with an initializer list.
+    returnType: '&#160;'
+  - declaration: AmqpComposite (const <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &amp;other)=default
+    summary: Construct a new <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> object from another.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#a4cb9055ec312fbc435b7f0f916de34b4">operator=</a> (const <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &amp;other)=default
+    summary: Copy assignment operator.
+    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#aaf0cd6821ba2672994b4d50d3125944c">AmqpComposite</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &amp;&amp;other) noexcept=default
+    summary: Move constructor.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#a95c3304854cfef475bd44919c3986d78">operator=</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &amp;&amp;other) noexcept=default
+    summary: Move assignment operator.
+    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#a2de0902be6b19f27d61f5d8776cbb3c4">AmqpComposite</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> const &amp;value)
+    summary: Construct a new <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> object from an existing uAMQP AMQP_VALUE item.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#a67ab366c75e438410feeacfeb9951e6b">operator==</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> const &amp;that) const
+    summary: Compare this <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> value with another.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#ab51b0959b471073905028ebb10847cd9">operator!=</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> const &amp;that) const
+    summary: Compare this <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> value with another.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#aa534649f2af9e8019a411a20ee827373">GetDescriptor</a> () const
+    summary: Returns the descriptor for this composite type.
+    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value.html">AmqpValue</a> const &amp;&#160;
+- section: Detailed Description
+  display: h2
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: An <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#doc-idp42752">AMQP Composite type</a> is a composite value where each value consists of an ordered sequence of fields, each with a specified name, type and multiplicity. They roughly correspond to a C or C++ "struct" type.
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: AmqpComposite() [1/2]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: composite value to move.
+- section: AmqpComposite() [2/2]
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Note that this does NOT capture the passed in AMQP_VALUE object, the caller is responsible for freeing that object.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: '- the AMQP array value to capture.'
+- section: Member Function Documentation
+  display: h2
+- section: GetDescriptor()
+  display: h3
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The descriptor for this composite type.
+- section: operator!=()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- the <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> to compare with.'
+- section: operator=() [1/2]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: composite value to move.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: reference to this composite value.
+- section: operator=() [2/2]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: composite value to copy.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: reference to this composite value.
+- section: operator==()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: '- the <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> to compare with.'

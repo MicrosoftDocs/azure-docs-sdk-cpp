@@ -1,0 +1,38 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3ACorsRule
+title: Azure::Storage::Files::Shares::Models::CorsRule Struct Reference
+components:
+- content: >-
+    <p>CORS is an HTTP feature that enables a web application running under one domain to access resources in another domain. Web browsers implement a security restriction known as same-origin policy that prevents a web page from calling APIs in a different domain; CORS provides a secure way to allow one domain (the origin domain) to call APIs in another domain.  
+
+    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_cors_rule.html#a472d0871a1719ad3c1e28b4fd5988ae7">AllowedOrigins</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_cors_rule.html#aaa65b071c0ea9ffaf64c9ce1706a87ee">AllowedMethods</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_cors_rule.html#a5a3f086011e5232bc327a77d575d1438">AllowedHeaders</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_cors_rule.html#a3716f60c05ddb75d5c146ec9ce4f9818">ExposedHeaders</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_cors_rule.html#a630f4fe7be01391da52f1da9b43842e9">MaxAgeInSeconds</a> = std::int32_t()
+    returnType: std::int32_t&#160;
+- section: Member Data Documentation
+  display: h2
+- section: AllowedHeaders
+  display: h3
+- content: <p>The request headers that the origin domain may specify on the CORS request. </p>
+- section: AllowedMethods
+  display: h3
+- content: <p>The methods (HTTP request verbs) that the origin domain may use for a CORS request. (comma separated). </p>
+- section: AllowedOrigins
+  display: h3
+- content: <p>The origin domains that are permitted to make a request against the storage service via CORS. The origin domain is the domain from which the request originates. Note that the origin must be an exact case-sensitive match with the origin that the user age sends to the service. You can also use the wildcard character '*' to allow all origin domains to make requests via CORS. </p>
+- section: ExposedHeaders
+  display: h3
+- content: <p>The response headers that may be sent in the response to the CORS request and exposed by the browser to the request issuer. </p>
+- section: MaxAgeInSeconds
+  display: h3
+- content: <p>The maximum amount time that a browser should cache the preflight OPTIONS request. </p>

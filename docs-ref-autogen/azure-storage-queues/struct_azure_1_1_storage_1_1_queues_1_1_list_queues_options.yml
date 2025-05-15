@@ -1,0 +1,23 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AListQueuesOptions
+title: Azure::Storage::Queues::ListQueuesOptions Struct Reference
+components:
+- content: <p><code>#include &lt;<a href="queue__options_8hpp_source.html">queue_options.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: Prefix
+    summary: Specifies a string that filters the results to return only queues whose name begins with the specified prefix.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: ContinuationToken
+    summary: A string value that identifies the portion of the list of queues to be returned with the next listing operation. The operation returns a non-empty continuation token if the listing operation did not return all queues remaining to be listed with the current segment. The ContinuationToken value can be used as the value for the ContinuationToken parameter in a subsequent call to request the next segment of list items.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: PageSizeHint
+    summary: Specifies the maximum number of queues to return.
+    returnType: Azure::Nullable&lt; int32_t &gt;&#160;
+  - declaration: Include = Models::ListQueuesIncludeFlags::None
+    summary: Specifies that the queue's metadata be returned.
+    returnType: Models::ListQueuesIncludeFlags&#160;
+- section: Detailed Description
+  display: h2
+- content: <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client.html#a266d271028d524cc5c55272b92ad852e">Azure::Storage::Queues::QueueServiceClient::ListQueues</a>. </p>

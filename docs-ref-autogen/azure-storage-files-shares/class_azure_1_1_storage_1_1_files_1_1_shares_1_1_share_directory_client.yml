@@ -1,0 +1,360 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareDirectoryClient
+title: Azure::Storage::Files::Shares::ShareDirectoryClient Class Reference
+components:
+- content: >-
+    <p>The <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> allows you to manipulate Azure Storage shares and their directories and files.  
+
+    </p><p><code>#include &lt;<a href="share__directory__client_8hpp_source.html">share_directory_client.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#aeb6e10a6cfdf0cb6ae5ec398cdacfb1b">ShareDirectoryClient</a> (const std::string &amp;shareDirectoryUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> using shared key authentication.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#af8550545fa621113f875c85e104a438d">ShareDirectoryClient</a> (const std::string &amp;shareDirectoryUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> using shared key authentication.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a8c5075ac6ee4d7eaa383f9ea383a3431">ShareDirectoryClient</a> (const std::string &amp;shareDirectoryUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> using anonymous access or shared access signature.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a2688f599c955ad31d59f5adcaf9ac288">GetUrl</a> () const
+    summary: Gets the directory's primary URL endpoint.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#afa1efba5cc9533e7834ccd31ae1eecd4">GetSubdirectoryClient</a> (const std::string &amp;subdirectoryName) const
+    summary: Create a <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> that's a sub directory of the current <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a>.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a93545b8d82ee94f9de183c4d277059d8">GetFileClient</a> (const std::string &amp;fileName) const
+    summary: Create a <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> from current <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a>.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a5039d4fc85b99dbccdeb0d7a319f4f27">WithShareSnapshot</a> (const std::string &amp;shareSnapshot) const
+    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> class with an identical URL source but the specified share snapshot timestamp.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#ae8beb2bebca49f9ca26e3f401f378b8e">Create</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options.html">CreateDirectoryOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options.html">CreateDirectoryOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates the directory.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_directory_result.html">Models::CreateDirectoryResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#ae5fe48520d5123a30e00db65dce277e2">CreateIfNotExists</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options.html">CreateDirectoryOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options.html">CreateDirectoryOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates the directory if it does not exist.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_directory_result.html">Models::CreateDirectoryResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a47e6a580d5bbda190c6a77bd5b4c73e2">RenameFile</a> (const std::string &amp;fileName, const std::string &amp;destinationFilePath, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_rename_file_options.html">RenameFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_rename_file_options.html">RenameFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Renames a file. This API does not support renaming a file from one share to another, or between storage accounts.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#af4d57bfbe2f95e0bebb64bb95fce7292">RenameSubdirectory</a> (const std::string &amp;subdirectoryName, const std::string &amp;destinationDirectoryPath, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_rename_directory_options.html">RenameDirectoryOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_rename_directory_options.html">RenameDirectoryOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Renames a directory. This API does not support renaming a directory from one share to another, or between storage accounts.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a4112505b0e1b7ca971ebfbdebf5b6151">Delete</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_directory_options.html">DeleteDirectoryOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_directory_options.html">DeleteDirectoryOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Deletes the directory.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_delete_directory_result.html">Models::DeleteDirectoryResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a52042c51034c80f710852dd6fd4f8c80">DeleteIfExists</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_directory_options.html">DeleteDirectoryOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_delete_directory_options.html">DeleteDirectoryOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Deletes the directory if it exists.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_delete_directory_result.html">Models::DeleteDirectoryResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#ac0d172b7a45cab3a29c921cf1d12d1bc">GetProperties</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_directory_properties_options.html">GetDirectoryPropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_directory_properties_options.html">GetDirectoryPropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Gets the properties of the directory.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_directory_properties.html">Models::DirectoryProperties</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a2e7c733b539b7058482e1bfe253b836e">SetProperties</a> (<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_smb_properties.html">Models::FileSmbProperties</a> smbProperties, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_properties_options.html">SetDirectoryPropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_properties_options.html">SetDirectoryPropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets the properties of the directory.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_directory_properties_result.html">Models::SetDirectoryPropertiesResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a4fd9af15e0c15c75e76b81ada8b8cbd5">SetMetadata</a> (Storage::Metadata metadata, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_metadata_options.html">SetDirectoryMetadataOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_metadata_options.html">SetDirectoryMetadataOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets the metadata of the directory.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_directory_metadata_result.html">Models::SetDirectoryMetadataResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a3d473b63dc78d60ae4238e19c25697d6">ListFilesAndDirectories</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options.html">ListFilesAndDirectoriesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options.html">ListFilesAndDirectoriesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns a sequence of files and subdirectories in this directory. Enumerating the files and directories may make multiple requests to the service while fetching all the values.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_paged_response.html">ListFilesAndDirectoriesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#ae5535079696c9a7345cc85d0bbd6a178">ListHandles</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_directory_handles_options.html">ListDirectoryHandlesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_directory_handles_options.html">ListDirectoryHandlesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns a sequence of the open handles on a directory or a file. Enumerating the handles may make multiple requests to the service while fetching all the values.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_directory_handles_paged_response.html">ListDirectoryHandlesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a074782604495407f22bd6cb7826bb1ef">ForceCloseHandle</a> (const std::string &amp;handleId, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_directory_handle_options.html">ForceCloseDirectoryHandleOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_directory_handle_options.html">ForceCloseDirectoryHandleOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Closes a handle opened on a directory at the service.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_force_close_directory_handle_result.html">Models::ForceCloseDirectoryHandleResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#af8547163f0a443dd8bf2abe079931b67">ForceCloseAllHandles</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_directory_handles_options.html">ForceCloseAllDirectoryHandlesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_directory_handles_options.html">ForceCloseAllDirectoryHandlesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Closes all handles opened on a directory at the service. Optionally supports recursively closing handles on subresources.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_directory_handles_paged_response.html">ForceCloseAllDirectoryHandlesPagedResponse</a>&#160;
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a54c856ea5373bfa383126679cb645a40">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;shareName, const std::string &amp;directoryName, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options.html">ShareClientOptions</a>())
+    summary: Create A <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> from connection string to manage a File Share Directory resource.
+    returnType: static <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a>&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: ShareClient
+    returnType: class&#160;
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: ShareDirectoryClient() [1/3]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareDirectoryUrl
+    summary: The URL of the directory this client's request targets.
+  - name: credential
+    summary: The shared key credential used to initialize the client.
+  - name: options
+    summary: Optional parameters used to initialize the client.
+- section: ShareDirectoryClient() [2/3]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareDirectoryUrl
+    summary: The URL of the directory this client's request targets.
+  - name: credential
+    summary: The token credential used to sign requests.
+  - name: options
+    summary: Optional parameters used to initialize the client.
+- section: ShareDirectoryClient() [3/3]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareDirectoryUrl
+    summary: The URL of the directory this client's request targets.
+  - name: options
+    summary: Optional parameters used to initialize the client.
+- section: Member Function Documentation
+  display: h2
+- section: Create()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to create this directory.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::CreateDirectoryResult&gt; containing the information returned when creating the directory.
+- section: CreateFromConnectionString()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: Azure Storage connection string.
+  - name: shareName
+    summary: The name of a file share.
+  - name: directoryName
+    summary: The name of a directory.
+  - name: options
+    summary: Optional parameters used to initialize the client.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html">ShareClient</a> The client that can be used to manage a share resource.
+- section: CreateIfNotExists()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to create this directory.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::CreateDirectoryResult&gt; containing the information returned when creating the directory if successfully created.
+- section: Delete()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to delete this directory.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::DeleteDirectoryResult&gt; containing the information returned when deleting the directory. Currently empty but preserved for future usage.
+- section: DeleteIfExists()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to delete this directory.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::DeleteDirectoryResult&gt; containing the information returned when deleting the directory. Currently empty but preserved for future usage. Only when the delete operation if successful, the returned information other than 'Deleted' is valid.
+- section: ForceCloseAllHandles()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to close all this directory's open handles.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_directory_handles_paged_response.html">ForceCloseAllDirectoryHandlesPagedResponse</a> containing the information of the closed handles.
+- section: ForceCloseHandle()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: handleId
+    summary: The ID of the handle to be closed.
+  - name: options
+    summary: Optional parameters to close one of this directory's open handles.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::ForceCloseDirectoryHandleResult&gt; containing the information of the closed handle. Current empty but preserved for future usage.
+- section: GetFileClient()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileName
+    summary: The name of the file.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html">ShareFileClient</a> A file client that can be used to manage a share file resource.
+- section: GetProperties()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to get this directory's properties.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::DirectoryProperties&gt; containing the properties of the directory returned from the server.
+- section: GetSubdirectoryClient()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: subdirectoryName
+    summary: The name of the subdirectory.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> A directory client that can be used to manage a share directory resource.
+- section: GetUrl()
+  display: h3
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The directory's primary URL endpoint.
+- section: ListFilesAndDirectories()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to list the files and directories under this directory.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_paged_response.html">ListFilesAndDirectoriesPagedResponse</a> describing the items in the directory.
+- section: ListHandles()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to list this directory's open handles.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_directory_handles_paged_response.html">ListDirectoryHandlesPagedResponse</a> describing the handles in the directory.
+- section: RenameFile()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileName
+    summary: The file that gets renamed.
+  - name: destinationFilePath
+    summary: The path of the file the source file is renaming to. The destination is an absolute path under the root of the share, without leading slash.
+  - name: options
+    summary: Optional parameters to rename a file.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;ShareFileClient&gt; The client targets the renamed file.
+- section: RenameSubdirectory()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: subdirectoryName
+    summary: The subdirectory that gets renamed.
+  - name: destinationDirectoryPath
+    summary: The destinationPath the source subdirectory is renaming to. The destination is an absolute path under the root of the share, without leading slash.
+  - name: options
+    summary: Optional parameters to rename a directory.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;ShareDirectoryClient&gt; The client targets the renamed directory.
+- section: SetMetadata()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: metadata
+    summary: User-defined metadata to be stored with the directory. Note that the string may only contain ASCII characters in the ISO-8859-1 character set.
+  - name: options
+    summary: Optional parameters to set this directory's metadata.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::SetDirectoryMetadataResult&gt; containing the information of the directory returned from the server.
+- section: SetProperties()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: smbProperties
+    summary: The SMB properties to be set to the directory.
+  - name: options
+    summary: Optional parameters to set this directory's properties.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::SetDirectoryPropertiesResult&gt; containing the properties of the directory returned from the server.
+- section: WithShareSnapshot()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareSnapshot
+    summary: The snapshot identifier for a share snapshot.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A new <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html">ShareDirectoryClient</a> instance.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: Pass empty string to remove the snapshot returning the directory client without specifying the share snapshot.

@@ -1,0 +1,113 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyProperties
+title: Azure::Security::KeyVault::Keys::KeyProperties Struct Reference
+components:
+- content: >-
+    <p>The resource containing all the properties of the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html">KeyVaultKey</a> except <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html">JsonWebKey</a> properties.  
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#details">More...</a></p><p><code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#ab577ccef3b92b3e2137c1427cf47263a">KeyProperties</a> ()=default
+    summary: Construct a new Key Properties object.
+    returnType: '&#160;'
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#a466f8672e30516670ef84bfe5006845d">KeyProperties</a> (std::string name)
+    summary: Construct a new Key Properties object.
+    returnType: '&#160;'
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#afb7148a4ae94d496bea1a3403be7ac4a">Name</a>
+    summary: The name of the key.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#a9e244401b19c6942f76e4c361075b741">Id</a>
+    summary: The key identifier.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#a75d82595ba6ea71fef49eb0937f52fa9">VaultUrl</a>
+    summary: The Key Vault base Url.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#a4f526435f0eb09c65674af8b7cb49255">Version</a>
+    summary: The version of the key.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#a9344c65b17aa3d3a3d2e8608672afe8d">Managed</a> = false
+    summary: Indicate whether the key's lifetime is managed by Key Vault. If this key is backing a Key Vault certificate, the value will be true.
+    returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#aacfb8be15619e9116c53b65accd0c98a">Tags</a>
+    summary: Dictionary of tags with specific metadata about the key.
+    returnType: std::unordered_map&lt; std::string, std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#add861e5cc4a65e87bd0f21f433e7dea0">Enabled</a>
+    summary: Indicate whether the key is enabled and useable for cryptographic operations.
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#af05e767ab4317d80f5bda63151c34d09">NotBefore</a>
+    summary: Indicate when the key will be valid and can be used for cryptographic operations.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#a6a77067016ce5bdb87aca90b61d0b697">ExpiresOn</a>
+    summary: Indicate when the key will expire and cannot be used for cryptographic operations.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#aee2ce0d31f44f6a62a95fcc8b30fcc81">CreatedOn</a>
+    summary: Indicate when the key was created.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#ad7bc6bdfac6a36c3ca48a04ee9ee64f6">UpdatedOn</a>
+    summary: Indicate when the key was updated.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#ab7879962ed22b53b24773bf87cbda924">RecoverableDays</a>
+    summary: The number of days a key is retained before being deleted for a soft delete-enabled Key Vault.
+    returnType: Azure::Nullable&lt; int &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#a8a6551d7ade05ea0f59d5eb56b4f7d34">RecoveryLevel</a>
+    summary: The recovery level currently in effect for keys in the Key Vault.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#abb27fcc70b18a8865985fb1cb3ca03c4">ReleasePolicy</a>
+    summary: The policy rules under which the key can be exported.
+    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_release_policy.html">KeyReleasePolicy</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html#aabf2055aec9e77913d093165f4daef3c">Exportable</a>
+    summary: Indicates if the private key can be exported.
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: KeyProperties() [1/2]
+  display: h3
+- section: KeyProperties() [2/2]
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: The name of the key.
+- section: Member Data Documentation
+  display: h2
+- section: CreatedOn
+  display: h3
+- section: Enabled
+  display: h3
+- section: ExpiresOn
+  display: h3
+- section: Exportable
+  display: h3
+- section: Id
+  display: h3
+- section: Managed
+  display: h3
+- section: Name
+  display: h3
+- section: NotBefore
+  display: h3
+- section: RecoverableDays
+  display: h3
+- section: RecoveryLevel
+  display: h3
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: If Purgeable, the key can be permanently deleted by an authorized user; otherwise, only the service can purge the keys at the end of the retention interval.
+- section: ReleasePolicy
+  display: h3
+- section: Tags
+  display: h3
+- section: UpdatedOn
+  display: h3
+- section: VaultUrl
+  display: h3
+- section: Version
+  display: h3

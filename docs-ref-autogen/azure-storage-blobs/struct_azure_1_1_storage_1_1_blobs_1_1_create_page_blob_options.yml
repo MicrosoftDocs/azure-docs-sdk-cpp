@@ -1,0 +1,41 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ACreatePageBlobOptions
+title: Azure::Storage::Blobs::CreatePageBlobOptions Struct Reference
+components:
+- content: >-
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html#aeabef65efdfb4fd8f2283205bd188c15">Azure::Storage::Blobs::PageBlobClient::Create</a>.  
+
+    </p><p><code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: SequenceNumber
+    summary: The sequence number is a user-controlled value that you can use to track requests. The value of the sequence number must be between 0 and 2^63 - 1.
+    returnType: Azure::Nullable&lt; int64_t &gt;&#160;
+  - declaration: HttpHeaders
+    summary: The standard HTTP header system properties to set.
+    returnType: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_http_headers.html">Models::BlobHttpHeaders</a>&#160;
+  - declaration: Metadata
+    summary: Name-value pairs associated with the blob as metadata.
+    returnType: Storage::Metadata&#160;
+  - declaration: AccessTier
+    summary: Indicates the tier to be set on blob.
+    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.html">Models::AccessTier</a> &gt;&#160;
+  - declaration: Tags
+    summary: The tags to set for this blob.
+    returnType: std::map&lt; std::string, std::string &gt;&#160;
+  - declaration: AccessConditions
+    summary: Optional conditions that must be met to perform this operation.
+    returnType: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions.html">BlobAccessConditions</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_page_blob_options.html#a1fd4dac2857cb799206ea3af7203d118">ImmutabilityPolicy</a>
+    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy.html">Models::BlobImmutabilityPolicy</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_page_blob_options.html#adf869fce3aff52a0230a82545be181e9">HasLegalHold</a>
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+- section: Member Data Documentation
+  display: h2
+- section: HasLegalHold
+  display: h3
+- content: <p>Indicates whether the blob has a legal hold. </p>
+- section: ImmutabilityPolicy
+  display: h3
+- content: <p>Immutability policy to set on the blob. </p>

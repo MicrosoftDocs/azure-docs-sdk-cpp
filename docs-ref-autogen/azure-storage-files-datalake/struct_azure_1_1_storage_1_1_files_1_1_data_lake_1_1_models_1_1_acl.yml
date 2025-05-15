@@ -1,0 +1,94 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3AAcl
+title: Azure::Storage::Files::DataLake::Models::Acl Struct Reference
+components:
+- content: >-
+    <p>An access control object.  
+
+    </p><p><code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code></p>
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#a67e35eae234cc7a52961f0d073079f7e">FromString</a> (const std::string &amp;aclString)
+    summary: Creates an <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a> based on acl input string.
+    returnType: static <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#a056e034d2949974ba082f8e61a494b11">ToString</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a> &amp;acl)
+    summary: Creates a string from an <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a>.
+    returnType: static std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#a497cb93f299518d80db872224db26fa4">DeserializeAcls</a> (const std::string &amp;aclsString)
+    summary: Creates a vector of <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a> from a string that indicates multiple acls.
+    returnType: static std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#ae9ebb24556e109ff148c50bc9491da13">SerializeAcls</a> (const std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a> &gt; &amp;aclsArray)
+    summary: Creates a string that contains several Acls.
+    returnType: static std::string&#160;
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#aca555d40f8c96b5dca49b30d38064516">Scope</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#aa7186a6cf4da399d69e8810d8e727e10">Type</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#acfc5f1903559ba916a6cba17f82f2e1d">Id</a>
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html#a83ef29bd8fcc6c4dd95bf4790b8ca98e">Permissions</a>
+    returnType: std::string&#160;
+- section: Member Function Documentation
+  display: h2
+- section: DeserializeAcls()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: aclsString
+    summary: the string that contains multiple acls.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: std::vector&lt;Acl&gt;
+- section: FromString()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: aclString
+    summary: the string to be parsed to <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a>.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a>
+- section: SerializeAcls()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: aclsArray
+    summary: the acls to be serialized into a string.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: std::string
+- section: ToString()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: acl
+    summary: the acl object to be serialized to a string.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: std::string
+- section: Member Data Documentation
+  display: h2
+- section: Id
+  display: h3
+- content: <p>The ID of the ACL. </p>
+- section: Permissions
+  display: h3
+- content: <p>The permissions of the ACL. </p>
+- section: Scope
+  display: h3
+- content: <p>The scope of the ACL. </p>
+- section: Type
+  display: h3
+- content: <p>The type of the ACL. </p>

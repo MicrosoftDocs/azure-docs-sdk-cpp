@@ -1,0 +1,259 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters
+title: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters Class Reference
+components:
+- content: >-
+    <p>Parameters for decrypting ciphertext.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#details">More...</a></p><p><code>#include &lt;<a href="cryptography__client__models_8hpp_source.html">cryptography_client_models.hpp</a>&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a72ce69176a45b1cce5259145ab608a89">DecryptParameters</a> (<a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html">EncryptionAlgorithm</a> algorithm, std::vector&lt; uint8_t &gt; const ciphertext)
+    summary: Construct a new Decrypt Parameters object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a4443c004f20c069d66a7693b4b76ebfe">GetIv</a> () const
+    summary: Gets the initialization vector for decryption.
+    returnType: std::vector&lt; uint8_t &gt; const &amp;&#160;
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a1a884def7587d04686c5cd89eab5c53b">Rsa15Parameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext)
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a6ef7a7e3385aa538fec5a6ae774988f5">EncryptionAlgorithm::Rsa15</a> encryption algorithm.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#afc752fa6e4da5febbab37f532dddee64">RsaOaepParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext)
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a582ddaa921770c3cb48b0fd2b3529305">EncryptionAlgorithm::RsaOaep</a> encryption algorithm.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a9a35251170167dbc87def5a08303f633">RsaOaep256Parameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext)
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a7e0a612fecb3ce377fb54151e88a8406">EncryptionAlgorithm::RsaOaep256</a> encryption algorithm.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a146c44eafedde5d2a69c53baccd8439e">A128GcmParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv, std::vector&lt; uint8_t &gt; const &amp;authenticationTag, std::vector&lt; uint8_t &gt; const &amp;additionalAuthenticationData={})
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a0605e558304bf20e5c65d02f83b63c94">EncryptionAlgorithm::A128Gcm</a> encryption algorithm. The nonce will be generated automatically and returned in the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> after encryption.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a7eebd983bc0a3d09e37d879e26c4d279">A192GcmParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv, std::vector&lt; uint8_t &gt; const &amp;authenticationTag, std::vector&lt; uint8_t &gt; const &amp;additionalAuthenticationData={})
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a64395beb114d3832328e19c38e98dbf3">EncryptionAlgorithm::A192Gcm</a> encryption algorithm. The nonce will be generated automatically and returned in the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> after encryption.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a3fac2985b932fb280605ed653f488dad">A256GcmParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv, std::vector&lt; uint8_t &gt; const &amp;authenticationTag, std::vector&lt; uint8_t &gt; const &amp;additionalAuthenticationData={})
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a6fd409cabbe735987bec19e727345a98">EncryptionAlgorithm::A256Gcm</a> encryption algorithm. The nonce will be generated automatically and returned in the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> after encryption.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a6f21310543a0c96eb24ebc326baf9645">A128CbcParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a40d1922421ed85173e57f97f3216c49c">EncryptionAlgorithm::A128Cbc</a> encryption algorithm.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a813394f4a7c58e67b9890dc062374b2c">A192CbcParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a68bc2862f7a71544d9e595ce93f0c4ea">EncryptionAlgorithm::A192Cbc</a> encryption algorithm.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#ad3a10e6ff95c78d91f4eb3632c9ba3df">A256CbcParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#ae381032fba1cb064054ad6b8f12444e5">EncryptionAlgorithm::A256Cbc</a> encryption algorithm.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a2b09d8ca2e635e770cd2fa26927b8338">A128CbcPadParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a1b78111dd64ffe1b3deced85abfc945c">EncryptionAlgorithm::A128CbcPad</a> encryption algorithm with PKCS#7 padding.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#af4608141974199bd1c1cd4006e71cdb8">A192CbcPadParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#ab9a8f9b9de27038911ab9970632c4b2d">EncryptionAlgorithm::A192CbcPad</a> encryption algorithm with PKCS#7 padding.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#acc810e63b11e87f329d1d59bbab6defa">A256CbcPadParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
+    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a80b0dcfd2d16cd1b2cba0fe4a647d17f">EncryptionAlgorithm::A256CbcPad</a> encryption algorithm with PKCS#7 padding.
+    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a>&#160;
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a3d53fc2ad26fcd805065856312df0baf">Algorithm</a>
+    summary: Gets or sets the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm</a>.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html">EncryptionAlgorithm</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a467c11dcfb2c81dafc0dc69b48ed80e4">Ciphertext</a>
+    summary: Gets the ciphertext to decrypt.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#ab668c631fcfae9b8be8f9b2ee437dd93">AdditionalAuthenticatedData</a>
+    summary: Gets additional data that is authenticated during decryption but not encrypted.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#acb0ca632adc1f404ecc24192155e98d6">AuthenticationTag</a>
+    summary: Gets the authenticated tag resulting from encryption with a symmetric key using AES.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- section: DecryptParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: algorithm
+    summary: The <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm</a> to use for decrypt operation.
+  - name: ciphertext
+    summary: The content to decrypt.
+- section: Member Function Documentation
+  display: h2
+- section: A128CbcPadParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+  - name: iv
+    summary: Optional initialization vector. If null, a cryptographically random initialization vector will be generated using RandomNumberGenerator.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a1b78111dd64ffe1b3deced85abfc945c">EncryptionAlgorithm::A128CbcPad</a> encryption algorithm.
+- section: A128CbcParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+  - name: iv
+    summary: Optional initialization vector. If null, a cryptographically random initialization vector will be generated using RandomNumberGenerator.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a40d1922421ed85173e57f97f3216c49c">EncryptionAlgorithm::A128Cbc</a> encryption algorithm.
+- section: A128GcmParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+  - name: iv
+    summary: The initialization vector (or nonce) generated during encryption.
+  - name: authenticationTag
+    summary: The authentication tag generated during encryption.
+  - name: additionalAuthenticationData
+    summary: Optional data that is authenticated but not encrypted.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a0605e558304bf20e5c65d02f83b63c94">EncryptionAlgorithm::A128Gcm</a> encryption algorithm.
+- section: A192CbcPadParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+  - name: iv
+    summary: Optional initialization vector. If null, a cryptographically random initialization vector will be generated using RandomNumberGenerator.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#ab9a8f9b9de27038911ab9970632c4b2d">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm::A192CbcPad</a> encryption algorithm.
+- section: A192CbcParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+  - name: iv
+    summary: Optional initialization vector. If null, a cryptographically random initialization vector will be generated using RandomNumberGenerator.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a68bc2862f7a71544d9e595ce93f0c4ea">EncryptionAlgorithm::A192Cbc</a> encryption algorithm.
+- section: A192GcmParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+  - name: iv
+    summary: The initialization vector (or nonce) generated during encryption.
+  - name: authenticationTag
+    summary: The authentication tag generated during encryption.
+  - name: additionalAuthenticationData
+    summary: Optional data that is authenticated but not encrypted.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a64395beb114d3832328e19c38e98dbf3">EncryptionAlgorithm::A192Gcm</a> encryption algorithm.
+- section: A256CbcPadParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+  - name: iv
+    summary: Optional initialization vector. If null, a cryptographically random initialization vector will be generated using RandomNumberGenerator.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a80b0dcfd2d16cd1b2cba0fe4a647d17f">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm::A256CbcPad</a> encryption algorithm.
+- section: A256CbcParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+  - name: iv
+    summary: Optional initialization vector. If null, a cryptographically random initialization vector will be generated using RandomNumberGenerator.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a68bc2862f7a71544d9e595ce93f0c4ea">EncryptionAlgorithm::A192Cbc</a> encryption algorithm.
+- section: A256GcmParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+  - name: iv
+    summary: The initialization vector (or nonce) generated during encryption.
+  - name: authenticationTag
+    summary: The authentication tag generated during encryption.
+  - name: additionalAuthenticationData
+    summary: Optional data that is authenticated but not encrypted.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a6fd409cabbe735987bec19e727345a98">EncryptionAlgorithm::A256Gcm</a> encryption algorithm.
+- section: GetIv()
+  display: h3
+- section: Rsa15Parameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a6ef7a7e3385aa538fec5a6ae774988f5">EncryptionAlgorithm::Rsa15</a> encryption algorithm.
+- section: RsaOaep256Parameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a7e0a612fecb3ce377fb54151e88a8406">EncryptionAlgorithm::RsaOaep256</a> encryption algorithm.
+- section: RsaOaepParameters()
+  display: h3
+- section: Parameters
+  display: h4
+- parameters:
+  - name: ciphertext
+    summary: The ciphertext to decrypt.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a582ddaa921770c3cb48b0fd2b3529305">EncryptionAlgorithm::RsaOaep</a> encryption algorithm.
+- section: Member Data Documentation
+  display: h2
+- section: AdditionalAuthenticatedData
+  display: h3
+- section: Algorithm
+  display: h3
+- section: AuthenticationTag
+  display: h3
+- section: Ciphertext
+  display: h3

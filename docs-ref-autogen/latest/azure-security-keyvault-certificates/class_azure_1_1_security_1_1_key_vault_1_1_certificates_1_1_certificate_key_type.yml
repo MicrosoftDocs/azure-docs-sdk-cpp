@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Certificates::CertificateKeyType
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateKeyType
 title: Azure::Security::KeyVault::Certificates::CertificateKeyType Class Reference
 components:
 - content: >-
@@ -43,32 +43,42 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: CertificateKeyType() [1/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Certificates::CertificateKeyType::CertificateKeyType(std::string&#160;keyType) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: keyType
     summary: The type of the certificate.
 - section: CertificateKeyType() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Certificates::CertificateKeyType::CertificateKeyType() default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: operator!=()
-  display: h2
+  display: h3
+- declaration: bool Azure::Security::KeyVault::Certificates::CertificateKeyType::operator!=(const CertificateKeyType &amp;&#160;other)const inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: A JWT to be compared.
 - section: operator==()
-  display: h2
+  display: h3
+- declaration: bool Azure::Security::KeyVault::Certificates::CertificateKeyType::operator==(const CertificateKeyType &amp;&#160;other)const inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: A JWT to be compared.
 - section: ToString()
-  display: h2
+  display: h3
+- declaration: std::string const  &amp; Azure::Security::KeyVault::Certificates::CertificateKeyType::ToString()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
@@ -76,18 +86,18 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Ec
-  display: h2
+  display: h3
+- declaration: const CertificateKeyType Azure::Security::KeyVault::Certificates::CertificateKeyType::Ec static
+  languageId: cpp
 - section: EcHsm
-  display: h2
+  display: h3
+- declaration: const CertificateKeyType Azure::Security::KeyVault::Certificates::CertificateKeyType::EcHsm static
+  languageId: cpp
 - section: Rsa
-  display: h2
+  display: h3
+- declaration: const CertificateKeyType Azure::Security::KeyVault::Certificates::CertificateKeyType::Rsa static
+  languageId: cpp
 - section: RsaHsm
-  display: h2
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/keyvault/certificates/<a href="certificate__client__models_8hpp_source.html">certificate_client_models.hpp</a></li>
-
-    <li>src/private/<a href="certificate__key__usage_8hpp_source.html">certificate_key_usage.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: const CertificateKeyType Azure::Security::KeyVault::Certificates::CertificateKeyType::RsaHsm static
+  languageId: cpp

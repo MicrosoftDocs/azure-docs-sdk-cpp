@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Nullable&lt;
+uid: Azure%3A%3ANullable%3C%20T%20%3E
 title: Azure::Nullable&lt; T &gt; Class Template Reference
 components:
 - content: >-
@@ -33,7 +33,7 @@ components:
     summary: Assignment operator.
     returnType: <a href="class_azure_1_1_nullable.html">Nullable</a> &amp;&#160;
   - declaration: operator= (<a href="class_azure_1_1_nullable.html">Nullable</a> &amp;&amp;other) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
-    summary: Assignment operator with move semantics.
+    summary: Construct the contained value in-place.
     returnType: <a href="class_azure_1_1_nullable.html">Nullable</a> &amp;&#160;
   - declaration: <a href="class_azure_1_1_nullable.html#a9a0c797c4eb208551e045de2d97809f7">HasValue</a> () const noexcept
     summary: Check whether a value is contained.
@@ -66,7 +66,7 @@ components:
     summary: Accesses the contained value.
     returnType: constexpr T &amp;&amp;&#160;
   - declaration: <a href="class_azure_1_1_nullable.html#abf7a0ba296829896efafa19544be5ef9">operator*</a> () const &amp;&amp;
-    summary: Accesses the contained value.
+    summary: Get the contained value, returns <code>other</code> if value is absent.
     returnType: constexpr const T &amp;&amp;&#160;
 - section: Friends
   display: h2
@@ -80,123 +80,166 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: Nullable() [1/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: constexpr Azure::Nullable&lt; T &gt;::Nullable() inline constexpr
+  languageId: cpp
 - section: Nullable() [2/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: constexpr Azure::Nullable&lt; T &gt;::Nullable(T&#160;initialValue) inline constexpr noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: initialValue
     summary: A non-absent value to initialize with.
 - section: Nullable() [3/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Nullable&lt; T &gt;::Nullable(const Nullable&lt; T &gt; &amp;&#160;other) inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: Another <code>Nullable</code> instance to copy.
 - section: Nullable() [4/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Nullable&lt; T &gt;::Nullable(Nullable&lt; T &gt; &amp;&amp;&#160;other) inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: A <code>Nullable</code> instance to move into the instance being constructed.
 - section: ~Nullable()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Nullable&lt; T &gt;::~Nullable() inline
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: Emplace()
-  display: h2
-- content: template&lt;class T &gt;template&lt;class... U&gt;<p>If this instance already contains a value before the call, the contained value is destroyed by calling its destructor. </p>
+  display: h3
+- content: template&lt;class T &gt;template&lt;class... U&gt;
+- declaration: T &amp; Azure::Nullable&lt; T &gt;::Emplace(U &amp;&amp;...&#160;Args) inline noexcept
+  languageId: cpp
+- content: <p>If this instance already contains a value before the call, the contained value is destroyed by calling its destructor. </p>
 - section: HasValue()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: bool Azure::Nullable&lt; T &gt;::HasValue()const inline noexcept
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> If a value is contained, <code>false</code> if value is absent.
 - section: operator bool()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: constexpr Azure::Nullable&lt; T &gt;::operator bool()const inline explicit constexpr noexcept
+  languageId: cpp
 - section: operator*() [1/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: constexpr T &amp; Azure::Nullable&lt; T &gt;::operator*()&amp; inline constexpr
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a reference to the contained value.
 - section: operator*() [2/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: constexpr T &amp;&amp; Azure::Nullable&lt; T &gt;::operator*()&amp;&amp; inline constexpr
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a reference to the contained value.
 - section: operator*() [3/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: constexpr const T &amp; Azure::Nullable&lt; T &gt;::operator*()const &amp; inline constexpr
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a reference to the contained value.
 - section: operator*() [4/4]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: constexpr const T &amp;&amp; Azure::Nullable&lt; T &gt;::operator*()const &amp;&amp; inline constexpr
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a reference to the contained value.
 - section: operator-&gt;() [1/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: constexpr T * Azure::Nullable&lt; T &gt;::operator-&gt;() inline constexpr
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a pointer to the contained value.
 - section: operator-&gt;() [2/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: constexpr const T * Azure::Nullable&lt; T &gt;::operator-&gt;()const inline constexpr
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Returns a pointer to the contained value.
 - section: operator=()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;template&lt;class U  = T, typename std::enable_if&lt; !std::is_same&lt;Nullable, typename std::remove_cv&lt; typename std::remove_reference&lt; U &gt;::type &gt;::type &gt;::value &amp;&amp;!(std::is_scalar&lt; U &gt;::value &amp;&amp;std::is_same&lt; T, typename std::decay&lt; U &gt;::type &gt;::value) &amp;&amp;std::is_constructible&lt; T, U &gt;::value &amp;&amp;std::is_assignable&lt; T &amp;, U &gt;::value, int &gt;::type  = 0&gt;
+- declaration: Nullable &amp; Azure::Nullable&lt; T &gt;::operator=(U &amp;&amp;&#160;other) inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: Other <a href="class_azure_1_1_nullable.html">Azure::Nullable</a>.
 - section: Reset()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: void Azure::Nullable&lt; T &gt;::Reset() inline noexcept
+  languageId: cpp
 - section: Swap()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: void Azure::Nullable&lt; T &gt;::Swap(Nullable&lt; T &gt; &amp;&#160;other) inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: An instance to exchange the contents with.
 - section: Value() [1/3]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: T &amp;&amp; Azure::Nullable&lt; T &gt;::Value()&amp;&amp; inline noexcept
+  languageId: cpp
 - section: Value() [2/3]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: T &amp; Azure::Nullable&lt; T &gt;::Value()&amp; inline noexcept
+  languageId: cpp
 - section: Value() [3/3]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: const T &amp; Azure::Nullable&lt; T &gt;::Value()const &amp; inline noexcept
+  languageId: cpp
 - section: ValueOr() [1/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;template&lt;class U  = T, typename std::enable_if&lt; std::is_convertible&lt; T, typename std::remove_cv&lt; T &gt;::type &gt;::value &amp;&amp;std::is_convertible&lt; U, T &gt;::value, int &gt;::type  = 0&gt;
+- declaration: constexpr std::remove_cv&lt; T &gt;::type Azure::Nullable&lt; T &gt;::ValueOr(U &amp;&amp;&#160;other)&amp;&amp; inline constexpr
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -207,8 +250,10 @@ components:
 - parameters:
   - summary: A contained value (when present), or <code>other</code>.
 - section: ValueOr() [2/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;template&lt;class U  = T, typename std::enable_if&lt; std::is_convertible&lt; const T &amp;, typename std::remove_cv&lt; T &gt;::type &gt;::value &amp;&amp;std::is_convertible&lt; U, T &gt;::value, int &gt;::type  = 0&gt;
+- declaration: constexpr std::remove_cv&lt; T &gt;::type Azure::Nullable&lt; T &gt;::ValueOr(U &amp;&amp;&#160;other)const &amp; inline constexpr
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -221,10 +266,11 @@ components:
 - section: Friends And Related Symbol Documentation
   display: h2
 - section: swap
-  display: h2
-- content: >-
-    template&lt;class T &gt;<p>Swappable requirements: <a href="https://en.cppreference.com/w/cpp/named_req/Swappable">https://en.cppreference.com/w/cpp/named_req/Swappable</a> </p>The documentation for this class was generated from the following file:<ul>
-
-    <li>inc/azure/core/<a href="nullable_8hpp_source.html">nullable.hpp</a></li>
-
-    </ul>
+  display: h3
+- content: template&lt;class T &gt;
+- declaration: >-
+    void swap(Nullable&lt; T &gt; &amp;&#160;lhs,
+              Nullable&lt; T &gt; &amp;&#160;rhs&#160;
+             ) friend
+  languageId: cpp
+- content: '<p>Swappable requirements: <a href="https://en.cppreference.com/w/cpp/named_req/Swappable">https://en.cppreference.com/w/cpp/named_req/Swappable</a> </p>'

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::DeletePathOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADeletePathOptions
 title: Azure::Storage::Files::DataLake::DeletePathOptions Struct Reference
 components:
 - content: >-
@@ -21,13 +21,12 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessConditions
-  display: h2
+  display: h3
+- declaration: PathAccessConditions Azure::Storage::Files::DataLake::DeletePathOptions::AccessConditions
+  languageId: cpp
 - content: <p>Specify the access condition for the path. </p>
 - section: Recursive
-  display: h2
-- content: >-
-    <p>Required and valid only when the resource is a directory. If "true", all paths beneath the directory will be deleted. If "false" and the directory is non-empty, an error occurs. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::DeletePathOptions::Recursive
+  languageId: cpp
+- content: <p>Required and valid only when the resource is a directory. If "true", all paths beneath the directory will be deleted. If "false" and the directory is non-empty, an error occurs. </p>

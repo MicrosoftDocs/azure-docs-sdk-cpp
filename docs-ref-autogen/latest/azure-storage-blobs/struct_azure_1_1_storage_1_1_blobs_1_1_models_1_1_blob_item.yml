@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::Models::BlobItem
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ABlobItem
 title: Azure::Storage::Blobs::Models::BlobItem Struct Reference
 components:
 - content: >-
@@ -30,34 +30,47 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: BlobSize
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Storage::Blobs::Models::BlobItem::BlobSize = int64_t()
+  languageId: cpp
 - content: <p>Size in bytes. </p>
 - section: BlobType
-  display: h2
+  display: h3
+- declaration: Models::BlobType Azure::Storage::Blobs::Models::BlobItem::BlobType
+  languageId: cpp
 - content: <p>Type of the blob. </p>
 - section: Details
-  display: h2
+  display: h3
+- declaration: BlobItemDetails Azure::Storage::Blobs::Models::BlobItem::Details
+  languageId: cpp
 - content: <p>Properties of a blob. </p>
 - section: HasVersionsOnly
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::BlobItem::HasVersionsOnly
+  languageId: cpp
 - content: <p>Indicates that this root blob has been deleted, but it has versions that are active. </p>
 - section: IsCurrentVersion
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::BlobItem::IsCurrentVersion
+  languageId: cpp
 - content: <p>Indicates if this is the current version of the blob. </p>
 - section: IsDeleted
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Blobs::Models::BlobItem::IsDeleted = bool()
+  languageId: cpp
 - content: <p>Indicates whether this blob was deleted. </p>
 - section: Name
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Blobs::Models::BlobItem::Name
+  languageId: cpp
 - content: <p>Blob name. </p>
 - section: Snapshot
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Blobs::Models::BlobItem::Snapshot
+  languageId: cpp
 - content: <p>A string value that uniquely identifies a blob snapshot. </p>
 - section: VersionId
-  display: h2
-- content: >-
-    <p>A string value that uniquely identifies a blob version. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="blob__responses_8hpp_source.html">blob_responses.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobItem::VersionId
+  languageId: cpp
+- content: <p>A string value that uniquely identifies a blob version. </p>

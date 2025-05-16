@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::Models::BlobServiceProperties
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ABlobServiceProperties
 title: Azure::Storage::Blobs::Models::BlobServiceProperties Struct Reference
 components:
 - content: >-
@@ -26,28 +26,37 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Cors
-  display: h2
+  display: h3
+- declaration: std::vector&lt;CorsRule&gt; Azure::Storage::Blobs::Models::BlobServiceProperties::Cors
+  languageId: cpp
 - content: <p>The set of CORS rules. </p>
 - section: DefaultServiceVersion
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobServiceProperties::DefaultServiceVersion
+  languageId: cpp
 - content: <p>The default version to use for requests to the Blob service if an incoming request's version is not specified. Possible values include version 2008-10-27 and all more recent versions. </p>
 - section: DeleteRetentionPolicy
-  display: h2
+  display: h3
+- declaration: RetentionPolicy Azure::Storage::Blobs::Models::BlobServiceProperties::DeleteRetentionPolicy
+  languageId: cpp
 - content: <p>The retention policy which determines how long the associated data should persist. </p>
 - section: HourMetrics
-  display: h2
+  display: h3
+- declaration: Metrics Azure::Storage::Blobs::Models::BlobServiceProperties::HourMetrics
+  languageId: cpp
 - content: <p>A summary of request statistics grouped by API in hour or minute aggregates for blobs. </p>
 - section: Logging
-  display: h2
+  display: h3
+- declaration: AnalyticsLogging Azure::Storage::Blobs::Models::BlobServiceProperties::Logging
+  languageId: cpp
 - content: <p>Azure Analytics Logging settings. </p>
 - section: MinuteMetrics
-  display: h2
+  display: h3
+- declaration: Metrics Azure::Storage::Blobs::Models::BlobServiceProperties::MinuteMetrics
+  languageId: cpp
 - content: <p>A summary of request statistics grouped by API in hour or minute aggregates for blobs. </p>
 - section: StaticWebsite
-  display: h2
-- content: >-
-    <p>The properties that enable an account to host a static website. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Models::StaticWebsite Azure::Storage::Blobs::Models::BlobServiceProperties::StaticWebsite
+  languageId: cpp
+- content: <p>The properties that enable an account to host a static website. </p>

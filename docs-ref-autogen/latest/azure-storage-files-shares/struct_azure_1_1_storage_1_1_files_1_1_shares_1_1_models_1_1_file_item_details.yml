@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::FileItemDetails
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AFileItemDetails
 title: Azure::Storage::Files::Shares::Models::FileItemDetails Struct Reference
 components:
 - content: >-
@@ -22,22 +22,27 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Etag
-  display: h2
+  display: h3
+- declaration: ETag Azure::Storage::Files::Shares::Models::FileItemDetails::Etag
+  languageId: cpp
 - content: <p>The ETag contains a value which represents the version of the file, in quotes. </p>
 - section: FileSize
-  display: h2
+  display: h3
+- declaration: std::int64_t Azure::Storage::Files::Shares::Models::FileItemDetails::FileSize = std::int64_t()
+  languageId: cpp
 - content: <p>Content length of the file. This value may not be up-to-date since an SMB client may have modified the file locally. The value of Content-Length may not reflect that fact until the handle is closed or the op-lock is broken. To retrieve current property values, call Get File Properties. </p>
 - section: LastAccessedOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Files::Shares::Models::FileItemDetails::LastAccessedOn
+  languageId: cpp
 - content: <p>The time the file was last accessed. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::Shares::Models::FileItemDetails::LastModified
+  languageId: cpp
 - content: <p>The date and time the file was last modified. </p>
 - section: SmbProperties
-  display: h2
-- content: >-
-    <p>The SMB related properties for the file. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: FileSmbProperties Azure::Storage::Files::Shares::Models::FileItemDetails::SmbProperties
+  languageId: cpp
+- content: <p>The SMB related properties for the file. </p>

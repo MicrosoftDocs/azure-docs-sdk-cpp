@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Sas::AccountSasBuilder
+uid: Azure%3A%3AStorage%3A%3ASas%3A%3AAccountSasBuilder
 title: Azure::Storage::Sas::AccountSasBuilder Struct Reference
 components:
 - content: >-
@@ -47,7 +47,9 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: GenerateSasStringToSign()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Sas::AccountSasBuilder::GenerateSasStringToSign(const StorageSharedKeyCredential &amp;&#160;credential)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -58,7 +60,9 @@ components:
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
 - section: GenerateSasToken()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Sas::AccountSasBuilder::GenerateSasToken(const StorageSharedKeyCredential &amp;&#160;credential)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -69,14 +73,18 @@ components:
 - parameters:
   - summary: The SAS query parameters used for authenticating requests.
 - section: SetPermissions() [1/2]
-  display: h2
+  display: h3
+- declaration: void Azure::Storage::Sas::AccountSasBuilder::SetPermissions(AccountSasPermissions&#160;permissions)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: permissions
     summary: The allowed permissions.
 - section: SetPermissions() [2/2]
-  display: h2
+  display: h3
+- declaration: void Azure::Storage::Sas::AccountSasBuilder::SetPermissions(std::string&#160;rawPermissions) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -85,10 +93,7 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: ResourceTypes
-  display: h2
-- content: >-
-    <p>The resource types associated with the shared access signature. The user is restricted to operations on the specified resources. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/common/<a href="account__sas__builder_8hpp_source.html">account_sas_builder.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: AccountSasResource Azure::Storage::Sas::AccountSasBuilder::ResourceTypes
+  languageId: cpp
+- content: <p>The resource types associated with the shared access signature. The user is restricted to operations on the specified resources. </p>

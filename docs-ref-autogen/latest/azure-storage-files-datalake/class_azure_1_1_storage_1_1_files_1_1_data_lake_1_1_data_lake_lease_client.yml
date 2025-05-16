@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::DataLakeLeaseClient
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeLeaseClient
 title: Azure::Storage::Files::DataLake::DataLakeLeaseClient Class Reference
 components:
 - content: >-
@@ -48,7 +48,12 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: DataLakeLeaseClient() [1/2]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Files::DataLake::DataLakeLeaseClient::DataLakeLeaseClient(DataLakePathClient&#160;pathClient,
+                                                                              std::string&#160;       leaseId&#160;   
+                                                                             ) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -57,7 +62,12 @@ components:
   - name: leaseId
     summary: A lease ID. This is not required for break operation.
 - section: DataLakeLeaseClient() [2/2]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Files::DataLake::DataLakeLeaseClient::DataLakeLeaseClient(DataLakeFileSystemClient&#160;fileSystemClient,
+                                                                              std::string&#160;             leaseId&#160;         
+                                                                             ) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -68,7 +78,13 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: Acquire()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::AcquireLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Acquire(std::chrono::seconds&#160;        duration,                        
+                                                                                                                const AcquireLeaseOptions &amp;&#160; options = AcquireLeaseOptions(), 
+                                                                                                                const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                               ) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -83,7 +99,12 @@ components:
 - parameters:
   - summary: An AcquireLeaseResult describing the lease.
 - section: Break()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::BreakLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Break(const BreakLeaseOptions &amp;&#160;   options = BreakLeaseOptions(),   
+                                                                                                            const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                           ) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -96,7 +117,13 @@ components:
 - parameters:
   - summary: A BreakLeaseResult describing the broken lease.
 - section: Change()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::ChangeLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Change(const std::string &amp;&#160;         proposedLeaseId,                 
+                                                                                                              const ChangeLeaseOptions &amp;&#160;  options = ChangeLeaseOptions(),  
+                                                                                                              const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                             ) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -115,19 +142,28 @@ components:
 - parameters:
   - summary: The current <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_lease_client.html">DataLakeLeaseClient</a> becomes invalid if this operation succeeds.
 - section: CreateUniqueLeaseId()
-  display: h2
+  display: h3
+- declaration: static std::string Azure::Storage::Files::DataLake::DataLakeLeaseClient::CreateUniqueLeaseId() inline static
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: A unique lease ID.
 - section: GetLeaseId()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::DataLakeLeaseClient::GetLeaseId() inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Lease ID of this lease client.
 - section: Release()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::ReleaseLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Release(const ReleaseLeaseOptions &amp;&#160; options = ReleaseLeaseOptions(), 
+                                                                                                                const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                               ) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -140,7 +176,12 @@ components:
 - parameters:
   - summary: A ReleaseLeaseResult describing the updated container or blob.
 - section: Renew()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::RenewLeaseResult &gt; Azure::Storage::Files::DataLake::DataLakeLeaseClient::Renew(const RenewLeaseOptions &amp;&#160;   options = RenewLeaseOptions(),   
+                                                                                                            const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                           ) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -152,11 +193,3 @@ components:
   display: h4
 - parameters:
   - summary: A RenewLeaseResult describing the lease.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__lease__client_8hpp_source.html">datalake_lease_client.hpp</a></li>
-
-    <li>src/datalake_lease_client.cpp</li>
-
-    </ul>

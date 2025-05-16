@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::KeyVaultKeyType
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType
 title: Azure::Security::KeyVault::Keys::KeyVaultKeyType Class Reference
 components:
 - content: >-
@@ -46,25 +46,33 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: KeyVaultKeyType() [1/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Keys::KeyVaultKeyType::KeyVaultKeyType(std::string&#160;jwt) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: jwt
     summary: The JWT as a string.
 - section: KeyVaultKeyType() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Keys::KeyVaultKeyType::KeyVaultKeyType() default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: operator==()
-  display: h2
+  display: h3
+- declaration: bool Azure::Security::KeyVault::Keys::KeyVaultKeyType::operator==(const KeyVaultKeyType &amp;&#160;other)const inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: A JWT to be compared.
 - section: ToString()
-  display: h2
+  display: h3
+- declaration: std::string const  &amp; Azure::Security::KeyVault::Keys::KeyVaultKeyType::ToString()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
@@ -72,20 +80,26 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Ec
-  display: h2
+  display: h3
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::Ec static
+  languageId: cpp
 - section: EcHsm
-  display: h2
+  display: h3
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::EcHsm static
+  languageId: cpp
 - section: Oct
-  display: h2
+  display: h3
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::Oct static
+  languageId: cpp
 - section: OctHsm
-  display: h2
+  display: h3
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::OctHsm static
+  languageId: cpp
 - section: Rsa
-  display: h2
+  display: h3
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::Rsa static
+  languageId: cpp
 - section: RsaHsm
-  display: h2
-- content: >-
-    The documentation for this class was generated from the following file:<ul>
-
-    <li>inc/azure/keyvault/keys/<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::RsaHsm static
+  languageId: cpp

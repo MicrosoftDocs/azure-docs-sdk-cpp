@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::UploadBlockBlobFromUriOptions
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AUploadBlockBlobFromUriOptions
 title: Azure::Storage::Blobs::UploadBlockBlobFromUriOptions Struct Reference
 components:
 - content: >-
@@ -40,20 +40,20 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: CopySourceBlobProperties
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Blobs::UploadBlockBlobFromUriOptions::CopySourceBlobProperties = true
+  languageId: cpp
 - content: <p>If true, the properties of the source blob will be copied to the new blob. </p>
 - section: CopySourceTagsMode
-  display: h2
+  display: h3
+- declaration: Models::BlobCopySourceTagsMode Azure::Storage::Blobs::UploadBlockBlobFromUriOptions::CopySourceTagsMode
+  languageId: cpp
 - content: <p>Indicates the tags on the destination blob should be copied from source or replaced by Tags in this option. Default is to replace. </p>
 - section: SourceAccessConditions
-  display: h2
+  display: h3
+- declaration: Azure::Storage::Blobs::UploadBlockBlobFromUriOptions::SourceAccessConditions
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Azure storage service doesn't support tags access condition for this operation. Don't use it.
-- content: >-
-    The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="blob__options_8hpp_source.html">blob_options.hpp</a></li>
-
-    </ul>

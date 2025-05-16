@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::KeyClient
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyClient
 title: Azure::Security::KeyVault::Keys::KeyClient Class Reference
 components:
 - content: >-
@@ -105,9 +105,17 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~KeyClient()
-  display: h2
+  display: h3
+- declaration: virtual Azure::Security::KeyVault::Keys::KeyClient::~KeyClient() virtual default
+  languageId: cpp
 - section: KeyClient() [1/2]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Security::KeyVault::Keys::KeyClient::KeyClient(std::string const &amp;&#160;                                        vaultUrl,                    
+                                                          std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                  
+                                                          KeyClientOptions const &amp;&#160;                                   options = KeyClientOptions()&#160;
+                                                         ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -118,7 +126,9 @@ components:
   - name: options
     summary: The options to customize the client behavior.
 - section: KeyClient() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Keys::KeyClient::KeyClient(KeyClient const &amp;&#160;keyClient) explicit default
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -127,7 +137,12 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: BackupKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Azure::Security::KeyVault::Keys::BackupKeyResult &gt; Azure::Security::KeyVault::Keys::KeyClient::BackupKey(std::string const &amp;&#160;         name,                            
+                                                                                                                              Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                             )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -144,7 +159,12 @@ components:
 - parameters:
   - summary: Azure::Response&lt;Azure::Security::KeyVault::Keys::BackupKeyResult&gt;
 - section: CreateEcKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::CreateEcKey(CreateEcKeyOptions const &amp;&#160;  ecKeyOptions,                    
+                                                                                           Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                          )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -161,7 +181,14 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: CreateKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::CreateKey(std::string const &amp;&#160;         name,                            
+                                                                                         KeyVaultKeyType&#160;             keyType,                         
+                                                                                         CreateKeyOptions const &amp;&#160;    options = CreateKeyOptions(),    
+                                                                                         Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                        )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -178,7 +205,12 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: CreateOctKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::CreateOctKey(CreateOctKeyOptions const &amp;&#160; octKeyOptions,                   
+                                                                                            Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                           )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -195,7 +227,12 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: CreateRsaKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::CreateRsaKey(CreateRsaKeyOptions const &amp;&#160; rsaKeyOptions,                   
+                                                                                            Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                           )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -212,7 +249,12 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: GetCryptographyClient()
-  display: h2
+  display: h3
+- declaration: >-
+    Cryptography::CryptographyClient Azure::Security::KeyVault::Keys::KeyClient::GetCryptographyClient(std::string const &amp;&#160;name,                   
+                                                                                                       std::string const &amp;&#160;version = std::string()&#160;
+                                                                                                      )                    const
+  languageId: cpp
 - content: <p>The returned client uses the same options and pipeline as the key client which creates it.</p>
 - section: Parameters
   display: h4
@@ -226,7 +268,12 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_cryptography_client.html">Cryptography::CryptographyClient</a> with the same options and re-using the same pipeline.
 - section: GetDeletedKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; DeletedKey &gt; Azure::Security::KeyVault::Keys::KeyClient::GetDeletedKey(std::string const &amp;&#160;         name,                            
+                                                                                            Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                           )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -243,7 +290,12 @@ components:
 - parameters:
   - summary: Azure::Response&lt;DeletedKey&gt;
 - section: GetDeletedKeys()
-  display: h2
+  display: h3
+- declaration: >-
+    DeletedKeyPagedResponse Azure::Security::KeyVault::Keys::KeyClient::GetDeletedKeys(GetDeletedKeysOptions const &amp;&#160;options = GetDeletedKeysOptions(),
+                                                                                       Azure::Core::Context const &amp;&#160; context = Azure::Core::Context()&#160; 
+                                                                                      )                              const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -260,7 +312,13 @@ components:
 - parameters:
   - summary: Azure::Response&lt;DeletedKeyPagedResponse&gt;
 - section: GetKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::GetKey(std::string const &amp;&#160;         name,                            
+                                                                                      GetKeyOptions const &amp;&#160;       options = GetKeyOptions(),       
+                                                                                      Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                     )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -279,7 +337,12 @@ components:
 - parameters:
   - summary: The Key wrapped in the Response.
 - section: GetKeyRotationPolicy()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyRotationPolicy &gt; Azure::Security::KeyVault::Keys::KeyClient::GetKeyRotationPolicy(std::string const &amp;&#160;         name,                            
+                                                                                                          Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                         )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -296,7 +359,12 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyRotationPolicy&gt;
 - section: GetPropertiesOfKeys()
-  display: h2
+  display: h3
+- declaration: >-
+    KeyPropertiesPagedResponse Azure::Security::KeyVault::Keys::KeyClient::GetPropertiesOfKeys(GetPropertiesOfKeysOptions const &amp;&#160;options = GetPropertiesOfKeysOptions(),
+                                                                                               Azure::Core::Context const &amp;&#160;      context = Azure::Core::Context()&#160;      
+                                                                                              )                                   const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -313,7 +381,13 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties_paged_response.html">KeyPropertiesPagedResponse</a>
 - section: GetPropertiesOfKeyVersions()
-  display: h2
+  display: h3
+- declaration: >-
+    KeyPropertiesPagedResponse Azure::Security::KeyVault::Keys::KeyClient::GetPropertiesOfKeyVersions(std::string const &amp;&#160;                      name,                                         
+                                                                                                      GetPropertiesOfKeyVersionsOptions const &amp;&#160;options = GetPropertiesOfKeyVersionsOptions(),
+                                                                                                      Azure::Core::Context const &amp;&#160;             context = Azure::Core::Context()&#160;             
+                                                                                                     )                                          const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -332,7 +406,12 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties_paged_response.html">KeyPropertiesPagedResponse</a>
 - section: GetRandomBytes()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; GetRandomBytesResult &gt; Azure::Security::KeyVault::Keys::KeyClient::GetRandomBytes(GetRandomBytesOptions const &amp;&#160;options,                         
+                                                                                                       Azure::Core::Context const &amp;&#160; context = Azure::Core::Context()&#160;
+                                                                                                      )                              const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -349,13 +428,20 @@ components:
 - parameters:
   - summary: Azure::Response&lt;GetRandomBytesResult&gt;
 - section: GetUrl()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Security::KeyVault::Keys::KeyClient::GetUrl()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The key client's primary URL endpoint.
 - section: ImportKey() [1/2]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::ImportKey(ImportKeyOptions const &amp;&#160;    importKeyOptions,                
+                                                                                         Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                        )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -372,7 +458,13 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: ImportKey() [2/2]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::ImportKey(std::string const &amp;&#160;         name,                            
+                                                                                         JsonWebKey const &amp;&#160;          keyMaterial,                     
+                                                                                         Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                        )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -391,7 +483,12 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: PurgeDeletedKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; PurgedKey &gt; Azure::Security::KeyVault::Keys::KeyClient::PurgeDeletedKey(std::string const &amp;&#160;         name,                            
+                                                                                             Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                            )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -408,7 +505,13 @@ components:
 - parameters:
   - summary: Azure::Response&lt;PurgedKey&gt;
 - section: ReleaseKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; ReleaseKeyResult &gt; Azure::Security::KeyVault::Keys::KeyClient::ReleaseKey(std::string const &amp;&#160;         name,                            
+                                                                                               KeyReleaseOptions const &amp;&#160;   options,                         
+                                                                                               Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                              )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -427,7 +530,12 @@ components:
 - parameters:
   - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_release_key_result.html">ReleaseKeyResult</a> object.
 - section: RestoreKeyBackup()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::RestoreKeyBackup(std::vector&lt; uint8_t &gt; const &amp;&#160;backup,                          
+                                                                                                Azure::Core::Context const &amp;&#160;  context = Azure::Core::Context()&#160;
+                                                                                               )                               const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -444,7 +552,12 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: RotateKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::RotateKey(std::string const &amp;&#160;         name,                            
+                                                                                         Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                        )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -461,7 +574,12 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: StartDeleteKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Security::KeyVault::Keys::DeleteKeyOperation Azure::Security::KeyVault::Keys::KeyClient::StartDeleteKey(std::string const &amp;&#160;         name,                            
+                                                                                                                   Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                  )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -478,7 +596,12 @@ components:
 - parameters:
   - summary: A <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html">Azure::Security::KeyVault::Keys::DeleteKeyOperation</a> to wait on this long-running operation. If the key is soft delete-enabled, you only need to wait for the operation to complete if you need to recover or purge the key; otherwise, the key is deleted automatically on purge schedule.
 - section: StartRecoverDeletedKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation Azure::Security::KeyVault::Keys::KeyClient::StartRecoverDeletedKey(std::string const &amp;&#160;         name,                            
+                                                                                                                                   Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                                  )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -495,7 +618,13 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.html">Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation</a>
 - section: UpdateKeyProperties()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyVaultKey &gt; Azure::Security::KeyVault::Keys::KeyClient::UpdateKeyProperties(KeyProperties const &amp;&#160;                                 properties,                                                      
+                                                                                                   Azure::Nullable&lt; std::vector&lt; KeyOperation &gt; &gt; const &amp;&#160;keyOperations = Azure::Nullable&lt;&#160;std::vector&lt;&#160;KeyOperation&#160;&gt;&#160;&gt;(),
+                                                                                                   Azure::Core::Context const &amp;&#160;                          context = Azure::Core::Context()&#160;                                
+                                                                                                  )                                                       const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -514,7 +643,13 @@ components:
 - parameters:
   - summary: Azure::Response&lt;KeyVaultKey&gt;
 - section: UpdateKeyRotationPolicy()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; KeyRotationPolicy &gt; Azure::Security::KeyVault::Keys::KeyClient::UpdateKeyRotationPolicy(std::string const &amp;&#160;         name,                            
+                                                                                                             KeyRotationPolicy const &amp;&#160;   rotationPolicy,                  
+                                                                                                             Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                            )                             const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -532,9 +667,3 @@ components:
   display: h4
 - parameters:
   - summary: Azure::Response&lt;KeyRotationPolicy&gt;
-- content: >-
-    The documentation for this class was generated from the following file:<ul>
-
-    <li>inc/azure/keyvault/keys/<a href="key__client_8hpp_source.html">key_client.hpp</a></li>
-
-    </ul>

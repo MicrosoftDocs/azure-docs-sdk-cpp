@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ASignatureAlgorithm
 title: Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm Class Reference
 components:
 - content: >-
@@ -61,58 +61,80 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: SignatureAlgorithm() [1/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::SignatureAlgorithm(std::string&#160;value) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: value
     summary: The string value of the instance.
 - section: SignatureAlgorithm() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::SignatureAlgorithm() default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: GetHashAlgorithm()
-  display: h2
+  display: h3
+- declaration: std::unique_ptr&lt; Azure::Core::Cryptography::Hash &gt; Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::GetHashAlgorithm()const
+  languageId: cpp
 - section: operator==()
-  display: h2
+  display: h3
+- declaration: bool Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::operator==(const SignatureAlgorithm &amp;&#160;other)const inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: A signature algorithm to be compared.
 - section: ToString()
-  display: h2
+  display: h3
+- declaration: std::string const  &amp; Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::ToString()const inline
+  languageId: cpp
 - section: Member Data Documentation
   display: h2
 - section: ES256
-  display: h2
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::ES256 static
+  languageId: cpp
 - section: ES256K
-  display: h2
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::ES256K static
+  languageId: cpp
 - content: '<p>cspell: disable-next-line  </p>'
 - section: ES384
-  display: h2
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::ES384 static
+  languageId: cpp
 - section: ES512
-  display: h2
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::ES512 static
+  languageId: cpp
 - section: PS256
-  display: h2
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::PS256 static
+  languageId: cpp
 - content: '<p>cspell: disable-next-line  </p>'
 - section: PS384
-  display: h2
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::PS384 static
+  languageId: cpp
 - content: '<p>cspell: disable-next-line  </p>'
 - section: PS512
-  display: h2
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::PS512 static
+  languageId: cpp
 - content: '<p>cspell: disable-next-line  </p>'
 - section: RS256
-  display: h2
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::RS256 static
+  languageId: cpp
 - section: RS384
-  display: h2
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::RS384 static
+  languageId: cpp
 - section: RS512
-  display: h2
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/keyvault/keys/cryptography/<a href="cryptography__client__models_8hpp_source.html">cryptography_client_models.hpp</a></li>
-
-    <li>src/cryptography/signature_algorithm.cpp</li>
-
-    </ul>
+  display: h3
+- declaration: const SignatureAlgorithm Azure::Security::KeyVault::Keys::Cryptography::SignatureAlgorithm::RS512 static
+  languageId: cpp

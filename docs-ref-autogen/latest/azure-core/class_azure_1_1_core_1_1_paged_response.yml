@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::PagedResponse&lt;
+uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E
 title: Azure::Core::PagedResponse&lt; T &gt; Class Template Reference
 components:
 - content: >-
@@ -51,47 +51,60 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: PagedResponse() [1/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Core::PagedResponse&lt; T &gt;::PagedResponse() protected default
+  languageId: cpp
 - section: PagedResponse() [2/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Core::PagedResponse&lt; T &gt;::PagedResponse(PagedResponse&lt; T &gt; &amp;&amp;&#160;) protected default
+  languageId: cpp
 - section: ~PagedResponse()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: virtual Azure::Core::PagedResponse&lt; T &gt;::~PagedResponse() virtual default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: HasPage()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: bool Azure::Core::PagedResponse&lt; T &gt;::HasPage()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if there are additional pages; otherwise, <code>false</code>.
 - section: MoveToNextPage()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: void Azure::Core::PagedResponse&lt; T &gt;::MoveToNextPage(const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: context
     summary: A context to control the request lifetime.
 - section: operator=()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: PagedResponse &amp; Azure::Core::PagedResponse&lt; T &gt;::operator=(PagedResponse&lt; T &gt; &amp;&amp;&#160;) protected default
+  languageId: cpp
 - section: Member Data Documentation
   display: h2
 - section: CurrentPageToken
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: std::string Azure::Core::PagedResponse&lt; T &gt;::CurrentPageToken
+  languageId: cpp
 - section: NextPageToken
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Core::PagedResponse&lt; T &gt;::NextPageToken
+  languageId: cpp
 - section: RawResponse
-  display: h2
-- content: >-
-    template&lt;class T &gt;The documentation for this class was generated from the following file:<ul>
-
-    <li>inc/azure/core/<a href="paged__response_8hpp_source.html">paged_response.hpp</a></li>
-
-    </ul>
+  display: h3
+- content: template&lt;class T &gt;
+- declaration: std::unique_ptr&lt;Azure::Core::Http::RawResponse&gt; Azure::Core::PagedResponse&lt; T &gt;::RawResponse
+  languageId: cpp

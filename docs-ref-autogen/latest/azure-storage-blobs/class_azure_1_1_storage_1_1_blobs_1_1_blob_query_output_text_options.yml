@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::BlobQueryOutputTextOptions
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobQueryOutputTextOptions
 title: Azure::Storage::Blobs::BlobQueryOutputTextOptions Class Reference
 components:
 - content: >-
@@ -26,7 +26,9 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: CreateArrowTextOptions()
-  display: h2
+  display: h3
+- declaration: BlobQueryOutputTextOptions Azure::Storage::Blobs::BlobQueryOutputTextOptions::CreateArrowTextOptions(std::vector&lt; Models::BlobQueryArrowField &gt;&#160;schema) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -37,7 +39,15 @@ components:
 - parameters:
   - summary: Arrow text configuration.
 - section: CreateCsvTextOptions()
-  display: h2
+  display: h3
+- declaration: >-
+    BlobQueryOutputTextOptions Azure::Storage::Blobs::BlobQueryOutputTextOptions::CreateCsvTextOptions(const std::string &amp;&#160;recordSeparator = std::string(),   
+                                                                                                       const std::string &amp;&#160;columnSeparator = std::string(),   
+                                                                                                       const std::string &amp;&#160;quotationCharacter = std::string(),
+                                                                                                       const std::string &amp;&#160;escapeCharacter = std::string(),   
+                                                                                                       bool&#160;               hasHeaders = false&#160;                
+                                                                                                      ) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -56,7 +66,9 @@ components:
 - parameters:
   - summary: CSV text configuration.
 - section: CreateJsonTextOptions()
-  display: h2
+  display: h3
+- declaration: BlobQueryOutputTextOptions Azure::Storage::Blobs::BlobQueryOutputTextOptions::CreateJsonTextOptions(const std::string &amp;&#160;recordSeparator = std::string()) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -66,11 +78,3 @@ components:
   display: h4
 - parameters:
   - summary: Json text configuration.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="blob__options_8hpp_source.html">blob_options.hpp</a></li>
-
-    <li>src/blob_options.cpp</li>
-
-    </ul>

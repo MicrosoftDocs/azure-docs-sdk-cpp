@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::Models::DownloadFileDetails
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3ADownloadFileDetails
 title: Azure::Storage::Files::DataLake::Models::DownloadFileDetails Struct Reference
 components:
 - content: >-
@@ -64,85 +64,132 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Acls
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::vector&lt;Acl&gt; &gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::Acls
+  languageId: cpp
 - content: <p>The acls of the file. </p>
 - section: CopyCompletedOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::CopyCompletedOn
+  languageId: cpp
 - content: <p>The copy completed time of the file, if the file is created from a copy operation. </p>
 - section: CopyId
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::CopyId
+  languageId: cpp
 - content: <p>The copy ID of the file, if the file is created from a copy operation. </p>
 - section: CopyProgress
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::CopyProgress
+  languageId: cpp
 - content: <p>The copy progress of the file, if the file is created from a copy operation. </p>
 - section: CopySource
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::CopySource
+  languageId: cpp
 - content: <p>The copy source of the file, if the file is created from a copy operation. </p>
 - section: CopyStatus
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::CopyStatus&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::CopyStatus
+  languageId: cpp
 - content: <p>The copy status of the file, if the file is created from a copy operation. </p>
 - section: CopyStatusDescription
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::CopyStatusDescription
+  languageId: cpp
 - content: <p>The copy status's description of the file, if the file is created from a copy operation. </p>
 - section: CreatedOn
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::DataLake::Models::DownloadFileDetails::CreatedOn
+  languageId: cpp
 - content: <p>The time this file is created on. </p>
 - section: EncryptionContext
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::EncryptionContext
+  languageId: cpp
 - content: <p>Encryption context of the file. Encryption context is metadata that is not encrypted when stored on the file. The primary application of this field is to store non-encrypted data that can be used to derive the customer-provided key for a file. Not applicable for directories. </p>
 - section: EncryptionKeySha256
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::vector&lt;uint8_t&gt; &gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::EncryptionKeySha256
+  languageId: cpp
 - content: <p>The encryption key's SHA256. </p>
 - section: EncryptionScope
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::EncryptionScope
+  languageId: cpp
 - content: <p>The encryption scope. </p>
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Files::DataLake::Models::DownloadFileDetails::ETag
+  languageId: cpp
 - content: <p>An HTTP entity tag associated with the file. </p>
 - section: ExpiresOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;DateTime&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::ExpiresOn
+  languageId: cpp
 - content: <p>The time this file expires on. </p>
 - section: Group
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::Group
+  languageId: cpp
 - content: <p>The owning group of the file. </p>
 - section: HttpHeaders
-  display: h2
+  display: h3
+- declaration: PathHttpHeaders Azure::Storage::Files::DataLake::Models::DownloadFileDetails::HttpHeaders
+  languageId: cpp
 - content: <p>The common HTTP headers of the file. </p>
 - section: IsCurrentVersion
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::IsCurrentVersion
+  languageId: cpp
 - content: <p>If the file is in its current version. </p>
 - section: IsServerEncrypted
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::DataLake::Models::DownloadFileDetails::IsServerEncrypted = false
+  languageId: cpp
 - content: <p>A boolean indicates if the service is encrypted. </p>
 - section: LastAccessedOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;DateTime&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::LastAccessedOn
+  languageId: cpp
 - content: <p>The time this file is last accessed on. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::DataLake::Models::DownloadFileDetails::LastModified
+  languageId: cpp
 - content: <p>The data and time the file was last modified. </p>
 - section: LeaseDuration
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::LeaseDurationType&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::LeaseDuration
+  languageId: cpp
 - content: <p>The lease duration of the file. </p>
 - section: LeaseState
-  display: h2
+  display: h3
+- declaration: Models::LeaseState Azure::Storage::Files::DataLake::Models::DownloadFileDetails::LeaseState
+  languageId: cpp
 - content: <p>The lease state of the file. </p>
 - section: LeaseStatus
-  display: h2
+  display: h3
+- declaration: Models::LeaseStatus Azure::Storage::Files::DataLake::Models::DownloadFileDetails::LeaseStatus
+  languageId: cpp
 - content: <p>The lease status of the file. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Storage::Metadata Azure::Storage::Files::DataLake::Models::DownloadFileDetails::Metadata
+  languageId: cpp
 - content: <p>The metadata of the file. </p>
 - section: Owner
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::Owner
+  languageId: cpp
 - content: <p>The owner of the file. </p>
 - section: Permissions
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::Permissions
+  languageId: cpp
 - content: <p>The permissions of the file. </p>
 - section: VersionId
-  display: h2
-- content: >-
-    <p>The version ID of the file. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__responses_8hpp_source.html">datalake_responses.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::DownloadFileDetails::VersionId
+  languageId: cpp
+- content: <p>The version ID of the file. </p>

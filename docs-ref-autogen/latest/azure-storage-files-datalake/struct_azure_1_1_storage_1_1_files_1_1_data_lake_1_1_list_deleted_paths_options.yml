@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::ListDeletedPathsOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListDeletedPathsOptions
 title: Azure::Storage::Files::DataLake::ListDeletedPathsOptions Struct Reference
 components:
 - content: >-
@@ -18,16 +18,17 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: ContinuationToken
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::ListDeletedPathsOptions::ContinuationToken
+  languageId: cpp
 - content: <p>The number of paths returned with each invocation is limited. If the number of paths to be returned exceeds this limit, a continuation token is returned in the response header x-ms-continuation. When a continuation token is returned in the response, it must be specified in a subsequent invocation of the list operation to continue listing the paths. </p>
 - section: PageSizeHint
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::DataLake::ListDeletedPathsOptions::PageSizeHint
+  languageId: cpp
 - content: <p>An optional value that specifies the maximum number of items to return. If omitted or greater than 5,000, the response will include up to 5,000 items. </p>
 - section: Prefix
-  display: h2
-- content: >-
-    <p>Gets the paths that have recently been soft deleted in this file system. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::ListDeletedPathsOptions::Prefix
+  languageId: cpp
+- content: <p>Gets the paths that have recently been soft deleted in this file system. </p>

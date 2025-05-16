@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::SetFilePropertiesResult
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3ASetFilePropertiesResult
 title: Azure::Storage::Files::Shares::Models::SetFilePropertiesResult Struct Reference
 components:
 - content: >-
@@ -22,22 +22,27 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::ETag
+  languageId: cpp
 - content: <p>The ETag contains a value which represents the version of the file, in quotes. </p>
 - section: IsServerEncrypted
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::IsServerEncrypted = bool()
+  languageId: cpp
 - content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::LastModified
+  languageId: cpp
 - content: <p>Returns the date and time the directory was last modified. Any operation that modifies the directory or its properties updates the last modified time. Operations on files do not affect the last modified time of the directory. </p>
 - section: PosixProperties
-  display: h2
+  display: h3
+- declaration: FilePosixProperties Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::PosixProperties
+  languageId: cpp
 - content: <p>The NFS related properties for the file. </p>
 - section: SmbProperties
-  display: h2
-- content: >-
-    <p>The SMB related properties for the file. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="share__responses_8hpp_source.html">share_responses.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: FileSmbProperties Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::SmbProperties
+  languageId: cpp
+- content: <p>The SMB related properties for the file. </p>

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::CreateShareSnapshotResult
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3ACreateShareSnapshotResult
 title: Azure::Storage::Files::Shares::Models::CreateShareSnapshotResult Struct Reference
 components:
 - content: >-
@@ -18,16 +18,17 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Files::Shares::Models::CreateShareSnapshotResult::ETag
+  languageId: cpp
 - content: <p>The ETag contains a value which represents the version of the share snapshot, in quotes. A share snapshot cannot be modified, so the ETag of a given share snapshot never changes. However, if new metadata was supplied with the Snapshot Share request then the ETag of the share snapshot differs from that of the base share. If no metadata was specified with the request, the ETag of the share snapshot is identical to that of the base share at the time the share snapshot was taken. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::Shares::Models::CreateShareSnapshotResult::LastModified
+  languageId: cpp
 - content: <p>Returns the date and time the share was last modified. A share snapshot cannot be modified, so the last modified time of a given share snapshot never changes. However, if new metadata was supplied with the Snapshot Share request then the last modified time of the share snapshot differs from that of the base share. If no metadata was specified with the request, the last modified time of the share snapshot is identical to that of the base share at the time the share snapshot was taken. </p>
 - section: Snapshot
-  display: h2
-- content: >-
-    <p>This header is a DateTime value that uniquely identifies the share snapshot. The value of this header may be used in subsequent requests to access the share snapshot. This value is opaque. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: std::string Azure::Storage::Files::Shares::Models::CreateShareSnapshotResult::Snapshot
+  languageId: cpp
+- content: <p>This header is a DateTime value that uniquely identifies the share snapshot. The value of this header may be used in subsequent requests to access the share snapshot. This value is opaque. </p>

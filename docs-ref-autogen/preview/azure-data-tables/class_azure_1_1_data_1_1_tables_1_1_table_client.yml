@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Data::Tables::TableClient
+uid: Azure%3A%3AData%3A%3ATables%3A%3ATableClient
 title: Azure::Data::Tables::TableClient Class Reference
 components:
 - content: >-
@@ -45,7 +45,13 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: TableClient() [1/3]
-  display: h2
+  display: h3
+- declaration: >-
+    TableClient::TableClient(std::string const &amp;&#160;       serviceUrl,  
+                             std::string const &amp;&#160;       tableName,   
+                             const TableClientOptions &amp;&#160;options = {}&#160;
+                            ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -56,7 +62,14 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: TableClient() [2/3]
-  display: h2
+  display: h3
+- declaration: >-
+    TableClient::TableClient(const std::string &amp;&#160;                                  serviceUrl,  
+                             const std::string &amp;&#160;                                  tableName,   
+                             std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,  
+                             const TableClientOptions &amp;&#160;                           options = {}&#160;
+                            ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -69,7 +82,14 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: TableClient() [3/3]
-  display: h2
+  display: h3
+- declaration: >-
+    TableClient::TableClient(const std::string &amp;&#160;                                                    serviceUrl,  
+                             std::shared_ptr&lt; Azure::Data::Tables::Credentials::AzureSasCredential &gt;&#160;credential,  
+                             const std::string &amp;&#160;                                                    tableName,   
+                             const TableClientOptions &amp;&#160;                                             options = {}&#160;
+                            ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -84,7 +104,13 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: AddEntity()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::AddEntityResult &gt; TableClient::AddEntity(Models::TableEntity const &amp;&#160;     tableEntity, 
+                                                                      Models::AddEntityOptions const &amp;&#160;options = {},
+                                                                      Core::Context const &amp;&#160;           context = {}&#160;
+                                                                     )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -99,7 +125,12 @@ components:
 - parameters:
   - summary: Add entity result.
 - section: DeleteEntity()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DeleteEntityResult &gt; TableClient::DeleteEntity(Models::TableEntity const &amp;&#160;tableEntity, 
+                                                                            Core::Context const &amp;&#160;      context = {}&#160;
+                                                                           )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -112,7 +143,13 @@ components:
 - parameters:
   - summary: Delete entity result.
 - section: GetEntity()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::TableEntity &gt; TableClient::GetEntity(std::string const &amp;&#160;  partitionKey,
+                                                                  std::string const &amp;&#160;  rowKey,      
+                                                                  Core::Context const &amp;&#160;context = {}&#160;
+                                                                 )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -127,7 +164,13 @@ components:
 - parameters:
   - summary: Table entity.
 - section: MergeEntity()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::MergeEntityResult &gt; TableClient::MergeEntity(Models::TableEntity const &amp;&#160;       tableEntity, 
+                                                                          Models::MergeEntityOptions const &amp;&#160;options = {},
+                                                                          Core::Context const &amp;&#160;             context = {}&#160;
+                                                                         )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -142,7 +185,12 @@ components:
 - parameters:
   - summary: Merge entity result.
 - section: QueryEntities()
-  display: h2
+  display: h3
+- declaration: >-
+    Models::QueryEntitiesPagedResponse TableClient::QueryEntities(Models::QueryEntitiesOptions const &amp;&#160;options = {},
+                                                                  Core::Context const &amp;&#160;               context = {}&#160;
+                                                                 )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -155,7 +203,12 @@ components:
 - parameters:
   - summary: Entity list paged response.
 - section: SubmitTransaction()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SubmitTransactionResult &gt; TableClient::SubmitTransaction(std::vector&lt; Models::TransactionStep &gt; const &amp;&#160;steps,       
+                                                                                      Core::Context const &amp;&#160;                         context = {}&#160;
+                                                                                     )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -168,7 +221,13 @@ components:
 - parameters:
   - summary: Submit transaction result.
 - section: UpdateEntity()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::UpdateEntityResult &gt; TableClient::UpdateEntity(Models::TableEntity const &amp;&#160;        tableEntity, 
+                                                                            Models::UpdateEntityOptions const &amp;&#160;options = {},
+                                                                            Core::Context const &amp;&#160;              context = {}&#160;
+                                                                           )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -183,7 +242,13 @@ components:
 - parameters:
   - summary: Update entity result.
 - section: UpsertEntity()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::UpsertEntityResult &gt; TableClient::UpsertEntity(Models::TableEntity const &amp;&#160;        tableEntity, 
+                                                                            Models::UpsertEntityOptions const &amp;&#160;options = {},
+                                                                            Core::Context const &amp;&#160;              context = {}&#160;
+                                                                           )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -197,11 +262,3 @@ components:
   display: h4
 - parameters:
   - summary: Upsert entity result.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/data/tables/<a href="table__client_8hpp_source.html">table_client.hpp</a></li>
-
-    <li>src/table_clients.cpp</li>
-
-    </ul>

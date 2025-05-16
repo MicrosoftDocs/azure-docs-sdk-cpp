@@ -1,11 +1,20 @@
 ### YamlMime:Reference
-uid: Azure::Core::IO::BodyStream
+uid: Azure%3A%3ACore%3A%3AIO%3A%3ABodyStream
 title: Azure::Core::IO::BodyStream Class Reference
 components:
 - content: >-
     <p>Used to read data to/from a service.  
 
-    </p><p><code>#include &lt;<a href="body__stream_8hpp_source.html">body_stream.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Core::IO::BodyStream:
+    </p><p><code>#include &lt;<a href="body__stream_8hpp_source.html">body_stream.hpp</a>&gt;</code></p><p>This class is inherited by:</p>
+- linkList:
+  - name: Azure::Core::Http::CurlSession
+    href: class_azure_1_1_core_1_1_http_1_1_curl_session.html
+  - name: Azure::Core::IO::FileBodyStream
+    href: class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html
+  - name: Azure::Core::IO::MemoryBodyStream
+    href: class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html
+  - name: Azure::Core::IO::ProgressBodyStream
+    href: class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -30,18 +39,28 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~BodyStream()
-  display: h2
+  display: h3
+- declaration: virtual Azure::Core::IO::BodyStream::~BodyStream() virtual default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: Length()
-  display: h2
+  display: h3
+- declaration: virtual int64_t Azure::Core::IO::BodyStream::Length()const pure virtual
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Used with the HTTP <code>Content-Length</code> header.
 - content: <p>Implemented in <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#aea97ce29a09c0b32a518f7195a9ea8bc">Azure::Core::IO::MemoryBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a4c9ea3f7f807238a662e75d7fa7e72da">Azure::Core::IO::FileBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a3acf5936e8f21a28e75388b4740acd8f">Azure::Core::IO::ProgressBodyStream</a>, and <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#a6d8958274c0aa258f1127558b78d9cb8">Azure::Core::Http::CurlSession</a>.</p>
 - section: Read()
-  display: h2
+  display: h3
+- declaration: >-
+    size_t Azure::Core::IO::BodyStream::Read(uint8_t *&#160;                   buffer,                          
+                                             size_t&#160;                      count,                           
+                                             Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                            ) inline
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -60,7 +79,13 @@ components:
 - parameters:
   - summary: Number of bytes read.
 - section: ReadToCount()
-  display: h2
+  display: h3
+- declaration: >-
+    size_t BodyStream::ReadToCount(uint8_t *&#160;                   buffer,                          
+                                   size_t&#160;                      count,                           
+                                   Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                  )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -75,7 +100,9 @@ components:
 - parameters:
   - summary: Number of bytes read.
 - section: ReadToEnd()
-  display: h2
+  display: h3
+- declaration: std::vector&lt; uint8_t &gt; BodyStream::ReadToEnd(Azure::Core::Context const &amp;&#160;context = Azure::Core::Context())
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -86,16 +113,11 @@ components:
 - parameters:
   - summary: A vector of bytes containing the entirety of data read from the <code>body</code>.
 - section: Rewind()
-  display: h2
+  display: h3
+- declaration: virtual void Azure::Core::IO::BodyStream::Rewind() inline virtual
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Derived classes that send data in an HTTP request MUST override this and implement it properly.
-- content: >-
-    <p>Reimplemented in <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#acf45328737df39d5ad836644be607f41">Azure::Core::IO::MemoryBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a6a508b86596a8c482ccf2b50f051a620">Azure::Core::IO::FileBodyStream</a>, and <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a95177a860fe067590a2504387936d63c">Azure::Core::IO::ProgressBodyStream</a>.</p>The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/core/io/<a href="body__stream_8hpp_source.html">body_stream.hpp</a></li>
-
-    <li>src/io/body_stream.cpp</li>
-
-    </ul>
+- content: <p>Reimplemented in <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#acf45328737df39d5ad836644be607f41">Azure::Core::IO::MemoryBodyStream</a>, <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream.html#a6a508b86596a8c482ccf2b50f051a620">Azure::Core::IO::FileBodyStream</a>, and <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a95177a860fe067590a2504387936d63c">Azure::Core::IO::ProgressBodyStream</a>.</p>

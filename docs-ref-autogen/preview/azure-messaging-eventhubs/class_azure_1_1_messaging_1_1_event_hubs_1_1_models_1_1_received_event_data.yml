@@ -1,10 +1,13 @@
 ### YamlMime:Reference
-uid: Azure::Messaging::EventHubs::Models::ReceivedEventData
+uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AModels%3A%3AReceivedEventData
 title: Azure::Messaging::EventHubs::Models::ReceivedEventData Class Reference
 components:
 - content: >-
     <p>Represents an event received from the Azure Event Hubs service.  
-     <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_received_event_data.html#details">More...</a></p><p><code>#include &lt;<a href="event__data_8hpp_source.html">event_data.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Messaging::EventHubs::Models::ReceivedEventData:
+     <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_received_event_data.html#details">More...</a></p><p><code>#include &lt;<a href="event__data_8hpp_source.html">event_data.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Messaging::EventHubs::Models::EventData
+    href: class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -27,14 +30,19 @@ components:
     summary: Get the raw AMQP message.
     returnType: std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt;&#160;
   - declaration: EventData ()
+    summary: Construct a default <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> object.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#a9fa4c51ee0f45d989cb95056f0ad0a83">EventData</a> (std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;message)
+    summary: Construct a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> object from an AMQP message.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#af3fc4b9f067d83c797da87469f00bc60">EventData</a> (std::initializer_list&lt; uint8_t &gt; const &amp;body)
+    summary: Construct a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> object from an initializer list of bytes.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#a99dffe17710bf15190646ff1506befe6">EventData</a> (std::vector&lt; uint8_t &gt; const &amp;body)
+    summary: Construct a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> object from a vector of bytes.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#acaa109005da31f692023a84b36fd1a43">EventData</a> (std::string const &amp;body)
+    summary: Construct a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> object from a string.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#a939670c7584acf1166b528c15ccd108f">EventData</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> const &amp;)=default
     returnType: '&#160;'
@@ -45,6 +53,7 @@ components:
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#a353d8ad343f74a19d9510b6df16922d6">operator=</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> &amp;&amp;)=default
     returnType: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a> &amp;&#160;
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#aeee9554aec4c75140c99e2dfe5e67100">GetRawAmqpMessage</a> () const
+    summary: Get the AMQP message associated with this <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">EventData</a>.
     returnType: virtual std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt;&#160;
 - section: Public Attributes
   display: h2
@@ -65,14 +74,18 @@ components:
     summary: The set of system properties populated by the Event Hubs service.
     returnType: std::map&lt; std::string, Azure::Core::Amqp::Models::AmqpValue &gt;&#160;
   - declaration: Body
+    summary: The body of the event data.
     returnType: std::vector&lt; uint8_t &gt;&#160;
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#a366c24c0ea042f020eeb315740437769">ContentType</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#a4e4eddc3c44ae4a709805ded012deeec">CorrelationId</a>
+    summary: The correlation identifier.
     returnType: Azure::Nullable&lt; Azure::Core::Amqp::Models::AmqpValue &gt;&#160;
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#a32b32ac99de6ae411c742b77abb5db34">MessageId</a>
+    summary: The message identifier.
     returnType: Azure::Nullable&lt; Azure::Core::Amqp::Models::AmqpValue &gt;&#160;
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#aa58e8e1acb8c4ca3a8f7e0513c6a8e25">Properties</a>
+    summary: The set of free-form event properties.
     returnType: std::map&lt; std::string, Azure::Core::Amqp::Models::AmqpValue &gt;&#160;
 - section: Additional Inherited Members
   display: h2
@@ -85,34 +98,41 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ReceivedEventData()
-  display: h2
+  display: h3
+- declaration: Azure::Messaging::EventHubs::Models::ReceivedEventData::ReceivedEventData(std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;&#160;message)
+  languageId: cpp
 - content: <p>This constructor is used internally during the receive operation. </p>
 - section: Member Function Documentation
   display: h2
 - section: GetRawAmqpMessage()
-  display: h2
+  display: h3
+- declaration: std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const  &gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::GetRawAmqpMessage()const inline override virtual
+  languageId: cpp
 - content: <p>Returns the underlying AMQP message that was received from the Event Hubs service. </p><p>Reimplemented from <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html#aeee9554aec4c75140c99e2dfe5e67100">Azure::Messaging::EventHubs::Models::EventData</a>.</p>
 - section: Member Data Documentation
   display: h2
 - section: EnqueuedTime
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::EnqueuedTime
+  languageId: cpp
 - content: <p>The value is expressed in UTC. </p>
 - section: Offset
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::uint64_t&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::Offset
+  languageId: cpp
 - content: <p>The offset is a marker or identifier for an event within the Event Hubs stream. The identifier is unique within a partition of the Event Hubs stream. </p>
 - section: PartitionKey
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::PartitionKey
+  languageId: cpp
 - content: <p>The partition key is used to determine the partition that the message is sent to. Messages with the same partition key are sent to the same partition. Messages without a partition key are sent to a random partition. </p>
 - section: SequenceNumber
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::int64_t&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::SequenceNumber
+  languageId: cpp
 - content: <p>The sequence number is a unique identifier for the event within its partition. </p>
 - section: SystemProperties
-  display: h2
-- content: >-
-    <p>The properties are for read-only use by the application. </p>The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/messaging/eventhubs/models/<a href="event__data_8hpp_source.html">event_data.hpp</a></li>
-
-    <li>src/event_data.cpp</li>
-
-    </ul>
+  display: h3
+- declaration: std::map&lt;std::string, Azure::Core::Amqp::Models::AmqpValue&gt; Azure::Messaging::EventHubs::Models::ReceivedEventData::SystemProperties
+  languageId: cpp
+- content: <p>The properties are for read-only use by the application. </p>

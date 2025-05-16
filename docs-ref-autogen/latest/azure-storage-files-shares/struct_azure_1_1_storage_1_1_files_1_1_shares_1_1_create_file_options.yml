@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::CreateFileOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ACreateFileOptions
 title: Azure::Storage::Files::Shares::CreateFileOptions Struct Reference
 components:
 - content: >-
@@ -26,28 +26,37 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessConditions
-  display: h2
+  display: h3
+- declaration: LeaseAccessConditions Azure::Storage::Files::Shares::CreateFileOptions::AccessConditions
+  languageId: cpp
 - content: <p>The operation will only succeed if the access condition is met. </p>
 - section: FilePermissionFormat
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models ::FilePermissionFormat&gt; Azure::Storage::Files::Shares::CreateFileOptions::FilePermissionFormat
+  languageId: cpp
 - content: <p>Optional. Available for version 2024-11-04 and later. Specifies the format in which the permission is returned.If FilePermissionFormat is unspecified or explicitly set to SDDL format format, the permission will be returned in SDDL format. </p>
 - section: HttpHeaders
-  display: h2
+  display: h3
+- declaration: Models::FileHttpHeaders Azure::Storage::Files::Shares::CreateFileOptions::HttpHeaders
+  languageId: cpp
 - content: <p>Specifies the HttpHeaders of the file. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Storage::Metadata Azure::Storage::Files::Shares::CreateFileOptions::Metadata
+  languageId: cpp
 - content: <p>A name-value pair to associate with a file storage object. </p>
 - section: Permission
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::CreateFileOptions::Permission
+  languageId: cpp
 - content: <p>This permission is the security descriptor for the file specified in the Security Descriptor Definition Language (SDDL) or base64 encoded binary format. If not specified, 'inherit' is used. </p>
 - section: PosixProperties
-  display: h2
+  display: h3
+- declaration: Models::FilePosixProperties Azure::Storage::Files::Shares::CreateFileOptions::PosixProperties
+  languageId: cpp
 - content: <p>The NFS related properties for the file. </p>
 - section: SmbProperties
-  display: h2
-- content: >-
-    <p>SMB properties to set for the file. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="share__options_8hpp_source.html">share_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Models::FileSmbProperties Azure::Storage::Files::Shares::CreateFileOptions::SmbProperties
+  languageId: cpp
+- content: <p>SMB properties to set for the file. </p>

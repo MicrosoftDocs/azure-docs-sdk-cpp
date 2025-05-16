@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::CreateShareResult
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3ACreateShareResult
 title: Azure::Storage::Files::Shares::Models::CreateShareResult Struct Reference
 components:
 - content: >-
@@ -28,31 +28,42 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Created
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::Shares::Models::CreateShareResult::Created = true
+  languageId: cpp
 - content: <p>Indicates if the share was successfully created by this operation. </p>
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Files::Shares::Models::CreateShareResult::ETag
+  languageId: cpp
 - content: <p>The ETag contains a value which represents the version of the share, in quotes. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::Shares::Models::CreateShareResult::LastModified
+  languageId: cpp
 - content: <p>Returns the date and time the share was last modified. Any operation that modifies the share or its properties or metadata updates the last modified time. Operations on files do not affect the last modified time of the share. </p>
 - section: MaxBurstCreditsForIops
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::CreateShareResult::MaxBurstCreditsForIops
+  languageId: cpp
 - content: <p>Returned the calculated maximum burst credits. </p>
 - section: Quota
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::CreateShareResult::Quota
+  languageId: cpp
 - content: <p>Returns the current share quota in GB. </p>
 - section: ShareIncludedBurstIops
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::CreateShareResult::ShareIncludedBurstIops
+  languageId: cpp
 - content: <p>Returns the calculated burst IOPS of the share. </p>
 - section: ShareProvisionedBandwidthMibps
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::CreateShareResult::ShareProvisionedBandwidthMibps
+  languageId: cpp
 - content: <p>The provisioned throughput of the share. </p>
 - section: ShareProvisionedIops
-  display: h2
-- content: >-
-    <p>The provisioned IOPS of the share. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::CreateShareResult::ShareProvisionedIops
+  languageId: cpp
+- content: <p>The provisioned IOPS of the share. </p>

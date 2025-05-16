@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::CopyBlobFromUriOptions
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ACopyBlobFromUriOptions
 title: Azure::Storage::Blobs::CopyBlobFromUriOptions Struct Reference
 components:
 - content: >-
@@ -39,19 +39,21 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: CopySourceTagsMode
-  display: h2
+  display: h3
+- declaration: Models::BlobCopySourceTagsMode Azure::Storage::Blobs::CopyBlobFromUriOptions::CopySourceTagsMode
+  languageId: cpp
 - content: <p>Indicates the tags on the destination blob should be copied from source or replaced by Tags in this option. Default is to replace. </p>
 - section: HasLegalHold
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Blobs::CopyBlobFromUriOptions::HasLegalHold
+  languageId: cpp
 - content: <p>Indicates whether the destination blob has a legal hold. </p>
 - section: ImmutabilityPolicy
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::BlobImmutabilityPolicy&gt; Azure::Storage::Blobs::CopyBlobFromUriOptions::ImmutabilityPolicy
+  languageId: cpp
 - content: <p>Immutability policy to set on the destination blob. </p>
 - section: SourceAccessConditions
-  display: h2
-- content: >-
-    The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="blob__options_8hpp_source.html">blob_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Storage::Blobs::CopyBlobFromUriOptions::SourceAccessConditions
+  languageId: cpp

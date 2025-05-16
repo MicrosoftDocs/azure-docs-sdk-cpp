@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Administration::BackupClient
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ABackupClient
 title: Azure::Security::KeyVault::Administration::BackupClient Class Reference
 components:
 - content: >-
@@ -34,9 +34,17 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~BackupClient()
-  display: h2
+  display: h3
+- declaration: virtual Azure::Security::KeyVault::Administration::BackupClient::~BackupClient() virtual default
+  languageId: cpp
 - section: BackupClient()
-  display: h2
+  display: h3
+- declaration: >-
+    BackupClient::BackupClient(std::string const &amp;&#160;                                        vaultUrl,                       
+                               std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt;&#160;credential,                     
+                               BackupClientOptions&#160;                                        options = BackupClientOptions()&#160;
+                              ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -49,7 +57,13 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: FullBackup()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; BackupOperation &gt; BackupClient::FullBackup(Azure::Core::Url const &amp;&#160;         blobContainerUrl,
+                                                                Models::SasTokenParameter const &amp;&#160;sasToken,        
+                                                                Core::Context const &amp;&#160;            context = {}&#160;    
+                                                               )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -64,7 +78,12 @@ components:
 - parameters:
   - summary: A backup restore operation.
 - section: FullBackupStatus()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; BackupOperationStatus &gt; BackupClient::FullBackupStatus(std::string const &amp;&#160;  jobId = &quot;&quot;,  
+                                                                            Core::Context const &amp;&#160;context = {}&#160;
+                                                                           )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -77,7 +96,14 @@ components:
 - parameters:
   - summary: Backup restore operation status.
 - section: FullRestore()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; BackupOperation &gt; BackupClient::FullRestore(Azure::Core::Url const &amp;&#160;         blobContainerUrl,
+                                                                 std::string&#160;                      folderToRestore, 
+                                                                 Models::SasTokenParameter const &amp;&#160;sasToken,        
+                                                                 Core::Context const &amp;&#160;            context = {}&#160;    
+                                                                )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -94,7 +120,12 @@ components:
 - parameters:
   - summary: A backup restore operation.
 - section: RestoreStatus()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; BackupOperationStatus &gt; BackupClient::RestoreStatus(std::string const &amp;&#160;  jobId = &quot;&quot;,  
+                                                                         Core::Context const &amp;&#160;context = {}&#160;
+                                                                        )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -107,7 +138,15 @@ components:
 - parameters:
   - summary: A backup restore operation status.
 - section: SelectiveKeyRestore()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; BackupOperation &gt; BackupClient::SelectiveKeyRestore(std::string const &amp;&#160;              keyName,         
+                                                                         Azure::Core::Url const &amp;&#160;         blobContainerUrl,
+                                                                         std::string&#160;                      folderToRestore, 
+                                                                         Models::SasTokenParameter const &amp;&#160;sasToken,        
+                                                                         Core::Context const &amp;&#160;            context = {}&#160;    
+                                                                        )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -125,11 +164,3 @@ components:
   display: h4
 - parameters:
   - summary: A backup restore operation.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/keyvault/administration/<a href="backup__client_8hpp_source.html">backup_client.hpp</a></li>
-
-    <li>src/backup_client.cpp</li>
-
-    </ul>

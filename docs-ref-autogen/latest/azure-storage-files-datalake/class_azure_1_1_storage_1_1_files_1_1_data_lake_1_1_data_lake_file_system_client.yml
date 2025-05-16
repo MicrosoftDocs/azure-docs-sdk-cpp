@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::DataLakeFileSystemClient
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileSystemClient
 title: Azure::Storage::Files::DataLake::DataLakeFileSystemClient Class Reference
 components:
 - content: >-
@@ -83,7 +83,13 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: DataLakeFileSystemClient() [1/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DataLakeFileSystemClient(const std::string &amp;&#160;                          fileSystemUrl,                    
+                                                                                        std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;credential,                       
+                                                                                        const DataLakeClientOptions &amp;&#160;                options = DataLakeClientOptions()&#160;
+                                                                                       ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -94,7 +100,13 @@ components:
   - name: options
     summary: Optional parameters used to initialize the client.
 - section: DataLakeFileSystemClient() [2/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DataLakeFileSystemClient(const std::string &amp;&#160;                                  fileSystemUrl,                    
+                                                                                        std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                       
+                                                                                        const DataLakeClientOptions &amp;&#160;                        options = DataLakeClientOptions()&#160;
+                                                                                       ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -105,7 +117,12 @@ components:
   - name: options
     summary: Optional parameters used to initialize the client.
 - section: DataLakeFileSystemClient() [3/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DataLakeFileSystemClient(const std::string &amp;&#160;          fileSystemUrl,                    
+                                                                                        const DataLakeClientOptions &amp;&#160;options = DataLakeClientOptions()&#160;
+                                                                                       ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -116,7 +133,12 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: Create()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::CreateFileSystemResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::Create(const CreateFileSystemOptions &amp;&#160;options = CreateFileSystemOptions(),
+                                                                                                                        const Azure::Core::Context &amp;&#160;   context = Azure::Core::Context()&#160;   
+                                                                                                                       )                                const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -133,7 +155,13 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: CreateFromConnectionString()
-  display: h2
+  display: h3
+- declaration: >-
+    DataLakeFileSystemClient Azure::Storage::Files::DataLake::DataLakeFileSystemClient::CreateFromConnectionString(const std::string &amp;&#160;          connectionString,                 
+                                                                                                                   const std::string &amp;&#160;          fileSystemName,                   
+                                                                                                                   const DataLakeClientOptions &amp;&#160;options = DataLakeClientOptions()&#160;
+                                                                                                                  ) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -148,7 +176,12 @@ components:
 - parameters:
   - summary: FileSystemClient
 - section: CreateIfNotExists()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::CreateFileSystemResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::CreateIfNotExists(const CreateFileSystemOptions &amp;&#160;options = CreateFileSystemOptions(),
+                                                                                                                                   const Azure::Core::Context &amp;&#160;   context = Azure::Core::Context()&#160;   
+                                                                                                                                  )                                const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -165,7 +198,12 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: Delete()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DeleteFileSystemResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::Delete(const DeleteFileSystemOptions &amp;&#160;options = DeleteFileSystemOptions(),
+                                                                                                                        const Azure::Core::Context &amp;&#160;   context = Azure::Core::Context()&#160;   
+                                                                                                                       )                                const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -182,7 +220,12 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: DeleteIfExists()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DeleteFileSystemResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DeleteIfExists(const DeleteFileSystemOptions &amp;&#160;options = DeleteFileSystemOptions(),
+                                                                                                                                const Azure::Core::Context &amp;&#160;   context = Azure::Core::Context()&#160;   
+                                                                                                                               )                                const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -199,7 +242,12 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: GetAccessPolicy()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::FileSystemAccessPolicy &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetAccessPolicy(const GetFileSystemAccessPolicyOptions &amp;&#160;options = GetFileSystemAccessPolicyOptions(),
+                                                                                                                                 const Azure::Core::Context &amp;&#160;            context = Azure::Core::Context()&#160;            
+                                                                                                                                )                                         const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -216,7 +264,9 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: GetDirectoryClient()
-  display: h2
+  display: h3
+- declaration: DataLakeDirectoryClient Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetDirectoryClient(const std::string &amp;&#160;directoryName)const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -227,7 +277,9 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html">DataLakeDirectoryClient</a>
 - section: GetFileClient()
-  display: h2
+  display: h3
+- declaration: DataLakeFileClient Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetFileClient(const std::string &amp;&#160;fileName)const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -238,7 +290,12 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html">DataLakeFileClient</a>
 - section: GetProperties()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::FileSystemProperties &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetProperties(const GetFileSystemPropertiesOptions &amp;&#160;options = GetFileSystemPropertiesOptions(),
+                                                                                                                             const Azure::Core::Context &amp;&#160;          context = Azure::Core::Context()&#160;          
+                                                                                                                            )                                       const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -255,13 +312,20 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: GetUrl()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::DataLakeFileSystemClient::GetUrl()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The filesystem's primary URL endpoint.
 - section: ListDeletedPaths()
-  display: h2
+  display: h3
+- declaration: >-
+    ListDeletedPathsPagedResponse Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListDeletedPaths(const ListDeletedPathsOptions &amp;&#160;options = ListDeletedPathsOptions(),
+                                                                                                              const Azure::Core::Context &amp;&#160;   context = Azure::Core::Context()&#160;   
+                                                                                                             )                                const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -278,7 +342,13 @@ components:
 - parameters:
   - summary: This request is sent to Blob endpoint.
 - section: ListPaths()
-  display: h2
+  display: h3
+- declaration: >-
+    ListPathsPagedResponse Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListPaths(bool&#160;                        recursive,                       
+                                                                                                const ListPathsOptions &amp;&#160;    options = ListPathsOptions(),    
+                                                                                                const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                               )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -297,7 +367,14 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: RenameDirectory()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; DataLakeDirectoryClient &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::RenameDirectory(const std::string &amp;&#160;           directoryName,                     
+                                                                                                                          const std::string &amp;&#160;           destinationDirectoryPath,          
+                                                                                                                          const RenameDirectoryOptions &amp;&#160;options = RenameDirectoryOptions(),
+                                                                                                                          const Azure::Core::Context &amp;&#160;  context = Azure::Core::Context()&#160;  
+                                                                                                                         )                               const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -318,7 +395,14 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: RenameFile()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; DataLakeFileClient &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::RenameFile(const std::string &amp;&#160;         fileName,                        
+                                                                                                                const std::string &amp;&#160;         destinationFilePath,             
+                                                                                                                const RenameFileOptions &amp;&#160;   options = RenameFileOptions(),   
+                                                                                                                const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                               )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -339,7 +423,12 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: SetAccessPolicy()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetFileSystemAccessPolicyResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::SetAccessPolicy(const SetFileSystemAccessPolicyOptions &amp;&#160;options = SetFileSystemAccessPolicyOptions(),
+                                                                                                                                          const Azure::Core::Context &amp;&#160;            context = Azure::Core::Context()&#160;            
+                                                                                                                                         )                                         const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -356,7 +445,13 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: SetMetadata()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetFileSystemMetadataResult &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::SetMetadata(Storage::Metadata&#160;                   metadata,                                
+                                                                                                                                  const SetFileSystemMetadataOptions &amp;&#160;options = SetFileSystemMetadataOptions(),
+                                                                                                                                  const Azure::Core::Context &amp;&#160;        context = Azure::Core::Context()&#160;        
+                                                                                                                                 )                                     const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -375,7 +470,14 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: UndeletePath()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; DataLakePathClient &gt; Azure::Storage::Files::DataLake::DataLakeFileSystemClient::UndeletePath(const std::string &amp;&#160;         deletedPath,                     
+                                                                                                                  const std::string &amp;&#160;         deletionId,                      
+                                                                                                                  const UndeletePathOptions &amp;&#160; options = UndeletePathOptions(), 
+                                                                                                                  const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                 )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -395,11 +497,3 @@ components:
   display: h4
 - parameters:
   - summary: This request is sent to Blob endpoint.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__file__system__client_8hpp_source.html">datalake_file_system_client.hpp</a></li>
-
-    <li>src/datalake_file_system_client.cpp</li>
-
-    </ul>

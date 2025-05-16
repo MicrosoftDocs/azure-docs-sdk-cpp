@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::ShareItem
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AShareItem
 title: Azure::Storage::Files::Shares::Models::ShareItem Struct Reference
 components:
 - content: >-
@@ -24,25 +24,32 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Deleted
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::Shares::Models::ShareItem::Deleted = bool()
+  languageId: cpp
 - content: <p>True if the share is deleted. </p>
 - section: Details
-  display: h2
+  display: h3
+- declaration: ShareItemDetails Azure::Storage::Files::Shares::Models::ShareItem::Details
+  languageId: cpp
 - content: <p>Properties of a share. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Core::CaseInsensitiveMap Azure::Storage::Files::Shares::Models::ShareItem::Metadata
+  languageId: cpp
 - content: <p>A set of name-value pairs associated with the share or file. </p>
 - section: Name
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::Shares::Models::ShareItem::Name
+  languageId: cpp
 - content: <p>The name of the share. </p>
 - section: Snapshot
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::Shares::Models::ShareItem::Snapshot
+  languageId: cpp
 - content: <p>The snapshot of the share. </p>
 - section: Version
-  display: h2
-- content: >-
-    <p>The version of the share. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: std::string Azure::Storage::Files::Shares::Models::ShareItem::Version
+  languageId: cpp
+- content: <p>The version of the share. </p>

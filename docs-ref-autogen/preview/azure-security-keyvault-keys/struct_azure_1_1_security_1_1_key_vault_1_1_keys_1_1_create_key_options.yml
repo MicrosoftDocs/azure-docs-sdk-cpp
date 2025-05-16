@@ -1,10 +1,17 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::CreateKeyOptions
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions
 title: Azure::Security::KeyVault::Keys::CreateKeyOptions Struct Reference
 components:
 - content: >-
     <p>Define the specific options for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_client.html#a0d6e353973e5fd5c3811a3a8e443b754">KeyClient::CreateKey</a> operaion.  
-     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#details">More...</a></p><p><code>#include &lt;<a href="key__client__options_8hpp_source.html">key_client_options.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Security::KeyVault::Keys::CreateKeyOptions:
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#details">More...</a></p><p><code>#include &lt;<a href="key__client__options_8hpp_source.html">key_client_options.hpp</a>&gt;</code></p><p>This class is inherited by:</p>
+- linkList:
+  - name: Azure::Security::KeyVault::Keys::CreateEcKeyOptions
+    href: class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_ec_key_options.html
+  - name: Azure::Security::KeyVault::Keys::CreateOctKeyOptions
+    href: class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_oct_key_options.html
+  - name: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions
+    href: class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options.html
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -45,26 +52,36 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~CreateKeyOptions()
-  display: h2
+  display: h3
+- declaration: virtual Azure::Security::KeyVault::Keys::CreateKeyOptions::~CreateKeyOptions() virtual default
+  languageId: cpp
 - section: Member Data Documentation
   display: h2
 - section: Enabled
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::Enabled
+  languageId: cpp
 - section: ExpiresOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::ExpiresOn
+  languageId: cpp
 - section: Exportable
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::Exportable
+  languageId: cpp
 - section: KeyOperations
-  display: h2
+  display: h3
+- declaration: std::vector&lt;KeyOperation&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::KeyOperations
+  languageId: cpp
 - section: NotBefore
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::NotBefore
+  languageId: cpp
 - section: ReleasePolicy
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;KeyReleasePolicy&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::ReleasePolicy
+  languageId: cpp
 - section: Tags
-  display: h2
-- content: >-
-    The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/keyvault/keys/<a href="key__client__options_8hpp_source.html">key_client_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: std::unordered_map&lt;std::string, std::string&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::Tags
+  languageId: cpp

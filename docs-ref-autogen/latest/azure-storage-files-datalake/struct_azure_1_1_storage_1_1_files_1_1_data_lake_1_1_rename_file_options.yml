@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::RenameFileOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ARenameFileOptions
 title: Azure::Storage::Files::DataLake::RenameFileOptions Struct Reference
 components:
 - content: >-
@@ -18,16 +18,17 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessConditions
-  display: h2
+  display: h3
+- declaration: PathAccessConditions Azure::Storage::Files::DataLake::RenameFileOptions::AccessConditions
+  languageId: cpp
 - content: <p>Specify the access condition for the path. </p>
 - section: DestinationFileSystem
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::RenameFileOptions::DestinationFileSystem
+  languageId: cpp
 - content: <p>If not specified, the source's file system is used. Otherwise, rename to destination file system. </p>
 - section: SourceAccessConditions
-  display: h2
-- content: >-
-    <p>The access condition for source path. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: PathAccessConditions Azure::Storage::Files::DataLake::RenameFileOptions::SourceAccessConditions
+  languageId: cpp
+- content: <p>The access condition for source path. </p>

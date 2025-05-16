@@ -1,10 +1,15 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::DataLakePathClient
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakePathClient
 title: Azure::Storage::Files::DataLake::DataLakePathClient Class Reference
 components:
 - content: >-
     <p>The <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a> allows you to manipulate Azure Storage DataLake files.  
-     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#details">More...</a></p><p><code>#include &lt;<a href="datalake__path__client_8hpp_source.html">datalake_path_client.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Storage::Files::DataLake::DataLakePathClient:
+     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#details">More...</a></p><p><code>#include &lt;<a href="datalake__path__client_8hpp_source.html">datalake_path_client.hpp</a>&gt;</code></p><p>This class is inherited by:</p>
+- linkList:
+  - name: Azure::Storage::Files::DataLake::DataLakeDirectoryClient
+    href: class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_directory_client.html
+  - name: Azure::Storage::Files::DataLake::DataLakeFileClient
+    href: class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -101,9 +106,17 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~DataLakePathClient()
-  display: h2
+  display: h3
+- declaration: virtual Azure::Storage::Files::DataLake::DataLakePathClient::~DataLakePathClient() virtual default
+  languageId: cpp
 - section: DataLakePathClient() [1/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Files::DataLake::DataLakePathClient::DataLakePathClient(const std::string &amp;&#160;                          pathUrl,                          
+                                                                            std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;credential,                       
+                                                                            const DataLakeClientOptions &amp;&#160;                options = DataLakeClientOptions()&#160;
+                                                                           ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -114,7 +127,13 @@ components:
   - name: options
     summary: Optional parameters used to initialize the client.
 - section: DataLakePathClient() [2/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Files::DataLake::DataLakePathClient::DataLakePathClient(const std::string &amp;&#160;                                  pathUrl,                          
+                                                                            std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                       
+                                                                            const DataLakeClientOptions &amp;&#160;                        options = DataLakeClientOptions()&#160;
+                                                                           ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -125,7 +144,12 @@ components:
   - name: options
     summary: Optional parameters used to initialize the client.
 - section: DataLakePathClient() [3/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Files::DataLake::DataLakePathClient::DataLakePathClient(const std::string &amp;&#160;          pathUrl,                          
+                                                                            const DataLakeClientOptions &amp;&#160;options = DataLakeClientOptions()&#160;
+                                                                           ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -134,7 +158,14 @@ components:
   - name: options
     summary: Optional parameters used to initialize the client.
 - section: DataLakePathClient() [4/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Files::DataLake::DataLakePathClient::DataLakePathClient(Azure::Core::Url&#160;                                             pathUrl,            
+                                                                            Blobs::BlobClient&#160;                                            blobClient,         
+                                                                            std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt;&#160;pipeline,           
+                                                                            _detail::DatalakeClientConfiguration&#160;                         clientConfiguration&#160;
+                                                                           ) inline explicit protected
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -149,7 +180,13 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: Create()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::CreatePathResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::Create(Models::PathResourceType&#160;    type,                            
+                                                                                                            const CreatePathOptions &amp;&#160;   options = CreatePathOptions(),   
+                                                                                                            const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                           )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -168,7 +205,14 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: CreateFromConnectionString()
-  display: h2
+  display: h3
+- declaration: >-
+    DataLakePathClient Azure::Storage::Files::DataLake::DataLakePathClient::CreateFromConnectionString(const std::string &amp;&#160;          connectionString,                 
+                                                                                                       const std::string &amp;&#160;          fileSystemName,                   
+                                                                                                       const std::string &amp;&#160;          path,                             
+                                                                                                       const DataLakeClientOptions &amp;&#160;options = DataLakeClientOptions()&#160;
+                                                                                                      ) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -185,7 +229,13 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a>
 - section: CreateIfNotExists()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::CreatePathResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::CreateIfNotExists(Models::PathResourceType&#160;    type,                            
+                                                                                                                       const CreatePathOptions &amp;&#160;   options = CreatePathOptions(),   
+                                                                                                                       const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                      )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -204,7 +254,12 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: Delete()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DeletePathResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::Delete(const DeletePathOptions &amp;&#160;   options = DeletePathOptions(),   
+                                                                                                            const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                           )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -221,7 +276,12 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: DeleteIfExists()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DeletePathResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::DeleteIfExists(const DeletePathOptions &amp;&#160;   options = DeletePathOptions(),   
+                                                                                                                    const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                   )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -238,7 +298,12 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: GetAccessControlList()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::PathAccessControlList &gt; Azure::Storage::Files::DataLake::DataLakePathClient::GetAccessControlList(const GetPathAccessControlListOptions &amp;&#160;options = GetPathAccessControlListOptions(),
+                                                                                                                               const Azure::Core::Context &amp;&#160;           context = Azure::Core::Context()&#160;           
+                                                                                                                              )                                        const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -255,7 +320,12 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: GetProperties()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::PathProperties &gt; Azure::Storage::Files::DataLake::DataLakePathClient::GetProperties(const GetPathPropertiesOptions &amp;&#160;options = GetPathPropertiesOptions(),
+                                                                                                                 const Azure::Core::Context &amp;&#160;    context = Azure::Core::Context()&#160;    
+                                                                                                                )                                 const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -272,13 +342,21 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: GetUrl()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::DataLakePathClient::GetUrl()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The path's primary URL endpoint.
 - section: RemoveAccessControlListRecursive()
-  display: h2
+  display: h3
+- declaration: >-
+    RemovePathAccessControlListRecursivePagedResponse Azure::Storage::Files::DataLake::DataLakePathClient::RemoveAccessControlListRecursive(const std::vector&lt; Models::Acl &gt; &amp;&#160;                 acls,                                                   
+                                                                                                                                            const RemovePathAccessControlListRecursiveOptions &amp;&#160;options = RemovePathAccessControlListRecursiveOptions(),
+                                                                                                                                            const Azure::Core::Context &amp;&#160;                       context = Azure::Core::Context()&#160;                       
+                                                                                                                                           )                                                    const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -297,7 +375,13 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: SetAccessControlList()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetPathAccessControlListResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::SetAccessControlList(std::vector&lt; Models::Acl &gt;&#160;             acls,                                       
+                                                                                                                                        const SetPathAccessControlListOptions &amp;&#160;options = SetPathAccessControlListOptions(),
+                                                                                                                                        const Azure::Core::Context &amp;&#160;           context = Azure::Core::Context()&#160;           
+                                                                                                                                       )                                        const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -316,7 +400,13 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: SetAccessControlListRecursive()
-  display: h2
+  display: h3
+- declaration: >-
+    SetPathAccessControlListRecursivePagedResponse Azure::Storage::Files::DataLake::DataLakePathClient::SetAccessControlListRecursive(const std::vector&lt; Models::Acl &gt; &amp;&#160;              acls,                                                
+                                                                                                                                      const SetPathAccessControlListRecursiveOptions &amp;&#160;options = SetPathAccessControlListRecursiveOptions(),
+                                                                                                                                      const Azure::Core::Context &amp;&#160;                    context = Azure::Core::Context()&#160;                    
+                                                                                                                                     )                                                 const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -335,7 +425,13 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: SetHttpHeaders()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetPathHttpHeadersResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::SetHttpHeaders(Models::PathHttpHeaders&#160;          httpHeaders,                          
+                                                                                                                            const SetPathHttpHeadersOptions &amp;&#160;options = SetPathHttpHeadersOptions(),
+                                                                                                                            const Azure::Core::Context &amp;&#160;     context = Azure::Core::Context()&#160;     
+                                                                                                                           )                                  const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -354,7 +450,13 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: SetMetadata()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetPathMetadataResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::SetMetadata(Storage::Metadata&#160;             metadata,                          
+                                                                                                                      const SetPathMetadataOptions &amp;&#160;options = SetPathMetadataOptions(),
+                                                                                                                      const Azure::Core::Context &amp;&#160;  context = Azure::Core::Context()&#160;  
+                                                                                                                     )                               const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -373,7 +475,13 @@ components:
 - parameters:
   - summary: This request is sent to blob endpoint.
 - section: SetPermissions()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetPathPermissionsResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::SetPermissions(std::string&#160;                      permissions,                          
+                                                                                                                            const SetPathPermissionsOptions &amp;&#160;options = SetPathPermissionsOptions(),
+                                                                                                                            const Azure::Core::Context &amp;&#160;     context = Azure::Core::Context()&#160;     
+                                                                                                                           )                                  const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -392,7 +500,13 @@ components:
 - parameters:
   - summary: This request is sent to dfs endpoint.
 - section: UpdateAccessControlListRecursive()
-  display: h2
+  display: h3
+- declaration: >-
+    UpdatePathAccessControlListRecursivePagedResponse Azure::Storage::Files::DataLake::DataLakePathClient::UpdateAccessControlListRecursive(const std::vector&lt; Models::Acl &gt; &amp;&#160;                 acls,                                                   
+                                                                                                                                            const UpdatePathAccessControlListRecursiveOptions &amp;&#160;options = UpdatePathAccessControlListRecursiveOptions(),
+                                                                                                                                            const Azure::Core::Context &amp;&#160;                       context = Azure::Core::Context()&#160;                       
+                                                                                                                                           )                                                    const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -410,11 +524,3 @@ components:
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__path__client_8hpp_source.html">datalake_path_client.hpp</a></li>
-
-    <li>src/datalake_path_client.cpp</li>
-
-    </ul>

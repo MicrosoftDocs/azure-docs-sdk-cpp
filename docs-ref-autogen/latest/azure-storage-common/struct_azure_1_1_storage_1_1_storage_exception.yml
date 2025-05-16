@@ -1,11 +1,14 @@
 ### YamlMime:Reference
-uid: Azure::Storage::StorageException
+uid: Azure%3A%3AStorage%3A%3AStorageException
 title: Azure::Storage::StorageException Struct Reference
 components:
 - content: >-
     <p>An exception thrown when storage service request fails.  
 
-    </p><p><code>#include &lt;<a href="storage__exception_8hpp_source.html">storage_exception.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Storage::StorageException:
+    </p><p><code>#include &lt;<a href="storage__exception_8hpp_source.html">storage_exception.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::RequestFailedException
+    href: ''
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -26,7 +29,9 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: StorageException()
-  display: h2
+  display: h3
+- declaration: Azure::Storage::StorageException::StorageException(const std::string &amp;&#160;what) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -35,7 +40,9 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: CreateFromResponse()
-  display: h2
+  display: h3
+- declaration: static StorageException Azure::Storage::StorageException::CreateFromResponse(std::unique_ptr&lt; Azure::Core::Http::RawResponse &gt;&#160;response) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -48,10 +55,7 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AdditionalInformation
-  display: h2
-- content: >-
-    <p>Some storage-specific information in response body. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/common/<a href="storage__exception_8hpp_source.html">storage_exception.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: std::map&lt;std::string, std::string&gt; Azure::Storage::StorageException::AdditionalInformation
+  languageId: cpp
+- content: <p>Some storage-specific information in response body. </p>

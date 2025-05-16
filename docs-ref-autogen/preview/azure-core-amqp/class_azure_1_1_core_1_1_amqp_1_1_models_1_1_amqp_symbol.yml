@@ -1,10 +1,13 @@
 ### YamlMime:Reference
-uid: Azure::Core::Amqp::Models::AmqpSymbol
+uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpSymbol
 title: Azure::Core::Amqp::Models::AmqpSymbol Class Reference
 components:
 - content: >-
     <p>An AMQP symbol value. An AMQP Symbol is a string valued from a constrained domain, whose content is sequence of ASCII encoded characters.  
-     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_symbol.html#details">More...</a></p><p><code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Core::Amqp::Models::AmqpSymbol:
+     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_symbol.html#details">More...</a></p><p><code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::Amqp::Models::_detail::AmqpCollectionBase< std::string, AmqpSymbol >
+    href: ''
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -44,7 +47,9 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: AmqpSymbol()
-  display: h2
+  display: h3
+- declaration: Azure::Core::Amqp::Models::AmqpSymbol::AmqpSymbol(AmqpValue const &amp;&#160;value)
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -57,7 +62,9 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: operator==() [1/2]
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Amqp::Models::AmqpSymbol::operator==(AmqpSymbol const &amp;&#160;that)const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -68,7 +75,9 @@ components:
 - parameters:
   - summary: true if the two symbols are equal, false otherwise.
 - section: operator==() [2/2]
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Amqp::Models::AmqpSymbol::operator==(const decltype(m_value)::value_type *const&#160;that)const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -78,11 +87,3 @@ components:
   display: h4
 - parameters:
   - summary: true if the two symbols are equal, false otherwise.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/core/amqp/models/<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a></li>
-
-    <li>src/models/amqp_value.cpp</li>
-
-    </ul>

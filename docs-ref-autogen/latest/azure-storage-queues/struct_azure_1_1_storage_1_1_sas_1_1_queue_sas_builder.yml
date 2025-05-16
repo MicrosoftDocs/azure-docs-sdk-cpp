@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Sas::QueueSasBuilder
+uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder
 title: Azure::Storage::Sas::QueueSasBuilder Struct Reference
 components:
 - content: >-
@@ -45,7 +45,9 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: GenerateSasStringToSign()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Sas::QueueSasBuilder::GenerateSasStringToSign(const StorageSharedKeyCredential &amp;&#160;credential)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -56,7 +58,9 @@ components:
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
 - section: GenerateSasToken()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Sas::QueueSasBuilder::GenerateSasToken(const StorageSharedKeyCredential &amp;&#160;credential)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -67,24 +71,20 @@ components:
 - parameters:
   - summary: The SAS query parameters used for authenticating requests.
 - section: SetPermissions() [1/2]
-  display: h2
+  display: h3
+- declaration: void Azure::Storage::Sas::QueueSasBuilder::SetPermissions(QueueSasPermissions&#160;permissions)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: permissions
     summary: The allowed permissions.
 - section: SetPermissions() [2/2]
-  display: h2
+  display: h3
+- declaration: void Azure::Storage::Sas::QueueSasBuilder::SetPermissions(std::string&#160;rawPermissions) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: rawPermissions
     summary: Raw permissions string for the SAS.
-- content: >-
-    The documentation for this struct was generated from the following files:<ul>
-
-    <li>inc/azure/storage/queues/<a href="queue__sas__builder_8hpp_source.html">queue_sas_builder.hpp</a></li>
-
-    <li>src/queue_sas_builder.cpp</li>
-
-    </ul>

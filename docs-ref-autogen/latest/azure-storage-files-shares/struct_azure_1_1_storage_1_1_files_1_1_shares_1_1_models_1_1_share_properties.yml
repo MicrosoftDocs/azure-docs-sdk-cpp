@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::ShareProperties
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AShareProperties
 title: Azure::Storage::Files::Shares::Models::ShareProperties Struct Reference
 components:
 - content: >-
@@ -62,82 +62,127 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessTier
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::AccessTier&gt; Azure::Storage::Files::Shares::Models::ShareProperties::AccessTier
+  languageId: cpp
 - content: <p>Specifies the access tier of the share. </p>
 - section: AccessTierChangedOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Files::Shares::Models::ShareProperties::AccessTierChangedOn
+  languageId: cpp
 - content: <p>Returns the last modified time (in UTC) of the access tier of the share. </p>
 - section: AccessTierTransitionState
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::Models::ShareProperties::AccessTierTransitionState
+  languageId: cpp
 - content: <p>Returns the transition state between access tiers, when present. </p>
 - section: EnabledProtocols
-  display: h2
+  display: h3
+- declaration: Nullable&lt;ShareProtocols&gt; Azure::Storage::Files::Shares::Models::ShareProperties::EnabledProtocols
+  languageId: cpp
 - content: <p>The protocols that have been enabled on the share. </p>
 - section: EnableSnapshotVirtualDirectoryAccess
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::Models::ShareProperties::EnableSnapshotVirtualDirectoryAccess
+  languageId: cpp
 - content: <p>Version 2023-08-03 and newer. Specifies whether the snapshot virtual directory should be accessible at the root of share mount point when NFS is enabled. This header is only returned for shares, not for snapshots. </p>
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Files::Shares::Models::ShareProperties::ETag
+  languageId: cpp
 - content: <p>The ETag contains a value that you can use to perform operations conditionally, in quotes. </p>
 - section: IncludedBurstIops
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::IncludedBurstIops
+  languageId: cpp
 - content: <p>Return the calculated burst IOPS of the share. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::Shares::Models::ShareProperties::LastModified
+  languageId: cpp
 - content: <p>Returns the date and time the share was last modified. Any operation that modifies the share or its properties updates the last modified time. Operations on files do not affect the last modified time of the share. </p>
 - section: LeaseDuration
-  display: h2
+  display: h3
+- declaration: Nullable&lt;LeaseDurationType&gt; Azure::Storage::Files::Shares::Models::ShareProperties::LeaseDuration
+  languageId: cpp
 - content: <p>When a share is leased, specifies whether the lease is of infinite or fixed duration. </p>
 - section: LeaseState
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::LeaseState&gt; Azure::Storage::Files::Shares::Models::ShareProperties::LeaseState
+  languageId: cpp
 - content: <p>Lease state of the share. </p>
 - section: LeaseStatus
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::LeaseStatus&gt; Azure::Storage::Files::Shares::Models::ShareProperties::LeaseStatus
+  languageId: cpp
 - content: <p>The current lease status of the share. </p>
 - section: MaxBurstCreditsForIops
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::MaxBurstCreditsForIops
+  languageId: cpp
 - content: <p>Returned the calculated maximum burst credits. This is not the current burst credit level, but the maximum burst credits the share can have. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Core::CaseInsensitiveMap Azure::Storage::Files::Shares::Models::ShareProperties::Metadata
+  languageId: cpp
 - content: <p>A set of name-value pairs that contain the user-defined metadata of the share. </p>
 - section: NextAllowedProvisionedBandwidthDowngradeTime
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Files::Shares::Models::ShareProperties::NextAllowedProvisionedBandwidthDowngradeTime
+  languageId: cpp
 - content: <p>Returns the current share next allowed provisioned bandwidth downgrade time. </p>
 - section: NextAllowedProvisionedIopsDowngradeTime
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Files::Shares::Models::ShareProperties::NextAllowedProvisionedIopsDowngradeTime
+  languageId: cpp
 - content: <p>Returns the current share next allowed provisioned iops downgrade time. </p>
 - section: NextAllowedQuotaDowngradeTime
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Files::Shares::Models::ShareProperties::NextAllowedQuotaDowngradeTime
+  languageId: cpp
 - content: <p>Returns the current share next allowed quota downgrade time. </p>
 - section: PaidBurstingEnabled
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::Models::ShareProperties::PaidBurstingEnabled
+  languageId: cpp
 - content: <p>Optional. Boolean. Default if not specified is false. This property enables paid bursting. </p>
 - section: PaidBurstingMaxBandwidthMibps
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::PaidBurstingMaxBandwidthMibps
+  languageId: cpp
 - content: <p>Optional. Integer. Default if not specified is the maximum throughput the file share can support. Current maximum for a file share is 10,340 MiB/sec. </p>
 - section: PaidBurstingMaxIops
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::PaidBurstingMaxIops
+  languageId: cpp
 - content: <p>Optional. Integer. Default if not specified is the maximum IOPS the file share can support. Current maximum for a file share is 102,400 IOPS. </p>
 - section: ProvisionedBandwidthMBps
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int32_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::ProvisionedBandwidthMBps
+  languageId: cpp
 - content: <p>Returns the current share provisioned bandwidth in mebibytes per second. </p>
 - section: ProvisionedEgressMBps
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int32_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::ProvisionedEgressMBps
+  languageId: cpp
 - content: <p>Returns the current share provisioned egress in megabytes per second. </p>
 - section: ProvisionedIngressMBps
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int32_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::ProvisionedIngressMBps
+  languageId: cpp
 - content: <p>Returns the current share provisioned ingress in megabytes per second. </p>
 - section: ProvisionedIops
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int32_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::ProvisionedIops
+  languageId: cpp
 - content: <p>Returns the current share provisioned IOPS. </p>
 - section: Quota
-  display: h2
+  display: h3
+- declaration: std::int64_t Azure::Storage::Files::Shares::Models::ShareProperties::Quota = std::int64_t()
+  languageId: cpp
 - content: <p>Returns the current share quota in GB. </p>
 - section: RootSquash
-  display: h2
-- content: >-
-    <p>Valid for NFS shares only. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Nullable&lt;ShareRootSquash&gt; Azure::Storage::Files::Shares::Models::ShareProperties::RootSquash
+  languageId: cpp
+- content: <p>Valid for NFS shares only. </p>

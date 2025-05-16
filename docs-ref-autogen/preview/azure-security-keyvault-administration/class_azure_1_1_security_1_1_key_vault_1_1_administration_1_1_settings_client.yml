@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Administration::SettingsClient
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ASettingsClient
 title: Azure::Security::KeyVault::Administration::SettingsClient Class Reference
 components:
 - content: >-
@@ -30,9 +30,17 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~SettingsClient()
-  display: h2
+  display: h3
+- declaration: virtual Azure::Security::KeyVault::Administration::SettingsClient::~SettingsClient() virtual default
+  languageId: cpp
 - section: SettingsClient() [1/2]
-  display: h2
+  display: h3
+- declaration: >-
+    SettingsClient::SettingsClient(std::string const &amp;&#160;                                        vaultUrl,                         
+                                   std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt;&#160;credential,                       
+                                   SettingsClientOptions&#160;                                      options = SettingsClientOptions()&#160;
+                                  ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -43,7 +51,9 @@ components:
   - name: options
     summary: The options to customize the client behavior.
 - section: SettingsClient() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Administration::SettingsClient::SettingsClient(SettingsClient const &amp;&#160;settingsClient) explicit default
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -52,7 +62,12 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: GetSetting()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Setting &gt; SettingsClient::GetSetting(std::string const &amp;&#160;         name,                            
+                                                          const Azure::Core::Context &amp;&#160;context = Azure::Core::Context{}&#160;
+                                                         )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -65,7 +80,9 @@ components:
 - parameters:
   - summary: response containing the setting.
 - section: GetSettings()
-  display: h2
+  display: h3
+- declaration: Azure::Response&lt; SettingsListResult &gt; SettingsClient::GetSettings(const Azure::Core::Context &amp;&#160;context = Azure::Core::Context{})const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -76,7 +93,13 @@ components:
 - parameters:
   - summary: Response containing a list of settings.
 - section: UpdateSetting()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Setting &gt; SettingsClient::UpdateSetting(std::string const &amp;&#160;         name,                            
+                                                             std::string const &amp;&#160;         value,                           
+                                                             const Azure::Core::Context &amp;&#160;context = Azure::Core::Context{}&#160;
+                                                            )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -90,11 +113,3 @@ components:
   display: h4
 - parameters:
   - summary: Response containing the new updated setting.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/keyvault/administration/<a href="settings__client_8hpp_source.html">settings_client.hpp</a></li>
-
-    <li>src/settings_client.cpp</li>
-
-    </ul>

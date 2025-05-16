@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::Uuid
+uid: Azure%3A%3ACore%3A%3AUuid
 title: Azure::Core::Uuid Class Reference
 components:
 - content: >-
@@ -48,28 +48,42 @@ components:
 - section: Member Typedef Documentation
   display: h2
 - section: ValueArray
-  display: h2
+  display: h3
+- declaration: using Azure::Core::Uuid::ValueArray =  std::array&lt;std::uint8_t, 16&gt;
+  languageId: cpp
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: Uuid()
-  display: h2
+  display: h3
+- declaration: constexpr Azure::Core::Uuid::Uuid() inline constexpr
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: AsArray()
-  display: h2
+  display: h3
+- declaration: constexpr ValueArray const  &amp; Azure::Core::Uuid::AsArray()const inline constexpr
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: An array with the binary representation of the <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>.
 - section: CreateFromArray()
-  display: h2
+  display: h3
+- declaration: static constexpr Uuid Azure::Core::Uuid::CreateFromArray(ValueArray const &amp;&#160;uuid) inline static constexpr
+  languageId: cpp
 - content: <p>Creates a <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> from a UUID created in an external scope. </p>
 - section: CreateUuid()
-  display: h2
+  display: h3
+- declaration: Uuid Azure::Core::Uuid::CreateUuid() static
+  languageId: cpp
 - section: IsNil()
-  display: h2
+  display: h3
+- declaration: constexpr bool Azure::Core::Uuid::IsNil()const inline constexpr
+  languageId: cpp
 - section: operator!=()
-  display: h2
+  display: h3
+- declaration: constexpr bool Azure::Core::Uuid::operator!=(Uuid const &amp;&#160;other)const inline constexpr
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -80,7 +94,9 @@ components:
 - parameters:
   - summary: <code>true</code> if values of two Uuids are not equal, <code>false</code> otherwise.
 - section: operator==()
-  display: h2
+  display: h3
+- declaration: constexpr bool Azure::Core::Uuid::operator==(Uuid const &amp;&#160;other)const inline constexpr
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -91,19 +107,21 @@ components:
 - parameters:
   - summary: <code>true</code> if values of two Uuids are equal, <code>false</code> otherwise.
 - section: Parse()
-  display: h2
+  display: h3
+- declaration: Uuid Azure::Core::Uuid::Parse(std::string const &amp;&#160;uuidString) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: uuidString
     summary: a string in <code>8-4-4-4-12</code> hex characters format.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: '`std::invalid_argument`'
+    summary: if <code>uuidString</code> cannot be parsed.
 - section: ToString()
-  display: h2
-- content: >-
-    <p>A string is in canonical format (<code>8-4-4-4-12</code> lowercase hex and dashes only). </p>The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/core/<a href="uuid_8hpp_source.html">uuid.hpp</a></li>
-
-    <li>src/uuid.cpp</li>
-
-    </ul>
+  display: h3
+- declaration: std::string Azure::Core::Uuid::ToString()const
+  languageId: cpp
+- content: <p>A string is in canonical format (<code>8-4-4-4-12</code> lowercase hex and dashes only). </p>

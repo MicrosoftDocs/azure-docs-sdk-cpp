@@ -1,11 +1,18 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::BlobClient
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobClient
 title: Azure::Storage::Blobs::BlobClient Class Reference
 components:
 - content: >-
     <p>The <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html">BlobClient</a> allows you to manipulate Azure Storage blobs.  
 
-    </p><p><code>#include &lt;<a href="blob__client_8hpp_source.html">blob_client.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Storage::Blobs::BlobClient:
+    </p><p><code>#include &lt;<a href="blob__client_8hpp_source.html">blob_client.hpp</a>&gt;</code></p><p>This class is inherited by:</p>
+- linkList:
+  - name: Azure::Storage::Blobs::AppendBlobClient
+    href: class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html
+  - name: Azure::Storage::Blobs::BlockBlobClient
+    href: class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html
+  - name: Azure::Storage::Blobs::PageBlobClient
+    href: class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -140,9 +147,17 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~BlobClient()
-  display: h2
+  display: h3
+- declaration: virtual Azure::Storage::Blobs::BlobClient::~BlobClient() virtual default
+  languageId: cpp
 - section: BlobClient() [1/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Blobs::BlobClient::BlobClient(const std::string &amp;&#160;                          blobUrl,                      
+                                                  std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;credential,                   
+                                                  const BlobClientOptions &amp;&#160;                    options = BlobClientOptions()&#160;
+                                                 ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -153,7 +168,13 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: BlobClient() [2/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Blobs::BlobClient::BlobClient(const std::string &amp;&#160;                                  blobUrl,                      
+                                                  std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                   
+                                                  const BlobClientOptions &amp;&#160;                            options = BlobClientOptions()&#160;
+                                                 ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -164,7 +185,12 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: BlobClient() [3/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Blobs::BlobClient::BlobClient(const std::string &amp;&#160;      blobUrl,                      
+                                                  const BlobClientOptions &amp;&#160;options = BlobClientOptions()&#160;
+                                                 ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -175,7 +201,13 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: AbortCopyFromUri()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::AbortBlobCopyFromUriResult &gt; Azure::Storage::Blobs::BlobClient::AbortCopyFromUri(const std::string &amp;&#160;                copyId,                                 
+                                                                                                              const AbortBlobCopyFromUriOptions &amp;&#160;options = AbortBlobCopyFromUriOptions(),
+                                                                                                              const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
+                                                                                                             )                                    const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -190,25 +222,37 @@ components:
 - parameters:
   - summary: An AbortBlobCopyFromUriResult on successfully aborting.
 - section: AsAppendBlobClient()
-  display: h2
+  display: h3
+- declaration: AppendBlobClient Azure::Storage::Blobs::BlobClient::AsAppendBlobClient()const
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> instance.
 - section: AsBlockBlobClient()
-  display: h2
+  display: h3
+- declaration: BlockBlobClient Azure::Storage::Blobs::BlobClient::AsBlockBlobClient()const
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html">BlockBlobClient</a> instance.
 - section: AsPageBlobClient()
-  display: h2
+  display: h3
+- declaration: PageBlobClient Azure::Storage::Blobs::BlobClient::AsPageBlobClient()const
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> instance.
 - section: CopyFromUri()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::CopyBlobFromUriResult &gt; Azure::Storage::Blobs::BlobClient::CopyFromUri(const std::string &amp;&#160;           sourceUri,                         
+                                                                                                    const CopyBlobFromUriOptions &amp;&#160;options = CopyBlobFromUriOptions(),
+                                                                                                    const Azure::Core::Context &amp;&#160;  context = Azure::Core::Context()&#160;  
+                                                                                                   )                               const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -223,7 +267,14 @@ components:
 - parameters:
   - summary: A CopyBlobFromUriResult describing the copy result.
 - section: CreateFromConnectionString()
-  display: h2
+  display: h3
+- declaration: >-
+    BlobClient Azure::Storage::Blobs::BlobClient::CreateFromConnectionString(const std::string &amp;&#160;      connectionString,             
+                                                                             const std::string &amp;&#160;      blobContainerName,            
+                                                                             const std::string &amp;&#160;      blobName,                     
+                                                                             const BlobClientOptions &amp;&#160;options = BlobClientOptions()&#160;
+                                                                            ) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -240,7 +291,12 @@ components:
 - parameters:
   - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html">BlobClient</a> instance.
 - section: CreateSnapshot()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::CreateBlobSnapshotResult &gt; Azure::Storage::Blobs::BlobClient::CreateSnapshot(const CreateBlobSnapshotOptions &amp;&#160;options = CreateBlobSnapshotOptions(),
+                                                                                                          const Azure::Core::Context &amp;&#160;     context = Azure::Core::Context()&#160;     
+                                                                                                         )                                  const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -253,7 +309,12 @@ components:
 - parameters:
   - summary: A CreateBlobSnapshotResult describing the new blob snapshot.
 - section: Delete()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DeleteBlobResult &gt; Azure::Storage::Blobs::BlobClient::Delete(const DeleteBlobOptions &amp;&#160;   options = DeleteBlobOptions(),   
+                                                                                          const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                         )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -266,7 +327,12 @@ components:
 - parameters:
   - summary: A DeleteBlobResult on successfully deleting.
 - section: DeleteIfExists()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DeleteBlobResult &gt; Azure::Storage::Blobs::BlobClient::DeleteIfExists(const DeleteBlobOptions &amp;&#160;   options = DeleteBlobOptions(),   
+                                                                                                  const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                 )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -279,7 +345,12 @@ components:
 - parameters:
   - summary: A DeleteBlobResult on successfully deleting. DeleteBlobResult.Deleted is false if the blob doesn't exist.
 - section: DeleteImmutabilityPolicy()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DeleteBlobImmutabilityPolicyResult &gt; Azure::Storage::Blobs::BlobClient::DeleteImmutabilityPolicy(const DeleteBlobImmutabilityPolicyOptions &amp;&#160;options = DeleteBlobImmutabilityPolicyOptions(),
+                                                                                                                              const Azure::Core::Context &amp;&#160;               context = Azure::Core::Context()&#160;               
+                                                                                                                             )                                            const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -292,7 +363,12 @@ components:
 - parameters:
   - summary: A DeleteBlobImmutabilityPolicyResult on successfully deleting immutability policy.
 - section: Download()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DownloadBlobResult &gt; Azure::Storage::Blobs::BlobClient::Download(const DownloadBlobOptions &amp;&#160; options = DownloadBlobOptions(), 
+                                                                                              const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                             )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -305,7 +381,13 @@ components:
 - parameters:
   - summary: A DownloadBlobResult describing the downloaded blob. BlobDownloadResponse.BodyStream contains the blob's data.
 - section: DownloadTo() [1/2]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DownloadBlobToResult &gt; Azure::Storage::Blobs::BlobClient::DownloadTo(const std::string &amp;&#160;          fileName,                         
+                                                                                                  const DownloadBlobToOptions &amp;&#160;options = DownloadBlobToOptions(),
+                                                                                                  const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
+                                                                                                 )                              const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -320,7 +402,14 @@ components:
 - parameters:
   - summary: A DownloadBlobToResult describing the downloaded blob.
 - section: DownloadTo() [2/2]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DownloadBlobToResult &gt; Azure::Storage::Blobs::BlobClient::DownloadTo(uint8_t *&#160;                    buffer,                           
+                                                                                                  size_t&#160;                       bufferSize,                       
+                                                                                                  const DownloadBlobToOptions &amp;&#160;options = DownloadBlobToOptions(),
+                                                                                                  const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
+                                                                                                 )                              const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -337,7 +426,12 @@ components:
 - parameters:
   - summary: A DownloadBlobToResult describing the downloaded blob.
 - section: GetAccountInfo()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::AccountInfo &gt; Azure::Storage::Blobs::BlobClient::GetAccountInfo(const GetAccountInfoOptions &amp;&#160;options = GetAccountInfoOptions(),
+                                                                                             const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
+                                                                                            )                              const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -350,7 +444,12 @@ components:
 - parameters:
   - summary: AccountInfo describing the account.
 - section: GetProperties()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::BlobProperties &gt; Azure::Storage::Blobs::BlobClient::GetProperties(const GetBlobPropertiesOptions &amp;&#160;options = GetBlobPropertiesOptions(),
+                                                                                               const Azure::Core::Context &amp;&#160;    context = Azure::Core::Context()&#160;    
+                                                                                              )                                 const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -363,7 +462,12 @@ components:
 - parameters:
   - summary: A BlobProperties describing the blob's properties.
 - section: GetTags()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; std::map&lt; std::string, std::string &gt; &gt; Azure::Storage::Blobs::BlobClient::GetTags(const GetBlobTagsOptions &amp;&#160;  options = GetBlobTagsOptions(),  
+                                                                                                       const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                      )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -376,13 +480,21 @@ components:
 - parameters:
   - summary: BlobTags on successfully getting tags.
 - section: GetUrl()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Blobs::BlobClient::GetUrl()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The blob's primary URL endpoint.
 - section: SetAccessTier()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetBlobAccessTierResult &gt; Azure::Storage::Blobs::BlobClient::SetAccessTier(Models::AccessTier&#160;              accessTier,                          
+                                                                                                        const SetBlobAccessTierOptions &amp;&#160;options = SetBlobAccessTierOptions(),
+                                                                                                        const Azure::Core::Context &amp;&#160;    context = Azure::Core::Context()&#160;    
+                                                                                                       )                                 const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -397,7 +509,13 @@ components:
 - parameters:
   - summary: A SetBlobAccessTierResult on successfully setting the tier.
 - section: SetHttpHeaders()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetBlobHttpHeadersResult &gt; Azure::Storage::Blobs::BlobClient::SetHttpHeaders(Models::BlobHttpHeaders&#160;          httpHeaders,                          
+                                                                                                          const SetBlobHttpHeadersOptions &amp;&#160;options = SetBlobHttpHeadersOptions(),
+                                                                                                          const Azure::Core::Context &amp;&#160;     context = Azure::Core::Context()&#160;     
+                                                                                                         )                                  const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -412,7 +530,13 @@ components:
 - parameters:
   - summary: A SetBlobHttpHeadersResult describing the updated blob.
 - section: SetImmutabilityPolicy()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetBlobImmutabilityPolicyResult &gt; Azure::Storage::Blobs::BlobClient::SetImmutabilityPolicy(Models::BlobImmutabilityPolicy&#160;          immutabilityPolicy,                          
+                                                                                                                        const SetBlobImmutabilityPolicyOptions &amp;&#160;options = SetBlobImmutabilityPolicyOptions(),
+                                                                                                                        const Azure::Core::Context &amp;&#160;            context = Azure::Core::Context()&#160;            
+                                                                                                                       )                                         const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -427,7 +551,13 @@ components:
 - parameters:
   - summary: The blob's immutability policy.
 - section: SetLegalHold()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetBlobLegalHoldResult &gt; Azure::Storage::Blobs::BlobClient::SetLegalHold(bool&#160;                           hasLegalHold,                       
+                                                                                                      const SetBlobLegalHoldOptions &amp;&#160;options = SetBlobLegalHoldOptions(),
+                                                                                                      const Azure::Core::Context &amp;&#160;   context = Azure::Core::Context()&#160;   
+                                                                                                     )                                const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -442,7 +572,13 @@ components:
 - parameters:
   - summary: A SetBlobLegalHoldResult on successfully setting legal hold.
 - section: SetMetadata()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetBlobMetadataResult &gt; Azure::Storage::Blobs::BlobClient::SetMetadata(Metadata&#160;                      metadata,                          
+                                                                                                    const SetBlobMetadataOptions &amp;&#160;options = SetBlobMetadataOptions(),
+                                                                                                    const Azure::Core::Context &amp;&#160;  context = Azure::Core::Context()&#160;  
+                                                                                                   )                               const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -457,7 +593,13 @@ components:
 - parameters:
   - summary: A SetBlobMetadataResult describing the updated blob.
 - section: SetTags()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetBlobTagsResult &gt; Azure::Storage::Blobs::BlobClient::SetTags(std::map&lt; std::string, std::string &gt;&#160;tags,                            
+                                                                                            const SetBlobTagsOptions &amp;&#160;          options = SetBlobTagsOptions(),  
+                                                                                            const Azure::Core::Context &amp;&#160;        context = Azure::Core::Context()&#160;
+                                                                                           )                                     const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -472,7 +614,13 @@ components:
 - parameters:
   - summary: A SetBlobTagsInfo on successfully setting tags.
 - section: StartCopyFromUri()
-  display: h2
+  display: h3
+- declaration: >-
+    StartBlobCopyOperation Azure::Storage::Blobs::BlobClient::StartCopyFromUri(const std::string &amp;&#160;                sourceUri,                              
+                                                                               const StartBlobCopyFromUriOptions &amp;&#160;options = StartBlobCopyFromUriOptions(),
+                                                                               const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
+                                                                              )                                    const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -487,7 +635,12 @@ components:
 - parameters:
   - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_operation.html">StartBlobCopyOperation</a> describing the state of the copy operation.
 - section: Undelete()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::UndeleteBlobResult &gt; Azure::Storage::Blobs::BlobClient::Undelete(const UndeleteBlobOptions &amp;&#160; options = UndeleteBlobOptions(), 
+                                                                                              const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                             )                             const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -500,7 +653,9 @@ components:
 - parameters:
   - summary: A UndeleteBlobResult on successfully deleting.
 - section: WithSnapshot()
-  display: h2
+  display: h3
+- declaration: BlobClient Azure::Storage::Blobs::BlobClient::WithSnapshot(const std::string &amp;&#160;snapshot)const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -515,7 +670,9 @@ components:
 - parameters:
   - summary: Pass empty string to remove the snapshot returning the base blob.
 - section: WithVersionId()
-  display: h2
+  display: h3
+- declaration: BlobClient Azure::Storage::Blobs::BlobClient::WithVersionId(const std::string &amp;&#160;versionId)const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -529,11 +686,3 @@ components:
   display: h4
 - parameters:
   - summary: Pass empty string to remove the version ID returning the base blob.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="blob__client_8hpp_source.html">blob_client.hpp</a></li>
-
-    <li>src/blob_client.cpp</li>
-
-    </ul>

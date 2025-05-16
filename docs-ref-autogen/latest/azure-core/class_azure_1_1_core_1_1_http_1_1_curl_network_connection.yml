@@ -1,10 +1,13 @@
 ### YamlMime:Reference
-uid: Azure::Core::Http::CurlNetworkConnection
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlNetworkConnection
 title: Azure::Core::Http::CurlNetworkConnection Class Reference
 components:
 - content: >-
     <p>Interface for the connection to the network with Curl.  
-     <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.html#details">More...</a></p><p><code>#include &lt;<a href="curl__connection__private_8hpp_source.html">curl_connection_private.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Core::Http::CurlNetworkConnection:
+     <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.html#details">More...</a></p><p><code>#include &lt;<a href="curl__connection__private_8hpp_source.html">curl_connection_private.hpp</a>&gt;</code></p><p>This class is inherited by:</p>
+- linkList:
+  - name: Azure::Core::Http::CurlConnection
+    href: class_azure_1_1_core_1_1_http_1_1_curl_connection.html
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -41,38 +44,57 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ~CurlNetworkConnection()
-  display: h2
+  display: h3
+- declaration: virtual Azure::Core::Http::CurlNetworkConnection::~CurlNetworkConnection() virtual default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: GetConnectionKey()
-  display: h2
+  display: h3
+- declaration: virtual std::string const  &amp; Azure::Core::Http::CurlNetworkConnection::GetConnectionKey()const pure virtual
+  languageId: cpp
 - content: <p>Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.html#a2b8da0ad12d29ac85ce8334e9bb2b177">Azure::Core::Http::CurlConnection</a>.</p>
 - section: IsExpired()
-  display: h2
+  display: h3
+- declaration: virtual bool Azure::Core::Http::CurlNetworkConnection::IsExpired() pure virtual
+  languageId: cpp
 - content: <p>Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.html#a011c45dd8398536a6eda1dde6e8a4cb4">Azure::Core::Http::CurlConnection</a>.</p>
 - section: IsShutdown()
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Http::CurlNetworkConnection::IsShutdown()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> is the connection was shut it down; otherwise, <code>false</code>.
 - section: ReadFromSocket()
-  display: h2
+  display: h3
+- declaration: >-
+    virtual size_t Azure::Core::Http::CurlNetworkConnection::ReadFromSocket(uint8_t *&#160;      buffer,    
+                                                                            size_t&#160;         bufferSize,
+                                                                            Context const &amp;&#160;context&#160;   
+                                                                           ) pure virtual
+  languageId: cpp
 - content: <p>Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.html#a39ec5246e8cab60c9229acee7f2f8ce7">Azure::Core::Http::CurlConnection</a>.</p>
 - section: SendBuffer()
-  display: h2
+  display: h3
+- declaration: >-
+    virtual CURLcode Azure::Core::Http::CurlNetworkConnection::SendBuffer(uint8_t const *&#160;buffer,    
+                                                                          size_t&#160;         bufferSize,
+                                                                          Context const &amp;&#160;context&#160;   
+                                                                         ) pure virtual
+  languageId: cpp
 - content: <p>Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.html#a38965e729c4fb3fb234f1753562e7116">Azure::Core::Http::CurlConnection</a>.</p>
 - section: Shutdown()
-  display: h2
+  display: h3
+- declaration: virtual void Azure::Core::Http::CurlNetworkConnection::Shutdown() inline virtual
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: A connection won't be returned to the connection pool if it was shut it down.
 - section: UpdateLastUsageTime()
-  display: h2
-- content: >-
-    <p>Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.html#a1ccde96315ab2370ced8bcfc87cc1556">Azure::Core::Http::CurlConnection</a>.</p>The documentation for this class was generated from the following file:<ul>
-
-    <li>src/http/curl/<a href="curl__connection__private_8hpp_source.html">curl_connection_private.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: virtual void Azure::Core::Http::CurlNetworkConnection::UpdateLastUsageTime() pure virtual
+  languageId: cpp
+- content: <p>Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.html#a1ccde96315ab2370ced8bcfc87cc1556">Azure::Core::Http::CurlConnection</a>.</p>

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::Models::Acl
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3AAcl
 title: Azure::Storage::Files::DataLake::Models::Acl Struct Reference
 components:
 - content: >-
@@ -35,7 +35,9 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: DeserializeAcls()
-  display: h2
+  display: h3
+- declaration: std::vector&lt; Acl &gt; Azure::Storage::Files::DataLake::Models::Acl::DeserializeAcls(const std::string &amp;&#160;aclsString) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -46,7 +48,9 @@ components:
 - parameters:
   - summary: std::vector&lt;Acl&gt;
 - section: FromString()
-  display: h2
+  display: h3
+- declaration: Acl Azure::Storage::Files::DataLake::Models::Acl::FromString(const std::string &amp;&#160;aclString) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -57,7 +61,9 @@ components:
 - parameters:
   - summary: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Acl</a>
 - section: SerializeAcls()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::Acl::SerializeAcls(const std::vector&lt; Acl &gt; &amp;&#160;aclsArray) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -68,7 +74,9 @@ components:
 - parameters:
   - summary: std::string
 - section: ToString()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::Acl::ToString(const Acl &amp;&#160;acl) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -81,21 +89,22 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Id
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::Acl::Id
+  languageId: cpp
 - content: <p>The ID of the ACL. </p>
 - section: Permissions
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::Acl::Permissions
+  languageId: cpp
 - content: <p>The permissions of the ACL. </p>
 - section: Scope
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::Acl::Scope
+  languageId: cpp
 - content: <p>The scope of the ACL. </p>
 - section: Type
-  display: h2
-- content: >-
-    <p>The type of the ACL. </p>The documentation for this struct was generated from the following files:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a></li>
-
-    <li>src/datalake_responses.cpp</li>
-
-    </ul>
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::Acl::Type
+  languageId: cpp
+- content: <p>The type of the ACL. </p>

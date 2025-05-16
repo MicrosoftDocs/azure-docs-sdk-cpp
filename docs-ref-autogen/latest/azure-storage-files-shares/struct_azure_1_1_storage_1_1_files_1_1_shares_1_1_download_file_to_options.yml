@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::DownloadFileToOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ADownloadFileToOptions
 title: Azure::Storage::Files::Shares::DownloadFileToOptions Struct Reference
 components:
 - content: >-
@@ -25,19 +25,22 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: ChunkSize
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Storage::Files::Shares::DownloadFileToOptions::ChunkSize = 4 * 1024 * 1024
+  languageId: cpp
 - content: <p>The maximum number of bytes in a single request. </p>
 - section: Concurrency
-  display: h2
+  display: h3
+- declaration: int32_t Azure::Storage::Files::Shares::DownloadFileToOptions::Concurrency = 5
+  languageId: cpp
 - content: <p>The maximum number of threads that may be used in a parallel transfer. </p>
 - section: InitialChunkSize
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Storage::Files::Shares::DownloadFileToOptions::InitialChunkSize = 256 * 1024 * 1024
+  languageId: cpp
 - content: <p>The size of the first range request in bytes. Files smaller than this limit will be downloaded in a single request. Files larger than this limit will continue being downloaded in chunks of size ChunkSize. </p>
 - section: Range
-  display: h2
-- content: >-
-    <p>Downloads only the bytes of the file from this range. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="share__options_8hpp_source.html">share_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;Core::Http::HttpRange&gt; Azure::Storage::Files::Shares::DownloadFileToOptions::Range
+  languageId: cpp
+- content: <p>Downloads only the bytes of the file from this range. </p>

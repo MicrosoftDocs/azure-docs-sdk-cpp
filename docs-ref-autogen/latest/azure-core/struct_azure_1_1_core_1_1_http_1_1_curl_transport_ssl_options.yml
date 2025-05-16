@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::Http::CurlTransportSslOptions
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlTransportSslOptions
 title: Azure::Core::Http::CurlTransportSslOptions Struct Reference
 components:
 - content: >-
@@ -26,26 +26,26 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AllowFailedCrlRetrieval
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Http::CurlTransportSslOptions::AllowFailedCrlRetrieval = false
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Note that this only works when libcurl is configured to use OpenSSL as its TLS provider. That functionally limits this check to Linux only, and only when openssl is configured (the default).
 - section: EnableCertificateRevocationListCheck
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Http::CurlTransportSslOptions::EnableCertificateRevocationListCheck = false
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Libcurl does revocation list check by default for SSL backends that supports this feature. However, the <a href="namespace_azure.html">Azure</a> SDK overrides libcurl's behavior and disables the revocation list check by default. This ensures that the libcurl behavior matches the WinHTTP behavior.
 - section: PemEncodedExpectedRootCertificates
-  display: h2
+  display: h3
+- declaration: std::string Azure::Core::Http::CurlTransportSslOptions::PemEncodedExpectedRootCertificates
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: The <a href="namespace_azure.html">Azure</a> SDK will not directly validate these certificates.
-- content: >-
-    The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/core/http/<a href="curl__transport_8hpp_source.html">curl_transport.hpp</a></li>
-
-    </ul>

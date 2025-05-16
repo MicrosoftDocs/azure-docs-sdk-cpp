@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Messaging::EventHubs::EventDataBatch
+uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AEventDataBatch
 title: Azure::Messaging::EventHubs::EventDataBatch Class Reference
 components:
 - content: >-
@@ -43,7 +43,9 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: EventDataBatch()
-  display: h2
+  display: h3
+- declaration: Azure::Messaging::EventHubs::EventDataBatch::EventDataBatch(EventDataBatch const &amp;&#160;other) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -52,36 +54,50 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: GetMaxBytes()
-  display: h2
+  display: h3
+- declaration: uint64_t Azure::Messaging::EventHubs::EventDataBatch::GetMaxBytes()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: uint64_t
 - section: GetPartitionId()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Messaging::EventHubs::EventDataBatch::GetPartitionId()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string
 - section: GetPartitionKey()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Messaging::EventHubs::EventDataBatch::GetPartitionKey()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string
 - section: NumberOfEvents()
-  display: h2
+  display: h3
+- declaration: size_t Azure::Messaging::EventHubs::EventDataBatch::NumberOfEvents() inline
+  languageId: cpp
 - section: operator=()
-  display: h2
+  display: h3
+- declaration: EventDataBatch &amp; Azure::Messaging::EventHubs::EventDataBatch::operator=(EventDataBatch const &amp;&#160;other) inline
+  languageId: cpp
 - content: <p>Copy an <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> to another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> </p>
 - section: ToAmqpMessage()
-  display: h2
+  display: h3
+- declaration: Azure::Core::Amqp::Models::AmqpMessage Azure::Messaging::EventHubs::EventDataBatch::ToAmqpMessage()const
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Azure::Core::Amqp::Models::AmqpMessage
 - section: TryAdd() [1/2]
-  display: h2
+  display: h3
+- declaration: bool Azure::Messaging::EventHubs::EventDataBatch::TryAdd(Azure::Messaging::EventHubs::Models::EventData const &amp;&#160;message)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -92,7 +108,9 @@ components:
 - parameters:
   - summary: true if the message was added to the batch, false otherwise.
 - section: TryAdd() [2/2]
-  display: h2
+  display: h3
+- declaration: _azure_NODISCARD bool Azure::Messaging::EventHubs::EventDataBatch::TryAdd(std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;&#160;message) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -102,11 +120,3 @@ components:
   display: h4
 - parameters:
   - summary: true if the message was added to the batch, false otherwise.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/messaging/eventhubs/<a href="event__data__batch_8hpp_source.html">event_data_batch.hpp</a></li>
-
-    <li>src/event_data_batch.cpp</li>
-
-    </ul>

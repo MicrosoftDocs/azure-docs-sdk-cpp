@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::Models::PathProperties
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3APathProperties
 title: Azure::Storage::Files::DataLake::Models::PathProperties Struct Reference
 components:
 - content: >-
@@ -76,103 +76,162 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Acls
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::vector&lt;Acl&gt; &gt; Azure::Storage::Files::DataLake::Models::PathProperties::Acls
+  languageId: cpp
 - content: <p>The acls of the path. </p>
 - section: ArchiveStatus
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::ArchiveStatus&gt; Azure::Storage::Files::DataLake::Models::PathProperties::ArchiveStatus
+  languageId: cpp
 - content: <p>The archive status of the path. </p>
 - section: CopyCompletedOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;DateTime&gt; Azure::Storage::Files::DataLake::Models::PathProperties::CopyCompletedOn
+  languageId: cpp
 - content: <p>The copy completion time of the path, if the path is created from a copy operation. </p>
 - section: CopyId
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::CopyId
+  languageId: cpp
 - content: <p>The copy ID of the path, if the path is created from a copy operation. </p>
 - section: CopyProgress
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::CopyProgress
+  languageId: cpp
 - content: <p>The copy progress of the path, if the path is created from a copy operation. </p>
 - section: CopySource
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::CopySource
+  languageId: cpp
 - content: <p>The copy source of the path, if the path is created from a copy operation. </p>
 - section: CopyStatus
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Blobs::Models::CopyStatus&gt; Azure::Storage::Files::DataLake::Models::PathProperties::CopyStatus
+  languageId: cpp
 - content: <p>The copy status of the path, if the path is created from a copy operation. </p>
 - section: CopyStatusDescription
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::CopyStatusDescription
+  languageId: cpp
 - content: <p>The copy status's description of the path, if the path is created from a copy operation. </p>
 - section: CreatedOn
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::DataLake::Models::PathProperties::CreatedOn
+  languageId: cpp
 - content: <p>The date and time at which the path was created. </p>
 - section: EncryptionContext
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::EncryptionContext
+  languageId: cpp
 - content: <p>Encryption context of the file. Encryption context is metadata that is not encrypted when stored on the file. The primary application of this field is to store non-encrypted data that can be used to derive the customer-provided key for a file. Not applicable for directories. </p>
 - section: EncryptionKeySha256
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::vector&lt;uint8_t&gt; &gt; Azure::Storage::Files::DataLake::Models::PathProperties::EncryptionKeySha256
+  languageId: cpp
 - content: <p>The encryption key's SHA256. </p>
 - section: EncryptionScope
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::EncryptionScope
+  languageId: cpp
 - content: <p>Returns the name of the encryption scope used to encrypt the path contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p>
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Files::DataLake::Models::PathProperties::ETag
+  languageId: cpp
 - content: <p>An HTTP entity tag associated with the path. </p>
 - section: ExpiresOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;DateTime&gt; Azure::Storage::Files::DataLake::Models::PathProperties::ExpiresOn
+  languageId: cpp
 - content: <p>The expiry time of the path. </p>
 - section: FileSize
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Storage::Files::DataLake::Models::PathProperties::FileSize = 0
+  languageId: cpp
 - content: <p>The size of the file. </p>
 - section: Group
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::Group
+  languageId: cpp
 - content: <p>The owning group of the path. </p>
 - section: HttpHeaders
-  display: h2
+  display: h3
+- declaration: PathHttpHeaders Azure::Storage::Files::DataLake::Models::PathProperties::HttpHeaders
+  languageId: cpp
 - content: <p>The common HTTP headers of the path. </p>
 - section: IncrementalCopyDestinationSnapshot
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::IncrementalCopyDestinationSnapshot
+  languageId: cpp
 - content: <p>The incremental copy destination snapshot of the path. </p>
 - section: IsCurrentVersion
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::Models::PathProperties::IsCurrentVersion
+  languageId: cpp
 - content: <p>A boolean indicates if the path is in its current version. </p>
 - section: IsDirectory
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::DataLake::Models::PathProperties::IsDirectory = false
+  languageId: cpp
 - content: <p>A boolean indicates if the path is a directory. </p>
 - section: IsIncrementalCopy
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::Models::PathProperties::IsIncrementalCopy
+  languageId: cpp
 - content: <p>A boolean indicates if the path has been incremental copied. </p>
 - section: IsServerEncrypted
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::Models::PathProperties::IsServerEncrypted
+  languageId: cpp
 - content: <p>A boolean indicates if the server is encrypted. </p>
 - section: LastAccessedOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;DateTime&gt; Azure::Storage::Files::DataLake::Models::PathProperties::LastAccessedOn
+  languageId: cpp
 - content: <p>The time this path is last accessed on. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::DataLake::Models::PathProperties::LastModified
+  languageId: cpp
 - content: <p>The data and time the path was last modified. </p>
 - section: LeaseDuration
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::LeaseDurationType&gt; Azure::Storage::Files::DataLake::Models::PathProperties::LeaseDuration
+  languageId: cpp
 - content: <p>The duration of the lease on the path. </p>
 - section: LeaseState
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::LeaseState&gt; Azure::Storage::Files::DataLake::Models::PathProperties::LeaseState
+  languageId: cpp
 - content: <p>The state of the lease on the path. </p>
 - section: LeaseStatus
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::LeaseStatus&gt; Azure::Storage::Files::DataLake::Models::PathProperties::LeaseStatus
+  languageId: cpp
 - content: <p>The status of the lease on the path. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Storage::Metadata Azure::Storage::Files::DataLake::Models::PathProperties::Metadata
+  languageId: cpp
 - content: <p>The metadata of the path. </p>
 - section: Owner
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::Owner
+  languageId: cpp
 - content: <p>The owner of the path. </p>
 - section: Permissions
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::Permissions
+  languageId: cpp
 - content: <p>The permissions of the path. </p>
 - section: RehydratePriority
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::RehydratePriority&gt; Azure::Storage::Files::DataLake::Models::PathProperties::RehydratePriority
+  languageId: cpp
 - content: <p>The rehydrate priority of the path. </p>
 - section: VersionId
-  display: h2
-- content: >-
-    <p>The version ID of the path. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__responses_8hpp_source.html">datalake_responses.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathProperties::VersionId
+  languageId: cpp
+- content: <p>The version ID of the path. </p>

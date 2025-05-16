@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::SetFilePropertiesOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ASetFilePropertiesOptions
 title: Azure::Storage::Files::Shares::SetFilePropertiesOptions Struct Reference
 components:
 - content: >-
@@ -22,22 +22,27 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessConditions
-  display: h2
+  display: h3
+- declaration: LeaseAccessConditions Azure::Storage::Files::Shares::SetFilePropertiesOptions::AccessConditions
+  languageId: cpp
 - content: <p>The operation will only succeed if the access condition is met. </p>
 - section: FilePermissionFormat
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models ::FilePermissionFormat&gt; Azure::Storage::Files::Shares::SetFilePropertiesOptions::FilePermissionFormat
+  languageId: cpp
 - content: <p>Optional. Available for version 2024-11-04 and later. Specifies the format in which the permission is returned.If FilePermissionFormat is unspecified or explicitly set to SDDL format format, the permission will be returned in SDDL format. </p>
 - section: Permission
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::SetFilePropertiesOptions::Permission
+  languageId: cpp
 - content: <p>This permission is the security descriptor for the file specified in the Security Descriptor Definition Language (SDDL) or base64 encoded binary format. If not specified, 'inherit' is used. </p>
 - section: PosixProperties
-  display: h2
+  display: h3
+- declaration: Models::FilePosixProperties Azure::Storage::Files::Shares::SetFilePropertiesOptions::PosixProperties
+  languageId: cpp
 - content: <p>The NFS related properties for the file. </p>
 - section: Size
-  display: h2
-- content: >-
-    <p>Specify this to resize a file to the specified value. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="share__options_8hpp_source.html">share_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;int64_t&gt; Azure::Storage::Files::Shares::SetFilePropertiesOptions::Size
+  languageId: cpp
+- content: <p>Specify this to resize a file to the specified value. </p>

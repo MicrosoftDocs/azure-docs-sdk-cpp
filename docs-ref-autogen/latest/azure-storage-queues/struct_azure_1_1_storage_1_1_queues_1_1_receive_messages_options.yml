@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Queues::ReceiveMessagesOptions
+uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AReceiveMessagesOptions
 title: Azure::Storage::Queues::ReceiveMessagesOptions Struct Reference
 components:
 - content: <p><code>#include &lt;<a href="queue__options_8hpp_source.html">queue_options.hpp</a>&gt;</code></p>
@@ -16,13 +16,12 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: MaxMessages
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;int64_t&gt; Azure::Storage::Queues::ReceiveMessagesOptions::MaxMessages
+  languageId: cpp
 - content: <p>Specifies the number of messages to retrieve from the queue. </p>
 - section: VisibilityTimeout
-  display: h2
-- content: >-
-    <p>After the messages have been retrieved, they are not visible to other clients for the time interval specified by this parameter. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/queues/<a href="queue__options_8hpp_source.html">queue_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;std::chrono::seconds&gt; Azure::Storage::Queues::ReceiveMessagesOptions::VisibilityTimeout
+  languageId: cpp
+- content: <p>After the messages have been retrieved, they are not visible to other clients for the time interval specified by this parameter. </p>

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::UploadFileFromOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AUploadFileFromOptions
 title: Azure::Storage::Files::DataLake::UploadFileFromOptions Struct Reference
 components:
 - content: >-
@@ -26,25 +26,32 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: ChunkSize
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;int64_t&gt; Azure::Storage::Files::DataLake::UploadFileFromOptions::ChunkSize
+  languageId: cpp
 - content: <p>The maximum number of bytes in a single request. This value cannot be larger than 4000 MiB. </p>
 - section: Concurrency
-  display: h2
+  display: h3
+- declaration: int32_t Azure::Storage::Files::DataLake::UploadFileFromOptions::Concurrency = 5
+  languageId: cpp
 - content: <p>The maximum number of threads that may be used in a parallel transfer. </p>
 - section: HttpHeaders
-  display: h2
+  display: h3
+- declaration: Models::PathHttpHeaders Azure::Storage::Files::DataLake::UploadFileFromOptions::HttpHeaders
+  languageId: cpp
 - content: <p>The standard HTTP header system properties to set. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Storage::Metadata Azure::Storage::Files::DataLake::UploadFileFromOptions::Metadata
+  languageId: cpp
 - content: <p>Name-value pairs associated with the blob as metadata. </p>
 - section: SingleUploadThreshold
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Storage::Files::DataLake::UploadFileFromOptions::SingleUploadThreshold = 256 * 1024 * 1024
+  languageId: cpp
 - content: <p>File smaller than this will be uploaded with a single upload operation. This value cannot be larger than 5000 MiB. </p>
 - section: '[struct]'
-  display: h2
-- content: >-
-    <p>Options for parallel transfer. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: struct  { ... }  Azure::Storage::Files::DataLake::UploadFileFromOptions::TransferOptions
+  languageId: cpp
+- content: <p>Options for parallel transfer. </p>

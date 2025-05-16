@@ -1,11 +1,14 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ARecoverDeletedCertificateOperation
 title: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation Class Reference
 components:
 - content: >-
     <p>Represents a recover deleted certificate long running operation.  
 
-    </p><p><code>#include &lt;<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation:
+    </p><p><code>#include &lt;<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::Operation
+    href: ''
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -29,7 +32,13 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: CreateFromResumeToken()
-  display: h2
+  display: h3
+- declaration: >-
+    RecoverDeletedCertificateOperation RecoverDeletedCertificateOperation::CreateFromResumeToken(std::string const &amp;&#160;         resumeToken,                     
+                                                                                                 CertificateClient const &amp;&#160;   client,                          
+                                                                                                 Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                ) static
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -48,22 +57,18 @@ components:
 - parameters:
   - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html">RecoverDeletedCertificateOperation</a>
 - section: GetResumeToken()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation::GetResumeToken()const inline override
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string
 - section: Value()
-  display: h2
+  display: h3
+- declaration: KeyVaultCertificateWithPolicy Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation::Value()const inline override
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: A key vault certificate object.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/keyvault/certificates/<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a></li>
-
-    <li>src/certificate_client_operations.cpp</li>
-
-    </ul>

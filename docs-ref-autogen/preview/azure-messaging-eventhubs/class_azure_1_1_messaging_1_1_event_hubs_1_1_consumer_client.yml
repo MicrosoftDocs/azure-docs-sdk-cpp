@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Messaging::EventHubs::ConsumerClient
+uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AConsumerClient
 title: Azure::Messaging::EventHubs::ConsumerClient Class Reference
 components:
 - content: >-
@@ -52,13 +52,24 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: ConsumerClient() [1/4]
-  display: h2
+  display: h3
+- declaration: Azure::Messaging::EventHubs::ConsumerClient::ConsumerClient(ConsumerClient const &amp;&#160;other) delete
+  languageId: cpp
 - content: <p>Copy a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> from an existing one. </p>
 - section: ConsumerClient() [2/4]
-  display: h2
+  display: h3
+- declaration: Azure::Messaging::EventHubs::ConsumerClient::ConsumerClient(ConsumerClient &amp;&amp;&#160;other) delete
+  languageId: cpp
 - content: <p>Move a consumer client </p>
 - section: ConsumerClient() [3/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Messaging::EventHubs::ConsumerClient::ConsumerClient(std::string const &amp;&#160;          connectionString,                    
+                                                                std::string const &amp;&#160;          eventHub = {},                       
+                                                                std::string const &amp;&#160;          consumerGroup = DefaultConsumerGroup,
+                                                                ConsumerClientOptions const &amp;&#160;options = {}&#160;                        
+                                                               )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -75,7 +86,15 @@ components:
 - parameters:
   - summary: connectionString can be one of two formats - with or without an EntityPath key. When the connection string does not have an entity path, as shown below, the eventHub parameter cannot be empty and should contain the name of your event hub. Endpoint=sb://&lt;your-namespace&gt;.servicebus.windows.net/;SharedAccessKeyName=&lt;key-name&gt;;SharedAccessKey=&lt;key&gt; When the connection string DOES have an entity path, as shown below, the eventHub parameter must match the entity path. Endpoint=sb://&lt;your-namespace&gt;.servicebus.windows.net/; SharedAccessKeyName=&lt;key-name&gt;;SharedAccessKey=&lt;key&gt;;EntityPath=&lt;entitypath&gt;;
 - section: ConsumerClient() [4/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Messaging::EventHubs::ConsumerClient::ConsumerClient(std::string const &amp;&#160;                                         fullyQualifiedNamespace,             
+                                                                std::string const &amp;&#160;                                         eventHub,                            
+                                                                std::shared_ptr&lt; Azure::Core::Credentials::TokenCredential &gt;&#160;credential,                          
+                                                                std::string const &amp;&#160;                                         consumerGroup = DefaultConsumerGroup,
+                                                                ConsumerClientOptions const &amp;&#160;                               options = {}&#160;                        
+                                                               )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -92,14 +111,22 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: Close()
-  display: h2
+  display: h3
+- declaration: void Azure::Messaging::EventHubs::ConsumerClient::Close(Azure::Core::Context const &amp;&#160;context)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: context
     summary: The context for the operation can be used for request cancellation.
 - section: CreatePartitionClient()
-  display: h2
+  display: h3
+- declaration: >-
+    PartitionClient Azure::Messaging::EventHubs::ConsumerClient::CreatePartitionClient(std::string const &amp;&#160;           partitionId, 
+                                                                                       PartitionClientOptions const &amp;&#160;options = {},
+                                                                                       Azure::Core::Context const &amp;&#160;  context = {}&#160;
+                                                                                      )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -110,27 +137,40 @@ components:
   - name: context
     summary: The context for the operation can be used for request cancellation.
 - section: GetConsumerGroup()
-  display: h2
+  display: h3
+- declaration: std::string const  &amp; Azure::Messaging::EventHubs::ConsumerClient::GetConsumerGroup()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Consumer group name for client
 - section: GetDetails()
-  display: h2
+  display: h3
+- declaration: Models::ConsumerClientDetails Azure::Messaging::EventHubs::ConsumerClient::GetDetails()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Client details for client
 - section: GetEventHubName()
-  display: h2
+  display: h3
+- declaration: std::string const  &amp; Azure::Messaging::EventHubs::ConsumerClient::GetEventHubName()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Event hub name for client
 - section: GetEventHubProperties()
-  display: h2
+  display: h3
+- declaration: Models::EventHubProperties Azure::Messaging::EventHubs::ConsumerClient::GetEventHubProperties(Core::Context const &amp;&#160;context = {})
+  languageId: cpp
 - section: GetPartitionProperties()
-  display: h2
+  display: h3
+- declaration: >-
+    Models::EventHubPartitionProperties Azure::Messaging::EventHubs::ConsumerClient::GetPartitionProperties(std::string const &amp;&#160;  partitionID, 
+                                                                                                            Core::Context const &amp;&#160;context = {}&#160;
+                                                                                                           )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -139,21 +179,20 @@ components:
   - name: context
     summary: The context for the operation can be used for request cancellation.
 - section: GetRetryOptions()
-  display: h2
+  display: h3
+- declaration: Azure::Core::Http::Policies::RetryOptions const  &amp; Azure::Messaging::EventHubs::ConsumerClient::GetRetryOptions()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Retry options for client
 - section: operator=() [1/2]
-  display: h2
+  display: h3
+- declaration: ConsumerClient &amp; Azure::Messaging::EventHubs::ConsumerClient::operator=(ConsumerClient &amp;&amp;&#160;other) delete
+  languageId: cpp
 - content: <p>Move a consumer client </p>
 - section: operator=() [2/2]
-  display: h2
-- content: >-
-    <p>Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> to an existing one. </p>The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/messaging/eventhubs/<a href="consumer__client_8hpp_source.html">consumer_client.hpp</a></li>
-
-    <li>src/consumer_client.cpp</li>
-
-    </ul>
+  display: h3
+- declaration: ConsumerClient &amp; Azure::Messaging::EventHubs::ConsumerClient::operator=(ConsumerClient const &amp;&#160;other) delete
+  languageId: cpp
+- content: <p>Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html">ConsumerClient</a> to an existing one. </p>

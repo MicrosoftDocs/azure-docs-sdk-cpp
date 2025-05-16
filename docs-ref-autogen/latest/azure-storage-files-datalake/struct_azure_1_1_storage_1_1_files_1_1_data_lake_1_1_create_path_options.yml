@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::CreatePathOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ACreatePathOptions
 title: Azure::Storage::Files::DataLake::CreatePathOptions Struct Reference
 components:
 - content: >-
@@ -41,43 +41,62 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessConditions
-  display: h2
+  display: h3
+- declaration: PathAccessConditions Azure::Storage::Files::DataLake::CreatePathOptions::AccessConditions
+  languageId: cpp
 - content: <p>Specify the access condition for the path. </p>
 - section: Acls
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::vector&lt;Models::Acl&gt; &gt; Azure::Storage::Files::DataLake::CreatePathOptions::Acls
+  languageId: cpp
 - content: <p>Sets POSIX access control rights on files and directories. Each access control entry (ACE) consists of a scope, a type, a user or group identifier, and permissions. </p>
 - section: EncryptionContext
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::CreatePathOptions::EncryptionContext
+  languageId: cpp
 - content: <p>Encryption context of the file. Encryption context is metadata that is not encrypted when stored on the file. The primary application of this field is to store non-encrypted data that can be used to derive the customer-provided key for a file. Not applicable for directories. </p>
 - section: Group
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::CreatePathOptions::Group
+  languageId: cpp
 - content: <p>The owning group of the file or directory. </p>
 - section: HttpHeaders
-  display: h2
+  display: h3
+- declaration: Models::PathHttpHeaders Azure::Storage::Files::DataLake::CreatePathOptions::HttpHeaders
+  languageId: cpp
 - content: <p>Specify the HTTP headers for this path. </p>
 - section: LeaseDuration
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::chrono::seconds&gt; Azure::Storage::Files::DataLake::CreatePathOptions::LeaseDuration
+  languageId: cpp
 - content: <p>Specifies the duration of the lease, in seconds, or InfiniteLeaseDuration for a lease that never expires. A non-infinite lease can be between 15 and 60 seconds. A lease duration cannot be changed using renew or change. Does not apply to directories. </p>
 - section: LeaseId
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::CreatePathOptions::LeaseId
+  languageId: cpp
 - content: <p>Proposed LeaseId. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Storage::Metadata Azure::Storage::Files::DataLake::CreatePathOptions::Metadata
+  languageId: cpp
 - content: <p>User-defined metadata to be stored with the path. Note that the string may only contain ASCII characters in the ISO-8859-1 character set. If the filesystem exists, any metadata not included in the list will be removed. All metadata are removed if the header is omitted. To merge new and existing metadata, first get all existing metadata and the current E-Tag, then make a conditional request with the E-Tag and include values for all metadata. </p>
 - section: Owner
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::CreatePathOptions::Owner
+  languageId: cpp
 - content: <p>The owner of the file or directory. </p>
 - section: Permissions
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::CreatePathOptions::Permissions
+  languageId: cpp
 - content: <p>Only valid if Hierarchical Namespace is enabled for the account. Sets POSIX access permissions for the file owner, the file owning group, and others. Each class may be granted read, write, or execute permission. The sticky bit is also supported. Both symbolic (rwxrw-rw-) and 4-digit octal notation (e.g. 0766) are supported. </p>
 - section: ScheduleDeletionOptions
-  display: h2
+  display: h3
+- declaration: SchedulePathDeletionOptions Azure::Storage::Files::DataLake::CreatePathOptions::ScheduleDeletionOptions
+  languageId: cpp
 - content: <p>Optional parameters to schedule the file for deletion. </p>
 - section: Umask
-  display: h2
-- content: >-
-    <p>Only valid if Hierarchical Namespace is enabled for the account. When creating a file or directory and the parent folder does not have a default ACL, the umask restricts the permissions of the file or directory to be created. The resulting permission is given by p bitwise and not u, where p is the permission and u is the umask. For example, if p is 0777 and u is 0057, then the resulting permission is 0720. The default permission is 0777 for a directory and 0666 for a file. The default umask is 0027. The umask must be specified in 4-digit octal notation (e.g. 0766). </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::CreatePathOptions::Umask
+  languageId: cpp
+- content: <p>Only valid if Hierarchical Namespace is enabled for the account. When creating a file or directory and the parent folder does not have a default ACL, the umask restricts the permissions of the file or directory to be created. The resulting permission is given by p bitwise and not u, where p is the permission and u is the umask. For example, if p is 0777 and u is 0057, then the resulting permission is 0720. The default permission is 0777 for a directory and 0666 for a file. The default umask is 0027. The umask must be specified in 4-digit octal notation (e.g. 0766). </p>

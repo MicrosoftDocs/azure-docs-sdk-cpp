@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::Http::Request
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3ARequest
 title: Azure::Core::Http::Request Class Reference
 components:
 - content: >-
@@ -56,7 +56,14 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: Request() [1/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Core::Http::Request::Request(HttpMethod&#160;                   httpMethod,          
+                                        Url&#160;                          url,                 
+                                        Azure::Core::IO::BodyStream *&#160;bodyStream,          
+                                        bool&#160;                         shouldBufferResponse&#160;
+                                       ) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -69,7 +76,13 @@ components:
   - name: shouldBufferResponse
     summary: A boolean value indicating whether the returned response should be buffered or returned as a body stream instead.
 - section: Request() [2/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Core::Http::Request::Request(HttpMethod&#160;                   httpMethod,
+                                        Url&#160;                          url,       
+                                        Azure::Core::IO::BodyStream *&#160;bodyStream&#160;
+                                       ) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -80,7 +93,13 @@ components:
   - name: bodyStream
     summary: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a>.
 - section: Request() [3/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Request::Request(HttpMethod&#160;httpMethod,          
+                     Url&#160;       url,                 
+                     bool&#160;      shouldBufferResponse&#160;
+                    ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -91,7 +110,12 @@ components:
   - name: shouldBufferResponse
     summary: A boolean value indicating whether the returned response should be buffered or returned as a body stream instead.
 - section: Request() [4/4]
-  display: h2
+  display: h3
+- declaration: >-
+    Request::Request(HttpMethod&#160;httpMethod,
+                     Url&#160;       url&#160;       
+                    ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -102,11 +126,17 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: GetBodyStream() [1/2]
-  display: h2
+  display: h3
+- declaration: Azure::Core::IO::BodyStream * Azure::Core::Http::Request::GetBodyStream() inline
+  languageId: cpp
 - section: GetBodyStream() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Core::IO::BodyStream const  * Azure::Core::Http::Request::GetBodyStream()const inline
+  languageId: cpp
 - section: GetHeader()
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt; std::string &gt; Request::GetHeader(std::string const &amp;&#160;name)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -116,27 +146,47 @@ components:
   display: h4
 - parameters:
   - summary: The desired header, or an empty nullable if it is not found..
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: if
+    summary: <code>name</code> is an invalid header key.
 - section: GetHeaders()
-  display: h2
+  display: h3
+- declaration: Azure::Core::CaseInsensitiveMap Request::GetHeaders()const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Note that this function return a COPY of the headers for this request.
 - section: GetMethod()
-  display: h2
+  display: h3
+- declaration: HttpMethod const  &amp; Request::GetMethod()const
+  languageId: cpp
 - section: GetUrl() [1/2]
-  display: h2
+  display: h3
+- declaration: Url &amp; Azure::Core::Http::Request::GetUrl() inline
+  languageId: cpp
 - section: GetUrl() [2/2]
-  display: h2
+  display: h3
+- declaration: Url const  &amp; Azure::Core::Http::Request::GetUrl()const inline
+  languageId: cpp
 - section: RemoveHeader()
-  display: h2
+  display: h3
+- declaration: void Request::RemoveHeader(std::string const &amp;&#160;name)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: name
     summary: HTTP header name.
 - section: SetHeader()
-  display: h2
+  display: h3
+- declaration: >-
+    void Request::SetHeader(std::string const &amp;&#160;name, 
+                            std::string const &amp;&#160;value&#160;
+                           )
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -148,11 +198,8 @@ components:
     summary: The name for the header to be set or added.
   - name: value
     summary: The value for the header to be set or added.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/core/http/<a href="http_8hpp_source.html">http.hpp</a></li>
-
-    <li>src/http/request.cpp</li>
-
-    </ul>
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: if
+    summary: <code>name</code> is an invalid header key.

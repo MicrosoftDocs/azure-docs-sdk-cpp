@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::Models::BlobProperties
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ABlobProperties
 title: Azure::Storage::Blobs::Models::BlobProperties Struct Reference
 components:
 - content: >-
@@ -88,121 +88,192 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessTier
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::AccessTier&gt; Azure::Storage::Blobs::Models::BlobProperties::AccessTier
+  languageId: cpp
 - content: <p>The tier of page blob on a premium storage account or tier of block blob on blob storage LRS accounts. For a list of allowed premium page blob tiers, see <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/premium-storage#features">https://docs.microsoft.com/en-us/azure/virtual-machines/windows/premium-storage#features</a>. For blob storage LRS accounts, valid values are Hot/Cool/Archive. </p>
 - section: AccessTierChangedOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::BlobProperties::AccessTierChangedOn
+  languageId: cpp
 - content: <p>The time the tier was changed on the object. This is only returned if the tier on the block blob was ever set. </p>
 - section: ArchiveStatus
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::ArchiveStatus&gt; Azure::Storage::Blobs::Models::BlobProperties::ArchiveStatus
+  languageId: cpp
 - content: <p>For blob storage LRS accounts, valid values are rehydrate-pending-to-hot/rehydrate-pending-to-cool. If the blob is being rehydrated and is not complete then this header is returned indicating that rehydrate is pending and also tells the destination tier. </p>
 - section: BlobSize
-  display: h2
+  display: h3
+- declaration: std::int64_t Azure::Storage::Blobs::Models::BlobProperties::BlobSize = std::int64_t()
+  languageId: cpp
 - content: <p>Size of the blob in bytes. </p>
 - section: BlobType
-  display: h2
+  display: h3
+- declaration: Models::BlobType Azure::Storage::Blobs::Models::BlobProperties::BlobType
+  languageId: cpp
 - content: <p>The blob's type. </p>
 - section: CommittedBlockCount
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int32_t&gt; Azure::Storage::Blobs::Models::BlobProperties::CommittedBlockCount
+  languageId: cpp
 - content: <p>The number of committed blocks present in the blob. This header is returned only for append blobs. </p>
 - section: CopyCompletedOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::BlobProperties::CopyCompletedOn
+  languageId: cpp
 - content: <p>Conclusion time of the last attempted Copy Blob operation where this blob was the destination blob. This value can specify the time of a completed, aborted, or failed copy attempt. This header does not appear if a copy is pending, if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List. </p>
 - section: CopyId
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobProperties::CopyId
+  languageId: cpp
 - content: <p>String identifier for this copy operation. Use with Get Blob Properties to check the status of this copy operation, or pass to Abort Copy Blob to abort a pending copy. </p>
 - section: CopyProgress
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobProperties::CopyProgress
+  languageId: cpp
 - content: <p>Contains the number of bytes copied and the total bytes in the source in the last attempted Copy Blob operation where this blob was the destination blob. Can show between 0 and Content-Length bytes copied. This header does not appear if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List. </p>
 - section: CopySource
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobProperties::CopySource
+  languageId: cpp
 - content: <p>URL up to 2 KB in length that specifies the source blob or file used in the last attempted Copy Blob operation where this blob was the destination blob. This header does not appear if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List. </p>
 - section: CopyStatus
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::CopyStatus&gt; Azure::Storage::Blobs::Models::BlobProperties::CopyStatus
+  languageId: cpp
 - content: <p>State of the copy operation identified by x-ms-copy-id. </p>
 - section: CopyStatusDescription
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobProperties::CopyStatusDescription
+  languageId: cpp
 - content: <p>Only appears when x-ms-copy-status is failed or pending. Describes the cause of the last fatal or non-fatal copy operation failure. This header does not appear if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List. </p>
 - section: CreatedOn
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Blobs::Models::BlobProperties::CreatedOn
+  languageId: cpp
 - content: <p>Returns the date and time the blob was created. </p>
 - section: EncryptionKeySha256
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::BlobProperties::EncryptionKeySha256
+  languageId: cpp
 - content: <p>The SHA-256 hash of the encryption key used to encrypt the metadata. This header is only returned when the metadata was encrypted with a customer-provided key. </p>
 - section: EncryptionScope
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobProperties::EncryptionScope
+  languageId: cpp
 - content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p>
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Blobs::Models::BlobProperties::ETag
+  languageId: cpp
 - content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p>
 - section: ExpiresOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::BlobProperties::ExpiresOn
+  languageId: cpp
 - content: <p>The time this blob will expire. </p>
 - section: HasLegalHold
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Blobs::Models::BlobProperties::HasLegalHold = false
+  languageId: cpp
 - content: <p>Indicates if a legal hold is present on the blob. </p>
 - section: HttpHeaders
-  display: h2
+  display: h3
+- declaration: BlobHttpHeaders Azure::Storage::Blobs::Models::BlobProperties::HttpHeaders
+  languageId: cpp
 - content: <p>Standard HTTP properties supported by containers and blobs. </p>
 - section: ImmutabilityPolicy
-  display: h2
+  display: h3
+- declaration: Nullable&lt;BlobImmutabilityPolicy&gt; Azure::Storage::Blobs::Models::BlobProperties::ImmutabilityPolicy
+  languageId: cpp
 - content: <p>Immutability policy associated with the blob. </p>
 - section: IncrementalCopyDestinationSnapshot
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobProperties::IncrementalCopyDestinationSnapshot
+  languageId: cpp
 - content: <p>Included if the blob is incremental copy blob or incremental copy snapshot, if x-ms-copy-status is success. Snapshot time of the last successful incremental copy snapshot for this blob. </p>
 - section: IsAccessTierInferred
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::BlobProperties::IsAccessTierInferred
+  languageId: cpp
 - content: <p>For page blobs on a premium storage account only. If the access tier is not explicitly set on the blob, the tier is inferred based on its content length and this header will be returned with true value. </p>
 - section: IsCurrentVersion
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::BlobProperties::IsCurrentVersion
+  languageId: cpp
 - content: <p>The value of this header indicates whether version of this blob is a current version, see also x-ms-version-id header. </p>
 - section: IsIncrementalCopy
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::BlobProperties::IsIncrementalCopy
+  languageId: cpp
 - content: <p>Included if the blob is incremental copy blob. </p>
 - section: IsSealed
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::BlobProperties::IsSealed
+  languageId: cpp
 - content: <p>If this blob has been sealed. </p>
 - section: IsServerEncrypted
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Blobs::Models::BlobProperties::IsServerEncrypted = bool()
+  languageId: cpp
 - content: <p>The value of this header is set to true if the blob data and application metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the blob is unencrypted, or if only parts of the blob/application metadata are encrypted). </p>
 - section: LastAccessedOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::BlobProperties::LastAccessedOn
+  languageId: cpp
 - content: <p>UTC date/time value generated by the service that indicates the time at which the blob was last read or written to. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Blobs::Models::BlobProperties::LastModified
+  languageId: cpp
 - content: <p>Returns the date and time the blob was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p>
 - section: LeaseDuration
-  display: h2
+  display: h3
+- declaration: Nullable&lt;LeaseDurationType&gt; Azure::Storage::Blobs::Models::BlobProperties::LeaseDuration
+  languageId: cpp
 - content: <p>When a blob is leased, specifies whether the lease is of infinite or fixed duration. </p>
 - section: LeaseState
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::LeaseState&gt; Azure::Storage::Blobs::Models::BlobProperties::LeaseState
+  languageId: cpp
 - content: <p>Lease state of the blob. </p>
 - section: LeaseStatus
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::LeaseStatus&gt; Azure::Storage::Blobs::Models::BlobProperties::LeaseStatus
+  languageId: cpp
 - content: <p>The current lease status of the blob. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Core::CaseInsensitiveMap Azure::Storage::Blobs::Models::BlobProperties::Metadata
+  languageId: cpp
 - content: <p>A set of name-value pair associated with this blob. </p>
 - section: ObjectReplicationDestinationPolicyId
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobProperties::ObjectReplicationDestinationPolicyId
+  languageId: cpp
 - content: <p>Optional. Only valid when Object Replication is enabled for the storage container and on the destination blob of the replication. </p>
 - section: ObjectReplicationSourceProperties
-  display: h2
+  display: h3
+- declaration: std::vector&lt;ObjectReplicationPolicy&gt; Azure::Storage::Blobs::Models::BlobProperties::ObjectReplicationSourceProperties
+  languageId: cpp
 - content: <p>Array of <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_object_replication_policy.html">ObjectReplicationPolicy</a>. </p>
 - section: RehydratePriority
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::RehydratePriority&gt; Azure::Storage::Blobs::Models::BlobProperties::RehydratePriority
+  languageId: cpp
 - content: <p>If an object is in rehydrate pending state then this header is returned with priority of rehydrate. Valid values are High and Standard. </p>
 - section: SequenceNumber
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Blobs::Models::BlobProperties::SequenceNumber
+  languageId: cpp
 - content: <p>The current sequence number for a page blob. This header is not returned for block blobs or append blobs. </p>
 - section: TagCount
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int32_t&gt; Azure::Storage::Blobs::Models::BlobProperties::TagCount
+  languageId: cpp
 - content: <p>The number of tags associated with the blob. </p>
 - section: VersionId
-  display: h2
-- content: >-
-    <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::BlobProperties::VersionId
+  languageId: cpp
+- content: <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>

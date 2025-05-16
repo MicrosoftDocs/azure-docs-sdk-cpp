@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::Http::RawResponse
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3ARawResponse
 title: Azure::Core::Http::RawResponse Class Reference
 components:
 - content: >-
@@ -63,7 +63,14 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: RawResponse() [1/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Core::Http::RawResponse::RawResponse(int32_t&#160;            majorVersion,
+                                                int32_t&#160;            minorVersion,
+                                                HttpStatusCode&#160;     statusCode,  
+                                                std::string const &amp;&#160;reasonPhrase&#160;
+                                               ) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -76,7 +83,9 @@ components:
   - name: reasonPhrase
     summary: HTTP reason phrase.
 - section: RawResponse() [2/3]
-  display: h2
+  display: h3
+- declaration: Azure::Core::Http::RawResponse::RawResponse(RawResponse const &amp;&#160;response) inline
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -87,52 +96,85 @@ components:
   - name: response
     summary: A reference for copying the raw response.
 - section: RawResponse() [3/3]
-  display: h2
+  display: h3
+- declaration: Azure::Core::Http::RawResponse::RawResponse(RawResponse &amp;&amp;&#160;response) default
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: response
     summary: Another <code>RawResponse</code> to move in.
 - section: ~RawResponse()
-  display: h2
+  display: h3
+- declaration: Azure::Core::Http::RawResponse::~RawResponse() default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: ExtractBodyStream()
-  display: h2
+  display: h3
+- declaration: std::unique_ptr&lt; Azure::Core::IO::BodyStream &gt; Azure::Core::Http::RawResponse::ExtractBodyStream() inline
+  languageId: cpp
 - section: GetBody() [1/2]
-  display: h2
+  display: h3
+- declaration: std::vector&lt; uint8_t &gt; &amp; Azure::Core::Http::RawResponse::GetBody() inline
+  languageId: cpp
 - section: GetBody() [2/2]
-  display: h2
+  display: h3
+- declaration: std::vector&lt; uint8_t &gt; const  &amp; Azure::Core::Http::RawResponse::GetBody()const inline
+  languageId: cpp
 - section: GetHeaders()
-  display: h2
+  display: h3
+- declaration: Azure::Core::CaseInsensitiveMap const  &amp; RawResponse::GetHeaders()const
+  languageId: cpp
 - section: GetMajorVersion()
-  display: h2
+  display: h3
+- declaration: int32_t Azure::Core::Http::RawResponse::GetMajorVersion()const inline
+  languageId: cpp
 - section: GetMinorVersion()
-  display: h2
+  display: h3
+- declaration: int32_t Azure::Core::Http::RawResponse::GetMinorVersion()const inline
+  languageId: cpp
 - section: GetReasonPhrase()
-  display: h2
+  display: h3
+- declaration: std::string const  &amp; RawResponse::GetReasonPhrase()const
+  languageId: cpp
 - section: GetStatusCode()
-  display: h2
+  display: h3
+- declaration: HttpStatusCode RawResponse::GetStatusCode()const
+  languageId: cpp
 - section: operator=() [1/2]
-  display: h2
+  display: h3
+- declaration: RawResponse &amp; Azure::Core::Http::RawResponse::operator=(RawResponse &amp;&amp;&#160;) delete
+  languageId: cpp
 - section: operator=() [2/2]
-  display: h2
+  display: h3
+- declaration: RawResponse &amp; Azure::Core::Http::RawResponse::operator=(RawResponse const &amp;&#160;) delete
+  languageId: cpp
 - section: SetBody()
-  display: h2
+  display: h3
+- declaration: void Azure::Core::Http::RawResponse::SetBody(std::vector&lt; uint8_t &gt;&#160;body) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: body
     summary: HTTP response body bytes.
 - section: SetBodyStream()
-  display: h2
+  display: h3
+- declaration: void RawResponse::SetBodyStream(std::unique_ptr&lt; Azure::Core::IO::BodyStream &gt;&#160;stream)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: stream
     summary: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a>.
 - section: SetHeader()
-  display: h2
+  display: h3
+- declaration: >-
+    void RawResponse::SetHeader(std::string const &amp;&#160;name, 
+                                std::string const &amp;&#160;value&#160;
+                               )
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -144,11 +186,8 @@ components:
     summary: The name for the header to be set or added.
   - name: value
     summary: The value for the header to be set or added.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/core/http/<a href="raw__response_8hpp_source.html">raw_response.hpp</a></li>
-
-    <li>src/http/raw_response.cpp</li>
-
-    </ul>
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: if
+    summary: <code>name</code> contains invalid characters.

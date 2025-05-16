@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::DeleteShareResult
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3ADeleteShareResult
 title: Azure::Storage::Files::Shares::Models::DeleteShareResult Struct Reference
 components:
 - content: >-
@@ -18,16 +18,17 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Deleted
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::Shares::Models::DeleteShareResult::Deleted = true
+  languageId: cpp
 - content: <p>Indicates if the share was successfully deleted by this operation. </p>
 - section: ShareSnapshotUsageBytes
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::DeleteShareResult::ShareSnapshotUsageBytes
+  languageId: cpp
 - content: <p>Returned only for provisioned v2 file shares. Returns an approximate used snapshot storage size of the share, in bytes. </p>
 - section: ShareUsageBytes
-  display: h2
-- content: >-
-    <p>Returned only for provisioned v2 file shares. Returns an approximate used storage size of the share, in bytes. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::DeleteShareResult::ShareUsageBytes
+  languageId: cpp
+- content: <p>Returned only for provisioned v2 file shares. Returns an approximate used storage size of the share, in bytes. </p>

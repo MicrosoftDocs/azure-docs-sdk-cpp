@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::Http::Policies::RetryOptions
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions
 title: Azure::Core::Http::Policies::RetryOptions Struct Reference
 components:
 - content: >-
@@ -25,16 +25,19 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: MaxRetries
-  display: h2
+  display: h3
+- declaration: int32_t Azure::Core::Http::Policies::RetryOptions::MaxRetries = 3
+  languageId: cpp
 - section: MaxRetryDelay
-  display: h2
+  display: h3
+- declaration: std::chrono::milliseconds Azure::Core::Http::Policies::RetryOptions::MaxRetryDelay = std::chrono::seconds(60)
+  languageId: cpp
 - section: RetryDelay
-  display: h2
+  display: h3
+- declaration: std::chrono::milliseconds Azure::Core::Http::Policies::RetryOptions::RetryDelay = std::chrono::milliseconds(800)
+  languageId: cpp
 - section: StatusCodes
-  display: h2
-- content: >-
-    Initial value:{HttpStatusCode::RequestTimeout,HttpStatusCode::InternalServerError,HttpStatusCode::BadGateway,HttpStatusCode::ServiceUnavailable,HttpStatusCode::GatewayTimeout,}The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/core/http/policies/<a href="policy_8hpp_source.html">policy.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: std::set&lt;HttpStatusCode&gt; Azure::Core::Http::Policies::RetryOptions::StatusCodes
+  languageId: cpp
+- content: Initial value:{HttpStatusCode::RequestTimeout,HttpStatusCode::InternalServerError,HttpStatusCode::BadGateway,HttpStatusCode::ServiceUnavailable,HttpStatusCode::GatewayTimeout,}

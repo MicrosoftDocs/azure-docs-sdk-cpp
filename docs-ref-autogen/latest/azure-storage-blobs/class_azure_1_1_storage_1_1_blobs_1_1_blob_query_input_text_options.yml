@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::BlobQueryInputTextOptions
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobQueryInputTextOptions
 title: Azure::Storage::Blobs::BlobQueryInputTextOptions Class Reference
 components:
 - content: >-
@@ -26,7 +26,15 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: CreateCsvTextOptions()
-  display: h2
+  display: h3
+- declaration: >-
+    BlobQueryInputTextOptions Azure::Storage::Blobs::BlobQueryInputTextOptions::CreateCsvTextOptions(const std::string &amp;&#160;recordSeparator = std::string(),   
+                                                                                                     const std::string &amp;&#160;columnSeparator = std::string(),   
+                                                                                                     const std::string &amp;&#160;quotationCharacter = std::string(),
+                                                                                                     const std::string &amp;&#160;escapeCharacter = std::string(),   
+                                                                                                     bool&#160;               hasHeaders = false&#160;                
+                                                                                                    ) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -45,7 +53,9 @@ components:
 - parameters:
   - summary: CSV text configuration.
 - section: CreateJsonTextOptions()
-  display: h2
+  display: h3
+- declaration: BlobQueryInputTextOptions Azure::Storage::Blobs::BlobQueryInputTextOptions::CreateJsonTextOptions(const std::string &amp;&#160;recordSeparator = std::string()) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -56,16 +66,10 @@ components:
 - parameters:
   - summary: Json text configuration.
 - section: CreateParquetTextOptions()
-  display: h2
+  display: h3
+- declaration: BlobQueryInputTextOptions Azure::Storage::Blobs::BlobQueryInputTextOptions::CreateParquetTextOptions() static
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Parquet text configuration
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="blob__options_8hpp_source.html">blob_options.hpp</a></li>
-
-    <li>src/blob_options.cpp</li>
-
-    </ul>

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::KeyProperties
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyProperties
 title: Azure::Security::KeyVault::Keys::KeyProperties Struct Reference
 components:
 - content: >-
@@ -67,9 +67,13 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: KeyProperties() [1/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Keys::KeyProperties::KeyProperties() default
+  languageId: cpp
 - section: KeyProperties() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Keys::KeyProperties::KeyProperties(std::string&#160;name) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -78,42 +82,66 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: CreatedOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::KeyProperties::CreatedOn
+  languageId: cpp
 - section: Enabled
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Keys::KeyProperties::Enabled
+  languageId: cpp
 - section: ExpiresOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::KeyProperties::ExpiresOn
+  languageId: cpp
 - section: Exportable
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Keys::KeyProperties::Exportable
+  languageId: cpp
 - section: Id
-  display: h2
+  display: h3
+- declaration: std::string Azure::Security::KeyVault::Keys::KeyProperties::Id
+  languageId: cpp
 - section: Managed
-  display: h2
+  display: h3
+- declaration: bool Azure::Security::KeyVault::Keys::KeyProperties::Managed = false
+  languageId: cpp
 - section: Name
-  display: h2
+  display: h3
+- declaration: std::string Azure::Security::KeyVault::Keys::KeyProperties::Name
+  languageId: cpp
 - section: NotBefore
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::KeyProperties::NotBefore
+  languageId: cpp
 - section: RecoverableDays
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;int&gt; Azure::Security::KeyVault::Keys::KeyProperties::RecoverableDays
+  languageId: cpp
 - section: RecoveryLevel
-  display: h2
+  display: h3
+- declaration: std::string Azure::Security::KeyVault::Keys::KeyProperties::RecoveryLevel
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: If Purgeable, the key can be permanently deleted by an authorized user; otherwise, only the service can purge the keys at the end of the retention interval.
 - section: ReleasePolicy
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;KeyReleasePolicy&gt; Azure::Security::KeyVault::Keys::KeyProperties::ReleasePolicy
+  languageId: cpp
 - section: Tags
-  display: h2
+  display: h3
+- declaration: std::unordered_map&lt;std::string, std::string&gt; Azure::Security::KeyVault::Keys::KeyProperties::Tags
+  languageId: cpp
 - section: UpdatedOn
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::KeyProperties::UpdatedOn
+  languageId: cpp
 - section: VaultUrl
-  display: h2
+  display: h3
+- declaration: std::string Azure::Security::KeyVault::Keys::KeyProperties::VaultUrl
+  languageId: cpp
 - section: Version
-  display: h2
-- content: >-
-    The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/keyvault/keys/<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: std::string Azure::Security::KeyVault::Keys::KeyProperties::Version
+  languageId: cpp

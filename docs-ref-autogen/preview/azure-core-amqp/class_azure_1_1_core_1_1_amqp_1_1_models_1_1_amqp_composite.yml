@@ -1,10 +1,13 @@
 ### YamlMime:Reference
-uid: Azure::Core::Amqp::Models::AmqpComposite
+uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpComposite
 title: Azure::Core::Amqp::Models::AmqpComposite Class Reference
 components:
 - content: >-
     <p>An <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> represents a sequentially ordered list of values. The values of the composite may have different types.  
-     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#details">More...</a></p><p><code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Core::Amqp::Models::AmqpComposite:
+     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html#details">More...</a></p><p><code>#include &lt;<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::Amqp::Models::_detail::AmqpCollectionBase< std::vector< AmqpValue >, AmqpComposite >
+    href: ''
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -47,14 +50,18 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: AmqpComposite() [1/2]
-  display: h2
+  display: h3
+- declaration: Azure::Core::Amqp::Models::AmqpComposite::AmqpComposite(AmqpComposite &amp;&amp;&#160;other) default noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: composite value to move.
 - section: AmqpComposite() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Core::Amqp::Models::AmqpComposite::AmqpComposite(AmqpValue const &amp;&#160;value)
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -67,20 +74,26 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: GetDescriptor()
-  display: h2
+  display: h3
+- declaration: AmqpValue const  &amp; Azure::Core::Amqp::Models::AmqpComposite::GetDescriptor()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The descriptor for this composite type.
 - section: operator!=()
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Amqp::Models::AmqpComposite::operator!=(AmqpComposite const &amp;&#160;that)const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: that
     summary: '- the <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> to compare with.'
 - section: operator=() [1/2]
-  display: h2
+  display: h3
+- declaration: AmqpComposite &amp; Azure::Core::Amqp::Models::AmqpComposite::operator=(AmqpComposite &amp;&amp;&#160;other) default noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -91,7 +104,9 @@ components:
 - parameters:
   - summary: reference to this composite value.
 - section: operator=() [2/2]
-  display: h2
+  display: h3
+- declaration: AmqpComposite &amp; Azure::Core::Amqp::Models::AmqpComposite::operator=(const AmqpComposite &amp;&#160;other) default
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -102,17 +117,11 @@ components:
 - parameters:
   - summary: reference to this composite value.
 - section: operator==()
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Amqp::Models::AmqpComposite::operator==(AmqpComposite const &amp;&#160;that)const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: that
     summary: '- the <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_composite.html">AmqpComposite</a> to compare with.'
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/core/amqp/models/<a href="amqp__value_8hpp_source.html">amqp_value.hpp</a></li>
-
-    <li>src/models/amqp_value.cpp</li>
-
-    </ul>

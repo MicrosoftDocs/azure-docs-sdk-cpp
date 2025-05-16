@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::Models::DownloadBlobToResult
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobToResult
 title: Azure::Storage::Blobs::Models::DownloadBlobToResult Struct Reference
 components:
 - content: >-
@@ -22,22 +22,27 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: BlobSize
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Storage::Blobs::Models::DownloadBlobToResult::BlobSize = 0
+  languageId: cpp
 - content: <p>Size of the blob. </p>
 - section: BlobType
-  display: h2
+  display: h3
+- declaration: Models::BlobType Azure::Storage::Blobs::Models::DownloadBlobToResult::BlobType
+  languageId: cpp
 - content: <p>The blob's type. </p>
 - section: ContentRange
-  display: h2
+  display: h3
+- declaration: Azure::Core::Http::HttpRange Azure::Storage::Blobs::Models::DownloadBlobToResult::ContentRange
+  languageId: cpp
 - content: <p>Indicates the range of bytes returned. </p>
 - section: Details
-  display: h2
+  display: h3
+- declaration: DownloadBlobDetails Azure::Storage::Blobs::Models::DownloadBlobToResult::Details
+  languageId: cpp
 - content: <p>Details information of the downloaded blob. </p>
 - section: TransactionalContentHash
-  display: h2
-- content: >-
-    <p>The request may return a CRC64 or MD5 hash for the downloaded range of data. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="blob__responses_8hpp_source.html">blob_responses.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::DownloadBlobToResult::TransactionalContentHash
+  languageId: cpp
+- content: <p>The request may return a CRC64 or MD5 hash for the downloaded range of data. </p>

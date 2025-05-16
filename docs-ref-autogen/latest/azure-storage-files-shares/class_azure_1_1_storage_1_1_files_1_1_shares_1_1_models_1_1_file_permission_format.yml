@@ -1,11 +1,14 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::FilePermissionFormat
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AFilePermissionFormat
 title: Azure::Storage::Files::Shares::Models::FilePermissionFormat Class Reference
 components:
 - content: >-
     <p>Optional. Available for version 2023-06-01 and later. Specifies the format in which the permission is returned. Acceptable values are SDDL or binary. If x-ms-file-permission-format is unspecified or explicitly set to SDDL, the permission is returned in SDDL format. If x-ms-file-permission-format is explicitly set to binary, the permission is returned as a base64 string representing the binary encoding of the permission.  
 
-    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>Inheritance diagram for Azure::Storage::Files::Shares::Models::FilePermissionFormat:
+    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Core::_internal::ExtendableEnumeration
+    href: ''
 - section: Public Member Functions
   display: h2
 - apiList:
@@ -23,21 +26,24 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: FilePermissionFormat() [1/2]
-  display: h2
+  display: h3
+- declaration: Azure::Storage::Files::Shares::Models::FilePermissionFormat::FilePermissionFormat() default
+  languageId: cpp
 - content: <p>Constructs a new <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_permission_format.html">FilePermissionFormat</a> instance </p>
 - section: FilePermissionFormat() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Storage::Files::Shares::Models::FilePermissionFormat::FilePermissionFormat(std::string&#160;value) inline explicit
+  languageId: cpp
 - content: <p>Constructs a new <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_permission_format.html">FilePermissionFormat</a> from a string. </p>
 - section: Member Data Documentation
   display: h2
 - section: Binary
-  display: h2
+  display: h3
+- declaration: AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FilePermissionFormat Azure::Storage::Files::Shares::Models::FilePermissionFormat::Binary static
+  languageId: cpp
 - content: '<p>Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_permission_format.html">FilePermissionFormat</a>: Binary </p>'
 - section: Sddl
-  display: h2
-- content: >-
-    <p>Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_permission_format.html">FilePermissionFormat</a>: Sddl </p>The documentation for this class was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: AZ_STORAGE_FILES_SHARES_DLLEXPORT static const FilePermissionFormat Azure::Storage::Files::Shares::Models::FilePermissionFormat::Sddl static
+  languageId: cpp
+- content: '<p>Constant value of type <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_permission_format.html">FilePermissionFormat</a>: Sddl </p>'

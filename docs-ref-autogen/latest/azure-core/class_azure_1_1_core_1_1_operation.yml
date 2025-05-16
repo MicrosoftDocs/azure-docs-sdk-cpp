@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::Operation&lt;
+uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E
 title: Azure::Core::Operation&lt; T &gt; Class Template Reference
 components:
 - content: >-
@@ -74,60 +74,78 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: Operation() [1/3]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Core::Operation&lt; T &gt;::Operation() protected default
+  languageId: cpp
 - section: Operation() [2/3]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Core::Operation&lt; T &gt;::Operation(Operation&lt; T &gt; &amp;&amp;&#160;other) inline protected
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: An <code>Operation</code> instance to move in.
 - section: Operation() [3/3]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Core::Operation&lt; T &gt;::Operation(Operation&lt; T &gt; const &amp;&#160;other) inline protected
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: An <code>Operation</code> instance to copy.
 - section: ~Operation()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: virtual Azure::Core::Operation&lt; T &gt;::~Operation() inline virtual
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: GetRawResponse()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Azure::Core::Http::RawResponse const  &amp; Azure::Core::Operation&lt; T &gt;::GetRawResponse()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: A reference to an <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">Azure::Core::Http::RawResponse</a>.
 - section: GetResumeToken()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: virtual std::string Azure::Core::Operation&lt; T &gt;::GetResumeToken()const pure virtual
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string The resume token.
 - section: HasValue()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: bool Azure::Core::Operation&lt; T &gt;::HasValue()const inline noexcept
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if the long-running operation completed successfully; otherwise, <code>false</code>.
 - section: IsDone()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: bool Azure::Core::Operation&lt; T &gt;::IsDone()const inline noexcept
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if the long-running operation is done; otherwise, <code>false</code>.
 - section: operator=() [1/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Operation &amp; Azure::Core::Operation&lt; T &gt;::operator=(Operation&lt; T &gt; &amp;&amp;&#160;other) inline protected
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -138,8 +156,10 @@ components:
 - parameters:
   - summary: A reference to this instance.
 - section: operator=() [2/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Operation &amp; Azure::Core::Operation&lt; T &gt;::operator=(Operation&lt; T &gt; const &amp;&#160;other) inline protected
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -150,15 +170,19 @@ components:
 - parameters:
   - summary: A reference to this instance.
 - section: Poll() [1/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Http::RawResponse const  &amp; Azure::Core::Operation&lt; T &gt;::Poll() inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: An HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">Azure::Core::Http::RawResponse</a> returned from the service.
 - section: Poll() [2/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Http::RawResponse const  &amp; Azure::Core::Operation&lt; T &gt;::Poll(Context const &amp;&#160;context) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -169,8 +193,10 @@ components:
 - parameters:
   - summary: An HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">Azure::Core::Http::RawResponse</a> returned from the service.
 - section: PollUntilDone() [1/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: Response&lt; T &gt; Azure::Core::Operation&lt; T &gt;::PollUntilDone(std::chrono::milliseconds&#160;period) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -181,8 +207,13 @@ components:
 - parameters:
   - summary: Response&lt;T&gt; the final result of the long-running operation.
 - section: PollUntilDone() [2/2]
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: >-
+    Response&lt; T &gt; Azure::Core::Operation&lt; T &gt;::PollUntilDone(std::chrono::milliseconds&#160;period, 
+                                                             Context &amp;&#160;                context&#160;
+                                                            ) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -195,18 +226,16 @@ components:
 - parameters:
   - summary: Response&lt;T&gt; the final result of the long-running operation.
 - section: Status()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: OperationStatus const  &amp; Azure::Core::Operation&lt; T &gt;::Status()const inline noexcept
+  languageId: cpp
 - section: Value()
-  display: h2
+  display: h3
 - content: template&lt;class T &gt;
+- declaration: virtual T Azure::Core::Operation&lt; T &gt;::Value()const pure virtual
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The final result of the long-running operation.
-- content: >-
-    The documentation for this class was generated from the following file:<ul>
-
-    <li>inc/azure/core/<a href="operation_8hpp_source.html">operation.hpp</a></li>
-
-    </ul>

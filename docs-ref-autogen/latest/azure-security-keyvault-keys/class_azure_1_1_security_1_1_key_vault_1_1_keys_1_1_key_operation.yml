@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::KeyOperation
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation
 title: Azure::Security::KeyVault::Keys::KeyOperation Class Reference
 components:
 - content: >-
@@ -52,25 +52,33 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: KeyOperation() [1/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Keys::KeyOperation::KeyOperation(std::string&#160;operation) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: operation
     summary: The operation for the key as string.
 - section: KeyOperation() [2/2]
-  display: h2
+  display: h3
+- declaration: Azure::Security::KeyVault::Keys::KeyOperation::KeyOperation() default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
 - section: operator==()
-  display: h2
+  display: h3
+- declaration: bool Azure::Security::KeyVault::Keys::KeyOperation::operator==(const KeyOperation &amp;&#160;other)const inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: A key operation to be compared.
 - section: ToString()
-  display: h2
+  display: h3
+- declaration: std::string const  &amp; Azure::Security::KeyVault::Keys::KeyOperation::ToString()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
@@ -78,26 +86,34 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Decrypt
-  display: h2
+  display: h3
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Decrypt static
+  languageId: cpp
 - section: Encrypt
-  display: h2
+  display: h3
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Encrypt static
+  languageId: cpp
 - section: Export
-  display: h2
+  display: h3
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Export static
+  languageId: cpp
 - section: Import
-  display: h2
+  display: h3
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Import static
+  languageId: cpp
 - section: Sign
-  display: h2
+  display: h3
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Sign static
+  languageId: cpp
 - section: UnwrapKey
-  display: h2
+  display: h3
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::UnwrapKey static
+  languageId: cpp
 - section: Verify
-  display: h2
+  display: h3
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Verify static
+  languageId: cpp
 - section: WrapKey
-  display: h2
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/keyvault/keys/<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a></li>
-
-    <li>src/key_operation.cpp</li>
-
-    </ul>
+  display: h3
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::WrapKey static
+  languageId: cpp

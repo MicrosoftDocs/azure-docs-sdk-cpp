@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::BlobContainerBatch
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobContainerBatch
 title: Azure::Storage::Blobs::BlobContainerBatch Class Reference
 components:
 - content: >-
@@ -29,7 +29,12 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: DeleteBlob()
-  display: h2
+  display: h3
+- declaration: >-
+    DeferredResponse&lt; Models::DeleteBlobResult &gt; Azure::Storage::Blobs::BlobContainerBatch::DeleteBlob(const std::string &amp;&#160;      blobName,                     
+                                                                                                       const DeleteBlobOptions &amp;&#160;options = DeleteBlobOptions()&#160;
+                                                                                                      )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -42,7 +47,12 @@ components:
 - parameters:
   - summary: A deferred response which can produce a Response&lt;DeleteBlobResult&gt; after batch object is submitted.
 - section: DeleteBlobUrl()
-  display: h2
+  display: h3
+- declaration: >-
+    DeferredResponse&lt; Models::DeleteBlobResult &gt; Azure::Storage::Blobs::BlobContainerBatch::DeleteBlobUrl(const std::string &amp;&#160;      blobUrl,                      
+                                                                                                          const DeleteBlobOptions &amp;&#160;options = DeleteBlobOptions()&#160;
+                                                                                                         )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -55,7 +65,13 @@ components:
 - parameters:
   - summary: A deferred response which can produce a Response&lt;DeleteBlobResult&gt; after batch object is submitted.
 - section: SetBlobAccessTier()
-  display: h2
+  display: h3
+- declaration: >-
+    DeferredResponse&lt; Models::SetBlobAccessTierResult &gt; Azure::Storage::Blobs::BlobContainerBatch::SetBlobAccessTier(const std::string &amp;&#160;             blobName,                            
+                                                                                                                     Models::AccessTier&#160;              accessTier,                          
+                                                                                                                     const SetBlobAccessTierOptions &amp;&#160;options = SetBlobAccessTierOptions()&#160;
+                                                                                                                    )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -70,7 +86,13 @@ components:
 - parameters:
   - summary: A deferred response which can produce a Response&lt;SetBlobAccessTierResult&gt; after batch object is submitted.
 - section: SetBlobAccessTierUrl()
-  display: h2
+  display: h3
+- declaration: >-
+    DeferredResponse&lt; Models::SetBlobAccessTierResult &gt; Azure::Storage::Blobs::BlobContainerBatch::SetBlobAccessTierUrl(const std::string &amp;&#160;             blobUrl,                             
+                                                                                                                        Models::AccessTier&#160;              accessTier,                          
+                                                                                                                        const SetBlobAccessTierOptions &amp;&#160;options = SetBlobAccessTierOptions()&#160;
+                                                                                                                       )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -84,11 +106,3 @@ components:
   display: h4
 - parameters:
   - summary: A deferred response which can produce a Response&lt;SetBlobAccessTierResult&gt; after batch object is submitted.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="blob__batch_8hpp_source.html">blob_batch.hpp</a></li>
-
-    <li>src/blob_batch.cpp</li>
-
-    </ul>

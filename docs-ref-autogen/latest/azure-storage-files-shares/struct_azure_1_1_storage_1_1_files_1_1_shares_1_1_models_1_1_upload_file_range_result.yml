@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::Models::UploadFileRangeResult
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AUploadFileRangeResult
 title: Azure::Storage::Files::Shares::Models::UploadFileRangeResult Struct Reference
 components:
 - content: >-
@@ -20,19 +20,22 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Files::Shares::Models::UploadFileRangeResult::ETag
+  languageId: cpp
 - content: <p>The ETag contains a value which represents the version of the file, in quotes. </p>
 - section: IsServerEncrypted
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::Shares::Models::UploadFileRangeResult::IsServerEncrypted = false
+  languageId: cpp
 - content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::Shares::Models::UploadFileRangeResult::LastModified
+  languageId: cpp
 - content: <p>Returns the date and time the directory was last modified. Any operation that modifies the share or its properties or metadata updates the last modified time. Operations on files do not affect the last modified time of the share. </p>
 - section: TransactionalContentHash
-  display: h2
-- content: >-
-    <p>This header is returned so that the client can check for message content integrity. The value of this header is computed by the File service; it is not necessarily the same value as may have been specified in the request headers. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: ContentHash Azure::Storage::Files::Shares::Models::UploadFileRangeResult::TransactionalContentHash
+  languageId: cpp
+- content: <p>This header is returned so that the client can check for message content integrity. The value of this header is computed by the File service; it is not necessarily the same value as may have been specified in the request headers. </p>

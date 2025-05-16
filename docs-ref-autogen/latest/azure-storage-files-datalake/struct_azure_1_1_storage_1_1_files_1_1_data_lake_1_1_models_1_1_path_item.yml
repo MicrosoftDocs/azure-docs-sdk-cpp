@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::Models::PathItem
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3APathItem
 title: Azure::Storage::Files::DataLake::Models::PathItem Struct Reference
 components:
 - content: >-
@@ -36,43 +36,62 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: CreatedOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Files::DataLake::Models::PathItem::CreatedOn
+  languageId: cpp
 - content: <p>The creation time of the path. </p>
 - section: EncryptionContext
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathItem::EncryptionContext
+  languageId: cpp
 - content: <p>Encryption context of the file. Encryption context is metadata that is not encrypted when stored on the file. The primary application of this field is to store non-encrypted data that can be used to derive the customer-provided key for a file. Not applicable for directories. </p>
 - section: EncryptionScope
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::Models::PathItem::EncryptionScope
+  languageId: cpp
 - content: <p>The name of the encryption scope under which the blob is encrypted. </p>
 - section: ETag
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::PathItem::ETag
+  languageId: cpp
 - content: <p>An HTTP entity tag associated with the path. </p>
 - section: ExpiresOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Files::DataLake::Models::PathItem::ExpiresOn
+  languageId: cpp
 - content: <p>The expiry time of the path. </p>
 - section: FileSize
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Storage::Files::DataLake::Models::PathItem::FileSize = int64_t()
+  languageId: cpp
 - content: <p>The size of the file. </p>
 - section: Group
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::PathItem::Group
+  languageId: cpp
 - content: <p>The group of the path. </p>
 - section: IsDirectory
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::DataLake::Models::PathItem::IsDirectory = false
+  languageId: cpp
 - content: <p>Indicates whether this path is a directory. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::DataLake::Models::PathItem::LastModified
+  languageId: cpp
 - content: <p>The data and time the path was last modified. </p>
 - section: Name
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::PathItem::Name
+  languageId: cpp
 - content: <p>The name of the path. </p>
 - section: Owner
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::PathItem::Owner
+  languageId: cpp
 - content: <p>The owner of the path. </p>
 - section: Permissions
-  display: h2
-- content: >-
-    <p>The permission of the path. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__responses_8hpp_source.html">datalake_responses.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::PathItem::Permissions
+  languageId: cpp
+- content: <p>The permission of the path. </p>

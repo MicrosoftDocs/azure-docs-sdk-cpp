@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::DeferredResponse&lt;
+uid: Azure%3A%3AStorage%3A%3ADeferredResponse%3C%20T%20%3E
 title: Azure::Storage::DeferredResponse&lt; T &gt; Class Template Reference
 components:
 - content: >-
@@ -31,8 +31,10 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: GetResponse()
-  display: h2
+  display: h3
 - content: template&lt;typename T &gt;
+- declaration: Response&lt; T &gt; Azure::Storage::DeferredResponse&lt; T &gt;::GetResponse()const inline
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -42,10 +44,8 @@ components:
 - parameters:
   - summary: The deferred response. An exception is thrown if error occurred.
 - section: operator=()
-  display: h2
-- content: >-
-    template&lt;typename T &gt;<p>Move a <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> to another <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> object.. </p>The documentation for this class was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="deferred__response_8hpp_source.html">deferred_response.hpp</a></li>
-
-    </ul>
+  display: h3
+- content: template&lt;typename T &gt;
+- declaration: DeferredResponse &amp; Azure::Storage::DeferredResponse&lt; T &gt;::operator=(DeferredResponse&lt; T &gt; &amp;&amp;&#160;) default
+  languageId: cpp
+- content: <p>Move a <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> to another <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> object.. </p>

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::Models::PathDeletedItem
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3APathDeletedItem
 title: Azure::Storage::Files::DataLake::Models::PathDeletedItem Struct Reference
 components:
 - content: >-
@@ -20,19 +20,22 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: DeletedOn
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Files::DataLake::Models::PathDeletedItem::DeletedOn
+  languageId: cpp
 - content: <p>When the path was deleted. </p>
 - section: DeletionId
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::PathDeletedItem::DeletionId
+  languageId: cpp
 - content: <p>The deletion ID associated with the deleted path. </p>
 - section: Name
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::PathDeletedItem::Name
+  languageId: cpp
 - content: <p>The name of the path. </p>
 - section: RemainingRetentionDays
-  display: h2
-- content: >-
-    <p>The number of days left before the soft deleted path will be permanently deleted. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__responses_8hpp_source.html">datalake_responses.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: int64_t Azure::Storage::Files::DataLake::Models::PathDeletedItem::RemainingRetentionDays = int64_t()
+  languageId: cpp
+- content: <p>The number of days left before the soft deleted path will be permanently deleted. </p>

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::BlobServiceClient
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobServiceClient
 title: Azure::Storage::Blobs::BlobServiceClient Class Reference
 components:
 - content: <p><code>#include &lt;<a href="blob__service__client_8hpp_source.html">blob_service_client.hpp</a>&gt;</code></p>
@@ -77,7 +77,13 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: BlobServiceClient() [1/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Blobs::BlobServiceClient::BlobServiceClient(const std::string &amp;&#160;                          serviceUrl,                   
+                                                                std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;credential,                   
+                                                                const BlobClientOptions &amp;&#160;                    options = BlobClientOptions()&#160;
+                                                               ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -88,7 +94,13 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: BlobServiceClient() [2/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Blobs::BlobServiceClient::BlobServiceClient(const std::string &amp;&#160;                                  serviceUrl,                   
+                                                                std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                   
+                                                                const BlobClientOptions &amp;&#160;                            options = BlobClientOptions()&#160;
+                                                               ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -99,7 +111,12 @@ components:
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: BlobServiceClient() [3/3]
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Storage::Blobs::BlobServiceClient::BlobServiceClient(const std::string &amp;&#160;      serviceUrl,                   
+                                                                const BlobClientOptions &amp;&#160;options = BlobClientOptions()&#160;
+                                                               ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -110,13 +127,21 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: CreateBatch()
-  display: h2
+  display: h3
+- declaration: BlobServiceBatch Azure::Storage::Blobs::BlobServiceClient::CreateBatch()const
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: A new batch object.
 - section: CreateBlobContainer()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; BlobContainerClient &gt; Azure::Storage::Blobs::BlobServiceClient::CreateBlobContainer(const std::string &amp;&#160;               blobContainerName,                     
+                                                                                                         const CreateBlobContainerOptions &amp;&#160;options = CreateBlobContainerOptions(),
+                                                                                                         const Azure::Core::Context &amp;&#160;      context = Azure::Core::Context()&#160;      
+                                                                                                        )                                   const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -131,7 +156,12 @@ components:
 - parameters:
   - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a> referencing the newly created container.
 - section: CreateFromConnectionString()
-  display: h2
+  display: h3
+- declaration: >-
+    BlobServiceClient Azure::Storage::Blobs::BlobServiceClient::CreateFromConnectionString(const std::string &amp;&#160;      connectionString,             
+                                                                                           const BlobClientOptions &amp;&#160;options = BlobClientOptions()&#160;
+                                                                                          ) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -144,7 +174,13 @@ components:
 - parameters:
   - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client.html">BlobServiceClient</a> instance.
 - section: DeleteBlobContainer()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::DeleteBlobContainerResult &gt; Azure::Storage::Blobs::BlobServiceClient::DeleteBlobContainer(const std::string &amp;&#160;               blobContainerName,                     
+                                                                                                                       const DeleteBlobContainerOptions &amp;&#160;options = DeleteBlobContainerOptions(),
+                                                                                                                       const Azure::Core::Context &amp;&#160;      context = Azure::Core::Context()&#160;      
+                                                                                                                      )                                   const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -159,7 +195,13 @@ components:
 - parameters:
   - summary: A DeleteBlobContainerResult if successful.
 - section: FindBlobsByTags()
-  display: h2
+  display: h3
+- declaration: >-
+    FindBlobsByTagsPagedResponse Azure::Storage::Blobs::BlobServiceClient::FindBlobsByTags(const std::string &amp;&#160;           tagFilterSqlExpression,            
+                                                                                           const FindBlobsByTagsOptions &amp;&#160;options = FindBlobsByTagsOptions(),
+                                                                                           const Azure::Core::Context &amp;&#160;  context = Azure::Core::Context()&#160;  
+                                                                                          )                               const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -174,7 +216,12 @@ components:
 - parameters:
   - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_find_blobs_by_tags_paged_response.html">FindBlobsByTagsPagedResponse</a> describing the blobs.
 - section: GetAccountInfo()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::AccountInfo &gt; Azure::Storage::Blobs::BlobServiceClient::GetAccountInfo(const GetAccountInfoOptions &amp;&#160;options = GetAccountInfoOptions(),
+                                                                                                    const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
+                                                                                                   )                              const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -187,7 +234,9 @@ components:
 - parameters:
   - summary: AccountInfo describing the account.
 - section: GetBlobContainerClient()
-  display: h2
+  display: h3
+- declaration: BlobContainerClient Azure::Storage::Blobs::BlobServiceClient::GetBlobContainerClient(const std::string &amp;&#160;blobContainerName)const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -198,7 +247,12 @@ components:
 - parameters:
   - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a> instance.
 - section: GetProperties()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::BlobServiceProperties &gt; Azure::Storage::Blobs::BlobServiceClient::GetProperties(const GetServicePropertiesOptions &amp;&#160;options = GetServicePropertiesOptions(),
+                                                                                                             const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
+                                                                                                            )                                    const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -211,7 +265,12 @@ components:
 - parameters:
   - summary: A BlobServiceProperties describing the service properties.
 - section: GetStatistics()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::ServiceStatistics &gt; Azure::Storage::Blobs::BlobServiceClient::GetStatistics(const GetBlobServiceStatisticsOptions &amp;&#160;options = GetBlobServiceStatisticsOptions(),
+                                                                                                         const Azure::Core::Context &amp;&#160;           context = Azure::Core::Context()&#160;           
+                                                                                                        )                                        const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -224,13 +283,21 @@ components:
 - parameters:
   - summary: A ServiceStatistics describing the service replication statistics.
 - section: GetUrl()
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Blobs::BlobServiceClient::GetUrl()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: the blob service's primary URL endpoint.
 - section: GetUserDelegationKey()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::UserDelegationKey &gt; Azure::Storage::Blobs::BlobServiceClient::GetUserDelegationKey(const Azure::DateTime &amp;&#160;            expiresOn,                              
+                                                                                                                const GetUserDelegationKeyOptions &amp;&#160;options = GetUserDelegationKeyOptions(),
+                                                                                                                const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
+                                                                                                               )                                    const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -245,7 +312,12 @@ components:
 - parameters:
   - summary: A deserialized UserDelegationKey instance.
 - section: ListBlobContainers()
-  display: h2
+  display: h3
+- declaration: >-
+    ListBlobContainersPagedResponse Azure::Storage::Blobs::BlobServiceClient::ListBlobContainers(const ListBlobContainersOptions &amp;&#160;options = ListBlobContainersOptions(),
+                                                                                                 const Azure::Core::Context &amp;&#160;     context = Azure::Core::Context()&#160;     
+                                                                                                )                                  const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -258,7 +330,14 @@ components:
 - parameters:
   - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blob_containers_paged_response.html">ListBlobContainersPagedResponse</a> describing the blob containers in the storage account.
 - section: RenameBlobContainer()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; BlobContainerClient &gt; Azure::Storage::Blobs::BlobServiceClient::RenameBlobContainer(const std::string &amp;&#160;               sourceBlobContainerName,               
+                                                                                                         const std::string &amp;&#160;               destinationBlobContainerName,          
+                                                                                                         const RenameBlobContainerOptions &amp;&#160;options = RenameBlobContainerOptions(),
+                                                                                                         const Azure::Core::Context &amp;&#160;      context = Azure::Core::Context()&#160;      
+                                                                                                        )                                   const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -275,7 +354,13 @@ components:
 - parameters:
   - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a> referencing the renamed container.
 - section: SetProperties()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; Models::SetServicePropertiesResult &gt; Azure::Storage::Blobs::BlobServiceClient::SetProperties(Models::BlobServiceProperties&#160;      properties,                             
+                                                                                                                  const SetServicePropertiesOptions &amp;&#160;options = SetServicePropertiesOptions(),
+                                                                                                                  const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
+                                                                                                                 )                                    const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -290,7 +375,13 @@ components:
 - parameters:
   - summary: A SetServicePropertiesResult on successfully setting the properties.
 - section: SubmitBatch()
-  display: h2
+  display: h3
+- declaration: >-
+    Response&lt; Models::SubmitBlobBatchResult &gt; Azure::Storage::Blobs::BlobServiceClient::SubmitBatch(const BlobServiceBatch &amp;&#160;      batch,                             
+                                                                                                    const SubmitBlobBatchOptions &amp;&#160;options = SubmitBlobBatchOptions(),
+                                                                                                    const Core::Context &amp;&#160;         context = Core::Context()&#160;         
+                                                                                                   )                               const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -309,7 +400,14 @@ components:
 - parameters:
   - summary: This function will throw only if there's something wrong with the batch request (parent request).
 - section: UndeleteBlobContainer()
-  display: h2
+  display: h3
+- declaration: >-
+    Azure::Response&lt; BlobContainerClient &gt; Azure::Storage::Blobs::BlobServiceClient::UndeleteBlobContainer(const std::string &amp;&#160;                 deletedBlobContainerName,                
+                                                                                                           const std::string &amp;&#160;                 deletedBlobContainerVersion,             
+                                                                                                           const UndeleteBlobContainerOptions &amp;&#160;options = UndeleteBlobContainerOptions(),
+                                                                                                           const Azure::Core::Context &amp;&#160;        context = Azure::Core::Context()&#160;        
+                                                                                                          )                                     const
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -325,11 +423,3 @@ components:
   display: h4
 - parameters:
   - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.html">BlobContainerClient</a> referencing the undeleted container.
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="blob__service__client_8hpp_source.html">blob_service_client.hpp</a></li>
-
-    <li>src/blob_service_client.cpp</li>
-
-    </ul>

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::Amqp::Models::MessageHeader
+uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AMessageHeader
 title: Azure::Core::Amqp::Models::MessageHeader Struct Reference
 components:
 - content: >-
@@ -71,19 +71,28 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: Deserialize()
-  display: h2
+  display: h3
+- declaration: >-
+    MessageHeader Azure::Core::Amqp::Models::MessageHeader::Deserialize(std::uint8_t const *&#160;data,
+                                                                        size_t&#160;              size&#160;
+                                                                       ) static
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: This is used to create an AMQP message header from a vector of bytes.
 - section: GetSerializedSize()
-  display: h2
+  display: h3
+- declaration: size_t Azure::Core::Amqp::Models::MessageHeader::GetSerializedSize(MessageHeader const &amp;&#160;messageHeader) static
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: This is used to calculate the AMQP message size.
 - section: operator==()
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Amqp::Models::MessageHeader::operator==(MessageHeader const &amp;&#160;that)const noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -94,7 +103,9 @@ components:
 - parameters:
   - summary: true if the two headers are equal, false otherwise.
 - section: Serialize()
-  display: h2
+  display: h3
+- declaration: std::vector&lt; uint8_t &gt; Azure::Core::Amqp::Models::MessageHeader::Serialize(MessageHeader const &amp;&#160;messageHeader) static
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -104,45 +115,49 @@ components:
 - parameters:
   - summary: A vector of bytes representing this <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header.html">MessageHeader</a>.
 - section: ShouldSerialize()
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Amqp::Models::MessageHeader::ShouldSerialize()const noexcept
+  languageId: cpp
 - content: <p>Message headers can be serialize if their values are different from the defined default values as specified in the AMQP spec. </p>
 - section: Member Data Documentation
   display: h2
 - section: DeliveryCount
-  display: h2
+  display: h3
+- declaration: std::uint32_t Azure::Core::Amqp::Models::MessageHeader::DeliveryCount {0}
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - section: Durable
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Amqp::Models::MessageHeader::Durable {false}
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - section: IsFirstAcquirer
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::Amqp::Models::MessageHeader::IsFirstAcquirer {false}
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - section: Priority
-  display: h2
+  display: h3
+- declaration: std::uint8_t Azure::Core::Amqp::Models::MessageHeader::Priority {4}
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
 - section: TimeToLive
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::chrono::milliseconds&gt; Azure::Core::Amqp::Models::MessageHeader::TimeToLive
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Section 3.2.1</a>.
-- content: >-
-    The documentation for this struct was generated from the following files:<ul>
-
-    <li>inc/azure/core/amqp/models/<a href="amqp__header_8hpp_source.html">amqp_header.hpp</a></li>
-
-    <li>src/models/amqp_header.cpp</li>
-
-    </ul>

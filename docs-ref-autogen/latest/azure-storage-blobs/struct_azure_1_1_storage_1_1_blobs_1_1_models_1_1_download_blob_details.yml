@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::Models::DownloadBlobDetails
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobDetails
 title: Azure::Storage::Blobs::Models::DownloadBlobDetails Struct Reference
 components:
 - content: >-
@@ -70,94 +70,147 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: CommittedBlockCount
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int32_t&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CommittedBlockCount
+  languageId: cpp
 - content: <p>The number of committed blocks present in the blob. </p>
 - section: CopyCompletedOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyCompletedOn
+  languageId: cpp
 - content: <p>Conclusion time of the last attempted Copy Blob operation where this blob was the destination blob. This value can specify the time of a completed, aborted, or failed copy attempt. This header does not appear if a copy is pending, if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List. </p>
 - section: CopyId
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyId
+  languageId: cpp
 - content: <p>String identifier for this copy operation. Use with Get Blob Properties to check the status of this copy operation, or pass to Abort Copy Blob to abort a pending copy. </p>
 - section: CopyProgress
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyProgress
+  languageId: cpp
 - content: <p>Contains the number of bytes copied and the total bytes in the source in the last attempted Copy Blob operation where this blob was the destination blob. Can show between 0 and Content-Length bytes copied. This header does not appear if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List. </p>
 - section: CopySource
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopySource
+  languageId: cpp
 - content: <p>URL up to 2 KB in length that specifies the source blob or file used in the last attempted Copy Blob operation where this blob was the destination blob. This header does not appear if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List. </p>
 - section: CopyStatus
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::CopyStatus&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyStatus
+  languageId: cpp
 - content: <p>Status of the copy operation. </p>
 - section: CopyStatusDescription
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::CopyStatusDescription
+  languageId: cpp
 - content: <p>Only appears when x-ms-copy-status is failed or pending. Describes the cause of the last fatal or non-fatal copy operation failure. This header does not appear if this blob has never been the destination in a Copy Blob operation, or if this blob has been modified after a concluded Copy Blob operation using Set Blob Properties, Put Blob, or Put Block List. </p>
 - section: CreatedOn
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Blobs::Models::DownloadBlobDetails::CreatedOn
+  languageId: cpp
 - content: <p>The date and time at which the blob was created. </p>
 - section: EncryptionKeySha256
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::EncryptionKeySha256
+  languageId: cpp
 - content: <p>SHA-256 hash of the encryption key used to encrypt the blob data and metadata. </p>
 - section: EncryptionScope
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::EncryptionScope
+  languageId: cpp
 - content: <p>Name of the encryption scope used to encrypt the blob data and metadata. </p>
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Blobs::Models::DownloadBlobDetails::ETag
+  languageId: cpp
 - content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p>
 - section: ExpiresOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::ExpiresOn
+  languageId: cpp
 - content: <p>The time this blob will expire. </p>
 - section: HasLegalHold
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Blobs::Models::DownloadBlobDetails::HasLegalHold = false
+  languageId: cpp
 - content: <p>Indicates whether the blob has a legal hold. </p>
 - section: HttpHeaders
-  display: h2
+  display: h3
+- declaration: BlobHttpHeaders Azure::Storage::Blobs::Models::DownloadBlobDetails::HttpHeaders
+  languageId: cpp
 - content: <p>Standard HTTP properties supported by containers and blobs. </p>
 - section: ImmutabilityPolicy
-  display: h2
+  display: h3
+- declaration: Nullable&lt;BlobImmutabilityPolicy&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::ImmutabilityPolicy
+  languageId: cpp
 - content: <p>Immutability policy associated with the blob. </p>
 - section: IsCurrentVersion
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::IsCurrentVersion
+  languageId: cpp
 - content: <p>Indicates whether version of this blob is the current version. </p>
 - section: IsSealed
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::IsSealed
+  languageId: cpp
 - content: <p>If the blob has been sealed. This value is null for block blobs or page blobs. </p>
 - section: IsServerEncrypted
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Blobs::Models::DownloadBlobDetails::IsServerEncrypted = bool()
+  languageId: cpp
 - content: <p>True if the blob data and metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the blob is unencrypted, or if only parts of the blob/application metadata are encrypted). </p>
 - section: LastAccessedOn
-  display: h2
+  display: h3
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::LastAccessedOn
+  languageId: cpp
 - content: <p>UTC date/time value generated by the service that indicates the time at which the blob was last read or written to. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Blobs::Models::DownloadBlobDetails::LastModified
+  languageId: cpp
 - content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p>
 - section: LeaseDuration
-  display: h2
+  display: h3
+- declaration: Nullable&lt;LeaseDurationType&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::LeaseDuration
+  languageId: cpp
 - content: <p>When a blob is leased, specifies whether the lease is of infinite or fixed duration. </p>
 - section: LeaseState
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::LeaseState&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::LeaseState
+  languageId: cpp
 - content: <p>The current lease state of the blob. </p>
 - section: LeaseStatus
-  display: h2
+  display: h3
+- declaration: Nullable&lt;Models::LeaseStatus&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::LeaseStatus
+  languageId: cpp
 - content: <p>The current lease status of the blob. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Core::CaseInsensitiveMap Azure::Storage::Blobs::Models::DownloadBlobDetails::Metadata
+  languageId: cpp
 - content: <p>A set of name-value pairs associated with this blob or blob container. </p>
 - section: ObjectReplicationDestinationPolicyId
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::ObjectReplicationDestinationPolicyId
+  languageId: cpp
 - content: <p>Only valid when Object Replication is enabled and current blob is the destination. </p>
 - section: ObjectReplicationSourceProperties
-  display: h2
+  display: h3
+- declaration: std::vector&lt;ObjectReplicationPolicy&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::ObjectReplicationSourceProperties
+  languageId: cpp
 - content: <p>Only valid when Object Replication is enabled and current blob is the source. </p>
 - section: SequenceNumber
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::SequenceNumber
+  languageId: cpp
 - content: <p>The current sequence number for a page blob. </p>
 - section: TagCount
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int32_t&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::TagCount
+  languageId: cpp
 - content: <p>The number of tags associated with the blob. </p>
 - section: VersionId
-  display: h2
-- content: >-
-    <p>A string value returned by the service that uniquely identifies the blob version. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::VersionId
+  languageId: cpp
+- content: <p>A string value returned by the service that uniquely identifies the blob version. </p>

@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Core::OperationStatus
+uid: Azure%3A%3ACore%3A%3AOperationStatus
 title: Azure::Core::OperationStatus Class Reference
 components:
 - content: >-
@@ -48,21 +48,27 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - section: OperationStatus() [1/3]
-  display: h2
+  display: h3
+- declaration: Azure::Core::OperationStatus::OperationStatus(const std::string &amp;&#160;value) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: value
     summary: The value to initialize with.
 - section: OperationStatus() [2/3]
-  display: h2
+  display: h3
+- declaration: Azure::Core::OperationStatus::OperationStatus(std::string &amp;&amp;&#160;value) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: value
     summary: The value to initialize with.
 - section: OperationStatus() [3/3]
-  display: h2
+  display: h3
+- declaration: Azure::Core::OperationStatus::OperationStatus(const char *&#160;value) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -71,9 +77,13 @@ components:
 - section: Member Function Documentation
   display: h2
 - section: Get()
-  display: h2
+  display: h3
+- declaration: const std::string &amp; Azure::Core::OperationStatus::Get()const inline noexcept
+  languageId: cpp
 - section: operator!=()
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::OperationStatus::operator!=(const OperationStatus &amp;&#160;other)const inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -84,7 +94,9 @@ components:
 - parameters:
   - summary: <code>false</code> if the states have the same string representation; otherwise, <code>true</code>.
 - section: operator==()
-  display: h2
+  display: h3
+- declaration: bool Azure::Core::OperationStatus::operator==(const OperationStatus &amp;&#160;other)const inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -97,20 +109,22 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: Cancelled
-  display: h2
+  display: h3
+- declaration: const OperationStatus Azure::Core::OperationStatus::Cancelled {&quot;Cancelled&quot;} static
+  languageId: cpp
 - section: Failed
-  display: h2
+  display: h3
+- declaration: const OperationStatus Azure::Core::OperationStatus::Failed {&quot;Failed&quot;} static
+  languageId: cpp
 - section: NotStarted
-  display: h2
+  display: h3
+- declaration: const OperationStatus Azure::Core::OperationStatus::NotStarted static
+  languageId: cpp
 - section: Running
-  display: h2
+  display: h3
+- declaration: const OperationStatus Azure::Core::OperationStatus::Running {&quot;Running&quot;} static
+  languageId: cpp
 - section: Succeeded
-  display: h2
-- content: >-
-    The documentation for this class was generated from the following files:<ul>
-
-    <li>inc/azure/core/<a href="operation__status_8hpp_source.html">operation_status.hpp</a></li>
-
-    <li>src/operation_status.cpp</li>
-
-    </ul>
+  display: h3
+- declaration: const OperationStatus Azure::Core::OperationStatus::Succeeded {&quot;Succeeded&quot;} static
+  languageId: cpp

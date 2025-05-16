@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Messaging::EventHubs::Models::EventHubPartitionProperties
+uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AModels%3A%3AEventHubPartitionProperties
 title: Azure::Messaging::EventHubs::Models::EventHubPartitionProperties Struct Reference
 components:
 - content: >-
@@ -26,28 +26,37 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: BeginningSequenceNumber
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Messaging::EventHubs::Models::EventHubPartitionProperties::BeginningSequenceNumber {}
+  languageId: cpp
 - content: <p>The first sequence number available for events in the partition. </p>
 - section: IsEmpty
-  display: h2
+  display: h3
+- declaration: bool Azure::Messaging::EventHubs::Models::EventHubPartitionProperties::IsEmpty {}
+  languageId: cpp
 - content: <p>Indicates whether or not the partition is currently empty. </p>
 - section: LastEnqueuedOffset
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Messaging::EventHubs::Models::EventHubPartitionProperties::LastEnqueuedOffset {}
+  languageId: cpp
 - content: <p>The offset of the last observed event to be enqueued in the partition </p>
 - section: LastEnqueuedSequenceNumber
-  display: h2
+  display: h3
+- declaration: int64_t Azure::Messaging::EventHubs::Models::EventHubPartitionProperties::LastEnqueuedSequenceNumber {}
+  languageId: cpp
 - content: <p>The sequence number of the last observed event to be enqueued in the partition. </p>
 - section: LastEnqueuedTimeUtc
-  display: h2
+  display: h3
+- declaration: Azure::DateTime Azure::Messaging::EventHubs::Models::EventHubPartitionProperties::LastEnqueuedTimeUtc
+  languageId: cpp
 - content: <p>The date and time, in UTC, that the last observed event was enqueued in the partition. </p>
 - section: Name
-  display: h2
+  display: h3
+- declaration: std::string Azure::Messaging::EventHubs::Models::EventHubPartitionProperties::Name
+  languageId: cpp
 - content: <p>The name of the Event Hub where the partitions reside, specific to the Event Hubs namespace that contains it. </p>
 - section: PartitionId
-  display: h2
-- content: >-
-    <p>The identifier of the partition, unique to the Event Hub which contains it. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/messaging/eventhubs/models/<a href="management__models_8hpp_source.html">management_models.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: std::string Azure::Messaging::EventHubs::Models::EventHubPartitionProperties::PartitionId
+  languageId: cpp
+- content: <p>The identifier of the partition, unique to the Event Hub which contains it. </p>

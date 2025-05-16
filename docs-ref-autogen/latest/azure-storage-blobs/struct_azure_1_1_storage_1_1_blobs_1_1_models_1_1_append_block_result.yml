@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Blobs::Models::AppendBlockResult
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AAppendBlockResult
 title: Azure::Storage::Blobs::Models::AppendBlockResult Struct Reference
 components:
 - content: >-
@@ -28,31 +28,42 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AppendOffset
-  display: h2
+  display: h3
+- declaration: std::int64_t Azure::Storage::Blobs::Models::AppendBlockResult::AppendOffset = std::int64_t()
+  languageId: cpp
 - content: <p>This response header is returned only for append operations. It returns the offset at which the block was committed, in bytes. </p>
 - section: CommittedBlockCount
-  display: h2
+  display: h3
+- declaration: std::int32_t Azure::Storage::Blobs::Models::AppendBlockResult::CommittedBlockCount = std::int32_t()
+  languageId: cpp
 - content: <p>The number of committed blocks present in the blob. This header is returned only for append blobs. </p>
 - section: EncryptionKeySha256
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::AppendBlockResult::EncryptionKeySha256
+  languageId: cpp
 - content: <p>The SHA-256 hash of the encryption key used to encrypt the block. This header is only returned when the block was encrypted with a customer-provided key. </p>
 - section: EncryptionScope
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::AppendBlockResult::EncryptionScope
+  languageId: cpp
 - content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p>
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Blobs::Models::AppendBlockResult::ETag
+  languageId: cpp
 - content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p>
 - section: IsServerEncrypted
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Blobs::Models::AppendBlockResult::IsServerEncrypted = bool()
+  languageId: cpp
 - content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: DateTime Azure::Storage::Blobs::Models::AppendBlockResult::LastModified
+  languageId: cpp
 - content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p>
 - section: TransactionalContentHash
-  display: h2
-- content: >-
-    <p>If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/blobs/<a href="rest__client_8hpp_source.html">rest_client.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::AppendBlockResult::TransactionalContentHash
+  languageId: cpp
+- content: <p>If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity. </p>

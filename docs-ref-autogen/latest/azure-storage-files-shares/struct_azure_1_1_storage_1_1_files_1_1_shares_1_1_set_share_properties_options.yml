@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::Shares::SetSharePropertiesOptions
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ASetSharePropertiesOptions
 title: Azure::Storage::Files::Shares::SetSharePropertiesOptions Struct Reference
 components:
 - content: >-
@@ -30,34 +30,47 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessTier
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::AccessTier&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::AccessTier
+  languageId: cpp
 - content: <p>Specifies the access tier of the share. This is only valid for standard file account and the value can only be one of <code>Hot</code>, <code>Cool</code> or <code>TransactionOptimized</code> </p>
 - section: EnablePaidBursting
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::EnablePaidBursting
+  languageId: cpp
 - content: <p>Optional. Boolean. Version 2023-11-03 and newer. Default if not specified is false. This property enables paid bursting. </p>
 - section: EnableSnapshotVirtualDirectoryAccess
-  display: h2
+  display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::EnableSnapshotVirtualDirectoryAccess
+  languageId: cpp
 - content: <p>Version 2023-08-03 and newer. Specifies whether the snapshot virtual directory should be accessible at the root of share mount point when NFS is enabled. This header is only returned for shares, not for snapshots. </p>
 - section: PaidBurstingMaxBandwidthMibps
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::PaidBurstingMaxBandwidthMibps
+  languageId: cpp
 - content: <p>Optional. Integer. Version 2023-11-03 and newer. Default if not specified is the maximum throughput the file share can support. Current maximum for a file share is 10,340 MiB/sec. </p>
 - section: PaidBurstingMaxIops
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::PaidBurstingMaxIops
+  languageId: cpp
 - content: <p>Optional. Integer. Version 2023-11-03 and newer. Default if not specified is the maximum IOPS the file share can support. Current maximum for a file share is 102,400 IOPS. </p>
 - section: ProvisionedMaxBandwidthMibps
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::ProvisionedMaxBandwidthMibps
+  languageId: cpp
 - content: <p>Optional. Boolean. Version 2025-01-05 and newer. Sets the max provisioned brandwith for a share. For SSD, min bandwidth is 125 MiB/sec and max is 10,340 MiB/sec. For HDD, min bandwidth is 60 MiB/sec and max is 5,120 MiB/sec. </p>
 - section: ProvisionedMaxIops
-  display: h2
+  display: h3
+- declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::ProvisionedMaxIops
+  languageId: cpp
 - content: <p>Optional. Boolean. Version 2025-01-05 and newer. Sets the max provisioned IOPs for a share. For SSD, min IOPs is 3,000 and max is 100,000. For HDD, min IOPs is 500 and max is 50,000. </p>
 - section: RootSquash
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::ShareRootSquash&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::RootSquash
+  languageId: cpp
 - content: <p>Specifies the root squashing behavior on the share when NFS is enabled. If it's not specified, the default is NoRootSquash. </p>
 - section: ShareQuotaInGiB
-  display: h2
-- content: >-
-    <p>Specifies the maximum size of the share, in gigabytes. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/shares/<a href="share__options_8hpp_source.html">share_options.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: Azure::Nullable&lt;int64_t&gt; Azure::Storage::Files::Shares::SetSharePropertiesOptions::ShareQuotaInGiB
+  languageId: cpp
+- content: <p>Specifies the maximum size of the share, in gigabytes. </p>

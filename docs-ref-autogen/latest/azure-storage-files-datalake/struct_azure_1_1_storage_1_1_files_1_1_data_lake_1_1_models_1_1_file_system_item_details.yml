@@ -1,5 +1,5 @@
 ### YamlMime:Reference
-uid: Azure::Storage::Files::DataLake::Models::FileSystemItemDetails
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3AFileSystemItemDetails
 title: Azure::Storage::Files::DataLake::Models::FileSystemItemDetails Struct Reference
 components:
 - content: >-
@@ -34,40 +34,57 @@ components:
 - section: Member Data Documentation
   display: h2
 - section: AccessType
-  display: h2
+  display: h3
+- declaration: PublicAccessType Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::AccessType = PublicAccessType::None
+  languageId: cpp
 - content: <p>The public access type of the file system. </p>
 - section: DefaultEncryptionScope
-  display: h2
+  display: h3
+- declaration: std::string Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::DefaultEncryptionScope = &quot;$account-encryption-key&quot;
+  languageId: cpp
 - content: <p>The default encryption scope for the file system. </p>
 - section: ETag
-  display: h2
+  display: h3
+- declaration: Azure::ETag Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::ETag
+  languageId: cpp
 - content: <p>An HTTP entity tag associated with the file system. </p>
 - section: HasImmutabilityPolicy
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::HasImmutabilityPolicy = false
+  languageId: cpp
 - content: <p>A boolean that indicates if the file system has immutability policy. </p>
 - section: HasLegalHold
-  display: h2
+  display: h3
+- declaration: bool Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::HasLegalHold = false
+  languageId: cpp
 - content: <p>A boolean that indicates if the file system has legal hold. </p>
 - section: LastModified
-  display: h2
+  display: h3
+- declaration: Azure::DateTime Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::LastModified
+  languageId: cpp
 - content: <p>The data and time the file system was last modified. </p>
 - section: LeaseDuration
-  display: h2
+  display: h3
+- declaration: Azure::Nullable&lt;Models::LeaseDurationType&gt; Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::LeaseDuration
+  languageId: cpp
 - content: <p>The duration of the lease on the file system if it has one. </p>
 - section: LeaseState
-  display: h2
+  display: h3
+- declaration: Models::LeaseState Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::LeaseState = Models::LeaseState::Available
+  languageId: cpp
 - content: <p>The lease state of the file system. </p>
 - section: LeaseStatus
-  display: h2
+  display: h3
+- declaration: Models::LeaseStatus Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::LeaseStatus = Models::LeaseStatus::Unlocked
+  languageId: cpp
 - content: <p>The lease status of the file system. </p>
 - section: Metadata
-  display: h2
+  display: h3
+- declaration: Storage::Metadata Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::Metadata
+  languageId: cpp
 - content: <p>The Metadata of the file system. </p>
 - section: PreventEncryptionScopeOverride
-  display: h2
-- content: >-
-    <p>Indicates whether the filesystem's default encryption scope can be overriden. </p>The documentation for this struct was generated from the following file:<ul>
-
-    <li>inc/azure/storage/files/datalake/<a href="datalake__responses_8hpp_source.html">datalake_responses.hpp</a></li>
-
-    </ul>
+  display: h3
+- declaration: bool Azure::Storage::Files::DataLake::Models::FileSystemItemDetails::PreventEncryptionScopeOverride = false
+  languageId: cpp
+- content: <p>Indicates whether the filesystem's default encryption scope can be overriden. </p>

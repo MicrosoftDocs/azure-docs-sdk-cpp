@@ -3,19 +3,25 @@ uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AForceCloseAllDirectoryHandle
 title: Azure::Storage::Files::Shares::ForceCloseAllDirectoryHandlesOptions Struct Reference
 components:
 - content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#af8547163f0a443dd8bf2abe079931b67">Azure::Storage::Files::Shares::ShareDirectoryClient::ForceCloseAllHandles</a>.  
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client#af8547163f0a443dd8bf2abe079931b67">Azure::Storage::Files::Shares::ShareDirectoryClient::ForceCloseAllHandles</a>.  
 
-    </p><p><code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;share_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_directory_handles_options.html#a617856407f4d24cdf5773089116e6e1b">ContinuationToken</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_force_close_all_directory_handles_options#a617856407f4d24cdf5773089116e6e1b">ContinuationToken</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
   - declaration: Recursive
     summary: Specifies operation should apply to the directory specified in the URI, its files, its subdirectories and their files.
-    returnType: Azure::Nullable&lt; bool &gt;&#160;
+    returnType: >-
+      <a id="a13573c6186c96a92deee0ebdd46cab51"></a>
+
+      Azure::Nullable&lt; bool &gt;&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a617856407f4d24cdf5773089116e6e1b"></a>
 - section: ContinuationToken
   display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::ForceCloseAllDirectoryHandlesOptions::ContinuationToken
+  languageId: cpp
 - content: <p>A string value that identifies the portion of the list to be returned with the next close operation. The operation returns a marker value within the response body if the force close was not complete. The marker value may then be used in a subsequent call to close the next handle. The marker value is opaque to the client. </p>

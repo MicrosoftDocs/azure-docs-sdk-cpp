@@ -3,26 +3,33 @@ uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ARenewLeaseResult
 title: Azure::Storage::Blobs::Models::RenewLeaseResult Struct Reference
 components:
 - content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.html#ad43608d8cebd4206bd63ae06cbf6c70a">Azure::Storage::Blobs::BlobLeaseClient::Renew</a>.  
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#ad43608d8cebd4206bd63ae06cbf6c70a">Azure::Storage::Blobs::BlobLeaseClient::Renew</a>.  
 
-    </p><p><code>#include &lt;<a href="blob__responses_8hpp_source.html">blob_responses.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;blob_responses.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_renew_lease_result.html#ab4a649c77b9782b4c6af9243dc7401ac">ETag</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_renew_lease_result#ab4a649c77b9782b4c6af9243dc7401ac">ETag</a>
     returnType: Azure::ETag&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_renew_lease_result.html#ad6af2e8b6b305c3b3dbeb781a694cc11">LastModified</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_renew_lease_result#ad6af2e8b6b305c3b3dbeb781a694cc11">LastModified</a>
     returnType: Azure::DateTime&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_renew_lease_result.html#a28978fc80cd1ac7d65c774c24cc1c7cb">LeaseId</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_renew_lease_result#a28978fc80cd1ac7d65c774c24cc1c7cb">LeaseId</a>
     returnType: std::string&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="ab4a649c77b9782b4c6af9243dc7401ac"></a>
 - section: ETag
   display: h3
-- content: <p>The ETag contains a value that you can use to perform operations conditionally. </p>
+- declaration: Azure::ETag Azure::Storage::Blobs::Models::RenewLeaseResult::ETag
+  languageId: cpp
+- content: <p>The ETag contains a value that you can use to perform operations conditionally. </p><a id="ad6af2e8b6b305c3b3dbeb781a694cc11"></a>
 - section: LastModified
   display: h3
-- content: <p>The date/time that the blob was last modified. The date format follows RFC 1123. </p>
+- declaration: Azure::DateTime Azure::Storage::Blobs::Models::RenewLeaseResult::LastModified
+  languageId: cpp
+- content: <p>The date/time that the blob was last modified. The date format follows RFC 1123. </p><a id="a28978fc80cd1ac7d65c774c24cc1c7cb"></a>
 - section: LeaseId
   display: h3
+- declaration: std::string Azure::Storage::Blobs::Models::RenewLeaseResult::LeaseId
+  languageId: cpp
 - content: <p>When you request a lease, the Blob service returns a unique lease ID. While the lease is active, you must include the lease ID with any request to write to the blob, or to renew, change, or release the lease. </p>

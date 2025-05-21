@@ -5,34 +5,45 @@ components:
 - content: >-
     <p>The content and information returned when downloading a file.  
 
-    </p><p><code>#include &lt;<a href="datalake__responses_8hpp_source.html">datalake_responses.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;datalake_responses.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result.html#ade312f52270d1d2e45f31663c549fbc2">Body</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result#ade312f52270d1d2e45f31663c549fbc2">Body</a>
     returnType: std::unique_ptr&lt; Azure::Core::IO::BodyStream &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result.html#a13b390ccc026e208ae018669d0f14efd">FileSize</a> = int64_t()
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result#a13b390ccc026e208ae018669d0f14efd">FileSize</a> = int64_t()
     returnType: int64_t&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result.html#a3052329670f16119d655d3061a01b097">ContentRange</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result#a3052329670f16119d655d3061a01b097">ContentRange</a>
     returnType: Azure::Core::Http::HttpRange&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result.html#a45a789a5f63093fa593d8a2a99a96cdf">TransactionalContentHash</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result#a45a789a5f63093fa593d8a2a99a96cdf">TransactionalContentHash</a>
     returnType: Azure::Nullable&lt; Storage::ContentHash &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result.html#a816a08949e4a3f6df24fdeaecccb6163">Details</a>
-    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_details.html">DownloadFileDetails</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result#a816a08949e4a3f6df24fdeaecccb6163">Details</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_details">DownloadFileDetails</a>&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="ade312f52270d1d2e45f31663c549fbc2"></a>
 - section: Body
   display: h3
-- content: <p>The body of the downloaded result. </p>
+- declaration: std::unique_ptr&lt;Azure::Core::IO::BodyStream&gt; Azure::Storage::Files::DataLake::Models::DownloadFileResult::Body
+  languageId: cpp
+- content: <p>The body of the downloaded result. </p><a id="a3052329670f16119d655d3061a01b097"></a>
 - section: ContentRange
   display: h3
-- content: <p>The range of the downloaded content. </p>
+- declaration: Azure::Core::Http::HttpRange Azure::Storage::Files::DataLake::Models::DownloadFileResult::ContentRange
+  languageId: cpp
+- content: <p>The range of the downloaded content. </p><a id="a816a08949e4a3f6df24fdeaecccb6163"></a>
 - section: Details
   display: h3
-- content: <p>The detailed information of the downloaded file. </p>
+- declaration: DownloadFileDetails Azure::Storage::Files::DataLake::Models::DownloadFileResult::Details
+  languageId: cpp
+- content: <p>The detailed information of the downloaded file. </p><a id="a13b390ccc026e208ae018669d0f14efd"></a>
 - section: FileSize
   display: h3
-- content: <p>The size of the file. </p>
+- declaration: int64_t Azure::Storage::Files::DataLake::Models::DownloadFileResult::FileSize = int64_t()
+  languageId: cpp
+- content: <p>The size of the file. </p><a id="a45a789a5f63093fa593d8a2a99a96cdf"></a>
 - section: TransactionalContentHash
   display: h3
+- declaration: Azure::Nullable&lt;Storage::ContentHash&gt; Azure::Storage::Files::DataLake::Models::DownloadFileResult::TransactionalContentHash
+  languageId: cpp
 - content: <p>The transactional hash of the downloaded content. </p>

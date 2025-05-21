@@ -3,46 +3,63 @@ uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AGetPageRangesDiffPagedResponse
 title: Azure::Storage::Blobs::GetPageRangesDiffPagedResponse Class Reference
 components:
 - content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html#a4740a1e4cac11f6c5db64c55074a6b7b">Azure::Storage::Blobs::PageBlobClient::GetPageRangesDiff</a> and <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html#aee0bab24e7c3ba34e06955724819bf85">Azure::Storage::Blobs::PageBlobClient::GetManagedDiskPageRangesDiff</a>.  
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client#a4740a1e4cac11f6c5db64c55074a6b7b">Azure::Storage::Blobs::PageBlobClient::GetPageRangesDiff</a> and <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client#aee0bab24e7c3ba34e06955724819bf85">Azure::Storage::Blobs::PageBlobClient::GetManagedDiskPageRangesDiff</a>.  
 
-    </p><p><code>#include &lt;<a href="blob__responses_8hpp_source.html">blob_responses.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+    </p><p><code>#include &lt;blob_responses.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Core::PagedResponse
     href: ''
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response.html#adbf0552f50e98d3784d199054c6a3281">ETag</a>
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response#adbf0552f50e98d3784d199054c6a3281">ETag</a>
     returnType: Azure::ETag&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response.html#ae37d8a895279491d4be2bfa525174fa5">LastModified</a>
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response#ae37d8a895279491d4be2bfa525174fa5">LastModified</a>
     returnType: Azure::DateTime&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response.html#a82f141b5036bc193fe72c2b1b7285cd9">BlobSize</a> = 0
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response#a82f141b5036bc193fe72c2b1b7285cd9">BlobSize</a> = 0
     returnType: int64_t&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response.html#a69349e977a0c02df3206dc0c83445bd7">PageRanges</a>
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response#a69349e977a0c02df3206dc0c83445bd7">PageRanges</a>
     returnType: std::vector&lt; Azure::Core::Http::HttpRange &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response.html#aed45761e9168598856c67d8585c3e425">ClearRanges</a>
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_get_page_ranges_diff_paged_response#aed45761e9168598856c67d8585c3e425">ClearRanges</a>
     returnType: std::vector&lt; Azure::Core::Http::HttpRange &gt;&#160;
 - section: Friends
   display: h2
 - apiList:
   - declaration: PageBlobClient
-    returnType: class&#160;
+    returnType: >-
+      <a id="aec731219bc893c0748c01ce34ae93df4"></a>
+
+      class&#160;
   - declaration: Azure::Core::PagedResponse&lt; GetPageRangesDiffPagedResponse &gt;
-    returnType: class&#160;
+    returnType: >-
+      <a id="a040db1283731f73b56e475506e142e6d"></a>
+
+      class&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a82f141b5036bc193fe72c2b1b7285cd9"></a>
 - section: BlobSize
   display: h3
-- content: <p>Size of the blob. </p>
+- declaration: int64_t Azure::Storage::Blobs::GetPageRangesDiffPagedResponse::BlobSize = 0
+  languageId: cpp
+- content: <p>Size of the blob. </p><a id="aed45761e9168598856c67d8585c3e425"></a>
 - section: ClearRanges
   display: h3
-- content: <p>Clear range items. </p>
+- declaration: std::vector&lt;Azure::Core::Http::HttpRange&gt; Azure::Storage::Blobs::GetPageRangesDiffPagedResponse::ClearRanges
+  languageId: cpp
+- content: <p>Clear range items. </p><a id="adbf0552f50e98d3784d199054c6a3281"></a>
 - section: ETag
   display: h3
-- content: <p>The ETag contains a value that you can use to perform operations conditionally. </p>
+- declaration: Azure::ETag Azure::Storage::Blobs::GetPageRangesDiffPagedResponse::ETag
+  languageId: cpp
+- content: <p>The ETag contains a value that you can use to perform operations conditionally. </p><a id="ae37d8a895279491d4be2bfa525174fa5"></a>
 - section: LastModified
   display: h3
-- content: <p>The date/time that the blob was last modified. The date format follows RFC 1123. </p>
+- declaration: Azure::DateTime Azure::Storage::Blobs::GetPageRangesDiffPagedResponse::LastModified
+  languageId: cpp
+- content: <p>The date/time that the blob was last modified. The date format follows RFC 1123. </p><a id="a69349e977a0c02df3206dc0c83445bd7"></a>
 - section: PageRanges
   display: h3
+- declaration: std::vector&lt;Azure::Core::Http::HttpRange&gt; Azure::Storage::Blobs::GetPageRangesDiffPagedResponse::PageRanges
+  languageId: cpp
 - content: <p>Page range items. </p>

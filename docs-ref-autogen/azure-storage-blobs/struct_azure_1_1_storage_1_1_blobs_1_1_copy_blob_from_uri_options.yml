@@ -3,49 +3,80 @@ uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ACopyBlobFromUriOptions
 title: Azure::Storage::Blobs::CopyBlobFromUriOptions Struct Reference
 components:
 - content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a267904b7db1f9e53632dc551aaea037c">Azure::Storage::Blobs::BlobClient::CopyFromUri</a>.  
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client#a267904b7db1f9e53632dc551aaea037c">Azure::Storage::Blobs::BlobClient::CopyFromUri</a>.  
 
-    </p><p><code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
   - declaration: Metadata
     summary: Specifies user-defined name-value pairs associated with the blob. If no name-value pairs are specified, the operation will copy the metadata from the source blob or file to the destination blob. If one or more name-value pairs are specified, the destination blob is created with the specified metadata, and metadata is not copied from the source blob or file.
-    returnType: Storage::Metadata&#160;
+    returnType: >-
+      <a id="a7d0126fe86bb1aa33c6827ad1594679b"></a>
+
+      Storage::Metadata&#160;
   - declaration: Tags
     summary: The tags to set for this blob.
-    returnType: std::map&lt; std::string, std::string &gt;&#160;
+    returnType: >-
+      <a id="a821d79facd4ff07a2f6046ea19166c37"></a>
+
+      std::map&lt; std::string, std::string &gt;&#160;
   - declaration: AccessConditions
     summary: Optional conditions that must be met to perform this operation.
-    returnType: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions.html">BlobAccessConditions</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options.html#a2ef34469ea60fd18cf708493255d29e5">SourceAccessConditions</a>
+    returnType: >-
+      <a id="a336818880afe56260cd599681587f86d"></a>
+
+      <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions">BlobAccessConditions</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options#a2ef34469ea60fd18cf708493255d29e5">SourceAccessConditions</a>
     summary: Optional conditions that the source must meet to perform this operation.
     returnType: '&#160;'
   - declaration: AccessTier
     summary: Specifies the tier to be set on the target blob.
-    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.html">Models::AccessTier</a> &gt;&#160;
+    returnType: >-
+      <a id="a1402cb3fdc63c5405c5ebcfc5c4e612e"></a>
+
+      Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier">Models::AccessTier</a> &gt;&#160;
   - declaration: TransactionalContentHash
     summary: Hash of the blob content. This hash is used to verify the integrity of the blob during transport. When this header is specified, the storage service checks the hash that has arrived with the one that was sent.
-    returnType: Azure::Nullable&lt; ContentHash &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options.html#a3727b530dc902344d360f478ea3032f5">ImmutabilityPolicy</a>
-    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy.html">Models::BlobImmutabilityPolicy</a> &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options.html#a109a6db94b4ad0fa37a2053df6d68867">HasLegalHold</a>
+    returnType: >-
+      <a id="a5c719d15c725f6796c935d56dbfdc955"></a>
+
+      Azure::Nullable&lt; ContentHash &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options#a3727b530dc902344d360f478ea3032f5">ImmutabilityPolicy</a>
+    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy">Models::BlobImmutabilityPolicy</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options#a109a6db94b4ad0fa37a2053df6d68867">HasLegalHold</a>
     returnType: Azure::Nullable&lt; bool &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options.html#a6b92c7750a0c30f294145e7a33b12e7c">CopySourceTagsMode</a>
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_copy_source_tags_mode.html">Models::BlobCopySourceTagsMode</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options#a6b92c7750a0c30f294145e7a33b12e7c">CopySourceTagsMode</a>
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_copy_source_tags_mode">Models::BlobCopySourceTagsMode</a>&#160;
   - declaration: SourceAuthorization
     summary: 'Optional. Source authorization used to access the source file. The format is: &lt;scheme&gt; &lt;signature&gt; Only Bearer type is supported. Credentials should be a valid OAuth access token to copy source.'
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="ac75fa959db252a8993e00d76a7258127"></a>
+
+      std::string&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a6b92c7750a0c30f294145e7a33b12e7c"></a>
 - section: CopySourceTagsMode
   display: h3
-- content: <p>Indicates the tags on the destination blob should be copied from source or replaced by Tags in this option. Default is to replace. </p>
+- declaration: Models::BlobCopySourceTagsMode Azure::Storage::Blobs::CopyBlobFromUriOptions::CopySourceTagsMode
+  languageId: cpp
+- content: <p>Indicates the tags on the destination blob should be copied from source or replaced by Tags in this option. Default is to replace. </p><a id="a109a6db94b4ad0fa37a2053df6d68867"></a>
 - section: HasLegalHold
   display: h3
-- content: <p>Indicates whether the destination blob has a legal hold. </p>
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Blobs::CopyBlobFromUriOptions::HasLegalHold
+  languageId: cpp
+- content: <p>Indicates whether the destination blob has a legal hold. </p><a id="a3727b530dc902344d360f478ea3032f5"></a>
 - section: ImmutabilityPolicy
   display: h3
-- content: <p>Immutability policy to set on the destination blob. </p>
+- declaration: Azure::Nullable&lt;Models::BlobImmutabilityPolicy&gt; Azure::Storage::Blobs::CopyBlobFromUriOptions::ImmutabilityPolicy
+  languageId: cpp
+- content: <p>Immutability policy to set on the destination blob. </p><a id="a2ef34469ea60fd18cf708493255d29e5"></a>
 - section: SourceAccessConditions
   display: h3
+- declaration: Azure::Storage::Blobs::CopyBlobFromUriOptions::SourceAccessConditions
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: Lease access condition only works for API versions before 2012-02-12.

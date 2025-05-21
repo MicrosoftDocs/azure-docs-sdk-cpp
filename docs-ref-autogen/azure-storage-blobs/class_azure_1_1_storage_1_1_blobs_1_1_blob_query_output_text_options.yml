@@ -5,28 +5,34 @@ components:
 - content: >-
     <p>Blob Query text configuration for output.  
 
-    </p><p><code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p>
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options.html#a543fd650f24c167017f5fcb217989ce6">CreateCsvTextOptions</a> (const std::string &amp;recordSeparator=std::string(), const std::string &amp;columnSeparator=std::string(), const std::string &amp;quotationCharacter=std::string(), const std::string &amp;escapeCharacter=std::string(), bool hasHeaders=false)
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options#a543fd650f24c167017f5fcb217989ce6">CreateCsvTextOptions</a> (const std::string &amp;recordSeparator=std::string(), const std::string &amp;columnSeparator=std::string(), const std::string &amp;quotationCharacter=std::string(), const std::string &amp;escapeCharacter=std::string(), bool hasHeaders=false)
     summary: Creates CSV text configuration.
-    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options.html">BlobQueryOutputTextOptions</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options.html#a86f5b100b91159349208ec5b71077189">CreateJsonTextOptions</a> (const std::string &amp;recordSeparator=std::string())
+    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options">BlobQueryOutputTextOptions</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options#a86f5b100b91159349208ec5b71077189">CreateJsonTextOptions</a> (const std::string &amp;recordSeparator=std::string())
     summary: Creates Json text configuration.
-    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options.html">BlobQueryOutputTextOptions</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options.html#adfb578eb69020b39daab859602390b47">CreateArrowTextOptions</a> (std::vector&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_query_arrow_field.html">Models::BlobQueryArrowField</a> &gt; schema)
+    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options">BlobQueryOutputTextOptions</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options#adfb578eb69020b39daab859602390b47">CreateArrowTextOptions</a> (std::vector&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_query_arrow_field">Models::BlobQueryArrowField</a> &gt; schema)
     summary: Creates Arrow text configuration.
-    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options.html">BlobQueryOutputTextOptions</a>&#160;
+    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options">BlobQueryOutputTextOptions</a>&#160;
 - section: Friends
   display: h2
 - apiList:
   - declaration: BlockBlobClient
-    returnType: class&#160;
+    returnType: >-
+      <a id="a4be31ea5fc92e6f527748e209f0142a0"></a>
+
+      class&#160;
 - section: Member Function Documentation
   display: h2
+- content: <a id="adfb578eb69020b39daab859602390b47"></a>
 - section: CreateArrowTextOptions()
   display: h3
+- declaration: BlobQueryOutputTextOptions Azure::Storage::Blobs::BlobQueryOutputTextOptions::CreateArrowTextOptions(std::vector&lt; Models::BlobQueryArrowField &gt;&#160;schema) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -36,8 +42,17 @@ components:
   display: h4
 - parameters:
   - summary: Arrow text configuration.
+- content: <a id="a543fd650f24c167017f5fcb217989ce6"></a>
 - section: CreateCsvTextOptions()
   display: h3
+- declaration: >-
+    BlobQueryOutputTextOptions Azure::Storage::Blobs::BlobQueryOutputTextOptions::CreateCsvTextOptions(const std::string &amp;&#160;recordSeparator = std::string(),   
+                                                                                                       const std::string &amp;&#160;columnSeparator = std::string(),   
+                                                                                                       const std::string &amp;&#160;quotationCharacter = std::string(),
+                                                                                                       const std::string &amp;&#160;escapeCharacter = std::string(),   
+                                                                                                       bool&#160;               hasHeaders = false&#160;                
+                                                                                                      ) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -55,8 +70,11 @@ components:
   display: h4
 - parameters:
   - summary: CSV text configuration.
+- content: <a id="a86f5b100b91159349208ec5b71077189"></a>
 - section: CreateJsonTextOptions()
   display: h3
+- declaration: BlobQueryOutputTextOptions Azure::Storage::Blobs::BlobQueryOutputTextOptions::CreateJsonTextOptions(const std::string &amp;&#160;recordSeparator = std::string()) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:

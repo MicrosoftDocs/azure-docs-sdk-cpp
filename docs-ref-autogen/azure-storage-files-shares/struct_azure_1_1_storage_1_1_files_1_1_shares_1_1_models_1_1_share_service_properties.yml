@@ -5,29 +5,38 @@ components:
 - content: >-
     <p>Storage service properties.  
 
-    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;rest_client.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties.html#a09dbcc93fd8c58bcb4ac8034c780be13">HourMetrics</a>
-    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_metrics.html">Metrics</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties.html#a41511a972e5edd46c88c4d0262b2a039">MinuteMetrics</a>
-    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_metrics.html">Metrics</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties.html#adca03b343aeae20d03ea13c491c52d29">Cors</a>
-    returnType: std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_cors_rule.html">CorsRule</a> &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties.html#a6436c7a6df75263600d3958b6c700f0e">Protocol</a>
-    returnType: Nullable&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_protocol_settings.html">ProtocolSettings</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties#a09dbcc93fd8c58bcb4ac8034c780be13">HourMetrics</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_metrics">Metrics</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties#a41511a972e5edd46c88c4d0262b2a039">MinuteMetrics</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_metrics">Metrics</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties#adca03b343aeae20d03ea13c491c52d29">Cors</a>
+    returnType: std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_cors_rule">CorsRule</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties#a6436c7a6df75263600d3958b6c700f0e">Protocol</a>
+    returnType: Nullable&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_protocol_settings">ProtocolSettings</a> &gt;&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="adca03b343aeae20d03ea13c491c52d29"></a>
 - section: Cors
   display: h3
-- content: <p>The set of CORS rules. </p>
+- declaration: std::vector&lt;CorsRule&gt; Azure::Storage::Files::Shares::Models::ShareServiceProperties::Cors
+  languageId: cpp
+- content: <p>The set of CORS rules. </p><a id="a09dbcc93fd8c58bcb4ac8034c780be13"></a>
 - section: HourMetrics
   display: h3
-- content: <p>A summary of request statistics grouped by API in hourly aggregates for files. </p>
+- declaration: Metrics Azure::Storage::Files::Shares::Models::ShareServiceProperties::HourMetrics
+  languageId: cpp
+- content: <p>A summary of request statistics grouped by API in hourly aggregates for files. </p><a id="a41511a972e5edd46c88c4d0262b2a039"></a>
 - section: MinuteMetrics
   display: h3
-- content: <p>A summary of request statistics grouped by API in minute aggregates for files. </p>
+- declaration: Metrics Azure::Storage::Files::Shares::Models::ShareServiceProperties::MinuteMetrics
+  languageId: cpp
+- content: <p>A summary of request statistics grouped by API in minute aggregates for files. </p><a id="a6436c7a6df75263600d3958b6c700f0e"></a>
 - section: Protocol
   display: h3
+- declaration: Nullable&lt;ProtocolSettings&gt; Azure::Storage::Files::Shares::Models::ShareServiceProperties::Protocol
+  languageId: cpp
 - content: <p>Protocol settings. </p>

@@ -3,46 +3,61 @@ uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AQueryBlobResult
 title: Azure::Storage::Blobs::Models::QueryBlobResult Struct Reference
 components:
 - content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a6188259279eab1bd8dbff684258ea673">Azure::Storage::Blobs::BlockBlobClient::Query</a>.  
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client#a6188259279eab1bd8dbff684258ea673">Azure::Storage::Blobs::BlockBlobClient::Query</a>.  
 
-    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;rest_client.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a9be87fe5cafa285b1fbf4a9651b16505">BodyStream</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result#a9be87fe5cafa285b1fbf4a9651b16505">BodyStream</a>
     returnType: std::unique_ptr&lt; Core::IO::BodyStream &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a0acb0e32460a6ce6680e897cb8e83769">LastModified</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result#a0acb0e32460a6ce6680e897cb8e83769">LastModified</a>
     returnType: DateTime&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a449da03757431dd84049c92bdb657d77">ETag</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result#a449da03757431dd84049c92bdb657d77">ETag</a>
     returnType: Azure::ETag&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a5639414824199dbae57ea6a26b94a8cb">LeaseDuration</a>
-    returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_duration_type.html">LeaseDurationType</a> &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a81fde1ed6a4ecc3cb1f23b513eadc094">LeaseState</a>
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_state.html">Models::LeaseState</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#ae6f2eb3d9e53a560968daae26ed2c0af">LeaseStatus</a>
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_status.html">Models::LeaseStatus</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result.html#a02f30b591b62a5359c74f17eb3c0b947">IsServerEncrypted</a> = bool()
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result#a5639414824199dbae57ea6a26b94a8cb">LeaseDuration</a>
+    returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_duration_type">LeaseDurationType</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result#a81fde1ed6a4ecc3cb1f23b513eadc094">LeaseState</a>
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_state">Models::LeaseState</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result#ae6f2eb3d9e53a560968daae26ed2c0af">LeaseStatus</a>
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_lease_status">Models::LeaseStatus</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_query_blob_result#a02f30b591b62a5359c74f17eb3c0b947">IsServerEncrypted</a> = bool()
     returnType: bool&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a9be87fe5cafa285b1fbf4a9651b16505"></a>
 - section: BodyStream
   display: h3
-- content: <p>The response body stream. </p>
+- declaration: std::unique_ptr&lt;Core::IO::BodyStream&gt; Azure::Storage::Blobs::Models::QueryBlobResult::BodyStream
+  languageId: cpp
+- content: <p>The response body stream. </p><a id="a449da03757431dd84049c92bdb657d77"></a>
 - section: ETag
   display: h3
-- content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p>
+- declaration: Azure::ETag Azure::Storage::Blobs::Models::QueryBlobResult::ETag
+  languageId: cpp
+- content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p><a id="a02f30b591b62a5359c74f17eb3c0b947"></a>
 - section: IsServerEncrypted
   display: h3
-- content: <p>The value of this header is set to true if the blob data and application metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the blob is unencrypted, or if only parts of the blob/application metadata are encrypted). </p>
+- declaration: bool Azure::Storage::Blobs::Models::QueryBlobResult::IsServerEncrypted = bool()
+  languageId: cpp
+- content: <p>The value of this header is set to true if the blob data and application metadata are completely encrypted using the specified algorithm. Otherwise, the value is set to false (when the blob is unencrypted, or if only parts of the blob/application metadata are encrypted). </p><a id="a0acb0e32460a6ce6680e897cb8e83769"></a>
 - section: LastModified
   display: h3
-- content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p>
+- declaration: DateTime Azure::Storage::Blobs::Models::QueryBlobResult::LastModified
+  languageId: cpp
+- content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p><a id="a5639414824199dbae57ea6a26b94a8cb"></a>
 - section: LeaseDuration
   display: h3
-- content: <p>When a blob is leased, specifies whether the lease is of infinite or fixed duration. </p>
+- declaration: Nullable&lt;LeaseDurationType&gt; Azure::Storage::Blobs::Models::QueryBlobResult::LeaseDuration
+  languageId: cpp
+- content: <p>When a blob is leased, specifies whether the lease is of infinite or fixed duration. </p><a id="a81fde1ed6a4ecc3cb1f23b513eadc094"></a>
 - section: LeaseState
   display: h3
-- content: <p>Lease state of the blob. </p>
+- declaration: Models::LeaseState Azure::Storage::Blobs::Models::QueryBlobResult::LeaseState
+  languageId: cpp
+- content: <p>Lease state of the blob. </p><a id="ae6f2eb3d9e53a560968daae26ed2c0af"></a>
 - section: LeaseStatus
   display: h3
+- declaration: Models::LeaseStatus Azure::Storage::Blobs::Models::QueryBlobResult::LeaseStatus
+  languageId: cpp
 - content: <p>The current lease status of the blob. </p>

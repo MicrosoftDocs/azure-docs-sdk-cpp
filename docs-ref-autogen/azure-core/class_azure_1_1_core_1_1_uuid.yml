@@ -5,93 +5,119 @@ components:
 - content: >-
     <p>Universally unique identifier.  
 
-    </p><p><code>#include &lt;<a href="uuid_8hpp_source.html">uuid.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;uuid.hpp&gt;</code></p>
 - section: Public Types
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> = std::array&lt; std::uint8_t, 16 &gt;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> = std::array&lt; std::uint8_t, 16 &gt;
     summary: Represents a byte array where the UUID value can be stored.
     returnType: using&#160;
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#af8a42f0bdcaa60d848b19177bcb2ca31">Uuid</a> ()
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#af8a42f0bdcaa60d848b19177bcb2ca31">Uuid</a> ()
     summary: Constructs a Nil UUID (<code>00000000-0000-0000-0000-000000000000</code>).
     returnType: constexpr&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a166b3c559eaa821055414f6b1d6c6cb5">ToString</a> () const
-    summary: Gets <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> as a string.
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#a166b3c559eaa821055414f6b1d6c6cb5">ToString</a> () const
+    summary: Gets <a href="class_azure_1_1_core_1_1_uuid">Uuid</a> as a string.
     returnType: std::string&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#ab486a367256c05541915b9dc557a8471">AsArray</a> () const
-    summary: Returns the binary value of the <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> for consumption by clients who need non-string representation of the <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>.
-    returnType: constexpr <a href="class_azure_1_1_core_1_1_uuid.html#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#afd71c50049bbc4493b800c2456b39107">operator==</a> (<a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> const &amp;other) const
-    summary: Compares with another instance of <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> for equality.
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#ab486a367256c05541915b9dc557a8471">AsArray</a> () const
+    summary: Returns the binary value of the <a href="class_azure_1_1_core_1_1_uuid">Uuid</a> for consumption by clients who need non-string representation of the <a href="class_azure_1_1_core_1_1_uuid">Uuid</a>.
+    returnType: constexpr <a href="class_azure_1_1_core_1_1_uuid#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#afd71c50049bbc4493b800c2456b39107">operator==</a> (<a href="class_azure_1_1_core_1_1_uuid">Uuid</a> const &amp;other) const
+    summary: Compares with another instance of <a href="class_azure_1_1_core_1_1_uuid">Uuid</a> for equality.
     returnType: constexpr bool&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a960fe3373403bed0e1fa8b4444e4f642">operator!=</a> (<a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> const &amp;other) const
-    summary: Compares with another instance of <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> for inequality.
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#a960fe3373403bed0e1fa8b4444e4f642">operator!=</a> (<a href="class_azure_1_1_core_1_1_uuid">Uuid</a> const &amp;other) const
+    summary: Compares with another instance of <a href="class_azure_1_1_core_1_1_uuid">Uuid</a> for inequality.
     returnType: constexpr bool&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a749a51a3cd6b6ea2640cb2c2071fdd1d">IsNil</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#a749a51a3cd6b6ea2640cb2c2071fdd1d">IsNil</a> () const
     summary: Checks if the value represents a Nil UUID (<code>00000000-0000-0000-0000-000000000000</code>).
     returnType: constexpr bool&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a911dd11d09db4ed8ef0fd157a9de678f">CreateUuid</a> ()
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#a911dd11d09db4ed8ef0fd157a9de678f">CreateUuid</a> ()
     summary: Creates a new random UUID.
-    returnType: static <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a881c12a2203b931b0d1c4cf519559d29">CreateFromArray</a> (<a href="class_azure_1_1_core_1_1_uuid.html#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> const &amp;uuid)
-    summary: Construct a <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> from an existing UUID represented as an array of bytes.
-    returnType: static constexpr <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_uuid.html#a9788875259c8fad5930d0d39987a7d79">Parse</a> (std::string const &amp;uuidString)
-    summary: Construct a <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> by parsing its representation.
-    returnType: static <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>&#160;
+    returnType: static <a href="class_azure_1_1_core_1_1_uuid">Uuid</a>&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#a881c12a2203b931b0d1c4cf519559d29">CreateFromArray</a> (<a href="class_azure_1_1_core_1_1_uuid#ac19bd2daa5f74d23c997d59a2e06fc53">ValueArray</a> const &amp;uuid)
+    summary: Construct a <a href="class_azure_1_1_core_1_1_uuid">Uuid</a> from an existing UUID represented as an array of bytes.
+    returnType: static constexpr <a href="class_azure_1_1_core_1_1_uuid">Uuid</a>&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_uuid#a9788875259c8fad5930d0d39987a7d79">Parse</a> (std::string const &amp;uuidString)
+    summary: Construct a <a href="class_azure_1_1_core_1_1_uuid">Uuid</a> by parsing its representation.
+    returnType: static <a href="class_azure_1_1_core_1_1_uuid">Uuid</a>&#160;
 - section: Member Typedef Documentation
   display: h2
+- content: <a id="ac19bd2daa5f74d23c997d59a2e06fc53"></a>
 - section: ValueArray
   display: h3
+- declaration: using Azure::Core::Uuid::ValueArray =  std::array&lt;std::uint8_t, 16&gt;
+  languageId: cpp
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="af8a42f0bdcaa60d848b19177bcb2ca31"></a>
 - section: Uuid()
   display: h3
+- declaration: constexpr Azure::Core::Uuid::Uuid() inline constexpr
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
+- content: <a id="ab486a367256c05541915b9dc557a8471"></a>
 - section: AsArray()
   display: h3
+- declaration: constexpr ValueArray const  &amp; Azure::Core::Uuid::AsArray()const inline constexpr
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
-  - summary: An array with the binary representation of the <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>.
+  - summary: An array with the binary representation of the <a href="class_azure_1_1_core_1_1_uuid">Uuid</a>.
+- content: <a id="a881c12a2203b931b0d1c4cf519559d29"></a>
 - section: CreateFromArray()
   display: h3
-- content: <p>Creates a <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a> from a UUID created in an external scope. </p>
+- declaration: static constexpr Uuid Azure::Core::Uuid::CreateFromArray(ValueArray const &amp;&#160;uuid) inline static constexpr
+  languageId: cpp
+- content: <p>Creates a <a href="class_azure_1_1_core_1_1_uuid">Uuid</a> from a UUID created in an external scope. </p><a id="a911dd11d09db4ed8ef0fd157a9de678f"></a>
 - section: CreateUuid()
   display: h3
+- declaration: Uuid Azure::Core::Uuid::CreateUuid() static
+  languageId: cpp
+- content: <a id="a749a51a3cd6b6ea2640cb2c2071fdd1d"></a>
 - section: IsNil()
   display: h3
+- declaration: constexpr bool Azure::Core::Uuid::IsNil()const inline constexpr
+  languageId: cpp
+- content: <a id="a960fe3373403bed0e1fa8b4444e4f642"></a>
 - section: operator!=()
   display: h3
+- declaration: constexpr bool Azure::Core::Uuid::operator!=(Uuid const &amp;&#160;other)const inline constexpr
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: another instance of <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>.
+    summary: another instance of <a href="class_azure_1_1_core_1_1_uuid">Uuid</a>.
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if values of two Uuids are not equal, <code>false</code> otherwise.
+- content: <a id="afd71c50049bbc4493b800c2456b39107"></a>
 - section: operator==()
   display: h3
+- declaration: constexpr bool Azure::Core::Uuid::operator==(Uuid const &amp;&#160;other)const inline constexpr
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
-    summary: another instance of <a href="class_azure_1_1_core_1_1_uuid.html">Uuid</a>.
+    summary: another instance of <a href="class_azure_1_1_core_1_1_uuid">Uuid</a>.
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if values of two Uuids are equal, <code>false</code> otherwise.
+- content: <a id="a9788875259c8fad5930d0d39987a7d79"></a>
 - section: Parse()
   display: h3
+- declaration: Uuid Azure::Core::Uuid::Parse(std::string const &amp;&#160;uuidString) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -102,6 +128,9 @@ components:
 - parameters:
   - name: '`std::invalid_argument`'
     summary: if <code>uuidString</code> cannot be parsed.
+- content: <a id="a166b3c559eaa821055414f6b1d6c6cb5"></a>
 - section: ToString()
   display: h3
+- declaration: std::string Azure::Core::Uuid::ToString()const
+  languageId: cpp
 - content: <p>A string is in canonical format (<code>8-4-4-4-12</code> lowercase hex and dashes only). </p>

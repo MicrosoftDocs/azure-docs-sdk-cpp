@@ -4,34 +4,41 @@ title: Azure::Security::KeyVault::Keys::ImportKeyOptions Struct Reference
 components:
 - content: >-
     <p>A key resource and its properties.  
-     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options.html#details">More...</a></p><p><code>#include &lt;<a href="key__client__options_8hpp_source.html">key_client_options.hpp</a>&gt;</code></p>
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options#details">More...</a></p><p><code>#include &lt;key_client_options.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options.html#ac092b80418afe7ce976db7468eb50f72">ImportKeyOptions</a> (std::string name, <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html">JsonWebKey</a> keyMaterial)
-    summary: Construct a new Key Vault <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options.html">ImportKeyOptions</a> object.
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options#ac092b80418afe7ce976db7468eb50f72">ImportKeyOptions</a> (std::string name, <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key">JsonWebKey</a> keyMaterial)
+    summary: Construct a new Key Vault <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options">ImportKeyOptions</a> object.
     returnType: '&#160;'
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options.html#ae646da192a352fbccac907104d029bf0">Name</a> () const
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options#ae646da192a352fbccac907104d029bf0">Name</a> () const
     summary: Gets the name of the Key.
     returnType: std::string const &amp;&#160;
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options.html#ad8a71a0f22aaf55da3ac63e3cbc3b967">Key</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options#ad8a71a0f22aaf55da3ac63e3cbc3b967">Key</a>
     summary: The cryptographic key, the key type, and the operations you can perform using the key.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html">JsonWebKey</a>&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options.html#a946d53c993f4c0906bbaf490d99f0219">Properties</a>
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key">JsonWebKey</a>&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options#a946d53c993f4c0906bbaf490d99f0219">Properties</a>
     summary: The additional properties.
-    returnType: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties.html">KeyProperties</a>&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options.html#a262831b4aa7eefe0e3a36633d87a06ff">HardwareProtected</a>
+    returnType: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_properties">KeyProperties</a>&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_import_key_options#a262831b4aa7eefe0e3a36633d87a06ff">HardwareProtected</a>
     summary: Get or Set a value indicating whether to import the key into a hardware security module (HSM).
     returnType: Azure::Nullable&lt; bool &gt;&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="ac092b80418afe7ce976db7468eb50f72"></a>
 - section: ImportKeyOptions()
   display: h3
+- declaration: >-
+    Azure::Security::KeyVault::Keys::ImportKeyOptions::ImportKeyOptions(std::string&#160;name,       
+                                                                        JsonWebKey&#160; keyMaterial&#160;
+                                                                       ) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -41,17 +48,29 @@ components:
     summary: The cryptographic key
 - section: Member Function Documentation
   display: h2
+- content: <a id="ae646da192a352fbccac907104d029bf0"></a>
 - section: Name()
   display: h3
+- declaration: std::string const  &amp; Azure::Security::KeyVault::Keys::ImportKeyOptions::Name()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The name of the key.
 - section: Member Data Documentation
   display: h2
+- content: <a id="a262831b4aa7eefe0e3a36633d87a06ff"></a>
 - section: HardwareProtected
   display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Keys::ImportKeyOptions::HardwareProtected
+  languageId: cpp
+- content: <a id="ad8a71a0f22aaf55da3ac63e3cbc3b967"></a>
 - section: Key
   display: h3
+- declaration: JsonWebKey Azure::Security::KeyVault::Keys::ImportKeyOptions::Key
+  languageId: cpp
+- content: <a id="a946d53c993f4c0906bbaf490d99f0219"></a>
 - section: Properties
   display: h3
+- declaration: KeyProperties Azure::Security::KeyVault::Keys::ImportKeyOptions::Properties
+  languageId: cpp

@@ -2,28 +2,37 @@
 uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AEnqueueMessageOptions
 title: Azure::Storage::Queues::EnqueueMessageOptions Struct Reference
 components:
-- content: <p><code>#include &lt;<a href="queue__options_8hpp_source.html">queue_options.hpp</a>&gt;</code></p>
+- content: <p><code>#include &lt;queue_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_enqueue_message_options.html#afe39701fbccfcf50c6af59fbf6b84edf">VisibilityTimeout</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_enqueue_message_options#afe39701fbccfcf50c6af59fbf6b84edf">VisibilityTimeout</a>
     returnType: Azure::Nullable&lt; std::chrono::seconds &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_enqueue_message_options.html#ac59d155165b569804304c390520bb329">TimeToLive</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_enqueue_message_options#ac59d155165b569804304c390520bb329">TimeToLive</a>
     returnType: Azure::Nullable&lt; std::chrono::seconds &gt;&#160;
 - section: Static Public Attributes
   display: h2
 - apiList:
   - declaration: MessageNeverExpires {-1}
     summary: A TTL value representing the queue message does not expire.
-    returnType: AZ_STORAGE_QUEUES_DLLEXPORT static const std::chrono::seconds&#160;
+    returnType: >-
+      <a id="a852a44306ce246f1a9be3988dab7d08e"></a>
+
+      AZ_STORAGE_QUEUES_DLLEXPORT static const std::chrono::seconds&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
-- content: <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client.html#aeff3f445d6b3c96eeaadcd724bd996d2">Azure::Storage::Queues::QueueClient::EnqueueMessage</a>. </p>
+- content: <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aeff3f445d6b3c96eeaadcd724bd996d2">Azure::Storage::Queues::QueueClient::EnqueueMessage</a>. </p>
 - section: Member Data Documentation
   display: h2
+- content: <a id="ac59d155165b569804304c390520bb329"></a>
 - section: TimeToLive
   display: h3
-- content: <p>Specifies the time-to-live interval for the message. The maximum time-to-live can be any positive number, as well as MessageNeverExpires indicating that the message does not expire </p>
+- declaration: Azure::Nullable&lt;std::chrono::seconds&gt; Azure::Storage::Queues::EnqueueMessageOptions::TimeToLive
+  languageId: cpp
+- content: <p>Specifies the time-to-live interval for the message. The maximum time-to-live can be any positive number, as well as MessageNeverExpires indicating that the message does not expire </p><a id="afe39701fbccfcf50c6af59fbf6b84edf"></a>
 - section: VisibilityTimeout
   display: h3
+- declaration: Azure::Nullable&lt;std::chrono::seconds&gt; Azure::Storage::Queues::EnqueueMessageOptions::VisibilityTimeout
+  languageId: cpp
 - content: <p>Specifies how long the message should be invisible to dequeue and peek operations. </p>

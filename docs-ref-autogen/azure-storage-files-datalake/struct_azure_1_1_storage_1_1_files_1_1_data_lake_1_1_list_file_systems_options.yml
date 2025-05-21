@@ -3,31 +3,40 @@ uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListFileSystemsOptions
 title: Azure::Storage::Files::DataLake::ListFileSystemsOptions Struct Reference
 components:
 - content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client.html#a5dc0b007fd2c41ba633014d908ac25c9">Azure::Storage::Files::DataLake::DataLakeServiceClient::ListFileSystems</a>.  
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_service_client#a5dc0b007fd2c41ba633014d908ac25c9">Azure::Storage::Files::DataLake::DataLakeServiceClient::ListFileSystems</a>.  
 
-    </p><p><code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;datalake_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html#a083f4d8fe85196609f2936913d4d8e8e">Prefix</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options#a083f4d8fe85196609f2936913d4d8e8e">Prefix</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html#aa905812c02a0262fbb86b2920d0f6f6a">ContinuationToken</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options#aa905812c02a0262fbb86b2920d0f6f6a">ContinuationToken</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html#aad0653c4127b52460bb42e0a207bef69">PageSizeHint</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options#aad0653c4127b52460bb42e0a207bef69">PageSizeHint</a>
     returnType: Azure::Nullable&lt; int32_t &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options.html#a18aa55fb264ef1f888ddb7bc60a39e64">Include</a> = Models::ListFileSystemsIncludeFlags::None
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_file_systems_options#a18aa55fb264ef1f888ddb7bc60a39e64">Include</a> = Models::ListFileSystemsIncludeFlags::None
     returnType: Models::ListFileSystemsIncludeFlags&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="aa905812c02a0262fbb86b2920d0f6f6a"></a>
 - section: ContinuationToken
   display: h3
-- content: <p>The number of filesystems returned with each invocation is limited. If the number of filesystems to be returned exceeds this limit, a continuation token is returned in the response header x-ms-continuation. When a continuation token is returned in the response, it must be specified in a subsequent invocation of the list operation to continue listing the filesystems. </p>
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::ListFileSystemsOptions::ContinuationToken
+  languageId: cpp
+- content: <p>The number of filesystems returned with each invocation is limited. If the number of filesystems to be returned exceeds this limit, a continuation token is returned in the response header x-ms-continuation. When a continuation token is returned in the response, it must be specified in a subsequent invocation of the list operation to continue listing the filesystems. </p><a id="a18aa55fb264ef1f888ddb7bc60a39e64"></a>
 - section: Include
   display: h3
-- content: <p>Specifies that the filesystem's metadata be returned. </p>
+- declaration: Models::ListFileSystemsIncludeFlags Azure::Storage::Files::DataLake::ListFileSystemsOptions::Include = Models::ListFileSystemsIncludeFlags::None
+  languageId: cpp
+- content: <p>Specifies that the filesystem's metadata be returned. </p><a id="aad0653c4127b52460bb42e0a207bef69"></a>
 - section: PageSizeHint
   display: h3
-- content: <p>An optional value that specifies the maximum number of items to return. If omitted or greater than 5,000, the response will include up to 5,000 items. </p>
+- declaration: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::DataLake::ListFileSystemsOptions::PageSizeHint
+  languageId: cpp
+- content: <p>An optional value that specifies the maximum number of items to return. If omitted or greater than 5,000, the response will include up to 5,000 items. </p><a id="a083f4d8fe85196609f2936913d4d8e8e"></a>
 - section: Prefix
   display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::ListFileSystemsOptions::Prefix
+  languageId: cpp
 - content: <p>Filters results to filesystems within the specified prefix. </p>

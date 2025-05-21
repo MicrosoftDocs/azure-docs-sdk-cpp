@@ -4,33 +4,37 @@ title: Azure::Identity::ManagedIdentityId Class Reference
 components:
 - content: >-
     <p>The type of managed identity and its corresponding identifier.  
-     <a href="class_azure_1_1_identity_1_1_managed_identity_id.html#details">More...</a></p><p><code>#include &lt;<a href="managed__identity__credential_8hpp_source.html">managed_identity_credential.hpp</a>&gt;</code></p>
+     <a href="class_azure_1_1_identity_1_1_managed_identity_id#details">More...</a></p><p><code>#include &lt;managed_identity_credential.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id.html#a20f1d9d18618fc579e0cd70c666e7c8b">ManagedIdentityId</a> ()
+  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id#a20f1d9d18618fc579e0cd70c666e7c8b">ManagedIdentityId</a> ()
     summary: Constructs the type of managed identity.
     returnType: '&#160;'
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id.html#a335be930a0b271d63a90eef2457032aa">SystemAssigned</a> ()
-    summary: Create an instance of <a href="class_azure_1_1_identity_1_1_managed_identity_id.html">ManagedIdentityId</a> for a system-assigned managed identity.
-    returnType: static <a href="class_azure_1_1_identity_1_1_managed_identity_id.html">ManagedIdentityId</a>&#160;
-  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id.html#aa71e033ddf1005487d3547fd8c024021">FromUserAssignedClientId</a> (std::string id)
-    summary: Create an instance of <a href="class_azure_1_1_identity_1_1_managed_identity_id.html">ManagedIdentityId</a> for a user-assigned managed identity.
-    returnType: static <a href="class_azure_1_1_identity_1_1_managed_identity_id.html">ManagedIdentityId</a>&#160;
-  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id.html#ab80fe164f8864cf19f7f0486d38221a8">FromUserAssignedObjectId</a> (std::string id)
-    summary: Create an instance of <a href="class_azure_1_1_identity_1_1_managed_identity_id.html">ManagedIdentityId</a> for a user-assigned managed identity.
-    returnType: static <a href="class_azure_1_1_identity_1_1_managed_identity_id.html">ManagedIdentityId</a>&#160;
-  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id.html#a250ea1bfc3a621019895229f73f4d5d1">FromUserAssignedResourceId</a> (Azure::Core::ResourceIdentifier const &amp;id)
-    summary: Create an instance of <a href="class_azure_1_1_identity_1_1_managed_identity_id.html">ManagedIdentityId</a> for a user-assigned managed identity.
-    returnType: static <a href="class_azure_1_1_identity_1_1_managed_identity_id.html">ManagedIdentityId</a>&#160;
+  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id#a335be930a0b271d63a90eef2457032aa">SystemAssigned</a> ()
+    summary: Create an instance of <a href="class_azure_1_1_identity_1_1_managed_identity_id">ManagedIdentityId</a> for a system-assigned managed identity.
+    returnType: static <a href="class_azure_1_1_identity_1_1_managed_identity_id">ManagedIdentityId</a>&#160;
+  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id#aa71e033ddf1005487d3547fd8c024021">FromUserAssignedClientId</a> (std::string id)
+    summary: Create an instance of <a href="class_azure_1_1_identity_1_1_managed_identity_id">ManagedIdentityId</a> for a user-assigned managed identity.
+    returnType: static <a href="class_azure_1_1_identity_1_1_managed_identity_id">ManagedIdentityId</a>&#160;
+  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id#ab80fe164f8864cf19f7f0486d38221a8">FromUserAssignedObjectId</a> (std::string id)
+    summary: Create an instance of <a href="class_azure_1_1_identity_1_1_managed_identity_id">ManagedIdentityId</a> for a user-assigned managed identity.
+    returnType: static <a href="class_azure_1_1_identity_1_1_managed_identity_id">ManagedIdentityId</a>&#160;
+  - declaration: <a href="class_azure_1_1_identity_1_1_managed_identity_id#a250ea1bfc3a621019895229f73f4d5d1">FromUserAssignedResourceId</a> (Azure::Core::ResourceIdentifier const &amp;id)
+    summary: Create an instance of <a href="class_azure_1_1_identity_1_1_managed_identity_id">ManagedIdentityId</a> for a user-assigned managed identity.
+    returnType: static <a href="class_azure_1_1_identity_1_1_managed_identity_id">ManagedIdentityId</a>&#160;
 - section: Friends
   display: h2
 - apiList:
   - declaration: ManagedIdentityCredential
-    returnType: class&#160;
+    returnType: >-
+      <a id="aca213326498b4dcb3795e2f6f6baa116"></a>
+
+      class&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - section: Remarks
@@ -39,34 +43,49 @@ components:
   - summary: This class holds the kind and unique identifier for either a system or user-assigned managed identity.
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="a20f1d9d18618fc579e0cd70c666e7c8b"></a>
 - section: ManagedIdentityId()
   display: h3
+- declaration: Azure::Identity::ManagedIdentityId::ManagedIdentityId() inline explicit
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: This defaults to a system-assigned managed identity.
 - section: Member Function Documentation
   display: h2
+- content: <a id="aa71e033ddf1005487d3547fd8c024021"></a>
 - section: FromUserAssignedClientId()
   display: h3
+- declaration: static ManagedIdentityId Azure::Identity::ManagedIdentityId::FromUserAssignedClientId(std::string&#160;id) inline static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: id
     summary: The client ID of the user-assigned managed identity.
+- content: <a id="ab80fe164f8864cf19f7f0486d38221a8"></a>
 - section: FromUserAssignedObjectId()
   display: h3
+- declaration: static ManagedIdentityId Azure::Identity::ManagedIdentityId::FromUserAssignedObjectId(std::string&#160;id) inline static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: id
     summary: The object ID of the user-assigned managed identity.
+- content: <a id="a250ea1bfc3a621019895229f73f4d5d1"></a>
 - section: FromUserAssignedResourceId()
   display: h3
+- declaration: static ManagedIdentityId Azure::Identity::ManagedIdentityId::FromUserAssignedResourceId(Azure::Core::ResourceIdentifier const &amp;&#160;id) inline static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: id
     summary: The resource ID of the user-assigned managed identity.
+- content: <a id="a335be930a0b271d63a90eef2457032aa"></a>
 - section: SystemAssigned()
   display: h3
+- declaration: static ManagedIdentityId Azure::Identity::ManagedIdentityId::SystemAssigned() inline static
+  languageId: cpp

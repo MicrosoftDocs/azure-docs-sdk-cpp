@@ -3,21 +3,26 @@ uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AGetPathAccessControlListOp
 title: Azure::Storage::Files::DataLake::GetPathAccessControlListOptions Struct Reference
 components:
 - content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a78cd2ebce95319d5a056040a3cd6299e">Azure::Storage::Files::DataLake::DataLakePathClient::GetAccessControlList</a>.  
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client#a78cd2ebce95319d5a056040a3cd6299e">Azure::Storage::Files::DataLake::DataLakePathClient::GetAccessControlList</a>.  
 
-    </p><p><code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;datalake_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.html#a1f5521fe1092e0a4db0394a5035461cc">AccessConditions</a>
-    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_path_access_conditions.html">PathAccessConditions</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.html#a99d4cd478d2c7671953a5f35fe46e13a">IncludeUserPrincipalName</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options#a1f5521fe1092e0a4db0394a5035461cc">AccessConditions</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_path_access_conditions">PathAccessConditions</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options#a99d4cd478d2c7671953a5f35fe46e13a">IncludeUserPrincipalName</a>
     returnType: Nullable&lt; bool &gt;&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a1f5521fe1092e0a4db0394a5035461cc"></a>
 - section: AccessConditions
   display: h3
-- content: <p>Specify the access condition for the path. </p>
+- declaration: PathAccessConditions Azure::Storage::Files::DataLake::GetPathAccessControlListOptions::AccessConditions
+  languageId: cpp
+- content: <p>Specify the access condition for the path. </p><a id="a99d4cd478d2c7671953a5f35fe46e13a"></a>
 - section: IncludeUserPrincipalName
   display: h3
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::GetPathAccessControlListOptions::IncludeUserPrincipalName
+  languageId: cpp
 - content: <p>Valid only when Hierarchical Namespace is enabled for the account. If "true", the user identity values returned in the owner and group fields of each list entry will be transformed from Azure Active Directory Object IDs to User Principal Names. If "false" or not provided, the values will be returned as Azure Active Directory Object IDs. Note that group and application Object IDs are not translated because they do not have unique friendly names. More Details about UserPrincipalName, See <a href="https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname">https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname</a> </p>

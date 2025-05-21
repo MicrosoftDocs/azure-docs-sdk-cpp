@@ -3,36 +3,47 @@ uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3ASetFilePropertie
 title: Azure::Storage::Files::Shares::Models::SetFilePropertiesResult Struct Reference
 components:
 - content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.html#a4c115b8c1a638690cf770bf13c7c48c7">Azure::Storage::Files::Shares::ShareFileClient::SetProperties</a>.  
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a4c115b8c1a638690cf770bf13c7c48c7">Azure::Storage::Files::Shares::ShareFileClient::SetProperties</a>.  
 
-    </p><p><code>#include &lt;<a href="share__responses_8hpp_source.html">share_responses.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;share_responses.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result.html#aa3d0eae74b7f932f178cd688bf86c48c">SmbProperties</a>
-    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_smb_properties.html">FileSmbProperties</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result.html#af80b98285ef77f8750ed03f2be7f0e64">ETag</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result#aa3d0eae74b7f932f178cd688bf86c48c">SmbProperties</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_smb_properties">FileSmbProperties</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result#af80b98285ef77f8750ed03f2be7f0e64">ETag</a>
     returnType: Azure::ETag&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result.html#af0fe75128187cd340437ad28750084eb">LastModified</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result#af0fe75128187cd340437ad28750084eb">LastModified</a>
     returnType: DateTime&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result.html#a1d1e8b7f4daef8d6a50cf3cb7a891130">IsServerEncrypted</a> = bool()
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result#a1d1e8b7f4daef8d6a50cf3cb7a891130">IsServerEncrypted</a> = bool()
     returnType: bool&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result.html#a760adabeea3d3983d34fd1e608a41e13">PosixProperties</a>
-    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties.html">FilePosixProperties</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_file_properties_result#a760adabeea3d3983d34fd1e608a41e13">PosixProperties</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties">FilePosixProperties</a>&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="af80b98285ef77f8750ed03f2be7f0e64"></a>
 - section: ETag
   display: h3
-- content: <p>The ETag contains a value which represents the version of the file, in quotes. </p>
+- declaration: Azure::ETag Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::ETag
+  languageId: cpp
+- content: <p>The ETag contains a value which represents the version of the file, in quotes. </p><a id="a1d1e8b7f4daef8d6a50cf3cb7a891130"></a>
 - section: IsServerEncrypted
   display: h3
-- content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p>
+- declaration: bool Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::IsServerEncrypted = bool()
+  languageId: cpp
+- content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p><a id="af0fe75128187cd340437ad28750084eb"></a>
 - section: LastModified
   display: h3
-- content: <p>Returns the date and time the directory was last modified. Any operation that modifies the directory or its properties updates the last modified time. Operations on files do not affect the last modified time of the directory. </p>
+- declaration: DateTime Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::LastModified
+  languageId: cpp
+- content: <p>Returns the date and time the directory was last modified. Any operation that modifies the directory or its properties updates the last modified time. Operations on files do not affect the last modified time of the directory. </p><a id="a760adabeea3d3983d34fd1e608a41e13"></a>
 - section: PosixProperties
   display: h3
-- content: <p>The NFS related properties for the file. </p>
+- declaration: FilePosixProperties Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::PosixProperties
+  languageId: cpp
+- content: <p>The NFS related properties for the file. </p><a id="aa3d0eae74b7f932f178cd688bf86c48c"></a>
 - section: SmbProperties
   display: h3
+- declaration: FileSmbProperties Azure::Storage::Files::Shares::Models::SetFilePropertiesResult::SmbProperties
+  languageId: cpp
 - content: <p>The SMB related properties for the file. </p>

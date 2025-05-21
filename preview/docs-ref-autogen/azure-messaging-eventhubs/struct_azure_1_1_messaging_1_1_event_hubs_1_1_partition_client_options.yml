@@ -2,30 +2,39 @@
 uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3APartitionClientOptions
 title: Azure::Messaging::EventHubs::PartitionClientOptions Struct Reference
 components:
-- content: <p><code>#include &lt;<a href="partition__client_8hpp_source.html">partition_client.hpp</a>&gt;</code></p>
+- content: <p><code>#include &lt;partition_client.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html#aecd8fe32e5b5c22af3d8182940418302">StartPosition</a>
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options#aecd8fe32e5b5c22af3d8182940418302">StartPosition</a>
     summary: StartPosition is the position we will start receiving events from, either an offset (inclusive) with Offset, or receiving events received after a specific time using EnqueuedTime.
-    returnType: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_position.html">Models::StartPosition</a>&#160;
+    returnType: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_position">Models::StartPosition</a>&#160;
   - declaration: OwnerLevel {}
     summary: OwnerLevel is the priority for this partition client, also known as the 'epoch' level. When used, a partition client with a higher OwnerLevel will take ownership of a partition from partition clients with a lower OwnerLevel. Default is off.
-    returnType: Azure::Nullable&lt; std::int64_t &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html#ab20bc3b43f3141d012699e25046b47eb">Prefetch</a> = 300
+    returnType: >-
+      <a id="a9f93b3a0168faa4e78cb7c93016b1fac"></a>
+
+      Azure::Nullable&lt; std::int64_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options#ab20bc3b43f3141d012699e25046b47eb">Prefetch</a> = 300
     summary: Prefetch represents the size of the internal prefetch buffer. When set, this client will attempt to always maintain an internal cache of events of this size, asynchronously, increasing the odds that ReceiveEvents() will use a locally stored cache of events, rather than having to wait for events to arrive from the network.
     returnType: int32_t&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
-- content: <p>brief <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options.html">PartitionClientOptions</a> provides options for the <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html#a2372850b4f1eace768803dc17c09cdb4">ConsumerClient::CreatePartitionClient</a> function. </p>
+- content: <p>brief <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options">PartitionClientOptions</a> provides options for the <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client#a2372850b4f1eace768803dc17c09cdb4">ConsumerClient::CreatePartitionClient</a> function. </p>
 - section: Member Data Documentation
   display: h2
+- content: <a id="ab20bc3b43f3141d012699e25046b47eb"></a>
 - section: Prefetch
   display: h3
-- content: <p>Defaults to 300 events if Prefetch == 0. Disabled if Prefetch &lt; 0. </p>
+- declaration: int32_t Azure::Messaging::EventHubs::PartitionClientOptions::Prefetch = 300
+  languageId: cpp
+- content: <p>Defaults to 300 events if Prefetch == 0. Disabled if Prefetch &lt; 0. </p><a id="aecd8fe32e5b5c22af3d8182940418302"></a>
 - section: StartPosition
   display: h3
+- declaration: Models::StartPosition Azure::Messaging::EventHubs::PartitionClientOptions::StartPosition
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
-  - summary: 'NOTE: you can also use the [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html">Processor</a>], which will automatically manage the start value using a [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html">CheckpointStore</a>]. See [example_consuming_with_checkpoints_test.go] for an example.'
+  - summary: 'NOTE: you can also use the [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor">Processor</a>], which will automatically manage the start value using a [<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a>]. See [example_consuming_with_checkpoints_test.go] for an example.'

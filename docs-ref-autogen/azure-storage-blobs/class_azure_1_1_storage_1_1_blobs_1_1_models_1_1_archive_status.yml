@@ -5,42 +5,54 @@ components:
 - content: >-
     <p>For blob storage LRS accounts, valid values are rehydrate-pending-to-hot/rehydrate-pending-to-cool. If the blob is being rehydrated and is not complete then this value indicates that rehydrate is pending and also tells the destination tier.  
 
-    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+    </p><p><code>#include &lt;rest_client.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Core::_internal::ExtendableEnumeration
     href: ''
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html#a10220debf95d4a47994bdb7673b9dffe">ArchiveStatus</a> ()=default
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status#a10220debf95d4a47994bdb7673b9dffe">ArchiveStatus</a> ()=default
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html#a1ea2796b257a0ebff467330d44100ba3">ArchiveStatus</a> (std::string value)
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status#a1ea2796b257a0ebff467330d44100ba3">ArchiveStatus</a> (std::string value)
     returnType: '&#160;'
 - section: Static Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html#ad528334208fe269831a00a0f5296decc">RehydratePendingToHot</a>
-    returnType: AZ_STORAGE_BLOBS_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html">ArchiveStatus</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html#a31c243b822dad0827b2fb4dbac1ce17a">RehydratePendingToCool</a>
-    returnType: AZ_STORAGE_BLOBS_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html">ArchiveStatus</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html#a9f77d76499ed31939c66b5a4f2a07b22">RehydratePendingToCold</a>
-    returnType: AZ_STORAGE_BLOBS_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html">ArchiveStatus</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status#ad528334208fe269831a00a0f5296decc">RehydratePendingToHot</a>
+    returnType: AZ_STORAGE_BLOBS_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">ArchiveStatus</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status#a31c243b822dad0827b2fb4dbac1ce17a">RehydratePendingToCool</a>
+    returnType: AZ_STORAGE_BLOBS_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">ArchiveStatus</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status#a9f77d76499ed31939c66b5a4f2a07b22">RehydratePendingToCold</a>
+    returnType: AZ_STORAGE_BLOBS_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">ArchiveStatus</a>&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="a10220debf95d4a47994bdb7673b9dffe"></a>
 - section: ArchiveStatus() [1/2]
   display: h3
-- content: <p>Constructs a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html">ArchiveStatus</a> instance </p>
+- declaration: Azure::Storage::Blobs::Models::ArchiveStatus::ArchiveStatus() default
+  languageId: cpp
+- content: <p>Constructs a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">ArchiveStatus</a> instance </p><a id="a1ea2796b257a0ebff467330d44100ba3"></a>
 - section: ArchiveStatus() [2/2]
   display: h3
-- content: <p>Constructs a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html">ArchiveStatus</a> from a string. </p>
+- declaration: Azure::Storage::Blobs::Models::ArchiveStatus::ArchiveStatus(std::string&#160;value) inline explicit
+  languageId: cpp
+- content: <p>Constructs a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">ArchiveStatus</a> from a string. </p>
 - section: Member Data Documentation
   display: h2
+- content: <a id="a9f77d76499ed31939c66b5a4f2a07b22"></a>
 - section: RehydratePendingToCold
   display: h3
-- content: '<p>Constant value of type <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html">ArchiveStatus</a>: RehydratePendingToCold </p>'
+- declaration: const ArchiveStatus Azure::Storage::Blobs::Models::ArchiveStatus::RehydratePendingToCold static
+  languageId: cpp
+- content: '<p>Constant value of type <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">ArchiveStatus</a>: RehydratePendingToCold </p><a id="a31c243b822dad0827b2fb4dbac1ce17a"></a>'
 - section: RehydratePendingToCool
   display: h3
-- content: '<p>Constant value of type <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html">ArchiveStatus</a>: RehydratePendingToCool </p>'
+- declaration: const ArchiveStatus Azure::Storage::Blobs::Models::ArchiveStatus::RehydratePendingToCool static
+  languageId: cpp
+- content: '<p>Constant value of type <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">ArchiveStatus</a>: RehydratePendingToCool </p><a id="ad528334208fe269831a00a0f5296decc"></a>'
 - section: RehydratePendingToHot
   display: h3
-- content: '<p>Constant value of type <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status.html">ArchiveStatus</a>: RehydratePendingToHot </p>'
+- declaration: const ArchiveStatus Azure::Storage::Blobs::Models::ArchiveStatus::RehydratePendingToHot static
+  languageId: cpp
+- content: '<p>Constant value of type <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">ArchiveStatus</a>: RehydratePendingToHot </p>'

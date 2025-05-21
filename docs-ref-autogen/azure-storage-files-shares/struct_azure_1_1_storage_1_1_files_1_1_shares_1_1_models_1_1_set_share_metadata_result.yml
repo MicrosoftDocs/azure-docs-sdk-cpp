@@ -3,21 +3,26 @@ uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3ASetShareMetadata
 title: Azure::Storage::Files::Shares::Models::SetShareMetadataResult Struct Reference
 components:
 - content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client.html#a2af6981a7777b62385e1f7eb2563acac">Azure::Storage::Files::Shares::ShareClient::SetMetadata</a>.  
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client#a2af6981a7777b62385e1f7eb2563acac">Azure::Storage::Files::Shares::ShareClient::SetMetadata</a>.  
 
-    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;rest_client.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_share_metadata_result.html#a87864bfd35e08e0c4c236df15ccdda54">ETag</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_share_metadata_result#a87864bfd35e08e0c4c236df15ccdda54">ETag</a>
     returnType: Azure::ETag&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_share_metadata_result.html#a3825c21b73a4159a7a7955ba4998588e">LastModified</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_set_share_metadata_result#a3825c21b73a4159a7a7955ba4998588e">LastModified</a>
     returnType: DateTime&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a87864bfd35e08e0c4c236df15ccdda54"></a>
 - section: ETag
   display: h3
-- content: <p>The ETag contains a value that you can use to perform operations conditionally, in quotes. </p>
+- declaration: Azure::ETag Azure::Storage::Files::Shares::Models::SetShareMetadataResult::ETag
+  languageId: cpp
+- content: <p>The ETag contains a value that you can use to perform operations conditionally, in quotes. </p><a id="a3825c21b73a4159a7a7955ba4998588e"></a>
 - section: LastModified
   display: h3
+- declaration: DateTime Azure::Storage::Files::Shares::Models::SetShareMetadataResult::LastModified
+  languageId: cpp
 - content: <p>Returns the date and time the share was last modified. Any operation that modifies the share or its properties updates the last modified time. Operations on files do not affect the last modified time of the share. </p>

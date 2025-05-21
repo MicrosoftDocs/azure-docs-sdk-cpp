@@ -4,95 +4,119 @@ title: Azure::Core::Url Class Reference
 components:
 - content: >-
     <p>Represents the location where a request will be performed.  
-     <a href="class_azure_1_1_core_1_1_url.html#details">More...</a></p><p><code>#include &lt;<a href="url_8hpp_source.html">url.hpp</a>&gt;</code></p>
+     <a href="class_azure_1_1_core_1_1_url#details">More...</a></p><p><code>#include &lt;url.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a02923096df632ee983ca0fa79abfaf05">Url</a> ()=default
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a02923096df632ee983ca0fa79abfaf05">Url</a> ()=default
     summary: Constructs a new, empty URL object.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a208ba7e3b7868145181f844500f3dc4c">Url</a> (const std::string &amp;encodedUrl)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a208ba7e3b7868145181f844500f3dc4c">Url</a> (const std::string &amp;encodedUrl)
     summary: Constructs a URL from a URL-encoded string.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a7dc569d2c6f25a95df9d5c5a62afc717">SetScheme</a> (const std::string &amp;scheme)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a7dc569d2c6f25a95df9d5c5a62afc717">SetScheme</a> (const std::string &amp;scheme)
     summary: Sets URL scheme.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#adad0f462a391e619644a1b64be2c1da2">SetHost</a> (const std::string &amp;encodedHost)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#adad0f462a391e619644a1b64be2c1da2">SetHost</a> (const std::string &amp;encodedHost)
     summary: Sets URL host.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a417410d68be3066878748f871348b3b3">SetPort</a> (uint16_t port)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a417410d68be3066878748f871348b3b3">SetPort</a> (uint16_t port)
     summary: Sets URL port.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#aa8a555680713c54ec99a64a7176d2d49">SetPath</a> (const std::string &amp;encodedPath)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#aa8a555680713c54ec99a64a7176d2d49">SetPath</a> (const std::string &amp;encodedPath)
     summary: Sets URL path.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#aafafcb3c20b2663251ed254e6e65ab0c">SetQueryParameters</a> (std::map&lt; std::string, std::string &gt; queryParameters)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#aafafcb3c20b2663251ed254e6e65ab0c">SetQueryParameters</a> (std::map&lt; std::string, std::string &gt; queryParameters)
     summary: Sets the query parameters from an existing query parameter map.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#aef3df635805705f5a8f6bd998179cc4b">AppendPath</a> (const std::string &amp;encodedPath)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#aef3df635805705f5a8f6bd998179cc4b">AppendPath</a> (const std::string &amp;encodedPath)
     summary: Appends an element of URL path.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a7c0512da23c15239de458db36e235c33">AppendQueryParameter</a> (const std::string &amp;encodedKey, const std::string &amp;encodedValue)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a7c0512da23c15239de458db36e235c33">AppendQueryParameter</a> (const std::string &amp;encodedKey, const std::string &amp;encodedValue)
     summary: The value of a query parameter is expected to be non-URL-encoded and, by default, it will be encoded before adding to the URL. Use <code>isValueEncoded</code> = true when the value is already encoded.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a77ee4eabf6e8bc547f1a293655b1e818">RemoveQueryParameter</a> (const std::string &amp;encodedKey)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a77ee4eabf6e8bc547f1a293655b1e818">RemoveQueryParameter</a> (const std::string &amp;encodedKey)
     summary: Removes an existing query parameter.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a78f71c6e36a35efe1d2597cadd728320">GetHost</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a78f71c6e36a35efe1d2597cadd728320">GetHost</a> () const
     summary: Gets URL host.
     returnType: const std::string &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#aabedcc05b33d53e7dca291c0d39c83cf">GetPath</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_url#aabedcc05b33d53e7dca291c0d39c83cf">GetPath</a> () const
     summary: Gets the URL path.
     returnType: const std::string &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#aaad8684cf7519832b6aa49f8d121fbab">GetPort</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_url#aaad8684cf7519832b6aa49f8d121fbab">GetPort</a> () const
     summary: Gets the port number set for the URL.
     returnType: uint16_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#ab8dd37022c4c6036d59a4992a3607ffc">GetQueryParameters</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_url#ab8dd37022c4c6036d59a4992a3607ffc">GetQueryParameters</a> () const
     summary: Gets a copy of the list of query parameters from the URL.
     returnType: std::map&lt; std::string, std::string &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a92fd65dfc4bb0e0b1f418e519e7f7445">GetScheme</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a92fd65dfc4bb0e0b1f418e519e7f7445">GetScheme</a> () const
     summary: Gets the URL scheme.
     returnType: const std::string &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#ab589b1eaf6f8cbe2dc86ec5678b465f0">GetRelativeUrl</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_url#ab589b1eaf6f8cbe2dc86ec5678b465f0">GetRelativeUrl</a> () const
     summary: Gets the path and query parameters.
     returnType: std::string&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a68990d32c4bb0229f28cf384d0380c47">GetAbsoluteUrl</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a68990d32c4bb0229f28cf384d0380c47">GetAbsoluteUrl</a> () const
     summary: Gets Scheme, host, path and query parameters.
     returnType: std::string&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#aba20d44d6724194e0e0b3e7095dc3e1a">Decode</a> (const std::string &amp;value)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#aba20d44d6724194e0e0b3e7095dc3e1a">Decode</a> (const std::string &amp;value)
     summary: Decodes <code>value</code> by transforming all escaped characters to it's non-encoded value.
     returnType: static std::string&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_url.html#a0106c6aedc2eceb0b8f2410c32ebd8ea">Encode</a> (const std::string &amp;value, const std::string &amp;doNotEncodeSymbols=&quot;&quot;)
+  - declaration: <a href="class_azure_1_1_core_1_1_url#a0106c6aedc2eceb0b8f2410c32ebd8ea">Encode</a> (const std::string &amp;value, const std::string &amp;doNotEncodeSymbols=&quot;&quot;)
     summary: Encodes <code>value</code> by escaping characters to the form of HH where HH are hex digits.
     returnType: static std::string&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - content: <p>It can be parsed and initialized from a string that contains all URL components (scheme, host, path, etc.). Authority is not currently supported. </p>
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="a02923096df632ee983ca0fa79abfaf05"></a>
 - section: Url() [1/2]
   display: h3
+- declaration: Azure::Core::Url::Url() default
+  languageId: cpp
+- content: <a id="a208ba7e3b7868145181f844500f3dc4c"></a>
 - section: Url() [2/2]
   display: h3
+- declaration: Url::Url(const std::string &amp;&#160;encodedUrl) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: encodedUrl
     summary: A URL-encoded string.
+- section: Note
+  display: h4
+- parameters:
+  - summary: encodedUrl is expected to have all parts URL-encoded.
 - section: Member Function Documentation
   display: h2
+- content: <a id="aef3df635805705f5a8f6bd998179cc4b"></a>
 - section: AppendPath()
   display: h3
+- declaration: void Azure::Core::Url::AppendPath(const std::string &amp;&#160;encodedPath) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: encodedPath
     summary: URL path element to append, already encoded.
+- content: <a id="a7c0512da23c15239de458db36e235c33"></a>
 - section: AppendQueryParameter()
   display: h3
+- declaration: >-
+    void Azure::Core::Url::AppendQueryParameter(const std::string &amp;&#160;encodedKey,  
+                                                const std::string &amp;&#160;encodedValue&#160;
+                                               ) inline
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: Overrides the value of existing query parameters.
 - section: Parameters
   display: h4
 - parameters:
@@ -100,8 +124,11 @@ components:
     summary: Name of the query parameter, already encoded.
   - name: encodedValue
     summary: Value of the query parameter, already encoded.
+- content: <a id="aba20d44d6724194e0e0b3e7095dc3e1a"></a>
 - section: Decode()
   display: h3
+- declaration: std::string Url::Decode(const std::string &amp;&#160;value) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -111,8 +138,18 @@ components:
   display: h4
 - parameters:
   - summary: <code>std::string</code> with non-URL encoded values.
+- content: <a id="a0106c6aedc2eceb0b8f2410c32ebd8ea"></a>
 - section: Encode()
   display: h3
+- declaration: >-
+    std::string Url::Encode(const std::string &amp;&#160;value,                  
+                            const std::string &amp;&#160;doNotEncodeSymbols = &quot;&quot;&#160;
+                           ) static
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: <code>doNotEncodeSymbols</code> arg can be used to explicitly ask this function to skip characters from encoding. For instance, using this <code>= -</code> input would prevent encoding <code>=</code>, <code> </code> and <code>-</code>.
 - section: Parameters
   display: h4
 - parameters:
@@ -124,77 +161,128 @@ components:
   display: h4
 - parameters:
   - summary: std::string
+- content: <a id="a68990d32c4bb0229f28cf384d0380c47"></a>
 - section: GetAbsoluteUrl()
   display: h3
+- declaration: std::string Url::GetAbsoluteUrl()const
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Absolute URL with URL-encoded query parameters.
+- content: <a id="a78f71c6e36a35efe1d2597cadd728320"></a>
 - section: GetHost()
   display: h3
+- declaration: const std::string &amp; Azure::Core::Url::GetHost()const inline
+  languageId: cpp
+- content: <a id="aabedcc05b33d53e7dca291c0d39c83cf"></a>
 - section: GetPath()
   display: h3
+- declaration: const std::string &amp; Azure::Core::Url::GetPath()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: const std::string&amp;
+- content: <a id="aaad8684cf7519832b6aa49f8d121fbab"></a>
 - section: GetPort()
   display: h3
+- declaration: uint16_t Azure::Core::Url::GetPort()const inline
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: If the port was not set for the URL, the returned port is 0. An HTTP request cannot be performed to port zero, an HTTP client is expected to set the default port depending on the request's schema when the port was not defined in the URL.
 - section: Returns
   display: h4
 - parameters:
   - summary: The port number from the URL.
+- content: <a id="ab8dd37022c4c6036d59a4992a3607ffc"></a>
 - section: GetQueryParameters()
   display: h3
+- declaration: std::map&lt; std::string, std::string &gt; Azure::Core::Url::GetQueryParameters()const inline
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: The query parameters are URL-encoded.
 - section: Returns
   display: h4
 - parameters:
   - summary: A copy of the query parameters map.
+- content: <a id="ab589b1eaf6f8cbe2dc86ec5678b465f0"></a>
 - section: GetRelativeUrl()
   display: h3
+- declaration: std::string Url::GetRelativeUrl()const
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: Relative URL with URL-encoded query parameters.
+- content: <a id="a92fd65dfc4bb0e0b1f418e519e7f7445"></a>
 - section: GetScheme()
   display: h3
+- declaration: const std::string &amp; Azure::Core::Url::GetScheme()const inline
+  languageId: cpp
+- content: <a id="a77ee4eabf6e8bc547f1a293655b1e818"></a>
 - section: RemoveQueryParameter()
   display: h3
+- declaration: void Azure::Core::Url::RemoveQueryParameter(const std::string &amp;&#160;encodedKey) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: encodedKey
     summary: The name of the query parameter to be removed.
+- content: <a id="adad0f462a391e619644a1b64be2c1da2"></a>
 - section: SetHost()
   display: h3
+- declaration: void Azure::Core::Url::SetHost(const std::string &amp;&#160;encodedHost) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: encodedHost
     summary: URL host, already encoded.
+- content: <a id="aa8a555680713c54ec99a64a7176d2d49"></a>
 - section: SetPath()
   display: h3
+- declaration: void Azure::Core::Url::SetPath(const std::string &amp;&#160;encodedPath) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: encodedPath
     summary: URL path, already encoded.
+- content: <a id="a417410d68be3066878748f871348b3b3"></a>
 - section: SetPort()
   display: h3
+- declaration: void Azure::Core::Url::SetPort(uint16_t&#160;port) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: port
     summary: URL port.
+- content: <a id="aafafcb3c20b2663251ed254e6e65ab0c"></a>
 - section: SetQueryParameters()
   display: h3
+- declaration: void Azure::Core::Url::SetQueryParameters(std::map&lt; std::string, std::string &gt;&#160;queryParameters) inline
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: Keys and values in <code>queryParameters</code> are expected to be URL-encoded.
 - section: Parameters
   display: h4
 - parameters:
   - name: queryParameters
     summary: query parameters for request.
+- content: <a id="a7dc569d2c6f25a95df9d5c5a62afc717"></a>
 - section: SetScheme()
   display: h3
+- declaration: void Azure::Core::Url::SetScheme(const std::string &amp;&#160;scheme) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:

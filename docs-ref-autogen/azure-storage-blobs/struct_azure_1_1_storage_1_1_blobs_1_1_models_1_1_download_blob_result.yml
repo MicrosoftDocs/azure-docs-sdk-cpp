@@ -3,41 +3,54 @@ uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobResult
 title: Azure::Storage::Blobs::Models::DownloadBlobResult Struct Reference
 components:
 - content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#aee72db03143c80da4da4acb3e4c3673d">Azure::Storage::Blobs::BlobClient::Download</a>.  
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client#aee72db03143c80da4da4acb3e4c3673d">Azure::Storage::Blobs::BlobClient::Download</a>.  
 
-    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;rest_client.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result.html#a34e08191e216d912f848506d06be978b">Details</a>
-    returnType: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details.html">DownloadBlobDetails</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result.html#a71cc67c7f93a26fd4a6e9bdee10152ec">BlobSize</a> = std::int64_t()
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result#a34e08191e216d912f848506d06be978b">Details</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details">DownloadBlobDetails</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result#a71cc67c7f93a26fd4a6e9bdee10152ec">BlobSize</a> = std::int64_t()
     returnType: std::int64_t&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result.html#abe38d4758f83ddf925c4cfb930cce79f">ContentRange</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result#abe38d4758f83ddf925c4cfb930cce79f">ContentRange</a>
     returnType: Core::Http::HttpRange&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result.html#a4966755e7a0f8172171a756232093255">TransactionalContentHash</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result#a4966755e7a0f8172171a756232093255">TransactionalContentHash</a>
     returnType: Nullable&lt; ContentHash &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result.html#a905a31081577a5739fa27ac716d35a3e">BodyStream</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result#a905a31081577a5739fa27ac716d35a3e">BodyStream</a>
     returnType: std::unique_ptr&lt; Core::IO::BodyStream &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result.html#a73ae83cb0a304927fc534e8f6d0d49e9">BlobType</a>
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_type.html">Models::BlobType</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result#a73ae83cb0a304927fc534e8f6d0d49e9">BlobType</a>
+    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_type">Models::BlobType</a>&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a71cc67c7f93a26fd4a6e9bdee10152ec"></a>
 - section: BlobSize
   display: h3
-- content: <p>Size of the blob in bytes. </p>
+- declaration: std::int64_t Azure::Storage::Blobs::Models::DownloadBlobResult::BlobSize = std::int64_t()
+  languageId: cpp
+- content: <p>Size of the blob in bytes. </p><a id="a73ae83cb0a304927fc534e8f6d0d49e9"></a>
 - section: BlobType
   display: h3
-- content: <p>The blob's type. </p>
+- declaration: Models::BlobType Azure::Storage::Blobs::Models::DownloadBlobResult::BlobType
+  languageId: cpp
+- content: <p>The blob's type. </p><a id="a905a31081577a5739fa27ac716d35a3e"></a>
 - section: BodyStream
   display: h3
-- content: <p>Content of the blob or blob range. </p>
+- declaration: std::unique_ptr&lt;Core::IO::BodyStream&gt; Azure::Storage::Blobs::Models::DownloadBlobResult::BodyStream
+  languageId: cpp
+- content: <p>Content of the blob or blob range. </p><a id="abe38d4758f83ddf925c4cfb930cce79f"></a>
 - section: ContentRange
   display: h3
-- content: <p>Indicates the range of bytes returned. </p>
+- declaration: Core::Http::HttpRange Azure::Storage::Blobs::Models::DownloadBlobResult::ContentRange
+  languageId: cpp
+- content: <p>Indicates the range of bytes returned. </p><a id="a34e08191e216d912f848506d06be978b"></a>
 - section: Details
   display: h3
-- content: <p>Detailed information of the downloaded blob. </p>
+- declaration: DownloadBlobDetails Azure::Storage::Blobs::Models::DownloadBlobResult::Details
+  languageId: cpp
+- content: <p>Detailed information of the downloaded blob. </p><a id="a4966755e7a0f8172171a756232093255"></a>
 - section: TransactionalContentHash
   display: h3
+- declaration: Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::DownloadBlobResult::TransactionalContentHash
+  languageId: cpp
 - content: <p>CRC64 or MD5 hash for the downloaded range of data. </p>

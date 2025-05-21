@@ -4,72 +4,91 @@ title: Azure::Core::Http::Request Class Reference
 components:
 - content: >-
     <p>A request message from a client to a server.  
-     <a href="class_azure_1_1_core_1_1_http_1_1_request.html#details">More...</a></p><p><code>#include &lt;<a href="http_8hpp_source.html">http.hpp</a>&gt;</code></p>
+     <a href="class_azure_1_1_core_1_1_http_1_1_request#details">More...</a></p><p><code>#include &lt;http.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#ad84b62ca2ea5ef08ff85ded91c7783f1">Request</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> httpMethod, <a href="class_azure_1_1_core_1_1_url.html">Url</a> url, <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> *bodyStream, bool shouldBufferResponse)
-    summary: Construct an <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Azure::Core::Http::Request</a>.
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#ad84b62ca2ea5ef08ff85ded91c7783f1">Request</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_method">HttpMethod</a> httpMethod, <a href="class_azure_1_1_core_1_1_url">Url</a> url, <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> *bodyStream, bool shouldBufferResponse)
+    summary: Construct an <a href="class_azure_1_1_core_1_1_http_1_1_request">Azure::Core::Http::Request</a>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#a5587e1d3c3a96d87975a22a6f419f74c">Request</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> httpMethod, <a href="class_azure_1_1_core_1_1_url.html">Url</a> url, <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> *bodyStream)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#a5587e1d3c3a96d87975a22a6f419f74c">Request</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_method">HttpMethod</a> httpMethod, <a href="class_azure_1_1_core_1_1_url">Url</a> url, <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> *bodyStream)
     summary: Constructs a <code>Request</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#a0796aaa004d8df2962ecec9afe4c67dd">Request</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> httpMethod, <a href="class_azure_1_1_core_1_1_url.html">Url</a> url, bool shouldBufferResponse)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#a0796aaa004d8df2962ecec9afe4c67dd">Request</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_method">HttpMethod</a> httpMethod, <a href="class_azure_1_1_core_1_1_url">Url</a> url, bool shouldBufferResponse)
     summary: Constructs a <code>Request</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#a2a0f814ae40f49d0226ad98ea3b40e39">Request</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> httpMethod, <a href="class_azure_1_1_core_1_1_url.html">Url</a> url)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#a2a0f814ae40f49d0226ad98ea3b40e39">Request</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_method">HttpMethod</a> httpMethod, <a href="class_azure_1_1_core_1_1_url">Url</a> url)
     summary: Constructs a <code>Request</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#afea0c98e7e3ceace622958a59c6c44b7">SetHeader</a> (std::string const &amp;name, std::string const &amp;value)
-    summary: Set an HTTP header to the <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Azure::Core::Http::Request</a>.
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#afea0c98e7e3ceace622958a59c6c44b7">SetHeader</a> (std::string const &amp;name, std::string const &amp;value)
+    summary: Set an HTTP header to the <a href="class_azure_1_1_core_1_1_http_1_1_request">Azure::Core::Http::Request</a>.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#a809dd9ab456cdcbb3c9e7a98a555854b">GetHeader</a> (std::string const &amp;name)
-    summary: Gets a specific HTTP header from an <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Azure::Core::Http::Request</a>.
-    returnType: <a href="class_azure_1_1_nullable.html">Azure::Nullable</a>&lt; std::string &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#ab979a9f34f26d37566a263b297e78404">RemoveHeader</a> (std::string const &amp;name)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#a809dd9ab456cdcbb3c9e7a98a555854b">GetHeader</a> (std::string const &amp;name)
+    summary: Gets a specific HTTP header from an <a href="class_azure_1_1_core_1_1_http_1_1_request">Azure::Core::Http::Request</a>.
+    returnType: <a href="class_azure_1_1_nullable">Azure::Nullable</a>&lt; std::string &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#ab979a9f34f26d37566a263b297e78404">RemoveHeader</a> (std::string const &amp;name)
     summary: Remove an HTTP header.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#a8a9ed25368d3e3e4dfb22f2ab329c448">GetMethod</a> () const
-    summary: Get <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a>.
-    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#a8da634936a1c7bf5a48782a534988454">GetHeaders</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#a8a9ed25368d3e3e4dfb22f2ab329c448">GetMethod</a> () const
+    summary: Get <a href="class_azure_1_1_core_1_1_http_1_1_http_method">HttpMethod</a>.
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_http_method">HttpMethod</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#a8da634936a1c7bf5a48782a534988454">GetHeaders</a> () const
     summary: Get HTTP headers.
     returnType: <a href="case__insensitive__containers_8hpp.html#a0a9ad25d76ebd954381ff73acd04cb9e">CaseInsensitiveMap</a>&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#ad6a43a06e13ea601c6c5a2889d053fe2">GetBodyStream</a> ()
-    summary: Get HTTP body as <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a>.
-    returnType: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> *&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#a62c8dc26508af3aa0fd78eb6aeea8dd3">GetBodyStream</a> () const
-    summary: Get HTTP body as <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a>.
-    returnType: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> const *&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#ad6a43a06e13ea601c6c5a2889d053fe2">GetBodyStream</a> ()
+    summary: Get HTTP body as <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a>.
+    returnType: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> *&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#a62c8dc26508af3aa0fd78eb6aeea8dd3">GetBodyStream</a> () const
+    summary: Get HTTP body as <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a>.
+    returnType: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> const *&#160;
   - declaration: ShouldBufferResponse () const
     summary: A value indicating whether the returned raw response for this request will be buffered within a memory buffer or if it will be returned as a body stream instead.
-    returnType: bool&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#a6cda1c14edbd6c5283be6014fe37a4dd">GetUrl</a> ()
+    returnType: >-
+      <a id="a4a877640617dc0a5ee1163d4fe88c049"></a>
+
+      bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#a6cda1c14edbd6c5283be6014fe37a4dd">GetUrl</a> ()
     summary: Get URL.
-    returnType: <a href="class_azure_1_1_core_1_1_url.html">Url</a> &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request.html#a54b9c7d4b31e67088338c0b360bc5392">GetUrl</a> () const
+    returnType: <a href="class_azure_1_1_core_1_1_url">Url</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_request#a54b9c7d4b31e67088338c0b360bc5392">GetUrl</a> () const
     summary: Get URL.
-    returnType: <a href="class_azure_1_1_core_1_1_url.html">Url</a> const &amp;&#160;
+    returnType: <a href="class_azure_1_1_core_1_1_url">Url</a> const &amp;&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
-- content: <p>Includes, within the first line of the message, the <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a> to be applied to the resource, the URL of the resource, and the protocol version in use. </p>
+- content: <p>Includes, within the first line of the message, the <a href="class_azure_1_1_core_1_1_http_1_1_http_method">HttpMethod</a> to be applied to the resource, the URL of the resource, and the protocol version in use. </p>
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="ad84b62ca2ea5ef08ff85ded91c7783f1"></a>
 - section: Request() [1/4]
   display: h3
+- declaration: >-
+    Azure::Core::Http::Request::Request(HttpMethod&#160;                   httpMethod,          
+                                        Url&#160;                          url,                 
+                                        Azure::Core::IO::BodyStream *&#160;bodyStream,          
+                                        bool&#160;                         shouldBufferResponse&#160;
+                                       ) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: httpMethod
-    summary: <a href="class_azure_1_1_core_1_1_http_1_1_http_method.html">HttpMethod</a>.
+    summary: <a href="class_azure_1_1_core_1_1_http_1_1_http_method">HttpMethod</a>.
   - name: url
     summary: Request URL.
   - name: bodyStream
-    summary: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a>.
+    summary: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a>.
   - name: shouldBufferResponse
     summary: A boolean value indicating whether the returned response should be buffered or returned as a body stream instead.
+- content: <a id="a5587e1d3c3a96d87975a22a6f419f74c"></a>
 - section: Request() [2/4]
   display: h3
+- declaration: >-
+    Azure::Core::Http::Request::Request(HttpMethod&#160;                   httpMethod,
+                                        Url&#160;                          url,       
+                                        Azure::Core::IO::BodyStream *&#160;bodyStream&#160;
+                                       ) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -78,9 +97,16 @@ components:
   - name: url
     summary: Request URL.
   - name: bodyStream
-    summary: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a>.
+    summary: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a>.
+- content: <a id="a0796aaa004d8df2962ecec9afe4c67dd"></a>
 - section: Request() [3/4]
   display: h3
+- declaration: >-
+    Request::Request(HttpMethod&#160;httpMethod,          
+                     Url&#160;       url,                 
+                     bool&#160;      shouldBufferResponse&#160;
+                    ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -90,8 +116,14 @@ components:
     summary: Request URL.
   - name: shouldBufferResponse
     summary: A boolean value indicating whether the returned response should be buffered or returned as a body stream instead.
+- content: <a id="a2a0f814ae40f49d0226ad98ea3b40e39"></a>
 - section: Request() [4/4]
   display: h3
+- declaration: >-
+    Request::Request(HttpMethod&#160;httpMethod,
+                     Url&#160;       url&#160;       
+                    ) explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -101,12 +133,21 @@ components:
     summary: Request URL.
 - section: Member Function Documentation
   display: h2
+- content: <a id="ad6a43a06e13ea601c6c5a2889d053fe2"></a>
 - section: GetBodyStream() [1/2]
   display: h3
+- declaration: Azure::Core::IO::BodyStream * Azure::Core::Http::Request::GetBodyStream() inline
+  languageId: cpp
+- content: <a id="a62c8dc26508af3aa0fd78eb6aeea8dd3"></a>
 - section: GetBodyStream() [2/2]
   display: h3
+- declaration: Azure::Core::IO::BodyStream const  * Azure::Core::Http::Request::GetBodyStream()const inline
+  languageId: cpp
+- content: <a id="a809dd9ab456cdcbb3c9e7a98a555854b"></a>
 - section: GetHeader()
   display: h3
+- declaration: Azure::Nullable&lt; std::string &gt; Request::GetHeader(std::string const &amp;&#160;name)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -121,27 +162,48 @@ components:
 - parameters:
   - name: if
     summary: <code>name</code> is an invalid header key.
+- content: <a id="a8da634936a1c7bf5a48782a534988454"></a>
 - section: GetHeaders()
   display: h3
+- declaration: Azure::Core::CaseInsensitiveMap Request::GetHeaders()const
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Note that this function return a COPY of the headers for this request.
+- content: <a id="a8a9ed25368d3e3e4dfb22f2ab329c448"></a>
 - section: GetMethod()
   display: h3
+- declaration: HttpMethod const  &amp; Request::GetMethod()const
+  languageId: cpp
+- content: <a id="a6cda1c14edbd6c5283be6014fe37a4dd"></a>
 - section: GetUrl() [1/2]
   display: h3
+- declaration: Url &amp; Azure::Core::Http::Request::GetUrl() inline
+  languageId: cpp
+- content: <a id="a54b9c7d4b31e67088338c0b360bc5392"></a>
 - section: GetUrl() [2/2]
   display: h3
+- declaration: Url const  &amp; Azure::Core::Http::Request::GetUrl()const inline
+  languageId: cpp
+- content: <a id="ab979a9f34f26d37566a263b297e78404"></a>
 - section: RemoveHeader()
   display: h3
+- declaration: void Request::RemoveHeader(std::string const &amp;&#160;name)
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: name
     summary: HTTP header name.
+- content: <a id="afea0c98e7e3ceace622958a59c6c44b7"></a>
 - section: SetHeader()
   display: h3
+- declaration: >-
+    void Request::SetHeader(std::string const &amp;&#160;name, 
+                            std::string const &amp;&#160;value&#160;
+                           )
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:

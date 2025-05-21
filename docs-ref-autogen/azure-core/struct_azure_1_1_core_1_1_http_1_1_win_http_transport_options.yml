@@ -5,49 +5,75 @@ components:
 - content: >-
     <p>Sets the WinHTTP session and connection options used to customize the behavior of the transport.  
 
-    </p><p><code>#include &lt;<a href="win__http__transport_8hpp_source.html">win_http_transport.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;win_http_transport.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
   - declaration: IgnoreUnknownCertificateAuthority {false}
     summary: When <code>true</code>, allows an invalid certificate authority.
-    returnType: bool&#160;
+    returnType: >-
+      <a id="a61b3b8519a98c64c6204ebab417c248b"></a>
+
+      bool&#160;
   - declaration: IgnoreInvalidCertificateCommonName {false}
     summary: When <code>true</code>, allows an invalid common name in a certificate.
-    returnType: bool&#160;
-  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html#a841ee45e1fa533932f96c4e59a21598f">EnableSystemDefaultProxy</a> {false}
+    returnType: >-
+      <a id="a8b9852962aaf01fdd50271ec945cd037"></a>
+
+      bool&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options#a841ee45e1fa533932f96c4e59a21598f">EnableSystemDefaultProxy</a> {false}
     summary: If True, enables the use of the system default proxy.
     returnType: bool&#160;
   - declaration: EnableCertificateRevocationListCheck {false}
     summary: If True, enables checks for certificate revocation.
-    returnType: bool&#160;
-  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html#aaee8369faa29d288f349fc88e04a1462">ProxyInformation</a>
+    returnType: >-
+      <a id="a1d00f0e086279a56eb3135331d6d0ca1"></a>
+
+      bool&#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options#aaee8369faa29d288f349fc88e04a1462">ProxyInformation</a>
     summary: Proxy information.
     returnType: std::string&#160;
   - declaration: ProxyUserName
     summary: User name for proxy authentication.
-    returnType: <a href="class_azure_1_1_nullable.html">Azure::Nullable</a>&lt; std::string &gt;&#160;
+    returnType: >-
+      <a id="aa2b08dcb78deb040e044538ddfb20536"></a>
+
+      <a href="class_azure_1_1_nullable">Azure::Nullable</a>&lt; std::string &gt;&#160;
   - declaration: ProxyPassword
     summary: Password for proxy authentication.
-    returnType: <a href="class_azure_1_1_nullable.html">Azure::Nullable</a>&lt; std::string &gt;&#160;
+    returnType: >-
+      <a id="ab34db2c7c64b9e85b4e3b1e67816bacb"></a>
+
+      <a href="class_azure_1_1_nullable">Azure::Nullable</a>&lt; std::string &gt;&#160;
   - declaration: ExpectedTlsRootCertificates
     summary: Array of Base64 encoded DER encoded X.509 certificate. These certificates should form a chain of certificates which will be used to validate the server certificate sent by the server.
-    returnType: std::vector&lt; std::string &gt;&#160;
+    returnType: >-
+      <a id="a49e20549ca5ccd9dcbc0a7ac08c08976"></a>
+
+      std::vector&lt; std::string &gt;&#160;
   - declaration: TlsClientCertificate {nullptr}
-    summary: TLS Client Certificate <a href="class_azure_1_1_core_1_1_context.html">Context</a>, used when the TLS Server requests mTLS client authentication.
-    returnType: <a href="win__http__transport_8hpp.html#a5922c03c3b133f086f4233942201ad18">PCCERT_CONTEXT</a>&#160;
+    summary: TLS Client Certificate <a href="class_azure_1_1_core_1_1_context">Context</a>, used when the TLS Server requests mTLS client authentication.
+    returnType: >-
+      <a id="a95002735cb31d9cb07b72ca8dd83fa9b"></a>
+
+      <a href="win__http__transport_8hpp.html#a5922c03c3b133f086f4233942201ad18">PCCERT_CONTEXT</a>&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a841ee45e1fa533932f96c4e59a21598f"></a>
 - section: EnableSystemDefaultProxy
   display: h3
+- declaration: bool Azure::Core::Http::WinHttpTransportOptions::EnableSystemDefaultProxy {false}
+  languageId: cpp
 - content: <p>Proxy information. </p>
 - section: Remarks
   display: h4
 - parameters:
   - summary: Set this to "true" if you would like to use a local HTTP proxy like "Fiddler" to capture and analyze HTTP traffic.
-- content: <p>Set to "false" by default because it is not recommended to use a proxy for production and Fiddler's proxy interferes with the HTTP functional tests. </p>
+- content: <p>Set to "false" by default because it is not recommended to use a proxy for production and Fiddler's proxy interferes with the HTTP functional tests. </p><a id="aaee8369faa29d288f349fc88e04a1462"></a>
 - section: ProxyInformation
   display: h3
+- declaration: std::string Azure::Core::Http::WinHttpTransportOptions::ProxyInformation
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:

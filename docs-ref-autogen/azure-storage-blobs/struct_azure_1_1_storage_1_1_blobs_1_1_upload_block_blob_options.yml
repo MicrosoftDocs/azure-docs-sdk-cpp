@@ -3,39 +3,62 @@ uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AUploadBlockBlobOptions
 title: Azure::Storage::Blobs::UploadBlockBlobOptions Struct Reference
 components:
 - content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a4c914625a21b4b9cf6081fc13bda9e5d">Azure::Storage::Blobs::BlockBlobClient::Upload</a>.  
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client#a4c914625a21b4b9cf6081fc13bda9e5d">Azure::Storage::Blobs::BlockBlobClient::Upload</a>.  
 
-    </p><p><code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
   - declaration: TransactionalContentHash
     summary: Hash of the blob content. This hash is used to verify the integrity of the blob during transport. When this header is specified, the storage service checks the hash that has arrived with the one that was sent.
-    returnType: Azure::Nullable&lt; ContentHash &gt;&#160;
+    returnType: >-
+      <a id="a28d397135e06a5fd4730d7d595598c00"></a>
+
+      Azure::Nullable&lt; ContentHash &gt;&#160;
   - declaration: HttpHeaders
     summary: The standard HTTP header system properties to set.
-    returnType: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_http_headers.html">Models::BlobHttpHeaders</a>&#160;
+    returnType: >-
+      <a id="a858243c6aafa07899b4ecc32bee91b31"></a>
+
+      <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_http_headers">Models::BlobHttpHeaders</a>&#160;
   - declaration: Metadata
     summary: Name-value pairs associated with the blob as metadata.
-    returnType: Storage::Metadata&#160;
+    returnType: >-
+      <a id="aa7735f8b4803717dff5feaf8214dd192"></a>
+
+      Storage::Metadata&#160;
   - declaration: Tags
     summary: The tags to set for this blob.
-    returnType: std::map&lt; std::string, std::string &gt;&#160;
+    returnType: >-
+      <a id="a9c72f9af09d35b0a5e96d2e10397f127"></a>
+
+      std::map&lt; std::string, std::string &gt;&#160;
   - declaration: AccessTier
     summary: Indicates the tier to be set on blob.
-    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.html">Models::AccessTier</a> &gt;&#160;
+    returnType: >-
+      <a id="ae58ba25429f3db08827f5953c9e96629"></a>
+
+      Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier">Models::AccessTier</a> &gt;&#160;
   - declaration: AccessConditions
     summary: Optional conditions that must be met to perform this operation.
-    returnType: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions.html">BlobAccessConditions</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_options.html#af6908c153077588aaddbbe0d231b681b">ImmutabilityPolicy</a>
-    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy.html">Models::BlobImmutabilityPolicy</a> &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_options.html#ab24bb4e599dd2488a17b36ab7f2a788c">HasLegalHold</a>
+    returnType: >-
+      <a id="ad21583d89a01735b57176bc503b1f3e6"></a>
+
+      <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions">BlobAccessConditions</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_options#af6908c153077588aaddbbe0d231b681b">ImmutabilityPolicy</a>
+    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy">Models::BlobImmutabilityPolicy</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_options#ab24bb4e599dd2488a17b36ab7f2a788c">HasLegalHold</a>
     returnType: Azure::Nullable&lt; bool &gt;&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="ab24bb4e599dd2488a17b36ab7f2a788c"></a>
 - section: HasLegalHold
   display: h3
-- content: <p>Indicates whether the blob has a legal hold. </p>
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Blobs::UploadBlockBlobOptions::HasLegalHold
+  languageId: cpp
+- content: <p>Indicates whether the blob has a legal hold. </p><a id="af6908c153077588aaddbbe0d231b681b"></a>
 - section: ImmutabilityPolicy
   display: h3
+- declaration: Azure::Nullable&lt;Models::BlobImmutabilityPolicy&gt; Azure::Storage::Blobs::UploadBlockBlobOptions::ImmutabilityPolicy
+  languageId: cpp
 - content: <p>Immutability policy to set on the blob. </p>

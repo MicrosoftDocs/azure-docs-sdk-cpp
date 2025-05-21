@@ -3,40 +3,52 @@ uid: Azure%3A%3ACore%3A%3AIO%3A%3AProgressBodyStream
 title: Azure::Core::IO::ProgressBodyStream Class Reference
 components:
 - content: >-
-    <p>A concrete implementation of <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> that wraps another stream and reports progress.  
+    <p>A concrete implementation of <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> that wraps another stream and reports progress.  
 
-    </p><p><code>#include &lt;<a href="body__stream_8hpp_source.html">body_stream.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+    </p><p><code>#include &lt;body_stream.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Core::IO::BodyStream
-    href: class_azure_1_1_core_1_1_i_o_1_1_body_stream.html
+    href: class_azure_1_1_core_1_1_i_o_1_1_body_stream
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a5fb7d977f6401dde5c1b606b4749e97d">ProgressBodyStream</a> (<a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">BodyStream</a> &amp;bodyStream, std::function&lt; void(int64_t bytesTransferred)&gt; callback)
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream#a5fb7d977f6401dde5c1b606b4749e97d">ProgressBodyStream</a> (<a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">BodyStream</a> &amp;bodyStream, std::function&lt; void(int64_t bytesTransferred)&gt; callback)
     summary: Constructs <code>ProgressBodyStream</code> from a BodyStream.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a95177a860fe067590a2504387936d63c">Rewind</a> () override
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream#a95177a860fe067590a2504387936d63c">Rewind</a> () override
     summary: Rewind seeks the current stream to the beginning.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html#a3acf5936e8f21a28e75388b4740acd8f">Length</a> () const override
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream#a3acf5936e8f21a28e75388b4740acd8f">Length</a> () const override
     summary: Get the length of the data.
     returnType: int64_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a54e16528af689c00f5190858fff85e92">~BodyStream</a> ()=default
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a54e16528af689c00f5190858fff85e92">~BodyStream</a> ()=default
+    summary: Destructs <code>BodyStream</code>.
     returnType: virtual&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Length</a> () const =0
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a2e73f394ca060cf94146e03d5cf46d74">Length</a> () const =0
+    summary: Get the length of the data.
     returnType: virtual int64_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a52c2ce02e8a7dec1f55276f664c7c8b6">Rewind</a> ()
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a52c2ce02e8a7dec1f55276f664c7c8b6">Rewind</a> ()
+    summary: Resets the stream back to the beginning (for retries).
     returnType: virtual void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ab7c962004d984d3bd1d32f33e6aa485d">Read</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#ab7c962004d984d3bd1d32f33e6aa485d">Read</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
+    summary: Read portion of data into a buffer.
     returnType: size_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ac02611cf3f72c181dcf393c571df6226">ReadToCount</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#ac02611cf3f72c181dcf393c571df6226">ReadToCount</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
+    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> into a buffer until the buffer is filled, or until the stream is read to end.
     returnType: size_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a6d2138790b0c79e24f7fbc0f776bb069">ReadToEnd</a> (<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a6d2138790b0c79e24f7fbc0f776bb069">ReadToEnd</a> (<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
+    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> until the stream is read to end, allocating memory for the entirety of contents.
     returnType: std::vector&lt; uint8_t &gt;&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="a5fb7d977f6401dde5c1b606b4749e97d"></a>
 - section: ProgressBodyStream()
   display: h3
+- declaration: >-
+    ProgressBodyStream::ProgressBodyStream(BodyStream &amp;&#160;                                  bodyStream,
+                                           std::function&lt; void(int64_t bytesTransferred)&gt;&#160;callback&#160;  
+                                          )
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -47,16 +59,21 @@ components:
 - section: Remarks
   display: h4
 - parameters:
-  - summary: The <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream.html">Azure::Core::IO::ProgressBodyStream</a> does not own the wrapped stream and is not responsible for closing / cleaning up resources.
+  - summary: The <a href="class_azure_1_1_core_1_1_i_o_1_1_progress_body_stream">Azure::Core::IO::ProgressBodyStream</a> does not own the wrapped stream and is not responsible for closing / cleaning up resources.
 - section: Member Function Documentation
   display: h2
+- content: <a id="a3acf5936e8f21a28e75388b4740acd8f"></a>
 - section: Length()
   display: h3
+- declaration: int64_t ProgressBodyStream::Length()const override virtual
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Used with the HTTP <code>Content-Length</code> header.
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.</p>
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.</p><a id="a95177a860fe067590a2504387936d63c"></a>
 - section: Rewind()
   display: h3
-- content: <p>Reimplemented from <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a52c2ce02e8a7dec1f55276f664c7c8b6">Azure::Core::IO::BodyStream</a>.</p>
+- declaration: void ProgressBodyStream::Rewind() override virtual
+  languageId: cpp
+- content: <p>Reimplemented from <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a52c2ce02e8a7dec1f55276f664c7c8b6">Azure::Core::IO::BodyStream</a>.</p>

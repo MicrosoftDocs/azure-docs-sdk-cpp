@@ -5,70 +5,138 @@ components:
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#aee63159c2ac2686d7c3ab7f5c60bab42">Nonce</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#aee63159c2ac2686d7c3ab7f5c60bab42">Nonce</a>
     summary: The nonce provided by the client in the attestation operation.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#aed489569e84aabce261f497c54fb9ece">Version</a>
+    returnType: >-
+      <a id="aee63159c2ac2686d7c3ab7f5c60bab42"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#aed489569e84aabce261f497c54fb9ece">Version</a>
     summary: The version of this attestation response.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a6410a5568bbbe067651c19297ab6a342">RunTimeClaims</a>
+    returnType: >-
+      <a id="aed489569e84aabce261f497c54fb9ece"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a6410a5568bbbe067651c19297ab6a342">RunTimeClaims</a>
     summary: JSON encoded runtime claims - this will be the input RunTimeData parameter decoded and interpreted as JSON.
+    returnType: >-
+      <a id="a6410a5568bbbe067651c19297ab6a342"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a768073b687e39d3b37f9f8397472eb00">InitTimeClaims</a>
+    summary: InitTime claims.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a768073b687e39d3b37f9f8397472eb00">More...</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a768073b687e39d3b37f9f8397472eb00">InitTimeClaims</a>
-    summary: InitTime claims.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a768073b687e39d3b37f9f8397472eb00">More...</a>
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#aa19a5591fde1137e660ce0a0d6e84742">PolicyClaims</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#aa19a5591fde1137e660ce0a0d6e84742">PolicyClaims</a>
     summary: PolicyClaims is the JSON encoded values of all the claims created by attestation policies on this instance.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a05bc620d08209aa40d829311d721ffd4">EnclaveHeldData</a>
+    returnType: >-
+      <a id="aa19a5591fde1137e660ce0a0d6e84742"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a05bc620d08209aa40d829311d721ffd4">EnclaveHeldData</a>
     summary: If the RunTimeData parameter is specified as being of DataType::Binary, this will be the value of the RunTimeData input.
-    returnType: Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a8990f591dc8a46b2e10ecc5119d22405">VerifierType</a>
-    summary: The verifier which generated this <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html">AttestationResult</a>.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#ac5e85d27a686541dfebf7212e8561432">PolicySigner</a>
+    returnType: >-
+      <a id="a05bc620d08209aa40d829311d721ffd4"></a>
+
+      Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a8990f591dc8a46b2e10ecc5119d22405">VerifierType</a>
+    summary: The verifier which generated this <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result">AttestationResult</a>.
+    returnType: >-
+      <a id="a8990f591dc8a46b2e10ecc5119d22405"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#ac5e85d27a686541dfebf7212e8561432">PolicySigner</a>
     summary: If the attestation policy is signed, this will be the certificate chain used to sign the policy.
-    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_signer.html">AttestationSigner</a> &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a254477317cc2a93dd38e3e52fb95b44a">PolicyHash</a>
+    returnType: >-
+      <a id="ac5e85d27a686541dfebf7212e8561432"></a>
+
+      Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_signer">AttestationSigner</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a254477317cc2a93dd38e3e52fb95b44a">PolicyHash</a>
     summary: The SHA256 hash of the policy which was used generating the attestation result.
-    returnType: Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a151bedb6b3b404b8f6aa6bcbf3423d6a">SgxIsDebuggable</a>
-    summary: If present, reflects that the enclave being attestated can be debugged.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a151bedb6b3b404b8f6aa6bcbf3423d6a">More...</a>
+    returnType: >-
+      <a id="a254477317cc2a93dd38e3e52fb95b44a"></a>
+
+      Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a151bedb6b3b404b8f6aa6bcbf3423d6a">SgxIsDebuggable</a>
+    summary: If present, reflects that the enclave being attestated can be debugged.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a151bedb6b3b404b8f6aa6bcbf3423d6a">More...</a>
     returnType: Azure::Nullable&lt; bool &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#acfd5e7238dff2fb090fd90e793b26ea8">SgxProductId</a>
-    summary: If present, the ProductId for the enclave being attested.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#acfd5e7238dff2fb090fd90e793b26ea8">More...</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#acfd5e7238dff2fb090fd90e793b26ea8">SgxProductId</a>
+    summary: If present, the ProductId for the enclave being attested.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#acfd5e7238dff2fb090fd90e793b26ea8">More...</a>
     returnType: Azure::Nullable&lt; int &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#aae56cb121b46c14b6a8a110f0d6916b8">SgxMrEnclave</a>
-    summary: If present, the contents of the MRENCLAVE register for the SGX enclave being attested - this reflects the hash of the binary being run in the enclave.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#aae56cb121b46c14b6a8a110f0d6916b8">More...</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#aae56cb121b46c14b6a8a110f0d6916b8">SgxMrEnclave</a>
+    summary: If present, the contents of the MRENCLAVE register for the SGX enclave being attested - this reflects the hash of the binary being run in the enclave.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#aae56cb121b46c14b6a8a110f0d6916b8">More...</a>
     returnType: Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a18798c886a0377592a9a480ae3b84aab">SgxMrSigner</a>
-    summary: If present, the contents of the MRSIGNER register for the SGX enclave being attested - this reflects the key which was used to sign the enclave image being run in the enclave.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#a18798c886a0377592a9a480ae3b84aab">More...</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a18798c886a0377592a9a480ae3b84aab">SgxMrSigner</a>
+    summary: If present, the contents of the MRSIGNER register for the SGX enclave being attested - this reflects the key which was used to sign the enclave image being run in the enclave.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#a18798c886a0377592a9a480ae3b84aab">More...</a>
     returnType: Azure::Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#aa888381e9e33a14350077c9deeff93dc">SgxSvn</a>
-    summary: The security version number of the SGX enclave.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#aa888381e9e33a14350077c9deeff93dc">More...</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#aa888381e9e33a14350077c9deeff93dc">SgxSvn</a>
+    summary: The security version number of the SGX enclave.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#aa888381e9e33a14350077c9deeff93dc">More...</a>
     returnType: Azure::Nullable&lt; int &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#af0299dd53e5407945acddf6610bf7a49">SgxCollateral</a>
-    summary: A JSON encoded string representing the collateral which was used to perform the attestation operation.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.html#af0299dd53e5407945acddf6610bf7a49">More...</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#af0299dd53e5407945acddf6610bf7a49">SgxCollateral</a>
+    summary: A JSON encoded string representing the collateral which was used to perform the attestation operation.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result#af0299dd53e5407945acddf6610bf7a49">More...</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a768073b687e39d3b37f9f8397472eb00"></a>
 - section: InitTimeClaims
   display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationResult::InitTimeClaims
+  languageId: cpp
 - content: >-
     <ul>
 
     <li>this will be the InitTimeData parameter decoded and interpreted as JSON. </li>
 
-    </ul>
+    </ul><a id="af0299dd53e5407945acddf6610bf7a49"></a>
 - section: SgxCollateral
   display: h3
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationResult::SgxCollateral
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: ': If VerifierType is "sgx", then this field must be present'
+- content: <a id="a151bedb6b3b404b8f6aa6bcbf3423d6a"></a>
 - section: SgxIsDebuggable
   display: h3
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Security::Attestation::Models::AttestationResult::SgxIsDebuggable
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: ': If VerifierType is "sgx", then this field must be present'
+- content: <a id="aae56cb121b46c14b6a8a110f0d6916b8"></a>
 - section: SgxMrEnclave
   display: h3
+- declaration: Azure::Nullable&lt;std::vector&lt;uint8_t&gt; &gt; Azure::Security::Attestation::Models::AttestationResult::SgxMrEnclave
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: ': If VerifierType is "sgx", then this field must be present'
+- content: <a id="a18798c886a0377592a9a480ae3b84aab"></a>
 - section: SgxMrSigner
   display: h3
+- declaration: Azure::Nullable&lt;std::vector&lt;uint8_t&gt; &gt; Azure::Security::Attestation::Models::AttestationResult::SgxMrSigner
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: ': If VerifierType is "sgx", then this field must be present'
+- content: <a id="acfd5e7238dff2fb090fd90e793b26ea8"></a>
 - section: SgxProductId
   display: h3
+- declaration: Azure::Nullable&lt;int&gt; Azure::Security::Attestation::Models::AttestationResult::SgxProductId
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: ': If VerifierType is "sgx", then this field must be present'
+- content: <a id="aa888381e9e33a14350077c9deeff93dc"></a>
 - section: SgxSvn
   display: h3
+- declaration: Azure::Nullable&lt;int&gt; Azure::Security::Attestation::Models::AttestationResult::SgxSvn
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: ': If VerifierType is "sgx", then this field must be present'

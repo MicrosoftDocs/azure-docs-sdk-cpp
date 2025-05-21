@@ -5,57 +5,87 @@ components:
 - content: >-
     <p>The mode permissions of the file or directory.  
 
-    </p><p><code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;share_options.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
   - declaration: ToOctalFileMode () const
-    summary: Returns the octal representation of <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a> as a string.
-    returnType: std::string&#160;
+    summary: Returns the octal representation of <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode">NfsFileMode</a> as a string.
+    returnType: >-
+      <a id="ad9dbb394e1ab88b2f26dfd655f59eb10"></a>
+
+      std::string&#160;
   - declaration: ToSymbolicFileMode () const
-    summary: Returns <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a> as a string in symbolic notation.
-    returnType: std::string&#160;
+    summary: Returns <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode">NfsFileMode</a> as a string in symbolic notation.
+    returnType: >-
+      <a id="a36a5bf297f94dcf065a15990e66c6023"></a>
+
+      std::string&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html#a57ae413338da994b6c85802a4edb8311">ParseOctalFileMode</a> (const std::string &amp;modeString)
-    summary: Returns a <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a> from the octal string representation.
-    returnType: static <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html#aa80ba6339372441b6f0f5ca5a733fa28">ParseSymbolicFileMode</a> (const std::string &amp;modeString)
-    summary: Returns a <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a> from the symbolic string representation.
-    returnType: static <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode.html">NfsFileMode</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode#a57ae413338da994b6c85802a4edb8311">ParseOctalFileMode</a> (const std::string &amp;modeString)
+    summary: Returns a <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode">NfsFileMode</a> from the octal string representation.
+    returnType: static <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode">NfsFileMode</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode#aa80ba6339372441b6f0f5ca5a733fa28">ParseSymbolicFileMode</a> (const std::string &amp;modeString)
+    summary: Returns a <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode">NfsFileMode</a> from the symbolic string representation.
+    returnType: static <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_nfs_file_mode">NfsFileMode</a>&#160;
 - section: Public Attributes
   display: h2
 - apiList:
   - declaration: Owner
     summary: Permissions the owner has over the file or directory.
-    returnType: RolePermissions&#160;
+    returnType: >-
+      <a id="a9ff19c014ab9c2ca7fb87fc5eaaf65f9"></a>
+
+      RolePermissions&#160;
   - declaration: Group
     summary: Permissions the group has over the file or directory.
-    returnType: RolePermissions&#160;
+    returnType: >-
+      <a id="a79a0354567979829623a71bca0294338"></a>
+
+      RolePermissions&#160;
   - declaration: Other
     summary: Permissions other have over the file or directory.
-    returnType: RolePermissions&#160;
+    returnType: >-
+      <a id="ad8946cbb1d54d360e6f32632e37ef1e0"></a>
+
+      RolePermissions&#160;
   - declaration: EffectiveUserIdentity = false
     summary: Set effective user ID (setuid) on the file or directory.
-    returnType: bool&#160;
+    returnType: >-
+      <a id="ae21c8e9f21340aefbcfad433dd8ec814"></a>
+
+      bool&#160;
   - declaration: EffectiveGroupIdentity = false
     summary: Set effective group ID (setgid) on the file or directory.
-    returnType: bool&#160;
+    returnType: >-
+      <a id="a47891a12b8e88c62ee3347e38a269d6a"></a>
+
+      bool&#160;
   - declaration: StickyBit = false
     summary: The sticky bit may be set on directories. The files in that directory may only be renamed or deleted by the file's owner, the directory's owner, or the root user.
-    returnType: bool&#160;
+    returnType: >-
+      <a id="a59bdafe07c598013be2b2ba5b0d23988"></a>
+
+      bool&#160;
 - section: Member Function Documentation
   display: h2
+- content: <a id="a57ae413338da994b6c85802a4edb8311"></a>
 - section: ParseOctalFileMode()
   display: h3
+- declaration: static NfsFileMode Azure::Storage::Files::Shares::Models::NfsFileMode::ParseOctalFileMode(const std::string &amp;&#160;modeString) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: modeString
     summary: A 4-digit octal string representation of a File Mode.
+- content: <a id="aa80ba6339372441b6f0f5ca5a733fa28"></a>
 - section: ParseSymbolicFileMode()
   display: h3
+- declaration: static NfsFileMode Azure::Storage::Files::Shares::Models::NfsFileMode::ParseSymbolicFileMode(const std::string &amp;&#160;modeString) static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:

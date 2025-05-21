@@ -4,126 +4,157 @@ title: Azure::Core::Context Class Reference
 components:
 - content: >-
     <p>A context is a node within a unidirectional tree that represents deadlines and key/value pairs.  
-     <a href="class_azure_1_1_core_1_1_context.html#details">More...</a></p><p><code>#include &lt;<a href="context_8hpp_source.html">context.hpp</a>&gt;</code></p>
+     <a href="class_azure_1_1_core_1_1_context#details">More...</a></p><p><code>#include &lt;context.hpp&gt;</code></p>
 - section: Classes
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_context_1_1_key.html">Key</a>
-    summary: A key used to store and retrieve data in an <a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> object.  <a href="class_azure_1_1_core_1_1_context_1_1_key.html#details">More...</a>
+  - declaration: <a href="class_azure_1_1_core_1_1_context_1_1_key">Key</a>
+    summary: A key used to store and retrieve data in an <a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> object.  <a href="class_azure_1_1_core_1_1_context_1_1_key#details">More...</a>
     returnType: class &#160;
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#ab158c637c5e299c323bec474cccd2611">Context</a> ()
+  - declaration: <a href="class_azure_1_1_core_1_1_context#ab158c637c5e299c323bec474cccd2611">Context</a> ()
     summary: Constructs a context with no deadline, and no value associated.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#af3bfbf7abedf01bd87b0d2aaf763093e">Context</a> (<a href="class_azure_1_1_date_time.html">DateTime</a> const &amp;deadline)
+  - declaration: <a href="class_azure_1_1_core_1_1_context#af3bfbf7abedf01bd87b0d2aaf763093e">Context</a> (<a href="class_azure_1_1_date_time">DateTime</a> const &amp;deadline)
     summary: Constructs a context with a deadline object.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#aea5af22f2e2cac5bdcc86479764476d9">Context</a> (<a href="class_azure_1_1_core_1_1_context.html">Context</a> const &amp;)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_context#aea5af22f2e2cac5bdcc86479764476d9">Context</a> (<a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;)=default
     summary: Copies a context.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#aa3d6a17e799149237118e11186bcda0e">operator=</a> (<a href="class_azure_1_1_core_1_1_context.html">Context</a> const &amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_context#aa3d6a17e799149237118e11186bcda0e">operator=</a> (<a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;other)=default
     summary: Assigns a context.
-    returnType: <a href="class_azure_1_1_core_1_1_context.html">Context</a> &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#a8d31b8a3297d1b80814dcc072d295e32">Context</a> (<a href="class_azure_1_1_core_1_1_context.html">Context</a> &amp;&amp;other)=default
+    returnType: <a href="class_azure_1_1_core_1_1_context">Context</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_context#a8d31b8a3297d1b80814dcc072d295e32">Context</a> (<a href="class_azure_1_1_core_1_1_context">Context</a> &amp;&amp;other)=default
     summary: Moves a context.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#a6bcfed6f18a83762d70e80e52c69c8ed">operator=</a> (<a href="class_azure_1_1_core_1_1_context.html">Context</a> &amp;&amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_context#a6bcfed6f18a83762d70e80e52c69c8ed">operator=</a> (<a href="class_azure_1_1_core_1_1_context">Context</a> &amp;&amp;other)=default
     summary: Moves a context.
-    returnType: <a href="class_azure_1_1_core_1_1_context.html">Context</a> &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#a95b06ac84559c1690a277e677a8e9ac4">~Context</a> ()=default
+    returnType: <a href="class_azure_1_1_core_1_1_context">Context</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_context#a95b06ac84559c1690a277e677a8e9ac4">~Context</a> ()=default
     summary: Destroys a context.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#a570378f71f4d923f16974cb5f92ee9d3">WithDeadline</a> (<a href="class_azure_1_1_date_time.html">DateTime</a> const &amp;deadline) const
-    summary: Creates a context with a deadline from an existing <a href="class_azure_1_1_core_1_1_context.html">Context</a> object.
-    returnType: <a href="class_azure_1_1_core_1_1_context.html">Context</a>&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#af27222eb504319f458057565af0c640f">GetDeadline</a> () const
-    summary: Gets the deadline for this context or the branch of contexts this context belongs to.
-    returnType: <a href="class_azure_1_1_date_time.html">DateTime</a>&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#a3ac7608f0afbe908aef54bee7bf9ad5b">Cancel</a> ()
-    summary: Cancels the context. All operations which share this <a href="class_azure_1_1_core_1_1_context.html">Context</a> will be cancelled.
+  - declaration: <a href="class_azure_1_1_core_1_1_context#a570378f71f4d923f16974cb5f92ee9d3">WithDeadline</a> (<a href="class_azure_1_1_date_time">DateTime</a> const &amp;deadline) const
+    summary: Creates a new child context with <code>key</code> and <code>value</code> associated with it.
+    returnType: <a href="class_azure_1_1_core_1_1_context">Context</a>&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_context#af27222eb504319f458057565af0c640f">GetDeadline</a> () const
+    summary: Gets the value associated with a <code>key</code> parameter within this context or the branch of contexts this context belongs to.
+    returnType: <a href="class_azure_1_1_date_time">DateTime</a>&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_context#a3ac7608f0afbe908aef54bee7bf9ad5b">Cancel</a> ()
+    summary: Cancels the context. All operations which share this <a href="class_azure_1_1_core_1_1_context">Context</a> will be cancelled.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#ada5850b1bb2ad455c4fc1595ae75d66f">IsCancelled</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_context#ada5850b1bb2ad455c4fc1595ae75d66f">IsCancelled</a> () const
     summary: Checks if the context is cancelled.
     returnType: bool&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#a08e3e60c70888f118ea0038a8b5e8df2">ThrowIfCancelled</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_context#a08e3e60c70888f118ea0038a8b5e8df2">ThrowIfCancelled</a> () const
     summary: Throws if the context is cancelled.
     returnType: void&#160;
 - section: Static Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_context.html#aac55e9cad63f64d4a3e407154c0cd0b3">ApplicationContext</a>
-    summary: The <code>ApplicationContext</code> is a deprecated singleton <a href="class_azure_1_1_core_1_1_context.html">Context</a> object.
-    returnType: static const AZ_CORE_DLLEXPORT <a href="class_azure_1_1_core_1_1_context.html">Context</a>&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_context#aac55e9cad63f64d4a3e407154c0cd0b3">ApplicationContext</a>
+    summary: The <code>ApplicationContext</code> is a deprecated singleton <a href="class_azure_1_1_core_1_1_context">Context</a> object.
+    returnType: static const AZ_CORE_DLLEXPORT <a href="class_azure_1_1_core_1_1_context">Context</a>&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - content: >-
-    <p>Most <a href="namespace_azure.html">Azure</a> Service Client operations accept a <a href="class_azure_1_1_core_1_1_context.html">Context</a> object. The <a href="class_azure_1_1_core_1_1_context.html">Context</a> object allows the caller to cancel the operation if it is taking too long, or to ensure that the operation completes before a specific deadline. This allows an application to apply timeouts to operations, or to cancel operations that need to be abandoned.</p><p>After cancelling a <a href="class_azure_1_1_core_1_1_context.html">Context</a>, all service operations which have the cancelled context as a parent context will be cancelled. Cancellation is indicated by throwing an <a href="class_azure_1_1_core_1_1_operation_cancelled_exception.html">Azure::Core::OperationCancelledException</a> from the operation.</p><p><a href="class_azure_1_1_core_1_1_context.html">Context</a> objects support the following operations to create new contexts:</p><ul>
+    <p>Most <a href="namespace_azure">Azure</a> Service Client operations accept a <a href="class_azure_1_1_core_1_1_context">Context</a> object. The <a href="class_azure_1_1_core_1_1_context">Context</a> object allows the caller to cancel the operation if it is taking too long, or to ensure that the operation completes before a specific deadline. This allows an application to apply timeouts to operations, or to cancel operations that need to be abandoned.</p><p>After cancelling a <a href="class_azure_1_1_core_1_1_context">Context</a>, all service operations which have the cancelled context as a parent context will be cancelled. Cancellation is indicated by throwing an <a href="class_azure_1_1_core_1_1_operation_cancelled_exception">Azure::Core::OperationCancelledException</a> from the operation.</p><p><a href="class_azure_1_1_core_1_1_context">Context</a> objects support the following operations to create new contexts:</p><ul>
 
     <li>WithDeadline(DateTime): creates a new child context with a deadline.</li>
 
     <li>WithValue(Key, T): creates a new child context with a key/value pair.</li>
 
-    </ul><p><a href="class_azure_1_1_core_1_1_context.html">Context</a> objects support the following operations to retrieve data:</p><ul>
+    </ul><p><a href="class_azure_1_1_core_1_1_context">Context</a> objects support the following operations to retrieve data:</p><ul>
 
-    <li><a href="class_azure_1_1_core_1_1_context.html#af27222eb504319f458057565af0c640f">GetDeadline()</a>: gets the deadline for the context.</li>
+    <li><a href="class_azure_1_1_core_1_1_context#af27222eb504319f458057565af0c640f">GetDeadline()</a>: gets the deadline for the context.</li>
 
     <li>TryGetValue(Key, T): gets the value associated with a key.</li>
 
-    </ul><p><a href="class_azure_1_1_core_1_1_context.html">Context</a> objects support two operations to manage the context:</p><ul>
+    </ul><p><a href="class_azure_1_1_core_1_1_context">Context</a> objects support two operations to manage the context:</p><ul>
 
-    <li><a href="class_azure_1_1_core_1_1_context.html#a3ac7608f0afbe908aef54bee7bf9ad5b">Cancel()</a>: cancels the context.</li>
+    <li><a href="class_azure_1_1_core_1_1_context#a3ac7608f0afbe908aef54bee7bf9ad5b">Cancel()</a>: cancels the context.</li>
 
-    <li><a href="class_azure_1_1_core_1_1_context.html#ada5850b1bb2ad455c4fc1595ae75d66f">IsCancelled()</a>: checks if the context is cancelled.</li>
+    <li><a href="class_azure_1_1_core_1_1_context#ada5850b1bb2ad455c4fc1595ae75d66f">IsCancelled()</a>: checks if the context is cancelled.</li>
 
-    </ul><p><a href="class_azure_1_1_core_1_1_context.html">Context</a> objects support the following operation to throw if the context is cancelled:</p><ul>
+    </ul><p><a href="class_azure_1_1_core_1_1_context">Context</a> objects support the following operation to throw if the context is cancelled:</p><ul>
 
-    <li><a href="class_azure_1_1_core_1_1_context.html#a08e3e60c70888f118ea0038a8b5e8df2">ThrowIfCancelled()</a>: throws an <a href="class_azure_1_1_core_1_1_operation_cancelled_exception.html">OperationCancelledException</a> if the context is cancelled. </li>
+    <li><a href="class_azure_1_1_core_1_1_context#a08e3e60c70888f118ea0038a8b5e8df2">ThrowIfCancelled()</a>: throws an <a href="class_azure_1_1_core_1_1_operation_cancelled_exception">OperationCancelledException</a> if the context is cancelled. </li>
 
     </ul>
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="ab158c637c5e299c323bec474cccd2611"></a>
 - section: Context() [1/4]
   display: h3
+- declaration: Azure::Core::Context::Context() inline
+  languageId: cpp
+- content: <a id="af3bfbf7abedf01bd87b0d2aaf763093e"></a>
 - section: Context() [2/4]
   display: h3
+- declaration: Azure::Core::Context::Context(DateTime const &amp;&#160;deadline) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: deadline
     summary: A point in time after which a context expires.
+- content: <a id="aea5af22f2e2cac5bdcc86479764476d9"></a>
 - section: Context() [3/4]
   display: h3
-- content: <p>This operation copies one context to another. <a href="class_azure_1_1_core_1_1_context.html">Context</a> objects are copied by reference, so the new context will share the same state as the original context. This also means that cancelling one context cancels all contexts which are copied from the original context. </p>@param other Another context to copy.
+- declaration: Azure::Core::Context::Context(Context const &amp;&#160;) default
+  languageId: cpp
+- content: <p>This operation copies one context to another. <a href="class_azure_1_1_core_1_1_context">Context</a> objects are copied by reference, so the new context will share the same state as the original context. This also means that cancelling one context cancels all contexts which are copied from the original context. </p>@param other Another context to copy.<a id="a8d31b8a3297d1b80814dcc072d295e32"></a>
 - section: Context() [4/4]
   display: h3
+- declaration: Azure::Core::Context::Context(Context &amp;&amp;&#160;other) default
+  languageId: cpp
 - content: <p>This operation moves one context to another.</p>
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: The context to move.
+- content: <a id="a95b06ac84559c1690a277e677a8e9ac4"></a>
 - section: ~Context()
   display: h3
+- declaration: Azure::Core::Context::~Context() default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
+- content: <a id="a3ac7608f0afbe908aef54bee7bf9ad5b"></a>
 - section: Cancel()
   display: h3
+- declaration: void Azure::Core::Context::Cancel() inline
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: Cancellation of a <a href="class_azure_1_1_core_1_1_context">Context</a> is a best-faith effort. Because of the synchronous nature of <a href="namespace_azure">Azure</a> C++ SDK APIs, it is possible that the operation will not be cancelled immediately. Each operation explicitly checks the context's state to determine if it has been cancelled, those checks may not happen immediately, or at all.
+- content: <a id="af27222eb504319f458057565af0c640f"></a>
 - section: GetDeadline()
   display: h3
+- declaration: Azure::DateTime Azure::Core::Context::GetDeadline()const
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The deadline associated with the context; <code>Azure::DateTime::max()</code> if no deadline is specified.
+- content: <a id="ada5850b1bb2ad455c4fc1595ae75d66f"></a>
 - section: IsCancelled()
   display: h3
+- declaration: bool Azure::Core::Context::IsCancelled()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if this context is cancelled; otherwise, <code>false</code>.
+- content: <a id="a6bcfed6f18a83762d70e80e52c69c8ed"></a>
 - section: operator=() [1/2]
   display: h3
+- declaration: Context &amp; Azure::Core::Context::operator=(Context &amp;&amp;&#160;other) default
+  languageId: cpp
 - content: <p>This operation moves one context to another.</p>
 - section: Parameters
   display: h4
@@ -133,10 +164,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: A new <a href="class_azure_1_1_core_1_1_context.html">Context</a> referencing the state of the original context.
+  - summary: A new <a href="class_azure_1_1_core_1_1_context">Context</a> referencing the state of the original context.
+- content: <a id="aa3d6a17e799149237118e11186bcda0e"></a>
 - section: operator=() [2/2]
   display: h3
-- content: <p>This operation assigns one context to another. <a href="class_azure_1_1_core_1_1_context.html">Context</a> objects are copied by reference, so the new context will share the same state as the original context. This also means that cancelling one context cancels all contexts which are copied from the original context.</p>
+- declaration: Context &amp; Azure::Core::Context::operator=(Context const &amp;&#160;other) default
+  languageId: cpp
+- content: <p>This operation assigns one context to another. <a href="class_azure_1_1_core_1_1_context">Context</a> objects are copied by reference, so the new context will share the same state as the original context. This also means that cancelling one context cancels all contexts which are copied from the original context.</p>
 - section: Parameters
   display: h4
 - parameters:
@@ -145,17 +179,26 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: A new <a href="class_azure_1_1_core_1_1_context.html">Context</a> referencing the state of the original context.
+  - summary: A new <a href="class_azure_1_1_core_1_1_context">Context</a> referencing the state of the original context.
+- content: <a id="a08e3e60c70888f118ea0038a8b5e8df2"></a>
 - section: ThrowIfCancelled()
   display: h3
+- declaration: void Azure::Core::Context::ThrowIfCancelled()const inline
+  languageId: cpp
 - section: Exceptions
   display: h4
 - parameters:
-  - name: <a href="class_azure_1_1_core_1_1_operation_cancelled_exception.html">Azure::Core::OperationCancelledException</a>
+  - name: <a href="class_azure_1_1_core_1_1_operation_cancelled_exception">Azure::Core::OperationCancelledException</a>
     summary: if the context is cancelled.
+- content: <a id="a44896de14f31ec4e45ba5f0beaa99326"></a>
 - section: TryGetValue()
   display: h3
 - content: template&lt;class T &gt;
+- declaration: >-
+    bool Azure::Core::Context::TryGetValue(Key const &amp;&#160;key,        
+                                           T &amp;&#160;        outputValue&#160;
+                                          )            const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -167,8 +210,15 @@ components:
   display: h4
 - parameters:
   - summary: <code>true</code> if <code>key</code> is found, with <code>outputValue</code> set to the value associated with the key found; otherwise, <code>false</code>.
+- section: Note
+  display: h4
+- parameters:
+  - summary: The <code>outputValue</code> is left unmodified if the <code>key</code> is not found.
+- content: <a id="a570378f71f4d923f16974cb5f92ee9d3"></a>
 - section: WithDeadline()
   display: h3
+- declaration: Context Azure::Core::Context::WithDeadline(DateTime const &amp;&#160;deadline)const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -178,9 +228,15 @@ components:
   display: h4
 - parameters:
   - summary: A child context with deadline.
+- content: <a id="a9d1a4f785ea71043920be592f789e87b"></a>
 - section: WithValue()
   display: h3
 - content: template&lt;class T &gt;
+- declaration: >-
+    Context Azure::Core::Context::WithValue(Key const &amp;&#160;key,  
+                                            T &amp;&amp;&#160;       value&#160;
+                                           )            const inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -194,5 +250,12 @@ components:
   - summary: A child context with the <code>key</code> and <code>value</code> associated with it.
 - section: Member Data Documentation
   display: h2
+- content: <a id="aac55e9cad63f64d4a3e407154c0cd0b3"></a>
 - section: ApplicationContext
   display: h3
+- declaration: const Context Context::ApplicationContext static
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: ': The <code>ApplicationContext</code> object is deprecated and will be removed in a future release. If your application is using <code>ApplicationContext</code>, you should create your own root context and use it where you would have otherwise used <code>ApplicationContext</code>.'

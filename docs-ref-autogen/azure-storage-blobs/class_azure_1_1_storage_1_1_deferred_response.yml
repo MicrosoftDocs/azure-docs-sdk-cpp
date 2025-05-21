@@ -5,34 +5,52 @@ components:
 - content: >-
     <p>Base type for a deferred response.  
 
-    </p><p><code>#include &lt;<a href="deferred__response_8hpp_source.html">deferred_response.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;deferred_response.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: DeferredResponse (const <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;)=delete
-    returnType: '&#160;'
-  - declaration: DeferredResponse (<a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;&amp;)=default
-    summary: Construct a new deferred response, moving from an existing <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a>.
-    returnType: '&#160;'
-  - declaration: operator= (const <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;)=delete
-    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_deferred_response.html#a50c39f1d247c6f4bde6d076d2456d8de">operator=</a> (<a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;&amp;)=default
-    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> &amp;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_deferred_response.html#a878e28905d252a18945cffe3584180e5">GetResponse</a> () const
+  - declaration: DeferredResponse (const <a href="class_azure_1_1_storage_1_1_deferred_response">DeferredResponse</a> &amp;)=delete
+    returnType: >-
+      <a id="a1d437c14ae4639a1000afa2c98b05259"></a>
+
+      &#160;
+  - declaration: DeferredResponse (<a href="class_azure_1_1_storage_1_1_deferred_response">DeferredResponse</a> &amp;&amp;)=default
+    summary: Construct a new deferred response, moving from an existing <a href="class_azure_1_1_storage_1_1_deferred_response">DeferredResponse</a>.
+    returnType: >-
+      <a id="a55e55534cc7cbece26746d7d32bcb3f4"></a>
+
+      &#160;
+  - declaration: operator= (const <a href="class_azure_1_1_storage_1_1_deferred_response">DeferredResponse</a> &amp;)=delete
+    returnType: >-
+      <a id="ae3ee6e4e6e5f591b9068206551092b21"></a>
+
+      <a href="class_azure_1_1_storage_1_1_deferred_response">DeferredResponse</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_deferred_response#a50c39f1d247c6f4bde6d076d2456d8de">operator=</a> (<a href="class_azure_1_1_storage_1_1_deferred_response">DeferredResponse</a> &amp;&amp;)=default
+    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response">DeferredResponse</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_deferred_response#a878e28905d252a18945cffe3584180e5">GetResponse</a> () const
     summary: Gets the deferred response.
     returnType: Response&lt; T &gt;&#160;
 - section: Friends
   display: h2
 - apiList:
   - declaration: Blobs::BlobServiceBatch
-    returnType: class&#160;
+    returnType: >-
+      <a id="adcc3fc584430a972caaaa61046e4bdaa"></a>
+
+      class&#160;
   - declaration: Blobs::BlobContainerBatch
-    returnType: class&#160;
+    returnType: >-
+      <a id="a04377fb2bc0a3bfee82cdf3f4ee8c1d9"></a>
+
+      class&#160;
 - section: Member Function Documentation
   display: h2
+- content: <a id="a878e28905d252a18945cffe3584180e5"></a>
 - section: GetResponse()
   display: h3
 - content: template&lt;typename T &gt;
+- declaration: Response&lt; T &gt; Azure::Storage::DeferredResponse&lt; T &gt;::GetResponse()const inline
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
@@ -41,6 +59,10 @@ components:
   display: h4
 - parameters:
   - summary: The deferred response. An exception is thrown if error occurred.
+- content: <a id="a50c39f1d247c6f4bde6d076d2456d8de"></a>
 - section: operator=()
   display: h3
-- content: template&lt;typename T &gt;<p>Move a <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> to another <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a> object.. </p>
+- content: template&lt;typename T &gt;
+- declaration: DeferredResponse &amp; Azure::Storage::DeferredResponse&lt; T &gt;::operator=(DeferredResponse&lt; T &gt; &amp;&amp;&#160;) default
+  languageId: cpp
+- content: <p>Move a <a href="class_azure_1_1_storage_1_1_deferred_response">DeferredResponse</a> to another <a href="class_azure_1_1_storage_1_1_deferred_response">DeferredResponse</a> object.. </p>

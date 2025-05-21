@@ -3,38 +3,54 @@ uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AListBlobContainersPagedResponse
 title: Azure::Storage::Blobs::ListBlobContainersPagedResponse Class Reference
 components:
 - content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client.html#a4c1b81e4745e98a79e75b340bc66f9f7">Azure::Storage::Blobs::BlobServiceClient::ListBlobContainers</a>.  
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client#a4c1b81e4745e98a79e75b340bc66f9f7">Azure::Storage::Blobs::BlobServiceClient::ListBlobContainers</a>.  
 
-    </p><p><code>#include &lt;<a href="blob__responses_8hpp_source.html">blob_responses.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+    </p><p><code>#include &lt;blob_responses.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Core::PagedResponse
     href: ''
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blob_containers_paged_response.html#a11446103f83f8fc8691323f671c2f208">ServiceEndpoint</a>
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blob_containers_paged_response#a11446103f83f8fc8691323f671c2f208">ServiceEndpoint</a>
     returnType: std::string&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blob_containers_paged_response.html#ae1d5de81fd6dd2d244b2a7a1f0d02283">Prefix</a>
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blob_containers_paged_response#ae1d5de81fd6dd2d244b2a7a1f0d02283">Prefix</a>
     returnType: std::string&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blob_containers_paged_response.html#a5a3ae9bf98a13bba5d17de13a2b314c8">BlobContainers</a>
-    returnType: std::vector&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_container_item.html">Models::BlobContainerItem</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_list_blob_containers_paged_response#a5a3ae9bf98a13bba5d17de13a2b314c8">BlobContainers</a>
+    returnType: std::vector&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_container_item">Models::BlobContainerItem</a> &gt;&#160;
 - section: Friends
   display: h2
 - apiList:
   - declaration: BlobServiceClient
-    returnType: class&#160;
+    returnType: >-
+      <a id="ae21f5317c43c381dea514877f4ae8ae4"></a>
+
+      class&#160;
   - declaration: Azure::Core::PagedResponse&lt; ListBlobContainersPagedResponse &gt;
-    returnType: class&#160;
+    returnType: >-
+      <a id="ad1c93ad5e9f89bf42c902030bae3caad"></a>
+
+      class&#160;
   - declaration: Files::DataLake::ListFileSystemsPagedResponse
-    returnType: class&#160;
+    returnType: >-
+      <a id="aff9831ae15cef9350c0bc3920b11073e"></a>
+
+      class&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a5a3ae9bf98a13bba5d17de13a2b314c8"></a>
 - section: BlobContainers
   display: h3
-- content: <p>Blob container items. </p>
+- declaration: std::vector&lt;Models::BlobContainerItem&gt; Azure::Storage::Blobs::ListBlobContainersPagedResponse::BlobContainers
+  languageId: cpp
+- content: <p>Blob container items. </p><a id="ae1d5de81fd6dd2d244b2a7a1f0d02283"></a>
 - section: Prefix
   display: h3
-- content: <p>Container name prefix that's used to filter the result. </p>
+- declaration: std::string Azure::Storage::Blobs::ListBlobContainersPagedResponse::Prefix
+  languageId: cpp
+- content: <p>Container name prefix that's used to filter the result. </p><a id="a11446103f83f8fc8691323f671c2f208"></a>
 - section: ServiceEndpoint
   display: h3
+- declaration: std::string Azure::Storage::Blobs::ListBlobContainersPagedResponse::ServiceEndpoint
+  languageId: cpp
 - content: <p>Service endpoint. </p>

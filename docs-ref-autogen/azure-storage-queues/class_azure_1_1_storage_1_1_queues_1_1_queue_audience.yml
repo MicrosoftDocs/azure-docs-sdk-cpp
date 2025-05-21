@@ -4,34 +4,41 @@ title: Azure::Storage::Queues::QueueAudience Class Reference
 components:
 - content: >-
     <p>Audiences available for queue service.  
-     <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience.html#details">More...</a></p><p><code>#include &lt;<a href="queue__options_8hpp_source.html">queue_options.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+     <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience#details">More...</a></p><p><code>#include &lt;queue_options.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Core::_internal::ExtendableEnumeration
     href: ''
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience.html#aa44ac58893dd4ce04d9c4ccf085000a7">QueueAudience</a> (std::string queueAudience)
-    summary: Construct a new <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience.html">QueueAudience</a> object.
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience#aa44ac58893dd4ce04d9c4ccf085000a7">QueueAudience</a> (std::string queueAudience)
+    summary: Construct a new <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience">QueueAudience</a> object.
     returnType: '&#160;'
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience.html#a2e728850c7d2d10015bd3950f5e76fd4">CreateQueueServiceAccountAudience</a> (const std::string &amp;storageAccountName)
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience#a2e728850c7d2d10015bd3950f5e76fd4">CreateQueueServiceAccountAudience</a> (const std::string &amp;storageAccountName)
     summary: The service endpoint for a given storage account. Use this method to acquire a token for authorizing requests to that specific Azure Storage account and service only.
-    returnType: static <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience.html">QueueAudience</a>&#160;
+    returnType: static <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience">QueueAudience</a>&#160;
 - section: Static Public Attributes
   display: h2
 - apiList:
   - declaration: DefaultAudience
     summary: Default Audience. Use to acquire a token for authorizing requests to any Azure Storage account.
-    returnType: AZ_STORAGE_QUEUES_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience.html">QueueAudience</a>&#160;
+    returnType: >-
+      <a id="a4a0061dace8b9bbe5217d5a78c74ce2d"></a>
+
+      AZ_STORAGE_QUEUES_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_audience">QueueAudience</a>&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="aa44ac58893dd4ce04d9c4ccf085000a7"></a>
 - section: QueueAudience()
   display: h3
+- declaration: Azure::Storage::Queues::QueueAudience::QueueAudience(std::string&#160;queueAudience) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -39,8 +46,11 @@ components:
     summary: 'The Azure Active Directory audience to use when forming authorization scopes. For the Language service, this value corresponds to a URL that identifies the Azure cloud where the resource is located. For more information: See <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory">https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory</a>'
 - section: Member Function Documentation
   display: h2
+- content: <a id="a2e728850c7d2d10015bd3950f5e76fd4"></a>
 - section: CreateQueueServiceAccountAudience()
   display: h3
+- declaration: static QueueAudience Azure::Storage::Queues::QueueAudience::CreateQueueServiceAccountAudience(const std::string &amp;&#160;storageAccountName) inline static
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:

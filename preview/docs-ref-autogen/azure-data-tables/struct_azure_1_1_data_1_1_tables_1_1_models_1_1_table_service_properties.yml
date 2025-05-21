@@ -3,31 +3,40 @@ uid: Azure%3A%3AData%3A%3ATables%3A%3AModels%3A%3ATableServiceProperties
 title: Azure::Data::Tables::Models::TableServiceProperties Struct Reference
 components:
 - content: >-
-    <p><a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table.html">Table</a> Service Properties.  
+    <p><a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table">Table</a> Service Properties.  
 
-    </p><p><code>#include &lt;<a href="models_8hpp_source.html">models.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;models.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table_service_properties.html#a7cd779bb989db9612edf9892458109cb">Logging</a>
-    returnType: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_analytics_logging.html">AnalyticsLogging</a>&#160;
-  - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table_service_properties.html#af7313eddc04c0a6dc744fd29a725fc9a">HourMetrics</a>
-    returnType: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_metrics.html">Metrics</a>&#160;
-  - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table_service_properties.html#a55d3b93a8a8ccf8038f99d2517a97f39">MinuteMetrics</a>
-    returnType: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_metrics.html">Metrics</a>&#160;
-  - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table_service_properties.html#a85f18799f27685c329d2f8895256e5e0">Cors</a>
-    returnType: std::vector&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_cors_rule.html">CorsRule</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table_service_properties#a7cd779bb989db9612edf9892458109cb">Logging</a>
+    returnType: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_analytics_logging">AnalyticsLogging</a>&#160;
+  - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table_service_properties#af7313eddc04c0a6dc744fd29a725fc9a">HourMetrics</a>
+    returnType: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_metrics">Metrics</a>&#160;
+  - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table_service_properties#a55d3b93a8a8ccf8038f99d2517a97f39">MinuteMetrics</a>
+    returnType: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_metrics">Metrics</a>&#160;
+  - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table_service_properties#a85f18799f27685c329d2f8895256e5e0">Cors</a>
+    returnType: std::vector&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_cors_rule">CorsRule</a> &gt;&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a85f18799f27685c329d2f8895256e5e0"></a>
 - section: Cors
   display: h3
-- content: <p>The set of CORS rules. </p>
+- declaration: std::vector&lt;CorsRule&gt; Azure::Data::Tables::Models::TableServiceProperties::Cors
+  languageId: cpp
+- content: <p>The set of CORS rules. </p><a id="af7313eddc04c0a6dc744fd29a725fc9a"></a>
 - section: HourMetrics
   display: h3
-- content: <p>A summary of request statistics grouped by API in hourly aggregates for tables. </p>
+- declaration: Metrics Azure::Data::Tables::Models::TableServiceProperties::HourMetrics
+  languageId: cpp
+- content: <p>A summary of request statistics grouped by API in hourly aggregates for tables. </p><a id="a7cd779bb989db9612edf9892458109cb"></a>
 - section: Logging
   display: h3
-- content: <p>Azure Analytics Logging settings. </p>
+- declaration: AnalyticsLogging Azure::Data::Tables::Models::TableServiceProperties::Logging
+  languageId: cpp
+- content: <p>Azure Analytics Logging settings. </p><a id="a55d3b93a8a8ccf8038f99d2517a97f39"></a>
 - section: MinuteMetrics
   display: h3
+- declaration: Metrics Azure::Data::Tables::Models::TableServiceProperties::MinuteMetrics
+  languageId: cpp
 - content: <p>A summary of request statistics grouped by API in minute aggregates for tables. </p>

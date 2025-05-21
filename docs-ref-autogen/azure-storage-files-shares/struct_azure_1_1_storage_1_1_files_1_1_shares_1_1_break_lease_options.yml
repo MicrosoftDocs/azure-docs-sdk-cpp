@@ -3,16 +3,19 @@ uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ABreakLeaseOptions
 title: Azure::Storage::Files::Shares::BreakLeaseOptions Struct Reference
 components:
 - content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client.html#a41f450d38ebe54f4270d342202166e3f">Azure::Storage::Files::Shares::ShareLeaseClient::Break</a>.  
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_lease_client#a41f450d38ebe54f4270d342202166e3f">Azure::Storage::Files::Shares::ShareLeaseClient::Break</a>.  
 
-    </p><p><code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;share_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_break_lease_options.html#accca08bd20ffb5be1c005d3d1e8e30da">BreakPeriod</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_break_lease_options#accca08bd20ffb5be1c005d3d1e8e30da">BreakPeriod</a>
     returnType: Azure::Nullable&lt; int32_t &gt;&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="accca08bd20ffb5be1c005d3d1e8e30da"></a>
 - section: BreakPeriod
   display: h3
+- declaration: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::Shares::BreakLeaseOptions::BreakPeriod
+  languageId: cpp
 - content: <p>Proposed duration the lease should continue before it is broken, in seconds, between 0 and 60. This break period is only used if it is shorter than the time remaining on the lease. If longer, the time remaining on the lease is used. A new lease will not be available before the break period has expired, but the lease may be held for longer than the break period. </p>

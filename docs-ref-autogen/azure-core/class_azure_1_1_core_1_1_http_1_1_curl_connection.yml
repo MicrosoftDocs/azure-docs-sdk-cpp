@@ -4,56 +4,56 @@ title: Azure::Core::Http::CurlConnection Class Reference
 components:
 - content: >-
     <p>CURL HTTP connection.  
-     <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection#details">More...</a></p><p><code>#include &lt;curl_connection_private.hpp&gt;</code></p><p>This class inherits from:</p>
+     <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.yml#details">More...</a></p><p><code>#include &lt;curl_connection_private.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Core::Http::CurlNetworkConnection
-    href: class_azure_1_1_core_1_1_http_1_1_curl_network_connection
+    href: class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection#ae028bfff06339fae9b1486bc34d9e42e">CurlConnection</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Azure::Core::Http::Request</a> &amp;request, <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options">Azure::Core::Http::CurlTransportOptions</a> const &amp;options, std::string const &amp;hostDisplayName, std::string const &amp;connectionPropertiesKey)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.yml#ae028bfff06339fae9b1486bc34d9e42e">CurlConnection</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Azure::Core::Http::Request</a> &amp;request, <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.yml">Azure::Core::Http::CurlTransportOptions</a> const &amp;options, std::string const &amp;hostDisplayName, std::string const &amp;connectionPropertiesKey)
     summary: Construct CURL HTTP connection.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection#a4d52d51c148ceb82858f0dd6de83f317">~CurlConnection</a> () override
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.yml#a4d52d51c148ceb82858f0dd6de83f317">~CurlConnection</a> () override
     summary: Destructor.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection#a2b8da0ad12d29ac85ce8334e9bb2b177">GetConnectionKey</a> () const override
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.yml#a2b8da0ad12d29ac85ce8334e9bb2b177">GetConnectionKey</a> () const override
     summary: Get the Connection Properties Key object.
     returnType: std::string const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection#a1ccde96315ab2370ced8bcfc87cc1556">UpdateLastUsageTime</a> () override
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.yml#a1ccde96315ab2370ced8bcfc87cc1556">UpdateLastUsageTime</a> () override
     summary: Update last usage time for the connection.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection#a011c45dd8398536a6eda1dde6e8a4cb4">IsExpired</a> () override
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.yml#a011c45dd8398536a6eda1dde6e8a4cb4">IsExpired</a> () override
     summary: Checks whether this CURL connection is expired.
     returnType: bool&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection#a39ec5246e8cab60c9229acee7f2f8ce7">ReadFromSocket</a> (uint8_t *buffer, size_t bufferSize, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context) override
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.yml#a39ec5246e8cab60c9229acee7f2f8ce7">ReadFromSocket</a> (uint8_t *buffer, size_t bufferSize, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context) override
     summary: This function is used when working with streams to pull more data from the wire. Function will try to keep pulling data from socket until the buffer is all written or until there is no more data to get from the socket.
     returnType: size_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection#a38965e729c4fb3fb234f1753562e7116">SendBuffer</a> (uint8_t const *buffer, size_t bufferSize, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context) override
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_connection.yml#a38965e729c4fb3fb234f1753562e7116">SendBuffer</a> (uint8_t const *buffer, size_t bufferSize, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context) override
     summary: This method will use libcurl socket to write all the bytes from buffer.
     returnType: CURLcode&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a8748df2b1bf8402584acb0249b8b1844">~CurlNetworkConnection</a> ()=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a8748df2b1bf8402584acb0249b8b1844">~CurlNetworkConnection</a> ()=default
     summary: Allow derived classes calling a destructor.
     returnType: virtual&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a1ec150945dfb9ad8831cec9c2d2d5109">GetConnectionKey</a> () const =0
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a1ec150945dfb9ad8831cec9c2d2d5109">GetConnectionKey</a> () const =0
     summary: Get the Connection Properties Key object.
     returnType: virtual std::string const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a33c469afabc2ff3dd0b096a03e0cb0cf">UpdateLastUsageTime</a> ()=0
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a33c469afabc2ff3dd0b096a03e0cb0cf">UpdateLastUsageTime</a> ()=0
     summary: Update last usage time for the connection.
     returnType: virtual void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a53e781c7fa6b1a875998f84c62581f05">IsExpired</a> ()=0
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a53e781c7fa6b1a875998f84c62581f05">IsExpired</a> ()=0
     summary: Checks whether this CURL connection is expired.
     returnType: virtual bool&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a70019a25e47e49fb9b91c6d79d89cf89">ReadFromSocket</a> (uint8_t *buffer, size_t bufferSize, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context)=0
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a70019a25e47e49fb9b91c6d79d89cf89">ReadFromSocket</a> (uint8_t *buffer, size_t bufferSize, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context)=0
     summary: This function is used when working with streams to pull more data from the wire. Function will try to keep pulling data from socket until the buffer is all written or until there is no more data to get from the socket.
     returnType: virtual size_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#afbc09222e1cd35e2173b397153015501">SendBuffer</a> (uint8_t const *buffer, size_t bufferSize, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context)=0
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#afbc09222e1cd35e2173b397153015501">SendBuffer</a> (uint8_t const *buffer, size_t bufferSize, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context)=0
     summary: This method will use libcurl socket to write all the bytes from buffer.
     returnType: virtual CURLcode&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a6f47fb11d68a6e40de30cc1b172ef6a4">Shutdown</a> ()
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a6f47fb11d68a6e40de30cc1b172ef6a4">Shutdown</a> ()
     summary: Set the connection into an invalid and unusable state.
     returnType: virtual void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#acd1b6bbeb9cd1229c48d276064610458">IsShutdown</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#acd1b6bbeb9cd1229c48d276064610458">IsShutdown</a> () const
     summary: Check if the the connection was shut it down.
     returnType: bool&#160;
 - content: <a id="details"></a>
@@ -95,7 +95,7 @@ components:
   display: h3
 - declaration: std::string const  &amp; Azure::Core::Http::CurlConnection::GetConnectionKey()const inline override virtual
   languageId: cpp
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a1ec150945dfb9ad8831cec9c2d2d5109">Azure::Core::Http::CurlNetworkConnection</a>.</p><a id="a011c45dd8398536a6eda1dde6e8a4cb4"></a>
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a1ec150945dfb9ad8831cec9c2d2d5109">Azure::Core::Http::CurlNetworkConnection</a>.</p><a id="a011c45dd8398536a6eda1dde6e8a4cb4"></a>
 - section: IsExpired()
   display: h3
 - declaration: bool Azure::Core::Http::CurlConnection::IsExpired() inline override virtual
@@ -104,7 +104,7 @@ components:
   display: h4
 - parameters:
   - summary: <code>true</code> if this connection is considered expired; otherwise, <code>false</code>.
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a53e781c7fa6b1a875998f84c62581f05">Azure::Core::Http::CurlNetworkConnection</a>.</p><a id="a39ec5246e8cab60c9229acee7f2f8ce7"></a>
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a53e781c7fa6b1a875998f84c62581f05">Azure::Core::Http::CurlNetworkConnection</a>.</p><a id="a39ec5246e8cab60c9229acee7f2f8ce7"></a>
 - section: ReadFromSocket()
   display: h3
 - declaration: >-
@@ -126,7 +126,7 @@ components:
   display: h4
 - parameters:
   - summary: return the numbers of bytes pulled from socket. It can be less than what it was requested.
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a70019a25e47e49fb9b91c6d79d89cf89">Azure::Core::Http::CurlNetworkConnection</a>.</p><a id="a38965e729c4fb3fb234f1753562e7116"></a>
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a70019a25e47e49fb9b91c6d79d89cf89">Azure::Core::Http::CurlNetworkConnection</a>.</p><a id="a38965e729c4fb3fb234f1753562e7116"></a>
 - section: SendBuffer()
   display: h3
 - declaration: >-
@@ -152,9 +152,9 @@ components:
   display: h4
 - parameters:
   - summary: CURL_OK when response is sent successfully.
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#afbc09222e1cd35e2173b397153015501">Azure::Core::Http::CurlNetworkConnection</a>.</p><a id="a1ccde96315ab2370ced8bcfc87cc1556"></a>
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#afbc09222e1cd35e2173b397153015501">Azure::Core::Http::CurlNetworkConnection</a>.</p><a id="a1ccde96315ab2370ced8bcfc87cc1556"></a>
 - section: UpdateLastUsageTime()
   display: h3
 - declaration: void Azure::Core::Http::CurlConnection::UpdateLastUsageTime() inline override virtual
   languageId: cpp
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection#a33c469afabc2ff3dd0b096a03e0cb0cf">Azure::Core::Http::CurlNetworkConnection</a>.</p>
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml#a33c469afabc2ff3dd0b096a03e0cb0cf">Azure::Core::Http::CurlNetworkConnection</a>.</p>

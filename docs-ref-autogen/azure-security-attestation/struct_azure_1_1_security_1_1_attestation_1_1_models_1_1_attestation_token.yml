@@ -3,53 +3,53 @@ uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationToken%3C%2
 title: Azure::Security::Attestation::Models::AttestationToken&lt; T &gt; Struct Template Reference
 components:
 - content: >-
-    <p>An <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result">AttestationResult</a> reflects the result of an Attestation operation.  
-     <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#details">More...</a></p><p><code>#include &lt;attestation_client_models.hpp&gt;</code></p><p>This class inherits from:</p>
+    <p>An <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.yml">AttestationResult</a> reflects the result of an Attestation operation.  
+     <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#details">More...</a></p><p><code>#include &lt;attestation_client_models.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Security::Attestation::Models::AttestationTokenOptional< T >
-    href: struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_optional
+    href: struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_optional.yml
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#a55d7f78c68b365822b259df195cfc72e">RawToken</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#a55d7f78c68b365822b259df195cfc72e">RawToken</a>
     summary: The full RFC 7515 JWS/JWT token returned by the attestation service.
     returnType: >-
       <a id="a55d7f78c68b365822b259df195cfc72e"></a>
 
       std::string&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#ab7edd2077b96e639eccdbc6967f5b003">SignedElements</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#ab7edd2077b96e639eccdbc6967f5b003">SignedElements</a>
     summary: The elements of the raw token which will be signed by the Signature.
     returnType: >-
       <a id="ab7edd2077b96e639eccdbc6967f5b003"></a>
 
       std::string&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#a68f8f29ec39c3a0c784dc263919dc278">Signature</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#a68f8f29ec39c3a0c784dc263919dc278">Signature</a>
     summary: Signature (if present) for the attestation token.
     returnType: >-
       <a id="a68f8f29ec39c3a0c784dc263919dc278"></a>
 
       std::vector&lt; uint8_t &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#a66324834df099317011200c595240815">Header</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#a66324834df099317011200c595240815">Header</a>
     summary: RFC 7515 header properties.
     returnType: >-
       <a id="a66324834df099317011200c595240815"></a>
 
-      <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header">Models::AttestationTokenHeader</a>&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#aada06da3ee87c2ab8a14d4a6edf44ff4">ExpiresOn</a>
+      <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header.yml">Models::AttestationTokenHeader</a>&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#aada06da3ee87c2ab8a14d4a6edf44ff4">ExpiresOn</a>
     returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#a535fc5f62a6954258c17e1c48e0e6eea">IssuedOn</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#a535fc5f62a6954258c17e1c48e0e6eea">IssuedOn</a>
     returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#a1defcd017e98e367f1b74c0011a3f8c0">NotBefore</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#a1defcd017e98e367f1b74c0011a3f8c0">NotBefore</a>
     returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#a8b2b59c61e0fa3479b6a6a5f9b96299f">Issuer</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#a8b2b59c61e0fa3479b6a6a5f9b96299f">Issuer</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#a0d71239c0d9e9b4be64fb1cbced93407">UniqueIdentifier</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#a0d71239c0d9e9b4be64fb1cbced93407">UniqueIdentifier</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#a04dd0c53c5d662f2431b2e557f30e8c4">Subject</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#a04dd0c53c5d662f2431b2e557f30e8c4">Subject</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token#a2a7b9936e648caeaf98b190cd60a42ee">Audience</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml#a2a7b9936e648caeaf98b190cd60a42ee">Audience</a>
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_optional#ab614cd2aea3b9d388df52e51c5224203">Body</a>
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_optional.yml#ab614cd2aea3b9d388df52e51c5224203">Body</a>
     summary: The deserialized body of the attestation token.
     returnType: >-
       <a id="ab614cd2aea3b9d388df52e51c5224203"></a>
@@ -63,7 +63,7 @@ components:
 
     struct Azure::Security::Attestation::Models::AttestationToken&lt; T &gt;
   display: h3
-- content: <p>The fields in the <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result">AttestationResult</a> represent the claims in the <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token">AttestationToken</a> returned by the attestation service.</p><p>When the attestation service returns a model type to the client, it embeds the response in an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token">AttestationToken</a>, which is an <a href="https://www.rfc-editor.org/rfc/rfc7519.html">RFC7519 JSON Web Token</a>. The <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token">AttestationToken</a> type represents both the token and the embedded model type. In this scenario, the <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token">AttestationToken</a> template will be specialized on the model type (In other words, <code><a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token">AttestationToken</a>&lt;ModelType&gt;</code>).</p><p>There is another use for an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token">AttestationToken</a> object. That's when the model type for the attestation token is unknown, or when it is not meaningful in context.</p><p>For example, when the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client#a70ce6c8b9e39e1115e8c1885b15db5ea">AttestationAdministrationClient::SetAttestationPolicy</a> API returns, the resulting <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_policy_result">PolicyResult</a> model type contains a PolicyTokenHash field. This field consists of the SHA256 hash of the policy document sent to the attestation service.</p><p>In order to verify that the attestation service correctly received the attestation policy sent by the client, the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client#a7ebfe672a3de7ff6a77c882e0d615551">AttestationAdministrationClient::CreateAttestationPolicyToken</a> API can be used to create an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token">AttestationToken</a> object which is not specialized on any type (<code><a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token">AttestationToken</a>&lt;&gt;</code>). The RawToken field in that can be used to calculate the hash which was sent to the service.</p><p>Similarly, the <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options">AttestationTokenValidationOptions</a> object has a TokenValidationCallback method. This callback is called to allow the client to perform additional validations of the attestation token beyond those normally performed by the attestation service. This callback should not know the model type associated with the token, so it receives an AttestationToken&lt;&gt; object. </p>
+- content: <p>The fields in the <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_result.yml">AttestationResult</a> represent the claims in the <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml">AttestationToken</a> returned by the attestation service.</p><p>When the attestation service returns a model type to the client, it embeds the response in an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml">AttestationToken</a>, which is an <a href="https://www.rfc-editor.org/rfc/rfc7519.html">RFC7519 JSON Web Token</a>. The <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml">AttestationToken</a> type represents both the token and the embedded model type. In this scenario, the <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml">AttestationToken</a> template will be specialized on the model type (In other words, <code><a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml">AttestationToken</a>&lt;ModelType&gt;</code>).</p><p>There is another use for an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml">AttestationToken</a> object. That's when the model type for the attestation token is unknown, or when it is not meaningful in context.</p><p>For example, when the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client.yml#a70ce6c8b9e39e1115e8c1885b15db5ea">AttestationAdministrationClient::SetAttestationPolicy</a> API returns, the resulting <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_policy_result.yml">PolicyResult</a> model type contains a PolicyTokenHash field. This field consists of the SHA256 hash of the policy document sent to the attestation service.</p><p>In order to verify that the attestation service correctly received the attestation policy sent by the client, the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client.yml#a7ebfe672a3de7ff6a77c882e0d615551">AttestationAdministrationClient::CreateAttestationPolicyToken</a> API can be used to create an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml">AttestationToken</a> object which is not specialized on any type (<code><a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token.yml">AttestationToken</a>&lt;&gt;</code>). The RawToken field in that can be used to calculate the hash which was sent to the service.</p><p>Similarly, the <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.yml">AttestationTokenValidationOptions</a> object has a TokenValidationCallback method. This callback is called to allow the client to perform additional validations of the attestation token beyond those normally performed by the attestation service. This callback should not know the model type associated with the token, so it receives an AttestationToken&lt;&gt; object. </p>
 - section: Member Data Documentation
   display: h2
 - content: <a id="a2a7b9936e648caeaf98b190cd60a42ee"></a>

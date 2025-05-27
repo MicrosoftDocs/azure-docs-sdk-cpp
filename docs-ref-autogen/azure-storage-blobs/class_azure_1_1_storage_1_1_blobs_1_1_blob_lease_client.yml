@@ -3,40 +3,40 @@ uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobLeaseClient
 title: Azure::Storage::Blobs::BlobLeaseClient Class Reference
 components:
 - content: >-
-    <p><a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client">BlobLeaseClient</a> allows you to manipulate Azure Storage leases on containers and blobs.  
+    <p><a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml">BlobLeaseClient</a> allows you to manipulate Azure Storage leases on containers and blobs.  
 
     </p><p><code>#include &lt;blob_lease_client.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#a12704f14f3592bb914b74a5af3775873">BlobLeaseClient</a> (<a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client">BlobClient</a> blobClient, std::string leaseId)
-    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client">BlobLeaseClient</a>.
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml#a12704f14f3592bb914b74a5af3775873">BlobLeaseClient</a> (<a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a> blobClient, std::string leaseId)
+    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml">BlobLeaseClient</a>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#a421b7997467d35e4d5a7e88b6d7a63fa">BlobLeaseClient</a> (<a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client">BlobContainerClient</a> blobContainerClient, std::string leaseId)
-    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client">BlobLeaseClient</a>.
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml#a421b7997467d35e4d5a7e88b6d7a63fa">BlobLeaseClient</a> (<a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.yml">BlobContainerClient</a> blobContainerClient, std::string leaseId)
+    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml">BlobLeaseClient</a>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#a6b4f7ffb5d7de22d9138efa62d69cdad">GetLeaseId</a> ()
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml#a6b4f7ffb5d7de22d9138efa62d69cdad">GetLeaseId</a> ()
     summary: Get lease id of this lease client.
     returnType: std::string&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#a98526574d5ca310819a410a43c43dd3b">Acquire</a> (std::chrono::seconds duration, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_acquire_lease_options">AcquireLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_acquire_lease_options">AcquireLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml#a98526574d5ca310819a410a43c43dd3b">Acquire</a> (std::chrono::seconds duration, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_acquire_lease_options.yml">AcquireLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_acquire_lease_options.yml">AcquireLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
     summary: Acquires a lease on the blob or blob container.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_acquire_lease_result">Models::AcquireLeaseResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#ad43608d8cebd4206bd63ae06cbf6c70a">Renew</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_renew_lease_options">RenewLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_renew_lease_options">RenewLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_acquire_lease_result.yml">Models::AcquireLeaseResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml#ad43608d8cebd4206bd63ae06cbf6c70a">Renew</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_renew_lease_options.yml">RenewLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_renew_lease_options.yml">RenewLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
     summary: Renews the blob or blob container's previously-acquired lease.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_renew_lease_result">Models::RenewLeaseResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#a56c33e72af151002ac5650808888a274">Release</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_release_lease_options">ReleaseLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_release_lease_options">ReleaseLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_renew_lease_result.yml">Models::RenewLeaseResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml#a56c33e72af151002ac5650808888a274">Release</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_release_lease_options.yml">ReleaseLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_release_lease_options.yml">ReleaseLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
     summary: Releases the blob or blob container's previously-acquired lease.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_release_lease_result">Models::ReleaseLeaseResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#a5c8d12f23769f1e6a7de73a19b0989d3">Change</a> (const std::string &amp;proposedLeaseId, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_change_lease_options">ChangeLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_change_lease_options">ChangeLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_release_lease_result.yml">Models::ReleaseLeaseResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml#a5c8d12f23769f1e6a7de73a19b0989d3">Change</a> (const std::string &amp;proposedLeaseId, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_change_lease_options.yml">ChangeLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_change_lease_options.yml">ChangeLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
     summary: Changes the lease of an active lease.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_change_lease_result">Models::ChangeLeaseResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#a5687c70b70270a7ae72a79f75482459b">Break</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_break_lease_options">BreakLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_break_lease_options">BreakLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_change_lease_result.yml">Models::ChangeLeaseResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml#a5687c70b70270a7ae72a79f75482459b">Break</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_break_lease_options.yml">BreakLeaseOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_break_lease_options.yml">BreakLeaseOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context())
     summary: Breaks the previously-acquired lease.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_break_lease_result">Models::BreakLeaseResult</a> &gt;&#160;
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_break_lease_result.yml">Models::BreakLeaseResult</a> &gt;&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client#a131166e0b4234e45be82c6014a44c82c">CreateUniqueLeaseId</a> ()
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml#a131166e0b4234e45be82c6014a44c82c">CreateUniqueLeaseId</a> ()
     summary: Gets a unique lease ID.
     returnType: static std::string&#160;
 - section: Static Public Attributes
@@ -62,7 +62,7 @@ components:
   display: h4
 - parameters:
   - name: blobClient
-    summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client">BlobClient</a> representing the blob being leased.
+    summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a> representing the blob being leased.
   - name: leaseId
     summary: A lease ID. This is not required for break operation.
 - content: <a id="a421b7997467d35e4d5a7e88b6d7a63fa"></a>
@@ -77,7 +77,7 @@ components:
   display: h4
 - parameters:
   - name: blobContainerClient
-    summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client">BlobContainerClient</a> representing the blob container being leased.
+    summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client.yml">BlobContainerClient</a> representing the blob container being leased.
   - name: leaseId
     summary: A lease ID. This is not required for break operation.
 - section: Member Function Documentation
@@ -148,7 +148,7 @@ components:
 - section: Remarks
   display: h4
 - parameters:
-  - summary: The current <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client">BlobLeaseClient</a> becomes invalid if this operation succeeds.
+  - summary: The current <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_lease_client.yml">BlobLeaseClient</a> becomes invalid if this operation succeeds.
 - content: <a id="a131166e0b4234e45be82c6014a44c82c"></a>
 - section: CreateUniqueLeaseId()
   display: h3

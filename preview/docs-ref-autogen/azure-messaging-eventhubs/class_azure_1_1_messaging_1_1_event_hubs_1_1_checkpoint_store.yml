@@ -3,43 +3,43 @@ uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3ACheckpointStore
 title: Azure::Messaging::EventHubs::CheckpointStore Class Reference
 components:
 - content: >-
-    <p><a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a> is used by multiple consumers to coordinate progress and ownership for partitions.  
+    <p><a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.yml">CheckpointStore</a> is used by multiple consumers to coordinate progress and ownership for partitions.  
 
     </p><p><code>#include &lt;checkpoint_store.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: CheckpointStore (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a> const &amp;other)=default
-    summary: Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a>.
+  - declaration: CheckpointStore (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.yml">CheckpointStore</a> const &amp;other)=default
+    summary: Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.yml">CheckpointStore</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.yml">CheckpointStore</a>.
     returnType: >-
       <a id="a4a81493600a94c4bd65f8abfb855ab46"></a>
 
       &#160;
-  - declaration: operator= (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a> const &amp;other)=default
-    summary: Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a>.
+  - declaration: operator= (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.yml">CheckpointStore</a> const &amp;other)=default
+    summary: Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.yml">CheckpointStore</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.yml">CheckpointStore</a>.
     returnType: >-
       <a id="af6871595f4dc5b8fb80857554b79eae8"></a>
 
-      <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a> &amp;&#160;
-  - declaration: ClaimOwnership (std::vector&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership">Models::Ownership</a> &gt; const &amp;partitionOwnership, Core::Context const &amp;context={})=0
+      <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.yml">CheckpointStore</a> &amp;&#160;
+  - declaration: ClaimOwnership (std::vector&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership.yml">Models::Ownership</a> &gt; const &amp;partitionOwnership, Core::Context const &amp;context={})=0
     summary: ClaimOwnership attempts to claim ownership of the partitions in partitionOwnership and returns the actual partitions that were claimed.
     returnType: >-
       <a id="ab8d021c2173bc274362860aea2426aa1"></a>
 
-      virtual std::vector&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership">Models::Ownership</a> &gt;&#160;
+      virtual std::vector&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership.yml">Models::Ownership</a> &gt;&#160;
   - declaration: ListCheckpoints (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={})=0
     summary: ListCheckpoints lists all the available checkpoints.
     returnType: >-
       <a id="a330df4dead15ee9809bde91155b1977f"></a>
 
-      virtual std::vector&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_checkpoint">Models::Checkpoint</a> &gt;&#160;
+      virtual std::vector&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_checkpoint.yml">Models::Checkpoint</a> &gt;&#160;
   - declaration: ListOwnership (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={})=0
     summary: ListOwnership lists all ownerships.
     returnType: >-
       <a id="afd4fb7368b99a9b73a49c010b86cc332"></a>
 
-      virtual std::vector&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership">Models::Ownership</a> &gt;&#160;
-  - declaration: UpdateCheckpoint (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_checkpoint">Models::Checkpoint</a> const &amp;checkpoint, Core::Context const &amp;context={})=0
+      virtual std::vector&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership.yml">Models::Ownership</a> &gt;&#160;
+  - declaration: UpdateCheckpoint (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_checkpoint.yml">Models::Checkpoint</a> const &amp;checkpoint, Core::Context const &amp;context={})=0
     summary: UpdateCheckpoint updates a specific checkpoint with a sequence and offset.
     returnType: >-
       <a id="a057b72aa0a8fc9918ed8212ca7e53b96"></a>

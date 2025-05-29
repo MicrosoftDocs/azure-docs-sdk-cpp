@@ -84,6 +84,11 @@ components:
 - section: Detailed Description
   display: h2
 - content: template&lt;class T&gt;class Azure::Nullable&lt; T &gt;
+- section: Template Parameters
+  display: h4
+- parameters:
+  - name: T
+    summary: A type to represent contained values.
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - content: <a id="ab1032d685f3d89d91986c3896b88803d"></a>
@@ -269,6 +274,11 @@ components:
 - content: template&lt;class T &gt;template&lt;class U  = T, typename std::enable_if&lt; !std::is_same&lt;<a href="class_azure_1_1_nullable.yml">Nullable</a>, typename std::remove_cv&lt; typename std::remove_reference&lt; U &gt;::type &gt;::type &gt;::value &amp;&amp;!(std::is_scalar&lt; U &gt;::value &amp;&amp;std::is_same&lt; T, typename std::decay&lt; U &gt;::type &gt;::value) &amp;&amp;std::is_constructible&lt; T, U &gt;::value &amp;&amp;std::is_assignable&lt; T &amp;, U &gt;::value, int &gt;::type  = 0&gt;
 - declaration: Nullable &amp; Azure::Nullable&lt; T &gt;::operator=(U &amp;&amp;&#160;other) inline noexcept
   languageId: cpp
+- section: Template Parameters
+  display: h4
+- parameters:
+  - name: U
+    summary: Type of <code>other</code>.
 - section: Parameters
   display: h4
 - parameters:

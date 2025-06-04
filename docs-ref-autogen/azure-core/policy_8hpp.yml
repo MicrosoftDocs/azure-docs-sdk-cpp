@@ -1,0 +1,52 @@
+### YamlMime:Reference
+uid: policy.hpp%20File
+title: policy.hpp File Reference
+components:
+- content: >-
+    <p>HTTP transport policies, and their options.  
+
+    <a href="policy_8hpp.yml#details">More...</a></p>#include &quot;azure/core/case_insensitive_containers.hpp&quot;#include &quot;azure/core/context.hpp&quot;#include &quot;azure/core/credentials/credentials.hpp&quot;#include &quot;azure/core/dll_import_export.hpp&quot;#include &quot;azure/core/http/http.hpp&quot;#include &quot;azure/core/http/transport.hpp&quot;#include &quot;azure/core/internal/http/http_sanitizer.hpp&quot;#include &quot;azure/core/uuid.hpp&quot;#include &lt;atomic&gt;#include &lt;chrono&gt;#include &lt;cstddef&gt;#include &lt;map&gt;#include &lt;memory&gt;#include &lt;mutex&gt;#include &lt;set&gt;#include &lt;shared_mutex&gt;#include &lt;string&gt;#include &lt;utility&gt;#include &lt;vector&gt;<p><a href="policy_8hpp_source.html">Go to the source code of this file.</a></p>
+- section: Classes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_telemetry_options.yml">Azure::Core::Http::Policies::TelemetryOptions</a>
+    summary: Telemetry options, used to configure telemetry parameters.  <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_telemetry_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.yml">Azure::Core::Http::Policies::RetryOptions</a>
+    summary: The set of options that can be specified to influence how retry attempts are made, and a failure is eligible to be retried.  <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_log_options.yml">Azure::Core::Http::Policies::LogOptions</a>
+    summary: Log options that parameterize the information being logged.  <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_log_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.yml">Azure::Core::Http::Policies::TransportOptions</a>
+    summary: HTTP transport options parameterize the HTTP transport adapter being used.  <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.yml">Azure::Core::Http::Policies::HttpPolicy</a>
+    summary: HTTP policy base class.  <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy.yml">Azure::Core::Http::Policies::NextHttpPolicy</a>
+    summary: The next HTTP policy in the stack sequence of policies.  <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy.yml#details">More...</a>
+    returnType: class &#160;
+- section: Namespaces
+  display: h2
+- apiList:
+  - declaration: <a href="namespace_azure.yml">Azure</a>
+    summary: Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.
+    returnType: namespace &#160;
+- section: Functions
+  display: h2
+- apiList:
+  - declaration: <a href="policy_8hpp.yml#a8fdb3bdd9092e835bb253e12f13a5042">AzureSdkGetCustomHttpTransport</a> ()
+    returnType: std::shared_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">Azure::Core::Http::HttpTransport</a> &gt;&#160;
+- section: Function Documentation
+  display: h2
+- content: <a id="a8fdb3bdd9092e835bb253e12f13a5042"></a>
+- section: AzureSdkGetCustomHttpTransport()
+  display: h3
+- declaration: std::shared_ptr&lt; Azure::Core::Http::HttpTransport &gt; AzureSdkGetCustomHttpTransport()
+  languageId: cpp
+- content: <p>A function that should be implemented and linked to the end-user application in order to override an HTTP transport implementation provided by <a href="namespace_azure.yml">Azure</a> SDK with custom implementation.</p>
+- section: Note
+  display: h4
+- parameters:
+  - summary: See <a href="https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core_1.15.0/doc/HttpTransportAdapter.md#building-a-custom-http-transport-adapter">https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core_1.15.0/doc/HttpTransportAdapter.md#building-a-custom-http-transport-adapter</a>.

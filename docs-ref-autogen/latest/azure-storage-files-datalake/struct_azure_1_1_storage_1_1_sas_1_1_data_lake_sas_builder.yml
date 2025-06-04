@@ -1,33 +1,34 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ASas%3A%3ADataLakeSasBuilder
 title: Azure::Storage::Sas::DataLakeSasBuilder Struct Reference
+xrefType: Struct
 components:
 - content: >-
-    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.html">DataLakeSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage DataLake filesystem or path.  
+    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml">DataLakeSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage DataLake filesystem or path.  
 
-    </p><p><code>#include &lt;<a href="datalake__sas__builder_8hpp_source.html">datalake_sas_builder.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;datalake_sas_builder.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.html#a8932fae3c57d972ebe8994288c125e7b">SetPermissions</a> (DataLakeFileSystemSasPermissions permissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#a8932fae3c57d972ebe8994288c125e7b">SetPermissions</a> (DataLakeFileSystemSasPermissions permissions)
     summary: Sets the permissions for the filesystem SAS.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.html#a381ab2db0ab99598234c5f0d76615b07">SetPermissions</a> (DataLakeSasPermissions permissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#a381ab2db0ab99598234c5f0d76615b07">SetPermissions</a> (DataLakeSasPermissions permissions)
     summary: Sets the permissions for the file SAS or directory SAS.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.html#ae3530ba1ed0bbea5e674a06db9733eb1">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#ae3530ba1ed0bbea5e674a06db9733eb1">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
     summary: Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.html#aa1685fb6213ae4eacf7dc9db8f5538fb">SetPermissions</a> (std::string rawPermissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#aa1685fb6213ae4eacf7dc9db8f5538fb">SetPermissions</a> (std::string rawPermissions)
     summary: Sets the permissions for the SAS using a raw permissions string.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.html#ab206e3b4d835937e9d5392b34ddcbca6">GenerateSasToken</a> (const Files::DataLake::Models::UserDelegationKey &amp;userDelegationKey, const std::string &amp;accountName)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#ab206e3b4d835937e9d5392b34ddcbca6">GenerateSasToken</a> (const Files::DataLake::Models::UserDelegationKey &amp;userDelegationKey, const std::string &amp;accountName)
     summary: Uses an account's user delegation key to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.html#aeca98f78e071e114a02c14bccedc316a">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#aeca98f78e071e114a02c14bccedc316a">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
     summary: For debugging purposes only.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.html#a5eae8f23ff939b4094148686fa9d382f">GenerateSasStringToSign</a> (const Blobs::Models::UserDelegationKey &amp;userDelegationKey, const std::string &amp;accountName)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#a5eae8f23ff939b4094148686fa9d382f">GenerateSasStringToSign</a> (const Blobs::Models::UserDelegationKey &amp;userDelegationKey, const std::string &amp;accountName)
     summary: For debugging purposes only.
     returnType: std::string&#160;
 - section: Public Attributes
@@ -35,65 +36,126 @@ components:
 - apiList:
   - declaration: Protocol
     summary: The optional signed protocol field specifies the protocol permitted for a request made with the SAS.
-    returnType: SasProtocol&#160;
+    returnType: >-
+      <a id="aeffacd6c6c96c7d4ebb4b2c614df6b53"></a>
+
+      SasProtocol&#160;
   - declaration: StartsOn
     summary: Optionally specify the time at which the shared access signature becomes valid. This timestamp will be truncated to second.
-    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+    returnType: >-
+      <a id="ae08470a6858af54a59c418c4441086e9"></a>
+
+      Azure::Nullable&lt; Azure::DateTime &gt;&#160;
   - declaration: ExpiresOn
     summary: The time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. This timestamp will be truncated to second.
-    returnType: Azure::DateTime&#160;
+    returnType: >-
+      <a id="a77334f89d5dcf05b705b253ea0f0597d"></a>
+
+      Azure::DateTime&#160;
   - declaration: IPRange
     summary: Specifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+    returnType: >-
+      <a id="a3b3fe41170e99fafdb5412c691019b27"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
   - declaration: Identifier
     summary: An optional unique value up to 64 characters in length that correlates to an access policy specified for the filesystem.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="af07cedb7e7998810aa9b6e69333879cf"></a>
+
+      std::string&#160;
   - declaration: FileSystemName
     summary: The name of the filesystem being made accessible.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a20bac1ce09e801dfee2c41667e0c6dcf"></a>
+
+      std::string&#160;
   - declaration: Path
     summary: The name of the path being made accessible, or empty for a filesystem SAS.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a7d444b4a8131677b9bed2a143a5455df"></a>
+
+      std::string&#160;
   - declaration: IsDirectory = false
     summary: Defines whether or not the Path is a directory. If this value is set to true, the Path is a directory for a directory SAS. If set to false or default, the Path is a file for a file SAS.
-    returnType: bool&#160;
+    returnType: >-
+      <a id="ab937bcfbf57115a3ffc94952e8190637"></a>
+
+      bool&#160;
   - declaration: DirectoryDepth
     summary: Required when Resource is set to Directory to indicate the depth of the directory specified in the canonicalized resource field of the string-to-sign to indicate the depth of the directory specified in the canonicalized resource field of the string-to-sign. This is only used for user delegation SAS.
-    returnType: Azure::Nullable&lt; int32_t &gt;&#160;
+    returnType: >-
+      <a id="af34b393553fad33994374cf409377612"></a>
+
+      Azure::Nullable&lt; int32_t &gt;&#160;
   - declaration: Resource
     summary: Specifies which resources are accessible via the shared access signature.
-    returnType: DataLakeSasResource&#160;
+    returnType: >-
+      <a id="a379ce9672920438040a54132cfd92fb3"></a>
+
+      DataLakeSasResource&#160;
   - declaration: CacheControl
     summary: Override the value returned for Cache-Control response header.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="abc9f71994fc69b97315df216fab560aa"></a>
+
+      std::string&#160;
   - declaration: ContentDisposition
     summary: Override the value returned for Content-Disposition response header.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="af3b7a74db6d6366aa5313099e39e7715"></a>
+
+      std::string&#160;
   - declaration: ContentEncoding
     summary: Override the value returned for Content-Encoding response header.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="aaaac0466c82c59da39d64c5312d821fc"></a>
+
+      std::string&#160;
   - declaration: ContentLanguage
     summary: Override the value returned for Content-Language response header.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a12e967c737c6d8468511c4c8195eabea"></a>
+
+      std::string&#160;
   - declaration: ContentType
     summary: Override the value returned for Content-Type response header.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a736a03921eb7b5a0684c9e903e5e22f2"></a>
+
+      std::string&#160;
   - declaration: PreauthorizedAgentObjectId
     summary: This value will be used for the AAD Object ID of a user authorized by the owner of the User Delegation Key to perform the action granted by the SAS. The Azure Storage service will ensure that the owner of the user delegation key has the required permissions before granting access. No additional permission check for the user specified in this value will be performed. This cannot be used in conjuction with AgentObjectId. This is only used with generating User Delegation SAS.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a1db41e19501aa7b68f029ffcf4dcc589"></a>
+
+      std::string&#160;
   - declaration: AgentObjectId
     summary: This value will be used for the AAD Object ID of a user authorized by the owner of the User Delegation Key to perform the action granted by the SAS. The Azure Storage service will ensure that the owner of the user delegation key has the required permissions before granting access. The Azure Storage Service will perform an additional POSIX ACL check to determine if the user is authorized to perform the requested operation. This cannot be used in conjuction with PreauthorizedAgentObjectId. This is only used with generating User Delegation SAS.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a26f58bf45c290f332d9be6b2bec6ecef"></a>
+
+      std::string&#160;
   - declaration: CorrelationId
     summary: This value will be used for correlating the storage audit logs with the audit logs used by the principal generating and distributing SAS. This is only used for User Delegation SAS.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="af1a641822f03b39cdb97dc2810b21d3f"></a>
+
+      std::string&#160;
   - declaration: EncryptionScope
     summary: Optional encryption scope to use when sending requests authorized with this SAS url.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a237ff0435a4641f6a2f3d6009a04fd0b"></a>
+
+      std::string&#160;
 - section: Member Function Documentation
   display: h2
+- content: <a id="a5eae8f23ff939b4094148686fa9d382f"></a>
 - section: GenerateSasStringToSign() [1/2]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ADataLakeSasBuilder.GenerateSasStringToSign%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::DataLakeSasBuilder.GenerateSasStringToSign() [1/2]
 - declaration: >-
     std::string Azure::Storage::Sas::DataLakeSasBuilder::GenerateSasStringToSign(const Blobs::Models::UserDelegationKey &amp;&#160;userDelegationKey,
                                                                                  const std::string &amp;&#160;                     accountName&#160;      
@@ -110,8 +172,12 @@ components:
   display: h4
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
+- content: <a id="aeca98f78e071e114a02c14bccedc316a"></a>
 - section: GenerateSasStringToSign() [2/2]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ADataLakeSasBuilder.GenerateSasStringToSign%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::DataLakeSasBuilder.GenerateSasStringToSign() [2/2]
 - declaration: std::string Azure::Storage::Sas::DataLakeSasBuilder::GenerateSasStringToSign(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters
@@ -123,8 +189,12 @@ components:
   display: h4
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
+- content: <a id="ab206e3b4d835937e9d5392b34ddcbca6"></a>
 - section: GenerateSasToken() [1/2]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ADataLakeSasBuilder.GenerateSasToken%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::DataLakeSasBuilder.GenerateSasToken() [1/2]
 - declaration: >-
     std::string Azure::Storage::Sas::DataLakeSasBuilder::GenerateSasToken(const Files::DataLake::Models::UserDelegationKey &amp;&#160;userDelegationKey,
                                                                           const std::string &amp;&#160;                               accountName&#160;      
@@ -141,8 +211,12 @@ components:
   display: h4
 - parameters:
   - summary: The SAS query parameters used for authenticating requests.
+- content: <a id="ae3530ba1ed0bbea5e674a06db9733eb1"></a>
 - section: GenerateSasToken() [2/2]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ADataLakeSasBuilder.GenerateSasToken%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::DataLakeSasBuilder.GenerateSasToken() [2/2]
 - declaration: std::string Azure::Storage::Sas::DataLakeSasBuilder::GenerateSasToken(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters
@@ -154,8 +228,12 @@ components:
   display: h4
 - parameters:
   - summary: The SAS query parameters used for authenticating requests.
+- content: <a id="a8932fae3c57d972ebe8994288c125e7b"></a>
 - section: SetPermissions() [1/3]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ADataLakeSasBuilder.SetPermissions%28%29%20%5B1%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::DataLakeSasBuilder.SetPermissions() [1/3]
 - declaration: void Azure::Storage::Sas::DataLakeSasBuilder::SetPermissions(DataLakeFileSystemSasPermissions&#160;permissions)
   languageId: cpp
 - section: Parameters
@@ -163,8 +241,12 @@ components:
 - parameters:
   - name: permissions
     summary: The allowed permissions.
+- content: <a id="a381ab2db0ab99598234c5f0d76615b07"></a>
 - section: SetPermissions() [2/3]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ADataLakeSasBuilder.SetPermissions%28%29%20%5B2%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::DataLakeSasBuilder.SetPermissions() [2/3]
 - declaration: void Azure::Storage::Sas::DataLakeSasBuilder::SetPermissions(DataLakeSasPermissions&#160;permissions)
   languageId: cpp
 - section: Parameters
@@ -172,8 +254,12 @@ components:
 - parameters:
   - name: permissions
     summary: The allowed permissions.
+- content: <a id="aa1685fb6213ae4eacf7dc9db8f5538fb"></a>
 - section: SetPermissions() [3/3]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ADataLakeSasBuilder.SetPermissions%28%29%20%5B3%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::DataLakeSasBuilder.SetPermissions() [3/3]
 - declaration: void Azure::Storage::Sas::DataLakeSasBuilder::SetPermissions(std::string&#160;rawPermissions) inline
   languageId: cpp
 - section: Parameters

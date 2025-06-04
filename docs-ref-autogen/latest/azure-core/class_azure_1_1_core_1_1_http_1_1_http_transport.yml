@@ -1,55 +1,71 @@
 ### YamlMime:Reference
 uid: Azure%3A%3ACore%3A%3AHttp%3A%3AHttpTransport
 title: Azure::Core::Http::HttpTransport Class Reference
+xrefType: Class
 components:
 - content: >-
     <p>Base class for all HTTP transport implementations.  
 
-    </p><p><code>#include &lt;<a href="transport_8hpp_source.html">transport.hpp</a>&gt;</code></p><p>This class is inherited by:</p>
+    </p><p><code>#include &lt;transport.hpp&gt;</code></p><p>This class is inherited by:</p>
 - linkList:
   - name: Azure::Core::Http::CurlTransport
-    href: class_azure_1_1_core_1_1_http_1_1_curl_transport.html
+    href: class_azure_1_1_core_1_1_http_1_1_curl_transport.yml
   - name: Azure::Core::Http::WinHttpTransport
-    href: class_azure_1_1_core_1_1_http_1_1_win_http_transport.html
+    href: class_azure_1_1_core_1_1_http_1_1_win_http_transport.yml
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.html">Context</a> const &amp;context)=0
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context)=0
     summary: Send an HTTP request over the wire.
-    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a4c0b2905624416efe1f77e6ef244c0e9">~HttpTransport</a> ()
+    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a4c0b2905624416efe1f77e6ef244c0e9">~HttpTransport</a> ()
     summary: Destructs <code>HttpTransport</code>.
     returnType: virtual&#160;
 - section: Protected Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
     summary: Constructs a default instance of <code>HttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#af7fadcff099af67a5e3732642cc42c78">HttpTransport</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#af7fadcff099af67a5e3732642cc42c78">HttpTransport</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;other)=default
     summary: Constructs <code>HttpTransport</code> by copying another instance of <code>HttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a0c6eb7479b5ef2e7359ec5f42fc404b8">HttpTransport</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;&amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a0c6eb7479b5ef2e7359ec5f42fc404b8">HttpTransport</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;&amp;other)=default
     summary: Constructs <code>HttpTransport</code> by moving another instance of <code>HttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a44e0b2695aa316451ffe3c68e5e3ee30">operator=</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a44e0b2695aa316451ffe3c68e5e3ee30">operator=</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;other)=default
     summary: Assigns <code>HttpTransport</code> to another instance of <code>HttpTransport</code>.
-    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;&#160;
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;&#160;
   - declaration: HasWebSocketSupport () const
-    summary: Returns true if the <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> supports WebSockets (the ability to communicate bidirectionally on the TCP connection used by the HTTP transport).
-    returnType: virtual bool&#160;
+    summary: Returns true if the <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> supports WebSockets (the ability to communicate bidirectionally on the TCP connection used by the HTTP transport).
+    returnType: >-
+      <a id="a8b47565baf7018fdfcad475b9c5d6615"></a>
+
+      virtual bool&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="a4c0b2905624416efe1f77e6ef244c0e9"></a>
 - section: ~HttpTransport()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AHttpTransport.~HttpTransport%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::HttpTransport.~HttpTransport()
 - declaration: virtual Azure::Core::Http::HttpTransport::~HttpTransport() inline virtual
   languageId: cpp
+- content: <a id="a76c34f294158836f72741cc90e4b480f"></a>
 - section: HttpTransport() [1/3]
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AHttpTransport.HttpTransport%28%29%20%5B1%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Core::Http::HttpTransport.HttpTransport() [1/3]
 - declaration: Azure::Core::Http::HttpTransport::HttpTransport() protected default
   languageId: cpp
+- content: <a id="af7fadcff099af67a5e3732642cc42c78"></a>
 - section: HttpTransport() [2/3]
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AHttpTransport.HttpTransport%28%29%20%5B2%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Core::Http::HttpTransport.HttpTransport() [2/3]
 - declaration: Azure::Core::Http::HttpTransport::HttpTransport(const HttpTransport &amp;&#160;other) protected default
   languageId: cpp
 - section: Parameters
@@ -57,8 +73,12 @@ components:
 - parameters:
   - name: other
     summary: An instance to copy.
+- content: <a id="a0c6eb7479b5ef2e7359ec5f42fc404b8"></a>
 - section: HttpTransport() [3/3]
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AHttpTransport.HttpTransport%28%29%20%5B3%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Core::Http::HttpTransport.HttpTransport() [3/3]
 - declaration: Azure::Core::Http::HttpTransport::HttpTransport(HttpTransport &amp;&amp;&#160;other) protected default
   languageId: cpp
 - section: Parameters
@@ -68,8 +88,12 @@ components:
     summary: An instance to move in.
 - section: Member Function Documentation
   display: h2
+- content: <a id="a44e0b2695aa316451ffe3c68e5e3ee30"></a>
 - section: operator=()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AHttpTransport.operator%3D%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::HttpTransport.operator=()
 - declaration: HttpTransport &amp; Azure::Core::Http::HttpTransport::operator=(const HttpTransport &amp;&#160;other) protected default
   languageId: cpp
 - section: Parameters
@@ -81,8 +105,12 @@ components:
   display: h4
 - parameters:
   - summary: A reference to this instance.
+- content: <a id="aab0a38b3e67079a9ede743c3e8de909d"></a>
 - section: Send()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AHttpTransport.Send%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::HttpTransport.Send()
 - declaration: >-
     virtual std::unique_ptr&lt; RawResponse &gt; Azure::Core::Http::HttpTransport::Send(Request &amp;&#160;      request,
                                                                                   Context const &amp;&#160;context&#160;
@@ -92,7 +120,7 @@ components:
   display: h4
 - parameters:
   - name: request
-    summary: An <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Azure::Core::Http::Request</a> to send.
+    summary: An <a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Azure::Core::Http::Request</a> to send.
   - name: context
     summary: A context to control the request lifetime.
-- content: <p>Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.html#aa6a92d65b363e50a2293b6bada21ef3e">Azure::Core::Http::CurlTransport</a>, and <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a21027372be541ce167ee62b06e566402">Azure::Core::Http::WinHttpTransport</a>.</p>
+- content: <p>Implemented in <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.yml#aa6a92d65b363e50a2293b6bada21ef3e">Azure::Core::Http::CurlTransport</a>, and <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.yml#a21027372be541ce167ee62b06e566402">Azure::Core::Http::WinHttpTransport</a>.</p>

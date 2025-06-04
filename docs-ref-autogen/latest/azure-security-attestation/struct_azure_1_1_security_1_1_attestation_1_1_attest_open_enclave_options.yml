@@ -1,33 +1,50 @@
 ### YamlMime:Reference
 uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestOpenEnclaveOptions
 title: Azure::Security::Attestation::AttestOpenEnclaveOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
-    <p>Parameters sent to the attestation service for the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html#a8b1339a75a29d04a11748b2b1e0ea0eb">AttestationClient::AttestOpenEnclave</a> API.  
+    <p>Parameters sent to the attestation service for the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.yml#a8b1339a75a29d04a11748b2b1e0ea0eb">AttestationClient::AttestOpenEnclave</a> API.  
 
-    </p><p><code>#include &lt;<a href="attestation__client__options_8hpp_source.html">attestation_client_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;attestation_client_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.html#abedf52b79da09143b5151a4b049503de">RunTimeData</a> {}
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.yml#abedf52b79da09143b5151a4b049503de">RunTimeData</a> {}
     summary: Data created dynamically within the enclave.
-    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_data.html">AttestationData</a> &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.html#a3437007d77eb06a5b8897a4c17262bab">InitTimeData</a> {}
+    returnType: >-
+      <a id="abedf52b79da09143b5151a4b049503de"></a>
+
+      Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_data.yml">AttestationData</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.yml#a3437007d77eb06a5b8897a4c17262bab">InitTimeData</a> {}
     summary: Data created when the enclave was created. Not supported on Coffeelake processors.
-    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_data.html">AttestationData</a> &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.html#a8a3fe8d636883184d2a49fa04baf5b4e">Nonce</a> {}
+    returnType: >-
+      <a id="a3437007d77eb06a5b8897a4c17262bab"></a>
+
+      Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_data.yml">AttestationData</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.yml#a8a3fe8d636883184d2a49fa04baf5b4e">Nonce</a> {}
     summary: Nonce which is sent to the attestation service to allow a caller to prevent replay attacks.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.html#aba5e225e6d7f009e75a0f2e40b1b15c0">DraftPolicyForAttestation</a> {}
+    returnType: >-
+      <a id="a8a3fe8d636883184d2a49fa04baf5b4e"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.yml#aba5e225e6d7f009e75a0f2e40b1b15c0">DraftPolicyForAttestation</a> {}
     summary: A test hook which allows developers to test attestation policies before they commit them to the service.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.html#ab68075019fb5438251b325b22c3441f3">TokenValidationOptionsOverride</a> {}
-    summary: Specifies the options which should be used to validate the attestation token returned by the attestation service. Overrides the value specified in the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html">AttestationClient</a>.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.html#ab68075019fb5438251b325b22c3441f3">More...</a>
-    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.html">AttestationTokenValidationOptions</a> &gt;&#160;
+    returnType: >-
+      <a id="aba5e225e6d7f009e75a0f2e40b1b15c0"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.yml#ab68075019fb5438251b325b22c3441f3">TokenValidationOptionsOverride</a> {}
+    summary: Specifies the options which should be used to validate the attestation token returned by the attestation service. Overrides the value specified in the <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.yml">AttestationClient</a>.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attest_open_enclave_options.yml#ab68075019fb5438251b325b22c3441f3">More...</a>
+    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options.yml">AttestationTokenValidationOptions</a> &gt;&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="ab68075019fb5438251b325b22c3441f3"></a>
 - section: TokenValidationOptionsOverride
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestOpenEnclaveOptions.TokenValidationOptionsOverride
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestOpenEnclaveOptions.TokenValidationOptionsOverride
 - declaration: Azure::Nullable&lt;AttestationTokenValidationOptions&gt; Azure::Security::Attestation::AttestOpenEnclaveOptions::TokenValidationOptionsOverride {}
   languageId: cpp
-- content: <p>If not provided by the caller, the token validation options specified when thelink <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.html">AttestationClient</a>} was created will be used. </p>
+- content: <p>If not provided by the caller, the token validation options specified when thelink <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_client.yml">AttestationClient</a>} was created will be used. </p>

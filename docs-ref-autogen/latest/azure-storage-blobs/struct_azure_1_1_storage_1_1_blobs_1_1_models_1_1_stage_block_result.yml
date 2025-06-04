@@ -1,41 +1,55 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AStageBlockResult
 title: Azure::Storage::Blobs::Models::StageBlockResult Struct Reference
+xrefType: Struct
 components:
 - content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a428813fece0e45f8094f81ce3920221c">Azure::Storage::Blobs::BlockBlobClient::StageBlock</a>.  
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.yml#a428813fece0e45f8094f81ce3920221c">Azure::Storage::Blobs::BlockBlobClient::StageBlock</a>.  
 
-    </p><p><code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;rest_client.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_stage_block_result.html#ae98dff2e015b19c407f9a3cc542602cc">TransactionalContentHash</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_stage_block_result.yml#ae98dff2e015b19c407f9a3cc542602cc">TransactionalContentHash</a>
     returnType: Nullable&lt; ContentHash &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_stage_block_result.html#a9367bf4fbcf729b4e3789a33cda9ba58">IsServerEncrypted</a> = bool()
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_stage_block_result.yml#a9367bf4fbcf729b4e3789a33cda9ba58">IsServerEncrypted</a> = bool()
     returnType: bool&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_stage_block_result.html#a185e38a5dc12dfd112bfddd13c044398">EncryptionKeySha256</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_stage_block_result.yml#a185e38a5dc12dfd112bfddd13c044398">EncryptionKeySha256</a>
     returnType: Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_stage_block_result.html#a12ebe2113f89f128c22a563899756eb5">EncryptionScope</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_stage_block_result.yml#a12ebe2113f89f128c22a563899756eb5">EncryptionScope</a>
     returnType: Nullable&lt; std::string &gt;&#160;
 - section: Member Data Documentation
   display: h2
+- content: <a id="a185e38a5dc12dfd112bfddd13c044398"></a>
 - section: EncryptionKeySha256
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AStageBlockResult.EncryptionKeySha256
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::StageBlockResult.EncryptionKeySha256
 - declaration: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::StageBlockResult::EncryptionKeySha256
   languageId: cpp
-- content: <p>The SHA-256 hash of the encryption key used to encrypt the block. This header is only returned when the block was encrypted with a customer-provided key. </p>
+- content: <p>The SHA-256 hash of the encryption key used to encrypt the block. This header is only returned when the block was encrypted with a customer-provided key. </p><a id="a12ebe2113f89f128c22a563899756eb5"></a>
 - section: EncryptionScope
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AStageBlockResult.EncryptionScope
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::StageBlockResult.EncryptionScope
 - declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::StageBlockResult::EncryptionScope
   languageId: cpp
-- content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p>
+- content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p><a id="a9367bf4fbcf729b4e3789a33cda9ba58"></a>
 - section: IsServerEncrypted
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AStageBlockResult.IsServerEncrypted
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::StageBlockResult.IsServerEncrypted
 - declaration: bool Azure::Storage::Blobs::Models::StageBlockResult::IsServerEncrypted = bool()
   languageId: cpp
-- content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p>
+- content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p><a id="ae98dff2e015b19c407f9a3cc542602cc"></a>
 - section: TransactionalContentHash
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AStageBlockResult.TransactionalContentHash
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::StageBlockResult.TransactionalContentHash
 - declaration: Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::StageBlockResult::TransactionalContentHash
   languageId: cpp
 - content: <p>This header is returned so that the client can check for message content integrity. The value of this header is computed by the Blob service; it is not necessarily the same value specified in the request headers. </p>

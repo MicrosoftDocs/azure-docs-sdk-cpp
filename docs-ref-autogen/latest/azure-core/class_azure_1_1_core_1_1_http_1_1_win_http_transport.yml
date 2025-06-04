@@ -1,57 +1,62 @@
 ### YamlMime:Reference
 uid: Azure%3A%3ACore%3A%3AHttp%3A%3AWinHttpTransport
 title: Azure::Core::Http::WinHttpTransport Class Reference
+xrefType: Class
 components:
 - content: >-
     <p>Concrete implementation of an HTTP transport that uses WinHTTP when sending and receiving requests and responses over the wire.  
 
-    </p><p><code>#include &lt;<a href="win__http__transport_8hpp_source.html">win_http_transport.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+    </p><p><code>#include &lt;win_http_transport.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Core::Http::HttpTransport
-    href: class_azure_1_1_core_1_1_http_1_1_http_transport.html
+    href: class_azure_1_1_core_1_1_http_1_1_http_transport.yml
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a42ba2ab57cdbc23d84e5fe8a86abaf44">WinHttpTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html">WinHttpTransportOptions</a> const &amp;options=<a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.html">WinHttpTransportOptions</a>())
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.yml#a42ba2ab57cdbc23d84e5fe8a86abaf44">WinHttpTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.yml">WinHttpTransportOptions</a> const &amp;options=<a href="struct_azure_1_1_core_1_1_http_1_1_win_http_transport_options.yml">WinHttpTransportOptions</a>())
     summary: Constructs <code>WinHttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a7389a13501d5339ce872ec25610850f6">WinHttpTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.html">Azure::Core::Http::Policies::TransportOptions</a> const &amp;options)
-    summary: Constructs <code>WinHttpTransport</code> object based on common <a href="namespace_azure.html">Azure</a> HTTP Transport Options.
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.yml#a7389a13501d5339ce872ec25610850f6">WinHttpTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.yml">Azure::Core::Http::Policies::TransportOptions</a> const &amp;options)
+    summary: Constructs <code>WinHttpTransport</code> object based on common <a href="namespace_azure.yml">Azure</a> HTTP Transport Options.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#a21027372be541ce167ee62b06e566402">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.html">Context</a> const &amp;context) override
-    summary: Implements the HTTP transport interface to send an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> and produce an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a>.
-    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.html">Context</a> const &amp;context)=0
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.yml#a21027372be541ce167ee62b06e566402">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context) override
+    summary: Implements the HTTP transport interface to send an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> and produce an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a>.
+    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context)=0
     summary: Send an HTTP request over the wire.
-    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a4c0b2905624416efe1f77e6ef244c0e9">~HttpTransport</a> ()
+    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a4c0b2905624416efe1f77e6ef244c0e9">~HttpTransport</a> ()
     summary: Destructs <code>HttpTransport</code>.
     returnType: virtual&#160;
 - section: Protected Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.html#aebe91a3b2960e25431b6106c70c003e3">OnUpgradedConnection</a> (std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;request) const
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport.yml#aebe91a3b2960e25431b6106c70c003e3">OnUpgradedConnection</a> (std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;request) const
     summary: Callback to allow a derived transport to extract the request handle. Used for WebSocket transports.
     returnType: virtual void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
     summary: Constructs a default instance of <code>HttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#af7fadcff099af67a5e3732642cc42c78">HttpTransport</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#af7fadcff099af67a5e3732642cc42c78">HttpTransport</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;other)=default
     summary: Constructs <code>HttpTransport</code> by copying another instance of <code>HttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a0c6eb7479b5ef2e7359ec5f42fc404b8">HttpTransport</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;&amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a0c6eb7479b5ef2e7359ec5f42fc404b8">HttpTransport</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;&amp;other)=default
     summary: Constructs <code>HttpTransport</code> by moving another instance of <code>HttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#a44e0b2695aa316451ffe3c68e5e3ee30">operator=</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a44e0b2695aa316451ffe3c68e5e3ee30">operator=</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;other)=default
     summary: Assigns <code>HttpTransport</code> to another instance of <code>HttpTransport</code>.
-    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> &amp;&#160;
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;&#160;
   - declaration: HasWebSocketSupport () const
-    summary: Returns true if the <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html">HttpTransport</a> supports WebSockets (the ability to communicate bidirectionally on the TCP connection used by the HTTP transport).
+    summary: Returns true if the <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> supports WebSockets (the ability to communicate bidirectionally on the TCP connection used by the HTTP transport).
     returnType: virtual bool&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="a42ba2ab57cdbc23d84e5fe8a86abaf44"></a>
 - section: WinHttpTransport() [1/2]
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AWinHttpTransport.WinHttpTransport%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Http::WinHttpTransport.WinHttpTransport() [1/2]
 - declaration: Azure::Core::Http::WinHttpTransport::WinHttpTransport(WinHttpTransportOptions const &amp;&#160;options = WinHttpTransportOptions())
   languageId: cpp
 - section: Parameters
@@ -59,26 +64,38 @@ components:
 - parameters:
   - name: options
     summary: Optional parameter to override the default settings.
+- content: <a id="a7389a13501d5339ce872ec25610850f6"></a>
 - section: WinHttpTransport() [2/2]
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AWinHttpTransport.WinHttpTransport%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Http::WinHttpTransport.WinHttpTransport() [2/2]
 - declaration: Azure::Core::Http::WinHttpTransport::WinHttpTransport(Azure::Core::Http::Policies::TransportOptions const &amp;&#160;options)
   languageId: cpp
 - section: Member Function Documentation
   display: h2
+- content: <a id="aebe91a3b2960e25431b6106c70c003e3"></a>
 - section: OnUpgradedConnection()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AWinHttpTransport.OnUpgradedConnection%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::WinHttpTransport.OnUpgradedConnection()
 - declaration: void Azure::Core::Http::WinHttpTransport::OnUpgradedConnection(std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;&#160;request)const protected virtual
   languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: request
-    summary: '- <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> which contains the WinHttp request handle.'
+    summary: '- <a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> which contains the WinHttp request handle.'
+- content: <a id="a21027372be541ce167ee62b06e566402"></a>
 - section: Send()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3AWinHttpTransport.Send%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::WinHttpTransport.Send()
 - declaration: >-
     std::unique_ptr&lt; RawResponse &gt; Azure::Core::Http::WinHttpTransport::Send(Request &amp;&#160;      request,
                                                                              Context const &amp;&#160;context&#160;
                                                                             ) override virtual
   languageId: cpp
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.html#aab0a38b3e67079a9ede743c3e8de909d">Azure::Core::Http::HttpTransport</a>.</p>
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#aab0a38b3e67079a9ede743c3e8de909d">Azure::Core::Http::HttpTransport</a>.</p>

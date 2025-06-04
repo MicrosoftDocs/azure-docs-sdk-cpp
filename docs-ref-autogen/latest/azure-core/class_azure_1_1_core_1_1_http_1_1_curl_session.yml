@@ -1,59 +1,65 @@
 ### YamlMime:Reference
 uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlSession
 title: Azure::Core::Http::CurlSession Class Reference
+xrefType: Class
 components:
 - content: >-
-    <p>Stateful component that controls sending an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> with libcurl over the wire.  
-     <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#details">More...</a></p><p><code>#include &lt;<a href="curl__session__private_8hpp_source.html">curl_session_private.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+    <p>Stateful component that controls sending an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> with libcurl over the wire.  
+     <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.yml#details">More...</a></p><p><code>#include &lt;curl_session_private.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Core::IO::BodyStream
-    href: class_azure_1_1_core_1_1_i_o_1_1_body_stream.html
+    href: class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#a6b2ef37014a0eb9f0baa2629e8fd749c">CurlSession</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &amp;request, std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.html">CurlNetworkConnection</a> &gt; connection, <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.html">CurlTransportOptions</a> curlOptions)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.yml#a6b2ef37014a0eb9f0baa2629e8fd749c">CurlSession</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> &amp;request, std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml">CurlNetworkConnection</a> &gt; connection, <a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.yml">CurlTransportOptions</a> curlOptions)
     summary: Construct a new Curl Session object. Init internal libcurl handler.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#a86bc473a6a09215453abf4e3f063b194">Perform</a> (<a href="class_azure_1_1_core_1_1_context.html">Context</a> const &amp;context)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.yml#a86bc473a6a09215453abf4e3f063b194">Perform</a> (<a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context)
     summary: Function will use the HTTP request received in constructor to perform a network call based on the HTTP request configuration.
     returnType: CURLcode&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#a88a6369b4b0acc9c79705dd15083bf0f">ExtractResponse</a> ()
-    summary: Moved the ownership of the HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> out of the session.
-    returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">Azure::Core::Http::RawResponse</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#a6d8958274c0aa258f1127558b78d9cb8">Length</a> () const override
-    summary: Implement <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> length.
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.yml#a88a6369b4b0acc9c79705dd15083bf0f">ExtractResponse</a> ()
+    summary: Moved the ownership of the HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a> out of the session.
+    returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">Azure::Core::Http::RawResponse</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.yml#a6d8958274c0aa258f1127558b78d9cb8">Length</a> () const override
+    summary: Implement <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml">Azure::Core::IO::BodyStream</a> length.
     returnType: int64_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html#a68641a2a760a2bd4a9962ebbcb042608">ExtractConnection</a> ()
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_session.yml#a68641a2a760a2bd4a9962ebbcb042608">ExtractConnection</a> ()
     summary: Return the network connection if the server indicated that the connection is upgraded.
-    returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.html">CurlNetworkConnection</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a54e16528af689c00f5190858fff85e92">~BodyStream</a> ()=default
+    returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_curl_network_connection.yml">CurlNetworkConnection</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml#a54e16528af689c00f5190858fff85e92">~BodyStream</a> ()=default
     summary: Destructs <code>BodyStream</code>.
     returnType: virtual&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Length</a> () const =0
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml#a2e73f394ca060cf94146e03d5cf46d74">Length</a> () const =0
     summary: Get the length of the data.
     returnType: virtual int64_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a52c2ce02e8a7dec1f55276f664c7c8b6">Rewind</a> ()
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml#a52c2ce02e8a7dec1f55276f664c7c8b6">Rewind</a> ()
     summary: Resets the stream back to the beginning (for retries).
     returnType: virtual void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ab7c962004d984d3bd1d32f33e6aa485d">Read</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml#ab7c962004d984d3bd1d32f33e6aa485d">Read</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.yml">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.yml">Azure::Core::Context</a>())
     summary: Read portion of data into a buffer.
     returnType: size_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ac02611cf3f72c181dcf393c571df6226">ReadToCount</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
-    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> into a buffer until the buffer is filled, or until the stream is read to end.
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml#ac02611cf3f72c181dcf393c571df6226">ReadToCount</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context.yml">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.yml">Azure::Core::Context</a>())
+    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml">Azure::Core::IO::BodyStream</a> into a buffer until the buffer is filled, or until the stream is read to end.
     returnType: size_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a6d2138790b0c79e24f7fbc0f776bb069">ReadToEnd</a> (<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
-    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> until the stream is read to end, allocating memory for the entirety of contents.
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml#a6d2138790b0c79e24f7fbc0f776bb069">ReadToEnd</a> (<a href="class_azure_1_1_core_1_1_context.yml">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context.yml">Azure::Core::Context</a>())
+    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml">Azure::Core::IO::BodyStream</a> until the stream is read to end, allocating memory for the entirety of contents.
     returnType: std::vector&lt; uint8_t &gt;&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - section: Remarks
   display: h4
 - parameters:
-  - summary: This component does not use the classic libcurl easy interface to send and receive bytes from the network using callbacks. Instead, <code><a href="class_azure_1_1_core_1_1_http_1_1_curl_session.html">CurlSession</a></code> supports working with the custom HTTP protocol option from libcurl to manually upload and download bytes from the network socket using curl_easy_send() and curl_easy_recv().
+  - summary: This component does not use the classic libcurl easy interface to send and receive bytes from the network using callbacks. Instead, <code><a href="class_azure_1_1_core_1_1_http_1_1_curl_session.yml">CurlSession</a></code> supports working with the custom HTTP protocol option from libcurl to manually upload and download bytes from the network socket using curl_easy_send() and curl_easy_recv().
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="a6b2ef37014a0eb9f0baa2629e8fd749c"></a>
 - section: CurlSession()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlSession.CurlSession%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::CurlSession.CurlSession()
 - declaration: >-
     Azure::Core::Http::CurlSession::CurlSession(Request &amp;&#160;                               request,    
                                                 std::unique_ptr&lt; CurlNetworkConnection &gt;&#160;connection, 
@@ -64,40 +70,55 @@ components:
   display: h4
 - parameters:
   - name: request
-    summary: reference to an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a>.
+    summary: reference to an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a>.
   - name: connection
     summary: A connection from the connection pool.
   - name: curlOptions
     summary: Transport adapter options.
 - section: Member Function Documentation
   display: h2
+- content: <a id="a68641a2a760a2bd4a9962ebbcb042608"></a>
 - section: ExtractConnection()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlSession.ExtractConnection%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::CurlSession.ExtractConnection()
 - declaration: std::unique_ptr&lt; CurlNetworkConnection &gt; CurlSession::ExtractConnection()
   languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The network connection, or null if the connection was not upgraded.
+- content: <a id="a88a6369b4b0acc9c79705dd15083bf0f"></a>
 - section: ExtractResponse()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlSession.ExtractResponse%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::CurlSession.ExtractResponse()
 - declaration: std::unique_ptr&lt; RawResponse &gt; CurlSession::ExtractResponse()
   languageId: cpp
 - section: Returns
   display: h4
 - parameters:
-  - summary: the unique ptr to the HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> or null if the HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> is not yet created or was moved before.
+  - summary: the unique ptr to the HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a> or null if the HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a> is not yet created or was moved before.
+- content: <a id="a6d8958274c0aa258f1127558b78d9cb8"></a>
 - section: Length()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlSession.Length%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::CurlSession.Length()
 - declaration: int64_t Azure::Core::Http::CurlSession::Length()const inline override virtual
   languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The size of the payload.
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.</p>
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.yml#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.</p><a id="a86bc473a6a09215453abf4e3f063b194"></a>
 - section: Perform()
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlSession.Perform%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Http::CurlSession.Perform()
 - declaration: CURLcode CurlSession::Perform(Context const &amp;&#160;context)
   languageId: cpp
 - section: Parameters

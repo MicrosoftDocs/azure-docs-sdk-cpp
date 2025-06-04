@@ -1,68 +1,81 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AETag
 title: Azure::ETag Class Reference
+xrefType: Class
 components:
 - content: >-
     <p>Represents an HTTP validator.  
 
-    </p><p><code>#include &lt;<a href="etag_8hpp_source.html">etag.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;etag.hpp&gt;</code></p>
 - section: Public Types
   display: h2
 - apiList:
   - declaration: >-
-      <a href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e">ETagComparison</a> { Strong
+      <a href="class_azure_1_1_e_tag.yml#abbf0e171ca0781b2b0ac043f57480f2e">ETagComparison</a> { Strong
 
       , Weak
        }
-    summary: The comparison type.  <a href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e">More...</a>
+    summary: The comparison type.  <a href="class_azure_1_1_e_tag.yml#abbf0e171ca0781b2b0ac043f57480f2e">More...</a>
     returnType: enum class &#160;
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_e_tag.html#a5f51ee1a9eaf64372d8cc1d00d1042a6">ETag</a> ()=default
+  - declaration: <a href="class_azure_1_1_e_tag.yml#a5f51ee1a9eaf64372d8cc1d00d1042a6">ETag</a> ()=default
     summary: Constructs an empty (null) <code>ETag</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_e_tag.html#ae17064a85468c70b9ae5e1c739f29282">ETag</a> (std::string etag)
+  - declaration: <a href="class_azure_1_1_e_tag.yml#ae17064a85468c70b9ae5e1c739f29282">ETag</a> (std::string etag)
     summary: Constructs an <code>ETag</code> with string representation.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_e_tag.html#a36ae96279fde0e6c22585b15ccb340fe">HasValue</a> () const
+  - declaration: <a href="class_azure_1_1_e_tag.yml#a36ae96279fde0e6c22585b15ccb340fe">HasValue</a> () const
     summary: Whether <code>ETag</code> is present.
     returnType: bool&#160;
-  - declaration: <a href="class_azure_1_1_e_tag.html#a9fc3b3c367ce24ee19b430c8cb36fe9c">ToString</a> () const
+  - declaration: <a href="class_azure_1_1_e_tag.yml#a9fc3b3c367ce24ee19b430c8cb36fe9c">ToString</a> () const
     summary: Returns the resource metadata represented as a string.
     returnType: const std::string &amp;&#160;
-  - declaration: <a href="class_azure_1_1_e_tag.html#aab47574005070ae685e98aa33427ebf6">operator==</a> (const <a href="class_azure_1_1_e_tag.html">ETag</a> &amp;other) const
+  - declaration: <a href="class_azure_1_1_e_tag.yml#aab47574005070ae685e98aa33427ebf6">operator==</a> (const <a href="class_azure_1_1_e_tag.yml">ETag</a> &amp;other) const
     summary: Compare with <code>other</code> <code>ETag</code> for equality.
     returnType: bool&#160;
-  - declaration: <a href="class_azure_1_1_e_tag.html#a83cf243c393b71b92aebcf0eb8b9f786">operator!=</a> (const <a href="class_azure_1_1_e_tag.html">ETag</a> &amp;other) const
+  - declaration: <a href="class_azure_1_1_e_tag.yml#a83cf243c393b71b92aebcf0eb8b9f786">operator!=</a> (const <a href="class_azure_1_1_e_tag.yml">ETag</a> &amp;other) const
     summary: Compare with <code>other</code> <code>ETag</code> for inequality.
     returnType: bool&#160;
-  - declaration: <a href="class_azure_1_1_e_tag.html#a7e9e0a1e0fe067280a029140d0410aee">IsWeak</a> () const
-    summary: Specifies whether the <a href="class_azure_1_1_e_tag.html">Azure::ETag</a> is strong or weak.
+  - declaration: <a href="class_azure_1_1_e_tag.yml#a7e9e0a1e0fe067280a029140d0410aee">IsWeak</a> () const
+    summary: Specifies whether the <a href="class_azure_1_1_e_tag.yml">Azure::ETag</a> is strong or weak.
     returnType: bool&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_e_tag.html#a8a099159c1206da752cee1a13a5c5f07">Equals</a> (const <a href="class_azure_1_1_e_tag.html">ETag</a> &amp;left, const <a href="class_azure_1_1_e_tag.html">ETag</a> &amp;right, const <a href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e">ETagComparison</a> comparisonKind=ETagComparison::Strong)
-    summary: Indicates whether two <a href="class_azure_1_1_e_tag.html">Azure::ETag</a> values are equal.
+  - declaration: <a href="class_azure_1_1_e_tag.yml#a8a099159c1206da752cee1a13a5c5f07">Equals</a> (const <a href="class_azure_1_1_e_tag.yml">ETag</a> &amp;left, const <a href="class_azure_1_1_e_tag.yml">ETag</a> &amp;right, const <a href="class_azure_1_1_e_tag.yml#abbf0e171ca0781b2b0ac043f57480f2e">ETagComparison</a> comparisonKind=ETagComparison::Strong)
+    summary: Indicates whether two <a href="class_azure_1_1_e_tag.yml">Azure::ETag</a> values are equal.
     returnType: static bool&#160;
-  - declaration: <a href="class_azure_1_1_e_tag.html#a5264a49bd00787f15735f3798537b3b2">Any</a> ()
-    summary: <a href="class_azure_1_1_e_tag.html">Azure::ETag</a> representing everything.
-    returnType: static const <a href="class_azure_1_1_e_tag.html">ETag</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_e_tag.yml#a5264a49bd00787f15735f3798537b3b2">Any</a> ()
+    summary: <a href="class_azure_1_1_e_tag.yml">Azure::ETag</a> representing everything.
+    returnType: static const <a href="class_azure_1_1_e_tag.yml">ETag</a> &amp;&#160;
 - section: Member Enumeration Documentation
   display: h2
+- content: <a id="abbf0e171ca0781b2b0ac043f57480f2e"></a>
 - section: ETagComparison
   display: h3
+  uid: Azure%3A%3AETag.ETagComparison
+  xrefType: Member
+  xrefName: Azure::ETag.ETagComparison
 - declaration: enum class Azure::ETag::ETagComparison strong
   languageId: cpp
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="a5f51ee1a9eaf64372d8cc1d00d1042a6"></a>
 - section: ETag() [1/2]
   display: h3
+  uid: Azure%3A%3AETag.ETag%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::ETag.ETag() [1/2]
 - declaration: Azure::ETag::ETag() default
   languageId: cpp
+- content: <a id="ae17064a85468c70b9ae5e1c739f29282"></a>
 - section: ETag() [2/2]
   display: h3
+  uid: Azure%3A%3AETag.ETag%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::ETag.ETag() [2/2]
 - declaration: Azure::ETag::ETag(std::string&#160;etag) inline explicit
   languageId: cpp
 - section: Parameters
@@ -72,12 +85,24 @@ components:
     summary: The string value representation.
 - section: Member Function Documentation
   display: h2
+- content: <a id="a5264a49bd00787f15735f3798537b3b2"></a>
 - section: Any()
   display: h3
+  uid: Azure%3A%3AETag.Any%28%29
+  xrefType: Member
+  xrefName: Azure::ETag.Any()
 - declaration: const ETag &amp; ETag::Any() static
   languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: The any <a href="class_azure_1_1_e_tag.yml">Azure::ETag</a> is *, (unquoted). It is NOT the same as * in quotes.
+- content: <a id="a8a099159c1206da752cee1a13a5c5f07"></a>
 - section: Equals()
   display: h3
+  uid: Azure%3A%3AETag.Equals%28%29
+  xrefType: Member
+  xrefName: Azure::ETag.Equals()
 - declaration: >-
     static bool Azure::ETag::Equals(const ETag &amp;&#160;        left,                                   
                                     const ETag &amp;&#160;        right,                                  
@@ -88,33 +113,45 @@ components:
   display: h4
 - parameters:
   - name: left
-    summary: <a href="class_azure_1_1_e_tag.html">Azure::ETag</a> to compare.
+    summary: <a href="class_azure_1_1_e_tag.yml">Azure::ETag</a> to compare.
   - name: right
-    summary: <a href="class_azure_1_1_e_tag.html">Azure::ETag</a> to compare.
+    summary: <a href="class_azure_1_1_e_tag.yml">Azure::ETag</a> to compare.
   - name: comparisonKind
-    summary: Determines what <a href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e">Azure::ETag::ETagComparison</a> to perform, default is <a href="class_azure_1_1_e_tag.html#abbf0e171ca0781b2b0ac043f57480f2e">Azure::ETag::ETagComparison</a> Strong.
+    summary: Determines what <a href="class_azure_1_1_e_tag.yml#abbf0e171ca0781b2b0ac043f57480f2e">Azure::ETag::ETagComparison</a> to perform, default is <a href="class_azure_1_1_e_tag.yml#abbf0e171ca0781b2b0ac043f57480f2e">Azure::ETag::ETagComparison</a> Strong.
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if <code>ETag</code> matches; otherwise, <code>false</code>.
+- content: <a id="a36ae96279fde0e6c22585b15ccb340fe"></a>
 - section: HasValue()
   display: h3
+  uid: Azure%3A%3AETag.HasValue%28%29
+  xrefType: Member
+  xrefName: Azure::ETag.HasValue()
 - declaration: bool Azure::ETag::HasValue()const inline
   languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if <code>ETag</code> has a value; otherwise, <code>false</code>.
+- content: <a id="a7e9e0a1e0fe067280a029140d0410aee"></a>
 - section: IsWeak()
   display: h3
+  uid: Azure%3A%3AETag.IsWeak%28%29
+  xrefType: Member
+  xrefName: Azure::ETag.IsWeak()
 - declaration: bool Azure::ETag::IsWeak()const inline
   languageId: cpp
 - section: Returns
   display: h4
 - parameters:
-  - summary: <code>true</code> if <a href="class_azure_1_1_e_tag.html">Azure::ETag</a> is a weak validator; otherwise, <code>false</code>.
+  - summary: <code>true</code> if <a href="class_azure_1_1_e_tag.yml">Azure::ETag</a> is a weak validator; otherwise, <code>false</code>.
+- content: <a id="a83cf243c393b71b92aebcf0eb8b9f786"></a>
 - section: operator!=()
   display: h3
+  uid: Azure%3A%3AETag.operator%21%3D%28%29
+  xrefType: Member
+  xrefName: Azure::ETag.operator!=()
 - declaration: bool Azure::ETag::operator!=(const ETag &amp;&#160;other)const inline
   languageId: cpp
 - section: Parameters
@@ -126,8 +163,12 @@ components:
   display: h4
 - parameters:
   - summary: <code>true</code> if <code>ETag</code> instances are not equal according to strong validation; otherwise, <code>false</code>.
+- content: <a id="aab47574005070ae685e98aa33427ebf6"></a>
 - section: operator==()
   display: h3
+  uid: Azure%3A%3AETag.operator%3D%3D%28%29
+  xrefType: Member
+  xrefName: Azure::ETag.operator==()
 - declaration: bool Azure::ETag::operator==(const ETag &amp;&#160;other)const inline
   languageId: cpp
 - section: Parameters
@@ -139,8 +180,12 @@ components:
   display: h4
 - parameters:
   - summary: <code>true</code> if <code>ETag</code> instances are equal according to strong validation; otherwise, <code>false</code>.
+- content: <a id="a9fc3b3c367ce24ee19b430c8cb36fe9c"></a>
 - section: ToString()
   display: h3
+  uid: Azure%3A%3AETag.ToString%28%29
+  xrefType: Member
+  xrefName: Azure::ETag.ToString()
 - declaration: const std::string &amp; Azure::ETag::ToString()const inline
   languageId: cpp
 - section: Returns

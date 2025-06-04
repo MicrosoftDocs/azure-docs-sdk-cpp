@@ -1,23 +1,36 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AGetPageRangesOptions
 title: Azure::Storage::Blobs::GetPageRangesOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html#a66ff58b911a581c07cfef2f980132551">Azure::Storage::Blobs::PageBlobClient::GetPageRanges</a>.  
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.yml#a66ff58b911a581c07cfef2f980132551">Azure::Storage::Blobs::PageBlobClient::GetPageRanges</a>.  
 
-    </p><p><code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
   - declaration: Range
     summary: Optionally specifies the range of bytes over which to list ranges, inclusively. If omitted, then all ranges for the blob are returned.
-    returnType: Azure::Nullable&lt; Core::Http::HttpRange &gt;&#160;
+    returnType: >-
+      <a id="a018a46d4cde17e3a63962c569fd66c77"></a>
+
+      Azure::Nullable&lt; Core::Http::HttpRange &gt;&#160;
   - declaration: AccessConditions
     summary: Optional conditions that must be met to perform this operation.
-    returnType: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions.html">BlobAccessConditions</a>&#160;
+    returnType: >-
+      <a id="ad3900abbee415db19f849f4d134d6e8d"></a>
+
+      <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions.yml">BlobAccessConditions</a>&#160;
   - declaration: ContinuationToken
     summary: This parameter identifies the portion of the ranges to be returned with the next operation. The operation returns a marker value within the response body if the ranges returned were not complete. The marker value may then be used in a subsequent call to request the next set of ranges.This value is opaque to the client.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+    returnType: >-
+      <a id="a9ef467e394ec84b4953057f28a93ee63"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
   - declaration: PageSizeHint
     summary: This parameter specifies the maximum number of page ranges to return. If the request specifies a value greater than 10000, the server will return up to 10000 items. If there are additional results to return, the service returns a continuation token in the NextMarker response element.
-    returnType: Azure::Nullable&lt; int32_t &gt;&#160;
+    returnType: >-
+      <a id="af51eb3620e793b8b767d66303795c205"></a>
+
+      Azure::Nullable&lt; int32_t &gt;&#160;

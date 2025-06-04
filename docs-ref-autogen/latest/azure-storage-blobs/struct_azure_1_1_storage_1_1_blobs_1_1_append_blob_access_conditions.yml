@@ -1,29 +1,36 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobAccessConditions
 title: Azure::Storage::Blobs::AppendBlobAccessConditions Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Specifies access conditions for an append blob.  
 
-    </p><p><code>#include &lt;<a href="blob__options_8hpp_source.html">blob_options.hpp</a>&gt;</code></p><p>This class inherits from:</p>
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Storage::Blobs::BlobAccessConditions
-    href: struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions.html
+    href: struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions.yml
 - section: Public Attributes
   display: h2
 - apiList:
   - declaration: IfMaxSizeLessThanOrEqual
     summary: Ensures that the AppendBlock operation succeeds only if the append blob's size is less than or equal to this value.
-    returnType: Azure::Nullable&lt; int64_t &gt;&#160;
+    returnType: >-
+      <a id="aa2ebc87bf3aa737c96f7fae25639260a"></a>
+
+      Azure::Nullable&lt; int64_t &gt;&#160;
   - declaration: IfAppendPositionEqual
     summary: Ensures that the AppendBlock operation succeeds only if the append position is equal to this value.
-    returnType: Azure::Nullable&lt; int64_t &gt;&#160;
+    returnType: >-
+      <a id="a6a161a7f2a82a9eb251555eb7294a3dd"></a>
+
+      Azure::Nullable&lt; int64_t &gt;&#160;
   - declaration: TagConditions
     summary: Optional SQL statement to apply to the tags of the Blob. Refer to <a href="https://docs.microsoft.com/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-predicate-syntax">https://docs.microsoft.com/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-predicate-syntax</a> for the format of SQL statements.
     returnType: Azure::Nullable&lt; std::string &gt;&#160;
 - section: Additional Inherited Members
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_tag_access_conditions.html#a25058f85ab238c355e0b3f7575d7b201">~TagAccessConditions</a> ()=default
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_tag_access_conditions.yml#a25058f85ab238c355e0b3f7575d7b201">~TagAccessConditions</a> ()=default
     summary: Destructor.
     returnType: virtual&#160;

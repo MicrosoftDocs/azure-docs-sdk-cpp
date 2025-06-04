@@ -1,27 +1,28 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder
 title: Azure::Storage::Sas::ShareSasBuilder Struct Reference
+xrefType: Struct
 components:
 - content: >-
-    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.html">ShareSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage share or file.  
+    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.yml">ShareSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage share or file.  
 
-    </p><p><code>#include &lt;<a href="share__sas__builder_8hpp_source.html">share_sas_builder.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;share_sas_builder.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.html#adf978e75bf440da8054f636db2bda4a8">SetPermissions</a> (ShareSasPermissions permissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.yml#adf978e75bf440da8054f636db2bda4a8">SetPermissions</a> (ShareSasPermissions permissions)
     summary: Sets the permissions for the share SAS.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.html#a752fc5c6f20efa4633ff4521645de072">SetPermissions</a> (ShareFileSasPermissions permissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.yml#a752fc5c6f20efa4633ff4521645de072">SetPermissions</a> (ShareFileSasPermissions permissions)
     summary: Sets the permissions for the share SAS.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.html#a70e3d0ffdcb94b7e410f3a7206395e90">SetPermissions</a> (std::string rawPermissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.yml#a70e3d0ffdcb94b7e410f3a7206395e90">SetPermissions</a> (std::string rawPermissions)
     summary: Sets the permissions for the SAS using a raw permissions string.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.html#a162934492b50850745ff293aa7dd3cb4">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.yml#a162934492b50850745ff293aa7dd3cb4">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
     summary: Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.html#ab4494a79bbdbe2e9cd9782b946c311c1">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.yml#ab4494a79bbdbe2e9cd9782b946c311c1">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
     summary: For debugging purposes only.
     returnType: std::string&#160;
 - section: Public Attributes
@@ -29,47 +30,90 @@ components:
 - apiList:
   - declaration: Protocol
     summary: The optional signed protocol field specifies the protocol permitted for a request made with the SAS.
-    returnType: SasProtocol&#160;
+    returnType: >-
+      <a id="ab4412d04e97896b5ebbe8434b09dc610"></a>
+
+      SasProtocol&#160;
   - declaration: StartsOn
     summary: Optionally specify the time at which the shared access signature becomes valid. This timestamp will be truncated to second.
-    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+    returnType: >-
+      <a id="a65b3e145c80fb6a7aa4964b6ff3ac7c3"></a>
+
+      Azure::Nullable&lt; Azure::DateTime &gt;&#160;
   - declaration: ExpiresOn
     summary: The time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. This timestamp will be truncated to second.
-    returnType: Azure::DateTime&#160;
+    returnType: >-
+      <a id="a9a4abe57301c38d454ebca5dd87243ef"></a>
+
+      Azure::DateTime&#160;
   - declaration: IPRange
     summary: Specifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+    returnType: >-
+      <a id="a11245e00ef9e751ab6763cf8e8650cb7"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
   - declaration: Identifier
     summary: An optional unique value up to 64 characters in length that correlates to an access policy specified for the share.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a4eb1f9d4ef45b3e7bc8494cc1879c5f1"></a>
+
+      std::string&#160;
   - declaration: ShareName
     summary: The name of the file share being made accessible.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a3f7b921312e2ed7842f11384c4a821a5"></a>
+
+      std::string&#160;
   - declaration: FilePath
     summary: The name of the share file being made accessible, or empty for a share SAS..
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a4dc48aa80d80b5c0946a30623b681e3c"></a>
+
+      std::string&#160;
   - declaration: Resource
     summary: Specifies which resources are accessible via the shared access signature.
-    returnType: ShareSasResource&#160;
+    returnType: >-
+      <a id="a68255a4577f2dc6fc7fd27cea2df1297"></a>
+
+      ShareSasResource&#160;
   - declaration: CacheControl
     summary: Override the value returned for Cache-Control response header..
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="afb3b76d006b061559b71290db0a6b6e0"></a>
+
+      std::string&#160;
   - declaration: ContentDisposition
     summary: Override the value returned for Content-Disposition response header..
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="aa032b8f8d10fd612d644d7871bade561"></a>
+
+      std::string&#160;
   - declaration: ContentEncoding
     summary: Override the value returned for Content-Encoding response header..
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a29670e14e1e33f95413317705079d662"></a>
+
+      std::string&#160;
   - declaration: ContentLanguage
     summary: Override the value returned for Content-Language response header..
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="abc8e1d23cca24236d991cb5e558a8139"></a>
+
+      std::string&#160;
   - declaration: ContentType
     summary: Override the value returned for Content-Type response header..
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a86faa0eddf733c4eea39774a24c17cc1"></a>
+
+      std::string&#160;
 - section: Member Function Documentation
   display: h2
+- content: <a id="ab4494a79bbdbe2e9cd9782b946c311c1"></a>
 - section: GenerateSasStringToSign()
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.GenerateSasStringToSign%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::ShareSasBuilder.GenerateSasStringToSign()
 - declaration: std::string Azure::Storage::Sas::ShareSasBuilder::GenerateSasStringToSign(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters
@@ -81,8 +125,12 @@ components:
   display: h4
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
+- content: <a id="a162934492b50850745ff293aa7dd3cb4"></a>
 - section: GenerateSasToken()
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.GenerateSasToken%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::ShareSasBuilder.GenerateSasToken()
 - declaration: std::string Azure::Storage::Sas::ShareSasBuilder::GenerateSasToken(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters
@@ -94,8 +142,12 @@ components:
   display: h4
 - parameters:
   - summary: The SAS query parameters used for authenticating requests.
+- content: <a id="a752fc5c6f20efa4633ff4521645de072"></a>
 - section: SetPermissions() [1/3]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.SetPermissions%28%29%20%5B1%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::ShareSasBuilder.SetPermissions() [1/3]
 - declaration: void Azure::Storage::Sas::ShareSasBuilder::SetPermissions(ShareFileSasPermissions&#160;permissions)
   languageId: cpp
 - section: Parameters
@@ -103,8 +155,12 @@ components:
 - parameters:
   - name: permissions
     summary: The allowed permissions.
+- content: <a id="adf978e75bf440da8054f636db2bda4a8"></a>
 - section: SetPermissions() [2/3]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.SetPermissions%28%29%20%5B2%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::ShareSasBuilder.SetPermissions() [2/3]
 - declaration: void Azure::Storage::Sas::ShareSasBuilder::SetPermissions(ShareSasPermissions&#160;permissions)
   languageId: cpp
 - section: Parameters
@@ -112,8 +168,12 @@ components:
 - parameters:
   - name: permissions
     summary: The allowed permissions.
+- content: <a id="a70e3d0ffdcb94b7e410f3a7206395e90"></a>
 - section: SetPermissions() [3/3]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.SetPermissions%28%29%20%5B3%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::ShareSasBuilder.SetPermissions() [3/3]
 - declaration: void Azure::Storage::Sas::ShareSasBuilder::SetPermissions(std::string&#160;rawPermissions) inline
   languageId: cpp
 - section: Parameters

@@ -1,24 +1,25 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder
 title: Azure::Storage::Sas::QueueSasBuilder Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>ShareSasBuilder is used to generate a Shared Access Signature (SAS) for an Azure Storage queue.  
 
-    </p><p><code>#include &lt;<a href="queue__sas__builder_8hpp_source.html">queue_sas_builder.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;queue_sas_builder.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder.html#ae9087bb4975fec53ad9257cc5dcb4ed0">SetPermissions</a> (<a href="queue__sas__builder_8hpp.html#aa81853b08fd910f5e069165c5dee9f02">QueueSasPermissions</a> permissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder.yml#ae9087bb4975fec53ad9257cc5dcb4ed0">SetPermissions</a> (<a href="queue__sas__builder_8hpp.html#aa81853b08fd910f5e069165c5dee9f02">QueueSasPermissions</a> permissions)
     summary: Sets the permissions for the queue SAS.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder.html#a1e2f0544e8c998c2e60771a77bd0cca0">SetPermissions</a> (std::string rawPermissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder.yml#a1e2f0544e8c998c2e60771a77bd0cca0">SetPermissions</a> (std::string rawPermissions)
     summary: Sets the permissions for the SAS using a raw permissions string.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder.html#a1fc41b9db62f219b04687c0d533646d4">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder.yml#a1fc41b9db62f219b04687c0d533646d4">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
     summary: Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder.html#a81b89ac6f38381dceac38803e6ed4794">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder.yml#a81b89ac6f38381dceac38803e6ed4794">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
     summary: For debugging purposes only.
     returnType: std::string&#160;
 - section: Public Attributes
@@ -26,26 +27,48 @@ components:
 - apiList:
   - declaration: Protocol
     summary: The optional signed protocol field specifies the protocol permitted for a request made with the SAS.
-    returnType: SasProtocol&#160;
+    returnType: >-
+      <a id="ab553d4b8d22d7542f2c52c7a6fa74e68"></a>
+
+      SasProtocol&#160;
   - declaration: StartsOn
     summary: Optionally specify the time at which the shared access signature becomes valid. This timestamp will be truncated to second.
-    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+    returnType: >-
+      <a id="ab5f2b22dc49dc00e299e19e5f007f428"></a>
+
+      Azure::Nullable&lt; Azure::DateTime &gt;&#160;
   - declaration: ExpiresOn
     summary: The time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. This timestamp will be truncated to second.
-    returnType: Azure::DateTime&#160;
+    returnType: >-
+      <a id="add4aaa49a5064dd69cadde19a869371d"></a>
+
+      Azure::DateTime&#160;
   - declaration: IPRange
     summary: Specifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+    returnType: >-
+      <a id="a48381d3a0d1974de0e5e3d5b23894f80"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
   - declaration: Identifier
     summary: An optional unique value up to 64 characters in length that correlates to an access policy specified for the queue.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a885220a925204b2b60c95dfdd1015364"></a>
+
+      std::string&#160;
   - declaration: QueueName
     summary: The name of the queue being made accessible.
-    returnType: std::string&#160;
+    returnType: >-
+      <a id="a1cbf823204bee3740d1d9ae895483f29"></a>
+
+      std::string&#160;
 - section: Member Function Documentation
   display: h2
+- content: <a id="a81b89ac6f38381dceac38803e6ed4794"></a>
 - section: GenerateSasStringToSign()
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.GenerateSasStringToSign%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::QueueSasBuilder.GenerateSasStringToSign()
 - declaration: std::string Azure::Storage::Sas::QueueSasBuilder::GenerateSasStringToSign(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters
@@ -57,8 +80,12 @@ components:
   display: h4
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
+- content: <a id="a1fc41b9db62f219b04687c0d533646d4"></a>
 - section: GenerateSasToken()
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.GenerateSasToken%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::QueueSasBuilder.GenerateSasToken()
 - declaration: std::string Azure::Storage::Sas::QueueSasBuilder::GenerateSasToken(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters
@@ -70,8 +97,12 @@ components:
   display: h4
 - parameters:
   - summary: The SAS query parameters used for authenticating requests.
+- content: <a id="ae9087bb4975fec53ad9257cc5dcb4ed0"></a>
 - section: SetPermissions() [1/2]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.SetPermissions%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::QueueSasBuilder.SetPermissions() [1/2]
 - declaration: void Azure::Storage::Sas::QueueSasBuilder::SetPermissions(QueueSasPermissions&#160;permissions)
   languageId: cpp
 - section: Parameters
@@ -79,8 +110,12 @@ components:
 - parameters:
   - name: permissions
     summary: The allowed permissions.
+- content: <a id="a1e2f0544e8c998c2e60771a77bd0cca0"></a>
 - section: SetPermissions() [2/2]
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.SetPermissions%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::QueueSasBuilder.SetPermissions() [2/2]
 - declaration: void Azure::Storage::Sas::QueueSasBuilder::SetPermissions(std::string&#160;rawPermissions) inline
   languageId: cpp
 - section: Parameters

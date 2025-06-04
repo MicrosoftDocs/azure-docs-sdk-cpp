@@ -1,35 +1,43 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobServiceBatch
 title: Azure::Storage::Blobs::BlobServiceBatch Class Reference
+xrefType: Class
 components:
 - content: >-
-    <p>A batch object allows you to batch multiple operations in a single request via <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client.html#a1ee857beb2d70d56c0400563bb6043c8">Azure::Storage::Blobs::BlobServiceClient::SubmitBatch</a>.  
+    <p>A batch object allows you to batch multiple operations in a single request via <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client.yml#a1ee857beb2d70d56c0400563bb6043c8">Azure::Storage::Blobs::BlobServiceClient::SubmitBatch</a>.  
 
-    </p><p><code>#include &lt;<a href="blob__batch_8hpp_source.html">blob_batch.hpp</a>&gt;</code></p>
+    </p><p><code>#include &lt;blob_batch.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_batch.html#ae3a391218e8e677d7cbdbad0ac1771d2">DeleteBlob</a> (const std::string &amp;blobContainerName, const std::string &amp;blobName, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_batch.yml#ae3a391218e8e677d7cbdbad0ac1771d2">DeleteBlob</a> (const std::string &amp;blobContainerName, const std::string &amp;blobName, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.yml">DeleteBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.yml">DeleteBlobOptions</a>())
     summary: Adds a delete subrequest into batch object.
-    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a>&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_result.html">Models::DeleteBlobResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_batch.html#a2226992648a7eee268b91bf5080593cc">DeleteBlobUrl</a> (const std::string &amp;blobUrl, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a>())
+    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.yml">DeferredResponse</a>&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_result.yml">Models::DeleteBlobResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_batch.yml#a2226992648a7eee268b91bf5080593cc">DeleteBlobUrl</a> (const std::string &amp;blobUrl, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.yml">DeleteBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.yml">DeleteBlobOptions</a>())
     summary: Adds a delete subrequest into batch object.
-    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a>&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_result.html">Models::DeleteBlobResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_batch.html#a80533a758164d0f16e3e39965b55db2d">SetBlobAccessTier</a> (const std::string &amp;blobContainerName, const std::string &amp;blobName, <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.html">Models::AccessTier</a> accessTier, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.html">SetBlobAccessTierOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.html">SetBlobAccessTierOptions</a>())
+    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.yml">DeferredResponse</a>&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_result.yml">Models::DeleteBlobResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_batch.yml#a80533a758164d0f16e3e39965b55db2d">SetBlobAccessTier</a> (const std::string &amp;blobContainerName, const std::string &amp;blobName, <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.yml">Models::AccessTier</a> accessTier, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.yml">SetBlobAccessTierOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.yml">SetBlobAccessTierOptions</a>())
     summary: Adds a change tier subrequest into batch object.
-    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a>&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_access_tier_result.html">Models::SetBlobAccessTierResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_batch.html#a4b0f65204f148e0fd69e538bf5024143">SetBlobAccessTierUrl</a> (const std::string &amp;blobUrl, <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.html">Models::AccessTier</a> accessTier, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.html">SetBlobAccessTierOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.html">SetBlobAccessTierOptions</a>())
+    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.yml">DeferredResponse</a>&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_access_tier_result.yml">Models::SetBlobAccessTierResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_batch.yml#a4b0f65204f148e0fd69e538bf5024143">SetBlobAccessTierUrl</a> (const std::string &amp;blobUrl, <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.yml">Models::AccessTier</a> accessTier, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.yml">SetBlobAccessTierOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.yml">SetBlobAccessTierOptions</a>())
     summary: Adds a change tier subrequest into batch object.
-    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.html">DeferredResponse</a>&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_access_tier_result.html">Models::SetBlobAccessTierResult</a> &gt;&#160;
+    returnType: <a href="class_azure_1_1_storage_1_1_deferred_response.yml">DeferredResponse</a>&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_access_tier_result.yml">Models::SetBlobAccessTierResult</a> &gt;&#160;
 - section: Friends
   display: h2
 - apiList:
   - declaration: BlobServiceClient
-    returnType: class&#160;
+    returnType: >-
+      <a id="ae21f5317c43c381dea514877f4ae8ae4"></a>
+
+      class&#160;
 - section: Member Function Documentation
   display: h2
+- content: <a id="ae3a391218e8e677d7cbdbad0ac1771d2"></a>
 - section: DeleteBlob()
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobServiceBatch.DeleteBlob%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::BlobServiceBatch.DeleteBlob()
 - declaration: >-
     DeferredResponse&lt; Models::DeleteBlobResult &gt; Azure::Storage::Blobs::BlobServiceBatch::DeleteBlob(const std::string &amp;&#160;      blobContainerName,            
                                                                                                      const std::string &amp;&#160;      blobName,                     
@@ -49,8 +57,12 @@ components:
   display: h4
 - parameters:
   - summary: A deferred response which can produce a Response&lt;DeleteBlobResult&gt; after batch object is submitted.
+- content: <a id="a2226992648a7eee268b91bf5080593cc"></a>
 - section: DeleteBlobUrl()
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobServiceBatch.DeleteBlobUrl%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::BlobServiceBatch.DeleteBlobUrl()
 - declaration: >-
     DeferredResponse&lt; Models::DeleteBlobResult &gt; Azure::Storage::Blobs::BlobServiceBatch::DeleteBlobUrl(const std::string &amp;&#160;      blobUrl,                      
                                                                                                         const DeleteBlobOptions &amp;&#160;options = DeleteBlobOptions()&#160;
@@ -67,8 +79,12 @@ components:
   display: h4
 - parameters:
   - summary: A deferred response which can produce a Response&lt;DeleteBlobResult&gt; after batch object is submitted.
+- content: <a id="a80533a758164d0f16e3e39965b55db2d"></a>
 - section: SetBlobAccessTier()
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobServiceBatch.SetBlobAccessTier%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::BlobServiceBatch.SetBlobAccessTier()
 - declaration: >-
     DeferredResponse&lt; Models::SetBlobAccessTierResult &gt; Azure::Storage::Blobs::BlobServiceBatch::SetBlobAccessTier(const std::string &amp;&#160;             blobContainerName,                   
                                                                                                                    const std::string &amp;&#160;             blobName,                            
@@ -91,8 +107,12 @@ components:
   display: h4
 - parameters:
   - summary: A deferred response which can produce a Response&lt;SetBlobAccessTierResult&gt; after batch object is submitted.
+- content: <a id="a4b0f65204f148e0fd69e538bf5024143"></a>
 - section: SetBlobAccessTierUrl()
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobServiceBatch.SetBlobAccessTierUrl%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::BlobServiceBatch.SetBlobAccessTierUrl()
 - declaration: >-
     DeferredResponse&lt; Models::SetBlobAccessTierResult &gt; Azure::Storage::Blobs::BlobServiceBatch::SetBlobAccessTierUrl(const std::string &amp;&#160;             blobUrl,                             
                                                                                                                       Models::AccessTier&#160;              accessTier,                          

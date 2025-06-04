@@ -1,113 +1,126 @@
 ### YamlMime:Reference
 uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient
 title: Azure::Security::KeyVault::Certificates::CertificateClient Class Reference
+xrefType: Class
 components:
 - content: >-
-    <p>The <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html">CertificateClient</a> provides synchronous methods to manage <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html">KeyVaultCertificate</a> in Azure Key Vault.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#details">More...</a></p><p><code>#include &lt;<a href="certificate__client_8hpp_source.html">certificate_client.hpp</a>&gt;</code></p>
+    <p>The <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml">CertificateClient</a> provides synchronous methods to manage <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.yml">KeyVaultCertificate</a> in Azure Key Vault.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#details">More...</a></p><p><code>#include &lt;certificate_client.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a6c3f8c04a4145accd572141895476448">~CertificateClient</a> ()=default
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a6c3f8c04a4145accd572141895476448">~CertificateClient</a> ()=default
     summary: Destructor.
     returnType: virtual&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#ab656e1f6d0929dd9dc854939bca93f49">CertificateClient</a> (std::string const &amp;vaultUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client_options.html">CertificateClientOptions</a> options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client_options.html">CertificateClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#ab656e1f6d0929dd9dc854939bca93f49">CertificateClient</a> (std::string const &amp;vaultUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client_options.yml">CertificateClientOptions</a> options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client_options.yml">CertificateClientOptions</a>())
     summary: Construct a new Key Client object.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a9085f7b860cff378cb0b6939ddde1454">CertificateClient</a> (<a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html">CertificateClient</a> const &amp;certificateClient)=default
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a9085f7b860cff378cb0b6939ddde1454">CertificateClient</a> (<a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml">CertificateClient</a> const &amp;certificateClient)=default
     summary: Construct a new Certificate Client object from another certificate client.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a68e100258e54c14b7048d2e880358f6e">GetCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
-    summary: Return the latest version of the <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html">KeyVaultCertificate</a> along with its <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html">CertificatePolicy</a>.
-    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">KeyVaultCertificateWithPolicy</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a4a5a27ca301c31dc58dcd3838228f958">GetCertificateVersion</a> (std::string const &amp;certificateName, std::string const &amp;certificateVersion, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
-    summary: Return a specific version of the certificate without its <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html">CertificatePolicy</a>.
-    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html">KeyVaultCertificate</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a40bd2ba2041990b2f883b0e612666b43">StartCreateCertificate</a> (std::string const &amp;certificateName, <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_create_options.html">CertificateCreateOptions</a> const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a68e100258e54c14b7048d2e880358f6e">GetCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Return the latest version of the <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.yml">KeyVaultCertificate</a> along with its <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.yml">CertificatePolicy</a>.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.yml">KeyVaultCertificateWithPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a4a5a27ca301c31dc58dcd3838228f958">GetCertificateVersion</a> (std::string const &amp;certificateName, std::string const &amp;certificateVersion, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Return a specific version of the certificate without its <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.yml">CertificatePolicy</a>.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.yml">KeyVaultCertificate</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a40bd2ba2041990b2f883b0e612666b43">StartCreateCertificate</a> (std::string const &amp;certificateName, <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_create_options.yml">CertificateCreateOptions</a> const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Create a new certificate.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html">CreateCertificateOperation</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a1a8555dbd0beedd4cf1776d525befb2d">CreateIssuer</a> (std::string const &amp;issuerName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> const &amp;certificateIssuer, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.yml">CreateCertificateOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a1a8555dbd0beedd4cf1776d525befb2d">CreateIssuer</a> (std::string const &amp;issuerName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> const &amp;certificateIssuer, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Create a new certificate issuer.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#ab1a85eb8edf8c3541782b788ea177ed8">GetIssuer</a> (std::string const &amp;issuerName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#ab1a85eb8edf8c3541782b788ea177ed8">GetIssuer</a> (std::string const &amp;issuerName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: List the specified certificate issuer.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#aeb97365d4c2cc598c14dec2fbcd5c0b8">UpdateIssuer</a> (std::string const &amp;issuerName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> const &amp;certificateIssuer, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#aeb97365d4c2cc598c14dec2fbcd5c0b8">UpdateIssuer</a> (std::string const &amp;issuerName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> const &amp;certificateIssuer, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Update the specified certificate issuer.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a5c76f59e52115173f453b390688fef34">DeleteIssuer</a> (std::string const &amp;issuerName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a5c76f59e52115173f453b390688fef34">DeleteIssuer</a> (std::string const &amp;issuerName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Delete the specified certificate issuer.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a9f32a34515b35ba481792d9135a11dbe">GetContacts</a> (Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a9f32a34515b35ba481792d9135a11dbe">GetContacts</a> (Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: List the certificate contacts for a specified key vault.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result.html">CertificateContactsResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#ad68a8191a3c90d2bf29ebba9175c07ea">DeleteContacts</a> (Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result.yml">CertificateContactsResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#ad68a8191a3c90d2bf29ebba9175c07ea">DeleteContacts</a> (Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Delete the certificate contacts for a specified key vault.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result.html">CertificateContactsResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#aad19359aab95c8fd9b0208d2b151138e">SetContacts</a> (std::vector&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contact.html">CertificateContact</a> &gt; const &amp;contacts, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result.yml">CertificateContactsResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#aad19359aab95c8fd9b0208d2b151138e">SetContacts</a> (std::vector&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contact.yml">CertificateContact</a> &gt; const &amp;contacts, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Set certificate contacts.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result.html">CertificateContactsResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a0c109e555281ddf2f38390ff10c895ff">GetDeletedCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result.yml">CertificateContactsResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a0c109e555281ddf2f38390ff10c895ff">GetDeletedCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Retrieves information about the specified deleted certificate.
-    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.html">DeletedCertificate</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a7d0519632b540fad5bd8dd324f8f89ac">PurgeDeletedCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.yml">DeletedCertificate</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a7d0519632b540fad5bd8dd324f8f89ac">PurgeDeletedCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Permanently deletes the specified deleted certificate.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_purged_certificate.html">PurgedCertificate</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a627381f612b726e23a4a19afa8efbfa9">StartDeleteCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_purged_certificate.yml">PurgedCertificate</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a627381f612b726e23a4a19afa8efbfa9">StartDeleteCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Deletes a certificate from a specified key vault.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_delete_certificate_operation.html">DeleteCertificateOperation</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a560e5d5608405aa6d9367780c7be333a">StartRecoverDeletedCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_delete_certificate_operation.yml">DeleteCertificateOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a560e5d5608405aa6d9367780c7be333a">StartRecoverDeletedCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Recovers the deleted certificate back to its current version under /certificates.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html">RecoverDeletedCertificateOperation</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#abd00cc80b6dd51d5467aa9f196b9d6cf">GetCertificatePolicy</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.yml">RecoverDeletedCertificateOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#abd00cc80b6dd51d5467aa9f196b9d6cf">GetCertificatePolicy</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: '"List the policy for a certificate.'
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html">CertificatePolicy</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a3e2e2cd67af299e6775db9f446367fc5">UpdateCertificatePolicy</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html">CertificatePolicy</a> const &amp;certificatePolicy, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.yml">CertificatePolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a3e2e2cd67af299e6775db9f446367fc5">UpdateCertificatePolicy</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.yml">CertificatePolicy</a> const &amp;certificatePolicy, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Update the policy for a certificate.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.html">CertificatePolicy</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a62882a524b6ba2b8f80844da7e356be9">BackupCertificate</a> (std::string certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.yml">CertificatePolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a62882a524b6ba2b8f80844da7e356be9">BackupCertificate</a> (std::string certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Backs up the specified certificate.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_backup_certificate_result.html">BackupCertificateResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a50a89850dd94b9c2c2aae154049a486b">RestoreCertificateBackup</a> (std::vector&lt; uint8_t &gt; const &amp;certificateBackup, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_backup_certificate_result.yml">BackupCertificateResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a50a89850dd94b9c2c2aae154049a486b">RestoreCertificateBackup</a> (std::vector&lt; uint8_t &gt; const &amp;certificateBackup, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Restores a backed up certificate to a vault.
-    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">KeyVaultCertificateWithPolicy</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#aaf1196b13a4e9fa7acf485f6541afb65">GetPropertiesOfCertificates</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificates_options.html">GetPropertiesOfCertificatesOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificates_options.html">GetPropertiesOfCertificatesOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.yml">KeyVaultCertificateWithPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#aaf1196b13a4e9fa7acf485f6541afb65">GetPropertiesOfCertificates</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificates_options.yml">GetPropertiesOfCertificatesOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificates_options.yml">GetPropertiesOfCertificatesOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: List certificates in a specified key vault.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties_paged_response.html">CertificatePropertiesPagedResponse</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a2a3383cf1eb69e8b8868d57f51d5a660">GetPropertiesOfCertificateVersions</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificate_versions_options.html">GetPropertiesOfCertificateVersionsOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificate_versions_options.html">GetPropertiesOfCertificateVersionsOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties_paged_response.yml">CertificatePropertiesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a2a3383cf1eb69e8b8868d57f51d5a660">GetPropertiesOfCertificateVersions</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificate_versions_options.yml">GetPropertiesOfCertificateVersionsOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificate_versions_options.yml">GetPropertiesOfCertificateVersionsOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: List the versions of a certificate.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties_paged_response.html">CertificatePropertiesPagedResponse</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a5eae88f1a01788eea1f44bf2d8c04334">GetPropertiesOfIssuers</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_issuers_options.html">GetPropertiesOfIssuersOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_issuers_options.html">GetPropertiesOfIssuersOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties_paged_response.yml">CertificatePropertiesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a5eae88f1a01788eea1f44bf2d8c04334">GetPropertiesOfIssuers</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_issuers_options.yml">GetPropertiesOfIssuersOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_issuers_options.yml">GetPropertiesOfIssuersOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: List certificate issuers for a specified key vault.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_issuer_properties_paged_response.html">IssuerPropertiesPagedResponse</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a08fd1255ebfbbf68fdfe2bee5ca7668a">GetDeletedCertificates</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_deleted_certificates_options.html">GetDeletedCertificatesOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_deleted_certificates_options.html">GetDeletedCertificatesOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_issuer_properties_paged_response.yml">IssuerPropertiesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a08fd1255ebfbbf68fdfe2bee5ca7668a">GetDeletedCertificates</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_deleted_certificates_options.yml">GetDeletedCertificatesOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_deleted_certificates_options.yml">GetDeletedCertificatesOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Lists the deleted certificates in the specified vault currently available for recovery.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificates_paged_response.html">DeletedCertificatesPagedResponse</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a34732cb0e48a3c7107f41727d244c692">ImportCertificate</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_import_certificate_options.html">ImportCertificateOptions</a> const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificates_paged_response.yml">DeletedCertificatesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a34732cb0e48a3c7107f41727d244c692">ImportCertificate</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_import_certificate_options.yml">ImportCertificateOptions</a> const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Imports a certificate into a specified key vault.
-    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">KeyVaultCertificateWithPolicy</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a009581dc4b25ebf1ddb785dad11cfa93">MergeCertificate</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_merge_certificate_options.html">MergeCertificateOptions</a> const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.yml">KeyVaultCertificateWithPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a009581dc4b25ebf1ddb785dad11cfa93">MergeCertificate</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_merge_certificate_options.yml">MergeCertificateOptions</a> const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Merges a certificate or a certificate chain with a key pair existing on the server.
-    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">KeyVaultCertificateWithPolicy</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html#a1f75544484d08601491d766ac3acac5c">UpdateCertificateProperties</a> (std::string const &amp;certificateName, std::string const &amp;certificateVersion, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.html">CertificateProperties</a> const &amp;certificateProperties, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.yml">KeyVaultCertificateWithPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a1f75544484d08601491d766ac3acac5c">UpdateCertificateProperties</a> (std::string const &amp;certificateName, std::string const &amp;certificateVersion, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.yml">CertificateProperties</a> const &amp;certificateProperties, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
     summary: Updates the specified attributes associated with a certificate.
-    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html">KeyVaultCertificate</a> &gt;&#160;
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.yml">KeyVaultCertificate</a> &gt;&#160;
 - section: Friends
   display: h2
 - apiList:
   - declaration: CreateCertificateOperation
-    returnType: class&#160;
+    returnType: >-
+      <a id="a2f12ef4ef1734ed5db6acc056ad3b77c"></a>
+
+      class&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
-- content: <p>The client supports retrieving <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html">KeyVaultCertificate</a>. </p>
+- content: <p>The client supports retrieving <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.yml">KeyVaultCertificate</a>. </p>
 - section: Constructor &amp; Destructor Documentation
   display: h2
+- content: <a id="a6c3f8c04a4145accd572141895476448"></a>
 - section: ~CertificateClient()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.~CertificateClient%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.~CertificateClient()
 - declaration: virtual Azure::Security::KeyVault::Certificates::CertificateClient::~CertificateClient() virtual default
   languageId: cpp
+- content: <a id="ab656e1f6d0929dd9dc854939bca93f49"></a>
 - section: CertificateClient() [1/2]
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.CertificateClient%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.CertificateClient() [1/2]
 - declaration: >-
     Azure::Security::KeyVault::Certificates::CertificateClient::CertificateClient(std::string const &amp;&#160;                                        vaultUrl,                            
                                                                                   std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                          
@@ -123,8 +136,12 @@ components:
     summary: The authentication method to use.
   - name: options
     summary: The options to customize the client behavior.
+- content: <a id="a9085f7b860cff378cb0b6939ddde1454"></a>
 - section: CertificateClient() [2/2]
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.CertificateClient%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.CertificateClient() [2/2]
 - declaration: Azure::Security::KeyVault::Certificates::CertificateClient::CertificateClient(CertificateClient const &amp;&#160;certificateClient) explicit default
   languageId: cpp
 - section: Parameters
@@ -134,8 +151,12 @@ components:
     summary: An existing key vault certificate client.
 - section: Member Function Documentation
   display: h2
+- content: <a id="a62882a524b6ba2b8f80844da7e356be9"></a>
 - section: BackupCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.BackupCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.BackupCertificate()
 - declaration: >-
     Azure::Response&lt; BackupCertificateResult &gt; Azure::Security::KeyVault::Certificates::CertificateClient::BackupCertificate(std::string&#160;                 certificateName,                 
                                                                                                                              Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
@@ -157,8 +178,12 @@ components:
   display: h4
 - parameters:
   - summary: Certificate backup.
+- content: <a id="a1a8555dbd0beedd4cf1776d525befb2d"></a>
 - section: CreateIssuer()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.CreateIssuer%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.CreateIssuer()
 - declaration: >-
     Azure::Response&lt; CertificateIssuer &gt; Azure::Security::KeyVault::Certificates::CertificateClient::CreateIssuer(std::string const &amp;&#160;         issuerName,                      
                                                                                                                   CertificateIssuer const &amp;&#160;   certificateIssuer,               
@@ -182,9 +207,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> instance used to determine create status.
+  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> instance used to determine create status.
+- content: <a id="ad68a8191a3c90d2bf29ebba9175c07ea"></a>
 - section: DeleteContacts()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.DeleteContacts%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.DeleteContacts()
 - declaration: Azure::Response&lt; CertificateContactsResult &gt; Azure::Security::KeyVault::Certificates::CertificateClient::DeleteContacts(Azure::Core::Context const &amp;&#160;context = Azure::Core::Context())const
   languageId: cpp
 - content: <p>Deletes the certificate contacts for a specified key vault certificate.</p>
@@ -201,8 +230,12 @@ components:
   display: h4
 - parameters:
   - summary: The contacts for the key vault certificate.
+- content: <a id="a5c76f59e52115173f453b390688fef34"></a>
 - section: DeleteIssuer()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.DeleteIssuer%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.DeleteIssuer()
 - declaration: >-
     Azure::Response&lt; CertificateIssuer &gt; Azure::Security::KeyVault::Certificates::CertificateClient::DeleteIssuer(std::string const &amp;&#160;         issuerName,                      
                                                                                                                   Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
@@ -223,9 +256,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> instance.
+  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> instance.
+- content: <a id="a68e100258e54c14b7048d2e880358f6e"></a>
 - section: GetCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetCertificate()
 - declaration: >-
     Azure::Response&lt; KeyVaultCertificateWithPolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetCertificate(std::string const &amp;&#160;         certificateName,                 
                                                                                                                                 Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
@@ -245,9 +282,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: A response containing the certificate and policy as a <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">KeyVaultCertificateWithPolicy</a> instance.
+  - summary: A response containing the certificate and policy as a <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.yml">KeyVaultCertificateWithPolicy</a> instance.
+- content: <a id="abd00cc80b6dd51d5467aa9f196b9d6cf"></a>
 - section: GetCertificatePolicy()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetCertificatePolicy%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetCertificatePolicy()
 - declaration: >-
     Azure::Response&lt; CertificatePolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetCertificatePolicy(std::string const &amp;&#160;         certificateName,                 
                                                                                                                           Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
@@ -269,8 +310,12 @@ components:
   display: h4
 - parameters:
   - summary: The contact properties.
+- content: <a id="a4a5a27ca301c31dc58dcd3838228f958"></a>
 - section: GetCertificateVersion()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetCertificateVersion%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetCertificateVersion()
 - declaration: >-
     Azure::Response&lt; KeyVaultCertificate &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetCertificateVersion(std::string const &amp;&#160;         certificateName,                 
                                                                                                                              std::string const &amp;&#160;         certificateVersion,              
@@ -294,9 +339,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: A response containing the certificate as a <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.html">KeyVaultCertificate</a> instance.
+  - summary: A response containing the certificate as a <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.yml">KeyVaultCertificate</a> instance.
+- content: <a id="a9f32a34515b35ba481792d9135a11dbe"></a>
 - section: GetContacts()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetContacts%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetContacts()
 - declaration: Azure::Response&lt; CertificateContactsResult &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetContacts(Azure::Core::Context const &amp;&#160;context = Azure::Core::Context())const
   languageId: cpp
 - content: <p>The GetContacts operation returns the set of certificate contact resources in the specified key vault.</p>
@@ -313,8 +362,12 @@ components:
   display: h4
 - parameters:
   - summary: The contacts list for the key vault certificate.
+- content: <a id="a0c109e555281ddf2f38390ff10c895ff"></a>
 - section: GetDeletedCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetDeletedCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetDeletedCertificate()
 - declaration: >-
     Azure::Response&lt; DeletedCertificate &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetDeletedCertificate(std::string const &amp;&#160;         certificateName,                 
                                                                                                                             Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
@@ -336,8 +389,12 @@ components:
   display: h4
 - parameters:
   - summary: The deleted certificate.
+- content: <a id="a08fd1255ebfbbf68fdfe2bee5ca7668a"></a>
 - section: GetDeletedCertificates()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetDeletedCertificates%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetDeletedCertificates()
 - declaration: >-
     DeletedCertificatesPagedResponse Azure::Security::KeyVault::Certificates::CertificateClient::GetDeletedCertificates(GetDeletedCertificatesOptions const &amp;&#160;options = GetDeletedCertificatesOptions(),
                                                                                                                         Azure::Core::Context const &amp;&#160;         context = Azure::Core::Context()&#160;         
@@ -359,8 +416,12 @@ components:
   display: h4
 - parameters:
   - summary: A response message containing a list of deleted certificates in the vault along with a link to the next page of deleted certificates.
+- content: <a id="ab1a85eb8edf8c3541782b788ea177ed8"></a>
 - section: GetIssuer()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetIssuer%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetIssuer()
 - declaration: >-
     Azure::Response&lt; CertificateIssuer &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetIssuer(std::string const &amp;&#160;         issuerName,                      
                                                                                                                Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
@@ -381,9 +442,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> instance.
+  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> instance.
+- content: <a id="aaf1196b13a4e9fa7acf485f6541afb65"></a>
 - section: GetPropertiesOfCertificates()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetPropertiesOfCertificates%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetPropertiesOfCertificates()
 - declaration: >-
     CertificatePropertiesPagedResponse Azure::Security::KeyVault::Certificates::CertificateClient::GetPropertiesOfCertificates(GetPropertiesOfCertificatesOptions const &amp;&#160;options = GetPropertiesOfCertificatesOptions(),
                                                                                                                                Azure::Core::Context const &amp;&#160;              context = Azure::Core::Context()&#160;              
@@ -405,8 +470,12 @@ components:
   display: h4
 - parameters:
   - summary: A response message containing a list of certificates along with a link to the next page of certificates.
+- content: <a id="a2a3383cf1eb69e8b8868d57f51d5a660"></a>
 - section: GetPropertiesOfCertificateVersions()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetPropertiesOfCertificateVersions%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetPropertiesOfCertificateVersions()
 - declaration: >-
     CertificatePropertiesPagedResponse Azure::Security::KeyVault::Certificates::CertificateClient::GetPropertiesOfCertificateVersions(std::string const &amp;&#160;                              certificateName,                                      
                                                                                                                                       GetPropertiesOfCertificateVersionsOptions const &amp;&#160;options = GetPropertiesOfCertificateVersionsOptions(),
@@ -431,8 +500,12 @@ components:
   display: h4
 - parameters:
   - summary: A response message containing a list of certificate versions along with a link to the next page of certificates.
+- content: <a id="a5eae88f1a01788eea1f44bf2d8c04334"></a>
 - section: GetPropertiesOfIssuers()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetPropertiesOfIssuers%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetPropertiesOfIssuers()
 - declaration: >-
     IssuerPropertiesPagedResponse Azure::Security::KeyVault::Certificates::CertificateClient::GetPropertiesOfIssuers(GetPropertiesOfIssuersOptions const &amp;&#160;options = GetPropertiesOfIssuersOptions(),
                                                                                                                      Azure::Core::Context const &amp;&#160;         context = Azure::Core::Context()&#160;         
@@ -454,8 +527,12 @@ components:
   display: h4
 - parameters:
   - summary: A response message containing a list of issuers along with a link to the next page of certificates.
+- content: <a id="a34732cb0e48a3c7107f41727d244c692"></a>
 - section: ImportCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.ImportCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.ImportCertificate()
 - declaration: >-
     Azure::Response&lt; KeyVaultCertificateWithPolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::ImportCertificate(std::string const &amp;&#160;             certificateName,                 
                                                                                                                                    ImportCertificateOptions const &amp;&#160;options,                         
@@ -480,8 +557,12 @@ components:
   display: h4
 - parameters:
   - summary: Imported certificate bundle to the vault.
+- content: <a id="a009581dc4b25ebf1ddb785dad11cfa93"></a>
 - section: MergeCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.MergeCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.MergeCertificate()
 - declaration: >-
     Azure::Response&lt; KeyVaultCertificateWithPolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::MergeCertificate(std::string const &amp;&#160;            certificateName,                 
                                                                                                                                   MergeCertificateOptions const &amp;&#160;options,                         
@@ -506,8 +587,12 @@ components:
   display: h4
 - parameters:
   - summary: Merged certificate bundle to the vault.
+- content: <a id="a7d0519632b540fad5bd8dd324f8f89ac"></a>
 - section: PurgeDeletedCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.PurgeDeletedCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.PurgeDeletedCertificate()
 - declaration: >-
     Azure::Response&lt; PurgedCertificate &gt; Azure::Security::KeyVault::Certificates::CertificateClient::PurgeDeletedCertificate(std::string const &amp;&#160;         certificateName,                 
                                                                                                                              Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
@@ -529,8 +614,12 @@ components:
   display: h4
 - parameters:
   - summary: Empty object.
+- content: <a id="a50a89850dd94b9c2c2aae154049a486b"></a>
 - section: RestoreCertificateBackup()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.RestoreCertificateBackup%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.RestoreCertificateBackup()
 - declaration: >-
     Azure::Response&lt; KeyVaultCertificateWithPolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::RestoreCertificateBackup(std::vector&lt; uint8_t &gt; const &amp;&#160;certificateBackup,               
                                                                                                                                           Azure::Core::Context const &amp;&#160;  context = Azure::Core::Context()&#160;
@@ -552,8 +641,12 @@ components:
   display: h4
 - parameters:
   - summary: The restored certificate.
+- content: <a id="aad19359aab95c8fd9b0208d2b151138e"></a>
 - section: SetContacts()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.SetContacts%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.SetContacts()
 - declaration: >-
     Azure::Response&lt; CertificateContactsResult &gt; Azure::Security::KeyVault::Certificates::CertificateClient::SetContacts(std::vector&lt; CertificateContact &gt; const &amp;&#160;contacts,                        
                                                                                                                          Azure::Core::Context const &amp;&#160;             context = Azure::Core::Context()&#160;
@@ -575,8 +668,12 @@ components:
   display: h4
 - parameters:
   - summary: The contacts for the key vault certificate.
+- content: <a id="a40bd2ba2041990b2f883b0e612666b43"></a>
 - section: StartCreateCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.StartCreateCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.StartCreateCertificate()
 - declaration: >-
     CreateCertificateOperation Azure::Security::KeyVault::Certificates::CertificateClient::StartCreateCertificate(std::string const &amp;&#160;             certificateName,                 
                                                                                                                   CertificateCreateOptions const &amp;&#160;options,                         
@@ -600,9 +697,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.html">CreateCertificateOperation</a> instance used to determine create status.
+  - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation.yml">CreateCertificateOperation</a> instance used to determine create status.
+- content: <a id="a627381f612b726e23a4a19afa8efbfa9"></a>
 - section: StartDeleteCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.StartDeleteCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.StartDeleteCertificate()
 - declaration: >-
     DeleteCertificateOperation Azure::Security::KeyVault::Certificates::CertificateClient::StartDeleteCertificate(std::string const &amp;&#160;         certificateName,                 
                                                                                                                   Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
@@ -624,8 +725,12 @@ components:
   display: h4
 - parameters:
   - summary: Delete Certificate operation.
+- content: <a id="a560e5d5608405aa6d9367780c7be333a"></a>
 - section: StartRecoverDeletedCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.StartRecoverDeletedCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.StartRecoverDeletedCertificate()
 - declaration: >-
     RecoverDeletedCertificateOperation Azure::Security::KeyVault::Certificates::CertificateClient::StartRecoverDeletedCertificate(std::string const &amp;&#160;         certificateName,                 
                                                                                                                                   Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
@@ -647,8 +752,12 @@ components:
   display: h4
 - parameters:
   - summary: Recover deleted certificate operation.
+- content: <a id="a3e2e2cd67af299e6775db9f446367fc5"></a>
 - section: UpdateCertificatePolicy()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.UpdateCertificatePolicy%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.UpdateCertificatePolicy()
 - declaration: >-
     Azure::Response&lt; CertificatePolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::UpdateCertificatePolicy(std::string const &amp;&#160;         certificateName,                 
                                                                                                                              CertificatePolicy const &amp;&#160;   certificatePolicy,               
@@ -673,8 +782,12 @@ components:
   display: h4
 - parameters:
   - summary: The updated contact properties.
+- content: <a id="a1f75544484d08601491d766ac3acac5c"></a>
 - section: UpdateCertificateProperties()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.UpdateCertificateProperties%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.UpdateCertificateProperties()
 - declaration: >-
     Azure::Response&lt; KeyVaultCertificate &gt; Azure::Security::KeyVault::Certificates::CertificateClient::UpdateCertificateProperties(std::string const &amp;&#160;          certificateName,                 
                                                                                                                                    std::string const &amp;&#160;          certificateVersion,              
@@ -702,8 +815,12 @@ components:
   display: h4
 - parameters:
   - summary: The updated certificate.
+- content: <a id="aeb97365d4c2cc598c14dec2fbcd5c0b8"></a>
 - section: UpdateIssuer()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.UpdateIssuer%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.UpdateIssuer()
 - declaration: >-
     Azure::Response&lt; CertificateIssuer &gt; Azure::Security::KeyVault::Certificates::CertificateClient::UpdateIssuer(std::string const &amp;&#160;         issuerName,                      
                                                                                                                   CertificateIssuer const &amp;&#160;   certificateIssuer,               
@@ -727,4 +844,4 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.html">CertificateIssuer</a> instance.
+  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">CertificateIssuer</a> instance.

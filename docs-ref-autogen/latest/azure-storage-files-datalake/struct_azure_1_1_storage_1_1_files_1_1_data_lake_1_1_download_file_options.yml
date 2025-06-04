@@ -1,21 +1,23 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADownloadFileOptions
 title: Azure::Storage::Files::DataLake::DownloadFileOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#aeee60a34ea9d9fb2da88057a9843c069">Azure::Storage::Files::DataLake::DataLakeFileClient::Download</a>.  
-     <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.html#details">More...</a></p><p><code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code></p>
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#aeee60a34ea9d9fb2da88057a9843c069">Azure::Storage::Files::DataLake::DataLakeFileClient::Download</a>.  
+     <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.yml#details">More...</a></p><p><code>#include &lt;datalake_options.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.html#a7e1e28100cb709ce6045c7e1a01b0c7c">Range</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.yml#a7e1e28100cb709ce6045c7e1a01b0c7c">Range</a>
     returnType: Azure::Nullable&lt; Core::Http::HttpRange &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.html#a8411ea32c7893f678fba8b2758a9c1c3">RangeHashAlgorithm</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.yml#a8411ea32c7893f678fba8b2758a9c1c3">RangeHashAlgorithm</a>
     returnType: Azure::Nullable&lt; HashAlgorithm &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.html#abe7aade5efff9de10ac34a5077c34986">AccessConditions</a>
-    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_path_access_conditions.html">PathAccessConditions</a>&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.html#a7f7138a9134201fcee7dfca6b96b8549">IncludeUserPrincipalName</a>
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.yml#abe7aade5efff9de10ac34a5077c34986">AccessConditions</a>
+    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_path_access_conditions.yml">PathAccessConditions</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.yml#a7f7138a9134201fcee7dfca6b96b8549">IncludeUserPrincipalName</a>
     returnType: Nullable&lt; bool &gt;&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - section: Remarks
@@ -24,23 +26,36 @@ components:
   - summary: 'Some optional parameter is mandatory in certain combination. More details: <a href="https://docs.microsoft.com/rest/api/storageservices/datalakestoragegen2/path/read">https://docs.microsoft.com/rest/api/storageservices/datalakestoragegen2/path/read</a>'
 - section: Member Data Documentation
   display: h2
+- content: <a id="abe7aade5efff9de10ac34a5077c34986"></a>
 - section: AccessConditions
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADownloadFileOptions.AccessConditions
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DownloadFileOptions.AccessConditions
 - declaration: PathAccessConditions Azure::Storage::Files::DataLake::DownloadFileOptions::AccessConditions
   languageId: cpp
-- content: <p>Specify the access condition for the path. </p>
+- content: <p>Specify the access condition for the path. </p><a id="a7f7138a9134201fcee7dfca6b96b8549"></a>
 - section: IncludeUserPrincipalName
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADownloadFileOptions.IncludeUserPrincipalName
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DownloadFileOptions.IncludeUserPrincipalName
 - declaration: Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::DownloadFileOptions::IncludeUserPrincipalName
   languageId: cpp
-- content: <p>Valid only when Hierarchical Namespace is enabled for the account. If "true", the user identity values returned in the owner and group fields of each list entry will be transformed from Azure Active Directory Object IDs to User Principal Names. If "false" or not provided, the values will be returned as Azure Active Directory Object IDs. Note that group and application Object IDs are not translated because they do not have unique friendly names. More Details about UserPrincipalName, See <a href="https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname">https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname</a> </p>
+- content: <p>Valid only when Hierarchical Namespace is enabled for the account. If "true", the user identity values returned in the owner and group fields of each list entry will be transformed from Azure Active Directory Object IDs to User Principal Names. If "false" or not provided, the values will be returned as Azure Active Directory Object IDs. Note that group and application Object IDs are not translated because they do not have unique friendly names. More Details about UserPrincipalName, See <a href="https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname">https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname</a> </p><a id="a7e1e28100cb709ce6045c7e1a01b0c7c"></a>
 - section: Range
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADownloadFileOptions.Range
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DownloadFileOptions.Range
 - declaration: Azure::Nullable&lt;Core::Http::HttpRange&gt; Azure::Storage::Files::DataLake::DownloadFileOptions::Range
   languageId: cpp
-- content: <p>Specify the range of the resource to be retrieved. </p>
+- content: <p>Specify the range of the resource to be retrieved. </p><a id="a8411ea32c7893f678fba8b2758a9c1c3"></a>
 - section: RangeHashAlgorithm
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADownloadFileOptions.RangeHashAlgorithm
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DownloadFileOptions.RangeHashAlgorithm
 - declaration: Azure::Nullable&lt;HashAlgorithm&gt; Azure::Storage::Files::DataLake::DownloadFileOptions::RangeHashAlgorithm
   languageId: cpp
 - content: <p>The hash algorithm used to calculate the hash for the returned content. </p>

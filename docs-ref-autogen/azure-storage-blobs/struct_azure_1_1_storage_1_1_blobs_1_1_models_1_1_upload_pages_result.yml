@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadPagesResult
 title: Azure::Storage::Blobs::Models::UploadPagesResult Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.yml#a2b8cdf4749fc82a7c43a4f07ef176819">Azure::Storage::Blobs::PageBlobClient::UploadPages</a>.  
@@ -28,36 +29,57 @@ components:
 - content: <a id="a8dbf9a5498aa4cb5059eba7fedfdaa2c"></a>
 - section: EncryptionKeySha256
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadPagesResult.EncryptionKeySha256
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadPagesResult.EncryptionKeySha256
 - declaration: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::UploadPagesResult::EncryptionKeySha256
   languageId: cpp
 - content: <p>The SHA-256 hash of the encryption key used to encrypt the pages. This header is only returned when the pages were encrypted with a customer-provided key. </p><a id="ac99d4370d217edb31bb1277bfe36feb8"></a>
 - section: EncryptionScope
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadPagesResult.EncryptionScope
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadPagesResult.EncryptionScope
 - declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::UploadPagesResult::EncryptionScope
   languageId: cpp
 - content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p><a id="a4e993ce74aed086dab2e2a3758697cf5"></a>
 - section: ETag
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadPagesResult.ETag
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadPagesResult.ETag
 - declaration: Azure::ETag Azure::Storage::Blobs::Models::UploadPagesResult::ETag
   languageId: cpp
 - content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p><a id="a43dbabd1eb26647d50b336014cc842e4"></a>
 - section: IsServerEncrypted
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadPagesResult.IsServerEncrypted
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadPagesResult.IsServerEncrypted
 - declaration: bool Azure::Storage::Blobs::Models::UploadPagesResult::IsServerEncrypted = bool()
   languageId: cpp
 - content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p><a id="a70c3a2009bac0ee48dc8f4f5dee1c4b5"></a>
 - section: LastModified
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadPagesResult.LastModified
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadPagesResult.LastModified
 - declaration: DateTime Azure::Storage::Blobs::Models::UploadPagesResult::LastModified
   languageId: cpp
 - content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p><a id="a2dca40d4f12ed6c62ed137443f367a73"></a>
 - section: SequenceNumber
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadPagesResult.SequenceNumber
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadPagesResult.SequenceNumber
 - declaration: std::int64_t Azure::Storage::Blobs::Models::UploadPagesResult::SequenceNumber = int64_t()
   languageId: cpp
 - content: <p>The current sequence number for the page blob. </p><a id="a2c2ff4fe325fa1b929763c5ec944c381"></a>
 - section: TransactionalContentHash
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadPagesResult.TransactionalContentHash
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadPagesResult.TransactionalContentHash
 - declaration: Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::UploadPagesResult::TransactionalContentHash
   languageId: cpp
 - content: <p>If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity. </p>

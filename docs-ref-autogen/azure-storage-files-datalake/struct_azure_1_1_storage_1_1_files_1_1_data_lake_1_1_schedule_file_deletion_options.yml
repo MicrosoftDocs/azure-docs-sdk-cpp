@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AScheduleFileDeletionOptions
 title: Azure::Storage::Files::DataLake::ScheduleFileDeletionOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Options for scheduling the deletion of a path.  
@@ -18,11 +19,17 @@ components:
 - content: <a id="a0d297dfce5ebf10cd91b3d7f15c87a9d"></a>
 - section: ExpiresOn
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AScheduleFileDeletionOptions.ExpiresOn
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::ScheduleFileDeletionOptions.ExpiresOn
 - declaration: Azure::Nullable&lt;DateTime&gt; Azure::Storage::Files::DataLake::ScheduleFileDeletionOptions::ExpiresOn
   languageId: cpp
 - content: <p>The expiry time in RFC1123 format. Only works if ExpiryOrigin is ScheduleFileExpiryOriginType::Absolute. Does not apply to directories. ExpiresOn and TimeToExpire cannot both be set. </p><a id="a2f4ef85b9e8c1740474411f2719485ca"></a>
 - section: TimeToExpire
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AScheduleFileDeletionOptions.TimeToExpire
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::ScheduleFileDeletionOptions.TimeToExpire
 - declaration: Azure::Nullable&lt;std::chrono::milliseconds&gt; Azure::Storage::Files::DataLake::ScheduleFileDeletionOptions::TimeToExpire
   languageId: cpp
 - content: <p>The expiry time from the specified origin. Only work if ExpiryOrigin is ScheduleFileExpiryOriginType::RelativeToCreation or ScheduleFileExpiryOriginType::RelativeToNow. Does not apply to directories. TimeToExpire and ExpiresOn cannot both be set. </p>

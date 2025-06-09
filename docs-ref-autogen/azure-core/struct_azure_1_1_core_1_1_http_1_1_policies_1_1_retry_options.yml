@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions
 title: Azure::Core::Http::Policies::RetryOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>The set of options that can be specified to influence how retry attempts are made, and a failure is eligible to be retried.  
@@ -32,11 +33,17 @@ components:
 - content: <a id="a1ae346a844eeeee69972acbdc5bd92e3"></a>
 - section: MaxRetries
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions.MaxRetries
+  xrefType: Member
+  xrefName: Azure::Core::Http::Policies::RetryOptions.MaxRetries
 - declaration: int32_t Azure::Core::Http::Policies::RetryOptions::MaxRetries = 3
   languageId: cpp
 - content: <a id="a5f90051b3513321e14d257298723b615"></a>
 - section: MaxRetryDelay
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions.MaxRetryDelay
+  xrefType: Member
+  xrefName: Azure::Core::Http::Policies::RetryOptions.MaxRetryDelay
 - declaration: std::chrono::milliseconds Azure::Core::Http::Policies::RetryOptions::MaxRetryDelay = std::chrono::seconds(60)
   languageId: cpp
 - section: Note
@@ -46,6 +53,9 @@ components:
 - content: <a id="a06ba92fd6194748cabd32bc78390e348"></a>
 - section: RetryDelay
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions.RetryDelay
+  xrefType: Member
+  xrefName: Azure::Core::Http::Policies::RetryOptions.RetryDelay
 - declaration: std::chrono::milliseconds Azure::Core::Http::Policies::RetryOptions::RetryDelay = std::chrono::milliseconds(800)
   languageId: cpp
 - section: Note
@@ -55,6 +65,9 @@ components:
 - content: <a id="a88c82f2eeb65eb9b7819e1c55dcf86ae"></a>
 - section: StatusCodes
   display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions.StatusCodes
+  xrefType: Member
+  xrefName: Azure::Core::Http::Policies::RetryOptions.StatusCodes
 - declaration: std::set&lt;HttpStatusCode&gt; Azure::Core::Http::Policies::RetryOptions::StatusCodes
   languageId: cpp
 - content: Initial value:{HttpStatusCode::RequestTimeout,HttpStatusCode::InternalServerError,HttpStatusCode::BadGateway,HttpStatusCode::ServiceUnavailable,HttpStatusCode::GatewayTimeout,}

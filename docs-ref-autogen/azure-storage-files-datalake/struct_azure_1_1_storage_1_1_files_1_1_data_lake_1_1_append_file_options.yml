@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AAppendFileOptions
 title: Azure::Storage::Files::DataLake::AppendFileOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a54d30b7659e43ad83016c3a32983efc2">Azure::Storage::Files::DataLake::DataLakeFileClient::Append</a>.  
@@ -26,31 +27,49 @@ components:
 - content: <a id="a1f0d6f01494af8ff34d56b9b81bb6133"></a>
 - section: AccessConditions
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AAppendFileOptions.AccessConditions
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::AppendFileOptions.AccessConditions
 - declaration: LeaseAccessConditions Azure::Storage::Files::DataLake::AppendFileOptions::AccessConditions
   languageId: cpp
 - content: <p>Specify the lease access conditions. </p><a id="a9e6eaa132c1ad00f40c80684a3307aa9"></a>
 - section: Flush
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AAppendFileOptions.Flush
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::AppendFileOptions.Flush
 - declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::AppendFileOptions::Flush
   languageId: cpp
 - content: <p>If true, the file will be flushed after the append. </p><a id="af9556708cf002953d69d384ebaefb3b3"></a>
 - section: LeaseAction
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AAppendFileOptions.LeaseAction
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::AppendFileOptions.LeaseAction
 - declaration: Azure::Nullable&lt;Models::LeaseAction&gt; Azure::Storage::Files::DataLake::AppendFileOptions::LeaseAction
   languageId: cpp
 - content: <p>If "acquire" it will acquire the lease. If "auto-renew" it will renew the lease. If "release" it will release the lease only on flush. Only applicable if Flush is set to true. If "acquire-release" it will acquire &amp; complete the operation &amp; release the lease once operation is done. Only applicable if Flush is set to true. </p><a id="a45371e7a414977997fa7cb7c6d52e611"></a>
 - section: LeaseDuration
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AAppendFileOptions.LeaseDuration
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::AppendFileOptions.LeaseDuration
 - declaration: Azure::Nullable&lt;std::chrono::seconds&gt; Azure::Storage::Files::DataLake::AppendFileOptions::LeaseDuration
   languageId: cpp
 - content: <p>Specifies the duration of the lease, in seconds, or InfiniteLeaseDuration for a lease that never expires. A non-infinite lease can be between 15 and 60 seconds. A lease duration cannot be changed using renew or change. </p><a id="a5374632c4fdeb9670823144ca59af52f"></a>
 - section: LeaseId
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AAppendFileOptions.LeaseId
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::AppendFileOptions.LeaseId
 - declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::AppendFileOptions::LeaseId
   languageId: cpp
 - content: <p>Proposed LeaseId. </p><a id="adfc677a93d16cf3a1ce850cdb990cd2e"></a>
 - section: TransactionalContentHash
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AAppendFileOptions.TransactionalContentHash
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::AppendFileOptions.TransactionalContentHash
 - declaration: Azure::Nullable&lt;Storage::ContentHash&gt; Azure::Storage::Files::DataLake::AppendFileOptions::TransactionalContentHash
   languageId: cpp
 - content: <p>Specify the transactional hash for the body, to be validated by the service. </p>

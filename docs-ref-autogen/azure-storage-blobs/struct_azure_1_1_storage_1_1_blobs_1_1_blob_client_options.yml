@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobClientOptions
 title: Azure::Storage::Blobs::BlobClientOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Client options used to initialize all kinds of blob clients.  
@@ -37,21 +38,33 @@ components:
 - content: <a id="a19f05101fc3a0a1da3989ffa3ac0e33a"></a>
 - section: ApiVersion
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobClientOptions.ApiVersion
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::BlobClientOptions.ApiVersion
 - declaration: std::string Azure::Storage::Blobs::BlobClientOptions::ApiVersion
   languageId: cpp
 - content: <p>API version used by this client. </p><a id="a8c66d700e909fb436be895edc1c04c5a"></a>
 - section: Audience
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobClientOptions.Audience
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::BlobClientOptions.Audience
 - declaration: Azure::Nullable&lt;BlobAudience&gt; Azure::Storage::Blobs::BlobClientOptions::Audience
   languageId: cpp
 - content: <p>The Audience to use for authentication with Azure Active Directory (AAD). <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_audience.yml#a56d7257a2bfdad128db751c5e7a03e86">Azure::Storage::Blobs::BlobAudience::DefaultAudience</a> will be assumed if Audience is not set. </p><a id="ad052fd7e685881f8336474f5b6c36b67"></a>
 - section: EnableTenantDiscovery
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobClientOptions.EnableTenantDiscovery
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::BlobClientOptions.EnableTenantDiscovery
 - declaration: bool Azure::Storage::Blobs::BlobClientOptions::EnableTenantDiscovery = false
   languageId: cpp
 - content: <p>Enables tenant discovery through the authorization challenge when the client is configured to use a TokenCredential. When enabled, the client will attempt an initial un-authorized request to prompt a challenge in order to discover the correct tenant for the resource. </p><a id="a9800cdc7a1c10129071305c877a9b5d7"></a>
 - section: SecondaryHostForRetryReads
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobClientOptions.SecondaryHostForRetryReads
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::BlobClientOptions.SecondaryHostForRetryReads
 - declaration: std::string Azure::Storage::Blobs::BlobClientOptions::SecondaryHostForRetryReads
   languageId: cpp
 - content: '<p>SecondaryHostForRetryReads specifies whether the retry policy should retry a read operation against another host. If SecondaryHostForRetryReads is "" (the default) then operations are not retried against another host. NOTE: Before setting this field, make sure you understand the issues around reading stale &amp; potentially-inconsistent data at this webpage: <a href="https://docs.microsoft.com/azure/storage/common/geo-redundant-design">https://docs.microsoft.com/azure/storage/common/geo-redundant-design</a>. </p>'

@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ASetPathAccessControlListRecursiveOptions
 title: Azure::Storage::Files::DataLake::SetPathAccessControlListRecursiveOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Optional parameters for DirectoryClient::SetAccessControlListRecursive.  
@@ -20,16 +21,25 @@ components:
 - content: <a id="a9f17c3128bcee2e3e18becc14a11f027"></a>
 - section: ContinuationToken
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ASetPathAccessControlListRecursiveOptions.ContinuationToken
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::SetPathAccessControlListRecursiveOptions.ContinuationToken
 - declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::SetPathAccessControlListRecursiveOptions::ContinuationToken
   languageId: cpp
 - content: <p>When performing setAccessControlRecursive on a directory, the number of paths that are processed with each invocation is limited. If the number of paths to be processed exceeds this limit, a continuation token is returned in this response header. When a continuation token is returned in the response, it must be specified in a subsequent invocation of the setAccessControlRecursive operation to continue the setAccessControlRecursive operation on the directory. </p><a id="a3414f6ffa9e2649f6f8dc1e5d622e2cf"></a>
 - section: ContinueOnFailure
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ASetPathAccessControlListRecursiveOptions.ContinueOnFailure
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::SetPathAccessControlListRecursiveOptions.ContinueOnFailure
 - declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::SetPathAccessControlListRecursiveOptions::ContinueOnFailure
   languageId: cpp
 - content: <p>Optional. If set to false, the operation will terminate quickly on encountering user errors (4XX). If true, the operation will ignore user errors and proceed with the operation on other sub-entities of the directory. Continuation token will only be returned when ContinueOnFailure is true in case of user errors. If not set the default value is false for this. </p><a id="ad086d623af661b020bece3627f26c5e5"></a>
 - section: PageSizeHint
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ASetPathAccessControlListRecursiveOptions.PageSizeHint
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::SetPathAccessControlListRecursiveOptions.PageSizeHint
 - declaration: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::DataLake::SetPathAccessControlListRecursiveOptions::PageSizeHint
   languageId: cpp
 - content: <p>It specifies the maximum number of files or directories on which the acl change will be applied. If omitted or greater than 2,000, the request will process up to 2,000 items. </p>

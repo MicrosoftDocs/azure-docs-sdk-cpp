@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AUploadFileRangeOptions
 title: Azure::Storage::Files::Shares::UploadFileRangeOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.yml#a111082673e45b2e2fb13ca68feb4d155">Azure::Storage::Files::Shares::ShareFileClient::UploadRange</a>.  
@@ -20,16 +21,25 @@ components:
 - content: <a id="a2daf98ca8fe40b9ca7a8bced1cf1579c"></a>
 - section: AccessConditions
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AUploadFileRangeOptions.AccessConditions
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::UploadFileRangeOptions.AccessConditions
 - declaration: LeaseAccessConditions Azure::Storage::Files::Shares::UploadFileRangeOptions::AccessConditions
   languageId: cpp
 - content: <p>The operation will only succeed if the access condition is met. </p><a id="a8118e788b257784f3c7158254be16969"></a>
 - section: FileLastWrittenMode
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AUploadFileRangeOptions.FileLastWrittenMode
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::UploadFileRangeOptions.FileLastWrittenMode
 - declaration: Azure::Nullable&lt;Models::FileLastWrittenMode&gt; Azure::Storage::Files::Shares::UploadFileRangeOptions::FileLastWrittenMode
   languageId: cpp
 - content: <p>Specifies if the file last write time should be set to the current time, or the last write time currently associated with the file should be preserved. </p><a id="ae6adb2dfdadac75c4dfdf53d500d851a"></a>
 - section: TransactionalContentHash
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AUploadFileRangeOptions.TransactionalContentHash
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::UploadFileRangeOptions.TransactionalContentHash
 - declaration: Azure::Nullable&lt;ContentHash&gt; Azure::Storage::Files::Shares::UploadFileRangeOptions::TransactionalContentHash
   languageId: cpp
 - content: <p>An MD5 hash of the content. This hash is used to verify the integrity of the data during transport. When the TransactionalContentHash parameter is specified, the File service compares the hash of the content that has arrived with the header value that was sent. If the two hashes do not match, the operation will fail with error code 400 (Bad Request). </p>

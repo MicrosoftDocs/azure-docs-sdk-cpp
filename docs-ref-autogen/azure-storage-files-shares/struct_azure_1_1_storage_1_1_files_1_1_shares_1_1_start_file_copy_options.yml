@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions
 title: Azure::Storage::Files::Shares::StartFileCopyOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client.yml#abad2034b3b7c0b170cae75f35d9a3883">Azure::Storage::Files::Shares::ShareFileClient::StartCopy</a>.  
@@ -38,61 +39,97 @@ components:
 - content: <a id="ab8e2a0526c5f3214bbc43d7a47ba6e36"></a>
 - section: AccessConditions
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.AccessConditions
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.AccessConditions
 - declaration: LeaseAccessConditions Azure::Storage::Files::Shares::StartFileCopyOptions::AccessConditions
   languageId: cpp
 - content: <p>The operation will only succeed if the access condition is met. </p><a id="ad9fcc31e22cbed2addbacdccd574c50f"></a>
 - section: FilePermissionFormat
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.FilePermissionFormat
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.FilePermissionFormat
 - declaration: Nullable&lt;Models ::FilePermissionFormat&gt; Azure::Storage::Files::Shares::StartFileCopyOptions::FilePermissionFormat
   languageId: cpp
 - content: <p>Optional. Available for version 2024-11-04 and later. Specifies the format in which the permission is returned.If FilePermissionFormat is unspecified or explicitly set to SDDL format format, the permission will be returned in SDDL format. </p><a id="aaee6c93ba9c11fb2132907b9d27ee5c4"></a>
 - section: IgnoreReadOnly
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.IgnoreReadOnly
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.IgnoreReadOnly
 - declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::Shares::StartFileCopyOptions::IgnoreReadOnly
   languageId: cpp
 - content: <p>Specifies the option to overwrite the target file if it already exists and has read-only attribute set. </p><a id="a92be69693917ddbe6d8b89e53cfa52a0"></a>
 - section: Metadata
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.Metadata
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.Metadata
 - declaration: Storage::Metadata Azure::Storage::Files::Shares::StartFileCopyOptions::Metadata
   languageId: cpp
 - content: <p>A name-value pair to associate with a file storage object. </p><a id="a15c6fd7d5e9e4ca8c3f0f64a28a73e44"></a>
 - section: ModeCopyMode
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.ModeCopyMode
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.ModeCopyMode
 - declaration: Azure::Nullable&lt;Models::ModeCopyMode&gt; Azure::Storage::Files::Shares::StartFileCopyOptions::ModeCopyMode
   languageId: cpp
 - content: <p>Optional, only applicable to NFS Files. If not populated, the destination file will have the default File Mode. </p><a id="a6c78febe3c4c47f286f141744dba9338"></a>
 - section: OwnerCopyMode
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.OwnerCopyMode
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.OwnerCopyMode
 - declaration: Azure::Nullable&lt;Models::OwnerCopyMode&gt; Azure::Storage::Files::Shares::StartFileCopyOptions::OwnerCopyMode
   languageId: cpp
 - content: <p>Optional, only applicable to NFS Files. If not populated, the destination file will have the default Owner and Group. </p><a id="a345fd8d8b4dbd91bec13f8b27daca2ba"></a>
 - section: Permission
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.Permission
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.Permission
 - declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::StartFileCopyOptions::Permission
   languageId: cpp
 - content: <p>This permission is the security descriptor for the file specified in the Security Descriptor Definition Language (SDDL) or base64 encoded binary format. If not specified, 'inherit' is used. </p><a id="ab34425cb5d65a0bd19dca378decbc215"></a>
 - section: PermissionCopyMode
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.PermissionCopyMode
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.PermissionCopyMode
 - declaration: Azure::Nullable&lt;Models::PermissionCopyMode&gt; Azure::Storage::Files::Shares::StartFileCopyOptions::PermissionCopyMode
   languageId: cpp
 - content: <p>Specifies the option to copy file security descriptor from source file or to set it using the value which is defined by the SMB properties. </p><a id="a2c6f04211a44d1db186bd3e7a1cd4160"></a>
 - section: PosixProperties
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.PosixProperties
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.PosixProperties
 - declaration: Models::FilePosixProperties Azure::Storage::Files::Shares::StartFileCopyOptions::PosixProperties
   languageId: cpp
 - content: <p>The NFS related properties for the file. </p><a id="a8e1c79f6ad9dd424e03929b496a9e113"></a>
 - section: SetArchiveAttribute
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.SetArchiveAttribute
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.SetArchiveAttribute
 - declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::Shares::StartFileCopyOptions::SetArchiveAttribute
   languageId: cpp
 - content: <p>Specifies the option to set archive attribute on a target file. True means archive attribute will be set on a target file despite attribute overrides or a source file state. </p><a id="a2a91550066ac684f0d4a23af5c177246"></a>
 - section: SmbProperties
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.SmbProperties
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.SmbProperties
 - declaration: Models::FileSmbProperties Azure::Storage::Files::Shares::StartFileCopyOptions::SmbProperties
   languageId: cpp
 - content: <p>SMB properties to set for the destination file. </p><a id="a27733ae9c63018f76a59412f6c83b94e"></a>
 - section: SmbPropertiesToCopy
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AStartFileCopyOptions.SmbPropertiesToCopy
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::StartFileCopyOptions.SmbPropertiesToCopy
 - declaration: Azure::Nullable&lt;CopyableFileSmbPropertyFlags&gt; Azure::Storage::Files::Shares::StartFileCopyOptions::SmbPropertiesToCopy
   languageId: cpp
 - content: >-

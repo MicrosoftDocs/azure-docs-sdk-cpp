@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient
 title: Azure::Security::Attestation::AttestationAdministrationClient Class Reference
+xrefType: Class
 components:
 - content: >-
     <p>The <a href="class_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client.yml">AttestationAdministrationClient</a> implements the functionality required by the "Administration" family of attestation service APIs.  
@@ -75,6 +76,9 @@ components:
 - content: <a id="a9fa2c7cb0b1b3a1c9064974126cdf7c1"></a>
 - section: AttestationAdministrationClient()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.AttestationAdministrationClient%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.AttestationAdministrationClient()
 - declaration: Azure::Security::Attestation::AttestationAdministrationClient::AttestationAdministrationClient(AttestationAdministrationClient const &amp;&#160;attestationClient) default
   languageId: cpp
 - section: Parameters
@@ -87,6 +91,9 @@ components:
 - content: <a id="a65132a4cd2ce171286086650cec4964f"></a>
 - section: AddIsolatedModeCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.AddIsolatedModeCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.AddIsolatedModeCertificate()
 - declaration: >-
     Azure::Response&lt; Models::AttestationToken&lt; Models::IsolatedModeCertificateModificationResult &gt; &gt; AttestationAdministrationClient::AddIsolatedModeCertificate(std::string const &amp;&#160;                      pemEncodedCertificateToAdd,                   
                                                                                                                                                                  AttestationSigningKey const &amp;&#160;            signerForRequest,                             
@@ -117,6 +124,9 @@ components:
 - content: <a id="a0553dc022ea0385809198f8e595faf93"></a>
 - section: Create()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.Create%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.Create()
 - declaration: >-
     AttestationAdministrationClient AttestationAdministrationClient::Create(std::string const &amp;&#160;                                        endpoint,                                          
                                                                             std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt;&#160;credential,                                        
@@ -140,6 +150,9 @@ components:
 - content: <a id="a7ebfe672a3de7ff6a77c882e0d615551"></a>
 - section: CreateAttestationPolicyToken()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.CreateAttestationPolicyToken%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.CreateAttestationPolicyToken()
 - declaration: >-
     Models::AttestationToken&lt; void &gt; AttestationAdministrationClient::CreateAttestationPolicyToken(Azure::Nullable&lt; std::string &gt; const &amp;&#160;          policyToSet,    
                                                                                                    Azure::Nullable&lt; AttestationSigningKey &gt; const &amp;&#160;signingKey = {}&#160;
@@ -164,6 +177,9 @@ components:
 - content: <a id="a8a1842bd7899528b5f32e9a89a83468c"></a>
 - section: Endpoint()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.Endpoint%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.Endpoint()
 - declaration: std::string const Azure::Security::Attestation::AttestationAdministrationClient::Endpoint()const inline
   languageId: cpp
 - section: Returns
@@ -173,6 +189,9 @@ components:
 - content: <a id="a82e8ecdce5119142c0ef5d86a621a7bb"></a>
 - section: GetAttestationPolicy()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.GetAttestationPolicy%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.GetAttestationPolicy()
 - declaration: >-
     Azure::Response&lt; Models::AttestationToken&lt; std::string &gt; &gt; AttestationAdministrationClient::GetAttestationPolicy(Models::AttestationType const &amp;&#160;attestationType,                 
                                                                                                                      GetPolicyOptions const &amp;&#160;       options = GetPolicyOptions{},    
@@ -195,6 +214,9 @@ components:
 - content: <a id="a02375cc42ae361b5b33b439ce96d10ed"></a>
 - section: GetIsolatedModeCertificates()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.GetIsolatedModeCertificates%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.GetIsolatedModeCertificates()
 - declaration: >-
     Azure::Response&lt; Models::AttestationToken&lt; IsolatedModeCertificateListResult &gt; &gt; AttestationAdministrationClient::GetIsolatedModeCertificates(GetIsolatedModeCertificatesOptions const &amp;&#160;options = GetIsolatedModeCertificatesOptions{},
                                                                                                                                                   Azure::Core::Context const &amp;&#160;              context = Azure::Core::Context{}&#160;              
@@ -215,6 +237,9 @@ components:
 - content: <a id="a2d85116ce7367b2348e677f808279f51"></a>
 - section: RemoveIsolatedModeCertificate()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.RemoveIsolatedModeCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.RemoveIsolatedModeCertificate()
 - declaration: >-
     Azure::Response&lt; Models::AttestationToken&lt; Models::IsolatedModeCertificateModificationResult &gt; &gt; AttestationAdministrationClient::RemoveIsolatedModeCertificate(std::string const &amp;&#160;                         pemEncodedCertificateToAdd,                      
                                                                                                                                                                     AttestationSigningKey const &amp;&#160;               signerForRequest,                                
@@ -245,6 +270,9 @@ components:
 - content: <a id="a4eec56bda69541415df341df8908368a"></a>
 - section: ResetAttestationPolicy()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.ResetAttestationPolicy%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.ResetAttestationPolicy()
 - declaration: >-
     Azure::Response&lt; Models::AttestationToken&lt; Models::PolicyResult &gt; &gt; AttestationAdministrationClient::ResetAttestationPolicy(Models::AttestationType const &amp;&#160;attestationType,                 
                                                                                                                                 SetPolicyOptions const &amp;&#160;       options = SetPolicyOptions{},    
@@ -267,6 +295,9 @@ components:
 - content: <a id="a70ce6c8b9e39e1115e8c1885b15db5ea"></a>
 - section: SetAttestationPolicy()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClient.SetAttestationPolicy%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClient.SetAttestationPolicy()
 - declaration: >-
     Azure::Response&lt; Models::AttestationToken&lt; Models::PolicyResult &gt; &gt; AttestationAdministrationClient::SetAttestationPolicy(Models::AttestationType const &amp;&#160;attestationType,                 
                                                                                                                               std::string const &amp;&#160;            policyToSet,                     

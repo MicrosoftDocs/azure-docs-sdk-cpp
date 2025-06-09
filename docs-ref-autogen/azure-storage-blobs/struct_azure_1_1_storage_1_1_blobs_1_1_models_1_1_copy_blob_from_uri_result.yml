@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACopyBlobFromUriResult
 title: Azure::Storage::Blobs::Models::CopyBlobFromUriResult Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a267904b7db1f9e53632dc551aaea037c">Azure::Storage::Blobs::BlobClient::CopyFromUri</a>.  
@@ -28,36 +29,57 @@ components:
 - content: <a id="ade584e8f78bb0035aa382a098d159f76"></a>
 - section: CopyId
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACopyBlobFromUriResult.CopyId
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::CopyBlobFromUriResult.CopyId
 - declaration: std::string Azure::Storage::Blobs::Models::CopyBlobFromUriResult::CopyId
   languageId: cpp
 - content: <p>String identifier for this copy operation. </p><a id="a3737a45b1af8709e63f5ecb2118eaa8c"></a>
 - section: CopyStatus
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACopyBlobFromUriResult.CopyStatus
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::CopyBlobFromUriResult.CopyStatus
 - declaration: Models::CopyStatus Azure::Storage::Blobs::Models::CopyBlobFromUriResult::CopyStatus
   languageId: cpp
 - content: <p>State of the copy operation identified by x-ms-copy-id. </p><a id="af06b40793a6a4a2e290b7f814925d058"></a>
 - section: EncryptionScope
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACopyBlobFromUriResult.EncryptionScope
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::CopyBlobFromUriResult.EncryptionScope
 - declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::CopyBlobFromUriResult::EncryptionScope
   languageId: cpp
 - content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p><a id="ac5a67648e1cd5d9bca7cb1efc51d3a82"></a>
 - section: ETag
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACopyBlobFromUriResult.ETag
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::CopyBlobFromUriResult.ETag
 - declaration: Azure::ETag Azure::Storage::Blobs::Models::CopyBlobFromUriResult::ETag
   languageId: cpp
 - content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p><a id="ac25a3cf8771d575bd93d620cfe484a65"></a>
 - section: LastModified
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACopyBlobFromUriResult.LastModified
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::CopyBlobFromUriResult.LastModified
 - declaration: DateTime Azure::Storage::Blobs::Models::CopyBlobFromUriResult::LastModified
   languageId: cpp
 - content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p><a id="aea2e26d1f0213f299a831fd2af2de8e6"></a>
 - section: TransactionalContentHash
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACopyBlobFromUriResult.TransactionalContentHash
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::CopyBlobFromUriResult.TransactionalContentHash
 - declaration: Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::CopyBlobFromUriResult::TransactionalContentHash
   languageId: cpp
 - content: <p>This response header is returned so that the client can check for the integrity of the copied content. This header is only returned if the source content MD5 was specified. </p><a id="ac578456b261cabedd26e8a1f665f3755"></a>
 - section: VersionId
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACopyBlobFromUriResult.VersionId
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::CopyBlobFromUriResult.VersionId
 - declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::CopyBlobFromUriResult::VersionId
   languageId: cpp
 - content: <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>

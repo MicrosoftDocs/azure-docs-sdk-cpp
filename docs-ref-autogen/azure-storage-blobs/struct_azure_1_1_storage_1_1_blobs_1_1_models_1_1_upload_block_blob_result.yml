@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadBlockBlobResult
 title: Azure::Storage::Blobs::Models::UploadBlockBlobResult Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.yml#a4c914625a21b4b9cf6081fc13bda9e5d">Azure::Storage::Blobs::BlockBlobClient::Upload</a>.  
@@ -28,36 +29,57 @@ components:
 - content: <a id="ac41c59736d10782ed05c49920479e32a"></a>
 - section: EncryptionKeySha256
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadBlockBlobResult.EncryptionKeySha256
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadBlockBlobResult.EncryptionKeySha256
 - declaration: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::UploadBlockBlobResult::EncryptionKeySha256
   languageId: cpp
 - content: <p>The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key. </p><a id="a17be9f6e7ba9c794813e07965164288c"></a>
 - section: EncryptionScope
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadBlockBlobResult.EncryptionScope
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadBlockBlobResult.EncryptionScope
 - declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::UploadBlockBlobResult::EncryptionScope
   languageId: cpp
 - content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p><a id="a313eaf9fd706c7f8ba216062bed2e5a6"></a>
 - section: ETag
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadBlockBlobResult.ETag
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadBlockBlobResult.ETag
 - declaration: Azure::ETag Azure::Storage::Blobs::Models::UploadBlockBlobResult::ETag
   languageId: cpp
 - content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p><a id="a4088d09a5309f4dc127b9c2dd882b63e"></a>
 - section: IsServerEncrypted
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadBlockBlobResult.IsServerEncrypted
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadBlockBlobResult.IsServerEncrypted
 - declaration: bool Azure::Storage::Blobs::Models::UploadBlockBlobResult::IsServerEncrypted = bool()
   languageId: cpp
 - content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p><a id="ab87d8afdcdb414551369c91f73b33cac"></a>
 - section: LastModified
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadBlockBlobResult.LastModified
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadBlockBlobResult.LastModified
 - declaration: DateTime Azure::Storage::Blobs::Models::UploadBlockBlobResult::LastModified
   languageId: cpp
 - content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p><a id="a42fa41afdbb5e2f1a994d4d007c2b4c0"></a>
 - section: TransactionalContentHash
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadBlockBlobResult.TransactionalContentHash
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadBlockBlobResult.TransactionalContentHash
 - declaration: Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::UploadBlockBlobResult::TransactionalContentHash
   languageId: cpp
 - content: <p>If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity. </p><a id="a4f51d9e81da8ffc92dd5c98f5a7bf669"></a>
 - section: VersionId
   display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3AUploadBlockBlobResult.VersionId
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::UploadBlockBlobResult.VersionId
 - declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::UploadBlockBlobResult::VersionId
   languageId: cpp
 - content: <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>

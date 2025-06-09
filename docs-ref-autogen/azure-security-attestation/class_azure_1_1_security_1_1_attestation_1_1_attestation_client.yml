@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient
 title: Azure::Security::Attestation::AttestationClient Class Reference
+xrefType: Class
 components:
 - content: <p><code>#include &lt;attestation_client.hpp&gt;</code></p>
 - section: Public Member Functions
@@ -73,6 +74,9 @@ components:
 - content: <a id="a00b2c2654f756849edfd69be16986338"></a>
 - section: AttestationClient()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient.AttestationClient%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationClient.AttestationClient()
 - declaration: Azure::Security::Attestation::AttestationClient::AttestationClient(AttestationClient const &amp;&#160;attestationClient) default
   languageId: cpp
 - section: Parameters
@@ -85,6 +89,9 @@ components:
 - content: <a id="a8b1339a75a29d04a11748b2b1e0ea0eb"></a>
 - section: AttestOpenEnclave()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient.AttestOpenEnclave%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationClient.AttestOpenEnclave()
 - declaration: >-
     Azure::Response&lt; AttestationToken&lt; AttestationResult &gt; &gt; AttestationClient::AttestOpenEnclave(std::vector&lt; uint8_t &gt; const &amp;&#160;openEnclaveReportToAttest,           
                                                                                                   AttestOpenEnclaveOptions&#160;      options = AttestOpenEnclaveOptions{},
@@ -107,6 +114,9 @@ components:
 - content: <a id="a33951d2025a60565df78c0dc3ff2ec18"></a>
 - section: AttestSgxEnclave()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient.AttestSgxEnclave%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationClient.AttestSgxEnclave()
 - declaration: >-
     Azure::Response&lt; AttestationToken&lt; AttestationResult &gt; &gt; AttestationClient::AttestSgxEnclave(std::vector&lt; uint8_t &gt; const &amp;&#160;sgxQuoteToAttest,                   
                                                                                                  AttestSgxEnclaveOptions&#160;       options = AttestSgxEnclaveOptions{},
@@ -129,6 +139,9 @@ components:
 - content: <a id="ab8c5c71a28ab168dc4fe3e1d648afd62"></a>
 - section: AttestTpm()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient.AttestTpm%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationClient.AttestTpm()
 - declaration: >-
     Azure::Response&lt; TpmAttestationResult &gt; AttestationClient::AttestTpm(std::vector&lt; uint8_t &gt; const &amp;&#160;dataToAttest,                    
                                                                          AttestTpmOptions const &amp;&#160;      options = AttestTpmOptions{},    
@@ -151,6 +164,9 @@ components:
 - content: <a id="aef03bb25d81d8878e818881872f30da3"></a>
 - section: Create() [1/2]
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient.Create%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationClient.Create() [1/2]
 - declaration: >-
     Azure::Security::Attestation::AttestationClient AttestationClient::Create(std::string const &amp;&#160;         endpoint,                            
                                                                               AttestationClientOptions&#160;    options = AttestationClientOptions{},
@@ -187,6 +203,9 @@ components:
 - content: <a id="a15d7efd10c95952b2e2bdaff7d87217a"></a>
 - section: Create() [2/2]
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient.Create%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationClient.Create() [2/2]
 - declaration: >-
     Azure::Security::Attestation::AttestationClient AttestationClient::Create(std::string const &amp;&#160;                                        endpoint,                            
                                                                               std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt;&#160;credential,                          
@@ -220,6 +239,9 @@ components:
 - content: <a id="ab8e7607e328cdb56004ff71570b8c4a8"></a>
 - section: GetOpenIdMetadata()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient.GetOpenIdMetadata%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationClient.GetOpenIdMetadata()
 - declaration: Azure::Response&lt; OpenIdMetadata &gt; AttestationClient::GetOpenIdMetadata(Azure::Core::Context const &amp;&#160;context = Azure::Core::Context::ApplicationContext)const
   languageId: cpp
 - content: <p>Retrieves metadata about the attestation signing keys in use by the attestation service.</p><p>Retrieve the OpenID metadata for this attestation service instance..</p>
@@ -230,6 +252,9 @@ components:
 - content: <a id="a67787c727edc1db49d06a6274c6f2224"></a>
 - section: GetTokenValidationCertificates()
   display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationClient.GetTokenValidationCertificates%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationClient.GetTokenValidationCertificates()
 - declaration: Azure::Response&lt; TokenValidationCertificateResult &gt; AttestationClient::GetTokenValidationCertificates(Azure::Core::Context const &amp;&#160;context = Azure::Core::Context{})const
   languageId: cpp
 - section: Returns

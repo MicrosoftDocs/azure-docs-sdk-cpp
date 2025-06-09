@@ -1,6 +1,7 @@
 ### YamlMime:Reference
 uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeClientOptions
 title: Azure::Storage::Files::DataLake::DataLakeClientOptions Struct Reference
+xrefType: Struct
 components:
 - content: >-
     <p>Client options used to initialize all DataLake clients.  
@@ -31,21 +32,33 @@ components:
 - content: <a id="a9efeb472714df968b3213cd9e3933abd"></a>
 - section: ApiVersion
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeClientOptions.ApiVersion
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DataLakeClientOptions.ApiVersion
 - declaration: std::string Azure::Storage::Files::DataLake::DataLakeClientOptions::ApiVersion
   languageId: cpp
 - content: <p>API version used by this client. </p><a id="acb08912dcbb0b7a624a4cecfe1aff605"></a>
 - section: Audience
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeClientOptions.Audience
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DataLakeClientOptions.Audience
 - declaration: Azure::Nullable&lt;DataLakeAudience&gt; Azure::Storage::Files::DataLake::DataLakeClientOptions::Audience
   languageId: cpp
 - content: <p>The Audience to use for authentication with Azure Active Directory (AAD). <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_audience.yml#a9d6f994eca0002734d79176d91b36f01">Azure::Storage::Files::DataLake::DataLakeAudience::DefaultAudience</a> will be assumed if Audience is not set. </p><a id="aeb7403fb385aa7944b6b3fbada5e6d03"></a>
 - section: EnableTenantDiscovery
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeClientOptions.EnableTenantDiscovery
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DataLakeClientOptions.EnableTenantDiscovery
 - declaration: bool Azure::Storage::Files::DataLake::DataLakeClientOptions::EnableTenantDiscovery = false
   languageId: cpp
 - content: <p>Enables tenant discovery through the authorization challenge when the client is configured to use a TokenCredential. When enabled, the client will attempt an initial un-authorized request to prompt a challenge in order to discover the correct tenant for the resource. </p><a id="af849a3339c1ae0186162bbbf86b1cadc"></a>
 - section: SecondaryHostForRetryReads
   display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeClientOptions.SecondaryHostForRetryReads
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DataLakeClientOptions.SecondaryHostForRetryReads
 - declaration: std::string Azure::Storage::Files::DataLake::DataLakeClientOptions::SecondaryHostForRetryReads
   languageId: cpp
 - content: '<p>SecondaryHostForRetryReads specifies whether the retry policy should retry a read operation against another host. If SecondaryHostForRetryReads is "" (the default) then operations are not retried against another host. NOTE: Before setting this field, make sure you understand the issues around reading stale &amp; potentially-inconsistent data at this webpage: <a href="https://docs.microsoft.com/azure/storage/common/geo-redundant-design">https://docs.microsoft.com/azure/storage/common/geo-redundant-design</a>. </p>'

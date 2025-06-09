@@ -1,0 +1,127 @@
+### YamlMime:Reference
+uid: certificate_client_models.hpp
+title: certificate_client_models.hpp File Reference
+xrefType: File
+xrefName: certificate_client_models.hpp
+components:
+- content: >-
+    <p>Defines the Key Vault Certificates types.  
+
+    <a href="certificate__client__models_8hpp.yml#details">More...</a></p>#include &quot;azure/keyvault/certificates/dll_import_export.hpp&quot;#include &lt;azure/core/context.hpp&gt;#include &lt;azure/core/http/http.hpp&gt;#include &lt;azure/core/nullable.hpp&gt;#include &lt;azure/core/paged_response.hpp&gt;#include &lt;azure/core/response.hpp&gt;#include &lt;memory&gt;#include &lt;string&gt;#include &lt;unordered_map&gt;#include &lt;vector&gt;<p><a href="certificate__client__models_8hpp_source.html">Go to the source code of this file.</a></p>
+- section: Classes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.yml">Azure::Security::KeyVault::Certificates::CertificateProperties</a>
+    summary: Contains identity and other basic properties of a Certificate.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.yml">Azure::Security::KeyVault::Certificates::KeyVaultCertificate</a>
+    summary: An Azure Key Vault certificate.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_type.yml">Azure::Security::KeyVault::Certificates::CertificateKeyType</a>
+    summary: Supported JsonWebKey key types (kty).  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_type.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_curve_name.yml">Azure::Security::KeyVault::Certificates::CertificateKeyCurveName</a>
+    summary: Elliptic Curve Cryptography (ECC) curve names.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_curve_name.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_subject_alternative_names.yml">Azure::Security::KeyVault::Certificates::SubjectAlternativeNames</a>
+    summary: A collection of subject alternative names (SANs) for a X.509 certificate. SANs can be DNS entries, emails, or unique principal names.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_subject_alternative_names.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.yml">Azure::Security::KeyVault::Certificates::CertificateContentType</a>
+    summary: Content type of the certificate when downloaded from getsecret.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_content_type.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.yml">Azure::Security::KeyVault::Certificates::CertificateKeyUsage</a>
+    summary: Supported usages of a certificate key.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_key_usage.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy_action.yml">Azure::Security::KeyVault::Certificates::CertificatePolicyAction</a>
+    summary: An action that will be executed.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy_action.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_lifetime_action.yml">Azure::Security::KeyVault::Certificates::LifetimeAction</a>
+    summary: An action to be executed at a prescribed time in a certificates lifecycle.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_lifetime_action.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.yml">Azure::Security::KeyVault::Certificates::CertificatePolicy</a>
+    summary: A policy which governs the lifecycle a properties of a certificate managed by Azure Key Vault.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.yml">Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy</a>
+    summary: A <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate.yml">KeyVaultCertificate</a> along with its <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy.yml">CertificatePolicy</a>.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_create_options.yml">Azure::Security::KeyVault::Certificates::CertificateCreateOptions</a>
+    summary: Options for StartCreateCertificate.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_create_options.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_update_options.yml">Azure::Security::KeyVault::Certificates::CertificateOperationUpdateOptions</a>
+    summary: The certificate operation update Options.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_update_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_issuer_credentials.yml">Azure::Security::KeyVault::Certificates::IssuerCredentials</a>
+    summary: Issuer Credentials.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_issuer_credentials.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_administrator_details.yml">Azure::Security::KeyVault::Certificates::AdministratorDetails</a>
+    summary: Administrator details.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_administrator_details.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_issuer_properties.yml">Azure::Security::KeyVault::Certificates::IssuerProperties</a>
+    summary: Certificate Issuer Properties.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_issuer_properties.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_organization_details.yml">Azure::Security::KeyVault::Certificates::OrganizationDetails</a>
+    summary: Organization details.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_organization_details.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml">Azure::Security::KeyVault::Certificates::CertificateIssuer</a>
+    summary: Certificate issuer.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contact.yml">Azure::Security::KeyVault::Certificates::CertificateContact</a>
+    summary: The contact information for the vault certificates.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contact.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_server_error.yml">Azure::Security::KeyVault::Certificates::ServerError</a>
+    summary: Key vault server error.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_server_error.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.yml">Azure::Security::KeyVault::Certificates::CertificateOperationProperties</a>
+    summary: A certificate operation.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_operation_properties.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.yml">Azure::Security::KeyVault::Certificates::DeletedCertificate</a>
+    summary: Represents a deleted certificate in a KeyVault.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_purged_certificate.yml">Azure::Security::KeyVault::Certificates::PurgedCertificate</a>
+    summary: Define a model for a purged Certificate.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_purged_certificate.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificates_options.yml">Azure::Security::KeyVault::Certificates::GetPropertiesOfCertificatesOptions</a>
+    summary: The options for calling an operation <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#aaf1196b13a4e9fa7acf485f6541afb65">Azure::Security::KeyVault::Certificates::CertificateClient::GetPropertiesOfCertificates</a>.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificates_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificate_versions_options.yml">Azure::Security::KeyVault::Certificates::GetPropertiesOfCertificateVersionsOptions</a>
+    summary: The options for calling an operation <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a2a3383cf1eb69e8b8868d57f51d5a660">Azure::Security::KeyVault::Certificates::CertificateClient::GetPropertiesOfCertificateVersions</a>.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificate_versions_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_issuers_options.yml">Azure::Security::KeyVault::Certificates::GetPropertiesOfIssuersOptions</a>
+    summary: The options for calling an operation <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a5eae88f1a01788eea1f44bf2d8c04334">Azure::Security::KeyVault::Certificates::CertificateClient::GetPropertiesOfIssuers</a>.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_issuers_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_deleted_certificates_options.yml">Azure::Security::KeyVault::Certificates::GetDeletedCertificatesOptions</a>
+    summary: The options for calling an operation <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml#a08fd1255ebfbbf68fdfe2bee5ca7668a">Azure::Security::KeyVault::Certificates::CertificateClient::GetDeletedCertificates</a>.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_deleted_certificates_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_backup_certificate_result.yml">Azure::Security::KeyVault::Certificates::BackupCertificateResult</a>
+    summary: A certificate backup data.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_backup_certificate_result.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer_item.yml">Azure::Security::KeyVault::Certificates::CertificateIssuerItem</a>
+    summary: represents on item from GetPropertiesOfIssuers  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer_item.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties_paged_response.yml">Azure::Security::KeyVault::Certificates::CertificatePropertiesPagedResponse</a>
+    summary: Define a single page to list the certificates from the Key Vault.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties_paged_response.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_issuer_properties_paged_response.yml">Azure::Security::KeyVault::Certificates::IssuerPropertiesPagedResponse</a>
+    summary: Define a single page to list the issuers from the Key Vault.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_issuer_properties_paged_response.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificates_paged_response.yml">Azure::Security::KeyVault::Certificates::DeletedCertificatesPagedResponse</a>
+    summary: Define a single page to list the issuers from the Key Vault.  <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificates_paged_response.yml#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_secret.yml">Azure::Security::KeyVault::Certificates::KeyVaultSecret</a>
+    summary: Certificate associated secret.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_secret.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_import_certificate_options.yml">Azure::Security::KeyVault::Certificates::ImportCertificateOptions</a>
+    summary: Import Certificate options.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_import_certificate_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_merge_certificate_options.yml">Azure::Security::KeyVault::Certificates::MergeCertificateOptions</a>
+    summary: The certificate merge Options.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_merge_certificate_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_update_options.yml">Azure::Security::KeyVault::Certificates::CertificateUpdateOptions</a>
+    summary: The certificate update Options.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_update_options.yml#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result.yml">Azure::Security::KeyVault::Certificates::CertificateContactsResult</a>
+    summary: The certificate contacts API result.  <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result.yml#details">More...</a>
+    returnType: struct &#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2

@@ -1,0 +1,38 @@
+### YamlMime:Reference
+uid: case_insensitive_containers.hpp
+title: case_insensitive_containers.hpp File Reference
+xrefType: File
+xrefName: case_insensitive_containers.hpp
+components:
+- content: >-
+    <p>A <code>map&lt;string, string&gt;</code> with case-insensitive key comparison.  
+
+    <a href="case__insensitive__containers_8hpp.yml#details">More...</a></p>#include &quot;azure/core/internal/strings.hpp&quot;#include &lt;map&gt;#include &lt;set&gt;#include &lt;string&gt;<p><a href="case__insensitive__containers_8hpp_source.html">Go to the source code of this file.</a></p>
+- section: Namespaces
+  display: h2
+- apiList:
+  - declaration: <a href="namespace_azure.yml">Azure</a>
+    summary: Compute the hash value for the input binary data, using SHA256, SHA384 and SHA512.
+    returnType: namespace &#160;
+- section: Typedefs
+  display: h2
+- apiList:
+  - declaration: Azure::Core::CaseInsensitiveMap = std::map&lt; std::string, std::string, _internal::StringExtensions::CaseInsensitiveComparator &gt;
+    summary: A type alias of <code>std::map&lt;std::string, std::string&gt;</code> with case-insensitive key comparison.
+    returnType: >-
+      <a id="a0a9ad25d76ebd954381ff73acd04cb9e"></a>
+
+      using&#160;
+  - declaration: <a href="case__insensitive__containers_8hpp.yml#afdf1e554b35e26fc01def903c96164c0">Azure::Core::CaseInsensitiveSet</a> = std::set&lt; std::string, _internal::StringExtensions::CaseInsensitiveComparator &gt;
+    summary: A type alias of <code>std::set&lt;std::string&gt;</code> with case-insensitive element comparison.
+    returnType: using&#160;
+- section: Typedef Documentation
+  display: h2
+- content: <a id="afdf1e554b35e26fc01def903c96164c0"></a>
+- section: CaseInsensitiveSet
+  display: h3
+  uid: case_insensitive_containers.hpp.CaseInsensitiveSet
+  xrefType: Member
+  xrefName: case_insensitive_containers.hpp.CaseInsensitiveSet
+- declaration: using Azure::Core::CaseInsensitiveSet = typedef std::set&lt;std::string, _internal::StringExtensions::CaseInsensitiveComparator&gt;
+  languageId: cpp

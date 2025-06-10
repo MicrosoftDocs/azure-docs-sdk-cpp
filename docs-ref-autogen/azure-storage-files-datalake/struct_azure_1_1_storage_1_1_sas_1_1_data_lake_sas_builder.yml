@@ -4,31 +4,31 @@ title: Azure::Storage::Sas::DataLakeSasBuilder Struct Reference
 xrefType: Struct
 components:
 - content: >-
-    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml">DataLakeSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage DataLake filesystem or path.  
+    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder">DataLakeSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage DataLake filesystem or path.  
 
     </p><p><code>#include &lt;datalake_sas_builder.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#a8932fae3c57d972ebe8994288c125e7b">SetPermissions</a> (DataLakeFileSystemSasPermissions permissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder#a8932fae3c57d972ebe8994288c125e7b">SetPermissions</a> (DataLakeFileSystemSasPermissions permissions)
     summary: Sets the permissions for the filesystem SAS.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#a381ab2db0ab99598234c5f0d76615b07">SetPermissions</a> (DataLakeSasPermissions permissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder#a381ab2db0ab99598234c5f0d76615b07">SetPermissions</a> (DataLakeSasPermissions permissions)
     summary: Sets the permissions for the file SAS or directory SAS.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#ae3530ba1ed0bbea5e674a06db9733eb1">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder#ae3530ba1ed0bbea5e674a06db9733eb1">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
     summary: Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#aa1685fb6213ae4eacf7dc9db8f5538fb">SetPermissions</a> (std::string rawPermissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder#aa1685fb6213ae4eacf7dc9db8f5538fb">SetPermissions</a> (std::string rawPermissions)
     summary: Sets the permissions for the SAS using a raw permissions string.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#ab206e3b4d835937e9d5392b34ddcbca6">GenerateSasToken</a> (const Files::DataLake::Models::UserDelegationKey &amp;userDelegationKey, const std::string &amp;accountName)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder#ab206e3b4d835937e9d5392b34ddcbca6">GenerateSasToken</a> (const Files::DataLake::Models::UserDelegationKey &amp;userDelegationKey, const std::string &amp;accountName)
     summary: Uses an account's user delegation key to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#aeca98f78e071e114a02c14bccedc316a">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder#aeca98f78e071e114a02c14bccedc316a">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
     summary: For debugging purposes only.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml#a5eae8f23ff939b4094148686fa9d382f">GenerateSasStringToSign</a> (const Blobs::Models::UserDelegationKey &amp;userDelegationKey, const std::string &amp;accountName)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder#a5eae8f23ff939b4094148686fa9d382f">GenerateSasStringToSign</a> (const Blobs::Models::UserDelegationKey &amp;userDelegationKey, const std::string &amp;accountName)
     summary: For debugging purposes only.
     returnType: std::string&#160;
 - section: Public Attributes

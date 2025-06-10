@@ -4,31 +4,31 @@ title: Azure::Storage::Sas::BlobSasBuilder Struct Reference
 xrefType: Struct
 components:
 - content: >-
-    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml">BlobSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage container or blob.  
+    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder">BlobSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage container or blob.  
 
     </p><p><code>#include &lt;blob_sas_builder.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a576bd2495f51c20c19c4aa188ff50313">SetPermissions</a> (BlobContainerSasPermissions permissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder#a576bd2495f51c20c19c4aa188ff50313">SetPermissions</a> (BlobContainerSasPermissions permissions)
     summary: Sets the permissions for the blob container SAS.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a94399919f3752623e1d4775ee9521322">SetPermissions</a> (BlobSasPermissions permissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder#a94399919f3752623e1d4775ee9521322">SetPermissions</a> (BlobSasPermissions permissions)
     summary: Sets the permissions for the blob SAS.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a44e334fdd83ae9567b13e94c3f4a6594">SetPermissions</a> (std::string rawPermissions)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder#a44e334fdd83ae9567b13e94c3f4a6594">SetPermissions</a> (std::string rawPermissions)
     summary: Sets the permissions for the SAS using a raw permissions string.
     returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a9fa261c75b49cf2ed22c689df90b0fa9">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder#a9fa261c75b49cf2ed22c689df90b0fa9">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
     summary: Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a5bf74d765c846238b6d7a5522c5bb1d3">GenerateSasToken</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_user_delegation_key.yml">Blobs::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder#a5bf74d765c846238b6d7a5522c5bb1d3">GenerateSasToken</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_user_delegation_key">Blobs::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
     summary: Uses an account's user delegation key to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a8844eac82d994f85ab8186b1cfde1d94">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder#a8844eac82d994f85ab8186b1cfde1d94">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
     summary: For debugging purposes only.
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a15863b0dd34f745c136971ef2f1b8bfd">GenerateSasStringToSign</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_user_delegation_key.yml">Blobs::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder#a15863b0dd34f745c136971ef2f1b8bfd">GenerateSasStringToSign</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_user_delegation_key">Blobs::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
     summary: For debugging purposes only.
     returnType: std::string&#160;
 - section: Public Attributes

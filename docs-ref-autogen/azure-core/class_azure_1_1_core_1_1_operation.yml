@@ -5,61 +5,61 @@ xrefType: Class
 components:
 - content: >-
     <p>Methods starting long-running operations return Operation&lt;T&gt; types.  
-     <a href="class_azure_1_1_core_1_1_operation.yml#details">More...</a></p><p><code>#include &lt;operation.hpp&gt;</code></p>
+     <a href="class_azure_1_1_core_1_1_operation#details">More...</a></p><p><code>#include &lt;operation.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a6fc4a704f20ce6fc4cf172f57d9579b6">~Operation</a> ()
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a6fc4a704f20ce6fc4cf172f57d9579b6">~Operation</a> ()
     summary: Destructs the <code>Operation</code>.
     returnType: virtual&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#ad92b8b97a7e0f1ef24a051132d447cef">Value</a> () const =0
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ad92b8b97a7e0f1ef24a051132d447cef">Value</a> () const =0
     summary: Final result of the long-running operation.
     returnType: virtual T&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a44883c43c2dd4ca3e0273735ec506999">GetResumeToken</a> () const =0
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a44883c43c2dd4ca3e0273735ec506999">GetResumeToken</a> () const =0
     summary: Gets a token representing the operation that can be used to poll for the status of the long-running operation.
     returnType: virtual std::string&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#ae04fa8a5e2e1f751ea299eda037f8b41">GetRawResponse</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ae04fa8a5e2e1f751ea299eda037f8b41">GetRawResponse</a> () const
     summary: Gets the raw HTTP response.
-    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">Azure::Core::Http::RawResponse</a> const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#aacfb286b1cdc3ea5586fb62ad8721b5e">Status</a> () const noexcept
-    summary: Gets the current <a href="class_azure_1_1_core_1_1_operation_status.yml">Azure::Core::OperationStatus</a> of the long-running operation.
-    returnType: <a href="class_azure_1_1_core_1_1_operation_status.yml">OperationStatus</a> const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a29f86ab638e03051f6c5aedf34f3497a">IsDone</a> () const noexcept
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#aacfb286b1cdc3ea5586fb62ad8721b5e">Status</a> () const noexcept
+    summary: Gets the current <a href="class_azure_1_1_core_1_1_operation_status">Azure::Core::OperationStatus</a> of the long-running operation.
+    returnType: <a href="class_azure_1_1_core_1_1_operation_status">OperationStatus</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a29f86ab638e03051f6c5aedf34f3497a">IsDone</a> () const noexcept
     summary: Checks if the long-running operation is completed.
     returnType: bool&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#ae55c2a76868dd21105094b6f7b21e0d0">HasValue</a> () const noexcept
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ae55c2a76868dd21105094b6f7b21e0d0">HasValue</a> () const noexcept
     summary: Checks if the long-running operation completed successfully and has produced a final result.
     returnType: bool&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a7bc97d4a9d65bf1112adc5f248e90312">Poll</a> ()
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a7bc97d4a9d65bf1112adc5f248e90312">Poll</a> ()
     summary: Gets updated status of the long-running operation.
-    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">Http::RawResponse</a> const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a38ea4f1b10e44616d091bfddff7bd2d5">Poll</a> (<a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context)
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Http::RawResponse</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a38ea4f1b10e44616d091bfddff7bd2d5">Poll</a> (<a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context)
     summary: Gets updated status of the long-running operation.
-    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">Http::RawResponse</a> const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#ae6919591c1f99490df704c744d347451">PollUntilDone</a> (std::chrono::milliseconds period)
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Http::RawResponse</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ae6919591c1f99490df704c744d347451">PollUntilDone</a> (std::chrono::milliseconds period)
     summary: Periodically polls till the long-running operation completes.
-    returnType: <a href="class_azure_1_1_response.yml">Response</a>&lt; T &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a1dd3436f91112ebb63d540b9926b2c34">PollUntilDone</a> (std::chrono::milliseconds period, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> &amp;context)
+    returnType: <a href="class_azure_1_1_response">Response</a>&lt; T &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a1dd3436f91112ebb63d540b9926b2c34">PollUntilDone</a> (std::chrono::milliseconds period, <a href="class_azure_1_1_core_1_1_context">Context</a> &amp;context)
     summary: Periodically polls till the long-running operation completes;.
-    returnType: <a href="class_azure_1_1_response.yml">Response</a>&lt; T &gt;&#160;
+    returnType: <a href="class_azure_1_1_response">Response</a>&lt; T &gt;&#160;
 - section: Protected Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a0c025983fa1ec8d2c6077afc1d21e7d9">Operation</a> ()=default
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a0c025983fa1ec8d2c6077afc1d21e7d9">Operation</a> ()=default
     summary: Constructs a default instance of <code>Operation</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a5aa096d3962f075a0fed8476556660ac">Operation</a> (<a href="class_azure_1_1_core_1_1_operation.yml">Operation</a> &amp;&amp;other)
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a5aa096d3962f075a0fed8476556660ac">Operation</a> (<a href="class_azure_1_1_core_1_1_operation">Operation</a> &amp;&amp;other)
     summary: Constructs an instance of <code>Operation</code> by moving in another instance.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a6fca7590de4fa9bb25ba343b055059b9">Operation</a> (<a href="class_azure_1_1_core_1_1_operation.yml">Operation</a> const &amp;other)
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a6fca7590de4fa9bb25ba343b055059b9">Operation</a> (<a href="class_azure_1_1_core_1_1_operation">Operation</a> const &amp;other)
     summary: Constructs an instance of <code>Operation</code> by copying another instance.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#ac406eeda5d1990d72466a968eb76b1a5">operator=</a> (<a href="class_azure_1_1_core_1_1_operation.yml">Operation</a> &amp;&amp;other)
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ac406eeda5d1990d72466a968eb76b1a5">operator=</a> (<a href="class_azure_1_1_core_1_1_operation">Operation</a> &amp;&amp;other)
     summary: Assigns an instance of <code>Operation</code> by moving in another instance.
-    returnType: <a href="class_azure_1_1_core_1_1_operation.yml">Operation</a> &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_operation.yml#a991d84dd39866eb035d57d9429a629e8">operator=</a> (<a href="class_azure_1_1_core_1_1_operation.yml">Operation</a> const &amp;other)
+    returnType: <a href="class_azure_1_1_core_1_1_operation">Operation</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a991d84dd39866eb035d57d9429a629e8">operator=</a> (<a href="class_azure_1_1_core_1_1_operation">Operation</a> const &amp;other)
     summary: Assigns another <code>Operation</code> instance by copying.
-    returnType: <a href="class_azure_1_1_core_1_1_operation.yml">Operation</a> &amp;&#160;
+    returnType: <a href="class_azure_1_1_core_1_1_operation">Operation</a> &amp;&#160;
 - section: Protected Attributes
   display: h2
 - apiList:
@@ -68,13 +68,13 @@ components:
     returnType: >-
       <a id="a0c40e6a0933c30778d70eaec93cd3505"></a>
 
-      std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">Azure::Core::Http::RawResponse</a> &gt;&#160;
-  - declaration: m_status = <a href="class_azure_1_1_core_1_1_operation_status.yml#a4471070aefea912692f1190405550e64">OperationStatus::NotStarted</a>
+      std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a> &gt;&#160;
+  - declaration: m_status = <a href="class_azure_1_1_core_1_1_operation_status#a4471070aefea912692f1190405550e64">OperationStatus::NotStarted</a>
     summary: the current status of the operation.
     returnType: >-
       <a id="a645caf9042b301b2b415bd8aa8da2827"></a>
 
-      <a href="class_azure_1_1_core_1_1_operation_status.yml">OperationStatus</a>&#160;
+      <a href="class_azure_1_1_core_1_1_operation_status">OperationStatus</a>&#160;
 - content: <a id="details"></a>
 - section: Detailed Description
   display: h2
@@ -146,7 +146,7 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: A reference to an <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">Azure::Core::Http::RawResponse</a>.
+  - summary: A reference to an <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a>.
 - section: Note
   display: h4
 - parameters:
@@ -176,7 +176,7 @@ components:
 - section: Note
   display: h4
 - parameters:
-  - summary: The final result is accessible from <code><a href="class_azure_1_1_core_1_1_operation.yml#ad92b8b97a7e0f1ef24a051132d447cef">Value()</a></code>.
+  - summary: The final result is accessible from <code><a href="class_azure_1_1_core_1_1_operation#ad92b8b97a7e0f1ef24a051132d447cef">Value()</a></code>.
 - section: Returns
   display: h4
 - parameters:
@@ -242,7 +242,7 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">Azure::Core::Http::RawResponse</a> returned from the service.
+  - summary: An HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a> returned from the service.
 - content: <a id="a38ea4f1b10e44616d091bfddff7bd2d5"></a>
 - section: Poll() [2/2]
   display: h3
@@ -260,7 +260,7 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">Azure::Core::Http::RawResponse</a> returned from the service.
+  - summary: An HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a> returned from the service.
 - content: <a id="ae6919591c1f99490df704c744d347451"></a>
 - section: PollUntilDone() [1/2]
   display: h3

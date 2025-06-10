@@ -9,45 +9,45 @@ components:
     </p><p><code>#include &lt;curl_transport.hpp&gt;</code></p><p>This class inherits from:</p>
 - linkList:
   - name: Azure::Core::Http::HttpTransport
-    href: class_azure_1_1_core_1_1_http_1_1_http_transport.yml
+    href: class_azure_1_1_core_1_1_http_1_1_http_transport
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.yml#a5ad6635c2f4f80164d95db832e13e83b">CurlTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.yml">CurlTransportOptions</a> const &amp;options=<a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options.yml">CurlTransportOptions</a>())
-    summary: Construct a new <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.yml">CurlTransport</a> object.
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#a5ad6635c2f4f80164d95db832e13e83b">CurlTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options">CurlTransportOptions</a> const &amp;options=<a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options">CurlTransportOptions</a>())
+    summary: Construct a new <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport">CurlTransport</a> object.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.yml#ab262ee5e4b98d00e3ca448402951cfed">CurlTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options.yml">Azure::Core::Http::Policies::TransportOptions</a> const &amp;options)
-    summary: Construct a new <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.yml">CurlTransport</a> object based on common <a href="namespace_azure.yml">Azure</a> HTTP Transport Options.
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#ab262ee5e4b98d00e3ca448402951cfed">CurlTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options">Azure::Core::Http::Policies::TransportOptions</a> const &amp;options)
+    summary: Construct a new <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport">CurlTransport</a> object based on common <a href="namespace_azure">Azure</a> HTTP Transport Options.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.yml#a5ec0198b7d400faff38599b52f174512">~CurlTransport</a> ()=default
-    summary: Destroys a <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.yml">CurlTransport</a> object.
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#a5ec0198b7d400faff38599b52f174512">~CurlTransport</a> ()=default
+    summary: Destroys a <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport">CurlTransport</a> object.
     returnType: virtual&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport.yml#aa6a92d65b363e50a2293b6bada21ef3e">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context) override
-    summary: Implements interface to send an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> and produce an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a>.
-    returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context)=0
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#aa6a92d65b363e50a2293b6bada21ef3e">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context) override
+    summary: Implements interface to send an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> and produce an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">RawResponse</a>.
+    returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">RawResponse</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context)=0
     summary: Send an HTTP request over the wire.
-    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a4c0b2905624416efe1f77e6ef244c0e9">~HttpTransport</a> ()
+    returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">RawResponse</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#a4c0b2905624416efe1f77e6ef244c0e9">~HttpTransport</a> ()
     summary: Destructs <code>HttpTransport</code>.
     returnType: virtual&#160;
 - section: Additional Inherited Members
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
     summary: Constructs a default instance of <code>HttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#af7fadcff099af67a5e3732642cc42c78">HttpTransport</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#af7fadcff099af67a5e3732642cc42c78">HttpTransport</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport">HttpTransport</a> &amp;other)=default
     summary: Constructs <code>HttpTransport</code> by copying another instance of <code>HttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a0c6eb7479b5ef2e7359ec5f42fc404b8">HttpTransport</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;&amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#a0c6eb7479b5ef2e7359ec5f42fc404b8">HttpTransport</a> (<a href="class_azure_1_1_core_1_1_http_1_1_http_transport">HttpTransport</a> &amp;&amp;other)=default
     summary: Constructs <code>HttpTransport</code> by moving another instance of <code>HttpTransport</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#a44e0b2695aa316451ffe3c68e5e3ee30">operator=</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;other)=default
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#a44e0b2695aa316451ffe3c68e5e3ee30">operator=</a> (const <a href="class_azure_1_1_core_1_1_http_1_1_http_transport">HttpTransport</a> &amp;other)=default
     summary: Assigns <code>HttpTransport</code> to another instance of <code>HttpTransport</code>.
-    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> &amp;&#160;
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport">HttpTransport</a> &amp;&#160;
   - declaration: HasWebSocketSupport () const
-    summary: Returns true if the <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml">HttpTransport</a> supports WebSockets (the ability to communicate bidirectionally on the TCP connection used by the HTTP transport).
+    summary: Returns true if the <a href="class_azure_1_1_core_1_1_http_1_1_http_transport">HttpTransport</a> supports WebSockets (the ability to communicate bidirectionally on the TCP connection used by the HTTP transport).
     returnType: virtual bool&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
@@ -76,7 +76,7 @@ components:
   display: h4
 - parameters:
   - name: options
-    summary: Common <a href="namespace_azure.yml">Azure</a> Core Transport Options.
+    summary: Common <a href="namespace_azure">Azure</a> Core Transport Options.
 - content: <a id="a5ec0198b7d400faff38599b52f174512"></a>
 - section: ~CurlTransport()
   display: h3
@@ -108,11 +108,11 @@ components:
   display: h4
 - parameters:
   - name: request
-    summary: an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> to be send.
+    summary: an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> to be send.
   - name: context
     summary: A context to control the request lifetime.
 - section: Returns
   display: h4
 - parameters:
-  - summary: unique ptr to an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a>.
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_http_transport.yml#aab0a38b3e67079a9ede743c3e8de909d">Azure::Core::Http::HttpTransport</a>.</p>
+  - summary: unique ptr to an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">RawResponse</a>.
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#aab0a38b3e67079a9ede743c3e8de909d">Azure::Core::Http::HttpTransport</a>.</p>

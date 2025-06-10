@@ -5,81 +5,81 @@ xrefType: Class
 components:
 - content: >-
     <p>Manages an optional contained value, i.e. a value that may or may not be present.  
-     <a href="class_azure_1_1_nullable.yml#details">More...</a></p><p><code>#include &lt;nullable.hpp&gt;</code></p>
+     <a href="class_azure_1_1_nullable#details">More...</a></p><p><code>#include &lt;nullable.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_nullable.yml#ab1032d685f3d89d91986c3896b88803d">Nullable</a> ()
+  - declaration: <a href="class_azure_1_1_nullable#ab1032d685f3d89d91986c3896b88803d">Nullable</a> ()
     summary: Constructs a <code>Nullable</code> that represents the absence of value.
     returnType: constexpr&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#aa3b67f518c6b9451a052188f0482ad18">Nullable</a> (T initialValue) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
+  - declaration: <a href="class_azure_1_1_nullable#aa3b67f518c6b9451a052188f0482ad18">Nullable</a> (T initialValue) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
     summary: Constructs a <code>Nullable</code> having an <code>initialValue</code>.
     returnType: constexpr&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#a2d64ebe47430d86eac341d620c8d1c30">Nullable</a> (const <a href="class_azure_1_1_nullable.yml">Nullable</a> &amp;other) noexcept(std::is_nothrow_copy_constructible&lt; T &gt;::value)
+  - declaration: <a href="class_azure_1_1_nullable#a2d64ebe47430d86eac341d620c8d1c30">Nullable</a> (const <a href="class_azure_1_1_nullable">Nullable</a> &amp;other) noexcept(std::is_nothrow_copy_constructible&lt; T &gt;::value)
     summary: Constructs a <code>Nullable</code> by copying another <code>Nullable</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_nullable.yml#aa0e7ba20ce95e979bc7450f532ad56b4">Nullable</a> (<a href="class_azure_1_1_nullable.yml">Nullable</a> &amp;&amp;other) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
+  - declaration: <a href="class_azure_1_1_nullable#aa0e7ba20ce95e979bc7450f532ad56b4">Nullable</a> (<a href="class_azure_1_1_nullable">Nullable</a> &amp;&amp;other) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
     summary: Constructs a <code>Nullable</code> by moving in another <code>Nullable</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_nullable.yml#ad8625cdd03c048fcd14836c5a0e98874">~Nullable</a> ()
+  - declaration: <a href="class_azure_1_1_nullable#ad8625cdd03c048fcd14836c5a0e98874">~Nullable</a> ()
     summary: Destructs the <code>Nullable</code>, calling the destructor for the contained value if there is one.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_nullable.yml#af73e1a55d0306d9002b02cc70cdfe5d2">Reset</a> () noexcept(std::is_nothrow_destructible&lt; T &gt;::value)
+  - declaration: <a href="class_azure_1_1_nullable#af73e1a55d0306d9002b02cc70cdfe5d2">Reset</a> () noexcept(std::is_nothrow_destructible&lt; T &gt;::value)
     summary: Destructs the contained value, if there is one.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#ab5af88a2c22ea9bc2eb9c9404a9227cd">Swap</a> (<a href="class_azure_1_1_nullable.yml">Nullable</a> &amp;other) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
+  - declaration: <a href="class_azure_1_1_nullable#ab5af88a2c22ea9bc2eb9c9404a9227cd">Swap</a> (<a href="class_azure_1_1_nullable">Nullable</a> &amp;other) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
     summary: Exchanges the contents.
     returnType: void&#160;
-  - declaration: operator= (const <a href="class_azure_1_1_nullable.yml">Nullable</a> &amp;other)
+  - declaration: operator= (const <a href="class_azure_1_1_nullable">Nullable</a> &amp;other)
     summary: Assignment operator.
     returnType: >-
       <a id="a9184df0f6056498df5fb9622d49b9a01"></a>
 
-      <a href="class_azure_1_1_nullable.yml">Nullable</a> &amp;&#160;
-  - declaration: operator= (<a href="class_azure_1_1_nullable.yml">Nullable</a> &amp;&amp;other) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
+      <a href="class_azure_1_1_nullable">Nullable</a> &amp;&#160;
+  - declaration: operator= (<a href="class_azure_1_1_nullable">Nullable</a> &amp;&amp;other) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
     summary: Construct the contained value in-place.
     returnType: >-
       <a id="a2094d9d0a555c15b22178168a7589dad"></a>
 
-      <a href="class_azure_1_1_nullable.yml">Nullable</a> &amp;&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#a9a0c797c4eb208551e045de2d97809f7">HasValue</a> () const noexcept
+      <a href="class_azure_1_1_nullable">Nullable</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_nullable#a9a0c797c4eb208551e045de2d97809f7">HasValue</a> () const noexcept
     summary: Check whether a value is contained.
     returnType: bool&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#a97723b8e1d2c4043c751a159697ba0c6">Value</a> () const &amp;noexcept
+  - declaration: <a href="class_azure_1_1_nullable#a97723b8e1d2c4043c751a159697ba0c6">Value</a> () const &amp;noexcept
     summary: Get the contained value.
     returnType: const T &amp;&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#a99fd0eee11cb24372bfa8b72c964252a">Value</a> () &amp;noexcept
+  - declaration: <a href="class_azure_1_1_nullable#a99fd0eee11cb24372bfa8b72c964252a">Value</a> () &amp;noexcept
     summary: Get the contained value reference.
     returnType: T &amp;&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#af891adde37c391b34b5529fd11218fd2">Value</a> () &amp;&amp;noexcept
+  - declaration: <a href="class_azure_1_1_nullable#af891adde37c391b34b5529fd11218fd2">Value</a> () &amp;&amp;noexcept
     summary: Get the contained value (as rvalue reference).
     returnType: T &amp;&amp;&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#a0081534f590dc332391440478e05d6f5">operator bool</a> () const noexcept
-    summary: <code>operator bool</code> on the condition of <a href="class_azure_1_1_nullable.yml#a9a0c797c4eb208551e045de2d97809f7">Azure::Nullable::HasValue</a>.
+  - declaration: <a href="class_azure_1_1_nullable#a0081534f590dc332391440478e05d6f5">operator bool</a> () const noexcept
+    summary: <code>operator bool</code> on the condition of <a href="class_azure_1_1_nullable#a9a0c797c4eb208551e045de2d97809f7">Azure::Nullable::HasValue</a>.
     returnType: constexpr&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#a9503e5d99362c845c193a180cd56243d">operator-&gt;</a> () const
+  - declaration: <a href="class_azure_1_1_nullable#a9503e5d99362c845c193a180cd56243d">operator-&gt;</a> () const
     summary: Accesses the contained value.
     returnType: constexpr const T *&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#a10588327aa097a16979bd8e0922afa4b">operator-&gt;</a> ()
+  - declaration: <a href="class_azure_1_1_nullable#a10588327aa097a16979bd8e0922afa4b">operator-&gt;</a> ()
     summary: Accesses the contained value.
     returnType: constexpr T *&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#aeb6beec913524bdb1f068687746f9ad4">operator*</a> () const &amp;
+  - declaration: <a href="class_azure_1_1_nullable#aeb6beec913524bdb1f068687746f9ad4">operator*</a> () const &amp;
     summary: Accesses the contained value.
     returnType: constexpr const T &amp;&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#ac4c6c4b3d5ad7ebcd3c36052b992f8ed">operator*</a> () &amp;
+  - declaration: <a href="class_azure_1_1_nullable#ac4c6c4b3d5ad7ebcd3c36052b992f8ed">operator*</a> () &amp;
     summary: Accesses the contained value.
     returnType: constexpr T &amp;&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#a75a6159e00082a40582322be816562c6">operator*</a> () &amp;&amp;
+  - declaration: <a href="class_azure_1_1_nullable#a75a6159e00082a40582322be816562c6">operator*</a> () &amp;&amp;
     summary: Accesses the contained value.
     returnType: constexpr T &amp;&amp;&#160;
-  - declaration: <a href="class_azure_1_1_nullable.yml#abf7a0ba296829896efafa19544be5ef9">operator*</a> () const &amp;&amp;
+  - declaration: <a href="class_azure_1_1_nullable#abf7a0ba296829896efafa19544be5ef9">operator*</a> () const &amp;&amp;
     summary: Get the contained value, returns <code>other</code> if value is absent.
     returnType: constexpr const T &amp;&amp;&#160;
 - section: Friends
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_nullable.yml#a528123fd139cf279c4652467d7a448d9">swap</a> (<a href="class_azure_1_1_nullable.yml">Nullable</a> &amp;lhs, <a href="class_azure_1_1_nullable.yml">Nullable</a> &amp;rhs) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
-    summary: Invokes <a href="class_azure_1_1_nullable.yml#ab5af88a2c22ea9bc2eb9c9404a9227cd">Azure::Nullable::Swap</a> while having a lowercase name that satisfies <code>swappable</code> requirements (see details).
+  - declaration: <a href="class_azure_1_1_nullable#a528123fd139cf279c4652467d7a448d9">swap</a> (<a href="class_azure_1_1_nullable">Nullable</a> &amp;lhs, <a href="class_azure_1_1_nullable">Nullable</a> &amp;rhs) noexcept(std::is_nothrow_move_constructible&lt; T &gt;::value)
+    summary: Invokes <a href="class_azure_1_1_nullable#ab5af88a2c22ea9bc2eb9c9404a9227cd">Azure::Nullable::Swap</a> while having a lowercase name that satisfies <code>swappable</code> requirements (see details).
     returnType: void&#160;
 - content: <a id="details"></a>
 - section: Detailed Description
@@ -205,7 +205,7 @@ components:
 - section: Note
   display: h4
 - parameters:
-  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable.yml#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable.yml#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable.yml#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable.yml#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable.yml#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
+  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
 - content: <a id="a75a6159e00082a40582322be816562c6"></a>
 - section: operator*() [2/4]
   display: h3
@@ -226,7 +226,7 @@ components:
 - section: Note
   display: h4
 - parameters:
-  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable.yml#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable.yml#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable.yml#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable.yml#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable.yml#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
+  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
 - content: <a id="aeb6beec913524bdb1f068687746f9ad4"></a>
 - section: operator*() [3/4]
   display: h3
@@ -247,7 +247,7 @@ components:
 - section: Note
   display: h4
 - parameters:
-  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable.yml#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable.yml#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable.yml#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable.yml#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable.yml#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
+  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
 - content: <a id="abf7a0ba296829896efafa19544be5ef9"></a>
 - section: operator*() [4/4]
   display: h3
@@ -268,7 +268,7 @@ components:
 - section: Note
   display: h4
 - parameters:
-  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable.yml#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable.yml#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable.yml#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable.yml#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable.yml#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
+  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
 - content: <a id="a10588327aa097a16979bd8e0922afa4b"></a>
 - section: operator-&gt;() [1/2]
   display: h3
@@ -289,7 +289,7 @@ components:
 - section: Note
   display: h4
 - parameters:
-  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable.yml#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable.yml#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable.yml#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable.yml#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable.yml#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
+  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
 - content: <a id="a9503e5d99362c845c193a180cd56243d"></a>
 - section: operator-&gt;() [2/2]
   display: h3
@@ -310,14 +310,14 @@ components:
 - section: Note
   display: h4
 - parameters:
-  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable.yml#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable.yml#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable.yml#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable.yml#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable.yml#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
+  - summary: This operator does not check whether the <a href="class_azure_1_1_nullable#ab1032d685f3d89d91986c3896b88803d">Nullable</a> contains a value! You can do so manually by using <a href="class_azure_1_1_nullable#a9a0c797c4eb208551e045de2d97809f7">HasValue()</a> or simply <a href="class_azure_1_1_nullable#a0081534f590dc332391440478e05d6f5">operator bool()</a>. Alternatively, if checked access is needed, <a href="class_azure_1_1_nullable#a97723b8e1d2c4043c751a159697ba0c6">Value()</a> or <a href="class_azure_1_1_nullable#a6cb17c73e74a65db4defbae1ce74a1c1">ValueOr()</a> may be used.
 - content: <a id="a7b2657e238de56221f903b135cdaae44"></a>
 - section: operator=()
   display: h3
   uid: Azure%3A%3ANullable%3C%20T%20%3E.operator%3D%28%29
   xrefType: Member
   xrefName: Azure::Nullable< T >.operator=()
-- content: template&lt;class T &gt;template&lt;class U  = T, typename std::enable_if&lt; !std::is_same&lt;<a href="class_azure_1_1_nullable.yml">Nullable</a>, typename std::remove_cv&lt; typename std::remove_reference&lt; U &gt;::type &gt;::type &gt;::value &amp;&amp;!(std::is_scalar&lt; U &gt;::value &amp;&amp;std::is_same&lt; T, typename std::decay&lt; U &gt;::type &gt;::value) &amp;&amp;std::is_constructible&lt; T, U &gt;::value &amp;&amp;std::is_assignable&lt; T &amp;, U &gt;::value, int &gt;::type  = 0&gt;
+- content: template&lt;class T &gt;template&lt;class U  = T, typename std::enable_if&lt; !std::is_same&lt;<a href="class_azure_1_1_nullable">Nullable</a>, typename std::remove_cv&lt; typename std::remove_reference&lt; U &gt;::type &gt;::type &gt;::value &amp;&amp;!(std::is_scalar&lt; U &gt;::value &amp;&amp;std::is_same&lt; T, typename std::decay&lt; U &gt;::type &gt;::value) &amp;&amp;std::is_constructible&lt; T, U &gt;::value &amp;&amp;std::is_assignable&lt; T &amp;, U &gt;::value, int &gt;::type  = 0&gt;
 - declaration: Nullable &amp; Azure::Nullable&lt; T &gt;::operator=(U &amp;&amp;&#160;other) inline noexcept
   languageId: cpp
 - section: Template Parameters
@@ -329,7 +329,7 @@ components:
   display: h4
 - parameters:
   - name: other
-    summary: Other <a href="class_azure_1_1_nullable.yml">Azure::Nullable</a>.
+    summary: Other <a href="class_azure_1_1_nullable">Azure::Nullable</a>.
 - content: <a id="af73e1a55d0306d9002b02cc70cdfe5d2"></a>
 - section: Reset()
   display: h3

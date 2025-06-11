@@ -103,6 +103,26 @@
         - name: RemoveIsolatedModeCertificateOptions
           href: azure-security-attestation\struct_azure_1_1_security_1_1_attestation_1_1_remove_isolated_mode_certificate_options.yml
           items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: attestation
+          items:
+          - name: attestation_client_models.hpp
+            href: azure-security-attestation\attestation__client__models_8hpp.yml
+            items: []
+          - name: attestation_client_options.hpp
+            href: azure-security-attestation\attestation__client__options_8hpp.yml
+            items: []
+          - name: dll_import_export.hpp
+            href: azure-security-attestation\dll__import__export_8hpp.yml
+            items: []
+          - name: rtti.hpp
+            href: azure-security-attestation\rtti_8hpp.yml
+            items: []
 - name: azure-identity
   items:
   - name: Azure.Identity
@@ -164,6 +184,49 @@
     - name: WorkloadIdentityCredentialOptions
       href: azure-identity\struct_azure_1_1_identity_1_1_workload_identity_credential_options.yml
       items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: identity
+          items:
+          - name: detail
+            items:
+            - name: token_cache.hpp
+              href: azure-identity\token__cache_8hpp.yml
+              items: []
+          - name: azure_cli_credential.hpp
+            href: azure-identity\azure__cli__credential_8hpp.yml
+            items: []
+          - name: azure_pipelines_credential.hpp
+            href: azure-identity\azure__pipelines__credential_8hpp.yml
+            items: []
+          - name: chained_token_credential.hpp
+            href: azure-identity\chained__token__credential_8hpp.yml
+            items: []
+          - name: client_assertion_credential.hpp
+            href: azure-identity\client__assertion__credential_8hpp.yml
+            items: []
+          - name: client_certificate_credential.hpp
+            href: azure-identity\client__certificate__credential_8hpp.yml
+            items: []
+          - name: client_secret_credential.hpp
+            href: azure-identity\client__secret__credential_8hpp.yml
+            items: []
+          - name: default_azure_credential.hpp
+            href: azure-identity\default__azure__credential_8hpp.yml
+            items: []
+          - name: environment_credential.hpp
+            href: azure-identity\environment__credential_8hpp.yml
+            items: []
+          - name: managed_identity_credential.hpp
+            href: azure-identity\managed__identity__credential_8hpp.yml
+            items: []
+          - name: workload_identity_credential.hpp
+            href: azure-identity\workload__identity__credential_8hpp.yml
+            items: []
 - name: azure-security-keyvault-certificates
   items:
   - name: Azure.Security.KeyVault.Certificates
@@ -294,6 +357,41 @@
     - name: SubjectAlternativeNames
       href: azure-security-keyvault-certificates\struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_subject_alternative_names.yml
       items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: keyvault
+          items:
+          - name: certificates
+            items:
+            - name: certificate_client.hpp
+              href: azure-security-keyvault-certificates\certificate__client_8hpp.yml
+              items: []
+            - name: certificate_client_models.hpp
+              href: azure-security-keyvault-certificates\certificate__client__models_8hpp.yml
+              items: []
+            - name: certificate_client_operations.hpp
+              href: azure-security-keyvault-certificates\certificate__client__operations_8hpp.yml
+              items: []
+            - name: certificate_client_options.hpp
+              href: azure-security-keyvault-certificates\certificate__client__options_8hpp.yml
+              items: []
+    - name: src
+      items:
+      - name: private
+        items:
+        - name: certificate_constants.hpp
+          href: azure-security-keyvault-certificates\certificate__constants_8hpp.yml
+          items: []
+        - name: certificate_key_usage.hpp
+          href: azure-security-keyvault-certificates\certificate__key__usage_8hpp.yml
+          items: []
+        - name: certificate_serializers.hpp
+          href: azure-security-keyvault-certificates\certificate__serializers_8hpp.yml
+          items: []
 - name: azure-security-keyvault-keys
   items:
   - name: Azure.Security.KeyVault.Keys
@@ -441,6 +539,67 @@
     - name: ReleaseKeyResult
       href: azure-security-keyvault-keys\struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_release_key_result.yml
       items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: keyvault
+          items:
+          - name: keys
+            items:
+            - name: cryptography
+              items:
+              - name: cryptography_client.hpp
+                href: azure-security-keyvault-keys\cryptography__client_8hpp.yml
+                items: []
+              - name: cryptography_client_models.hpp
+                href: azure-security-keyvault-keys\cryptography__client__models_8hpp.yml
+                items: []
+              - name: cryptography_client_options.hpp
+                href: azure-security-keyvault-keys\cryptography__client__options_8hpp.yml
+                items: []
+            - name: key_client.hpp
+              href: azure-security-keyvault-keys\key__client_8hpp.yml
+              items: []
+            - name: key_client_models.hpp
+              href: azure-security-keyvault-keys\key__client__models_8hpp.yml
+              items: []
+            - name: key_client_options.hpp
+              href: azure-security-keyvault-keys\key__client__options_8hpp.yml
+              items: []
+    - name: src
+      items:
+      - name: private
+        items:
+        - name: cryptography_internal_access.hpp
+          href: azure-security-keyvault-keys\cryptography__internal__access_8hpp.yml
+          items: []
+        - name: cryptography_serializers.hpp
+          href: azure-security-keyvault-keys\cryptography__serializers_8hpp.yml
+          items: []
+        - name: key_backup.hpp
+          href: azure-security-keyvault-keys\key__backup_8hpp.yml
+          items: []
+        - name: key_constants.hpp
+          href: azure-security-keyvault-keys\key__constants_8hpp.yml
+          items: []
+        - name: key_request_parameters.hpp
+          href: azure-security-keyvault-keys\key__request__parameters_8hpp.yml
+          items: []
+        - name: key_serializers.hpp
+          href: azure-security-keyvault-keys\key__serializers_8hpp.yml
+          items: []
+        - name: key_sign_parameters.hpp
+          href: azure-security-keyvault-keys\key__sign__parameters_8hpp.yml
+          items: []
+        - name: key_verify_parameters.hpp
+          href: azure-security-keyvault-keys\key__verify__parameters_8hpp.yml
+          items: []
+        - name: key_wrap_parameters.hpp
+          href: azure-security-keyvault-keys\key__wrap__parameters_8hpp.yml
+          items: []
 - name: azure-security-keyvault-secrets
   items:
   - name: Azure.Security.KeyVault.Secrets
@@ -493,6 +652,56 @@
     - name: UpdateSecretPropertiesOptions
       href: azure-security-keyvault-secrets\struct_azure_1_1_security_1_1_key_vault_1_1_secrets_1_1_update_secret_properties_options.yml
       items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: keyvault
+          items:
+          - name: secrets
+            items:
+            - name: keyvault_backup_secret.hpp
+              href: azure-security-keyvault-secrets\keyvault__backup__secret_8hpp.yml
+              items: []
+            - name: keyvault_deleted_secret.hpp
+              href: azure-security-keyvault-secrets\keyvault__deleted__secret_8hpp.yml
+              items: []
+            - name: keyvault_options.hpp
+              href: azure-security-keyvault-secrets\keyvault__options_8hpp.yml
+              items: []
+            - name: keyvault_secret.hpp
+              href: azure-security-keyvault-secrets\keyvault__secret_8hpp.yml
+              items: []
+            - name: keyvault_secret_paged_response.hpp
+              href: azure-security-keyvault-secrets\keyvault__secret__paged__response_8hpp.yml
+              items: []
+            - name: keyvault_secret_properties.hpp
+              href: azure-security-keyvault-secrets\keyvault__secret__properties_8hpp.yml
+              items: []
+            - name: secret_client.hpp
+              href: azure-security-keyvault-secrets\secret__client_8hpp.yml
+              items: []
+    - name: src
+      items:
+      - name: private
+        items:
+        - name: secret_constants.hpp
+          href: azure-security-keyvault-secrets\secret__constants_8hpp.yml
+          items: []
+        - name: secret_serializers.hpp
+          href: azure-security-keyvault-secrets\secret__serializers_8hpp.yml
+          items: []
+      - name: keyvault_secret_paged_response.cpp
+        href: azure-security-keyvault-secrets\keyvault__secret__paged__response_8cpp.yml
+        items: []
+      - name: keyvault_secret_properties.cpp
+        href: azure-security-keyvault-secrets\keyvault__secret__properties_8cpp.yml
+        items: []
+      - name: secret_serializers.cpp
+        href: azure-security-keyvault-secrets\secret__serializers_8cpp.yml
+        items: []
 - name: azure-core
   items:
   - name: Azure
@@ -664,6 +873,191 @@
     - name: Response
       href: azure-core\class_azure_1_1_response.yml
       items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: core
+          items:
+          - name: credentials
+            items:
+            - name: credentials.hpp
+              href: azure-core\credentials_8hpp.yml
+              items: []
+            - name: token_credential_options.hpp
+              href: azure-core\token__credential__options_8hpp.yml
+              items: []
+          - name: cryptography
+            items:
+            - name: hash.hpp
+              href: azure-core\hash_8hpp.yml
+              items: []
+          - name: diagnostics
+            items:
+            - name: logger.hpp
+              href: azure-core\logger_8hpp.yml
+              items: []
+          - name: http
+            items:
+            - name: policies
+              items:
+              - name: policy.hpp
+                href: azure-core\policy_8hpp.yml
+                items: []
+            - name: curl_transport.hpp
+              href: azure-core\curl__transport_8hpp.yml
+              items: []
+            - name: http.hpp
+              href: azure-core\http_8hpp.yml
+              items: []
+            - name: http_status_code.hpp
+              href: azure-core\http__status__code_8hpp.yml
+              items: []
+            - name: raw_response.hpp
+              href: azure-core\raw__response_8hpp.yml
+              items: []
+            - name: transport.hpp
+              href: azure-core\transport_8hpp.yml
+              items: []
+            - name: win_http_transport.hpp
+              href: azure-core\win__http__transport_8hpp.yml
+              items: []
+          - name: internal
+            items:
+            - name: credentials
+              items:
+              - name: authorization_challenge_parser.hpp
+                href: azure-core\authorization__challenge__parser_8hpp.yml
+                items: []
+            - name: cryptography
+              items: []
+            - name: diagnostics
+              items: []
+            - name: http
+              items:
+              - name: pipeline.hpp
+                href: azure-core\pipeline_8hpp.yml
+                items: []
+            - name: io
+              items:
+              - name: null_body_stream.hpp
+                href: azure-core\null__body__stream_8hpp.yml
+                items: []
+            - name: json
+              items:
+              - name: json_optional.hpp
+                href: azure-core\json__optional_8hpp.yml
+                items: []
+              - name: json_serializable.hpp
+                href: azure-core\json__serializable_8hpp.yml
+                items: []
+            - name: tracing
+              items:
+              - name: tracing_impl.hpp
+                href: azure-core\tracing__impl_8hpp.yml
+                items: []
+            - name: client_options.hpp
+              href: azure-core\client__options_8hpp.yml
+              items: []
+            - name: extendable_enumeration.hpp
+              href: azure-core\extendable__enumeration_8hpp.yml
+              items: []
+            - name: strings.hpp
+              href: azure-core\strings_8hpp.yml
+              items: []
+          - name: io
+            items:
+            - name: body_stream.hpp
+              href: azure-core\body__stream_8hpp.yml
+              items: []
+          - name: tracing
+            items:
+            - name: tracing.hpp
+              href: azure-core\tracing_8hpp.yml
+              items: []
+          - name: azure_assert.hpp
+            href: azure-core\azure__assert_8hpp.yml
+            items: []
+          - name: base64.hpp
+            href: azure-core\base64_8hpp.yml
+            items: []
+          - name: case_insensitive_containers.hpp
+            href: azure-core\case__insensitive__containers_8hpp.yml
+            items: []
+          - name: context.hpp
+            href: azure-core\context_8hpp.yml
+            items: []
+          - name: datetime.hpp
+            href: azure-core\datetime_8hpp.yml
+            items: []
+          - name: etag.hpp
+            href: azure-core\etag_8hpp.yml
+            items: []
+          - name: exception.hpp
+            href: azure-core\exception_8hpp.yml
+            items: []
+          - name: match_conditions.hpp
+            href: azure-core\match__conditions_8hpp.yml
+            items: []
+          - name: modified_conditions.hpp
+            href: azure-core\modified__conditions_8hpp.yml
+            items: []
+          - name: nullable.hpp
+            href: azure-core\nullable_8hpp.yml
+            items: []
+          - name: operation.hpp
+            href: azure-core\operation_8hpp.yml
+            items: []
+          - name: operation_status.hpp
+            href: azure-core\operation__status_8hpp.yml
+            items: []
+          - name: paged_response.hpp
+            href: azure-core\paged__response_8hpp.yml
+            items: []
+          - name: platform.hpp
+            href: azure-core\platform_8hpp.yml
+            items: []
+          - name: resource_identifier.hpp
+            href: azure-core\resource__identifier_8hpp.yml
+            items: []
+          - name: response.hpp
+            href: azure-core\response_8hpp.yml
+            items: []
+          - name: url.hpp
+            href: azure-core\url_8hpp.yml
+            items: []
+          - name: uuid.hpp
+            href: azure-core\uuid_8hpp.yml
+            items: []
+    - name: src
+      items:
+      - name: http
+        items:
+        - name: curl
+          items:
+          - name: curl_connection_pool_private.hpp
+            href: azure-core\curl__connection__pool__private_8hpp.yml
+            items: []
+          - name: curl_connection_private.hpp
+            href: azure-core\curl__connection__private_8hpp.yml
+            items: []
+          - name: curl_session_private.hpp
+            href: azure-core\curl__session__private_8hpp.yml
+            items: []
+        - name: winhttp
+          items:
+          - name: private
+            items: []
+          - name: win_http_request.hpp
+            href: azure-core\win__http__request_8hpp.yml
+            items: []
+        - name: user_agent.cpp
+          href: azure-core\user__agent_8cpp.yml
+          items: []
+      - name: private
+        items: []
 - name: azure-storage-blobs
   items:
   - name: Azure.Storage
@@ -1214,6 +1608,20 @@
     - name: DeferredResponse
       href: azure-storage-blobs\class_azure_1_1_storage_1_1_deferred_response.yml
       items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: storage
+          items:
+          - name: blobs
+            items: []
+    - name: src
+      items:
+      - name: private
+        items: []
 - name: azure-storage-files-datalake
   items:
   - name: Azure.Storage
@@ -1438,6 +1846,22 @@
       items:
       - name: DataLakeSasBuilder
         href: azure-storage-files-datalake\struct_azure_1_1_storage_1_1_sas_1_1_data_lake_sas_builder.yml
+        items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: storage
+          items:
+          - name: files
+            items:
+            - name: datalake
+              items: []
+    - name: src
+      items:
+      - name: private
         items: []
 - name: azure-storage-files-shares
   items:
@@ -1865,6 +2289,18 @@
       - name: ShareSasBuilder
         href: azure-storage-files-shares\struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder.yml
         items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: storage
+          items:
+          - name: files
+            items:
+            - name: shares
+              items: []
 - name: azure-storage-queues
   items:
   - name: Azure.Storage
@@ -2019,6 +2455,31 @@
       - name: QueueSasBuilder
         href: azure-storage-queues\struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder.yml
         items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: storage
+          items:
+          - name: queues
+            items:
+            - name: queue_client.hpp
+              href: azure-storage-queues\queue__client_8hpp.yml
+              items: []
+            - name: queue_options.hpp
+              href: azure-storage-queues\queue__options_8hpp.yml
+              items: []
+            - name: queue_responses.hpp
+              href: azure-storage-queues\queue__responses_8hpp.yml
+              items: []
+            - name: queue_sas_builder.hpp
+              href: azure-storage-queues\queue__sas__builder_8hpp.yml
+              items: []
+            - name: queue_service_client.hpp
+              href: azure-storage-queues\queue__service__client_8hpp.yml
+              items: []
 - name: azure-storage-common
   items:
   - name: Azure.Storage
@@ -2046,3 +2507,15 @@
     - name: StorageSharedKeyCredential
       href: azure-storage-common\class_azure_1_1_storage_1_1_storage_shared_key_credential.yml
       items: []
+  - name: File References
+    items:
+    - name: inc
+      items:
+      - name: azure
+        items:
+        - name: storage
+          items:
+          - name: common
+            items:
+            - name: internal
+              items: []

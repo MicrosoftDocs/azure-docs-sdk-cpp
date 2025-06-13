@@ -1,6 +1,6 @@
 ---
-title: Azure Key Vault modules for C++
-description: Reference for Azure Key Vault modules for C++
+title: Azure Key Vault Libraries for C++
+description: Reference for Azure Key Vault Libraries for C++
 ms.date: 06/11/2025
 ms.topic: reference
 ms.devlang: cpp

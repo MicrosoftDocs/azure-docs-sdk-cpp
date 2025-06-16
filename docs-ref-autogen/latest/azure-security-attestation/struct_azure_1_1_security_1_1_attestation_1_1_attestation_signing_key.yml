@@ -1,0 +1,28 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationSigningKey
+title: Azure::Security::Attestation::AttestationSigningKey Struct Reference
+xrefType: Struct
+xrefName: Azure::Security::Attestation::AttestationSigningKey
+components:
+- content: >-
+    <p>The <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_signing_key">AttestationSigningKey</a> represents a tuple of asymmetric private cryptographic key and X.509 certificate wrapping the public key contained in the certificate.  
+     <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_signing_key#details">More...</a></p><p><code>#include &lt;attestation_client_options.hpp&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_signing_key#a4173d9649a0cb8b9651577f58d2909a2">PemEncodedPrivateKey</a>
+    summary: A PEM encoded RSA or ECDSA private key which will be used to sign an attestation token.
+    returnType: >-
+      <a id="a4173d9649a0cb8b9651577f58d2909a2"></a>
+
+      std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_signing_key#a413d907c9dc7afde9e59cee25d58075b">PemEncodedX509Certificate</a>
+    summary: A PEM encoded X.509 certificate which will be sent to the attestation service to validate an attestation token. The public key embedded in the certificate MUST be the public key of the SigningPrivateKey.
+    returnType: >-
+      <a id="a413d907c9dc7afde9e59cee25d58075b"></a>
+
+      std::string&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- content: <p>It is used when signing a value to be sent to the attestation service for the Set Policy, Reset Policy, Add Isolated Mode Certificate, and Remove Isolated Mode Certificate. </p>

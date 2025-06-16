@@ -1,0 +1,214 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties
+title: Azure::Security::KeyVault::Certificates::CertificateProperties Struct Reference
+xrefType: Struct
+xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties
+components:
+- content: >-
+    <p>Contains identity and other basic properties of a Certificate.  
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#details">More...</a></p><p><code>#include &lt;certificate_client_models.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a8e108abd506d5cfa4519a3efb3f8199e">CertificateProperties</a> ()=default
+    summary: Construct a new Certificate Properties object.
+    returnType: '&#160;'
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#ae3580296a594435a05d75cac46999d2c">CertificateProperties</a> (std::string const &amp;name)
+    summary: Construct a new Certificate Properties object.
+    returnType: '&#160;'
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a30807b007e156797b424e34ed96c5f71">NotBefore</a>
+    summary: Indicate when the certificate will be valid and can be used for cryptographic operations.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a8e16aedf2198218f28808e1fb07ea63e">ExpiresOn</a>
+    summary: Indicate when the certificate will expire and cannot be used for cryptographic operations.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a820b5462fbf601cc10935eb3b210103b">CreatedOn</a>
+    summary: Indicate when the certificate was created.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a95d2179cdd028047c8b2bef597fccb10">UpdatedOn</a>
+    summary: Indicate when the certificate was updated.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#adbc04d3c5617c4e138d4f429948d44b6">RecoverableDays</a>
+    summary: The number of days a certificate is retained before being deleted for a soft delete-enabled Key Vault.
+    returnType: Azure::Nullable&lt; int32_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a4580301ab50ff3ccf1d8d388e46bc691">RecoveryLevel</a>
+    summary: The recovery level currently in effect for keys in the Key Vault.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a45e3a66fcd291f6114df92ccbe420694">Tags</a>
+    summary: Dictionary of tags with specific metadata about the certificate.
+    returnType: std::unordered_map&lt; std::string, std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#abe20fb4a02cbf01c400786a507cd7367">Name</a>
+    summary: The name of the certificate.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a1f2bcf4449b1ae48915812a79b22f842">IdUrl</a>
+    summary: The certificate identifier.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#af15b1a2faeaed39cff9f2cb89bbdfad4">VaultUrl</a>
+    summary: The Key Vault base Url.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a55070d418096af57456eeac52582c5b9">Version</a>
+    summary: The version of the certificate.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a8f5e34f66f75c3fb95d12bd3586b03b4">X509Thumbprint</a>
+    summary: Get the digital thumbprint of the certificate which can be used to uniquely identify it.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties#a780420b0305093b9a98f18947f4d05c1">Enabled</a>
+    summary: Indicate whether the certificate is enabled and useable for cryptographic operations.
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: CertificateClient
+    returnType: >-
+      <a id="a8812873e00c04ea628594c5c16c8909f"></a>
+
+      class&#160;
+  - declaration: KeyVaultCertificate
+    returnType: >-
+      <a id="a0ecaa765903df9194ed72bf98448dc5b"></a>
+
+      class&#160;
+  - declaration: CertificatePropertiesPagedResponse
+    returnType: >-
+      <a id="a4502fe49aa22aa76fbd97837a24a87cc"></a>
+
+      class&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a8e108abd506d5cfa4519a3efb3f8199e"></a>
+- section: CertificateProperties() [1/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.CertificateProperties%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.CertificateProperties() [1/2]
+- declaration: Azure::Security::KeyVault::Certificates::CertificateProperties::CertificateProperties() default
+  languageId: cpp
+- content: <a id="ae3580296a594435a05d75cac46999d2c"></a>
+- section: CertificateProperties() [2/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.CertificateProperties%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.CertificateProperties() [2/2]
+- declaration: Azure::Security::KeyVault::Certificates::CertificateProperties::CertificateProperties(std::string const &amp;&#160;name) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: The name of the certificate.
+- section: Member Data Documentation
+  display: h2
+- content: <a id="a820b5462fbf601cc10935eb3b210103b"></a>
+- section: CreatedOn
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.CreatedOn
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.CreatedOn
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Certificates::CertificateProperties::CreatedOn
+  languageId: cpp
+- content: <a id="a780420b0305093b9a98f18947f4d05c1"></a>
+- section: Enabled
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.Enabled
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.Enabled
+- declaration: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Certificates::CertificateProperties::Enabled
+  languageId: cpp
+- content: <a id="a8e16aedf2198218f28808e1fb07ea63e"></a>
+- section: ExpiresOn
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.ExpiresOn
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.ExpiresOn
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Certificates::CertificateProperties::ExpiresOn
+  languageId: cpp
+- content: <a id="a1f2bcf4449b1ae48915812a79b22f842"></a>
+- section: IdUrl
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.IdUrl
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.IdUrl
+- declaration: std::string Azure::Security::KeyVault::Certificates::CertificateProperties::IdUrl
+  languageId: cpp
+- content: <a id="abe20fb4a02cbf01c400786a507cd7367"></a>
+- section: Name
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.Name
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.Name
+- declaration: std::string Azure::Security::KeyVault::Certificates::CertificateProperties::Name
+  languageId: cpp
+- content: <a id="a30807b007e156797b424e34ed96c5f71"></a>
+- section: NotBefore
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.NotBefore
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.NotBefore
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Certificates::CertificateProperties::NotBefore
+  languageId: cpp
+- content: <a id="adbc04d3c5617c4e138d4f429948d44b6"></a>
+- section: RecoverableDays
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.RecoverableDays
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.RecoverableDays
+- declaration: Azure::Nullable&lt;int32_t&gt; Azure::Security::KeyVault::Certificates::CertificateProperties::RecoverableDays
+  languageId: cpp
+- content: <a id="a4580301ab50ff3ccf1d8d388e46bc691"></a>
+- section: RecoveryLevel
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.RecoveryLevel
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.RecoveryLevel
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::KeyVault::Certificates::CertificateProperties::RecoveryLevel
+  languageId: cpp
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: If Purgeable, the certificate can be permanently deleted by an authorized user; otherwise, only the service can purge the keys at the end of the retention interval.
+- content: <a id="a45e3a66fcd291f6114df92ccbe420694"></a>
+- section: Tags
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.Tags
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.Tags
+- declaration: std::unordered_map&lt;std::string, std::string&gt; Azure::Security::KeyVault::Certificates::CertificateProperties::Tags
+  languageId: cpp
+- content: <a id="a95d2179cdd028047c8b2bef597fccb10"></a>
+- section: UpdatedOn
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.UpdatedOn
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.UpdatedOn
+- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Certificates::CertificateProperties::UpdatedOn
+  languageId: cpp
+- content: <a id="af15b1a2faeaed39cff9f2cb89bbdfad4"></a>
+- section: VaultUrl
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.VaultUrl
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.VaultUrl
+- declaration: std::string Azure::Security::KeyVault::Certificates::CertificateProperties::VaultUrl
+  languageId: cpp
+- content: <a id="a55070d418096af57456eeac52582c5b9"></a>
+- section: Version
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.Version
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.Version
+- declaration: std::string Azure::Security::KeyVault::Certificates::CertificateProperties::Version
+  languageId: cpp
+- content: <a id="a8f5e34f66f75c3fb95d12bd3586b03b4"></a>
+- section: X509Thumbprint
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateProperties.X509Thumbprint
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateProperties.X509Thumbprint
+- declaration: std::vector&lt;uint8_t&gt; Azure::Security::KeyVault::Certificates::CertificateProperties::X509Thumbprint
+  languageId: cpp

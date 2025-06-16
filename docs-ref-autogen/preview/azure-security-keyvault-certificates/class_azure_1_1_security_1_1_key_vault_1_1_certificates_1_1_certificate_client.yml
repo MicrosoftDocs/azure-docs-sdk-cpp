@@ -1,0 +1,848 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient
+title: Azure::Security::KeyVault::Certificates::CertificateClient Class Reference
+xrefType: Class
+xrefName: Azure::Security::KeyVault::Certificates::CertificateClient
+components:
+- content: >-
+    <p>The <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client">CertificateClient</a> provides synchronous methods to manage <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate">KeyVaultCertificate</a> in Azure Key Vault.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#details">More...</a></p><p><code>#include &lt;certificate_client.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a6c3f8c04a4145accd572141895476448">~CertificateClient</a> ()=default
+    summary: Destructor.
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#ab656e1f6d0929dd9dc854939bca93f49">CertificateClient</a> (std::string const &amp;vaultUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client_options">CertificateClientOptions</a> options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client_options">CertificateClientOptions</a>())
+    summary: Construct a new Key Client object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a9085f7b860cff378cb0b6939ddde1454">CertificateClient</a> (<a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client">CertificateClient</a> const &amp;certificateClient)=default
+    summary: Construct a new Certificate Client object from another certificate client.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a68e100258e54c14b7048d2e880358f6e">GetCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Return the latest version of the <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate">KeyVaultCertificate</a> along with its <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy">CertificatePolicy</a>.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy">KeyVaultCertificateWithPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a4a5a27ca301c31dc58dcd3838228f958">GetCertificateVersion</a> (std::string const &amp;certificateName, std::string const &amp;certificateVersion, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Return a specific version of the certificate without its <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy">CertificatePolicy</a>.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate">KeyVaultCertificate</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a40bd2ba2041990b2f883b0e612666b43">StartCreateCertificate</a> (std::string const &amp;certificateName, <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_create_options">CertificateCreateOptions</a> const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Create a new certificate.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation">CreateCertificateOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a1a8555dbd0beedd4cf1776d525befb2d">CreateIssuer</a> (std::string const &amp;issuerName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> const &amp;certificateIssuer, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Create a new certificate issuer.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#ab1a85eb8edf8c3541782b788ea177ed8">GetIssuer</a> (std::string const &amp;issuerName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: List the specified certificate issuer.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#aeb97365d4c2cc598c14dec2fbcd5c0b8">UpdateIssuer</a> (std::string const &amp;issuerName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> const &amp;certificateIssuer, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Update the specified certificate issuer.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a5c76f59e52115173f453b390688fef34">DeleteIssuer</a> (std::string const &amp;issuerName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Delete the specified certificate issuer.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a9f32a34515b35ba481792d9135a11dbe">GetContacts</a> (Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: List the certificate contacts for a specified key vault.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result">CertificateContactsResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#ad68a8191a3c90d2bf29ebba9175c07ea">DeleteContacts</a> (Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Delete the certificate contacts for a specified key vault.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result">CertificateContactsResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#aad19359aab95c8fd9b0208d2b151138e">SetContacts</a> (std::vector&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contact">CertificateContact</a> &gt; const &amp;contacts, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Set certificate contacts.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_contacts_result">CertificateContactsResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a0c109e555281ddf2f38390ff10c895ff">GetDeletedCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Retrieves information about the specified deleted certificate.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate">DeletedCertificate</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a7d0519632b540fad5bd8dd324f8f89ac">PurgeDeletedCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Permanently deletes the specified deleted certificate.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_purged_certificate">PurgedCertificate</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a627381f612b726e23a4a19afa8efbfa9">StartDeleteCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Deletes a certificate from a specified key vault.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_delete_certificate_operation">DeleteCertificateOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a560e5d5608405aa6d9367780c7be333a">StartRecoverDeletedCertificate</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Recovers the deleted certificate back to its current version under /certificates.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation">RecoverDeletedCertificateOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#abd00cc80b6dd51d5467aa9f196b9d6cf">GetCertificatePolicy</a> (std::string const &amp;certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: '"List the policy for a certificate.'
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy">CertificatePolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a3e2e2cd67af299e6775db9f446367fc5">UpdateCertificatePolicy</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy">CertificatePolicy</a> const &amp;certificatePolicy, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Update the policy for a certificate.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy">CertificatePolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a62882a524b6ba2b8f80844da7e356be9">BackupCertificate</a> (std::string certificateName, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Backs up the specified certificate.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_backup_certificate_result">BackupCertificateResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a50a89850dd94b9c2c2aae154049a486b">RestoreCertificateBackup</a> (std::vector&lt; uint8_t &gt; const &amp;certificateBackup, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Restores a backed up certificate to a vault.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy">KeyVaultCertificateWithPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#aaf1196b13a4e9fa7acf485f6541afb65">GetPropertiesOfCertificates</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificates_options">GetPropertiesOfCertificatesOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificates_options">GetPropertiesOfCertificatesOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: List certificates in a specified key vault.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties_paged_response">CertificatePropertiesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a2a3383cf1eb69e8b8868d57f51d5a660">GetPropertiesOfCertificateVersions</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificate_versions_options">GetPropertiesOfCertificateVersionsOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_certificate_versions_options">GetPropertiesOfCertificateVersionsOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: List the versions of a certificate.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties_paged_response">CertificatePropertiesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a5eae88f1a01788eea1f44bf2d8c04334">GetPropertiesOfIssuers</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_issuers_options">GetPropertiesOfIssuersOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_properties_of_issuers_options">GetPropertiesOfIssuersOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: List certificate issuers for a specified key vault.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_issuer_properties_paged_response">IssuerPropertiesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a08fd1255ebfbbf68fdfe2bee5ca7668a">GetDeletedCertificates</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_deleted_certificates_options">GetDeletedCertificatesOptions</a> const &amp;options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_get_deleted_certificates_options">GetDeletedCertificatesOptions</a>(), Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Lists the deleted certificates in the specified vault currently available for recovery.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificates_paged_response">DeletedCertificatesPagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a34732cb0e48a3c7107f41727d244c692">ImportCertificate</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_import_certificate_options">ImportCertificateOptions</a> const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Imports a certificate into a specified key vault.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy">KeyVaultCertificateWithPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a009581dc4b25ebf1ddb785dad11cfa93">MergeCertificate</a> (std::string const &amp;certificateName, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_merge_certificate_options">MergeCertificateOptions</a> const &amp;options, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Merges a certificate or a certificate chain with a key pair existing on the server.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy">KeyVaultCertificateWithPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client#a1f75544484d08601491d766ac3acac5c">UpdateCertificateProperties</a> (std::string const &amp;certificateName, std::string const &amp;certificateVersion, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties">CertificateProperties</a> const &amp;certificateProperties, Azure::Core::Context const &amp;context=Azure::Core::Context()) const
+    summary: Updates the specified attributes associated with a certificate.
+    returnType: Azure::Response&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate">KeyVaultCertificate</a> &gt;&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: CreateCertificateOperation
+    returnType: >-
+      <a id="a2f12ef4ef1734ed5db6acc056ad3b77c"></a>
+
+      class&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- content: <p>The client supports retrieving <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate">KeyVaultCertificate</a>. </p>
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a6c3f8c04a4145accd572141895476448"></a>
+- section: ~CertificateClient()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.~CertificateClient%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.~CertificateClient()
+- declaration: virtual Azure::Security::KeyVault::Certificates::CertificateClient::~CertificateClient() virtual default
+  languageId: cpp
+- content: <a id="ab656e1f6d0929dd9dc854939bca93f49"></a>
+- section: CertificateClient() [1/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.CertificateClient%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.CertificateClient() [1/2]
+- declaration: >-
+    Azure::Security::KeyVault::Certificates::CertificateClient::CertificateClient(std::string const &amp;&#160;                                        vaultUrl,                            
+                                                                                  std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                          
+                                                                                  CertificateClientOptions&#160;                                   options = CertificateClientOptions()&#160;
+                                                                                 ) explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: vaultUrl
+    summary: The URL address where the client will send the requests to.
+  - name: credential
+    summary: The authentication method to use.
+  - name: options
+    summary: The options to customize the client behavior.
+- content: <a id="a9085f7b860cff378cb0b6939ddde1454"></a>
+- section: CertificateClient() [2/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.CertificateClient%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.CertificateClient() [2/2]
+- declaration: Azure::Security::KeyVault::Certificates::CertificateClient::CertificateClient(CertificateClient const &amp;&#160;certificateClient) explicit default
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateClient
+    summary: An existing key vault certificate client.
+- section: Member Function Documentation
+  display: h2
+- content: <a id="a62882a524b6ba2b8f80844da7e356be9"></a>
+- section: BackupCertificate()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.BackupCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.BackupCertificate()
+- declaration: >-
+    Azure::Response&lt; BackupCertificateResult &gt; Azure::Security::KeyVault::Certificates::CertificateClient::BackupCertificate(std::string&#160;                 certificateName,                 
+                                                                                                                             Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                            )                             const
+  languageId: cpp
+- content: <p>Request that a backup of the specified certificate be downloaded to the client. All versions of the certificate will be downloaded.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/backup permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Certificate backup.
+- content: <a id="a1a8555dbd0beedd4cf1776d525befb2d"></a>
+- section: CreateIssuer()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.CreateIssuer%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.CreateIssuer()
+- declaration: >-
+    Azure::Response&lt; CertificateIssuer &gt; Azure::Security::KeyVault::Certificates::CertificateClient::CreateIssuer(std::string const &amp;&#160;         issuerName,                      
+                                                                                                                  CertificateIssuer const &amp;&#160;   certificateIssuer,               
+                                                                                                                  Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                 )                             const
+  languageId: cpp
+- content: <p>The operation adds or updates the specified certificate issuer.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/setissuers permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: issuerName
+    summary: The name of the issuer.
+  - name: certificateIssuer
+    summary: The certificate issuer.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> instance used to determine create status.
+- content: <a id="ad68a8191a3c90d2bf29ebba9175c07ea"></a>
+- section: DeleteContacts()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.DeleteContacts%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.DeleteContacts()
+- declaration: Azure::Response&lt; CertificateContactsResult &gt; Azure::Security::KeyVault::Certificates::CertificateClient::DeleteContacts(Azure::Core::Context const &amp;&#160;context = Azure::Core::Context())const
+  languageId: cpp
+- content: <p>Deletes the certificate contacts for a specified key vault certificate.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/managecontacts permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The contacts for the key vault certificate.
+- content: <a id="a5c76f59e52115173f453b390688fef34"></a>
+- section: DeleteIssuer()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.DeleteIssuer%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.DeleteIssuer()
+- declaration: >-
+    Azure::Response&lt; CertificateIssuer &gt; Azure::Security::KeyVault::Certificates::CertificateClient::DeleteIssuer(std::string const &amp;&#160;         issuerName,                      
+                                                                                                                  Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                 )                             const
+  languageId: cpp
+- content: <p>The operation permanently removes the specified certificate issuer from the vault.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/manageissuers/deleteissuers permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: issuerName
+    summary: The certificate issuer name.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> instance.
+- content: <a id="a68e100258e54c14b7048d2e880358f6e"></a>
+- section: GetCertificate()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetCertificate()
+- declaration: >-
+    Azure::Response&lt; KeyVaultCertificateWithPolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetCertificate(std::string const &amp;&#160;         certificateName,                 
+                                                                                                                                Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                               )                             const
+  languageId: cpp
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/get permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A response containing the certificate and policy as a <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy">KeyVaultCertificateWithPolicy</a> instance.
+- content: <a id="abd00cc80b6dd51d5467aa9f196b9d6cf"></a>
+- section: GetCertificatePolicy()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetCertificatePolicy%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetCertificatePolicy()
+- declaration: >-
+    Azure::Response&lt; CertificatePolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetCertificatePolicy(std::string const &amp;&#160;         certificateName,                 
+                                                                                                                          Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                         )                             const
+  languageId: cpp
+- content: <p>The GetCertificatePolicy operation returns the specified certificate policy resources in the specified key vault.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/get permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The contact properties.
+- content: <a id="a4a5a27ca301c31dc58dcd3838228f958"></a>
+- section: GetCertificateVersion()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetCertificateVersion%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetCertificateVersion()
+- declaration: >-
+    Azure::Response&lt; KeyVaultCertificate &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetCertificateVersion(std::string const &amp;&#160;         certificateName,                 
+                                                                                                                             std::string const &amp;&#160;         certificateVersion,              
+                                                                                                                             Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                            )                             const
+  languageId: cpp
+- content: <p>If the version is not set in the options, the latest version is returned.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/get permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: certificateVersion
+    summary: The version of the certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A response containing the certificate as a <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate">KeyVaultCertificate</a> instance.
+- content: <a id="a9f32a34515b35ba481792d9135a11dbe"></a>
+- section: GetContacts()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetContacts%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetContacts()
+- declaration: Azure::Response&lt; CertificateContactsResult &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetContacts(Azure::Core::Context const &amp;&#160;context = Azure::Core::Context())const
+  languageId: cpp
+- content: <p>The GetContacts operation returns the set of certificate contact resources in the specified key vault.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/managecontacts permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The contacts list for the key vault certificate.
+- content: <a id="a0c109e555281ddf2f38390ff10c895ff"></a>
+- section: GetDeletedCertificate()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetDeletedCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetDeletedCertificate()
+- declaration: >-
+    Azure::Response&lt; DeletedCertificate &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetDeletedCertificate(std::string const &amp;&#160;         certificateName,                 
+                                                                                                                            Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                           )                             const
+  languageId: cpp
+- content: <p>The GetDeletedCertificate operation retrieves the deleted certificate information plus its attributes, such as retention interval, scheduled permanent deletion and the current deletion recovery level.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/get permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The deleted certificate.
+- content: <a id="a08fd1255ebfbbf68fdfe2bee5ca7668a"></a>
+- section: GetDeletedCertificates()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetDeletedCertificates%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetDeletedCertificates()
+- declaration: >-
+    DeletedCertificatesPagedResponse Azure::Security::KeyVault::Certificates::CertificateClient::GetDeletedCertificates(GetDeletedCertificatesOptions const &amp;&#160;options = GetDeletedCertificatesOptions(),
+                                                                                                                        Azure::Core::Context const &amp;&#160;         context = Azure::Core::Context()&#160;         
+                                                                                                                       )                                      const
+  languageId: cpp
+- content: <p>The GetDeletedCertificates operation retrieves the certificates in the current vault which are in a deleted state and ready for recovery or purging. This operation includes deletion-specific information. This operation requires the certificates/get/list permission.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation can only be enabled on soft-delete enabled vaults.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: The options for the request.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A response message containing a list of deleted certificates in the vault along with a link to the next page of deleted certificates.
+- content: <a id="ab1a85eb8edf8c3541782b788ea177ed8"></a>
+- section: GetIssuer()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetIssuer%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetIssuer()
+- declaration: >-
+    Azure::Response&lt; CertificateIssuer &gt; Azure::Security::KeyVault::Certificates::CertificateClient::GetIssuer(std::string const &amp;&#160;         issuerName,                      
+                                                                                                               Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                              )                             const
+  languageId: cpp
+- content: <p>The GetCertificateIssuer operation returns the specified certificate issuer resources in the specified key vault.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/manageissuers/getissuers permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: issuerName
+    summary: The certificate issuer name.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> instance.
+- content: <a id="aaf1196b13a4e9fa7acf485f6541afb65"></a>
+- section: GetPropertiesOfCertificates()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetPropertiesOfCertificates%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetPropertiesOfCertificates()
+- declaration: >-
+    CertificatePropertiesPagedResponse Azure::Security::KeyVault::Certificates::CertificateClient::GetPropertiesOfCertificates(GetPropertiesOfCertificatesOptions const &amp;&#160;options = GetPropertiesOfCertificatesOptions(),
+                                                                                                                               Azure::Core::Context const &amp;&#160;              context = Azure::Core::Context()&#160;              
+                                                                                                                              )                                           const
+  languageId: cpp
+- content: <p>The GetPropertiesOfCertificates operation returns the set of certificates resources in the specified key vault.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/list permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: The options for the request.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A response message containing a list of certificates along with a link to the next page of certificates.
+- content: <a id="a2a3383cf1eb69e8b8868d57f51d5a660"></a>
+- section: GetPropertiesOfCertificateVersions()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetPropertiesOfCertificateVersions%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetPropertiesOfCertificateVersions()
+- declaration: >-
+    CertificatePropertiesPagedResponse Azure::Security::KeyVault::Certificates::CertificateClient::GetPropertiesOfCertificateVersions(std::string const &amp;&#160;                              certificateName,                                      
+                                                                                                                                      GetPropertiesOfCertificateVersionsOptions const &amp;&#160;options = GetPropertiesOfCertificateVersionsOptions(),
+                                                                                                                                      Azure::Core::Context const &amp;&#160;                     context = Azure::Core::Context()&#160;                     
+                                                                                                                                     )                                                  const
+  languageId: cpp
+- content: <p>The GetCertificateVersions operation returns the versions of a certificate in the specified key vault.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/list permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: options
+    summary: The options for the request.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A response message containing a list of certificate versions along with a link to the next page of certificates.
+- content: <a id="a5eae88f1a01788eea1f44bf2d8c04334"></a>
+- section: GetPropertiesOfIssuers()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.GetPropertiesOfIssuers%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.GetPropertiesOfIssuers()
+- declaration: >-
+    IssuerPropertiesPagedResponse Azure::Security::KeyVault::Certificates::CertificateClient::GetPropertiesOfIssuers(GetPropertiesOfIssuersOptions const &amp;&#160;options = GetPropertiesOfIssuersOptions(),
+                                                                                                                     Azure::Core::Context const &amp;&#160;         context = Azure::Core::Context()&#160;         
+                                                                                                                    )                                      const
+  languageId: cpp
+- content: <p>The GetPropertiesOfIssuers operation returns the set of certificate issuer resources in the specified key vault.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/manageissuers/getissuers permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: The options for the request.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A response message containing a list of issuers along with a link to the next page of certificates.
+- content: <a id="a34732cb0e48a3c7107f41727d244c692"></a>
+- section: ImportCertificate()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.ImportCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.ImportCertificate()
+- declaration: >-
+    Azure::Response&lt; KeyVaultCertificateWithPolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::ImportCertificate(std::string const &amp;&#160;             certificateName,                 
+                                                                                                                                   ImportCertificateOptions const &amp;&#160;options,                         
+                                                                                                                                   Azure::Core::Context const &amp;&#160;    context = Azure::Core::Context()&#160;
+                                                                                                                                  )                                 const
+  languageId: cpp
+- content: <p>Imports an existing valid certificate, containing a private key, into Azure Key Vault. This operation requires the certificates/import permission. The certificate to be imported can be in either PFX or PEM format. If the certificate is in PEM format the PEM file must contain the key as well as x509 certificates. Key Vault will only accept a key in PKCS#8 format.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/import permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate
+  - name: options
+    summary: The options for the request.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Imported certificate bundle to the vault.
+- content: <a id="a009581dc4b25ebf1ddb785dad11cfa93"></a>
+- section: MergeCertificate()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.MergeCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.MergeCertificate()
+- declaration: >-
+    Azure::Response&lt; KeyVaultCertificateWithPolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::MergeCertificate(std::string const &amp;&#160;            certificateName,                 
+                                                                                                                                  MergeCertificateOptions const &amp;&#160;options,                         
+                                                                                                                                  Azure::Core::Context const &amp;&#160;   context = Azure::Core::Context()&#160;
+                                                                                                                                 )                                const
+  languageId: cpp
+- content: <p>The MergeCertificate operation performs the merging of a certificate or certificate chain with a key pair currently available in the service.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/create permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: options
+    summary: The options for the request.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Merged certificate bundle to the vault.
+- content: <a id="a7d0519632b540fad5bd8dd324f8f89ac"></a>
+- section: PurgeDeletedCertificate()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.PurgeDeletedCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.PurgeDeletedCertificate()
+- declaration: >-
+    Azure::Response&lt; PurgedCertificate &gt; Azure::Security::KeyVault::Certificates::CertificateClient::PurgeDeletedCertificate(std::string const &amp;&#160;         certificateName,                 
+                                                                                                                             Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                            )                             const
+  languageId: cpp
+- content: <p>The PurgeDeletedCertificate operation performs an irreversible deletion of the specified certificate, without possibility for recovery. The operation is not available if the recovery level does not specify 'Purgeable'.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificate/purge permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Empty object.
+- content: <a id="a50a89850dd94b9c2c2aae154049a486b"></a>
+- section: RestoreCertificateBackup()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.RestoreCertificateBackup%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.RestoreCertificateBackup()
+- declaration: >-
+    Azure::Response&lt; KeyVaultCertificateWithPolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::RestoreCertificateBackup(std::vector&lt; uint8_t &gt; const &amp;&#160;certificateBackup,               
+                                                                                                                                          Azure::Core::Context const &amp;&#160;  context = Azure::Core::Context()&#160;
+                                                                                                                                         )                               const
+  languageId: cpp
+- content: <p>Restore a backed up certificate, and all its versions, to a vault.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/restore permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateBackup
+    summary: The backup blob to restore.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The restored certificate.
+- content: <a id="aad19359aab95c8fd9b0208d2b151138e"></a>
+- section: SetContacts()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.SetContacts%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.SetContacts()
+- declaration: >-
+    Azure::Response&lt; CertificateContactsResult &gt; Azure::Security::KeyVault::Certificates::CertificateClient::SetContacts(std::vector&lt; CertificateContact &gt; const &amp;&#160;contacts,                        
+                                                                                                                         Azure::Core::Context const &amp;&#160;             context = Azure::Core::Context()&#160;
+                                                                                                                        )                                          const
+  languageId: cpp
+- content: <p>Set the certificate contacts for the specified key vault.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/managecontacts permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: contacts
+    summary: The contacts for the key vault certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The contacts for the key vault certificate.
+- content: <a id="a40bd2ba2041990b2f883b0e612666b43"></a>
+- section: StartCreateCertificate()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.StartCreateCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.StartCreateCertificate()
+- declaration: >-
+    CreateCertificateOperation Azure::Security::KeyVault::Certificates::CertificateClient::StartCreateCertificate(std::string const &amp;&#160;             certificateName,                 
+                                                                                                                  CertificateCreateOptions const &amp;&#160;options,                         
+                                                                                                                  Azure::Core::Context const &amp;&#160;    context = Azure::Core::Context()&#160;
+                                                                                                                 )                                 const
+  languageId: cpp
+- content: <p>If this is the first version, the certificate resource is created.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/create permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: options
+    summary: Options for this operation.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_create_certificate_operation">CreateCertificateOperation</a> instance used to determine create status.
+- content: <a id="a627381f612b726e23a4a19afa8efbfa9"></a>
+- section: StartDeleteCertificate()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.StartDeleteCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.StartDeleteCertificate()
+- declaration: >-
+    DeleteCertificateOperation Azure::Security::KeyVault::Certificates::CertificateClient::StartDeleteCertificate(std::string const &amp;&#160;         certificateName,                 
+                                                                                                                  Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                 )                             const
+  languageId: cpp
+- content: <p>Deletes all versions of a certificate object along with its associated policy. Delete certificate cannot be used to remove individual versions of a certificate object.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificate/delete permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Delete Certificate operation.
+- content: <a id="a560e5d5608405aa6d9367780c7be333a"></a>
+- section: StartRecoverDeletedCertificate()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.StartRecoverDeletedCertificate%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.StartRecoverDeletedCertificate()
+- declaration: >-
+    RecoverDeletedCertificateOperation Azure::Security::KeyVault::Certificates::CertificateClient::StartRecoverDeletedCertificate(std::string const &amp;&#160;         certificateName,                 
+                                                                                                                                  Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                                 )                             const
+  languageId: cpp
+- content: <p>The StartRecoverDeletedCertificate operation performs the reversal of the Delete operation. The operation is applicable in vaults enabled for soft-delete, and must be issued during the retention interval (available in the deleted certificate's attributes).</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificate/recover permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Recover deleted certificate operation.
+- content: <a id="a3e2e2cd67af299e6775db9f446367fc5"></a>
+- section: UpdateCertificatePolicy()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.UpdateCertificatePolicy%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.UpdateCertificatePolicy()
+- declaration: >-
+    Azure::Response&lt; CertificatePolicy &gt; Azure::Security::KeyVault::Certificates::CertificateClient::UpdateCertificatePolicy(std::string const &amp;&#160;         certificateName,                 
+                                                                                                                             CertificatePolicy const &amp;&#160;   certificatePolicy,               
+                                                                                                                             Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                            )                             const
+  languageId: cpp
+- content: <p>Set specified members in the certificate policy. Leave others as null.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/update permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: certificatePolicy
+    summary: The updated certificate policy.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The updated contact properties.
+- content: <a id="a1f75544484d08601491d766ac3acac5c"></a>
+- section: UpdateCertificateProperties()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.UpdateCertificateProperties%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.UpdateCertificateProperties()
+- declaration: >-
+    Azure::Response&lt; KeyVaultCertificate &gt; Azure::Security::KeyVault::Certificates::CertificateClient::UpdateCertificateProperties(std::string const &amp;&#160;          certificateName,                 
+                                                                                                                                   std::string const &amp;&#160;          certificateVersion,              
+                                                                                                                                   CertificateProperties const &amp;&#160;certificateProperties,           
+                                                                                                                                   Azure::Core::Context const &amp;&#160; context = Azure::Core::Context()&#160;
+                                                                                                                                  )                              const
+  languageId: cpp
+- content: <p>The UpdateCertificate operation applies the specified update on the given certificate; the only elements updated are the certificate's attributes.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/update permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: certificateName
+    summary: The name of the certificate.
+  - name: certificateVersion
+    summary: The version of the certificate.
+  - name: certificateProperties
+    summary: The the new properties of the certificate.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The updated certificate.
+- content: <a id="aeb97365d4c2cc598c14dec2fbcd5c0b8"></a>
+- section: UpdateIssuer()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ACertificateClient.UpdateIssuer%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::CertificateClient.UpdateIssuer()
+- declaration: >-
+    Azure::Response&lt; CertificateIssuer &gt; Azure::Security::KeyVault::Certificates::CertificateClient::UpdateIssuer(std::string const &amp;&#160;         issuerName,                      
+                                                                                                                  CertificateIssuer const &amp;&#160;   certificateIssuer,               
+                                                                                                                  Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                 )                             const
+  languageId: cpp
+- content: <p>The operation performs an update on the specified certificate issuer entity.</p>
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This operation requires the certificates/setissuers permission.
+- section: Parameters
+  display: h4
+- parameters:
+  - name: issuerName
+    summary: The name of the issuer.
+  - name: certificateIssuer
+    summary: The certificate issuer.
+  - name: context
+    summary: The context for the operation can be used for request cancellation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_issuer">CertificateIssuer</a> instance.

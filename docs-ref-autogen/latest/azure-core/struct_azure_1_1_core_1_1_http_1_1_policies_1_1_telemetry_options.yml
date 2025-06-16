@@ -1,0 +1,42 @@
+### YamlMime:Reference
+uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ATelemetryOptions
+title: Azure::Core::Http::Policies::TelemetryOptions Struct Reference
+xrefType: Struct
+xrefName: Azure::Core::Http::Policies::TelemetryOptions
+components:
+- content: >-
+    <p>Telemetry options, used to configure telemetry parameters.  
+     <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_telemetry_options#details">More...</a></p><p><code>#include &lt;policy.hpp&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_telemetry_options#a5f09a2eb13d3e872468c21aa6603deaf">ApplicationId</a>
+    summary: The Application ID is the last part of the user agent for telemetry.
+    returnType: std::string&#160;
+  - declaration: TracingProvider
+    summary: Specifies the default distributed tracing provider to use for this client. By default, this will be the tracing provider specified in the application context.
+    returnType: >-
+      <a id="ad7c977da6f746fe19b77f1b5ecd8dc96"></a>
+
+      std::shared_ptr&lt; <a href="class_azure_1_1_core_1_1_tracing_1_1_tracer_provider">Azure::Core::Tracing::TracerProvider</a> &gt;&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- section: Note
+  display: h4
+- parameters:
+  - summary: See <a href="https://azure.github.io/azure-sdk/general_azurecore.html#telemetry-policy">https://azure.github.io/azure-sdk/general_azurecore.html#telemetry-policy</a>.
+- section: Member Data Documentation
+  display: h2
+- content: <a id="a5f09a2eb13d3e872468c21aa6603deaf"></a>
+- section: ApplicationId
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ATelemetryOptions.ApplicationId
+  xrefType: Member
+  xrefName: Azure::Core::Http::Policies::TelemetryOptions.ApplicationId
+- declaration: std::string Azure::Core::Http::Policies::TelemetryOptions::ApplicationId
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: This option allows an end-user to create an SDK client and report telemetry with a specific ID for it. The default is an empty string.

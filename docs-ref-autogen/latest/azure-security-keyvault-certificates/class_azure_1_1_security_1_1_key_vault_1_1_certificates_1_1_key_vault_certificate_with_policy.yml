@@ -1,0 +1,94 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3AKeyVaultCertificateWithPolicy
+title: Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy Class Reference
+xrefType: Class
+xrefName: Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy
+components:
+- content: >-
+    <p>A <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate">KeyVaultCertificate</a> along with its <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy">CertificatePolicy</a>.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy#details">More...</a></p><p><code>#include &lt;certificate_client_models.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Security::KeyVault::Certificates::KeyVaultCertificate
+    href: class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate
+- content: <p>This class is inherited by:</p>
+- linkList:
+  - name: Azure::Security::KeyVault::Certificates::DeletedCertificate
+    href: class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_deleted_certificate
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy#a3b96c6acccc69dbfa40cf38a1470b1d3">KeyVaultCertificateWithPolicy</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties">CertificateProperties</a> const &amp;properties)
+    summary: Construct a new Key Vault Certificate With Policy object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy#a8c1990183d4c1a24b17074103dbcb519">KeyVaultCertificateWithPolicy</a> ()=default
+    summary: Default constructorfor Key Vault Certificate With Policy object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate#ae3ebdc463055e63c32b0a805c536a8a5">Name</a> () const
+    summary: Get the name of the certificate.
+    returnType: std::string const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate#a5058cda9ab17a26fc9edb39026fb5f26">IdUrl</a> () const
+    summary: Get the certificate Id,.
+    returnType: std::string const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate#a0e9a5b4e7aa4668ebaccbccaeae52818">KeyVaultCertificate</a> (<a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties">CertificateProperties</a> const &amp;properties)
+    summary: Construct a new Key Vault Certificate object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate#a5d2c39140cd36c9eb81b1c4e5eef505c">KeyVaultCertificate</a> ()=default
+    summary: Construct a new Key Vault Certificate object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate#a039817d300cd008f32babb2d25af53b5">~KeyVaultCertificate</a> ()=default
+    summary: Destroy the Key Vault Certificate object.
+    returnType: virtual&#160;
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy#aeb58e312a8c63e750fb45ea091595101">Policy</a>
+    summary: Gets the current policy for the certificate.
+    returnType: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_policy">CertificatePolicy</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate#a777c048fc1f650d3c819231be75b80cd">KeyIdUrl</a>
+    summary: Get the identifier of the certificate.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate#a83ccce19d42fefd640d1e69fdb8e41b5">SecretIdUrl</a>
+    summary: Get the identifier of the Key Vault Secret which contains the PEM of PFX formatted content of the certificate and its private key.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate#ab58bd036c0f883cf47c45dbe5f43ef48">Properties</a>
+    summary: Additional fields for the certificate.
+    returnType: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_properties">CertificateProperties</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate#a57c34ae32de565af72d185ae9927591d">Cer</a>
+    summary: Get the CER formatted public X509 certificate.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a3b96c6acccc69dbfa40cf38a1470b1d3"></a>
+- section: KeyVaultCertificateWithPolicy() [1/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3AKeyVaultCertificateWithPolicy.KeyVaultCertificateWithPolicy%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy.KeyVaultCertificateWithPolicy() [1/2]
+- declaration: Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy::KeyVaultCertificateWithPolicy(CertificateProperties const &amp;&#160;properties) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: properties
+    summary: The properties to create a new certificate.
+- content: <a id="a8c1990183d4c1a24b17074103dbcb519"></a>
+- section: KeyVaultCertificateWithPolicy() [2/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3AKeyVaultCertificateWithPolicy.KeyVaultCertificateWithPolicy%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy.KeyVaultCertificateWithPolicy() [2/2]
+- declaration: Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy::KeyVaultCertificateWithPolicy() default
+  languageId: cpp
+- section: Member Data Documentation
+  display: h2
+- content: <a id="aeb58e312a8c63e750fb45ea091595101"></a>
+- section: Policy
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3AKeyVaultCertificateWithPolicy.Policy
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy.Policy
+- declaration: CertificatePolicy Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy::Policy
+  languageId: cpp

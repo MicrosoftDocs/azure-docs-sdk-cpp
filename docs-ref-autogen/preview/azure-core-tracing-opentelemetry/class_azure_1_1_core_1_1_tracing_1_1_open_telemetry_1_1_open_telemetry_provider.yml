@@ -1,0 +1,41 @@
+### YamlMime:Reference
+uid: Azure%3A%3ACore%3A%3ATracing%3A%3AOpenTelemetry%3A%3AOpenTelemetryProvider
+title: Azure::Core::Tracing::OpenTelemetry::OpenTelemetryProvider Class Reference
+xrefType: Class
+xrefName: Azure::Core::Tracing::OpenTelemetry::OpenTelemetryProvider
+components:
+- content: >-
+    <p>Trace Provider - factory for creating Tracer objects.  
+     <a href="class_azure_1_1_core_1_1_tracing_1_1_open_telemetry_1_1_open_telemetry_provider#details">More...</a></p><p><code>#include &lt;opentelemetry.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::Tracing::TracerProvider
+    href: ''
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_core_1_1_tracing_1_1_open_telemetry_1_1_open_telemetry_provider#a116163fdb6d81205e329c42e329c09bf">Create</a> (<a href="structopentelemetry_1_1nostd_1_1shared__ptr">opentelemetry::nostd::shared_ptr</a>&lt; opentelemetry::trace::TracerProvider &gt; tracerProvider=opentelemetry::trace::Provider::GetTracerProvider())
+    summary: Create a new instance of an <a href="class_azure_1_1_core_1_1_tracing_1_1_open_telemetry_1_1_open_telemetry_provider">OpenTelemetryProvider</a>.  <a href="class_azure_1_1_core_1_1_tracing_1_1_open_telemetry_1_1_open_telemetry_provider#a116163fdb6d81205e329c42e329c09bf">More...</a>
+    returnType: static std::shared_ptr&lt; <a href="class_azure_1_1_core_1_1_tracing_1_1_open_telemetry_1_1_open_telemetry_provider">OpenTelemetryProvider</a> &gt;&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- content: <p>An <a href="class_azure_1_1_core_1_1_tracing_1_1_open_telemetry_1_1_open_telemetry_provider">OpenTelemetryProvider</a> object wraps an opentelemetry-cpp TracerProvider object and provides an abstraction of the opentelemetry APIs which can be consumed by <a href="namespace_azure">Azure</a> <a href="namespace_azure_1_1_core">Core</a> and other <a href="namespace_azure">Azure</a> services. </p>
+- section: Member Function Documentation
+  display: h2
+- content: <a id="a116163fdb6d81205e329c42e329c09bf"></a>
+- section: Create()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3ATracing%3A%3AOpenTelemetry%3A%3AOpenTelemetryProvider.Create%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Tracing::OpenTelemetry::OpenTelemetryProvider.Create()
+- declaration: std::shared_ptr&lt; OpenTelemetryProvider &gt; Azure::Core::Tracing::OpenTelemetry::OpenTelemetryProvider::Create(opentelemetry::nostd::shared_ptr&lt; opentelemetry::trace::TracerProvider &gt;&#160;tracerProvider = opentelemetry::trace::Provider::GetTracerProvider()) static
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tracerProvider
+    summary: opentelemetry-cpp TracerProvider object.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: a new <a href="class_azure_1_1_core_1_1_tracing_1_1_open_telemetry_1_1_open_telemetry_provider">OpenTelemetryProvider</a> object

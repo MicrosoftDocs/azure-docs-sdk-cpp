@@ -1,0 +1,64 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ADownloadFileToOptions
+title: Azure::Storage::Files::Shares::DownloadFileToOptions Struct Reference
+xrefType: Struct
+xrefName: Azure::Storage::Files::Shares::DownloadFileToOptions
+components:
+- content: >-
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a256e7b317fbf762c4f8f5023a2cd8cb9">Azure::Storage::Files::Shares::ShareFileClient::DownloadTo</a>.  
+
+    </p><p><code>#include &lt;share_options.hpp&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options#a425847a3e42b00c79c378183ff27e0a9">Range</a>
+    returnType: Azure::Nullable&lt; Core::Http::HttpRange &gt;&#160;
+  - declaration: ''
+    returnType: >-
+      <a id="abfcfdc67be912abf1e6043268e94acda"></a>
+
+      struct {&#160;
+  - declaration: ''
+    returnType: '&#160;&#160;&#160;int64_t&#160;&#160;&#160;<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options#a9f05a66f2a1e4bf268d907325abf7ea4">InitialChunkSize</a> = 256 * 1024 * 1024&#160;'
+  - declaration: ''
+    returnType: '&#160;&#160;&#160;int64_t&#160;&#160;&#160;<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options#a6b8629067e2c13e024e268185c9de7a9">ChunkSize</a> = 4 * 1024 * 1024&#160;'
+  - declaration: ''
+    returnType: '&#160;&#160;&#160;int32_t&#160;&#160;&#160;<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_download_file_to_options#a6dbbb931c69d006b9eebd0470eda2912">Concurrency</a> = 5&#160;'
+  - declaration: TransferOptions&#160;
+    summary: Options for parallel transfer.
+    returnType: '}&#160;'
+- section: Member Data Documentation
+  display: h2
+- content: <a id="a6b8629067e2c13e024e268185c9de7a9"></a>
+- section: ChunkSize
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ADownloadFileToOptions.ChunkSize
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::DownloadFileToOptions.ChunkSize
+- declaration: int64_t Azure::Storage::Files::Shares::DownloadFileToOptions::ChunkSize = 4 * 1024 * 1024
+  languageId: cpp
+- content: <p>The maximum number of bytes in a single request. </p><a id="a6dbbb931c69d006b9eebd0470eda2912"></a>
+- section: Concurrency
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ADownloadFileToOptions.Concurrency
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::DownloadFileToOptions.Concurrency
+- declaration: int32_t Azure::Storage::Files::Shares::DownloadFileToOptions::Concurrency = 5
+  languageId: cpp
+- content: <p>The maximum number of threads that may be used in a parallel transfer. </p><a id="a9f05a66f2a1e4bf268d907325abf7ea4"></a>
+- section: InitialChunkSize
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ADownloadFileToOptions.InitialChunkSize
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::DownloadFileToOptions.InitialChunkSize
+- declaration: int64_t Azure::Storage::Files::Shares::DownloadFileToOptions::InitialChunkSize = 256 * 1024 * 1024
+  languageId: cpp
+- content: <p>The size of the first range request in bytes. Files smaller than this limit will be downloaded in a single request. Files larger than this limit will continue being downloaded in chunks of size ChunkSize. </p><a id="a425847a3e42b00c79c378183ff27e0a9"></a>
+- section: Range
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ADownloadFileToOptions.Range
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::DownloadFileToOptions.Range
+- declaration: Azure::Nullable&lt;Core::Http::HttpRange&gt; Azure::Storage::Files::Shares::DownloadFileToOptions::Range
+  languageId: cpp
+- content: <p>Downloads only the bytes of the file from this range. </p>

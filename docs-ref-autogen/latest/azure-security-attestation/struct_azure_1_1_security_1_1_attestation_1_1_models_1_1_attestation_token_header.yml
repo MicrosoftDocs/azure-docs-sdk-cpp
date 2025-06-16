@@ -1,0 +1,122 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader
+title: Azure::Security::Attestation::Models::AttestationTokenHeader Struct Reference
+xrefType: Struct
+xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader
+components:
+- content: >-
+    <p>An <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header">AttestationTokenHeader</a> represents common properties in an the RFC 7515 JSON Web Token.  
+
+    </p><p><code>#include &lt;attestation_client_models.hpp&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#a90c463a5960faaaca48efe80daeccfc4">Algorithm</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#a689c6f0b6afa15c131a17e7288b74fd0">KeyId</a>
+    summary: The "kid" token header property See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.4">RFC 7515 section 4.1.4</a>
+    returnType: >-
+      <a id="a689c6f0b6afa15c131a17e7288b74fd0"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#ae5b1d18fa0d7ae190b84e5f8e1698459">Key</a>
+    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_signer">AttestationSigner</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#a57123c3747b78110e7cc8815e329cbf3">ContentType</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#a6d4c6d23330023e3efcac9f3dcf3d642">KeyURL</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#a101609c81933bf6aca050c43fdcc28da">Critical</a>
+    returnType: Azure::Nullable&lt; std::vector&lt; std::string &gt; &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#ab77ef9834737323229335b2da6ba122a">X509Url</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#ae87c6fd55cf4dc28fcadc730c1438f3b">Type</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#a2063e29e0deccd1b56da1b69eaecb95f">CertificateThumbprint</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#a51e44ea692879902874d82f719809c97">CertificateSha256Thumbprint</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_token_header#a4f0888b64d259be3d3b6ff74083aa6e3">X509CertificateChain</a>
+    returnType: Azure::Nullable&lt; std::vector&lt; std::string &gt; &gt;&#160;
+- section: Member Data Documentation
+  display: h2
+- content: <a id="a90c463a5960faaaca48efe80daeccfc4"></a>
+- section: Algorithm
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.Algorithm
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.Algorithm
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::Algorithm
+  languageId: cpp
+- content: <p>The "" alg " token header property. See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.1">RFC 7515 section 4.1.1</a> </p><a id="a51e44ea692879902874d82f719809c97"></a>
+- section: CertificateSha256Thumbprint
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.CertificateSha256Thumbprint
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.CertificateSha256Thumbprint
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::CertificateSha256Thumbprint
+  languageId: cpp
+- content: <p>Returns the SHA-256 thumbprint of the leaf certificate in the getCertificateChain.</p><p>See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.8">RFC 7515 section 4.1.8</a> for more information. </p><a id="a2063e29e0deccd1b56da1b69eaecb95f"></a>
+- section: CertificateThumbprint
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.CertificateThumbprint
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.CertificateThumbprint
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::CertificateThumbprint
+  languageId: cpp
+- content: <p>Returns the SHA-1 thumbprint of the leaf certificate in the getCertificateChain.</p><p>See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.7">RFC 7515 section 4.1.7</a> for more information. </p><a id="a57123c3747b78110e7cc8815e329cbf3"></a>
+- section: ContentType
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.ContentType
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.ContentType
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::ContentType
+  languageId: cpp
+- content: <p>The "cty" header property of the JWS.</p><p>See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.10">RFC 7515 section 4.1.10</a> for more information. </p><a id="a101609c81933bf6aca050c43fdcc28da"></a>
+- section: Critical
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.Critical
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.Critical
+- declaration: Azure::Nullable&lt;std::vector&lt;std::string&gt; &gt; Azure::Security::Attestation::Models::AttestationTokenHeader::Critical
+  languageId: cpp
+- content: <p>Returns the "crit" header property from the JSON Web Signature object.</p><p>See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.11">RFC 7515 section 4.1.11</a> for more information. </p><a id="ae5b1d18fa0d7ae190b84e5f8e1698459"></a>
+- section: Key
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.Key
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.Key
+- declaration: Azure::Nullable&lt;AttestationSigner&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::Key
+  languageId: cpp
+- content: <p>Returns the signer for this token if the caller provided a JSON Web Key.</p><p>See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.3">RFC 7515 section 4.1.3</a> for more information. </p><a id="a6d4c6d23330023e3efcac9f3dcf3d642"></a>
+- section: KeyURL
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.KeyURL
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.KeyURL
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::KeyURL
+  languageId: cpp
+- content: <p>A URI which can be used to retrieve a JSON Web Key which can verify the signature on this token.</p><p>See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.5">RFC 7515 section 4.1.5</a> for more information. </p><a id="ae87c6fd55cf4dc28fcadc730c1438f3b"></a>
+- section: Type
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.Type
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.Type
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::Type
+  languageId: cpp
+- content: <p>Returns the "typ" header property from the JWS.</p><p>See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.9">RFC 7515 section 4.1.9</a> for more information. </p><a id="a4f0888b64d259be3d3b6ff74083aa6e3"></a>
+- section: X509CertificateChain
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.X509CertificateChain
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.X509CertificateChain
+- declaration: Azure::Nullable&lt;std::vector&lt;std::string&gt; &gt; Azure::Security::Attestation::Models::AttestationTokenHeader::X509CertificateChain
+  languageId: cpp
+- content: <p>Returns the signing certificate chain as an <a href="struct_azure_1_1_security_1_1_attestation_1_1_models_1_1_attestation_signer">AttestationSigner</a>.</p><p>See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.6">RFC 7515 section 4.1.6</a> for more information. </p><a id="ab77ef9834737323229335b2da6ba122a"></a>
+- section: X509Url
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AModels%3A%3AAttestationTokenHeader.X509Url
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::Models::AttestationTokenHeader.X509Url
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Security::Attestation::Models::AttestationTokenHeader::X509Url
+  languageId: cpp
+- content: <p>Returns a URI which can be used to retrieve an X.509 certificate which can verify the signature on this token.</p><p>See <a href="https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.5">RFC 7515 section 4.1.5</a> for more information. </p>

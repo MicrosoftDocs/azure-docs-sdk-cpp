@@ -1,10 +1,10 @@
 ---
-title: Azure Key Vault Libraries for C++
-description: Reference for Azure Key Vault Libraries for C++
-ms.date: 06/11/2025
+title: Azure Key Vault SDK for C++
+description: Reference for Azure Key Vault SDK for C++
+ms.date: 09/17/2025
 ms.topic: reference
 ms.devlang: cpp
-ms.service: key-vault
+ms.service: keyvault
 ---
 # Azure Key Vault Client Libraries for C++
 

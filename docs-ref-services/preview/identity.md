@@ -1,10 +1,10 @@
 ---
 title: Azure Identity SDK for C++
 description: Reference for Azure Identity SDK for C++
-ms.date: 06/11/2025
+ms.date: 09/17/2025
 ms.topic: reference
 ms.devlang: cpp
-ms.service: entra-id
+ms.service: identity
 ---
 # Azure Identity SDK for C++
 

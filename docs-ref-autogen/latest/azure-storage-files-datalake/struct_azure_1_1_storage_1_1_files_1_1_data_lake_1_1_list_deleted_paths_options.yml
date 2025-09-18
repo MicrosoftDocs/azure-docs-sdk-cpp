@@ -1,46 +1,25 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListDeletedPathsOptions
+uid: Azure::Storage::Files::DataLake::ListDeletedPathsOptions
 title: Azure::Storage::Files::DataLake::ListDeletedPathsOptions Struct Reference
-xrefType: Struct
-xrefName: Azure::Storage::Files::DataLake::ListDeletedPathsOptions
 components:
-- content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client#aa7192b386a4397b70836463809b6c9cc">Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListPaths</a>.  
-
-    </p><p><code>#include &lt;datalake_options.hpp&gt;</code></p>
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#aa7192b386a4397b70836463809b6c9cc">Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListPaths</a>.<code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_deleted_paths_options#a79d3cf0672e8c2b66062cacaef84f753">Prefix</a>
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_deleted_paths_options#a90e696dc79652080674da4ee87f945f0">ContinuationToken</a>
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_deleted_paths_options#a161658035ef733681987f6d2cd70c719">PageSizeHint</a>
-    returnType: Azure::Nullable&lt; int32_t &gt;&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_deleted_paths_options.html#a79d3cf0672e8c2b66062cacaef84f753">Prefix</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_deleted_paths_options.html#a90e696dc79652080674da4ee87f945f0">ContinuationToken</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_deleted_paths_options.html#a161658035ef733681987f6d2cd70c719">PageSizeHint</a>
+    returnType: Azure::Nullable< int32_t > 
 - section: Member Data Documentation
   display: h2
-- content: <a id="a90e696dc79652080674da4ee87f945f0"></a>
-- section: ContinuationToken
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListDeletedPathsOptions.ContinuationToken
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::ListDeletedPathsOptions.ContinuationToken
-- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::ListDeletedPathsOptions::ContinuationToken
-  languageId: cpp
-- content: <p>The number of paths returned with each invocation is limited. If the number of paths to be returned exceeds this limit, a continuation token is returned in the response header x-ms-continuation. When a continuation token is returned in the response, it must be specified in a subsequent invocation of the list operation to continue listing the paths. </p><a id="a161658035ef733681987f6d2cd70c719"></a>
-- section: PageSizeHint
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListDeletedPathsOptions.PageSizeHint
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::ListDeletedPathsOptions.PageSizeHint
-- declaration: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::DataLake::ListDeletedPathsOptions::PageSizeHint
-  languageId: cpp
-- content: <p>An optional value that specifies the maximum number of items to return. If omitted or greater than 5,000, the response will include up to 5,000 items. </p><a id="a79d3cf0672e8c2b66062cacaef84f753"></a>
-- section: Prefix
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListDeletedPathsOptions.Prefix
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::ListDeletedPathsOptions.Prefix
-- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::ListDeletedPathsOptions::Prefix
-  languageId: cpp
-- content: <p>Gets the paths that have recently been soft deleted in this file system. </p>
+- section: '&#9670;&#160;ContinuationToken'
+  display: h2
+- content: The number of paths returned with each invocation is limited. If the number of paths to be returned exceeds this limit, a continuation token is returned in the response header x-ms-continuation. When a continuation token is returned in the response, it must be specified in a subsequent invocation of the list operation to continue listing the paths.
+- section: '&#9670;&#160;PageSizeHint'
+  display: h2
+- content: An optional value that specifies the maximum number of items to return. If omitted or greater than 5,000, the response will include up to 5,000 items.
+- section: '&#9670;&#160;Prefix'
+  display: h2
+- content: Gets the paths that have recently been soft deleted in this file system.The documentation for this struct was generated from the following file:inc/azure/storage/files/datalake/datalake_options.hppGenerated by&#160;1.9.7

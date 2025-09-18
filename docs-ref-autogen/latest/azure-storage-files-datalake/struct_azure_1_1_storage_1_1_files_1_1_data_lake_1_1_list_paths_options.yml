@@ -1,46 +1,25 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListPathsOptions
+uid: Azure::Storage::Files::DataLake::ListPathsOptions
 title: Azure::Storage::Files::DataLake::ListPathsOptions Struct Reference
-xrefType: Struct
-xrefName: Azure::Storage::Files::DataLake::ListPathsOptions
 components:
-- content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client#aa7192b386a4397b70836463809b6c9cc">Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListPaths</a>.  
-
-    </p><p><code>#include &lt;datalake_options.hpp&gt;</code></p>
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client.html#aa7192b386a4397b70836463809b6c9cc">Azure::Storage::Files::DataLake::DataLakeFileSystemClient::ListPaths</a>.<code>#include &lt;<a href="datalake__options_8hpp_source.html">datalake_options.hpp</a>&gt;</code>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_options#ae01c23c526c7e3157a56fc45d566ca49">UserPrincipalName</a>
-    returnType: Azure::Nullable&lt; bool &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_options#abd6916f1996f8ffc2c4186be76853705">ContinuationToken</a>
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_options#a2daf6492c77bb008248e5b975a9b79a8">PageSizeHint</a>
-    returnType: Azure::Nullable&lt; int32_t &gt;&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_options.html#ae01c23c526c7e3157a56fc45d566ca49">UserPrincipalName</a>
+    returnType: Azure::Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_options.html#abd6916f1996f8ffc2c4186be76853705">ContinuationToken</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_list_paths_options.html#a2daf6492c77bb008248e5b975a9b79a8">PageSizeHint</a>
+    returnType: Azure::Nullable< int32_t > 
 - section: Member Data Documentation
   display: h2
-- content: <a id="abd6916f1996f8ffc2c4186be76853705"></a>
-- section: ContinuationToken
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListPathsOptions.ContinuationToken
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::ListPathsOptions.ContinuationToken
-- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::DataLake::ListPathsOptions::ContinuationToken
-  languageId: cpp
-- content: <p>The number of paths returned with each invocation is limited. If the number of paths to be returned exceeds this limit, a continuation token is returned in the response header x-ms-continuation. When a continuation token is returned in the response, it must be specified in a subsequent invocation of the list operation to continue listing the paths. </p><a id="a2daf6492c77bb008248e5b975a9b79a8"></a>
-- section: PageSizeHint
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListPathsOptions.PageSizeHint
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::ListPathsOptions.PageSizeHint
-- declaration: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::DataLake::ListPathsOptions::PageSizeHint
-  languageId: cpp
-- content: <p>An optional value that specifies the maximum number of items to return. If omitted or greater than 5,000, the response will include up to 5,000 items. </p><a id="ae01c23c526c7e3157a56fc45d566ca49"></a>
-- section: UserPrincipalName
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AListPathsOptions.UserPrincipalName
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::ListPathsOptions.UserPrincipalName
-- declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::ListPathsOptions::UserPrincipalName
-  languageId: cpp
-- content: <p>Valid only when Hierarchical Namespace is enabled for the account. If "true", the user identity values returned in the owner and group fields of each list entry will be transformed from Azure Active Directory Object IDs to User Principal Names. If "false" or not provided, the values will be returned as Azure Active Directory Object IDs. Note that group and application Object IDs are not translated because they do not have unique friendly names. More Details about UserPrincipalName, See <a href="https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname">https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname</a> </p>
+- section: '&#9670;&#160;ContinuationToken'
+  display: h2
+- content: The number of paths returned with each invocation is limited. If the number of paths to be returned exceeds this limit, a continuation token is returned in the response header x-ms-continuation. When a continuation token is returned in the response, it must be specified in a subsequent invocation of the list operation to continue listing the paths.
+- section: '&#9670;&#160;PageSizeHint'
+  display: h2
+- content: An optional value that specifies the maximum number of items to return. If omitted or greater than 5,000, the response will include up to 5,000 items.
+- section: '&#9670;&#160;UserPrincipalName'
+  display: h2
+- content: Valid only when Hierarchical Namespace is enabled for the account. If "true", the user identity values returned in the owner and group fields of each list entry will be transformed from Azure Active Directory Object IDs to User Principal Names. If "false" or not provided, the values will be returned as Azure Active Directory Object IDs. Note that group and application Object IDs are not translated because they do not have unique friendly names. More Details about UserPrincipalName, See <a href="https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname">https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname#what-is-userprincipalname</a>The documentation for this struct was generated from the following file:inc/azure/storage/files/datalake/datalake_options.hppGenerated by&#160;1.9.7

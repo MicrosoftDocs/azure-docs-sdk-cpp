@@ -1,67 +1,46 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProcessorOptions
+uid: Azure::Messaging::EventHubs::ProcessorOptions
 title: Azure::Messaging::EventHubs::ProcessorOptions Struct Reference
-xrefType: Struct
-xrefName: Azure::Messaging::EventHubs::ProcessorOptions
 components:
-- content: >-
-    <p><a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options">ProcessorOptions</a> are the options for the CreateProcessor function.  
-
-    </p><p><code>#include &lt;processor.hpp&gt;</code></p>
+- content: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options.html">ProcessorOptions</a> are the options for the CreateProcessor function.<code>#include &lt;<a href="processor_8hpp_source.html">processor.hpp</a>&gt;</code>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options#ae2ea3d574a6bf2fa0c38c6f71fe8a827">LoadBalancingStrategy</a>
-    summary: LoadBalancingStrategy dictates how concurrent <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor">Processor</a> instances distribute ownership of partitions between them. The default strategy is ProcessorStrategyBalanced.
-    returnType: Models::ProcessorStrategy&#160;
-  - declaration: UpdateInterval {std::chrono::seconds(10)}
-    summary: UpdateInterval controls how often attempt to claim partitions. The default value is 10 seconds.
+  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options.html#ae2ea3d574a6bf2fa0c38c6f71fe8a827">LoadBalancingStrategy</a>
+    summary: LoadBalancingStrategy dictates how concurrent <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html" title="Processor uses a ConsumerClient and CheckpointStore to provide automatic load balancing between multi...">Processor</a> instances distribute ownership of partitions between them. The default strategy is ProcessorStrategyBalanced.  <br>
+    returnType: Models::ProcessorStrategy 
+  - declaration: <b>UpdateInterval</b> {std::chrono::seconds(10)}
+    summary: UpdateInterval controls how often attempt to claim partitions. The default value is 10 seconds. <br>
     returnType: >-
-      <a id="a0ddb6d62a446ff1fb616a5537c60c564"></a>
+      <a id="a0ddb6d62a446ff1fb616a5537c60c564" name="a0ddb6d62a446ff1fb616a5537c60c564"></a>
 
-      Azure::DateTime::duration&#160;
-  - declaration: PartitionExpirationDuration {std::chrono::seconds(60)}
-    summary: PartitionExpirationDuration is the amount of time before a partition is considered unowned. The default value is 60 seconds.
+      Azure::DateTime::duration 
+  - declaration: <b>PartitionExpirationDuration</b> {std::chrono::seconds(60)}
+    summary: PartitionExpirationDuration is the amount of time before a partition is considered unowned. The default value is 60 seconds. <br>
     returnType: >-
-      <a id="a8c297215c88891c54fc9ffc66fc6ae38"></a>
+      <a id="a8c297215c88891c54fc9ffc66fc6ae38" name="a8c297215c88891c54fc9ffc66fc6ae38"></a>
 
-      Azure::DateTime::duration&#160;
-  - declaration: StartPositions
-    summary: StartPositions are the default start positions (configurable per partition, or with an overall default value) if a checkpoint is not found in the <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store">CheckpointStore</a>. The default position is Latest.
+      Azure::DateTime::duration 
+  - declaration: <b>StartPositions</b>
+    summary: StartPositions are the default start positions (configurable per partition, or with an overall default value) if a checkpoint is not found in the <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_checkpoint_store.html" title="CheckpointStore is used by multiple consumers to coordinate progress and ownership for partitions.">CheckpointStore</a>. The default position is Latest. <br>
     returnType: >-
-      <a id="a5905ba38a3f1ad1008e774b3ffe7a5cb"></a>
+      <a id="a5905ba38a3f1ad1008e774b3ffe7a5cb" name="a5905ba38a3f1ad1008e774b3ffe7a5cb"></a>
 
-      <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_positions">Models::StartPositions</a>&#160;
-  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options#a9e64b6959006dc90f41b79a43183cef2">Prefetch</a> {300}
-    summary: Prefetch represents the size of the internal prefetch buffer for each <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor_partition_client">ProcessorPartitionClient</a> created by this <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor">Processor</a>. When set, this client will attempt to always maintain an internal cache of events of this size, asynchronously, increasing the odds that ReceiveEvents() will use a locally stored cache of events, rather than having to wait for events to arrive from the network.
-    returnType: int32_t&#160;
-  - declaration: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options#a33df00cd7ffee17fec73fab8e1b03837">MaximumNumberOfPartitions</a> {0}
-    summary: Specifies the maximum number of partitions to process.
-    returnType: int32_t&#160;
+      <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_start_positions.html">Models::StartPositions</a> 
+  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options.html#a9e64b6959006dc90f41b79a43183cef2">Prefetch</a> {300}
+    summary: Prefetch represents the size of the internal prefetch buffer for each <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor_partition_client.html" title="ProcessorPartitionClient allows you to receive events, similar to a [PartitionClient],...">ProcessorPartitionClient</a> created by this <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_processor.html" title="Processor uses a ConsumerClient and CheckpointStore to provide automatic load balancing between multi...">Processor</a>. When set, this client will attempt to always maintain an internal cache of events of this size, asynchronously, increasing the odds that ReceiveEvents() will use a locally stored cache of events, rather than having to wait for events to arrive from the network.  <br>
+    returnType: int32_t 
+  - declaration: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_processor_options.html#a33df00cd7ffee17fec73fab8e1b03837">MaximumNumberOfPartitions</a> {0}
+    summary: Specifies the maximum number of partitions to process.  <br>
+    returnType: int32_t 
 - section: Member Data Documentation
   display: h2
-- content: <a id="ae2ea3d574a6bf2fa0c38c6f71fe8a827"></a>
-- section: LoadBalancingStrategy
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProcessorOptions.LoadBalancingStrategy
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProcessorOptions.LoadBalancingStrategy
-- declaration: Models::ProcessorStrategy Azure::Messaging::EventHubs::ProcessorOptions::LoadBalancingStrategy
-  languageId: cpp
-- content: Initial value:{Models::ProcessorStrategy::ProcessorStrategyBalanced}<a id="a33df00cd7ffee17fec73fab8e1b03837"></a>
-- section: MaximumNumberOfPartitions
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProcessorOptions.MaximumNumberOfPartitions
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProcessorOptions.MaximumNumberOfPartitions
-- declaration: int32_t Azure::Messaging::EventHubs::ProcessorOptions::MaximumNumberOfPartitions {0}
-  languageId: cpp
-- content: <p>By default, the processor will process all available partitions. If a client desires limiting the number of partitions to a restricted set, set the MaximumNumberOfPartitions to the number of partitions to process. </p><a id="a9e64b6959006dc90f41b79a43183cef2"></a>
-- section: Prefetch
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProcessorOptions.Prefetch
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProcessorOptions.Prefetch
-- declaration: int32_t Azure::Messaging::EventHubs::ProcessorOptions::Prefetch {300}
-  languageId: cpp
-- content: <p>Defaults to 300 events. Disabled if Prefetch &lt; 0. </p>
+- section: '&#9670;&#160;LoadBalancingStrategy'
+  display: h2
+- content: Initial value:{Models::ProcessorStrategy::ProcessorStrategyBalanced}
+- section: '&#9670;&#160;MaximumNumberOfPartitions'
+  display: h2
+- content: By default, the processor will process all available partitions. If a client desires limiting the number of partitions to a restricted set, set the MaximumNumberOfPartitions to the number of partitions to process.
+- section: '&#9670;&#160;Prefetch'
+  display: h2
+- content: Defaults to 300 events. Disabled if Prefetch &lt; 0.The documentation for this struct was generated from the following file:inc/azure/messaging/eventhubs/processor.hppGenerated by&#160;1.9.7

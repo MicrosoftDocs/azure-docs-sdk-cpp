@@ -1,56 +1,79 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateRsaKeyOptions
 title: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions Class Reference
+xrefType: Class
+xrefName: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions
 components:
 - content: >-
-    The properties needed to create an RSA key.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options.html#details">More...</a><code>#include &lt;<a href="key__client__options_8hpp_source.html">key_client_options.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Keys::CreateRsaKeyOptions:
+    <p>The properties needed to create an RSA key.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options#details">More...</a></p><p><code>#include &lt;key_client_options.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Security::KeyVault::Keys::CreateKeyOptions
+    href: struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options.html#a9be1d0104fbfe88838265806a74f68d1">CreateRsaKeyOptions</a> (std::string const &name, bool hardwareProtected=false)
-    summary: Create a RSA Key Options object.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options.html#a2ba655fda71fab588a12162bc0691893">GetName</a> () const
-    summary: Gets the name of the key to create.  <br>
-    returnType: std::string const & 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options.html#a164764ff5e7da7d7d86d1366cb8f1df5">GetKeyType</a> () const
-    summary: Gets the key type to create, including Rsa and RsaHsm.  <br>
-    returnType: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options.html#a49d76b0bb9c5ce981a2279fccc88d9e8">GetHardwareProtected</a> () const
-    summary: Gets a value indicating whether to create a hardware-protected key in a hardware security module (HSM).  <br>
-    returnType: bool 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a378292547e78fb7c5d377322f0923341">~CreateKeyOptions</a> ()=default
-    returnType: virtual 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options#a9be1d0104fbfe88838265806a74f68d1">CreateRsaKeyOptions</a> (std::string const &amp;name, bool hardwareProtected=false)
+    summary: Create a RSA Key Options object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options#a2ba655fda71fab588a12162bc0691893">GetName</a> () const
+    summary: Gets the name of the key to create.
+    returnType: std::string const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options#a164764ff5e7da7d7d86d1366cb8f1df5">GetKeyType</a> () const
+    summary: Gets the key type to create, including Rsa and RsaHsm.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options#a49d76b0bb9c5ce981a2279fccc88d9e8">GetHardwareProtected</a> () const
+    summary: Gets a value indicating whether to create a hardware-protected key in a hardware security module (HSM).
+    returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options#a378292547e78fb7c5d377322f0923341">~CreateKeyOptions</a> ()=default
+    summary: Destructor.
+    returnType: virtual&#160;
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options.html#ad3ae95937b208dac17a9d3465487ed8e">KeySize</a>
-    summary: Gets or sets the key size in bits, such as 2048, 3072, or 4096.  <br>
-    returnType: Azure::Nullable< int64_t > 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options.html#aa6be995591df1ebef51049cb588dd980">PublicExponent</a>
-    summary: Gets or sets the public exponent for a RSA key.  <br>
-    returnType: Azure::Nullable< int64_t > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a41ab95d047874549a7defd402af45875">KeyOperations</a>
-    returnType: std::vector< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#ab432cfe1d18736ab9a015afd1e6ce7de">NotBefore</a>
-    returnType: Azure::Nullable< Azure::DateTime > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a7045e14e4ad196730dda5a3cf3135def">ExpiresOn</a>
-    returnType: Azure::Nullable< Azure::DateTime > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a239b6546652d15f63035a620caaa320f">Enabled</a>
-    returnType: Azure::Nullable< bool > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a1ccecc2246ffd9bc437c5b74f5d9d99b">Tags</a>
-    returnType: std::unordered_map< std::string, std::string > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#af29f98452b74bc7fc53f0efa9e936524">ReleasePolicy</a>
-    returnType: Azure::Nullable< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_release_policy.html">KeyReleasePolicy</a> > 
-  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a43e1fe409a9686202641c692c4e3213d">Exportable</a>
-    returnType: Azure::Nullable< bool > 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options#ad3ae95937b208dac17a9d3465487ed8e">KeySize</a>
+    summary: Gets or sets the key size in bits, such as 2048, 3072, or 4096.
+    returnType: Azure::Nullable&lt; int64_t &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options#aa6be995591df1ebef51049cb588dd980">PublicExponent</a>
+    summary: Gets or sets the public exponent for a RSA key.
+    returnType: Azure::Nullable&lt; int64_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options#a41ab95d047874549a7defd402af45875">KeyOperations</a>
+    summary: Define the supported operations for the key.
+    returnType: std::vector&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options#ab432cfe1d18736ab9a015afd1e6ce7de">NotBefore</a>
+    summary: Indicate when the key will be valid and can be used for cryptographic operations.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options#a7045e14e4ad196730dda5a3cf3135def">ExpiresOn</a>
+    summary: Indicate when the key will expire and cannot be used for cryptographic operations.
+    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options#a239b6546652d15f63035a620caaa320f">Enabled</a>
+    summary: Indicate whether the key is enabled and useable for cryptographic operations.
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options#a1ccecc2246ffd9bc437c5b74f5d9d99b">Tags</a>
+    summary: Specific metadata about the key.
+    returnType: std::unordered_map&lt; std::string, std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options#af29f98452b74bc7fc53f0efa9e936524">ReleasePolicy</a>
+    summary: The policy rules under which the key can be exported.
+    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_release_policy">KeyReleasePolicy</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options#a43e1fe409a9686202641c692c4e3213d">Exportable</a>
+    summary: Indicate if the private key can be exported.
+    returnType: Azure::Nullable&lt; bool &gt;&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;CreateRsaKeyOptions()'
-  display: h2
+- content: <a id="a9be1d0104fbfe88838265806a74f68d1"></a>
+- section: CreateRsaKeyOptions()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateRsaKeyOptions.CreateRsaKeyOptions%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions.CreateRsaKeyOptions()
+- declaration: >-
+    Azure::Security::KeyVault::Keys::CreateRsaKeyOptions::CreateRsaKeyOptions(std::string const &amp;&#160;name,                     
+                                                                              bool&#160;               hardwareProtected = false&#160;
+                                                                             ) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -60,24 +83,53 @@ components:
     summary: <code>true</code> to create hardware-protected key in a hardware security module (HSM). The default is false to create a software key.
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;GetHardwareProtected()'
-  display: h2
-- section: '&#9670;&#160;GetKeyType()'
-  display: h2
-- section: '&#9670;&#160;GetName()'
-  display: h2
+- content: <a id="a49d76b0bb9c5ce981a2279fccc88d9e8"></a>
+- section: GetHardwareProtected()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateRsaKeyOptions.GetHardwareProtected%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions.GetHardwareProtected()
+- declaration: bool Azure::Security::KeyVault::Keys::CreateRsaKeyOptions::GetHardwareProtected()const inline
+  languageId: cpp
+- content: <a id="a164764ff5e7da7d7d86d1366cb8f1df5"></a>
+- section: GetKeyType()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateRsaKeyOptions.GetKeyType%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions.GetKeyType()
+- declaration: KeyVaultKeyType Azure::Security::KeyVault::Keys::CreateRsaKeyOptions::GetKeyType()const inline
+  languageId: cpp
+- content: <a id="a2ba655fda71fab588a12162bc0691893"></a>
+- section: GetName()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateRsaKeyOptions.GetName%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions.GetName()
+- declaration: std::string const  &amp; Azure::Security::KeyVault::Keys::CreateRsaKeyOptions::GetName()const inline
+  languageId: cpp
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;KeySize'
-  display: h2
+- content: <a id="ad3ae95937b208dac17a9d3465487ed8e"></a>
+- section: KeySize
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateRsaKeyOptions.KeySize
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions.KeySize
+- declaration: Azure::Nullable&lt;int64_t&gt; Azure::Security::KeyVault::Keys::CreateRsaKeyOptions::KeySize
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: If null, the service default is used.
-- section: '&#9670;&#160;PublicExponent'
-  display: h2
+- content: <a id="aa6be995591df1ebef51049cb588dd980"></a>
+- section: PublicExponent
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateRsaKeyOptions.PublicExponent
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions.PublicExponent
+- declaration: Azure::Nullable&lt;int64_t&gt; Azure::Security::KeyVault::Keys::CreateRsaKeyOptions::PublicExponent
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: If null, the service default is used.
-- content: The documentation for this class was generated from the following file:inc/azure/keyvault/keys/key_client_options.hppGenerated by&#160;1.9.7

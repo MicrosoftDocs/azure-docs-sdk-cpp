@@ -1,149 +1,135 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AStorage%3A%3ASas%3A%3ABlobSasBuilder
+uid: Azure::Storage::Sas::BlobSasBuilder
 title: Azure::Storage::Sas::BlobSasBuilder Struct Reference
-xrefType: Struct
-xrefName: Azure::Storage::Sas::BlobSasBuilder
 components:
-- content: >-
-    <p><a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml">BlobSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage container or blob.  
-
-    </p><p><code>#include &lt;blob_sas_builder.hpp&gt;</code></p>
+- content: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.html">BlobSasBuilder</a> is used to generate a Shared Access Signature (SAS) for an Azure Storage container or blob.<code>#include &lt;<a href="blob__sas__builder_8hpp_source.html">blob_sas_builder.hpp</a>&gt;</code>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a576bd2495f51c20c19c4aa188ff50313">SetPermissions</a> (BlobContainerSasPermissions permissions)
-    summary: Sets the permissions for the blob container SAS.
-    returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a94399919f3752623e1d4775ee9521322">SetPermissions</a> (BlobSasPermissions permissions)
-    summary: Sets the permissions for the blob SAS.
-    returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a44e334fdd83ae9567b13e94c3f4a6594">SetPermissions</a> (std::string rawPermissions)
-    summary: Sets the permissions for the SAS using a raw permissions string.
-    returnType: void&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a9fa261c75b49cf2ed22c689df90b0fa9">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
-    summary: Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
-    returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a5bf74d765c846238b6d7a5522c5bb1d3">GenerateSasToken</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_user_delegation_key.yml">Blobs::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
-    summary: Uses an account's user delegation key to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
-    returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a8844eac82d994f85ab8186b1cfde1d94">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
-    summary: For debugging purposes only.
-    returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.yml#a15863b0dd34f745c136971ef2f1b8bfd">GenerateSasStringToSign</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_user_delegation_key.yml">Blobs::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
-    summary: For debugging purposes only.
-    returnType: std::string&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.html#a576bd2495f51c20c19c4aa188ff50313">SetPermissions</a> (BlobContainerSasPermissions permissions)
+    summary: Sets the permissions for the blob container SAS.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.html#a94399919f3752623e1d4775ee9521322">SetPermissions</a> (BlobSasPermissions permissions)
+    summary: Sets the permissions for the blob SAS.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.html#a44e334fdd83ae9567b13e94c3f4a6594">SetPermissions</a> (std::string rawPermissions)
+    summary: Sets the permissions for the SAS using a raw permissions string.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.html#a9fa261c75b49cf2ed22c689df90b0fa9">GenerateSasToken</a> (const StorageSharedKeyCredential &credential)
+    summary: Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.html#a5bf74d765c846238b6d7a5522c5bb1d3">GenerateSasToken</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_user_delegation_key.html">Blobs::Models::UserDelegationKey</a> &userDelegationKey, const std::string &accountName)
+    summary: Uses an account's user delegation key to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.html#a8844eac82d994f85ab8186b1cfde1d94">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &credential)
+    summary: For debugging purposes only.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_sas_1_1_blob_sas_builder.html#a15863b0dd34f745c136971ef2f1b8bfd">GenerateSasStringToSign</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_user_delegation_key.html">Blobs::Models::UserDelegationKey</a> &userDelegationKey, const std::string &accountName)
+    summary: For debugging purposes only.  <br>
+    returnType: std::string 
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: Protocol
-    summary: The optional signed protocol field specifies the protocol permitted for a request made with the SAS.
+  - declaration: <b>Protocol</b>
+    summary: The optional signed protocol field specifies the protocol permitted for a request made with the SAS. <br>
     returnType: >-
-      <a id="a5e1d5fc0f61dfb9018745da8411fdd63"></a>
+      <a id="a5e1d5fc0f61dfb9018745da8411fdd63" name="a5e1d5fc0f61dfb9018745da8411fdd63"></a>
 
-      SasProtocol&#160;
-  - declaration: StartsOn
-    summary: Optionally specify the time at which the shared access signature becomes valid. This timestamp will be truncated to second.
+      SasProtocol 
+  - declaration: <b>StartsOn</b>
+    summary: Optionally specify the time at which the shared access signature becomes valid. This timestamp will be truncated to second. <br>
     returnType: >-
-      <a id="a54ead79e95c82f7e19f670b3945ca4b9"></a>
+      <a id="a54ead79e95c82f7e19f670b3945ca4b9" name="a54ead79e95c82f7e19f670b3945ca4b9"></a>
 
-      Azure::Nullable&lt; Azure::DateTime &gt;&#160;
-  - declaration: ExpiresOn
-    summary: The time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. This timestamp will be truncated to second.
+      Azure::Nullable< Azure::DateTime > 
+  - declaration: <b>ExpiresOn</b>
+    summary: The time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. This timestamp will be truncated to second. <br>
     returnType: >-
-      <a id="a86e11b38e3bd588addd5ffb0b7ccdb65"></a>
+      <a id="a86e11b38e3bd588addd5ffb0b7ccdb65" name="a86e11b38e3bd588addd5ffb0b7ccdb65"></a>
 
-      Azure::DateTime&#160;
-  - declaration: IPRange
-    summary: Specifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive.
+      Azure::DateTime 
+  - declaration: <b>IPRange</b>
+    summary: Specifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive. <br>
     returnType: >-
-      <a id="aa223b9b01dafc76ac3e1808147424817"></a>
+      <a id="aa223b9b01dafc76ac3e1808147424817" name="aa223b9b01dafc76ac3e1808147424817"></a>
 
-      Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: Identifier
-    summary: An optional unique value up to 64 characters in length that correlates to an access policy specified for the container.
+      Azure::Nullable< std::string > 
+  - declaration: <b>Identifier</b>
+    summary: An optional unique value up to 64 characters in length that correlates to an access policy specified for the container. <br>
     returnType: >-
-      <a id="a7013729acb32beb758e1c84fe053598b"></a>
+      <a id="a7013729acb32beb758e1c84fe053598b" name="a7013729acb32beb758e1c84fe053598b"></a>
 
-      std::string&#160;
-  - declaration: BlobContainerName
-    summary: The name of the blob container being made accessible.
+      std::string 
+  - declaration: <b>BlobContainerName</b>
+    summary: The name of the blob container being made accessible. <br>
     returnType: >-
-      <a id="af70c9f6e9aaae4b29c153c713f25cc7f"></a>
+      <a id="af70c9f6e9aaae4b29c153c713f25cc7f" name="af70c9f6e9aaae4b29c153c713f25cc7f"></a>
 
-      std::string&#160;
-  - declaration: BlobName
-    summary: The name of the blob being made accessible, or empty for a container SAS..
+      std::string 
+  - declaration: <b>BlobName</b>
+    summary: The name of the blob being made accessible, or empty for a container SAS.. <br>
     returnType: >-
-      <a id="a5da56debca7f3a3691f9f197cf893a68"></a>
+      <a id="a5da56debca7f3a3691f9f197cf893a68" name="a5da56debca7f3a3691f9f197cf893a68"></a>
 
-      std::string&#160;
-  - declaration: Snapshot
-    summary: The name of the blob snapshot being made accessible, or empty for a container SAS and blob SAS.
+      std::string 
+  - declaration: <b>Snapshot</b>
+    summary: The name of the blob snapshot being made accessible, or empty for a container SAS and blob SAS. <br>
     returnType: >-
-      <a id="a4a67c781a007cc4c068b5363db5a082e"></a>
+      <a id="a4a67c781a007cc4c068b5363db5a082e" name="a4a67c781a007cc4c068b5363db5a082e"></a>
 
-      std::string&#160;
-  - declaration: BlobVersionId
-    summary: The ID of the blob version being made accessible, or empty for a container SAS, blob SAS and blob snapshot SAS.
+      std::string 
+  - declaration: <b>BlobVersionId</b>
+    summary: The ID of the blob version being made accessible, or empty for a container SAS, blob SAS and blob snapshot SAS. <br>
     returnType: >-
-      <a id="aefd5551b5f6f9acca91b68887d817f3e"></a>
+      <a id="aefd5551b5f6f9acca91b68887d817f3e" name="aefd5551b5f6f9acca91b68887d817f3e"></a>
 
-      std::string&#160;
-  - declaration: Resource
-    summary: Specifies which resources are accessible via the shared access signature.
+      std::string 
+  - declaration: <b>Resource</b>
+    summary: Specifies which resources are accessible via the shared access signature. <br>
     returnType: >-
-      <a id="ad618d55dbdf5655c51711c646851dbb7"></a>
+      <a id="ad618d55dbdf5655c51711c646851dbb7" name="ad618d55dbdf5655c51711c646851dbb7"></a>
 
-      BlobSasResource&#160;
-  - declaration: CacheControl
-    summary: Override the value returned for Cache-Control response header..
+      BlobSasResource 
+  - declaration: <b>CacheControl</b>
+    summary: Override the value returned for Cache-Control response header.. <br>
     returnType: >-
-      <a id="a6496a6ca13d65a86a2b99581f0fef8c0"></a>
+      <a id="a6496a6ca13d65a86a2b99581f0fef8c0" name="a6496a6ca13d65a86a2b99581f0fef8c0"></a>
 
-      std::string&#160;
-  - declaration: ContentDisposition
-    summary: Override the value returned for Content-Disposition response header..
+      std::string 
+  - declaration: <b>ContentDisposition</b>
+    summary: Override the value returned for Content-Disposition response header.. <br>
     returnType: >-
-      <a id="aae6806c3a7b307aa98c812aa78d43b5a"></a>
+      <a id="aae6806c3a7b307aa98c812aa78d43b5a" name="aae6806c3a7b307aa98c812aa78d43b5a"></a>
 
-      std::string&#160;
-  - declaration: ContentEncoding
-    summary: Override the value returned for Content-Encoding response header..
+      std::string 
+  - declaration: <b>ContentEncoding</b>
+    summary: Override the value returned for Content-Encoding response header.. <br>
     returnType: >-
-      <a id="adf59113b0b7d779cd6be82baf2fb20ed"></a>
+      <a id="adf59113b0b7d779cd6be82baf2fb20ed" name="adf59113b0b7d779cd6be82baf2fb20ed"></a>
 
-      std::string&#160;
-  - declaration: ContentLanguage
-    summary: Override the value returned for Content-Language response header..
+      std::string 
+  - declaration: <b>ContentLanguage</b>
+    summary: Override the value returned for Content-Language response header.. <br>
     returnType: >-
-      <a id="a8b7b82089eaccb814f751e7f7895a5ad"></a>
+      <a id="a8b7b82089eaccb814f751e7f7895a5ad" name="a8b7b82089eaccb814f751e7f7895a5ad"></a>
 
-      std::string&#160;
-  - declaration: ContentType
-    summary: Override the value returned for Content-Type response header..
+      std::string 
+  - declaration: <b>ContentType</b>
+    summary: Override the value returned for Content-Type response header.. <br>
     returnType: >-
-      <a id="a79544effba1a62285d6002e4a679d6eb"></a>
+      <a id="a79544effba1a62285d6002e4a679d6eb" name="a79544effba1a62285d6002e4a679d6eb"></a>
 
-      std::string&#160;
-  - declaration: EncryptionScope
-    summary: Optional encryption scope to use when sending requests authorized with this SAS url.
+      std::string 
+  - declaration: <b>EncryptionScope</b>
+    summary: Optional encryption scope to use when sending requests authorized with this SAS url. <br>
     returnType: >-
-      <a id="ae067f69e0ccdba239e5ef44ce8fa48af"></a>
+      <a id="ae067f69e0ccdba239e5ef44ce8fa48af" name="ae067f69e0ccdba239e5ef44ce8fa48af"></a>
 
-      std::string&#160;
+      std::string 
 - section: Member Function Documentation
   display: h2
-- content: <a id="a15863b0dd34f745c136971ef2f1b8bfd"></a>
-- section: GenerateSasStringToSign() [1/2]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ABlobSasBuilder.GenerateSasStringToSign%28%29%20%5B1%2F2%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Sas::BlobSasBuilder.GenerateSasStringToSign() [1/2]
-- declaration: >-
-    std::string Azure::Storage::Sas::BlobSasBuilder::GenerateSasStringToSign(const Blobs::Models::UserDelegationKey &amp;&#160;userDelegationKey,
-                                                                             const std::string &amp;&#160;                     accountName&#160;      
-                                                                            )
-  languageId: cpp
+- section: '&#9670;&#160;GenerateSasStringToSign() [1/2]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -155,14 +141,8 @@ components:
   display: h4
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
-- content: <a id="a8844eac82d994f85ab8186b1cfde1d94"></a>
-- section: GenerateSasStringToSign() [2/2]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ABlobSasBuilder.GenerateSasStringToSign%28%29%20%5B2%2F2%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Sas::BlobSasBuilder.GenerateSasStringToSign() [2/2]
-- declaration: std::string Azure::Storage::Sas::BlobSasBuilder::GenerateSasStringToSign(const StorageSharedKeyCredential &amp;&#160;credential)
-  languageId: cpp
+- section: '&#9670;&#160;GenerateSasStringToSign() [2/2]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -172,17 +152,8 @@ components:
   display: h4
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
-- content: <a id="a5bf74d765c846238b6d7a5522c5bb1d3"></a>
-- section: GenerateSasToken() [1/2]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ABlobSasBuilder.GenerateSasToken%28%29%20%5B1%2F2%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Sas::BlobSasBuilder.GenerateSasToken() [1/2]
-- declaration: >-
-    std::string Azure::Storage::Sas::BlobSasBuilder::GenerateSasToken(const Blobs::Models::UserDelegationKey &amp;&#160;userDelegationKey,
-                                                                      const std::string &amp;&#160;                     accountName&#160;      
-                                                                     )
-  languageId: cpp
+- section: '&#9670;&#160;GenerateSasToken() [1/2]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -194,14 +165,8 @@ components:
   display: h4
 - parameters:
   - summary: The SAS query parameters used for authenticating requests.
-- content: <a id="a9fa261c75b49cf2ed22c689df90b0fa9"></a>
-- section: GenerateSasToken() [2/2]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ABlobSasBuilder.GenerateSasToken%28%29%20%5B2%2F2%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Sas::BlobSasBuilder.GenerateSasToken() [2/2]
-- declaration: std::string Azure::Storage::Sas::BlobSasBuilder::GenerateSasToken(const StorageSharedKeyCredential &amp;&#160;credential)
-  languageId: cpp
+- section: '&#9670;&#160;GenerateSasToken() [2/2]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -211,42 +176,28 @@ components:
   display: h4
 - parameters:
   - summary: The SAS query parameters used for authenticating requests.
-- content: <a id="a576bd2495f51c20c19c4aa188ff50313"></a>
-- section: SetPermissions() [1/3]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ABlobSasBuilder.SetPermissions%28%29%20%5B1%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Sas::BlobSasBuilder.SetPermissions() [1/3]
-- declaration: void Azure::Storage::Sas::BlobSasBuilder::SetPermissions(BlobContainerSasPermissions&#160;permissions)
-  languageId: cpp
+- section: '&#9670;&#160;SetPermissions() [1/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: permissions
     summary: The allowed permissions.
-- content: <a id="a94399919f3752623e1d4775ee9521322"></a>
-- section: SetPermissions() [2/3]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ABlobSasBuilder.SetPermissions%28%29%20%5B2%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Sas::BlobSasBuilder.SetPermissions() [2/3]
-- declaration: void Azure::Storage::Sas::BlobSasBuilder::SetPermissions(BlobSasPermissions&#160;permissions)
-  languageId: cpp
+- section: '&#9670;&#160;SetPermissions() [2/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: permissions
     summary: The allowed permissions.
-- content: <a id="a44e334fdd83ae9567b13e94c3f4a6594"></a>
-- section: SetPermissions() [3/3]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3ABlobSasBuilder.SetPermissions%28%29%20%5B3%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Sas::BlobSasBuilder.SetPermissions() [3/3]
-- declaration: void Azure::Storage::Sas::BlobSasBuilder::SetPermissions(std::string&#160;rawPermissions) inline
-  languageId: cpp
+- section: '&#9670;&#160;SetPermissions() [3/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: rawPermissions
     summary: Raw permissions string for the SAS.
+- content: >-
+    The documentation for this struct was generated from the following files:inc/azure/storage/blobs/blob_sas_builder.hpp
+
+    src/blob_sas_builder.cppGenerated by&#160;1.9.7

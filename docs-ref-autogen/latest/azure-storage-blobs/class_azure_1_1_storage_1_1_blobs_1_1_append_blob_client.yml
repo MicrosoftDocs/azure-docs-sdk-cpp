@@ -1,188 +1,137 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient
+uid: Azure::Storage::Blobs::AppendBlobClient
 title: Azure::Storage::Blobs::AppendBlobClient Class Reference
-xrefType: Class
-xrefName: Azure::Storage::Blobs::AppendBlobClient
 components:
 - content: >-
-    <p>The <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a> allows you to manipulate Azure Storage append blobs.  
-     <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#details">More...</a></p><p><code>#include &lt;append_blob_client.hpp&gt;</code></p><p>This class inherits from:</p>
-- linkList:
-  - name: Azure::Storage::Blobs::BlobClient
-    href: class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml
+    The <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> allows you to manipulate Azure Storage append blobs.  
+     <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#details">More...</a><code>#include &lt;<a href="append__blob__client_8hpp_source.html">append_blob_client.hpp</a>&gt;</code>Inheritance diagram for Azure::Storage::Blobs::AppendBlobClient:
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#ad6f7696bdedc0b985878eb9a9cc3a0aa">AppendBlobClient</a> (const std::string &amp;blobUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a>())
-    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a>.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#ae2da678b6f651b3e98514281c8c7553d">AppendBlobClient</a> (const std::string &amp;blobUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a>())
-    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a>.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#a66894919220bf0ef6d0b4b5b1e92a042">AppendBlobClient</a> (const std::string &amp;blobUrl, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a>())
-    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a>.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#a8e67ffbfa41c5e8be8ef37ea2b9d745c">WithSnapshot</a> (const std::string &amp;snapshot) const
-    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a> class with an identical URL source but the specified snapshot timestamp.
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#a400b4092c802d53c9ead554448d07b3f">WithVersionId</a> (const std::string &amp;versionId) const
-    summary: Creates a clone of this instance that references a version ID rather than the base blob.
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#af4741936142e482d4c4a0853acaa109a">Create</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_append_blob_options.yml">CreateAppendBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_append_blob_options.yml">CreateAppendBlobOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Creates a new 0-length append blob. The content of any existing blob is overwritten with the newly initialized append blob.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_append_blob_result.yml">Models::CreateAppendBlobResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#a3d89d503b46447c7ae4694307aeed7be">CreateIfNotExists</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_append_blob_options.yml">CreateAppendBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_append_blob_options.yml">CreateAppendBlobOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Creates a new 0-length append blob. The content keeps unchanged if the blob already exists.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_append_blob_result.yml">Models::CreateAppendBlobResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#a6b6ed9864322ae13a3c569343801aa1c">AppendBlock</a> (Azure::Core::IO::BodyStream &amp;content, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_append_block_options.yml">AppendBlockOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_append_block_options.yml">AppendBlockOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Commits a new block of data, represented by the content BodyStream to the end of the existing append blob.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_result.yml">Models::AppendBlockResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#a992f3d7948d8e301778f0a3a08aa6347">AppendBlockFromUri</a> (const std::string &amp;sourceUri, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_append_block_from_uri_options.yml">AppendBlockFromUriOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_append_block_from_uri_options.yml">AppendBlockFromUriOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Commits a new block of data, represented by the content BodyStream to the end of the existing append blob.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.yml">Models::AppendBlockFromUriResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#a2bf2de873cd4ec33fa17887a2235c201">Seal</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_seal_append_blob_options.yml">SealAppendBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_seal_append_blob_options.yml">SealAppendBlobOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Seals the append blob, making it read only. Any subsequent appends will fail.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_seal_append_blob_result.yml">Models::SealAppendBlobResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#aba0c132a169d0dd59d6f69bd31381b0d">~BlobClient</a> ()=default
-    summary: Destructor.
-    returnType: virtual&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a648f91be2338d9726c8145ba214ac978">BlobClient</a> (const std::string &amp;blobUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a>())
-    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#aa96e47997fba9d786c78fb7d451f335e">BlobClient</a> (const std::string &amp;blobUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a>())
-    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#aa224db3a62b18fe4636bafc40388e2b4">BlobClient</a> (const std::string &amp;blobUrl, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a>())
-    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#acea541c3a579cf4bd279c328c88d2cd6">AsBlockBlobClient</a> () const
-    summary: Creates a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.yml">BlockBlobClient</a> object with the same URL as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>. The new <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.yml">BlockBlobClient</a> uses the same request policy pipeline as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>.
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.yml">BlockBlobClient</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a88846b9248a67b05abb25c791a8f9524">AsAppendBlobClient</a> () const
-    summary: Creates a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a> object with the same URL as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>. The new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a> uses the same request policy pipeline as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>.
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a0b2c93bb3026f146c72bffcbccf32b54">AsPageBlobClient</a> () const
-    summary: Creates a new <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.yml">PageBlobClient</a> object with the same URL as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>. The new <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.yml">PageBlobClient</a> uses the same request policy pipeline as this <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>.
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.yml">PageBlobClient</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#aebb3229526e303cc615aa69d78503063">GetUrl</a> () const
-    summary: Gets the blob's primary URL endpoint.
-    returnType: std::string&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a4e49e26b8d6742f576981131a0f764f6">WithSnapshot</a> (const std::string &amp;snapshot) const
-    summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a> class with an identical URL source but the specified snapshot timestamp.
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#acb8edeaca12630b7549b9a9b77594b00">WithVersionId</a> (const std::string &amp;versionId) const
-    summary: Creates a clone of this instance that references a version ID rather than the base blob.
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a305bf8f65dc35944e706df2d2791a3a1">GetProperties</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_properties_options.yml">GetBlobPropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_properties_options.yml">GetBlobPropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Returns all user-defined metadata, standard HTTP properties, and system properties for the blob. It does not return the content of the blob.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_properties.yml">Models::BlobProperties</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a913e1aca81833426ec8b621531c9b4a5">SetHttpHeaders</a> (<a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_http_headers.yml">Models::BlobHttpHeaders</a> httpHeaders, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_http_headers_options.yml">SetBlobHttpHeadersOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_http_headers_options.yml">SetBlobHttpHeadersOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets system properties on the blob.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_http_headers_result.yml">Models::SetBlobHttpHeadersResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a76301e79fa60cae85be9fca9072042a1">SetMetadata</a> (Metadata metadata, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_metadata_options.yml">SetBlobMetadataOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_metadata_options.yml">SetBlobMetadataOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets user-defined metadata for the specified blob as one or more name-value pairs.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_metadata_result.yml">Models::SetBlobMetadataResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#ad9104f59eef0ef11d1599fa0de03d5bb">SetAccessTier</a> (<a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.yml">Models::AccessTier</a> accessTier, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.yml">SetBlobAccessTierOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.yml">SetBlobAccessTierOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets the tier on a blob. The operation is allowed on a page blob in a premium storage account and on a block blob in a blob storage or general purpose v2 account.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_access_tier_result.yml">Models::SetBlobAccessTierResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a267904b7db1f9e53632dc551aaea037c">CopyFromUri</a> (const std::string &amp;sourceUri, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options.yml">CopyBlobFromUriOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options.yml">CopyBlobFromUriOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Copies data from the source to this blob, synchronously.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_copy_blob_from_uri_result.yml">Models::CopyBlobFromUriResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#af1c432cf82637be1c954b94ea57fee1a">StartCopyFromUri</a> (const std::string &amp;sourceUri, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.yml">StartBlobCopyFromUriOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.yml">StartBlobCopyFromUriOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Copies data at from the source to this blob.
-    returnType: <a href="class_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_operation.yml">StartBlobCopyOperation</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a128e9bdfdd7bd7b7125aada157b2734a">AbortCopyFromUri</a> (const std::string &amp;copyId, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_abort_blob_copy_from_uri_options.yml">AbortBlobCopyFromUriOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_abort_blob_copy_from_uri_options.yml">AbortBlobCopyFromUriOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Aborts a pending StartCopyFromUri operation, and leaves this blob with zero length and full metadata.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_abort_blob_copy_from_uri_result.yml">Models::AbortBlobCopyFromUriResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#aee72db03143c80da4da4acb3e4c3673d">Download</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_options.yml">DownloadBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_options.yml">DownloadBlobOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Downloads a blob or a blob range from the service, including its metadata and properties.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result.yml">Models::DownloadBlobResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#aa0bcbdbf6ebd17e4888cced4736420f7">DownloadTo</a> (uint8_t *buffer, size_t bufferSize, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_to_options.yml">DownloadBlobToOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_to_options.yml">DownloadBlobToOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Downloads a blob or a blob range from the service to a memory buffer using parallel requests.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_to_result.yml">Models::DownloadBlobToResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#aa7c42e08951121a5f683e3e93bdc17c1">DownloadTo</a> (const std::string &amp;fileName, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_to_options.yml">DownloadBlobToOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_to_options.yml">DownloadBlobToOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Downloads a blob or a blob range from the service to a file using parallel requests.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_to_result.yml">Models::DownloadBlobToResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a05131f0bfc5f8b6d32c98f18d6d450a7">CreateSnapshot</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_blob_snapshot_options.yml">CreateBlobSnapshotOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_create_blob_snapshot_options.yml">CreateBlobSnapshotOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Creates a read-only snapshot of a blob.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_snapshot_result.yml">Models::CreateBlobSnapshotResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#ac121df9f5dfcdeb80f47b50543df0984">Delete</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.yml">DeleteBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.yml">DeleteBlobOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Marks the specified blob or snapshot for deletion. The blob is later deleted during garbage collection. Note that in order to delete a blob, you must delete all of its snapshots. You can delete both at the same time using <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.yml#a0e9337de60f8c7d67d7a040d8b316b90">DeleteBlobOptions.DeleteSnapshots</a>.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_result.yml">Models::DeleteBlobResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a17a5c20b7cee4478d5a33409440fea8d">DeleteIfExists</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.yml">DeleteBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.yml">DeleteBlobOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Marks the specified blob or snapshot for deletion if it exists.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_result.yml">Models::DeleteBlobResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#abbe7d6e85fe6945188e97eead63b1e7f">Undelete</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_undelete_blob_options.yml">UndeleteBlobOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_undelete_blob_options.yml">UndeleteBlobOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Restores the contents and metadata of a soft deleted blob and any associated soft deleted snapshots.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_undelete_blob_result.yml">Models::UndeleteBlobResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a9c0bed9f975d4462ac7cb28f24963a77">SetTags</a> (std::map&lt; std::string, std::string &gt; tags, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_tags_options.yml">SetBlobTagsOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_tags_options.yml">SetBlobTagsOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets tags on the underlying blob.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_tags_result.yml">Models::SetBlobTagsResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a314dab2e7c92c0044045e2bcbae63f58">GetTags</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_tags_options.yml">GetBlobTagsOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_tags_options.yml">GetBlobTagsOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Gets the tags associated with the underlying blob.
-    returnType: Azure::Response&lt; std::map&lt; std::string, std::string &gt; &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#ade112c37b5858590349a2b5e46fd5709">SetImmutabilityPolicy</a> (<a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy.yml">Models::BlobImmutabilityPolicy</a> immutabilityPolicy, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_immutability_policy_options.yml">SetBlobImmutabilityPolicyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_immutability_policy_options.yml">SetBlobImmutabilityPolicyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets the immutability policy on a blob, snapshot or version. Note that Blob Versioning must be enabled on your storage account, and the blob must be in a Container with immutable storage with versioning enabled to call this API.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_immutability_policy_result.yml">Models::SetBlobImmutabilityPolicyResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a13aefc1ffba111e1a40c6fab1b9e99e1">DeleteImmutabilityPolicy</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_immutability_policy_options.yml">DeleteBlobImmutabilityPolicyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_immutability_policy_options.yml">DeleteBlobImmutabilityPolicyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Deletes the Immutability Policy associated with the Blob.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_immutability_policy_result.yml">Models::DeleteBlobImmutabilityPolicyResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a7617dfc40b61d67af2cb8cfd53771da1">SetLegalHold</a> (bool hasLegalHold, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_legal_hold_options.yml">SetBlobLegalHoldOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_legal_hold_options.yml">SetBlobLegalHoldOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets a legal hold on the blob. Note that Blob Versioning must be enabled on your storage account, and the blob must be in a Container with immutable storage with versioning enabled to call this API.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_legal_hold_result.yml">Models::SetBlobLegalHoldResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#af74347b4271ee5e472c36a46c5343bdf">GetAccountInfo</a> (const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_account_info_options.yml">GetAccountInfoOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_get_account_info_options.yml">GetAccountInfoOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Returns the sku name and account kind for the specified account.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_account_info.yml">Models::AccountInfo</a> &gt;&#160;
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#ad6f7696bdedc0b985878eb9a9cc3a0aa">AppendBlobClient</a> (const std::string &blobUrl, std::shared_ptr< StorageSharedKeyCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html" title="The AppendBlobClient allows you to manipulate Azure Storage append blobs.">AppendBlobClient</a>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#ae2da678b6f651b3e98514281c8c7553d">AppendBlobClient</a> (const std::string &blobUrl, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html" title="The AppendBlobClient allows you to manipulate Azure Storage append blobs.">AppendBlobClient</a>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a66894919220bf0ef6d0b4b5b1e92a042">AppendBlobClient</a> (const std::string &blobUrl, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html" title="The AppendBlobClient allows you to manipulate Azure Storage append blobs.">AppendBlobClient</a>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a8e67ffbfa41c5e8be8ef37ea2b9d745c">WithSnapshot</a> (const std::string &snapshot) const
+    summary: Initializes a new instance of the <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html" title="The AppendBlobClient allows you to manipulate Azure Storage append blobs.">AppendBlobClient</a> class with an identical URL source but the specified snapshot timestamp.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a400b4092c802d53c9ead554448d07b3f">WithVersionId</a> (const std::string &versionId) const
+    summary: Creates a clone of this instance that references a version ID rather than the base blob.  <br>
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#af4741936142e482d4c4a0853acaa109a">Create</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_create_append_blob_options.html">CreateAppendBlobOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_create_append_blob_options.html">CreateAppendBlobOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Creates a new 0-length append blob. The content of any existing blob is overwritten with the newly initialized append blob.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_append_blob_result.html">Models::CreateAppendBlobResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a3d89d503b46447c7ae4694307aeed7be">CreateIfNotExists</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_create_append_blob_options.html">CreateAppendBlobOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_create_append_blob_options.html">CreateAppendBlobOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Creates a new 0-length append blob. The content keeps unchanged if the blob already exists.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_append_blob_result.html">Models::CreateAppendBlobResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a6b6ed9864322ae13a3c569343801aa1c">AppendBlock</a> (Azure::Core::IO::BodyStream &content, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_append_block_options.html">AppendBlockOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_append_block_options.html">AppendBlockOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Commits a new block of data, represented by the content BodyStream to the end of the existing append blob.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_result.html">Models::AppendBlockResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a992f3d7948d8e301778f0a3a08aa6347">AppendBlockFromUri</a> (const std::string &sourceUri, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_append_block_from_uri_options.html">AppendBlockFromUriOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_append_block_from_uri_options.html">AppendBlockFromUriOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Commits a new block of data, represented by the content BodyStream to the end of the existing append blob.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_append_block_from_uri_result.html">Models::AppendBlockFromUriResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a2bf2de873cd4ec33fa17887a2235c201">Seal</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_seal_append_blob_options.html">SealAppendBlobOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_seal_append_blob_options.html">SealAppendBlobOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Seals the append blob, making it read only. Any subsequent appends will fail.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_seal_append_blob_result.html">Models::SealAppendBlobResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#aba0c132a169d0dd59d6f69bd31381b0d">~BlobClient</a> ()=default
+    returnType: virtual 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a648f91be2338d9726c8145ba214ac978">BlobClient</a> (const std::string &blobUrl, std::shared_ptr< StorageSharedKeyCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#aa96e47997fba9d786c78fb7d451f335e">BlobClient</a> (const std::string &blobUrl, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#aa224db3a62b18fe4636bafc40388e2b4">BlobClient</a> (const std::string &blobUrl, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#acea541c3a579cf4bd279c328c88d2cd6">AsBlockBlobClient</a> () const
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html">BlockBlobClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a88846b9248a67b05abb25c791a8f9524">AsAppendBlobClient</a> () const
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a0b2c93bb3026f146c72bffcbccf32b54">AsPageBlobClient</a> () const
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_page_blob_client.html">PageBlobClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#aebb3229526e303cc615aa69d78503063">GetUrl</a> () const
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a4e49e26b8d6742f576981131a0f764f6">WithSnapshot</a> (const std::string &snapshot) const
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html">BlobClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#acb8edeaca12630b7549b9a9b77594b00">WithVersionId</a> (const std::string &versionId) const
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html">BlobClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a305bf8f65dc35944e706df2d2791a3a1">GetProperties</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_properties_options.html">GetBlobPropertiesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_properties_options.html">GetBlobPropertiesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_properties.html">Models::BlobProperties</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a913e1aca81833426ec8b621531c9b4a5">SetHttpHeaders</a> (<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_http_headers.html">Models::BlobHttpHeaders</a> httpHeaders, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_http_headers_options.html">SetBlobHttpHeadersOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_http_headers_options.html">SetBlobHttpHeadersOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_http_headers_result.html">Models::SetBlobHttpHeadersResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a76301e79fa60cae85be9fca9072042a1">SetMetadata</a> (Metadata metadata, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_metadata_options.html">SetBlobMetadataOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_metadata_options.html">SetBlobMetadataOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_metadata_result.html">Models::SetBlobMetadataResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#ad9104f59eef0ef11d1599fa0de03d5bb">SetAccessTier</a> (<a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier.html">Models::AccessTier</a> accessTier, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.html">SetBlobAccessTierOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_access_tier_options.html">SetBlobAccessTierOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_access_tier_result.html">Models::SetBlobAccessTierResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a267904b7db1f9e53632dc551aaea037c">CopyFromUri</a> (const std::string &sourceUri, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options.html">CopyBlobFromUriOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_copy_blob_from_uri_options.html">CopyBlobFromUriOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_copy_blob_from_uri_result.html">Models::CopyBlobFromUriResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#af1c432cf82637be1c954b94ea57fee1a">StartCopyFromUri</a> (const std::string &sourceUri, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.html">StartBlobCopyFromUriOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_from_uri_options.html">StartBlobCopyFromUriOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_start_blob_copy_operation.html">StartBlobCopyOperation</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a128e9bdfdd7bd7b7125aada157b2734a">AbortCopyFromUri</a> (const std::string &copyId, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_abort_blob_copy_from_uri_options.html">AbortBlobCopyFromUriOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_abort_blob_copy_from_uri_options.html">AbortBlobCopyFromUriOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_abort_blob_copy_from_uri_result.html">Models::AbortBlobCopyFromUriResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#aee72db03143c80da4da4acb3e4c3673d">Download</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_options.html">DownloadBlobOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_options.html">DownloadBlobOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_result.html">Models::DownloadBlobResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#aa0bcbdbf6ebd17e4888cced4736420f7">DownloadTo</a> (uint8_t *buffer, size_t bufferSize, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_to_options.html">DownloadBlobToOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_to_options.html">DownloadBlobToOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_to_result.html">Models::DownloadBlobToResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#aa7c42e08951121a5f683e3e93bdc17c1">DownloadTo</a> (const std::string &fileName, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_to_options.html">DownloadBlobToOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_download_blob_to_options.html">DownloadBlobToOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_to_result.html">Models::DownloadBlobToResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a05131f0bfc5f8b6d32c98f18d6d450a7">CreateSnapshot</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_create_blob_snapshot_options.html">CreateBlobSnapshotOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_create_blob_snapshot_options.html">CreateBlobSnapshotOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_create_blob_snapshot_result.html">Models::CreateBlobSnapshotResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#ac121df9f5dfcdeb80f47b50543df0984">Delete</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_result.html">Models::DeleteBlobResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a17a5c20b7cee4478d5a33409440fea8d">DeleteIfExists</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_options.html">DeleteBlobOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_result.html">Models::DeleteBlobResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#abbe7d6e85fe6945188e97eead63b1e7f">Undelete</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_undelete_blob_options.html">UndeleteBlobOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_undelete_blob_options.html">UndeleteBlobOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_undelete_blob_result.html">Models::UndeleteBlobResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a9c0bed9f975d4462ac7cb28f24963a77">SetTags</a> (std::map< std::string, std::string > tags, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_tags_options.html">SetBlobTagsOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_tags_options.html">SetBlobTagsOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_tags_result.html">Models::SetBlobTagsResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a314dab2e7c92c0044045e2bcbae63f58">GetTags</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_tags_options.html">GetBlobTagsOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_get_blob_tags_options.html">GetBlobTagsOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< std::map< std::string, std::string > > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#ade112c37b5858590349a2b5e46fd5709">SetImmutabilityPolicy</a> (<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy.html">Models::BlobImmutabilityPolicy</a> immutabilityPolicy, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_immutability_policy_options.html">SetBlobImmutabilityPolicyOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_immutability_policy_options.html">SetBlobImmutabilityPolicyOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_immutability_policy_result.html">Models::SetBlobImmutabilityPolicyResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a13aefc1ffba111e1a40c6fab1b9e99e1">DeleteImmutabilityPolicy</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_immutability_policy_options.html">DeleteBlobImmutabilityPolicyOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_delete_blob_immutability_policy_options.html">DeleteBlobImmutabilityPolicyOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_delete_blob_immutability_policy_result.html">Models::DeleteBlobImmutabilityPolicyResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a7617dfc40b61d67af2cb8cfd53771da1">SetLegalHold</a> (bool hasLegalHold, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_legal_hold_options.html">SetBlobLegalHoldOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_set_blob_legal_hold_options.html">SetBlobLegalHoldOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_set_blob_legal_hold_result.html">Models::SetBlobLegalHoldResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#af74347b4271ee5e472c36a46c5343bdf">GetAccountInfo</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_get_account_info_options.html">GetAccountInfoOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_get_account_info_options.html">GetAccountInfoOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_account_info.html">Models::AccountInfo</a> > 
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml#a5b92c87f881e9a2a855d3115c7a44d07">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;blobContainerName, const std::string &amp;blobName, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a>())
-    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a>.
-    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml#a6493139c9e3911fcbaa87b025ea3f4ef">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;blobContainerName, const std::string &amp;blobName, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.yml">BlobClientOptions</a>())
-    summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>.
-    returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.yml">BlobClient</a>&#160;
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html#a5b92c87f881e9a2a855d3115c7a44d07">CreateFromConnectionString</a> (const std::string &connectionString, const std::string &blobContainerName, const std::string &blobName, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    summary: Initialize a new instance of <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html" title="The AppendBlobClient allows you to manipulate Azure Storage append blobs.">AppendBlobClient</a>.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html">AppendBlobClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html#a6493139c9e3911fcbaa87b025ea3f4ef">CreateFromConnectionString</a> (const std::string &connectionString, const std::string &blobContainerName, const std::string &blobName, const <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options.html">BlobClientOptions</a>())
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_blob_client.html">BlobClient</a> 
 - section: Friends
   display: h2
 - apiList:
-  - declaration: BlobClient
+  - declaration: <b>BlobClient</b>
     returnType: >-
-      <a id="ae8d394bf44caeb3293234aee29f825ae"></a>
+      <a id="ae8d394bf44caeb3293234aee29f825ae" name="ae8d394bf44caeb3293234aee29f825ae"></a>
 
-      class&#160;
+      class 
 - section: Additional Inherited Members
   display: h2
 - apiList:
-  - declaration: m_blobUrl
-    summary: Blob Url.
-    returnType: Azure::Core::Url&#160;
-  - declaration: m_pipeline
-    summary: Http Pipeline.
-    returnType: std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt;&#160;
-  - declaration: m_customerProvidedKey
-    summary: Customer provided encryption key.
-    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_encryption_key.yml">EncryptionKey</a> &gt;&#160;
-  - declaration: m_encryptionScope
-    summary: Encryption scope.
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-- content: <a id="details"></a>
+  - declaration: <b>m_blobUrl</b>
+    returnType: Azure::Core::Url 
+  - declaration: <b>m_pipeline</b>
+    returnType: std::shared_ptr< Azure::Core::Http::_internal::HttpPipeline > 
+  - declaration: <b>m_customerProvidedKey</b>
+    returnType: Azure::Nullable< <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_encryption_key.html">EncryptionKey</a> > 
+  - declaration: <b>m_encryptionScope</b>
+    returnType: Azure::Nullable< std::string > 
 - section: Detailed Description
   display: h2
-- content: <p>An append blob is comprised of blocks and is optimized for append operations. When you modify an append blob, blocks are added to the end of the blob only, via the AppendBlock operation. Updating or deleting of existing blocks is not supported. Unlike a block blob, an append blob does not expose its block IDs. </p>
+- content: An append blob is comprised of blocks and is optimized for append operations. When you modify an append blob, blocks are added to the end of the blob only, via the AppendBlock operation. Updating or deleting of existing blocks is not supported. Unlike a block blob, an append blob does not expose its block IDs.
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="ad6f7696bdedc0b985878eb9a9cc3a0aa"></a>
-- section: AppendBlobClient() [1/3]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.AppendBlobClient%28%29%20%5B1%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.AppendBlobClient() [1/3]
-- declaration: >-
-    Azure::Storage::Blobs::AppendBlobClient::AppendBlobClient(const std::string &amp;&#160;                          blobUrl,                      
-                                                              std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;credential,                   
-                                                              const BlobClientOptions &amp;&#160;                    options = BlobClientOptions()&#160;
-                                                             ) explicit
-  languageId: cpp
+- section: '&#9670;&#160;AppendBlobClient() [1/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -192,18 +141,8 @@ components:
     summary: The shared key credential used to sign requests.
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
-- content: <a id="ae2da678b6f651b3e98514281c8c7553d"></a>
-- section: AppendBlobClient() [2/3]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.AppendBlobClient%28%29%20%5B2%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.AppendBlobClient() [2/3]
-- declaration: >-
-    Azure::Storage::Blobs::AppendBlobClient::AppendBlobClient(const std::string &amp;&#160;                                  blobUrl,                      
-                                                              std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                   
-                                                              const BlobClientOptions &amp;&#160;                            options = BlobClientOptions()&#160;
-                                                             ) explicit
-  languageId: cpp
+- section: '&#9670;&#160;AppendBlobClient() [2/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -213,17 +152,8 @@ components:
     summary: The token credential used to sign requests.
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
-- content: <a id="a66894919220bf0ef6d0b4b5b1e92a042"></a>
-- section: AppendBlobClient() [3/3]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.AppendBlobClient%28%29%20%5B3%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.AppendBlobClient() [3/3]
-- declaration: >-
-    Azure::Storage::Blobs::AppendBlobClient::AppendBlobClient(const std::string &amp;&#160;      blobUrl,                      
-                                                              const BlobClientOptions &amp;&#160;options = BlobClientOptions()&#160;
-                                                             ) explicit
-  languageId: cpp
+- section: '&#9670;&#160;AppendBlobClient() [3/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -233,18 +163,8 @@ components:
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a6b6ed9864322ae13a3c569343801aa1c"></a>
-- section: AppendBlock()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.AppendBlock%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.AppendBlock()
-- declaration: >-
-    Azure::Response&lt; Models::AppendBlockResult &gt; Azure::Storage::Blobs::AppendBlobClient::AppendBlock(Azure::Core::IO::BodyStream &amp;&#160;content,                         
-                                                                                                      const AppendBlockOptions &amp;&#160;   options = AppendBlockOptions(),  
-                                                                                                      const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160;
-                                                                                                     )                              const
-  languageId: cpp
+- section: '&#9670;&#160;AppendBlock()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -258,18 +178,8 @@ components:
   display: h4
 - parameters:
   - summary: An AppendBlockResult describing the state of the updated append blob.
-- content: <a id="a992f3d7948d8e301778f0a3a08aa6347"></a>
-- section: AppendBlockFromUri()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.AppendBlockFromUri%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.AppendBlockFromUri()
-- declaration: >-
-    Azure::Response&lt; Models::AppendBlockFromUriResult &gt; Azure::Storage::Blobs::AppendBlobClient::AppendBlockFromUri(const std::string &amp;&#160;              sourceUri,                            
-                                                                                                                    const AppendBlockFromUriOptions &amp;&#160;options = AppendBlockFromUriOptions(),
-                                                                                                                    const Azure::Core::Context &amp;&#160;     context = Azure::Core::Context()&#160;     
-                                                                                                                   )                                  const
-  languageId: cpp
+- section: '&#9670;&#160;AppendBlockFromUri()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -283,17 +193,8 @@ components:
   display: h4
 - parameters:
   - summary: An AppendBlockFromUriResult describing the state of the updated append blob.
-- content: <a id="af4741936142e482d4c4a0853acaa109a"></a>
-- section: Create()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.Create%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.Create()
-- declaration: >-
-    Azure::Response&lt; Models::CreateAppendBlobResult &gt; Azure::Storage::Blobs::AppendBlobClient::Create(const CreateAppendBlobOptions &amp;&#160;options = CreateAppendBlobOptions(),
-                                                                                                      const Azure::Core::Context &amp;&#160;   context = Azure::Core::Context()&#160;   
-                                                                                                     )                                const
-  languageId: cpp
+- section: '&#9670;&#160;Create()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -305,19 +206,8 @@ components:
   display: h4
 - parameters:
   - summary: A CreateAppendBlobResult describing the newly created append blob.
-- content: <a id="a5b92c87f881e9a2a855d3115c7a44d07"></a>
-- section: CreateFromConnectionString()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.CreateFromConnectionString%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.CreateFromConnectionString()
-- declaration: >-
-    AppendBlobClient Azure::Storage::Blobs::AppendBlobClient::CreateFromConnectionString(const std::string &amp;&#160;      connectionString,             
-                                                                                         const std::string &amp;&#160;      blobContainerName,            
-                                                                                         const std::string &amp;&#160;      blobName,                     
-                                                                                         const BlobClientOptions &amp;&#160;options = BlobClientOptions()&#160;
-                                                                                        ) static
-  languageId: cpp
+- section: '&#9670;&#160;CreateFromConnectionString()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -332,18 +222,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a> instance.
-- content: <a id="a3d89d503b46447c7ae4694307aeed7be"></a>
-- section: CreateIfNotExists()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.CreateIfNotExists%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.CreateIfNotExists()
-- declaration: >-
-    Azure::Response&lt; Models::CreateAppendBlobResult &gt; Azure::Storage::Blobs::AppendBlobClient::CreateIfNotExists(const CreateAppendBlobOptions &amp;&#160;options = CreateAppendBlobOptions(),
-                                                                                                                 const Azure::Core::Context &amp;&#160;   context = Azure::Core::Context()&#160;   
-                                                                                                                )                                const
-  languageId: cpp
+  - summary: A new <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html" title="The AppendBlobClient allows you to manipulate Azure Storage append blobs.">AppendBlobClient</a> instance.
+- section: '&#9670;&#160;CreateIfNotExists()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -355,17 +236,8 @@ components:
   display: h4
 - parameters:
   - summary: A CreateAppendBlobResult describing the newly created append blob. CreateAppendBlobResult.Created is false if the blob already exists.
-- content: <a id="a2bf2de873cd4ec33fa17887a2235c201"></a>
-- section: Seal()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.Seal%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.Seal()
-- declaration: >-
-    Azure::Response&lt; Models::SealAppendBlobResult &gt; Azure::Storage::Blobs::AppendBlobClient::Seal(const SealAppendBlobOptions &amp;&#160;options = SealAppendBlobOptions(),
-                                                                                                  const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
-                                                                                                 )                              const
-  languageId: cpp
+- section: '&#9670;&#160;Seal()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -377,14 +249,8 @@ components:
   display: h4
 - parameters:
   - summary: A SealAppendBlobResult describing the state of the sealed append blob.
-- content: <a id="a8e67ffbfa41c5e8be8ef37ea2b9d745c"></a>
-- section: WithSnapshot()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.WithSnapshot%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.WithSnapshot()
-- declaration: AppendBlobClient Azure::Storage::Blobs::AppendBlobClient::WithSnapshot(const std::string &amp;&#160;snapshot)const
-  languageId: cpp
+- section: '&#9670;&#160;WithSnapshot()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -393,19 +259,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a> instance.
+  - summary: A new <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html" title="The AppendBlobClient allows you to manipulate Azure Storage append blobs.">AppendBlobClient</a> instance.
 - section: Remarks
   display: h4
 - parameters:
   - summary: Pass empty string to remove the snapshot returning the base blob.
-- content: <a id="a400b4092c802d53c9ead554448d07b3f"></a>
-- section: WithVersionId()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAppendBlobClient.WithVersionId%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::AppendBlobClient.WithVersionId()
-- declaration: AppendBlobClient Azure::Storage::Blobs::AppendBlobClient::WithVersionId(const std::string &amp;&#160;versionId)const
-  languageId: cpp
+- section: '&#9670;&#160;WithVersionId()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -414,8 +274,12 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: A new <a href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.yml">AppendBlobClient</a> instance.
+  - summary: A new <a class="el" href="class_azure_1_1_storage_1_1_blobs_1_1_append_blob_client.html" title="The AppendBlobClient allows you to manipulate Azure Storage append blobs.">AppendBlobClient</a> instance.
 - section: Remarks
   display: h4
 - parameters:
   - summary: Pass empty string to remove the version ID returning the base blob.
+- content: >-
+    The documentation for this class was generated from the following files:inc/azure/storage/blobs/append_blob_client.hpp
+
+    src/append_blob_client.cppGenerated by&#160;1.9.7

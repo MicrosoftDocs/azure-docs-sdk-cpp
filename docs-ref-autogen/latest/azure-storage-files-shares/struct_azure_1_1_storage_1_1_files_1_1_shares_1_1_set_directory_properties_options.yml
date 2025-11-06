@@ -1,46 +1,25 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ASetDirectoryPropertiesOptions
+uid: Azure::Storage::Files::Shares::SetDirectoryPropertiesOptions
 title: Azure::Storage::Files::Shares::SetDirectoryPropertiesOptions Struct Reference
-xrefType: Struct
-xrefName: Azure::Storage::Files::Shares::SetDirectoryPropertiesOptions
 components:
-- content: >-
-    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.yml#a2e7c733b539b7058482e1bfe253b836e">Azure::Storage::Files::Shares::ShareDirectoryClient::SetProperties</a>.  
-
-    </p><p><code>#include &lt;share_options.hpp&gt;</code></p>
+- content: Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client.html#a2e7c733b539b7058482e1bfe253b836e">Azure::Storage::Files::Shares::ShareDirectoryClient::SetProperties</a>.<code>#include &lt;<a href="share__options_8hpp_source.html">share_options.hpp</a>&gt;</code>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_properties_options.yml#acbcdbb975a224561acf0b4bd4b95b50f">FilePermission</a>
-    returnType: Azure::Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_properties_options.yml#af8a543cee342ef2d12e1630c089da468">FilePermissionFormat</a>
-    returnType: Nullable&lt; Models ::FilePermissionFormat &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_properties_options.yml#a4304e63e0e770af93dd3ea8cf5b2ce44">PosixProperties</a>
-    returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties.yml">Models::FilePosixProperties</a>&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_properties_options.html#acbcdbb975a224561acf0b4bd4b95b50f">FilePermission</a>
+    returnType: Azure::Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_properties_options.html#af8a543cee342ef2d12e1630c089da468">FilePermissionFormat</a>
+    returnType: Nullable< Models ::FilePermissionFormat > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_set_directory_properties_options.html#a4304e63e0e770af93dd3ea8cf5b2ce44">PosixProperties</a>
+    returnType: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties.html">Models::FilePosixProperties</a> 
 - section: Member Data Documentation
   display: h2
-- content: <a id="acbcdbb975a224561acf0b4bd4b95b50f"></a>
-- section: FilePermission
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ASetDirectoryPropertiesOptions.FilePermission
-  xrefType: Member
-  xrefName: Azure::Storage::Files::Shares::SetDirectoryPropertiesOptions.FilePermission
-- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::SetDirectoryPropertiesOptions::FilePermission
-  languageId: cpp
-- content: "<p>If specified the permission (security descriptor) shall be set for the directory. This option can be used if Permission size is &lt;= 8KB, else SmbProperties.PermissionKey shall be used. Default value: 'inherit'. If SDDL is specified as input, it must have owner, group and dacl. </p><a id=\"af8a543cee342ef2d12e1630c089da468\"></a>"
-- section: FilePermissionFormat
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ASetDirectoryPropertiesOptions.FilePermissionFormat
-  xrefType: Member
-  xrefName: Azure::Storage::Files::Shares::SetDirectoryPropertiesOptions.FilePermissionFormat
-- declaration: Nullable&lt;Models ::FilePermissionFormat&gt; Azure::Storage::Files::Shares::SetDirectoryPropertiesOptions::FilePermissionFormat
-  languageId: cpp
-- content: <p>Optional. Available for version 2024-11-04 and later. Specifies the format in which the permission is returned.If FilePermissionFormat is unspecified or explicitly set to SDDL format format, the permission will be returned in SDDL format. </p><a id="a4304e63e0e770af93dd3ea8cf5b2ce44"></a>
-- section: PosixProperties
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ASetDirectoryPropertiesOptions.PosixProperties
-  xrefType: Member
-  xrefName: Azure::Storage::Files::Shares::SetDirectoryPropertiesOptions.PosixProperties
-- declaration: Models::FilePosixProperties Azure::Storage::Files::Shares::SetDirectoryPropertiesOptions::PosixProperties
-  languageId: cpp
-- content: <p>The NFS related properties for the file. </p>
+- section: '&#9670;&#160;FilePermission'
+  display: h2
+- content: "If specified the permission (security descriptor) shall be set for the directory. This option can be used if Permission size is &lt;= 8KB, else SmbProperties.PermissionKey shall be used. Default value: 'inherit'. If SDDL is specified as input, it must have owner, group and dacl."
+- section: '&#9670;&#160;FilePermissionFormat'
+  display: h2
+- content: Optional. Available for version 2024-11-04 and later. Specifies the format in which the permission is returned.If FilePermissionFormat is unspecified or explicitly set to SDDL format format, the permission will be returned in SDDL format.
+- section: '&#9670;&#160;PosixProperties'
+  display: h2
+- content: The NFS related properties for the file.The documentation for this struct was generated from the following file:inc/azure/storage/files/shares/share_options.hppGenerated by&#160;1.9.7

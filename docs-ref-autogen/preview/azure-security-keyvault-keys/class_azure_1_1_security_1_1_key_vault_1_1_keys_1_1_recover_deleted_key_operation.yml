@@ -1,55 +1,39 @@
 ### YamlMime:Reference
-uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ARecoverDeletedKeyOperation
+uid: Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation
 title: Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation Class Reference
-xrefType: Class
-xrefName: Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation
 components:
 - content: >-
-    <p>A long running operation to recover a key.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.yml#details">More...</a></p><p><code>#include &lt;key_client_models.hpp&gt;</code></p><p>This class inherits from:</p>
-- linkList:
-  - name: Azure::Core::Operation
-    href: ''
+    A long running operation to recover a key.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.html#details">More...</a><code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation:
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.yml#aaf2f73a7df459cfb5050749289968f4d">Value</a> () const override
-    summary: Get the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.yml">Azure::Security::KeyVault::Keys::KeyVaultKey</a> object.
-    returnType: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.yml">Azure::Security::KeyVault::Keys::KeyVaultKey</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.yml#a4b990ad40a7bdf0c01bbc63db799183e">GetResumeToken</a> () const override
-    summary: Get an Url as string which can be used to get the status of the delete key operation.
-    returnType: std::string&#160;
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.html#aaf2f73a7df459cfb5050749289968f4d">Value</a> () const override
+    summary: Get the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html" title="A key resource and its properties.">Azure::Security::KeyVault::Keys::KeyVaultKey</a> object.  <br>
+    returnType: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key.html">Azure::Security::KeyVault::Keys::KeyVaultKey</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.html#a4b990ad40a7bdf0c01bbc63db799183e">GetResumeToken</a> () const override
+    summary: Get an Url as string which can be used to get the status of the delete key operation.  <br>
+    returnType: std::string 
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.yml#ac93302a27bb6d123438516d8da6696a4">CreateFromResumeToken</a> (std::string const &amp;resumeToken, <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_client.yml">Azure::Security::KeyVault::Keys::KeyClient</a> const &amp;client, Azure::Core::Context const &amp;context=Azure::Core::Context())
-    summary: Create a RecoverDeletedKeyOperation from the <code>resumeToken</code> fetched from another <code>Operation&lt;T&gt;</code>, updated to the the latest operation status.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.yml">RecoverDeletedKeyOperation</a>&#160;
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.html#ac93302a27bb6d123438516d8da6696a4">CreateFromResumeToken</a> (std::string const &resumeToken, <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_client.html">Azure::Security::KeyVault::Keys::KeyClient</a> const &client, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Create a RecoverDeletedKeyOperation from the <code>resumeToken</code> fetched from another <code>Operation<T></code>, updated to the the latest operation status.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_recover_deleted_key_operation.html">RecoverDeletedKeyOperation</a> 
 - section: Friends
   display: h2
 - apiList:
-  - declaration: KeyClient
+  - declaration: <b>KeyClient</b>
     returnType: >-
-      <a id="ae15f2ce61c68fbee9013860b5c37c16d"></a>
+      <a id="ae15f2ce61c68fbee9013860b5c37c16d" name="ae15f2ce61c68fbee9013860b5c37c16d"></a>
 
-      class&#160;
-- content: <a id="details"></a>
+      class 
 - section: Detailed Description
   display: h2
 - section: Member Function Documentation
   display: h2
-- content: <a id="ac93302a27bb6d123438516d8da6696a4"></a>
-- section: CreateFromResumeToken()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ARecoverDeletedKeyOperation.CreateFromResumeToken%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation.CreateFromResumeToken()
-- declaration: >-
-    static RecoverDeletedKeyOperation Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation::CreateFromResumeToken(std::string const &amp;&#160;                               resumeToken,                     
-                                                                                                                         Azure::Security::KeyVault::Keys::KeyClient const &amp;&#160;client,                          
-                                                                                                                         Azure::Core::Context const &amp;&#160;                      context = Azure::Core::Context()&#160;
-                                                                                                                        ) static
-  languageId: cpp
+- section: '&#9670;&#160;CreateFromResumeToken()'
+  display: h2
 - section: Remarks
   display: h4
 - parameters:
@@ -66,27 +50,15 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.yml">DeleteKeyOperation</a>
-- content: <a id="a4b990ad40a7bdf0c01bbc63db799183e"></a>
-- section: GetResumeToken()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ARecoverDeletedKeyOperation.GetResumeToken%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation.GetResumeToken()
-- declaration: std::string Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation::GetResumeToken()const inline override
-  languageId: cpp
+  - summary: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_delete_key_operation.html" title="A long running operation to delete a key.">DeleteKeyOperation</a>
+- section: '&#9670;&#160;GetResumeToken()'
+  display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string
-- content: <a id="aaf2f73a7df459cfb5050749289968f4d"></a>
-- section: Value()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ARecoverDeletedKeyOperation.Value%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation.Value()
-- declaration: Azure::Security::KeyVault::Keys::KeyVaultKey Azure::Security::KeyVault::Keys::RecoverDeletedKeyOperation::Value()const inline override
-  languageId: cpp
+- section: '&#9670;&#160;Value()'
+  display: h2
 - section: Remarks
   display: h4
 - parameters:
@@ -95,3 +67,4 @@ components:
   display: h4
 - parameters:
   - summary: A deleted key object.
+- content: The documentation for this class was generated from the following file:inc/azure/keyvault/keys/key_client_models.hppGenerated by&#160;1.9.7

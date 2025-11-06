@@ -1,43 +1,29 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AStorage%3A%3AStorageException
+uid: Azure::Storage::StorageException
 title: Azure::Storage::StorageException Struct Reference
-xrefType: Struct
-xrefName: Azure::Storage::StorageException
 components:
-- content: >-
-    <p>An exception thrown when storage service request fails.  
-
-    </p><p><code>#include &lt;storage_exception.hpp&gt;</code></p><p>This class inherits from:</p>
-- linkList:
-  - name: Azure::Core::RequestFailedException
-    href: ''
+- content: 'An exception thrown when storage service request fails.<code>#include &lt;<a href="storage__exception_8hpp_source.html">storage_exception.hpp</a>&gt;</code>Inheritance diagram for Azure::Storage::StorageException:'
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_storage_exception.yml#ac0a6a5b45ff95979c0aa145ec85b8b34">StorageException</a> (const std::string &amp;what)
-    summary: Constructs a <a href="struct_azure_1_1_storage_1_1_storage_exception.yml#ac0a6a5b45ff95979c0aa145ec85b8b34">StorageException</a> with a message.
-    returnType: '&#160;'
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_storage_exception.html#ac0a6a5b45ff95979c0aa145ec85b8b34">StorageException</a> (const std::string &what)
+    summary: Constructs a <a class="el" href="struct_azure_1_1_storage_1_1_storage_exception.html#ac0a6a5b45ff95979c0aa145ec85b8b34" title="Constructs a StorageException with a message.">StorageException</a> with a message.  <br>
+    returnType:  
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_storage_exception.yml#a32357ecb559569cb1282f1c50ff6d6c7">CreateFromResponse</a> (std::unique_ptr&lt; Azure::Core::Http::RawResponse &gt; response)
-    summary: Constructs a <a href="struct_azure_1_1_storage_1_1_storage_exception.yml#ac0a6a5b45ff95979c0aa145ec85b8b34">StorageException</a> from a failed storage service response.
-    returnType: static <a href="struct_azure_1_1_storage_1_1_storage_exception.yml">StorageException</a>&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_storage_exception.html#a32357ecb559569cb1282f1c50ff6d6c7">CreateFromResponse</a> (std::unique_ptr< Azure::Core::Http::RawResponse > response)
+    summary: Constructs a <a class="el" href="struct_azure_1_1_storage_1_1_storage_exception.html#ac0a6a5b45ff95979c0aa145ec85b8b34" title="Constructs a StorageException with a message.">StorageException</a> from a failed storage service response.  <br>
+    returnType: static <a class="el" href="struct_azure_1_1_storage_1_1_storage_exception.html">StorageException</a> 
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_storage_exception.yml#a012aab414ba219d30cf8ae0e9d464401">AdditionalInformation</a>
-    returnType: std::map&lt; std::string, std::string &gt;&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_storage_exception.html#a012aab414ba219d30cf8ae0e9d464401">AdditionalInformation</a>
+    returnType: std::map< std::string, std::string > 
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="ac0a6a5b45ff95979c0aa145ec85b8b34"></a>
-- section: StorageException()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AStorageException.StorageException%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::StorageException.StorageException()
-- declaration: Azure::Storage::StorageException::StorageException(const std::string &amp;&#160;what) inline explicit
-  languageId: cpp
+- section: '&#9670;&#160;StorageException()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -45,14 +31,8 @@ components:
     summary: The explanatory string.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a32357ecb559569cb1282f1c50ff6d6c7"></a>
-- section: CreateFromResponse()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AStorageException.CreateFromResponse%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::StorageException.CreateFromResponse()
-- declaration: static StorageException Azure::Storage::StorageException::CreateFromResponse(std::unique_ptr&lt; Azure::Core::Http::RawResponse &gt;&#160;response) static
-  languageId: cpp
+- section: '&#9670;&#160;CreateFromResponse()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -61,15 +41,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a href="struct_azure_1_1_storage_1_1_storage_exception.yml#ac0a6a5b45ff95979c0aa145ec85b8b34">StorageException</a>.
+  - summary: <a class="el" href="struct_azure_1_1_storage_1_1_storage_exception.html#ac0a6a5b45ff95979c0aa145ec85b8b34" title="Constructs a StorageException with a message.">StorageException</a>.
 - section: Member Data Documentation
   display: h2
-- content: <a id="a012aab414ba219d30cf8ae0e9d464401"></a>
-- section: AdditionalInformation
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AStorageException.AdditionalInformation
-  xrefType: Member
-  xrefName: Azure::Storage::StorageException.AdditionalInformation
-- declaration: std::map&lt;std::string, std::string&gt; Azure::Storage::StorageException::AdditionalInformation
-  languageId: cpp
-- content: <p>Some storage-specific information in response body. </p>
+- section: '&#9670;&#160;AdditionalInformation'
+  display: h2
+- content: Some storage-specific information in response body.The documentation for this struct was generated from the following file:inc/azure/storage/common/storage_exception.hppGenerated by&#160;1.9.7

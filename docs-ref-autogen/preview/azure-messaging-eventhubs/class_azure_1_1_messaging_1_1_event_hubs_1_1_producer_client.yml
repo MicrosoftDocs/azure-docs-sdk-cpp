@@ -1,93 +1,68 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient
+uid: Azure::Messaging::EventHubs::ProducerClient
 title: Azure::Messaging::EventHubs::ProducerClient Class Reference
-xrefType: Class
-xrefName: Azure::Messaging::EventHubs::ProducerClient
 components:
-- content: >-
-    <p><a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> can be used to send events to an Event Hub.  
-
-    </p><p><code>#include &lt;producer_client.hpp&gt;</code></p>
+- content: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> can be used to send events to an Event Hub.<code>#include &lt;<a href="producer__client_8hpp_source.html">producer_client.hpp</a>&gt;</code>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#a69b172fea0a7e97125f3fff772f6776a">GetEventHubName</a> ()
-    returnType: std::string const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#a19ca616a32d5277529459aba74286950">GetRetryOptions</a> () const
-    returnType: Azure::Core::Http::Policies::RetryOptions const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#a658ce7f7f520d5a0f07cf17fd55cf1e5">ProducerClient</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> const &amp;other)=delete
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#a37beee60888c9a7ffb13da3828cffb70">operator=</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> const &amp;other)=delete
-    returnType: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> &amp;&#160;
-  - declaration: ProducerClient (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> &amp;&amp;other)=delete
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a69b172fea0a7e97125f3fff772f6776a">GetEventHubName</a> ()
+    returnType: std::string const & 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a19ca616a32d5277529459aba74286950">GetRetryOptions</a> () const
+    returnType: Azure::Core::Http::Policies::RetryOptions const & 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a658ce7f7f520d5a0f07cf17fd55cf1e5">ProducerClient</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> const &other)=delete
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a37beee60888c9a7ffb13da3828cffb70">operator=</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> const &other)=delete
+    returnType: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> & 
+  - declaration: <b>ProducerClient</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> &&other)=delete
     returnType: >-
-      <a id="aba5cf7a00c881101d4347d2d6b713b8b"></a>
+      <a id="aba5cf7a00c881101d4347d2d6b713b8b" name="aba5cf7a00c881101d4347d2d6b713b8b"></a>
 
-      &#160;
-  - declaration: operator= (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> &amp;&amp;other)=delete
+       
+  - declaration: <b>operator=</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> &&other)=delete
     returnType: >-
-      <a id="aa13ea425033b4eae8c6e1a2937fdb6fc"></a>
+      <a id="aa13ea425033b4eae8c6e1a2937fdb6fc" name="aa13ea425033b4eae8c6e1a2937fdb6fc"></a>
 
-      <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> &amp;&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#a7d029425c74012ce34c254dc4a3af287">ProducerClient</a> ()=default
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#adef8dcb6133fab926506eba8767300bc">ProducerClient</a> (std::string const &amp;connectionString, std::string const &amp;eventHub, <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client_options.yml">ProducerClientOptions</a> options={})
-    summary: Constructs a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> instance.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#a2a7ae74d9dd19c91c2976b234ec615fa">ProducerClient</a> (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHub, std::shared_ptr&lt; Azure::Core::Credentials::TokenCredential &gt; credential, <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client_options.yml">ProducerClientOptions</a> options={})
-    summary: Constructs a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> instance.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#ab093869993ed33fa1a3417786d5979d8">Close</a> (Azure::Core::Context const &amp;context={})
-    summary: Close all the connections and sessions.
-    returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#a767f2e1ff09b8f61c4958c855520bd9c">CreateBatch</a> (<a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch_options.yml">EventDataBatchOptions</a> const &amp;options={}, Azure::Core::Context const &amp;context={})
-    summary: Create a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.yml">EventDataBatch</a> to be sent to the Event Hub.
-    returnType: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.yml">EventDataBatch</a>&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#ab05c430be37b72ca6cd4a5f52fd44546">Send</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.yml">EventDataBatch</a> const &amp;eventDataBatch, Core::Context const &amp;context={})
-    summary: Send an <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.yml">EventDataBatch</a> to the remote Event Hub.
-    returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#a9fc2a45174d9279fc8d96f5ac4f5eaf0">Send</a> (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.yml">Models::EventData</a> const &amp;eventData, Core::Context const &amp;context={})
-    summary: Send an EventData to the remote Event Hub.
-    returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#acd561f3a375ba2a9e2302584433de69c">Send</a> (std::vector&lt; <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.yml">Models::EventData</a> &gt; const &amp;eventData, Core::Context const &amp;context={})
-    summary: Send a vector of EventData items to the remote Event Hub.
-    returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#abed4f211a9b44d3e6d41027c941163fe">GetEventHubProperties</a> (Core::Context const &amp;context={})
-    summary: GetEventHubProperties gets properties of an eventHub. This includes data like name, and partitions.
-    returnType: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_properties.yml">Models::EventHubProperties</a>&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml#a0e81f3bff0d7edbf4fb729a7696926e1">GetPartitionProperties</a> (std::string const &amp;partitionID, Core::Context const &amp;context={})
-    summary: GetPartitionProperties gets properties for a specific partition. This includes data like the last enqueued sequence number, the first sequence number and when an event was last enqueued to the partition.
-    returnType: <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.yml">Models::EventHubPartitionProperties</a>&#160;
+      <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> & 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a7d029425c74012ce34c254dc4a3af287">ProducerClient</a> ()=default
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#adef8dcb6133fab926506eba8767300bc">ProducerClient</a> (std::string const &connectionString, std::string const &eventHub, <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client_options.html">ProducerClientOptions</a> options={})
+    summary: Constructs a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html" title="ProducerClient can be used to send events to an Event Hub.">ProducerClient</a> instance.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a2a7ae74d9dd19c91c2976b234ec615fa">ProducerClient</a> (std::string const &fullyQualifiedNamespace, std::string const &eventHub, std::shared_ptr< Azure::Core::Credentials::TokenCredential > credential, <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client_options.html">ProducerClientOptions</a> options={})
+    summary: Constructs a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html" title="ProducerClient can be used to send events to an Event Hub.">ProducerClient</a> instance.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#ab093869993ed33fa1a3417786d5979d8">Close</a> (Azure::Core::Context const &context={})
+    summary: Close all the connections and sessions.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a767f2e1ff09b8f61c4958c855520bd9c">CreateBatch</a> (<a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch_options.html">EventDataBatchOptions</a> const &options={}, Azure::Core::Context const &context={})
+    summary: Create a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> to be sent to the Event Hub.  <br>
+    returnType: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#ab05c430be37b72ca6cd4a5f52fd44546">Send</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html">EventDataBatch</a> const &eventDataBatch, Core::Context const &context={})
+    summary: Send an <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> to the remote Event Hub.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a9fc2a45174d9279fc8d96f5ac4f5eaf0">Send</a> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">Models::EventData</a> const &eventData, Core::Context const &context={})
+    summary: Send an EventData to the remote Event Hub.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#acd561f3a375ba2a9e2302584433de69c">Send</a> (std::vector< <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_data.html">Models::EventData</a> > const &eventData, Core::Context const &context={})
+    summary: Send a vector of EventData items to the remote Event Hub.  <br>
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#abed4f211a9b44d3e6d41027c941163fe">GetEventHubProperties</a> (Core::Context const &context={})
+    summary: GetEventHubProperties gets properties of an eventHub. This includes data like name, and partitions.  <br>
+    returnType: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_properties.html">Models::EventHubProperties</a> 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html#a0e81f3bff0d7edbf4fb729a7696926e1">GetPartitionProperties</a> (std::string const &partitionID, Core::Context const &context={})
+    summary: GetPartitionProperties gets properties for a specific partition. This includes data like the last enqueued sequence number, the first sequence number and when an event was last enqueued to the partition.  <br>
+    returnType: <a class="el" href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_event_hub_partition_properties.html">Models::EventHubPartitionProperties</a> 
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="a658ce7f7f520d5a0f07cf17fd55cf1e5"></a>
-- section: ProducerClient() [1/4]
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B1%2F4%5D
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [1/4]
-- declaration: Azure::Messaging::EventHubs::ProducerClient::ProducerClient(ProducerClient const &amp;&#160;other) delete
-  languageId: cpp
-- content: <p>Create a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a>. </p><a id="a7d029425c74012ce34c254dc4a3af287"></a>
-- section: ProducerClient() [2/4]
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B2%2F4%5D
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [2/4]
-- declaration: Azure::Messaging::EventHubs::ProducerClient::ProducerClient() default
-  languageId: cpp
-- content: <p>Default Constructor for a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> </p><a id="adef8dcb6133fab926506eba8767300bc"></a>
-- section: ProducerClient() [3/4]
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B3%2F4%5D
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [3/4]
-- declaration: >-
-    Azure::Messaging::EventHubs::ProducerClient::ProducerClient(std::string const &amp;&#160;  connectionString,
-                                                                std::string const &amp;&#160;  eventHub,        
-                                                                ProducerClientOptions&#160;options = {}&#160;    
-                                                               )
-  languageId: cpp
+- section: '&#9670;&#160;ProducerClient() [1/4]'
+  display: h2
+- content: Create a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a>.
+- section: '&#9670;&#160;ProducerClient() [2/4]'
+  display: h2
+- content: Default Constructor for a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a>
+- section: '&#9670;&#160;ProducerClient() [3/4]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -97,19 +72,8 @@ components:
     summary: Event hub name
   - name: options
     summary: Additional options for creating the client
-- content: <a id="a2a7ae74d9dd19c91c2976b234ec615fa"></a>
-- section: ProducerClient() [4/4]
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B4%2F4%5D
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [4/4]
-- declaration: >-
-    Azure::Messaging::EventHubs::ProducerClient::ProducerClient(std::string const &amp;&#160;                                         fullyQualifiedNamespace,
-                                                                std::string const &amp;&#160;                                         eventHub,               
-                                                                std::shared_ptr&lt; Azure::Core::Credentials::TokenCredential &gt;&#160;credential,             
-                                                                ProducerClientOptions&#160;                                       options = {}&#160;           
-                                                               )
-  languageId: cpp
+- section: '&#9670;&#160;ProducerClient() [4/4]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -123,30 +87,15 @@ components:
     summary: Additional options for creating the client
 - section: Member Function Documentation
   display: h2
-- content: <a id="ab093869993ed33fa1a3417786d5979d8"></a>
-- section: Close()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.Close%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.Close()
-- declaration: void Azure::Messaging::EventHubs::ProducerClient::Close(Azure::Core::Context const &amp;&#160;context = {}) inline
-  languageId: cpp
+- section: '&#9670;&#160;Close()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: context
     summary: Context for the operation can be used for request cancellation.
-- content: <a id="a767f2e1ff09b8f61c4958c855520bd9c"></a>
-- section: CreateBatch()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.CreateBatch%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.CreateBatch()
-- declaration: >-
-    EventDataBatch Azure::Messaging::EventHubs::ProducerClient::CreateBatch(EventDataBatchOptions const &amp;&#160;options = {},
-                                                                            Azure::Core::Context const &amp;&#160; context = {}&#160;
-                                                                           )
-  languageId: cpp
+- section: '&#9670;&#160;CreateBatch()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -157,39 +106,19 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: newly created <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.yml">EventDataBatch</a> object.
-- content: <a id="a69b172fea0a7e97125f3fff772f6776a"></a>
-- section: GetEventHubName()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.GetEventHubName%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.GetEventHubName()
-- declaration: std::string const  &amp; Azure::Messaging::EventHubs::ProducerClient::GetEventHubName() inline
-  languageId: cpp
-- content: <p>Get the fully qualified namespace from the connection string </p><a id="abed4f211a9b44d3e6d41027c941163fe"></a>
-- section: GetEventHubProperties()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.GetEventHubProperties%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.GetEventHubProperties()
-- declaration: Models::EventHubProperties Azure::Messaging::EventHubs::ProducerClient::GetEventHubProperties(Core::Context const &amp;&#160;context = {})
-  languageId: cpp
+  - summary: newly created <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> object.
+- section: '&#9670;&#160;GetEventHubName()'
+  display: h2
+- content: Get the fully qualified namespace from the connection string
+- section: '&#9670;&#160;GetEventHubProperties()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: context
     summary: Context for the operation can be used for request cancellation.
-- content: <a id="a0e81f3bff0d7edbf4fb729a7696926e1"></a>
-- section: GetPartitionProperties()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.GetPartitionProperties%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.GetPartitionProperties()
-- declaration: >-
-    Models::EventHubPartitionProperties Azure::Messaging::EventHubs::ProducerClient::GetPartitionProperties(std::string const &amp;&#160;  partitionID, 
-                                                                                                            Core::Context const &amp;&#160;context = {}&#160;
-                                                                                                           )
-  languageId: cpp
+- section: '&#9670;&#160;GetPartitionProperties()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -197,33 +126,14 @@ components:
     summary: partition ID to detail.
   - name: context
     summary: Context for the operation can be used for request cancellation.
-- content: <a id="a19ca616a32d5277529459aba74286950"></a>
-- section: GetRetryOptions()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.GetRetryOptions%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.GetRetryOptions()
-- declaration: Azure::Core::Http::Policies::RetryOptions const  &amp; Azure::Messaging::EventHubs::ProducerClient::GetRetryOptions()const inline
-  languageId: cpp
-- content: <p>Get Retry options for this <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> </p><a id="a37beee60888c9a7ffb13da3828cffb70"></a>
-- section: operator=()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.operator%3D%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.operator=()
-- declaration: ProducerClient &amp; Azure::Messaging::EventHubs::ProducerClient::operator=(ProducerClient const &amp;&#160;other) delete
-  languageId: cpp
-- content: <p>Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a> another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.yml">ProducerClient</a>. </p><a id="ab05c430be37b72ca6cd4a5f52fd44546"></a>
-- section: Send() [1/3]
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.Send%28%29%20%5B1%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.Send() [1/3]
-- declaration: >-
-    void Azure::Messaging::EventHubs::ProducerClient::Send(EventDataBatch const &amp;&#160;eventDataBatch,
-                                                           Core::Context const &amp;&#160; context = {}&#160;  
-                                                          )
-  languageId: cpp
+- section: '&#9670;&#160;GetRetryOptions()'
+  display: h2
+- content: Get Retry options for this <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a>
+- section: '&#9670;&#160;operator=()'
+  display: h2
+- content: Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a> another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html">ProducerClient</a>.
+- section: '&#9670;&#160;Send() [1/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -231,21 +141,12 @@ components:
     summary: Batch to send
   - name: context
     summary: Request context
-- content: <a id="a9fc2a45174d9279fc8d96f5ac4f5eaf0"></a>
-- section: Send() [2/3]
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.Send%28%29%20%5B2%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.Send() [2/3]
-- declaration: >-
-    void Azure::Messaging::EventHubs::ProducerClient::Send(Models::EventData const &amp;&#160;eventData,   
-                                                           Core::Context const &amp;&#160;    context = {}&#160;
-                                                          )
-  languageId: cpp
+- section: '&#9670;&#160;Send() [2/3]'
+  display: h2
 - section: Remarks
   display: h4
 - parameters:
-  - summary: This method will create a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.yml">EventDataBatch</a> and add the event to it. If the event exceeds the maximum size allowed by the Event Hubs service, an exception will be thrown.
+  - summary: This method will create a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> and add the event to it. If the event exceeds the maximum size allowed by the Event Hubs service, an exception will be thrown.
 - section: Parameters
   display: h4
 - parameters:
@@ -253,21 +154,12 @@ components:
     summary: event to send
   - name: context
     summary: Request context
-- content: <a id="acd561f3a375ba2a9e2302584433de69c"></a>
-- section: Send() [3/3]
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.Send%28%29%20%5B3%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.Send() [3/3]
-- declaration: >-
-    void Azure::Messaging::EventHubs::ProducerClient::Send(std::vector&lt; Models::EventData &gt; const &amp;&#160;eventData,   
-                                                           Core::Context const &amp;&#160;                   context = {}&#160;
-                                                          )
-  languageId: cpp
+- section: '&#9670;&#160;Send() [3/3]'
+  display: h2
 - section: Remarks
   display: h4
 - parameters:
-  - summary: This method will create a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.yml">EventDataBatch</a> and add the events to it. If the events exceeds the maximum size allowed by the Event Hubs service, an exception will be thrown.
+  - summary: This method will create a new <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_event_data_batch.html" title="EventDataBatch is used to efficiently pack up EventData before sending it to Event Hubs.">EventDataBatch</a> and add the events to it. If the events exceeds the maximum size allowed by the Event Hubs service, an exception will be thrown.
 - section: Parameters
   display: h4
 - parameters:
@@ -275,3 +167,7 @@ components:
     summary: events to send
   - name: context
     summary: Request context
+- content: >-
+    The documentation for this class was generated from the following files:inc/azure/messaging/eventhubs/producer_client.hpp
+
+    src/producer_client.cppGenerated by&#160;1.9.7

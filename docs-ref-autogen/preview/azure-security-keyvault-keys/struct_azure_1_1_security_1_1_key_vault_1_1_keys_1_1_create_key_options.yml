@@ -1,125 +1,68 @@
 ### YamlMime:Reference
-uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions
+uid: Azure::Security::KeyVault::Keys::CreateKeyOptions
 title: Azure::Security::KeyVault::Keys::CreateKeyOptions Struct Reference
-xrefType: Struct
-xrefName: Azure::Security::KeyVault::Keys::CreateKeyOptions
 components:
 - content: >-
-    <p>Define the specific options for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_client.yml#a0d6e353973e5fd5c3811a3a8e443b754">KeyClient::CreateKey</a> operaion.  
-     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.yml#details">More...</a></p><p><code>#include &lt;key_client_options.hpp&gt;</code></p><p>This class is inherited by:</p>
-- linkList:
-  - name: Azure::Security::KeyVault::Keys::CreateEcKeyOptions
-    href: class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_ec_key_options.yml
-  - name: Azure::Security::KeyVault::Keys::CreateOctKeyOptions
-    href: class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_oct_key_options.yml
-  - name: Azure::Security::KeyVault::Keys::CreateRsaKeyOptions
-    href: class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_rsa_key_options.yml
+    Define the specific options for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_client.html#a0d6e353973e5fd5c3811a3a8e443b754">KeyClient::CreateKey</a> operaion.  
+     <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#details">More...</a><code>#include &lt;<a href="key__client__options_8hpp_source.html">key_client_options.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Keys::CreateKeyOptions:
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.yml#a378292547e78fb7c5d377322f0923341">~CreateKeyOptions</a> ()=default
-    summary: Destructor.
-    returnType: virtual&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a378292547e78fb7c5d377322f0923341">~CreateKeyOptions</a> ()=default
+    summary: Destructor.  <br>
+    returnType: virtual 
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.yml#a41ab95d047874549a7defd402af45875">KeyOperations</a>
-    summary: Define the supported operations for the key.
-    returnType: std::vector&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.yml">KeyOperation</a> &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.yml#ab432cfe1d18736ab9a015afd1e6ce7de">NotBefore</a>
-    summary: Indicate when the key will be valid and can be used for cryptographic operations.
-    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.yml#a7045e14e4ad196730dda5a3cf3135def">ExpiresOn</a>
-    summary: Indicate when the key will expire and cannot be used for cryptographic operations.
-    returnType: Azure::Nullable&lt; Azure::DateTime &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.yml#a239b6546652d15f63035a620caaa320f">Enabled</a>
-    summary: Indicate whether the key is enabled and useable for cryptographic operations.
-    returnType: Azure::Nullable&lt; bool &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.yml#a1ccecc2246ffd9bc437c5b74f5d9d99b">Tags</a>
-    summary: Specific metadata about the key.
-    returnType: std::unordered_map&lt; std::string, std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.yml#af29f98452b74bc7fc53f0efa9e936524">ReleasePolicy</a>
-    summary: The policy rules under which the key can be exported.
-    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_release_policy.yml">KeyReleasePolicy</a> &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.yml#a43e1fe409a9686202641c692c4e3213d">Exportable</a>
-    summary: Indicate if the private key can be exported.
-    returnType: Azure::Nullable&lt; bool &gt;&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a41ab95d047874549a7defd402af45875">KeyOperations</a>
+    summary: Define the supported operations for the key.  <br>
+    returnType: std::vector< <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#ab432cfe1d18736ab9a015afd1e6ce7de">NotBefore</a>
+    summary: Indicate when the key will be valid and can be used for cryptographic operations.  <br>
+    returnType: Azure::Nullable< Azure::DateTime > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a7045e14e4ad196730dda5a3cf3135def">ExpiresOn</a>
+    summary: Indicate when the key will expire and cannot be used for cryptographic operations.  <br>
+    returnType: Azure::Nullable< Azure::DateTime > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a239b6546652d15f63035a620caaa320f">Enabled</a>
+    summary: Indicate whether the key is enabled and useable for cryptographic operations.  <br>
+    returnType: Azure::Nullable< bool > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a1ccecc2246ffd9bc437c5b74f5d9d99b">Tags</a>
+    summary: Specific metadata about the key.  <br>
+    returnType: std::unordered_map< std::string, std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#af29f98452b74bc7fc53f0efa9e936524">ReleasePolicy</a>
+    summary: The policy rules under which the key can be exported.  <br>
+    returnType: Azure::Nullable< <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_release_policy.html">KeyReleasePolicy</a> > 
+  - declaration: <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_create_key_options.html#a43e1fe409a9686202641c692c4e3213d">Exportable</a>
+    summary: Indicate if the private key can be exported.  <br>
+    returnType: Azure::Nullable< bool > 
 - section: Friends
   display: h2
 - apiList:
-  - declaration: KeyClient
+  - declaration: <b>KeyClient</b>
     returnType: >-
-      <a id="ae15f2ce61c68fbee9013860b5c37c16d"></a>
+      <a id="ae15f2ce61c68fbee9013860b5c37c16d" name="ae15f2ce61c68fbee9013860b5c37c16d"></a>
 
-      class&#160;
-- content: <a id="details"></a>
+      class 
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="a378292547e78fb7c5d377322f0923341"></a>
-- section: ~CreateKeyOptions()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions.~CreateKeyOptions%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::CreateKeyOptions.~CreateKeyOptions()
-- declaration: virtual Azure::Security::KeyVault::Keys::CreateKeyOptions::~CreateKeyOptions() virtual default
-  languageId: cpp
+- section: '&#9670;&#160;~CreateKeyOptions()'
+  display: h2
 - section: Member Data Documentation
   display: h2
-- content: <a id="a239b6546652d15f63035a620caaa320f"></a>
-- section: Enabled
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions.Enabled
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::CreateKeyOptions.Enabled
-- declaration: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::Enabled
-  languageId: cpp
-- content: <a id="a7045e14e4ad196730dda5a3cf3135def"></a>
-- section: ExpiresOn
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions.ExpiresOn
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::CreateKeyOptions.ExpiresOn
-- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::ExpiresOn
-  languageId: cpp
-- content: <a id="a43e1fe409a9686202641c692c4e3213d"></a>
-- section: Exportable
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions.Exportable
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::CreateKeyOptions.Exportable
-- declaration: Azure::Nullable&lt;bool&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::Exportable
-  languageId: cpp
-- content: <a id="a41ab95d047874549a7defd402af45875"></a>
-- section: KeyOperations
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions.KeyOperations
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::CreateKeyOptions.KeyOperations
-- declaration: std::vector&lt;KeyOperation&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::KeyOperations
-  languageId: cpp
-- content: <a id="ab432cfe1d18736ab9a015afd1e6ce7de"></a>
-- section: NotBefore
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions.NotBefore
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::CreateKeyOptions.NotBefore
-- declaration: Azure::Nullable&lt;Azure::DateTime&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::NotBefore
-  languageId: cpp
-- content: <a id="af29f98452b74bc7fc53f0efa9e936524"></a>
-- section: ReleasePolicy
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions.ReleasePolicy
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::CreateKeyOptions.ReleasePolicy
-- declaration: Azure::Nullable&lt;KeyReleasePolicy&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::ReleasePolicy
-  languageId: cpp
-- content: <a id="a1ccecc2246ffd9bc437c5b74f5d9d99b"></a>
-- section: Tags
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACreateKeyOptions.Tags
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::CreateKeyOptions.Tags
-- declaration: std::unordered_map&lt;std::string, std::string&gt; Azure::Security::KeyVault::Keys::CreateKeyOptions::Tags
-  languageId: cpp
+- section: '&#9670;&#160;Enabled'
+  display: h2
+- section: '&#9670;&#160;ExpiresOn'
+  display: h2
+- section: '&#9670;&#160;Exportable'
+  display: h2
+- section: '&#9670;&#160;KeyOperations'
+  display: h2
+- section: '&#9670;&#160;NotBefore'
+  display: h2
+- section: '&#9670;&#160;ReleasePolicy'
+  display: h2
+- section: '&#9670;&#160;Tags'
+  display: h2
+- content: The documentation for this struct was generated from the following file:inc/azure/keyvault/keys/key_client_options.hppGenerated by&#160;1.9.7

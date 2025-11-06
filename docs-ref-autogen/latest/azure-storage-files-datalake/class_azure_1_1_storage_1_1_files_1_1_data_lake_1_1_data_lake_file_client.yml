@@ -1,180 +1,140 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient
+uid: Azure::Storage::Files::DataLake::DataLakeFileClient
 title: Azure::Storage::Files::DataLake::DataLakeFileClient Class Reference
-xrefType: Class
-xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient
 components:
 - content: >-
-    <p>The <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml">DataLakeFileClient</a> allows you to manipulate Azure Storage DataLake files.  
-     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#details">More...</a></p><p><code>#include &lt;datalake_file_client.hpp&gt;</code></p><p>This class inherits from:</p>
-- linkList:
-  - name: Azure::Storage::Files::DataLake::DataLakePathClient
-    href: class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml
+    The <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html">DataLakeFileClient</a> allows you to manipulate Azure Storage DataLake files.  
+     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#details">More...</a><code>#include &lt;<a href="datalake__file__client_8hpp_source.html">datalake_file_client.hpp</a>&gt;</code>Inheritance diagram for Azure::Storage::Files::DataLake::DataLakeFileClient:
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a5638c23ecc131d3e06fb0c32a5ddad3b">DataLakeFileClient</a> (const std::string &amp;fileUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a>())
-    summary: Shared key authentication client.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a128ee9332ac96acc043969dd58bf386f">DataLakeFileClient</a> (const std::string &amp;fileUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a>())
-    summary: Bearer token authentication client.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#ae0cc0b3e45fc34ece1542bb084b09611">DataLakeFileClient</a> (const std::string &amp;fileUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a>())
-    summary: Anonymous/SAS/customized pipeline auth.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#ac39b1ef494a5f67a0fc5803695a3dc98">GetUrl</a> () const
-    summary: Gets the file's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.
-    returnType: std::string&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a54d30b7659e43ad83016c3a32983efc2">Append</a> (Azure::Core::IO::BodyStream &amp;content, int64_t offset, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.yml">AppendFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.yml">AppendFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Uploads data to be appended to a file. Data can only be appended to a file.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.yml">Models::AppendFileResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a86fc020be966025aae11103420afab30">Flush</a> (int64_t position, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_flush_file_options.yml">FlushFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_flush_file_options.yml">FlushFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Flushes previous uploaded data to a file.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.yml">Models::FlushFileResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#aa954627a31ed519d29a86af6adaf0681">Create</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.yml">CreateFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.yml">CreateFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Create a file. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.yml">Models::CreateFileResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#ac4b5bb15562b9f3401e4c9edc615f800">CreateIfNotExists</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.yml">CreateFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.yml">CreateFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Create a file. If it already exists, it will remain unchanged.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.yml">Models::CreateFileResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#aa6810767799de524fef64388f2a8e213">Delete</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_options.yml">DeleteFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_options.yml">DeleteFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Deletes the file.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.yml">Models::DeleteFileResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a4204a90427869773bb1e1529fe74dc30">DeleteIfExists</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_options.yml">DeleteFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_options.yml">DeleteFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Deletes the file if it already exists.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.yml">Models::DeleteFileResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#aeee60a34ea9d9fb2da88057a9843c069">Download</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.yml">DownloadFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.yml">DownloadFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Download the contents of a file. For download operations, range requests are supported.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result.yml">Models::DownloadFileResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a1b4cb3a8a4093ee96977228add9e5a67">UploadFrom</a> (const uint8_t *buffer, size_t bufferSize, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_upload_file_from_options.yml">UploadFileFromOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_upload_file_from_options.yml">UploadFileFromOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Creates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.
-    returnType: Azure::Response&lt; Models::UploadFileFromResult &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a0af18427cbdeb274106f94a4593eba86">UploadFrom</a> (const std::string &amp;fileName, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_upload_file_from_options.yml">UploadFileFromOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_upload_file_from_options.yml">UploadFileFromOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Creates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.
-    returnType: Azure::Response&lt; Models::UploadFileFromResult &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#aea2ef7d005b3bf995f4d32d9ed74d56b">DownloadTo</a> (uint8_t *buffer, size_t bufferSize, const DownloadFileToOptions &amp;options=DownloadFileToOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Downloads a file or a file range from the service to a memory buffer using parallel requests.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_to_result.yml">Models::DownloadFileToResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a89b7a6130cebdd9e8171004a863f79c7">DownloadTo</a> (const std::string &amp;fileName, const DownloadFileToOptions &amp;options=DownloadFileToOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Downloads a file or a file range from the service to a file using parallel requests.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_to_result.yml">Models::DownloadFileToResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a075553cd4a2dabcfcbace43e016f3561">ScheduleDeletion</a> (ScheduleFileExpiryOriginType expiryOrigin, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_schedule_file_deletion_options.yml">ScheduleFileDeletionOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_schedule_file_deletion_options.yml">ScheduleFileDeletionOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Schedules the file for deletion.
-    returnType: Azure::Response&lt; Models::ScheduleFileDeletionResult &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a4be0127470e8cccea9d11c6a77bbb8b5">Query</a> (const std::string &amp;querySqlExpression, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_query_file_options.yml">QueryFileOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_query_file_options.yml">QueryFileOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Returns the result of a query against the file.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_query_file_result.yml">Models::QueryFileResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#af5e9971f778d1636dd8370884a761a77">~DataLakePathClient</a> ()=default
-    summary: Destructor.
-    returnType: virtual&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#acaf505bf8822fe3fcf34613592c2ac75">DataLakePathClient</a> (const std::string &amp;pathUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a>())
-    summary: Shared key authentication client.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a55d4aea9dc98e6d9a53195f400eb8ba2">DataLakePathClient</a> (const std::string &amp;pathUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a>())
-    summary: Bearer token authentication client.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a6e4c02064f3693d12649236b156e96c8">DataLakePathClient</a> (const std::string &amp;pathUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a>())
-    summary: Anonymous/SAS/customized pipeline auth.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#acf192776f131134acc5a1aef9d814a6a">GetUrl</a> () const
-    summary: Gets the path's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.
-    returnType: std::string&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#ae85e279eb0435b0be540f6e29d8bba39">Create</a> (<a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_resource_type.yml">Models::PathResourceType</a> type, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.yml">CreatePathOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.yml">CreatePathOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Creates a file or directory. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.yml">Models::CreatePathResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#ad14dab3d63389726c7aa3d3262ec0e6e">CreateIfNotExists</a> (<a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_resource_type.yml">Models::PathResourceType</a> type, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.yml">CreatePathOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.yml">CreatePathOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Creates a file or directory. By default, the destination is not changed if it already exists.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.yml">Models::CreatePathResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#ad99df0236714e424ba6a7d11789a9df1">Delete</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.yml">DeletePathOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.yml">DeletePathOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Deletes the resource the path points to.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.yml">Models::DeletePathResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#abc8de1ed2bb48d8636554a130e110633">DeleteIfExists</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.yml">DeletePathOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.yml">DeletePathOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Deletes the resource the path points to if it exists.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.yml">Models::DeletePathResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a042b3e55e6a868c32b698641ad6ed979">SetAccessControlList</a> (std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.yml">Models::Acl</a> &gt; acls, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_options.yml">SetPathAccessControlListOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_options.yml">SetPathAccessControlListOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets the owner, group, and access control list for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_access_control_list_result.yml">Models::SetPathAccessControlListResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a853ebf8917562f86d11ef92d56f45b8b">SetPermissions</a> (std::string permissions, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_permissions_options.yml">SetPathPermissionsOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_permissions_options.yml">SetPathPermissionsOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets the owner, group, and permissions for a file or directory. Note that Hierarchical Namespace must be enabled for the account in order to use access control.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_access_control_list_result.yml">Models::SetPathPermissionsResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a8b71fd066745a75ae8e38ec00ea4048b">SetHttpHeaders</a> (Models::PathHttpHeaders httpHeaders, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_http_headers_options.yml">SetPathHttpHeadersOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_http_headers_options.yml">SetPathHttpHeadersOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets the properties of a resource the path points to.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_http_headers_result.yml">Models::SetPathHttpHeadersResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a1f0096cdfa5298f8d69da36e599887d6">GetProperties</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_properties_options.yml">GetPathPropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_properties_options.yml">GetPathPropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Get Properties returns all system and user defined properties for a path. Get Status returns all system defined properties for a path. Get Access Control List returns the access control list for a path.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_properties.yml">Models::PathProperties</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a78cd2ebce95319d5a056040a3cd6299e">GetAccessControlList</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.yml">GetPathAccessControlListOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.yml">GetPathAccessControlListOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Returns all access control list stored for the given path.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_access_control_list.yml">Models::PathAccessControlList</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a1656d63269d2888e8cf64be4399b378c">SetMetadata</a> (Storage::Metadata metadata, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options.yml">SetPathMetadataOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options.yml">SetPathMetadataOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets the metadata of a resource the path points to.
-    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_metadata_result.yml">Models::SetPathMetadataResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a7f1710b8cfee44668d5954bf25fbd645">SetAccessControlListRecursive</a> (const std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.yml">Models::Acl</a> &gt; &amp;acls, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.yml">SetPathAccessControlListRecursiveOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.yml">SetPathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Sets POSIX access control rights on files and directories under given directory recursively.
-    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.yml">SetPathAccessControlListRecursivePagedResponse</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#aebd5805fc6c4d462b9b0a606e2d68527">UpdateAccessControlListRecursive</a> (const std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.yml">Models::Acl</a> &gt; &amp;acls, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.yml">UpdatePathAccessControlListRecursiveOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.yml">UpdatePathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Updates POSIX access control rights on files and directories under given directory recursively.
-    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.yml">UpdatePathAccessControlListRecursivePagedResponse</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a42cf17848af5bbdb3e86344dc36e044b">RemoveAccessControlListRecursive</a> (const std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.yml">Models::Acl</a> &gt; &amp;acls, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.yml">RemovePathAccessControlListRecursiveOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.yml">RemovePathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
-    summary: Removes POSIX access control rights on files and directories under given directory recursively.
-    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.yml">RemovePathAccessControlListRecursivePagedResponse</a>&#160;
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a5638c23ecc131d3e06fb0c32a5ddad3b">DataLakeFileClient</a> (const std::string &fileUrl, std::shared_ptr< StorageSharedKeyCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Shared key authentication client.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a128ee9332ac96acc043969dd58bf386f">DataLakeFileClient</a> (const std::string &fileUrl, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Bearer token authentication client.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#ae0cc0b3e45fc34ece1542bb084b09611">DataLakeFileClient</a> (const std::string &fileUrl, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Anonymous/SAS/customized pipeline auth.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#ac39b1ef494a5f67a0fc5803695a3dc98">GetUrl</a> () const
+    summary: Gets the file's primary URL endpoint. This is the endpoint used for blob storage available features in DataLake.  <br>
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a54d30b7659e43ad83016c3a32983efc2">Append</a> (Azure::Core::IO::BodyStream &content, int64_t offset, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html">AppendFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_append_file_options.html">AppendFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Uploads data to be appended to a file. Data can only be appended to a file.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.html">Models::AppendFileResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a86fc020be966025aae11103420afab30">Flush</a> (int64_t position, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_flush_file_options.html">FlushFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_flush_file_options.html">FlushFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Flushes previous uploaded data to a file.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_flush_file_result.html">Models::FlushFileResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#aa954627a31ed519d29a86af6adaf0681">Create</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreateFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreateFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Create a file. By default, the destination is overwritten and if the destination already exists and has a lease the lease is broken.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.html">Models::CreateFileResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#ac4b5bb15562b9f3401e4c9edc615f800">CreateIfNotExists</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreateFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreateFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Create a file. If it already exists, it will remain unchanged.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.html">Models::CreateFileResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#aa6810767799de524fef64388f2a8e213">Delete</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_options.html">DeleteFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_options.html">DeleteFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Deletes the file.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.html">Models::DeleteFileResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a4204a90427869773bb1e1529fe74dc30">DeleteIfExists</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_options.html">DeleteFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_file_options.html">DeleteFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Deletes the file if it already exists.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.html">Models::DeleteFileResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#aeee60a34ea9d9fb2da88057a9843c069">Download</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.html">DownloadFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_download_file_options.html">DownloadFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Download the contents of a file. For download operations, range requests are supported.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_result.html">Models::DownloadFileResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a1b4cb3a8a4093ee96977228add9e5a67">UploadFrom</a> (const uint8_t *buffer, size_t bufferSize, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_upload_file_from_options.html">UploadFileFromOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_upload_file_from_options.html">UploadFileFromOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Creates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.  <br>
+    returnType: Azure::Response< Models::UploadFileFromResult > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a0af18427cbdeb274106f94a4593eba86">UploadFrom</a> (const std::string &fileName, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_upload_file_from_options.html">UploadFileFromOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_upload_file_from_options.html">UploadFileFromOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Creates a new file, or updates the content of an existing file. Updating an existing file overwrites any existing metadata on the file.  <br>
+    returnType: Azure::Response< Models::UploadFileFromResult > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#aea2ef7d005b3bf995f4d32d9ed74d56b">DownloadTo</a> (uint8_t *buffer, size_t bufferSize, const DownloadFileToOptions &options=DownloadFileToOptions(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Downloads a file or a file range from the service to a memory buffer using parallel requests.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_to_result.html">Models::DownloadFileToResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a89b7a6130cebdd9e8171004a863f79c7">DownloadTo</a> (const std::string &fileName, const DownloadFileToOptions &options=DownloadFileToOptions(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Downloads a file or a file range from the service to a file using parallel requests.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_download_file_to_result.html">Models::DownloadFileToResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a075553cd4a2dabcfcbace43e016f3561">ScheduleDeletion</a> (ScheduleFileExpiryOriginType expiryOrigin, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_schedule_file_deletion_options.html">ScheduleFileDeletionOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_schedule_file_deletion_options.html">ScheduleFileDeletionOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Schedules the file for deletion.  <br>
+    returnType: Azure::Response< Models::ScheduleFileDeletionResult > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a4be0127470e8cccea9d11c6a77bbb8b5">Query</a> (const std::string &querySqlExpression, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_query_file_options.html">QueryFileOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_query_file_options.html">QueryFileOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    summary: Returns the result of a query against the file.  <br>
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_query_file_result.html">Models::QueryFileResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#af5e9971f778d1636dd8370884a761a77">~DataLakePathClient</a> ()=default
+    returnType: virtual 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#acaf505bf8822fe3fcf34613592c2ac75">DataLakePathClient</a> (const std::string &pathUrl, std::shared_ptr< StorageSharedKeyCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a55d4aea9dc98e6d9a53195f400eb8ba2">DataLakePathClient</a> (const std::string &pathUrl, std::shared_ptr< Core::Credentials::TokenCredential > credential, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a6e4c02064f3693d12649236b156e96c8">DataLakePathClient</a> (const std::string &pathUrl, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#acf192776f131134acc5a1aef9d814a6a">GetUrl</a> () const
+    returnType: std::string 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#ae85e279eb0435b0be540f6e29d8bba39">Create</a> (<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_resource_type.html">Models::PathResourceType</a> type, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.html">Models::CreatePathResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#ad14dab3d63389726c7aa3d3262ec0e6e">CreateIfNotExists</a> (<a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_resource_type.html">Models::PathResourceType</a> type, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_create_path_options.html">CreatePathOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_create_path_result.html">Models::CreatePathResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#ad99df0236714e424ba6a7d11789a9df1">Delete</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.html">Models::DeletePathResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#abc8de1ed2bb48d8636554a130e110633">DeleteIfExists</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_delete_path_options.html">DeletePathOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_delete_path_result.html">Models::DeletePathResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a042b3e55e6a868c32b698641ad6ed979">SetAccessControlList</a> (std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> > acls, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_options.html">SetPathAccessControlListOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_options.html">SetPathAccessControlListOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_access_control_list_result.html">Models::SetPathAccessControlListResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a853ebf8917562f86d11ef92d56f45b8b">SetPermissions</a> (std::string permissions, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_permissions_options.html">SetPathPermissionsOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_permissions_options.html">SetPathPermissionsOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_access_control_list_result.html">Models::SetPathPermissionsResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a8b71fd066745a75ae8e38ec00ea4048b">SetHttpHeaders</a> (Models::PathHttpHeaders httpHeaders, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_http_headers_options.html">SetPathHttpHeadersOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_http_headers_options.html">SetPathHttpHeadersOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_http_headers_result.html">Models::SetPathHttpHeadersResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a1f0096cdfa5298f8d69da36e599887d6">GetProperties</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_properties_options.html">GetPathPropertiesOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_properties_options.html">GetPathPropertiesOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_properties.html">Models::PathProperties</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a78cd2ebce95319d5a056040a3cd6299e">GetAccessControlList</a> (const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.html">GetPathAccessControlListOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options.html">GetPathAccessControlListOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_access_control_list.html">Models::PathAccessControlList</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a1656d63269d2888e8cf64be4399b378c">SetMetadata</a> (Storage::Metadata metadata, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options.html">SetPathMetadataOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options.html">SetPathMetadataOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: Azure::Response< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_metadata_result.html">Models::SetPathMetadataResult</a> > 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a7f1710b8cfee44668d5954bf25fbd645">SetAccessControlListRecursive</a> (const std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> > &acls, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">SetPathAccessControlListRecursiveOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">SetPathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">SetPathAccessControlListRecursivePagedResponse</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#aebd5805fc6c4d462b9b0a606e2d68527">UpdateAccessControlListRecursive</a> (const std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> > &acls, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">UpdatePathAccessControlListRecursiveOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">UpdatePathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">UpdatePathAccessControlListRecursivePagedResponse</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a42cf17848af5bbdb3e86344dc36e044b">RemoveAccessControlListRecursive</a> (const std::vector< <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl.html">Models::Acl</a> > &acls, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">RemovePathAccessControlListRecursiveOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options.html">RemovePathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &context=Azure::Core::Context()) const
+    returnType: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response.html">RemovePathAccessControlListRecursivePagedResponse</a> 
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a3c82611d0686db4ac599c78a1f0742e3">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;fileSystemName, const std::string &amp;fileName, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a>())
-    summary: Create from connection string.
-    returnType: static <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml">DataLakeFileClient</a>&#160;
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#a4fe147e78c32acfb1f8e774f1dd8d30c">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;fileSystemName, const std::string &amp;path, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.yml">DataLakeClientOptions</a>())
-    summary: Create from connection string.
-    returnType: static <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml">DataLakePathClient</a>&#160;
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a3c82611d0686db4ac599c78a1f0742e3">CreateFromConnectionString</a> (const std::string &connectionString, const std::string &fileSystemName, const std::string &fileName, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    summary: Create from connection string.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html">DataLakeFileClient</a> 
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#a4fe147e78c32acfb1f8e774f1dd8d30c">CreateFromConnectionString</a> (const std::string &connectionString, const std::string &fileSystemName, const std::string &path, const <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a> &options=<a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options.html">DataLakeClientOptions</a>())
+    returnType: static <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html">DataLakePathClient</a> 
 - section: Friends
   display: h2
 - apiList:
-  - declaration: DataLakeFileSystemClient
+  - declaration: <b>DataLakeFileSystemClient</b>
     returnType: >-
-      <a id="aeb2b079d58319835ffb246aab06073a5"></a>
+      <a id="aeb2b079d58319835ffb246aab06073a5" name="aeb2b079d58319835ffb246aab06073a5"></a>
 
-      class&#160;
-  - declaration: DataLakeDirectoryClient
+      class 
+  - declaration: <b>DataLakeDirectoryClient</b>
     returnType: >-
-      <a id="a5fcd826dd0c0f36882d3f7d6ab74f283"></a>
+      <a id="a5fcd826dd0c0f36882d3f7d6ab74f283" name="a5fcd826dd0c0f36882d3f7d6ab74f283"></a>
 
-      class&#160;
+      class 
 - section: Additional Inherited Members
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml#aa72ef64a0b3a135d2e4f24fd98089e71">DataLakePathClient</a> (Azure::Core::Url pathUrl, Blobs::BlobClient blobClient, std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt; pipeline, _detail::DatalakeClientConfiguration clientConfiguration)
-    summary: Construct a new <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.yml">DataLakePathClient</a>.
-    returnType: '&#160;'
-  - declaration: m_pathUrl
-    summary: Url to the resource on the service.
-    returnType: Azure::Core::Url&#160;
-  - declaration: m_blobClient
-    summary: Blob Client for this path client.
-    returnType: Blobs::BlobClient&#160;
-  - declaration: m_pipeline
-    summary: Http Pipeline.
-    returnType: std::shared_ptr&lt; Azure::Core::Http::_internal::HttpPipeline &gt;&#160;
-  - declaration: m_clientConfiguration
-    summary: Client configurations.
-    returnType: _detail::DatalakeClientConfiguration&#160;
-- content: <a id="details"></a>
+  - declaration: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client.html#aa72ef64a0b3a135d2e4f24fd98089e71">DataLakePathClient</a> (Azure::Core::Url pathUrl, Blobs::BlobClient blobClient, std::shared_ptr< Azure::Core::Http::_internal::HttpPipeline > pipeline, _detail::DatalakeClientConfiguration clientConfiguration)
+    returnType:  
+  - declaration: <b>m_pathUrl</b>
+    returnType: Azure::Core::Url 
+  - declaration: <b>m_blobClient</b>
+    returnType: Blobs::BlobClient 
+  - declaration: <b>m_pipeline</b>
+    returnType: std::shared_ptr< Azure::Core::Http::_internal::HttpPipeline > 
+  - declaration: <b>m_clientConfiguration</b>
+    returnType: _detail::DatalakeClientConfiguration 
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="a5638c23ecc131d3e06fb0c32a5ddad3b"></a>
-- section: DataLakeFileClient() [1/3]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.DataLakeFileClient%28%29%20%5B1%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.DataLakeFileClient() [1/3]
-- declaration: >-
-    Azure::Storage::Files::DataLake::DataLakeFileClient::DataLakeFileClient(const std::string &amp;&#160;                          fileUrl,                          
-                                                                            std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;credential,                       
-                                                                            const DataLakeClientOptions &amp;&#160;                options = DataLakeClientOptions()&#160;
-                                                                           ) explicit
-  languageId: cpp
+- section: '&#9670;&#160;DataLakeFileClient() [1/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -184,18 +144,8 @@ components:
     summary: The shared key credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- content: <a id="a128ee9332ac96acc043969dd58bf386f"></a>
-- section: DataLakeFileClient() [2/3]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.DataLakeFileClient%28%29%20%5B2%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.DataLakeFileClient() [2/3]
-- declaration: >-
-    Azure::Storage::Files::DataLake::DataLakeFileClient::DataLakeFileClient(const std::string &amp;&#160;                                  fileUrl,                          
-                                                                            std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                       
-                                                                            const DataLakeClientOptions &amp;&#160;                        options = DataLakeClientOptions()&#160;
-                                                                           ) explicit
-  languageId: cpp
+- section: '&#9670;&#160;DataLakeFileClient() [2/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -205,17 +155,8 @@ components:
     summary: The token credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- content: <a id="ae0cc0b3e45fc34ece1542bb084b09611"></a>
-- section: DataLakeFileClient() [3/3]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.DataLakeFileClient%28%29%20%5B3%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.DataLakeFileClient() [3/3]
-- declaration: >-
-    Azure::Storage::Files::DataLake::DataLakeFileClient::DataLakeFileClient(const std::string &amp;&#160;          fileUrl,                          
-                                                                            const DataLakeClientOptions &amp;&#160;options = DataLakeClientOptions()&#160;
-                                                                           ) explicit
-  languageId: cpp
+- section: '&#9670;&#160;DataLakeFileClient() [3/3]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -225,19 +166,8 @@ components:
     summary: Optional parameters used to initialize the client.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a54d30b7659e43ad83016c3a32983efc2"></a>
-- section: Append()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.Append%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.Append()
-- declaration: >-
-    Azure::Response&lt; Models::AppendFileResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::Append(Azure::Core::IO::BodyStream &amp;&#160;content,                         
-                                                                                                            int64_t&#160;                      offset,                          
-                                                                                                            const AppendFileOptions &amp;&#160;    options = AppendFileOptions(),   
-                                                                                                            const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160;
-                                                                                                           )                              const
-  languageId: cpp
+- section: '&#9670;&#160;Append()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -252,22 +182,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::AppendFileResult&gt; containing the information returned when appending some data to the path.
+  - summary: Azure::Response<Models::AppendFileResult> containing the information returned when appending some data to the path.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- content: <a id="aa954627a31ed519d29a86af6adaf0681"></a>
-- section: Create()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.Create%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.Create()
-- declaration: >-
-    Azure::Response&lt; Models::CreateFileResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::Create(const CreateFileOptions &amp;&#160;   options = CreateFileOptions(),   
-                                                                                                            const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
-                                                                                                           )                             const inline
-  languageId: cpp
+- section: '&#9670;&#160;Create()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -278,24 +199,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::CreateFileResult&gt; containing the information returned when creating the file.
+  - summary: Azure::Response<Models::CreateFileResult> containing the information returned when creating the file.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- content: <a id="a3c82611d0686db4ac599c78a1f0742e3"></a>
-- section: CreateFromConnectionString()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.CreateFromConnectionString%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.CreateFromConnectionString()
-- declaration: >-
-    DataLakeFileClient Azure::Storage::Files::DataLake::DataLakeFileClient::CreateFromConnectionString(const std::string &amp;&#160;          connectionString,                 
-                                                                                                       const std::string &amp;&#160;          fileSystemName,                   
-                                                                                                       const std::string &amp;&#160;          fileName,                         
-                                                                                                       const DataLakeClientOptions &amp;&#160;options = DataLakeClientOptions()&#160;
-                                                                                                      ) static
-  languageId: cpp
+- section: '&#9670;&#160;CreateFromConnectionString()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -310,18 +220,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml">DataLakeFileClient</a>
-- content: <a id="ac4b5bb15562b9f3401e4c9edc615f800"></a>
-- section: CreateIfNotExists()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.CreateIfNotExists%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.CreateIfNotExists()
-- declaration: >-
-    Azure::Response&lt; Models::CreateFileResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::CreateIfNotExists(const CreateFileOptions &amp;&#160;   options = CreateFileOptions(),   
-                                                                                                                       const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
-                                                                                                                      )                             const inline
-  languageId: cpp
+  - summary: <a class="el" href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html" title="The DataLakeFileClient allows you to manipulate Azure Storage DataLake files.">DataLakeFileClient</a>
+- section: '&#9670;&#160;CreateIfNotExists()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -332,22 +233,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::CreateFileResult&gt; containing the information returned when creating the file.
+  - summary: Azure::Response<Models::CreateFileResult> containing the information returned when creating the file.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- content: <a id="aa6810767799de524fef64388f2a8e213"></a>
-- section: Delete()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.Delete%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.Delete()
-- declaration: >-
-    Azure::Response&lt; Models::DeleteFileResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::Delete(const DeleteFileOptions &amp;&#160;   options = DeleteFileOptions(),   
-                                                                                                            const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
-                                                                                                           )                             const
-  languageId: cpp
+- section: '&#9670;&#160;Delete()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -358,22 +250,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::DeleteFileResult&gt;
+  - summary: Azure::Response<Models::DeleteFileResult>
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- content: <a id="a4204a90427869773bb1e1529fe74dc30"></a>
-- section: DeleteIfExists()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.DeleteIfExists%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.DeleteIfExists()
-- declaration: >-
-    Azure::Response&lt; Models::DeleteFileResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::DeleteIfExists(const DeleteFileOptions &amp;&#160;   options = DeleteFileOptions(),   
-                                                                                                                    const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
-                                                                                                                   )                             const
-  languageId: cpp
+- section: '&#9670;&#160;DeleteIfExists()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -384,22 +267,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::DeleteFileResult&gt;
+  - summary: Azure::Response<Models::DeleteFileResult>
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- content: <a id="aeee60a34ea9d9fb2da88057a9843c069"></a>
-- section: Download()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.Download%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.Download()
-- declaration: >-
-    Azure::Response&lt; Models::DownloadFileResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::Download(const DownloadFileOptions &amp;&#160; options = DownloadFileOptions(), 
-                                                                                                                const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
-                                                                                                               )                             const
-  languageId: cpp
+- section: '&#9670;&#160;Download()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -410,23 +284,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::DownloadFileResult&gt; containing the information and content returned when downloading from a file.
+  - summary: Azure::Response<Models::DownloadFileResult> containing the information and content returned when downloading from a file.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
-- content: <a id="a89b7a6130cebdd9e8171004a863f79c7"></a>
-- section: DownloadTo() [1/2]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.DownloadTo%28%29%20%5B1%2F2%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.DownloadTo() [1/2]
-- declaration: >-
-    Azure::Response&lt; Models::DownloadFileToResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::DownloadTo(const std::string &amp;&#160;          fileName,                         
-                                                                                                                    const DownloadFileToOptions &amp;&#160;options = DownloadFileToOptions(),
-                                                                                                                    const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
-                                                                                                                   )                              const
-  languageId: cpp
+- section: '&#9670;&#160;DownloadTo() [1/2]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -439,24 +303,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::DownloadFileToResult&gt; containing the information returned when downloading a file to a local file.
+  - summary: Azure::Response<Models::DownloadFileToResult> containing the information returned when downloading a file to a local file.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
-- content: <a id="aea2ef7d005b3bf995f4d32d9ed74d56b"></a>
-- section: DownloadTo() [2/2]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.DownloadTo%28%29%20%5B2%2F2%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.DownloadTo() [2/2]
-- declaration: >-
-    Azure::Response&lt; Models::DownloadFileToResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::DownloadTo(uint8_t *&#160;                    buffer,                           
-                                                                                                                    size_t&#160;                       bufferSize,                       
-                                                                                                                    const DownloadFileToOptions &amp;&#160;options = DownloadFileToOptions(),
-                                                                                                                    const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
-                                                                                                                   )                              const
-  languageId: cpp
+- section: '&#9670;&#160;DownloadTo() [2/2]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -471,23 +324,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::DownloadFileToResult&gt; containing the information returned when downloading a file to a local buffer.
+  - summary: Azure::Response<Models::DownloadFileToResult> containing the information returned when downloading a file to a local buffer.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
-- content: <a id="a86fc020be966025aae11103420afab30"></a>
-- section: Flush()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.Flush%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.Flush()
-- declaration: >-
-    Azure::Response&lt; Models::FlushFileResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::Flush(int64_t&#160;                     position,                        
-                                                                                                          const FlushFileOptions &amp;&#160;    options = FlushFileOptions(),    
-                                                                                                          const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
-                                                                                                         )                             const
-  languageId: cpp
+- section: '&#9670;&#160;Flush()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -500,35 +343,19 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::FlushFileResult&gt; containing the information returned when flushing the data appended to the path.
+  - summary: Azure::Response<Models::FlushFileResult> containing the information returned when flushing the data appended to the path.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
-- content: <a id="ac39b1ef494a5f67a0fc5803695a3dc98"></a>
-- section: GetUrl()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.GetUrl%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.GetUrl()
-- declaration: std::string Azure::Storage::Files::DataLake::DataLakeFileClient::GetUrl()const inline
-  languageId: cpp
+- section: '&#9670;&#160;GetUrl()'
+  display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: The file's primary URL endpoint.
-- content: <a id="a4be0127470e8cccea9d11c6a77bbb8b5"></a>
-- section: Query()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.Query%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.Query()
-- declaration: >-
-    Azure::Response&lt; Models::QueryFileResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::Query(const std::string &amp;&#160;         querySqlExpression,              
-                                                                                                          const QueryFileOptions &amp;&#160;    options = QueryFileOptions(),    
-                                                                                                          const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
-                                                                                                         )                             const
-  languageId: cpp
+- section: '&#9670;&#160;Query()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -542,18 +369,8 @@ components:
   display: h4
 - parameters:
   - summary: A QueryFileResult describing the query result.
-- content: <a id="a075553cd4a2dabcfcbace43e016f3561"></a>
-- section: ScheduleDeletion()
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.ScheduleDeletion%28%29
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.ScheduleDeletion()
-- declaration: >-
-    Azure::Response&lt; Models::ScheduleFileDeletionResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::ScheduleDeletion(ScheduleFileExpiryOriginType&#160;       expiryOrigin,                           
-                                                                                                                                const ScheduleFileDeletionOptions &amp;&#160;options = ScheduleFileDeletionOptions(),
-                                                                                                                                const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
-                                                                                                                               )                                    const
-  languageId: cpp
+- section: '&#9670;&#160;ScheduleDeletion()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -566,23 +383,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::ScheduleFileDeletionResult&gt; containing the information and content returned when schedule the file for deletion.
+  - summary: Azure::Response<Models::ScheduleFileDeletionResult> containing the information and content returned when schedule the file for deletion.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
-- content: <a id="a0af18427cbdeb274106f94a4593eba86"></a>
-- section: UploadFrom() [1/2]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.UploadFrom%28%29%20%5B1%2F2%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.UploadFrom() [1/2]
-- declaration: >-
-    Azure::Response&lt; Models::UploadFileFromResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::UploadFrom(const std::string &amp;&#160;          fileName,                         
-                                                                                                                    const UploadFileFromOptions &amp;&#160;options = UploadFileFromOptions(),
-                                                                                                                    const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
-                                                                                                                   )                              const
-  languageId: cpp
+- section: '&#9670;&#160;UploadFrom() [1/2]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -595,24 +402,13 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;Models::UploadFileFromResult&gt; containing the information returned when uploading a file from a local file.
+  - summary: Azure::Response<Models::UploadFileFromResult> containing the information returned when uploading a file from a local file.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
-- content: <a id="a1b4cb3a8a4093ee96977228add9e5a67"></a>
-- section: UploadFrom() [2/2]
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileClient.UploadFrom%28%29%20%5B2%2F2%5D
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::DataLakeFileClient.UploadFrom() [2/2]
-- declaration: >-
-    Azure::Response&lt; Models::UploadFileFromResult &gt; Azure::Storage::Files::DataLake::DataLakeFileClient::UploadFrom(const uint8_t *&#160;              buffer,                           
-                                                                                                                    size_t&#160;                       bufferSize,                       
-                                                                                                                    const UploadFileFromOptions &amp;&#160;options = UploadFileFromOptions(),
-                                                                                                                    const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
-                                                                                                                   )                              const
-  languageId: cpp
+- section: '&#9670;&#160;UploadFrom() [2/2]'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -627,8 +423,12 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: Azure::Response&lt;UploadFileFromResult&gt; containing the information returned when uploading a file from a buffer.
+  - summary: Azure::Response<UploadFileFromResult> containing the information returned when uploading a file from a buffer.
 - section: Remarks
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
+- content: >-
+    The documentation for this class was generated from the following files:inc/azure/storage/files/datalake/datalake_file_client.hpp
+
+    src/datalake_file_client.cppGenerated by&#160;1.9.7

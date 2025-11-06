@@ -1,56 +1,30 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3AAppendFileResult
+uid: Azure::Storage::Files::DataLake::Models::AppendFileResult
 title: Azure::Storage::Files::DataLake::Models::AppendFileResult Struct Reference
-xrefType: Struct
-xrefName: Azure::Storage::Files::DataLake::Models::AppendFileResult
 components:
-- content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.yml#a54d30b7659e43ad83016c3a32983efc2">Azure::Storage::Files::DataLake::DataLakeFileClient::Append</a>.  
-
-    </p><p><code>#include &lt;rest_client.hpp&gt;</code></p>
+- content: Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_client.html#a54d30b7659e43ad83016c3a32983efc2">Azure::Storage::Files::DataLake::DataLakeFileClient::Append</a>.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.yml#a512359cb5055f43d563df05fb867e9cd">TransactionalContentHash</a>
-    returnType: Nullable&lt; ContentHash &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.yml#ac97eb432ab81d715c37d7ae77df61702">IsServerEncrypted</a> = bool()
-    returnType: bool&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.yml#a727601428aacfcf5248b38a593ad5379">EncryptionKeySha256</a>
-    returnType: Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.yml#a5fe3e5dbc6581161d02023a36cda005f">IsLeaseRenewed</a>
-    returnType: Nullable&lt; bool &gt;&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.html#a512359cb5055f43d563df05fb867e9cd">TransactionalContentHash</a>
+    returnType: Nullable< ContentHash > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.html#ac97eb432ab81d715c37d7ae77df61702">IsServerEncrypted</a> = bool()
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.html#a727601428aacfcf5248b38a593ad5379">EncryptionKeySha256</a>
+    returnType: Nullable< std::vector< std::uint8_t > > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_append_file_result.html#a5fe3e5dbc6581161d02023a36cda005f">IsLeaseRenewed</a>
+    returnType: Nullable< bool > 
 - section: Member Data Documentation
   display: h2
-- content: <a id="a727601428aacfcf5248b38a593ad5379"></a>
-- section: EncryptionKeySha256
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3AAppendFileResult.EncryptionKeySha256
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::Models::AppendFileResult.EncryptionKeySha256
-- declaration: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Files::DataLake::Models::AppendFileResult::EncryptionKeySha256
-  languageId: cpp
-- content: <p>The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key. </p><a id="a5fe3e5dbc6581161d02023a36cda005f"></a>
-- section: IsLeaseRenewed
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3AAppendFileResult.IsLeaseRenewed
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::Models::AppendFileResult.IsLeaseRenewed
-- declaration: Nullable&lt;bool&gt; Azure::Storage::Files::DataLake::Models::AppendFileResult::IsLeaseRenewed
-  languageId: cpp
-- content: <p>If the lease was auto-renewed with this request. </p><a id="ac97eb432ab81d715c37d7ae77df61702"></a>
-- section: IsServerEncrypted
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3AAppendFileResult.IsServerEncrypted
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::Models::AppendFileResult.IsServerEncrypted
-- declaration: bool Azure::Storage::Files::DataLake::Models::AppendFileResult::IsServerEncrypted = bool()
-  languageId: cpp
-- content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p><a id="a512359cb5055f43d563df05fb867e9cd"></a>
-- section: TransactionalContentHash
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3AModels%3A%3AAppendFileResult.TransactionalContentHash
-  xrefType: Member
-  xrefName: Azure::Storage::Files::DataLake::Models::AppendFileResult.TransactionalContentHash
-- declaration: Nullable&lt;ContentHash&gt; Azure::Storage::Files::DataLake::Models::AppendFileResult::TransactionalContentHash
-  languageId: cpp
-- content: <p>If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity. </p>
+- section: '&#9670;&#160;EncryptionKeySha256'
+  display: h2
+- content: The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key.
+- section: '&#9670;&#160;IsLeaseRenewed'
+  display: h2
+- content: If the lease was auto-renewed with this request.
+- section: '&#9670;&#160;IsServerEncrypted'
+  display: h2
+- content: The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise.
+- section: '&#9670;&#160;TransactionalContentHash'
+  display: h2
+- content: If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity.The documentation for this struct was generated from the following file:inc/azure/storage/files/datalake/rest_client.hppGenerated by&#160;1.9.7

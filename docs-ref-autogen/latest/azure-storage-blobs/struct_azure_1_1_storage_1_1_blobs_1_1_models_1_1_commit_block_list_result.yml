@@ -1,86 +1,45 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACommitBlockListResult
+uid: Azure::Storage::Blobs::Models::CommitBlockListResult
 title: Azure::Storage::Blobs::Models::CommitBlockListResult Struct Reference
-xrefType: Struct
-xrefName: Azure::Storage::Blobs::Models::CommitBlockListResult
 components:
-- content: >-
-    <p>Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.yml#a5e47df66b82d5832cf2268d9a991c924">Azure::Storage::Blobs::BlockBlobClient::CommitBlockList</a>.  
-
-    </p><p><code>#include &lt;rest_client.hpp&gt;</code></p>
+- content: Response type for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client.html#a5e47df66b82d5832cf2268d9a991c924">Azure::Storage::Blobs::BlockBlobClient::CommitBlockList</a>.<code>#include &lt;<a href="rest__client_8hpp_source.html">rest_client.hpp</a>&gt;</code>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.yml#a34122c15a425f842b4a305c109f98024">ETag</a>
-    returnType: Azure::ETag&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.yml#a70548842653ea69fc471abdc4a541d91">LastModified</a>
-    returnType: DateTime&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.yml#a19c42cbcad56114a0ba53b0ed934aa27">TransactionalContentHash</a>
-    returnType: Nullable&lt; ContentHash &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.yml#a5c20078ef8793524a112c1795e4e2372">VersionId</a>
-    returnType: Nullable&lt; std::string &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.yml#a409cf00852e05402e6d38743255db869">IsServerEncrypted</a> = bool()
-    returnType: bool&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.yml#a9567251c6e10233c89c1eb78c02ab913">EncryptionKeySha256</a>
-    returnType: Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.yml#a33abc024576e6ce51c3ef0b57a960632">EncryptionScope</a>
-    returnType: Nullable&lt; std::string &gt;&#160;
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.html#a34122c15a425f842b4a305c109f98024">ETag</a>
+    returnType: Azure::ETag 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.html#a70548842653ea69fc471abdc4a541d91">LastModified</a>
+    returnType: DateTime 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.html#a19c42cbcad56114a0ba53b0ed934aa27">TransactionalContentHash</a>
+    returnType: Nullable< ContentHash > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.html#a5c20078ef8793524a112c1795e4e2372">VersionId</a>
+    returnType: Nullable< std::string > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.html#a409cf00852e05402e6d38743255db869">IsServerEncrypted</a> = bool()
+    returnType: bool 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.html#a9567251c6e10233c89c1eb78c02ab913">EncryptionKeySha256</a>
+    returnType: Nullable< std::vector< std::uint8_t > > 
+  - declaration: <a class="el" href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_commit_block_list_result.html#a33abc024576e6ce51c3ef0b57a960632">EncryptionScope</a>
+    returnType: Nullable< std::string > 
 - section: Member Data Documentation
   display: h2
-- content: <a id="a9567251c6e10233c89c1eb78c02ab913"></a>
-- section: EncryptionKeySha256
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACommitBlockListResult.EncryptionKeySha256
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::Models::CommitBlockListResult.EncryptionKeySha256
-- declaration: Nullable&lt;std::vector&lt;std::uint8_t&gt; &gt; Azure::Storage::Blobs::Models::CommitBlockListResult::EncryptionKeySha256
-  languageId: cpp
-- content: <p>The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key. </p><a id="a33abc024576e6ce51c3ef0b57a960632"></a>
-- section: EncryptionScope
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACommitBlockListResult.EncryptionScope
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::Models::CommitBlockListResult.EncryptionScope
-- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::CommitBlockListResult::EncryptionScope
-  languageId: cpp
-- content: <p>Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope. </p><a id="a34122c15a425f842b4a305c109f98024"></a>
-- section: ETag
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACommitBlockListResult.ETag
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::Models::CommitBlockListResult.ETag
-- declaration: Azure::ETag Azure::Storage::Blobs::Models::CommitBlockListResult::ETag
-  languageId: cpp
-- content: <p>The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes. </p><a id="a409cf00852e05402e6d38743255db869"></a>
-- section: IsServerEncrypted
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACommitBlockListResult.IsServerEncrypted
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::Models::CommitBlockListResult.IsServerEncrypted
-- declaration: bool Azure::Storage::Blobs::Models::CommitBlockListResult::IsServerEncrypted = bool()
-  languageId: cpp
-- content: <p>The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise. </p><a id="a70548842653ea69fc471abdc4a541d91"></a>
-- section: LastModified
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACommitBlockListResult.LastModified
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::Models::CommitBlockListResult.LastModified
-- declaration: DateTime Azure::Storage::Blobs::Models::CommitBlockListResult::LastModified
-  languageId: cpp
-- content: <p>Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob. </p><a id="a19c42cbcad56114a0ba53b0ed934aa27"></a>
-- section: TransactionalContentHash
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACommitBlockListResult.TransactionalContentHash
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::Models::CommitBlockListResult.TransactionalContentHash
-- declaration: Nullable&lt;ContentHash&gt; Azure::Storage::Blobs::Models::CommitBlockListResult::TransactionalContentHash
-  languageId: cpp
-- content: <p>This header is returned so that the client can check for message content integrity. This header refers to the content of the request, meaning, in this case, the list of blocks, and not the content of the blob itself. </p><a id="a5c20078ef8793524a112c1795e4e2372"></a>
-- section: VersionId
-  display: h3
-  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ACommitBlockListResult.VersionId
-  xrefType: Member
-  xrefName: Azure::Storage::Blobs::Models::CommitBlockListResult.VersionId
-- declaration: Nullable&lt;std::string&gt; Azure::Storage::Blobs::Models::CommitBlockListResult::VersionId
-  languageId: cpp
-- content: <p>A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob. </p>
+- section: '&#9670;&#160;EncryptionKeySha256'
+  display: h2
+- content: The SHA-256 hash of the encryption key used to encrypt the blob. This header is only returned when the blob was encrypted with a customer-provided key.
+- section: '&#9670;&#160;EncryptionScope'
+  display: h2
+- content: Returns the name of the encryption scope used to encrypt the blob contents and application metadata. Note that the absence of this header implies use of the default account encryption scope.
+- section: '&#9670;&#160;ETag'
+  display: h2
+- content: The ETag contains a value that you can use to perform operations conditionally. If the request version is 2011-08-18 or newer, the ETag value will be in quotes.
+- section: '&#9670;&#160;IsServerEncrypted'
+  display: h2
+- content: The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise.
+- section: '&#9670;&#160;LastModified'
+  display: h2
+- content: Returns the date and time the container was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.
+- section: '&#9670;&#160;TransactionalContentHash'
+  display: h2
+- content: This header is returned so that the client can check for message content integrity. This header refers to the content of the request, meaning, in this case, the list of blocks, and not the content of the blob itself.
+- section: '&#9670;&#160;VersionId'
+  display: h2
+- content: A DateTime value returned by the service that uniquely identifies the blob. The value of this header indicates the blob version, and may be used in subsequent requests to access this version of the blob.The documentation for this struct was generated from the following file:inc/azure/storage/blobs/rest_client.hppGenerated by&#160;1.9.7

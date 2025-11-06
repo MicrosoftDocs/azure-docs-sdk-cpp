@@ -1,59 +1,45 @@
 ### YamlMime:Reference
-uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3ABlobCheckpointStore
+uid: Azure::Messaging::EventHubs::BlobCheckpointStore
 title: Azure::Messaging::EventHubs::BlobCheckpointStore Class Reference
-xrefType: Class
-xrefName: Azure::Messaging::EventHubs::BlobCheckpointStore
 components:
-- content: >-
-    <p><a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml">BlobCheckpointStore</a> is an implementation of a CheckpointStore backed by Azure Blob Storage.  
-
-    </p><p><code>#include &lt;blob_checkpoint_store.hpp&gt;</code></p><p>This class inherits from:</p>
-- linkList:
-  - name: Azure::Messaging::EventHubs::CheckpointStore
-    href: ''
+- content: '<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html">BlobCheckpointStore</a> is an implementation of a CheckpointStore backed by Azure Blob Storage.<code>#include &lt;<a href="blob__checkpoint__store_8hpp_source.html">blob_checkpoint_store.hpp</a>&gt;</code>Inheritance diagram for Azure::Messaging::EventHubs::BlobCheckpointStore:'
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: BlobCheckpointStore (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml">BlobCheckpointStore</a> const &amp;other)=default
-    summary: Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml">BlobCheckpointStore</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml">BlobCheckpointStore</a>.
+  - declaration: <b>BlobCheckpointStore</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html">BlobCheckpointStore</a> const &other)=default
+    summary: Construct a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html" title="BlobCheckpointStore is an implementation of a CheckpointStore backed by Azure Blob Storage.">BlobCheckpointStore</a> from another <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html" title="BlobCheckpointStore is an implementation of a CheckpointStore backed by Azure Blob Storage.">BlobCheckpointStore</a>. <br>
     returnType: >-
-      <a id="aec16a61ff4e2dd91830e897b9a2d3b61"></a>
+      <a id="aec16a61ff4e2dd91830e897b9a2d3b61" name="aec16a61ff4e2dd91830e897b9a2d3b61"></a>
 
-      &#160;
-  - declaration: operator= (<a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml">BlobCheckpointStore</a> const &amp;other)=default
-    summary: Assign a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml">BlobCheckpointStore</a> to another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml">BlobCheckpointStore</a>.
+       
+  - declaration: <b>operator=</b> (<a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html">BlobCheckpointStore</a> const &other)=default
+    summary: Assign a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html" title="BlobCheckpointStore is an implementation of a CheckpointStore backed by Azure Blob Storage.">BlobCheckpointStore</a> to another <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html" title="BlobCheckpointStore is an implementation of a CheckpointStore backed by Azure Blob Storage.">BlobCheckpointStore</a>. <br>
     returnType: >-
-      <a id="af9e5566c4a1aa2e549c3250e8aa31469"></a>
+      <a id="af9e5566c4a1aa2e549c3250e8aa31469" name="af9e5566c4a1aa2e549c3250e8aa31469"></a>
 
-      <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml">BlobCheckpointStore</a> &amp;&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml#a3bd9e3c8daed9dfef80dd77294fdaedb">BlobCheckpointStore</a> (Azure::Storage::Blobs::BlobContainerClient const &amp;containerClient)
-    summary: Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml">BlobCheckpointStore</a>.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml#a8cd55e88eeae679e4531779085a66e5e">ClaimOwnership</a> (std::vector&lt; Models::Ownership &gt; const &amp;partitionOwnership, Core::Context const &amp;context={}) override
-    summary: ClaimOwnership Claims ownership for a particular partition.
-    returnType: std::vector&lt; Models::Ownership &gt;&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml#a50603266f3cf1ebaf4a6187ad5bc4d73">ListCheckpoints</a> (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={}) override
-    summary: List the checkpoints from storage.
-    returnType: std::vector&lt; Models::Checkpoint &gt;&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.yml#a93060bbae446ee9aebfe3dbd7084e1ff">ListOwnership</a> (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={}) override
-    summary: ListOwnership lists all ownerships.
-    returnType: std::vector&lt; Models::Ownership &gt;&#160;
-  - declaration: UpdateCheckpoint (Models::Checkpoint const &amp;checkpoint, Core::Context const &amp;context={}) override
-    summary: UpdateCheckpoint updates a specific checkpoint with a sequence and offset.
+      <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html">BlobCheckpointStore</a> & 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html#a3bd9e3c8daed9dfef80dd77294fdaedb">BlobCheckpointStore</a> (Azure::Storage::Blobs::BlobContainerClient const &containerClient)
+    summary: Construct a <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html" title="BlobCheckpointStore is an implementation of a CheckpointStore backed by Azure Blob Storage.">BlobCheckpointStore</a>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html#a8cd55e88eeae679e4531779085a66e5e">ClaimOwnership</a> (std::vector< Models::Ownership > const &partitionOwnership, Core::Context const &context={}) override
+    summary: ClaimOwnership Claims ownership for a particular partition.  <br>
+    returnType: std::vector< Models::Ownership > 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html#a50603266f3cf1ebaf4a6187ad5bc4d73">ListCheckpoints</a> (std::string const &fullyQualifiedNamespace, std::string const &eventHubName, std::string const &consumerGroup, Core::Context const &context={}) override
+    summary: List the checkpoints from storage.  <br>
+    returnType: std::vector< Models::Checkpoint > 
+  - declaration: <a class="el" href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store.html#a93060bbae446ee9aebfe3dbd7084e1ff">ListOwnership</a> (std::string const &fullyQualifiedNamespace, std::string const &eventHubName, std::string const &consumerGroup, Core::Context const &context={}) override
+    summary: ListOwnership lists all ownerships.  <br>
+    returnType: std::vector< Models::Ownership > 
+  - declaration: <b>UpdateCheckpoint</b> (Models::Checkpoint const &checkpoint, Core::Context const &context={}) override
+    summary: UpdateCheckpoint updates a specific checkpoint with a sequence and offset. <br>
     returnType: >-
-      <a id="a7d397bb1419435c5a6013b3c89be4ec6"></a>
+      <a id="a7d397bb1419435c5a6013b3c89be4ec6" name="a7d397bb1419435c5a6013b3c89be4ec6"></a>
 
-      void&#160;
+      void 
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="a3bd9e3c8daed9dfef80dd77294fdaedb"></a>
-- section: BlobCheckpointStore()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3ABlobCheckpointStore.BlobCheckpointStore%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::BlobCheckpointStore.BlobCheckpointStore()
-- declaration: Azure::Messaging::EventHubs::BlobCheckpointStore::BlobCheckpointStore(Azure::Storage::Blobs::BlobContainerClient const &amp;&#160;containerClient) inline
-  languageId: cpp
+- section: '&#9670;&#160;BlobCheckpointStore()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -61,17 +47,8 @@ components:
     summary: An Azure Blob ContainerClient used to hold the checkpoints.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a8cd55e88eeae679e4531779085a66e5e"></a>
-- section: ClaimOwnership()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3ABlobCheckpointStore.ClaimOwnership%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::BlobCheckpointStore.ClaimOwnership()
-- declaration: >-
-    std::vector&lt; Ownership &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ClaimOwnership(std::vector&lt; Models::Ownership &gt; const &amp;&#160;partitionOwnership,
-                                                                                              Core::Context const &amp;&#160;                   context = {}&#160;      
-                                                                                             ) override
-  languageId: cpp
+- section: '&#9670;&#160;ClaimOwnership()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -79,19 +56,8 @@ components:
     summary: '- The list of partition ownerships this instance is claiming.'
   - name: context
     summary: '- The context for cancelling long running operations.'
-- content: <a id="a50603266f3cf1ebaf4a6187ad5bc4d73"></a>
-- section: ListCheckpoints()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3ABlobCheckpointStore.ListCheckpoints%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::BlobCheckpointStore.ListCheckpoints()
-- declaration: >-
-    std::vector&lt; Checkpoint &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ListCheckpoints(std::string const &amp;&#160;  fullyQualifiedNamespace,
-                                                                                                std::string const &amp;&#160;  eventHubName,           
-                                                                                                std::string const &amp;&#160;  consumerGroup,          
-                                                                                                Core::Context const &amp;&#160;context = {}&#160;           
-                                                                                               ) override
-  languageId: cpp
+- section: '&#9670;&#160;ListCheckpoints()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -107,19 +73,8 @@ components:
   display: h4
 - parameters:
   - summary: A list of checkpoints.
-- content: <a id="a93060bbae446ee9aebfe3dbd7084e1ff"></a>
-- section: ListOwnership()
-  display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3ABlobCheckpointStore.ListOwnership%28%29
-  xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::BlobCheckpointStore.ListOwnership()
-- declaration: >-
-    std::vector&lt; Ownership &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ListOwnership(std::string const &amp;&#160;  fullyQualifiedNamespace,
-                                                                                             std::string const &amp;&#160;  eventHubName,           
-                                                                                             std::string const &amp;&#160;  consumerGroup,          
-                                                                                             Core::Context const &amp;&#160;context = {}&#160;           
-                                                                                            ) override
-  languageId: cpp
+- section: '&#9670;&#160;ListOwnership()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -135,3 +90,7 @@ components:
   display: h4
 - parameters:
   - summary: A list of ownerships.
+- content: >-
+    The documentation for this class was generated from the following files:inc/azure/messaging/eventhubs/checkpointstore_blob/blob_checkpoint_store.hpp
+
+    src/blob_checkpoint_store.cppGenerated by&#160;1.9.7

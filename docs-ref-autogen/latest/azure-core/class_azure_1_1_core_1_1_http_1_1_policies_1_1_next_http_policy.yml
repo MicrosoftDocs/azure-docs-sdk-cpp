@@ -1,41 +1,25 @@
 ### YamlMime:Reference
-uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ANextHttpPolicy
+uid: Azure::Core::Http::Policies::NextHttpPolicy
 title: Azure::Core::Http::Policies::NextHttpPolicy Class Reference
-xrefType: Class
-xrefName: Azure::Core::Http::Policies::NextHttpPolicy
 components:
 - content: >-
-    <p>The next HTTP policy in the stack sequence of policies.  
-     <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy.yml#details">More...</a></p><p><code>#include &lt;policy.hpp&gt;</code></p>
+    The next HTTP policy in the stack sequence of policies.  
+     <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy.html#details">More...</a><code>#include &lt;<a href="policy_8hpp_source.html">policy.hpp</a>&gt;</code>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy.yml#a9563e99253733b0ed54cd0f467e72afe">NextHttpPolicy</a> (size_t index, const std::vector&lt; std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.yml">HttpPolicy</a> &gt; &gt; &amp;policies)
-    summary: Constructs an abstraction representing a next line in the stack sequence of policies, from the caller's perspective.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy.yml#a9c1768b963eade38336239f48d471097">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request.yml">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context.yml">Context</a> const &amp;context)
-    summary: Applies this HTTP policy.
-    returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response.yml">RawResponse</a> &gt;&#160;
-- content: <a id="details"></a>
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy.html#a9563e99253733b0ed54cd0f467e72afe">NextHttpPolicy</a> (size_t index, const std::vector< std::unique_ptr< <a class="el" href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy.html">HttpPolicy</a> > > &policies)
+    summary: Constructs an abstraction representing a next line in the stack sequence of policies, from the caller's perspective.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy.html#a9c1768b963eade38336239f48d471097">Send</a> (<a class="el" href="class_azure_1_1_core_1_1_http_1_1_request.html">Request</a> &request, <a class="el" href="class_azure_1_1_core_1_1_context.html">Context</a> const &context)
+    summary: Applies this HTTP policy.  <br>
+    returnType: std::unique_ptr< <a class="el" href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">RawResponse</a> > 
 - section: Detailed Description
   display: h2
-- section: Note
-  display: h4
-- parameters:
-  - summary: <code>NextHttpPolicy</code> is an abstraction representing the next policy in the stack sequence of policies, from the caller's perspective.
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="a9563e99253733b0ed54cd0f467e72afe"></a>
-- section: NextHttpPolicy()
-  display: h3
-  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ANextHttpPolicy.NextHttpPolicy%28%29
-  xrefType: Member
-  xrefName: Azure::Core::Http::Policies::NextHttpPolicy.NextHttpPolicy()
-- declaration: >-
-    Azure::Core::Http::Policies::NextHttpPolicy::NextHttpPolicy(size_t&#160;                                              index,   
-                                                                const std::vector&lt; std::unique_ptr&lt; HttpPolicy &gt; &gt; &amp;&#160;policies&#160;
-                                                               ) inline explicit
-  languageId: cpp
+- section: '&#9670;&#160;NextHttpPolicy()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -45,17 +29,8 @@ components:
     summary: A vector of unique pointers next in the line to be invoked after the current policy.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a9c1768b963eade38336239f48d471097"></a>
-- section: Send()
-  display: h3
-  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ANextHttpPolicy.Send%28%29
-  xrefType: Member
-  xrefName: Azure::Core::Http::Policies::NextHttpPolicy.Send()
-- declaration: >-
-    std::unique_ptr&lt; RawResponse &gt; NextHttpPolicy::Send(Request &amp;&#160;      request,
-                                                        Context const &amp;&#160;context&#160;
-                                                       )
-  languageId: cpp
+- section: '&#9670;&#160;Send()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -67,3 +42,7 @@ components:
   display: h4
 - parameters:
   - summary: An HTTP response after this policy, and all subsequent HTTP policies in the stack sequence of policies have been applied.
+- content: >-
+    The documentation for this class was generated from the following files:inc/azure/core/http/policies/policy.hpp
+
+    src/http/policy.cppGenerated by&#160;1.9.7

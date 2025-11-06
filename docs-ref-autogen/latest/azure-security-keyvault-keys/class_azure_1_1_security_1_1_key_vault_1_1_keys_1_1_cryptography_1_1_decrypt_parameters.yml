@@ -1,111 +1,90 @@
 ### YamlMime:Reference
-uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters
+uid: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters
 title: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters Class Reference
-xrefType: Class
-xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters
 components:
 - content: >-
-    <p>Parameters for decrypting ciphertext.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#details">More...</a></p><p><code>#include &lt;cryptography_client_models.hpp&gt;</code></p>
+    Parameters for decrypting ciphertext.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#details">More...</a><code>#include &lt;<a href="cryptography__client__models_8hpp_source.html">cryptography_client_models.hpp</a>&gt;</code>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a72ce69176a45b1cce5259145ab608a89">DecryptParameters</a> (<a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml">EncryptionAlgorithm</a> algorithm, std::vector&lt; uint8_t &gt; const ciphertext)
-    summary: Construct a new Decrypt Parameters object.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a4443c004f20c069d66a7693b4b76ebfe">GetIv</a> () const
-    summary: Gets the initialization vector for decryption.
-    returnType: std::vector&lt; uint8_t &gt; const &amp;&#160;
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a72ce69176a45b1cce5259145ab608a89">DecryptParameters</a> (<a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html">EncryptionAlgorithm</a> algorithm, std::vector< uint8_t > const ciphertext)
+    summary: Construct a new Decrypt Parameters object.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a4443c004f20c069d66a7693b4b76ebfe">GetIv</a> () const
+    summary: Gets the initialization vector for decryption.  <br>
+    returnType: std::vector< uint8_t > const & 
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a1a884def7587d04686c5cd89eab5c53b">Rsa15Parameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext)
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a6ef7a7e3385aa538fec5a6ae774988f5">EncryptionAlgorithm::Rsa15</a> encryption algorithm.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#afc752fa6e4da5febbab37f532dddee64">RsaOaepParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext)
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a582ddaa921770c3cb48b0fd2b3529305">EncryptionAlgorithm::RsaOaep</a> encryption algorithm.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a9a35251170167dbc87def5a08303f633">RsaOaep256Parameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext)
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a7e0a612fecb3ce377fb54151e88a8406">EncryptionAlgorithm::RsaOaep256</a> encryption algorithm.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a146c44eafedde5d2a69c53baccd8439e">A128GcmParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv, std::vector&lt; uint8_t &gt; const &amp;authenticationTag, std::vector&lt; uint8_t &gt; const &amp;additionalAuthenticationData={})
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a0605e558304bf20e5c65d02f83b63c94">EncryptionAlgorithm::A128Gcm</a> encryption algorithm. The nonce will be generated automatically and returned in the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.yml">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> after encryption.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a7eebd983bc0a3d09e37d879e26c4d279">A192GcmParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv, std::vector&lt; uint8_t &gt; const &amp;authenticationTag, std::vector&lt; uint8_t &gt; const &amp;additionalAuthenticationData={})
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a64395beb114d3832328e19c38e98dbf3">EncryptionAlgorithm::A192Gcm</a> encryption algorithm. The nonce will be generated automatically and returned in the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.yml">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> after encryption.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a3fac2985b932fb280605ed653f488dad">A256GcmParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv, std::vector&lt; uint8_t &gt; const &amp;authenticationTag, std::vector&lt; uint8_t &gt; const &amp;additionalAuthenticationData={})
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a6fd409cabbe735987bec19e727345a98">EncryptionAlgorithm::A256Gcm</a> encryption algorithm. The nonce will be generated automatically and returned in the <a href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.yml">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> after encryption.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a6f21310543a0c96eb24ebc326baf9645">A128CbcParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a40d1922421ed85173e57f97f3216c49c">EncryptionAlgorithm::A128Cbc</a> encryption algorithm.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a813394f4a7c58e67b9890dc062374b2c">A192CbcParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a68bc2862f7a71544d9e595ce93f0c4ea">EncryptionAlgorithm::A192Cbc</a> encryption algorithm.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#ad3a10e6ff95c78d91f4eb3632c9ba3df">A256CbcParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#ae381032fba1cb064054ad6b8f12444e5">EncryptionAlgorithm::A256Cbc</a> encryption algorithm.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a2b09d8ca2e635e770cd2fa26927b8338">A128CbcPadParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a1b78111dd64ffe1b3deced85abfc945c">EncryptionAlgorithm::A128CbcPad</a> encryption algorithm with PKCS#7 padding.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#af4608141974199bd1c1cd4006e71cdb8">A192CbcPadParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#ab9a8f9b9de27038911ab9970632c4b2d">EncryptionAlgorithm::A192CbcPad</a> encryption algorithm with PKCS#7 padding.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#acc810e63b11e87f329d1d59bbab6defa">A256CbcPadParameters</a> (std::vector&lt; uint8_t &gt; const &amp;ciphertext, std::vector&lt; uint8_t &gt; const &amp;iv)
-    summary: Creates an instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a80b0dcfd2d16cd1b2cba0fe4a647d17f">EncryptionAlgorithm::A256CbcPad</a> encryption algorithm with PKCS#7 padding.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml">DecryptParameters</a>&#160;
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a1a884def7587d04686c5cd89eab5c53b">Rsa15Parameters</a> (std::vector< uint8_t > const &ciphertext)
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a6ef7a7e3385aa538fec5a6ae774988f5" title="An RSA1_5 EncryptionAlgorithm.">EncryptionAlgorithm::Rsa15</a> encryption algorithm.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#afc752fa6e4da5febbab37f532dddee64">RsaOaepParameters</a> (std::vector< uint8_t > const &ciphertext)
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a582ddaa921770c3cb48b0fd2b3529305" title="An RSA-OAEP EncryptionAlgorithm.">EncryptionAlgorithm::RsaOaep</a> encryption algorithm.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a9a35251170167dbc87def5a08303f633">RsaOaep256Parameters</a> (std::vector< uint8_t > const &ciphertext)
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a7e0a612fecb3ce377fb54151e88a8406" title="An RSA-OAEP256 EncryptionAlgorithm.">EncryptionAlgorithm::RsaOaep256</a> encryption algorithm.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a146c44eafedde5d2a69c53baccd8439e">A128GcmParameters</a> (std::vector< uint8_t > const &ciphertext, std::vector< uint8_t > const &iv, std::vector< uint8_t > const &authenticationTag, std::vector< uint8_t > const &additionalAuthenticationData={})
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a0605e558304bf20e5c65d02f83b63c94" title="An 128-bit AES-GCM EncryptionAlgorithm.">EncryptionAlgorithm::A128Gcm</a> encryption algorithm. The nonce will be generated automatically and returned in the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html" title="Represents information about an encryption operation.">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> after encryption.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a7eebd983bc0a3d09e37d879e26c4d279">A192GcmParameters</a> (std::vector< uint8_t > const &ciphertext, std::vector< uint8_t > const &iv, std::vector< uint8_t > const &authenticationTag, std::vector< uint8_t > const &additionalAuthenticationData={})
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a64395beb114d3832328e19c38e98dbf3" title="An 192-bit AES-GCM EncryptionAlgorithm.">EncryptionAlgorithm::A192Gcm</a> encryption algorithm. The nonce will be generated automatically and returned in the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html" title="Represents information about an encryption operation.">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> after encryption.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a3fac2985b932fb280605ed653f488dad">A256GcmParameters</a> (std::vector< uint8_t > const &ciphertext, std::vector< uint8_t > const &iv, std::vector< uint8_t > const &authenticationTag, std::vector< uint8_t > const &additionalAuthenticationData={})
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a6fd409cabbe735987bec19e727345a98" title="An 256-bit AES-GCM EncryptionAlgorithm.">EncryptionAlgorithm::A256Gcm</a> encryption algorithm. The nonce will be generated automatically and returned in the <a class="el" href="struct_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encrypt_result.html" title="Represents information about an encryption operation.">Azure::Security::KeyVault::Keys::Cryptography::EncryptResult</a> after encryption.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a6f21310543a0c96eb24ebc326baf9645">A128CbcParameters</a> (std::vector< uint8_t > const &ciphertext, std::vector< uint8_t > const &iv)
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a40d1922421ed85173e57f97f3216c49c" title="An 128-bit AES-CBC EncryptionAlgorithm.">EncryptionAlgorithm::A128Cbc</a> encryption algorithm.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a813394f4a7c58e67b9890dc062374b2c">A192CbcParameters</a> (std::vector< uint8_t > const &ciphertext, std::vector< uint8_t > const &iv)
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a68bc2862f7a71544d9e595ce93f0c4ea" title="An 192-bit AES-CBC EncryptionAlgorithm.">EncryptionAlgorithm::A192Cbc</a> encryption algorithm.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#ad3a10e6ff95c78d91f4eb3632c9ba3df">A256CbcParameters</a> (std::vector< uint8_t > const &ciphertext, std::vector< uint8_t > const &iv)
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#ae381032fba1cb064054ad6b8f12444e5" title="An 256-bit AES-CBC EncryptionAlgorithm.">EncryptionAlgorithm::A256Cbc</a> encryption algorithm.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a2b09d8ca2e635e770cd2fa26927b8338">A128CbcPadParameters</a> (std::vector< uint8_t > const &ciphertext, std::vector< uint8_t > const &iv)
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a1b78111dd64ffe1b3deced85abfc945c" title="An 128-bit AES-CBC EncryptionAlgorithm with PKCS padding.">EncryptionAlgorithm::A128CbcPad</a> encryption algorithm with PKCS#7 padding.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#af4608141974199bd1c1cd4006e71cdb8">A192CbcPadParameters</a> (std::vector< uint8_t > const &ciphertext, std::vector< uint8_t > const &iv)
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#ab9a8f9b9de27038911ab9970632c4b2d" title="An 192-bit AES-CBC EncryptionAlgorithm with PKCS padding.">EncryptionAlgorithm::A192CbcPad</a> encryption algorithm with PKCS#7 padding.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#acc810e63b11e87f329d1d59bbab6defa">A256CbcPadParameters</a> (std::vector< uint8_t > const &ciphertext, std::vector< uint8_t > const &iv)
+    summary: Creates an instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a80b0dcfd2d16cd1b2cba0fe4a647d17f" title="An 256-bit AES-CBC EncryptionAlgorithm with PKCS padding.">EncryptionAlgorithm::A256CbcPad</a> encryption algorithm with PKCS#7 padding.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html">DecryptParameters</a> 
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a3d53fc2ad26fcd805065856312df0baf">Algorithm</a>
-    summary: Gets or sets the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm</a>.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml">EncryptionAlgorithm</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#a467c11dcfb2c81dafc0dc69b48ed80e4">Ciphertext</a>
-    summary: Gets the ciphertext to decrypt.
-    returnType: std::vector&lt; uint8_t &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#ab668c631fcfae9b8be8f9b2ee437dd93">AdditionalAuthenticatedData</a>
-    summary: Gets additional data that is authenticated during decryption but not encrypted.
-    returnType: std::vector&lt; uint8_t &gt;&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.yml#acb0ca632adc1f404ecc24192155e98d6">AuthenticationTag</a>
-    summary: Gets the authenticated tag resulting from encryption with a symmetric key using AES.
-    returnType: std::vector&lt; uint8_t &gt;&#160;
-- content: <a id="details"></a>
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a3d53fc2ad26fcd805065856312df0baf">Algorithm</a>
+    summary: Gets or sets the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html" title="An algorithm used for encryption and decryption.">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm</a>.  <br>
+    returnType: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html">EncryptionAlgorithm</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#a467c11dcfb2c81dafc0dc69b48ed80e4">Ciphertext</a>
+    summary: Gets the ciphertext to decrypt.  <br>
+    returnType: std::vector< uint8_t > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#ab668c631fcfae9b8be8f9b2ee437dd93">AdditionalAuthenticatedData</a>
+    summary: Gets additional data that is authenticated during decryption but not encrypted.  <br>
+    returnType: std::vector< uint8_t > 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_decrypt_parameters.html#acb0ca632adc1f404ecc24192155e98d6">AuthenticationTag</a>
+    summary: Gets the authenticated tag resulting from encryption with a symmetric key using AES.  <br>
+    returnType: std::vector< uint8_t > 
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="a72ce69176a45b1cce5259145ab608a89"></a>
-- section: DecryptParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.DecryptParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.DecryptParameters()
-- declaration: >-
-    Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::DecryptParameters(EncryptionAlgorithm&#160;         algorithm, 
-                                                                                        std::vector&lt; uint8_t &gt; const&#160;ciphertext&#160;
-                                                                                       ) inline
-  languageId: cpp
+- section: '&#9670;&#160;DecryptParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
   - name: algorithm
-    summary: The <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm</a> to use for decrypt operation.
+    summary: The <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html" title="An algorithm used for encryption and decryption.">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm</a> to use for decrypt operation.
   - name: ciphertext
     summary: The content to decrypt.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a2b09d8ca2e635e770cd2fa26927b8338"></a>
-- section: A128CbcPadParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.A128CbcPadParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.A128CbcPadParameters()
-- declaration: >-
-    static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::A128CbcPadParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext,
-                                                                                                                    std::vector&lt; uint8_t &gt; const &amp;&#160;iv&#160;        
-                                                                                                                   ) inline static
-  languageId: cpp
+- section: '&#9670;&#160;A128CbcPadParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -116,18 +95,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a1b78111dd64ffe1b3deced85abfc945c">EncryptionAlgorithm::A128CbcPad</a> encryption algorithm.
-- content: <a id="a6f21310543a0c96eb24ebc326baf9645"></a>
-- section: A128CbcParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.A128CbcParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.A128CbcParameters()
-- declaration: >-
-    static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::A128CbcParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext,
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;iv&#160;        
-                                                                                                                ) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a1b78111dd64ffe1b3deced85abfc945c" title="An 128-bit AES-CBC EncryptionAlgorithm with PKCS padding.">EncryptionAlgorithm::A128CbcPad</a> encryption algorithm.
+- section: '&#9670;&#160;A128CbcParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -138,20 +108,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a40d1922421ed85173e57f97f3216c49c">EncryptionAlgorithm::A128Cbc</a> encryption algorithm.
-- content: <a id="a146c44eafedde5d2a69c53baccd8439e"></a>
-- section: A128GcmParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.A128GcmParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.A128GcmParameters()
-- declaration: >-
-    static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::A128GcmParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext,                       
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;iv,                               
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;authenticationTag,                
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;additionalAuthenticationData = {}&#160;
-                                                                                                                ) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a40d1922421ed85173e57f97f3216c49c" title="An 128-bit AES-CBC EncryptionAlgorithm.">EncryptionAlgorithm::A128Cbc</a> encryption algorithm.
+- section: '&#9670;&#160;A128GcmParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -166,18 +125,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a0605e558304bf20e5c65d02f83b63c94">EncryptionAlgorithm::A128Gcm</a> encryption algorithm.
-- content: <a id="af4608141974199bd1c1cd4006e71cdb8"></a>
-- section: A192CbcPadParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.A192CbcPadParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.A192CbcPadParameters()
-- declaration: >-
-    static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::A192CbcPadParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext,
-                                                                                                                    std::vector&lt; uint8_t &gt; const &amp;&#160;iv&#160;        
-                                                                                                                   ) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a0605e558304bf20e5c65d02f83b63c94" title="An 128-bit AES-GCM EncryptionAlgorithm.">EncryptionAlgorithm::A128Gcm</a> encryption algorithm.
+- section: '&#9670;&#160;A192CbcPadParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -188,18 +138,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#ab9a8f9b9de27038911ab9970632c4b2d">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm::A192CbcPad</a> encryption algorithm.
-- content: <a id="a813394f4a7c58e67b9890dc062374b2c"></a>
-- section: A192CbcParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.A192CbcParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.A192CbcParameters()
-- declaration: >-
-    static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::A192CbcParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext,
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;iv&#160;        
-                                                                                                                ) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#ab9a8f9b9de27038911ab9970632c4b2d" title="An 192-bit AES-CBC EncryptionAlgorithm with PKCS padding.">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm::A192CbcPad</a> encryption algorithm.
+- section: '&#9670;&#160;A192CbcParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -210,20 +151,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a68bc2862f7a71544d9e595ce93f0c4ea">EncryptionAlgorithm::A192Cbc</a> encryption algorithm.
-- content: <a id="a7eebd983bc0a3d09e37d879e26c4d279"></a>
-- section: A192GcmParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.A192GcmParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.A192GcmParameters()
-- declaration: >-
-    static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::A192GcmParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext,                       
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;iv,                               
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;authenticationTag,                
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;additionalAuthenticationData = {}&#160;
-                                                                                                                ) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a68bc2862f7a71544d9e595ce93f0c4ea" title="An 192-bit AES-CBC EncryptionAlgorithm.">EncryptionAlgorithm::A192Cbc</a> encryption algorithm.
+- section: '&#9670;&#160;A192GcmParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -238,18 +168,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a64395beb114d3832328e19c38e98dbf3">EncryptionAlgorithm::A192Gcm</a> encryption algorithm.
-- content: <a id="acc810e63b11e87f329d1d59bbab6defa"></a>
-- section: A256CbcPadParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.A256CbcPadParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.A256CbcPadParameters()
-- declaration: >-
-    static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::A256CbcPadParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext,
-                                                                                                                    std::vector&lt; uint8_t &gt; const &amp;&#160;iv&#160;        
-                                                                                                                   ) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a64395beb114d3832328e19c38e98dbf3" title="An 192-bit AES-GCM EncryptionAlgorithm.">EncryptionAlgorithm::A192Gcm</a> encryption algorithm.
+- section: '&#9670;&#160;A256CbcPadParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -260,18 +181,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a80b0dcfd2d16cd1b2cba0fe4a647d17f">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm::A256CbcPad</a> encryption algorithm.
-- content: <a id="ad3a10e6ff95c78d91f4eb3632c9ba3df"></a>
-- section: A256CbcParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.A256CbcParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.A256CbcParameters()
-- declaration: >-
-    static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::A256CbcParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext,
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;iv&#160;        
-                                                                                                                ) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a80b0dcfd2d16cd1b2cba0fe4a647d17f" title="An 256-bit AES-CBC EncryptionAlgorithm with PKCS padding.">Azure::Security::KeyVault::Keys::Cryptography::EncryptionAlgorithm::A256CbcPad</a> encryption algorithm.
+- section: '&#9670;&#160;A256CbcParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -282,20 +194,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a68bc2862f7a71544d9e595ce93f0c4ea">EncryptionAlgorithm::A192Cbc</a> encryption algorithm.
-- content: <a id="a3fac2985b932fb280605ed653f488dad"></a>
-- section: A256GcmParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.A256GcmParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.A256GcmParameters()
-- declaration: >-
-    static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::A256GcmParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext,                       
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;iv,                               
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;authenticationTag,                
-                                                                                                                 std::vector&lt; uint8_t &gt; const &amp;&#160;additionalAuthenticationData = {}&#160;
-                                                                                                                ) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a68bc2862f7a71544d9e595ce93f0c4ea" title="An 192-bit AES-CBC EncryptionAlgorithm.">EncryptionAlgorithm::A192Cbc</a> encryption algorithm.
+- section: '&#9670;&#160;A256GcmParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -310,23 +211,11 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a6fd409cabbe735987bec19e727345a98">EncryptionAlgorithm::A256Gcm</a> encryption algorithm.
-- content: <a id="a4443c004f20c069d66a7693b4b76ebfe"></a>
-- section: GetIv()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.GetIv%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.GetIv()
-- declaration: std::vector&lt; uint8_t &gt; const  &amp; Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::GetIv()const inline
-  languageId: cpp
-- content: <a id="a1a884def7587d04686c5cd89eab5c53b"></a>
-- section: Rsa15Parameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.Rsa15Parameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.Rsa15Parameters()
-- declaration: static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::Rsa15Parameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a6fd409cabbe735987bec19e727345a98" title="An 256-bit AES-GCM EncryptionAlgorithm.">EncryptionAlgorithm::A256Gcm</a> encryption algorithm.
+- section: '&#9670;&#160;GetIv()'
+  display: h2
+- section: '&#9670;&#160;Rsa15Parameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -335,15 +224,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a6ef7a7e3385aa538fec5a6ae774988f5">EncryptionAlgorithm::Rsa15</a> encryption algorithm.
-- content: <a id="a9a35251170167dbc87def5a08303f633"></a>
-- section: RsaOaep256Parameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.RsaOaep256Parameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.RsaOaep256Parameters()
-- declaration: static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::RsaOaep256Parameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a6ef7a7e3385aa538fec5a6ae774988f5" title="An RSA1_5 EncryptionAlgorithm.">EncryptionAlgorithm::Rsa15</a> encryption algorithm.
+- section: '&#9670;&#160;RsaOaep256Parameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -352,15 +235,9 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a7e0a612fecb3ce377fb54151e88a8406">EncryptionAlgorithm::RsaOaep256</a> encryption algorithm.
-- content: <a id="afc752fa6e4da5febbab37f532dddee64"></a>
-- section: RsaOaepParameters()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.RsaOaepParameters%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.RsaOaepParameters()
-- declaration: static DecryptParameters Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::RsaOaepParameters(std::vector&lt; uint8_t &gt; const &amp;&#160;ciphertext) inline static
-  languageId: cpp
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a7e0a612fecb3ce377fb54151e88a8406" title="An RSA-OAEP256 EncryptionAlgorithm.">EncryptionAlgorithm::RsaOaep256</a> encryption algorithm.
+- section: '&#9670;&#160;RsaOaepParameters()'
+  display: h2
 - section: Parameters
   display: h4
 - parameters:
@@ -369,38 +246,15 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: An instance of the DecryptParameters class for the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.yml#a582ddaa921770c3cb48b0fd2b3529305">EncryptionAlgorithm::RsaOaep</a> encryption algorithm.
+  - summary: An instance of the DecryptParameters class for the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_cryptography_1_1_encryption_algorithm.html#a582ddaa921770c3cb48b0fd2b3529305" title="An RSA-OAEP EncryptionAlgorithm.">EncryptionAlgorithm::RsaOaep</a> encryption algorithm.
 - section: Member Data Documentation
   display: h2
-- content: <a id="ab668c631fcfae9b8be8f9b2ee437dd93"></a>
-- section: AdditionalAuthenticatedData
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.AdditionalAuthenticatedData
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.AdditionalAuthenticatedData
-- declaration: std::vector&lt;uint8_t&gt; Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::AdditionalAuthenticatedData
-  languageId: cpp
-- content: <a id="a3d53fc2ad26fcd805065856312df0baf"></a>
-- section: Algorithm
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.Algorithm
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.Algorithm
-- declaration: EncryptionAlgorithm Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::Algorithm
-  languageId: cpp
-- content: <a id="acb0ca632adc1f404ecc24192155e98d6"></a>
-- section: AuthenticationTag
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.AuthenticationTag
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.AuthenticationTag
-- declaration: std::vector&lt;uint8_t&gt; Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::AuthenticationTag
-  languageId: cpp
-- content: <a id="a467c11dcfb2c81dafc0dc69b48ed80e4"></a>
-- section: Ciphertext
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3ACryptography%3A%3ADecryptParameters.Ciphertext
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters.Ciphertext
-- declaration: std::vector&lt;uint8_t&gt; Azure::Security::KeyVault::Keys::Cryptography::DecryptParameters::Ciphertext
-  languageId: cpp
+- section: '&#9670;&#160;AdditionalAuthenticatedData'
+  display: h2
+- section: '&#9670;&#160;Algorithm'
+  display: h2
+- section: '&#9670;&#160;AuthenticationTag'
+  display: h2
+- section: '&#9670;&#160;Ciphertext'
+  display: h2
+- content: The documentation for this class was generated from the following file:inc/azure/keyvault/keys/cryptography/cryptography_client_models.hppGenerated by&#160;1.9.7

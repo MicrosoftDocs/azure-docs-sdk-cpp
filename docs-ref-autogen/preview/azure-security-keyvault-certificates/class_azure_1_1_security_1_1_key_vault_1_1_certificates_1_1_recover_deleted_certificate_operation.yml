@@ -1,53 +1,35 @@
 ### YamlMime:Reference
-uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ARecoverDeletedCertificateOperation
+uid: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation
 title: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation Class Reference
-xrefType: Class
-xrefName: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation
 components:
-- content: >-
-    <p>Represents a recover deleted certificate long running operation.  
-
-    </p><p><code>#include &lt;certificate_client_operations.hpp&gt;</code></p><p>This class inherits from:</p>
-- linkList:
-  - name: Azure::Core::Operation
-    href: ''
+- content: 'Represents a recover deleted certificate long running operation.<code>#include &lt;<a href="certificate__client__operations_8hpp_source.html">certificate_client_operations.hpp</a>&gt;</code>Inheritance diagram for Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation:'
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.yml#ac6922ec3e12ffdd43ec01fa3e4fa652e">Value</a> () const override
-    summary: Get the <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.yml">Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy</a> object.
-    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.yml">KeyVaultCertificateWithPolicy</a>&#160;
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.yml#acb88d8d19a0e170f2be3d2c805ae2e7b">GetResumeToken</a> () const override
-    summary: Get an Url as string which can be used to get the status of the operation.
-    returnType: std::string&#160;
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html#ac6922ec3e12ffdd43ec01fa3e4fa652e">Value</a> () const override
+    summary: Get the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html" title="A KeyVaultCertificate along with its CertificatePolicy.">Azure::Security::KeyVault::Certificates::KeyVaultCertificateWithPolicy</a> object.  <br>
+    returnType: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_key_vault_certificate_with_policy.html">KeyVaultCertificateWithPolicy</a> 
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html#acb88d8d19a0e170f2be3d2c805ae2e7b">GetResumeToken</a> () const override
+    summary: Get an Url as string which can be used to get the status of the operation.  <br>
+    returnType: std::string 
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.yml#af8a0c15264569209b6a81d5ff2bce5d4">CreateFromResumeToken</a> (std::string const &amp;resumeToken, <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.yml">CertificateClient</a> const &amp;client, Azure::Core::Context const &amp;context=Azure::Core::Context())
-    summary: Create a RecoverDeletedCertificateOperation from the <code>resumeToken</code> fetched from another <code>Operation&lt;T&gt;</code>, updated to the the latest operation status.
-    returnType: static <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.yml">RecoverDeletedCertificateOperation</a>&#160;
+  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html#af8a0c15264569209b6a81d5ff2bce5d4">CreateFromResumeToken</a> (std::string const &resumeToken, <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_certificate_client.html">CertificateClient</a> const &client, Azure::Core::Context const &context=Azure::Core::Context())
+    summary: Create a RecoverDeletedCertificateOperation from the <code>resumeToken</code> fetched from another <code>Operation<T></code>, updated to the the latest operation status.  <br>
+    returnType: static <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html">RecoverDeletedCertificateOperation</a> 
 - section: Friends
   display: h2
 - apiList:
-  - declaration: CertificateClient
+  - declaration: <b>CertificateClient</b>
     returnType: >-
-      <a id="a8812873e00c04ea628594c5c16c8909f"></a>
+      <a id="a8812873e00c04ea628594c5c16c8909f" name="a8812873e00c04ea628594c5c16c8909f"></a>
 
-      class&#160;
+      class 
 - section: Member Function Documentation
   display: h2
-- content: <a id="af8a0c15264569209b6a81d5ff2bce5d4"></a>
-- section: CreateFromResumeToken()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ARecoverDeletedCertificateOperation.CreateFromResumeToken%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation.CreateFromResumeToken()
-- declaration: >-
-    static RecoverDeletedCertificateOperation Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation::CreateFromResumeToken(std::string const &amp;&#160;         resumeToken,                     
-                                                                                                                                                 CertificateClient const &amp;&#160;   client,                          
-                                                                                                                                                 Azure::Core::Context const &amp;&#160;context = Azure::Core::Context()&#160;
-                                                                                                                                                ) static
-  languageId: cpp
+- section: '&#9670;&#160;CreateFromResumeToken()'
+  display: h2
 - section: Remarks
   display: h4
 - parameters:
@@ -64,28 +46,17 @@ components:
 - section: Returns
   display: h4
 - parameters:
-  - summary: <a href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.yml">RecoverDeletedCertificateOperation</a>
-- content: <a id="acb88d8d19a0e170f2be3d2c805ae2e7b"></a>
-- section: GetResumeToken()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ARecoverDeletedCertificateOperation.GetResumeToken%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation.GetResumeToken()
-- declaration: std::string Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation::GetResumeToken()const inline override
-  languageId: cpp
+  - summary: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_certificates_1_1_recover_deleted_certificate_operation.html" title="Represents a recover deleted certificate long running operation.">RecoverDeletedCertificateOperation</a>
+- section: '&#9670;&#160;GetResumeToken()'
+  display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: std::string
-- content: <a id="ac6922ec3e12ffdd43ec01fa3e4fa652e"></a>
-- section: Value()
-  display: h3
-  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3ACertificates%3A%3ARecoverDeletedCertificateOperation.Value%28%29
-  xrefType: Member
-  xrefName: Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation.Value()
-- declaration: KeyVaultCertificateWithPolicy Azure::Security::KeyVault::Certificates::RecoverDeletedCertificateOperation::Value()const inline override
-  languageId: cpp
+- section: '&#9670;&#160;Value()'
+  display: h2
 - section: Returns
   display: h4
 - parameters:
   - summary: A key vault certificate object.
+- content: The documentation for this class was generated from the following file:inc/azure/keyvault/certificates/certificate_client_operations.hppGenerated by&#160;1.9.7

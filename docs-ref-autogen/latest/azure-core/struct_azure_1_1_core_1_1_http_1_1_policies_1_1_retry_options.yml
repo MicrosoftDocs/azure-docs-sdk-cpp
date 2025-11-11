@@ -1,74 +1,35 @@
 ### YamlMime:Reference
-uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions
+uid: Azure::Core::Http::Policies::RetryOptions
 title: Azure::Core::Http::Policies::RetryOptions Struct Reference
-xrefType: Struct
-xrefName: Azure::Core::Http::Policies::RetryOptions
 components:
 - content: >-
-    <p>The set of options that can be specified to influence how retry attempts are made, and a failure is eligible to be retried.  
-     <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options#details">More...</a></p><p><code>#include &lt;policy.hpp&gt;</code></p>
+    The set of options that can be specified to influence how retry attempts are made, and a failure is eligible to be retried.  
+     <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#details">More...</a><code>#include &lt;<a href="policy_8hpp_source.html">policy.hpp</a>&gt;</code>
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options#a1ae346a844eeeee69972acbdc5bd92e3">MaxRetries</a> = 3
-    summary: The maximum number of retry attempts before giving up.
-    returnType: int32_t&#160;
-  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options#a06ba92fd6194748cabd32bc78390e348">RetryDelay</a> = std::chrono::milliseconds(800)
-    summary: The minimum permissible delay between retry attempts.
-    returnType: std::chrono::milliseconds&#160;
-  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options#a5f90051b3513321e14d257298723b615">MaxRetryDelay</a> = std::chrono::seconds(60)
-    summary: The maximum permissible delay between retry attempts.
-    returnType: std::chrono::milliseconds&#160;
-  - declaration: <a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options#a88c82f2eeb65eb9b7819e1c55dcf86ae">StatusCodes</a>
-    summary: The HTTP status codes that indicate when an operation should be retried.
-    returnType: std::set&lt; <a href="http__status__code_8hpp#a60337476811e1ccf9ed39ce13f678d9d">HttpStatusCode</a> &gt;&#160;
-- content: <a id="details"></a>
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#a1ae346a844eeeee69972acbdc5bd92e3">MaxRetries</a> = 3
+    summary: The maximum number of retry attempts before giving up.  <br>
+    returnType: int32_t 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#a06ba92fd6194748cabd32bc78390e348">RetryDelay</a> = std::chrono::milliseconds(800)
+    summary: The minimum permissible delay between retry attempts.  <br>
+    returnType: std::chrono::milliseconds 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#a5f90051b3513321e14d257298723b615">MaxRetryDelay</a> = std::chrono::seconds(60)
+    summary: The maximum permissible delay between retry attempts.  <br>
+    returnType: std::chrono::milliseconds 
+  - declaration: <a class="el" href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_retry_options.html#a88c82f2eeb65eb9b7819e1c55dcf86ae">StatusCodes</a>
+    summary: The HTTP status codes that indicate when an operation should be retried.  <br>
+    returnType: std::set< <a class="el" href="http__status__code_8hpp.html#a60337476811e1ccf9ed39ce13f678d9d">HttpStatusCode</a> > 
 - section: Detailed Description
   display: h2
-- section: Note
-  display: h4
-- parameters:
-  - summary: See <a href="https://azure.github.io/azure-sdk/general_azurecore.html#retry-policy">https://azure.github.io/azure-sdk/general_azurecore.html#retry-policy</a>.
 - section: Member Data Documentation
   display: h2
-- content: <a id="a1ae346a844eeeee69972acbdc5bd92e3"></a>
-- section: MaxRetries
-  display: h3
-  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions.MaxRetries
-  xrefType: Member
-  xrefName: Azure::Core::Http::Policies::RetryOptions.MaxRetries
-- declaration: int32_t Azure::Core::Http::Policies::RetryOptions::MaxRetries = 3
-  languageId: cpp
-- content: <a id="a5f90051b3513321e14d257298723b615"></a>
-- section: MaxRetryDelay
-  display: h3
-  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions.MaxRetryDelay
-  xrefType: Member
-  xrefName: Azure::Core::Http::Policies::RetryOptions.MaxRetryDelay
-- declaration: std::chrono::milliseconds Azure::Core::Http::Policies::RetryOptions::MaxRetryDelay = std::chrono::seconds(60)
-  languageId: cpp
-- section: Note
-  display: h4
-- parameters:
-  - summary: See <a href="https://en.cppreference.com/w/cpp/chrono/duration">https://en.cppreference.com/w/cpp/chrono/duration</a>.
-- content: <a id="a06ba92fd6194748cabd32bc78390e348"></a>
-- section: RetryDelay
-  display: h3
-  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions.RetryDelay
-  xrefType: Member
-  xrefName: Azure::Core::Http::Policies::RetryOptions.RetryDelay
-- declaration: std::chrono::milliseconds Azure::Core::Http::Policies::RetryOptions::RetryDelay = std::chrono::milliseconds(800)
-  languageId: cpp
-- section: Note
-  display: h4
-- parameters:
-  - summary: See <a href="https://en.cppreference.com/w/cpp/chrono/duration">https://en.cppreference.com/w/cpp/chrono/duration</a>.
-- content: <a id="a88c82f2eeb65eb9b7819e1c55dcf86ae"></a>
-- section: StatusCodes
-  display: h3
-  uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ARetryOptions.StatusCodes
-  xrefType: Member
-  xrefName: Azure::Core::Http::Policies::RetryOptions.StatusCodes
-- declaration: std::set&lt;HttpStatusCode&gt; Azure::Core::Http::Policies::RetryOptions::StatusCodes
-  languageId: cpp
-- content: Initial value:{HttpStatusCode::RequestTimeout,HttpStatusCode::InternalServerError,HttpStatusCode::BadGateway,HttpStatusCode::ServiceUnavailable,HttpStatusCode::GatewayTimeout,}
+- section: '&#9670;&#160;MaxRetries'
+  display: h2
+- section: '&#9670;&#160;MaxRetryDelay'
+  display: h2
+- section: '&#9670;&#160;RetryDelay'
+  display: h2
+- section: '&#9670;&#160;StatusCodes'
+  display: h2
+- content: Initial value:{HttpStatusCode::RequestTimeout,HttpStatusCode::InternalServerError,HttpStatusCode::BadGateway,HttpStatusCode::ServiceUnavailable,HttpStatusCode::GatewayTimeout,}The documentation for this struct was generated from the following file:inc/azure/core/http/policies/policy.hppGenerated by&#160;1.9.7

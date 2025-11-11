@@ -1,64 +1,38 @@
 ### YamlMime:Reference
-uid: Azure%3A%3ACore%3A%3ACryptography%3A%3AMd5Hash
+uid: Azure::Core::Cryptography::Md5Hash
 title: Azure::Core::Cryptography::Md5Hash Class Reference
-xrefType: Class
-xrefName: Azure::Core::Cryptography::Md5Hash
 components:
 - content: >-
-    <p>Represents the class for the MD5 hash function which maps binary data of an arbitrary length to small binary data of a fixed length.  
-     <a href="class_azure_1_1_core_1_1_cryptography_1_1_md5_hash#details">More...</a></p><p><code>#include &lt;hash.hpp&gt;</code></p><p>This class inherits from:</p>
-- linkList:
-  - name: Azure::Core::Cryptography::Hash
-    href: class_azure_1_1_core_1_1_cryptography_1_1_hash
+    Represents the class for the MD5 hash function which maps binary data of an arbitrary length to small binary data of a fixed length.  
+     <a href="class_azure_1_1_core_1_1_cryptography_1_1_md5_hash.html#details">More...</a><code>#include &lt;<a href="hash_8hpp_source.html">hash.hpp</a>&gt;</code>Inheritance diagram for Azure::Core::Cryptography::Md5Hash:
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_cryptography_1_1_md5_hash#a69388cd5feec924cfbf0bb12c8798cb7">Md5Hash</a> ()
-    summary: Construct a default instance of <a href="class_azure_1_1_core_1_1_cryptography_1_1_md5_hash">Azure::Core::Cryptography::Md5Hash</a>.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_cryptography_1_1_md5_hash#a68d53cb85f27357ab1dbd236b0940b04">~Md5Hash</a> () override
-    summary: Destructs <code>Md5Hash</code>.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_cryptography_1_1_hash#ac3c9cb8298ea1f02b9751d2aeada5e28">Append</a> (const uint8_t *data, size_t length)
-    summary: Used to append partial binary input data to compute the hash in a streaming fashion.
-    returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_cryptography_1_1_hash#aae186272ffc97535f4c289803ea3bed7">Final</a> (const uint8_t *data, size_t length)
-    summary: Computes the hash value of the specified binary input data, including any previously appended.
-    returnType: std::vector&lt; uint8_t &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_cryptography_1_1_hash#aca46d119e62d3e34126adc07a9917414">Final</a> ()
-    summary: Computes the hash value of all the binary input data appended to the instance so far.
-    returnType: std::vector&lt; uint8_t &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_cryptography_1_1_hash#a5d4a624d64e23e0063fd9a3f9bfee3aa">~Hash</a> ()=default
-    summary: Destructs <code>Hash</code>.
-    returnType: virtual&#160;
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_md5_hash.html#a69388cd5feec924cfbf0bb12c8798cb7">Md5Hash</a> ()
+    summary: Construct a default instance of <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_md5_hash.html" title="Represents the class for the MD5 hash function which maps binary data of an arbitrary length to small...">Azure::Core::Cryptography::Md5Hash</a>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_md5_hash.html#a68d53cb85f27357ab1dbd236b0940b04">~Md5Hash</a> () override
+    summary: Destructs <code>Md5Hash</code>.  <br>
+    returnType:  
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#ac3c9cb8298ea1f02b9751d2aeada5e28">Append</a> (const uint8_t *data, size_t length)
+    returnType: void 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#aae186272ffc97535f4c289803ea3bed7">Final</a> (const uint8_t *data, size_t length)
+    returnType: std::vector< uint8_t > 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#aca46d119e62d3e34126adc07a9917414">Final</a> ()
+    returnType: std::vector< uint8_t > 
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#a5d4a624d64e23e0063fd9a3f9bfee3aa">~Hash</a> ()=default
+    returnType: virtual 
 - section: Additional Inherited Members
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_cryptography_1_1_hash#a713b9700af1c65cd6fff998d8e91cfd1">Hash</a> ()=default
-    summary: Constructs a default instance of <code>Hash</code>.
-    returnType: '&#160;'
-- content: <a id="details"></a>
+  - declaration: <a class="el" href="class_azure_1_1_core_1_1_cryptography_1_1_hash.html#a713b9700af1c65cd6fff998d8e91cfd1">Hash</a> ()=default
+    returnType:  
 - section: Detailed Description
   display: h2
-- section: Warning
-  display: h4
-- parameters:
-  - summary: MD5 is a deprecated hashing algorithm and SHOULD NOT be used, unless it is used to implement a specific protocol (See RFC 6151 for more information about the weaknesses of the MD5 hash function). Client implementers should strongly prefer the SHA256, SHA384, and SHA512 hash functions.
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="a69388cd5feec924cfbf0bb12c8798cb7"></a>
-- section: Md5Hash()
-  display: h3
-  uid: Azure%3A%3ACore%3A%3ACryptography%3A%3AMd5Hash.Md5Hash%28%29
-  xrefType: Member
-  xrefName: Azure::Core::Cryptography::Md5Hash.Md5Hash()
-- declaration: Azure::Core::Cryptography::Md5Hash::Md5Hash()
-  languageId: cpp
-- content: <a id="a68d53cb85f27357ab1dbd236b0940b04"></a>
-- section: ~Md5Hash()
-  display: h3
-  uid: Azure%3A%3ACore%3A%3ACryptography%3A%3AMd5Hash.~Md5Hash%28%29
-  xrefType: Member
-  xrefName: Azure::Core::Cryptography::Md5Hash.~Md5Hash()
-- declaration: Azure::Core::Cryptography::Md5Hash::~Md5Hash() override
-  languageId: cpp
+- section: '&#9670;&#160;Md5Hash()'
+  display: h2
+- section: '&#9670;&#160;~Md5Hash()'
+  display: h2
+- content: The documentation for this class was generated from the following file:inc/azure/core/cryptography/hash.hppGenerated by&#160;1.9.7

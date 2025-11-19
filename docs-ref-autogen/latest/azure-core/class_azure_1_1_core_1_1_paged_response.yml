@@ -1,46 +1,49 @@
 ### YamlMime:Reference
-uid: Azure::Core::PagedResponse&lt;
+uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E
 title: Azure::Core::PagedResponse&lt; T &gt; Class Template Reference
+xrefType: Class
+xrefName: Azure::Core::PagedResponse&lt; T &gt;
 components:
 - content: >-
-    The base type and behavior for a paged response.  
-     <a href="class_azure_1_1_core_1_1_paged_response.html#details">More...</a><code>#include &lt;<a href="paged__response_8hpp_source.html">paged_response.hpp</a>&gt;</code>
+    <p>The base type and behavior for a paged response.  
+     <a href="class_azure_1_1_core_1_1_paged_response#details">More...</a></p><p><code>#include &lt;paged_response.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html#afd14ac53847596903a1d6fc5b3e4ff5d">~PagedResponse</a> ()=default
-    summary: Destructs <code>PagedResponse</code>.  <br>
-    returnType: virtual 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html#a141d5d914a9e1e440da4526a0ca20932">HasPage</a> () const
-    summary: Checks if a page exists.  <br>
-    returnType: bool 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html#a4a4acdaf4aed625e4d9bdfece37bfa01">MoveToNextPage</a> (const <a class="el" href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> &context=<a class="el" href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
-    summary: Moves to the next page of the response.  <br>
-    returnType: void 
+  - declaration: <a href="class_azure_1_1_core_1_1_paged_response#afd14ac53847596903a1d6fc5b3e4ff5d">~PagedResponse</a> ()=default
+    summary: Destructs <code>PagedResponse</code>.
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_paged_response#a141d5d914a9e1e440da4526a0ca20932">HasPage</a> () const
+    summary: Checks if a page exists.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_paged_response#a4a4acdaf4aed625e4d9bdfece37bfa01">MoveToNextPage</a> (const <a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
+    summary: Moves to the next page of the response.
+    returnType: void&#160;
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html#a7130db25dd1ab171818b38a29b0c5e25">CurrentPageToken</a>
-    summary: The token used to fetch the current page.  <br>
-    returnType: std::string 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html#a2c30229b5c25fe6d984ae85d92ff38c2">NextPageToken</a>
-    summary: The token for getting the next page.  <br>
-    returnType: <a class="el" href="class_azure_1_1_nullable.html">Azure::Nullable</a>< std::string > 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html#a8f6d994c3784918caac862fd7c64c116">RawResponse</a>
-    summary: The HTTP response returned by the service.  <br>
-    returnType: std::unique_ptr< <a class="el" href="class_azure_1_1_core_1_1_http_1_1_raw_response.html">Azure::Core::Http::RawResponse</a> > 
+  - declaration: <a href="class_azure_1_1_core_1_1_paged_response#a7130db25dd1ab171818b38a29b0c5e25">CurrentPageToken</a>
+    summary: The token used to fetch the current page.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_paged_response#a2c30229b5c25fe6d984ae85d92ff38c2">NextPageToken</a>
+    summary: The token for getting the next page.
+    returnType: <a href="class_azure_1_1_nullable">Azure::Nullable</a>&lt; std::string &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_paged_response#a8f6d994c3784918caac862fd7c64c116">RawResponse</a>
+    summary: The HTTP response returned by the service.
+    returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a> &gt;&#160;
 - section: Protected Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html#a75be341ab9c1e777fd1ecc96f359e4a5">PagedResponse</a> ()=default
-    summary: Constructs a default instance of <code>PagedResponse</code>.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html#ae5fbd2f1d9060b6c714f495105bc7e49">PagedResponse</a> (<a class="el" href="class_azure_1_1_core_1_1_paged_response.html">PagedResponse</a> &&)=default
-    summary: Constructs <code>PagedResponse</code> by moving in another instance.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html#a1318df2afc520592939df8a02548b032">operator=</a> (<a class="el" href="class_azure_1_1_core_1_1_paged_response.html">PagedResponse</a> &&)=default
-    summary: Assigns another instance of <code>PagedResponse</code> by moving it in.  <br>
-    returnType: <a class="el" href="class_azure_1_1_core_1_1_paged_response.html">PagedResponse</a> & 
+  - declaration: <a href="class_azure_1_1_core_1_1_paged_response#a75be341ab9c1e777fd1ecc96f359e4a5">PagedResponse</a> ()=default
+    summary: Constructs a default instance of <code>PagedResponse</code>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_paged_response#ae5fbd2f1d9060b6c714f495105bc7e49">PagedResponse</a> (<a href="class_azure_1_1_core_1_1_paged_response">PagedResponse</a> &amp;&amp;)=default
+    summary: Constructs <code>PagedResponse</code> by moving in another instance.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_paged_response#a1318df2afc520592939df8a02548b032">operator=</a> (<a href="class_azure_1_1_core_1_1_paged_response">PagedResponse</a> &amp;&amp;)=default
+    summary: Assigns another instance of <code>PagedResponse</code> by moving it in.
+    returnType: <a href="class_azure_1_1_core_1_1_paged_response">PagedResponse</a> &amp;&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - content: template&lt;class T&gt;class Azure::Core::PagedResponse&lt; T &gt;
@@ -48,45 +51,116 @@ components:
   display: h4
 - parameters:
   - summary: The template is used for static-inheritance.
+- section: Template Parameters
+  display: h4
+- parameters:
+  - name: T
+    summary: A class type for static-inheritance.
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;PagedResponse() [1/2]'
-  display: h2
+- content: <a id="a75be341ab9c1e777fd1ecc96f359e4a5"></a>
+- section: PagedResponse() [1/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E.PagedResponse%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::PagedResponse< T >.PagedResponse() [1/2]
 - content: template&lt;class T &gt;
-- section: '&#9670;&#160;PagedResponse() [2/2]'
-  display: h2
+- declaration: Azure::Core::PagedResponse&lt; T &gt;::PagedResponse() protected default
+  languageId: cpp
+- content: <a id="ae5fbd2f1d9060b6c714f495105bc7e49"></a>
+- section: PagedResponse() [2/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E.PagedResponse%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::PagedResponse< T >.PagedResponse() [2/2]
 - content: template&lt;class T &gt;
-- section: '&#9670;&#160;~PagedResponse()'
-  display: h2
+- declaration: Azure::Core::PagedResponse&lt; T &gt;::PagedResponse(PagedResponse&lt; T &gt; &amp;&amp;&#160;) protected default
+  languageId: cpp
+- content: <a id="afd14ac53847596903a1d6fc5b3e4ff5d"></a>
+- section: ~PagedResponse()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E.~PagedResponse%28%29
+  xrefType: Member
+  xrefName: Azure::Core::PagedResponse< T >.~PagedResponse()
 - content: template&lt;class T &gt;
+- declaration: virtual Azure::Core::PagedResponse&lt; T &gt;::~PagedResponse() virtual default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;HasPage()'
-  display: h2
+- content: <a id="a141d5d914a9e1e440da4526a0ca20932"></a>
+- section: HasPage()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E.HasPage%28%29
+  xrefType: Member
+  xrefName: Azure::Core::PagedResponse< T >.HasPage()
 - content: template&lt;class T &gt;
+- declaration: bool Azure::Core::PagedResponse&lt; T &gt;::HasPage()const inline
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: Returns false after the last page.
 - section: Returns
   display: h4
 - parameters:
   - summary: <code>true</code> if there are additional pages; otherwise, <code>false</code>.
-- section: '&#9670;&#160;MoveToNextPage()'
-  display: h2
+- content: <a id="a4a4acdaf4aed625e4d9bdfece37bfa01"></a>
+- section: MoveToNextPage()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E.MoveToNextPage%28%29
+  xrefType: Member
+  xrefName: Azure::Core::PagedResponse< T >.MoveToNextPage()
 - content: template&lt;class T &gt;
+- declaration: void Azure::Core::PagedResponse&lt; T &gt;::MoveToNextPage(const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()) inline
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: Calling this method on the last page will set <a href="class_azure_1_1_core_1_1_paged_response#a141d5d914a9e1e440da4526a0ca20932">HasPage()</a> to <code>false</code>.
 - section: Parameters
   display: h4
 - parameters:
   - name: context
     summary: A context to control the request lifetime.
-- section: '&#9670;&#160;operator=()'
-  display: h2
+- content: <a id="a1318df2afc520592939df8a02548b032"></a>
+- section: operator=()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E.operator%3D%28%29
+  xrefType: Member
+  xrefName: Azure::Core::PagedResponse< T >.operator=()
 - content: template&lt;class T &gt;
+- declaration: PagedResponse &amp; Azure::Core::PagedResponse&lt; T &gt;::operator=(PagedResponse&lt; T &gt; &amp;&amp;&#160;) protected default
+  languageId: cpp
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;CurrentPageToken'
-  display: h2
+- content: <a id="a7130db25dd1ab171818b38a29b0c5e25"></a>
+- section: CurrentPageToken
+  display: h3
+  uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E.CurrentPageToken
+  xrefType: Member
+  xrefName: Azure::Core::PagedResponse< T >.CurrentPageToken
 - content: template&lt;class T &gt;
-- section: '&#9670;&#160;NextPageToken'
-  display: h2
+- declaration: std::string Azure::Core::PagedResponse&lt; T &gt;::CurrentPageToken
+  languageId: cpp
+- content: <a id="a2c30229b5c25fe6d984ae85d92ff38c2"></a>
+- section: NextPageToken
+  display: h3
+  uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E.NextPageToken
+  xrefType: Member
+  xrefName: Azure::Core::PagedResponse< T >.NextPageToken
 - content: template&lt;class T &gt;
-- section: '&#9670;&#160;RawResponse'
-  display: h2
-- content: template&lt;class T &gt;The documentation for this class was generated from the following file:inc/azure/core/paged_response.hppGenerated by&#160;1.9.7
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Core::PagedResponse&lt; T &gt;::NextPageToken
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: If there are no more pages, this field becomes an empty string.
+- content: <a id="a8f6d994c3784918caac862fd7c64c116"></a>
+- section: RawResponse
+  display: h3
+  uid: Azure%3A%3ACore%3A%3APagedResponse%3C%20T%20%3E.RawResponse
+  xrefType: Member
+  xrefName: Azure::Core::PagedResponse< T >.RawResponse
+- content: template&lt;class T &gt;
+- declaration: std::unique_ptr&lt;Azure::Core::Http::RawResponse&gt; Azure::Core::PagedResponse&lt; T &gt;::RawResponse
+  languageId: cpp

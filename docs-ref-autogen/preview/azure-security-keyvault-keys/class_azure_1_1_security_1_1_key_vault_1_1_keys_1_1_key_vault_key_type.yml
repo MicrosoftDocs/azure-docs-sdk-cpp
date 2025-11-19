@@ -1,86 +1,148 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::KeyVaultKeyType
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType
 title: Azure::Security::KeyVault::Keys::KeyVaultKeyType Class Reference
+xrefType: Class
+xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType
 components:
 - content: >-
-    The <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key.html">JsonWebKey</a> types.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#details">More...</a><code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>
+    <p>The <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key">JsonWebKey</a> types.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#details">More...</a></p><p><code>#include &lt;key_client_models.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#a3b65d97f1108bcd12f58c294af7c07b7">KeyVaultKeyType</a> (std::string jwt)
-    summary: Construct a new JSON Web Token (JWT) type object.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#ac9f2e31889469a0c3c2f4064e305ff95">KeyVaultKeyType</a> ()=default
-    summary: Construct a default <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html" title="The JsonWebKey types.">KeyVaultKeyType</a> with an empty string.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#a7ebcd533513f0d2d12630b94f6569ec0">operator==</a> (const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> &other) const noexcept
-    summary: Enables using the equal operator for JWT.  <br>
-    returnType: bool 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#aa24c1e4bf3585e39266268d0f59449a0">ToString</a> () const
-    summary: Return the JSON Web Token (JWT) as a string.  <br>
-    returnType: std::string const & 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#a3b65d97f1108bcd12f58c294af7c07b7">KeyVaultKeyType</a> (std::string jwt)
+    summary: Construct a new JSON Web Token (JWT) type object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#ac9f2e31889469a0c3c2f4064e305ff95">KeyVaultKeyType</a> ()=default
+    summary: Construct a default <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a> with an empty string.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#a7ebcd533513f0d2d12630b94f6569ec0">operator==</a> (const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a> &amp;other) const noexcept
+    summary: Enables using the equal operator for JWT.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#aa24c1e4bf3585e39266268d0f59449a0">ToString</a> () const
+    summary: Return the JSON Web Token (JWT) as a string.
+    returnType: std::string const &amp;&#160;
 - section: Static Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#a82ae2da4c8d5acafc2e47c4a1d45c661">Ec</a>
-    summary: An Elliptic Curve Cryptographic (ECC) algorithm.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#a71401f30d75c38fbe98d8f6e665e0010">EcHsm</a>
-    summary: An Elliptic Curve Cryptographic (ECC) algorithm backed by a Hardware Security Module (HSM).  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#a7761da04ba3ee7f40841701627d5ce08">Rsa</a>
-    summary: An RSA cryptographic algorithm.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#a3aedce742ca8d5a2f3e654a07a7f9142">RsaHsm</a>
-    summary: An RSA cryptographic algorithm backed by a Hardware Security Module (HSM).  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#a565cc8a04582d74a05776af2a4adb663">Oct</a>
-    summary: An AES cryptographic algorithm.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html#a61af4c0a7d779e328e4af98911fe8d37">OctHsm</a>
-    summary: An AES cryptographic algorithm backed by a Hardware Security Module (HSM).  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type.html">KeyVaultKeyType</a> 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#a82ae2da4c8d5acafc2e47c4a1d45c661">Ec</a>
+    summary: An Elliptic Curve Cryptographic (ECC) algorithm.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#a71401f30d75c38fbe98d8f6e665e0010">EcHsm</a>
+    summary: An Elliptic Curve Cryptographic (ECC) algorithm backed by a Hardware Security Module (HSM).
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#a7761da04ba3ee7f40841701627d5ce08">Rsa</a>
+    summary: An RSA cryptographic algorithm.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#a3aedce742ca8d5a2f3e654a07a7f9142">RsaHsm</a>
+    summary: An RSA cryptographic algorithm backed by a Hardware Security Module (HSM).
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#a565cc8a04582d74a05776af2a4adb663">Oct</a>
+    summary: An AES cryptographic algorithm.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type#a61af4c0a7d779e328e4af98911fe8d37">OctHsm</a>
+    summary: An AES cryptographic algorithm backed by a Hardware Security Module (HSM).
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a>&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;KeyVaultKeyType() [1/2]'
-  display: h2
+- content: <a id="a3b65d97f1108bcd12f58c294af7c07b7"></a>
+- section: KeyVaultKeyType() [1/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.KeyVaultKeyType%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.KeyVaultKeyType() [1/2]
+- declaration: Azure::Security::KeyVault::Keys::KeyVaultKeyType::KeyVaultKeyType(std::string&#160;jwt) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: jwt
     summary: The JWT as a string.
-- section: '&#9670;&#160;KeyVaultKeyType() [2/2]'
-  display: h2
+- content: <a id="ac9f2e31889469a0c3c2f4064e305ff95"></a>
+- section: KeyVaultKeyType() [2/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.KeyVaultKeyType%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.KeyVaultKeyType() [2/2]
+- declaration: Azure::Security::KeyVault::Keys::KeyVaultKeyType::KeyVaultKeyType() default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;operator==()'
-  display: h2
+- content: <a id="a7ebcd533513f0d2d12630b94f6569ec0"></a>
+- section: operator==()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.operator%3D%3D%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.operator==()
+- declaration: bool Azure::Security::KeyVault::Keys::KeyVaultKeyType::operator==(const KeyVaultKeyType &amp;&#160;other)const inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: A JWT to be compared.
-- section: '&#9670;&#160;ToString()'
-  display: h2
+- content: <a id="aa24c1e4bf3585e39266268d0f59449a0"></a>
+- section: ToString()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.ToString%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.ToString()
+- declaration: std::string const  &amp; Azure::Security::KeyVault::Keys::KeyVaultKeyType::ToString()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The JWT represented as string.
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;Ec'
-  display: h2
-- section: '&#9670;&#160;EcHsm'
-  display: h2
-- section: '&#9670;&#160;Oct'
-  display: h2
-- section: '&#9670;&#160;OctHsm'
-  display: h2
-- section: '&#9670;&#160;Rsa'
-  display: h2
-- section: '&#9670;&#160;RsaHsm'
-  display: h2
-- content: The documentation for this class was generated from the following file:inc/azure/keyvault/keys/key_client_models.hppGenerated by&#160;1.9.7
+- content: <a id="a82ae2da4c8d5acafc2e47c4a1d45c661"></a>
+- section: Ec
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.Ec
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.Ec
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::Ec static
+  languageId: cpp
+- content: <a id="a71401f30d75c38fbe98d8f6e665e0010"></a>
+- section: EcHsm
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.EcHsm
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.EcHsm
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::EcHsm static
+  languageId: cpp
+- content: <a id="a565cc8a04582d74a05776af2a4adb663"></a>
+- section: Oct
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.Oct
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.Oct
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::Oct static
+  languageId: cpp
+- content: <a id="a61af4c0a7d779e328e4af98911fe8d37"></a>
+- section: OctHsm
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.OctHsm
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.OctHsm
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::OctHsm static
+  languageId: cpp
+- content: <a id="a7761da04ba3ee7f40841701627d5ce08"></a>
+- section: Rsa
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.Rsa
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.Rsa
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::Rsa static
+  languageId: cpp
+- content: <a id="a3aedce742ca8d5a2f3e654a07a7f9142"></a>
+- section: RsaHsm
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyVaultKeyType.RsaHsm
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyVaultKeyType.RsaHsm
+- declaration: AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const KeyVaultKeyType Azure::Security::KeyVault::Keys::KeyVaultKeyType::RsaHsm static
+  languageId: cpp

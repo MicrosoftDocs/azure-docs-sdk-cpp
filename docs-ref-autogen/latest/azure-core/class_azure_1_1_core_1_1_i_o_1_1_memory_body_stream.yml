@@ -1,51 +1,80 @@
 ### YamlMime:Reference
-uid: Azure::Core::IO::MemoryBodyStream
+uid: Azure%3A%3ACore%3A%3AIO%3A%3AMemoryBodyStream
 title: Azure::Core::IO::MemoryBodyStream Class Reference
+xrefType: Class
+xrefName: Azure::Core::IO::MemoryBodyStream
 components:
-- content: '<a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html">Azure::Core::IO::BodyStream</a> providing data from an initialized memory buffer.<code>#include &lt;<a href="body__stream_8hpp_source.html">body_stream.hpp</a>&gt;</code>Inheritance diagram for Azure::Core::IO::MemoryBodyStream:'
+- content: >-
+    <p><a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> providing data from an initialized memory buffer.  
+
+    </p><p><code>#include &lt;body_stream.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::IO::BodyStream
+    href: class_azure_1_1_core_1_1_i_o_1_1_body_stream
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <b>MemoryBodyStream</b> (std::vector< uint8_t > const &&)=delete
+  - declaration: MemoryBodyStream (std::vector&lt; uint8_t &gt; const &amp;&amp;)=delete
     returnType: >-
-      <a id="a4dd2752f1e167883adaeefb421a013a7" name="a4dd2752f1e167883adaeefb421a013a7"></a>
+      <a id="a4dd2752f1e167883adaeefb421a013a7"></a>
 
-       
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#a291590d5e3e38886515c8e03931eccc5">MemoryBodyStream</a> (std::vector< uint8_t > const &buffer)
-    summary: Construct using vector of bytes.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#a98f048b5c0e5b8daa7bc9aca396f00f8">MemoryBodyStream</a> (const uint8_t *data, size_t length)
-    summary: Construct using buffer pointer and its size.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#aea97ce29a09c0b32a518f7195a9ea8bc">Length</a> () const override
-    summary: Get the length of the data.  <br>
-    returnType: int64_t 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream.html#acf45328737df39d5ad836644be607f41">Rewind</a> () override
-    summary: Rewind seeks the current stream to the start of the buffer.  <br>
-    returnType: void 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a54e16528af689c00f5190858fff85e92">~BodyStream</a> ()=default
-    returnType: virtual 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Length</a> () const =0
-    returnType: virtual int64_t 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a52c2ce02e8a7dec1f55276f664c7c8b6">Rewind</a> ()
-    returnType: virtual void 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ab7c962004d984d3bd1d32f33e6aa485d">Read</a> (uint8_t *buffer, size_t count, <a class="el" href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &context=<a class="el" href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
-    returnType: size_t 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#ac02611cf3f72c181dcf393c571df6226">ReadToCount</a> (uint8_t *buffer, size_t count, <a class="el" href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &context=<a class="el" href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
-    returnType: size_t 
-  - declaration: <a class="el" href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a6d2138790b0c79e24f7fbc0f776bb069">ReadToEnd</a> (<a class="el" href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a> const &context=<a class="el" href="class_azure_1_1_core_1_1_context.html">Azure::Core::Context</a>())
-    returnType: std::vector< uint8_t > 
+      &#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream#a291590d5e3e38886515c8e03931eccc5">MemoryBodyStream</a> (std::vector&lt; uint8_t &gt; const &amp;buffer)
+    summary: Construct using vector of bytes.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream#a98f048b5c0e5b8daa7bc9aca396f00f8">MemoryBodyStream</a> (const uint8_t *data, size_t length)
+    summary: Construct using buffer pointer and its size.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream#aea97ce29a09c0b32a518f7195a9ea8bc">Length</a> () const override
+    summary: Get the length of the data.
+    returnType: int64_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_memory_body_stream#acf45328737df39d5ad836644be607f41">Rewind</a> () override
+    summary: Rewind seeks the current stream to the start of the buffer.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a54e16528af689c00f5190858fff85e92">~BodyStream</a> ()=default
+    summary: Destructs <code>BodyStream</code>.
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a2e73f394ca060cf94146e03d5cf46d74">Length</a> () const =0
+    summary: Get the length of the data.
+    returnType: virtual int64_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a52c2ce02e8a7dec1f55276f664c7c8b6">Rewind</a> ()
+    summary: Resets the stream back to the beginning (for retries).
+    returnType: virtual void&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#ab7c962004d984d3bd1d32f33e6aa485d">Read</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
+    summary: Read portion of data into a buffer.
+    returnType: size_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#ac02611cf3f72c181dcf393c571df6226">ReadToCount</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
+    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> into a buffer until the buffer is filled, or until the stream is read to end.
+    returnType: size_t&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a6d2138790b0c79e24f7fbc0f776bb069">ReadToEnd</a> (<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
+    summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> until the stream is read to end, allocating memory for the entirety of contents.
+    returnType: std::vector&lt; uint8_t &gt;&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;MemoryBodyStream() [1/2]'
-  display: h2
+- content: <a id="a291590d5e3e38886515c8e03931eccc5"></a>
+- section: MemoryBodyStream() [1/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AIO%3A%3AMemoryBodyStream.MemoryBodyStream%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::IO::MemoryBodyStream.MemoryBodyStream() [1/2]
+- declaration: Azure::Core::IO::MemoryBodyStream::MemoryBodyStream(std::vector&lt; uint8_t &gt; const &amp;&#160;buffer) inline
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: buffer
     summary: Vector of bytes with the contents to provide the data from to the readers.
-- section: '&#9670;&#160;MemoryBodyStream() [2/2]'
-  display: h2
+- content: <a id="a98f048b5c0e5b8daa7bc9aca396f00f8"></a>
+- section: MemoryBodyStream() [2/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AIO%3A%3AMemoryBodyStream.MemoryBodyStream%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::IO::MemoryBodyStream.MemoryBodyStream() [2/2]
+- declaration: >-
+    Azure::Core::IO::MemoryBodyStream::MemoryBodyStream(const uint8_t *&#160;data,  
+                                                        size_t&#160;         length&#160;
+                                                       ) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
@@ -55,16 +84,24 @@ components:
     summary: Size of the buffer.
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;Length()'
-  display: h2
+- content: <a id="aea97ce29a09c0b32a518f7195a9ea8bc"></a>
+- section: Length()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AIO%3A%3AMemoryBodyStream.Length%28%29
+  xrefType: Member
+  xrefName: Azure::Core::IO::MemoryBodyStream.Length()
+- declaration: int64_t Azure::Core::IO::MemoryBodyStream::Length()const inline override virtual
+  languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Used with the HTTP <code>Content-Length</code> header.
-- content: Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.
-- section: '&#9670;&#160;Rewind()'
-  display: h2
-- content: >-
-    Reimplemented from <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream.html#a52c2ce02e8a7dec1f55276f664c7c8b6">Azure::Core::IO::BodyStream</a>.The documentation for this class was generated from the following files:inc/azure/core/io/body_stream.hpp
-
-    src/io/body_stream.cppGenerated by&#160;1.9.7
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.</p><a id="acf45328737df39d5ad836644be607f41"></a>
+- section: Rewind()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AIO%3A%3AMemoryBodyStream.Rewind%28%29
+  xrefType: Member
+  xrefName: Azure::Core::IO::MemoryBodyStream.Rewind()
+- declaration: void Azure::Core::IO::MemoryBodyStream::Rewind() inline override virtual
+  languageId: cpp
+- content: <p>Reimplemented from <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a52c2ce02e8a7dec1f55276f664c7c8b6">Azure::Core::IO::BodyStream</a>.</p>

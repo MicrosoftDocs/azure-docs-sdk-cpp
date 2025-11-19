@@ -1,99 +1,170 @@
 ### YamlMime:Reference
-uid: Azure::Security::KeyVault::Keys::KeyOperation
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation
 title: Azure::Security::KeyVault::Keys::KeyOperation Class Reference
+xrefType: Class
+xrefName: Azure::Security::KeyVault::Keys::KeyOperation
 components:
 - content: >-
-    An operation that can be performed with the key.  
-     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#details">More...</a><code>#include &lt;<a href="key__client__models_8hpp_source.html">key_client_models.hpp</a>&gt;</code>
+    <p>An operation that can be performed with the key.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#details">More...</a></p><p><code>#include &lt;key_client_models.hpp&gt;</code></p>
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#a3ad1ce48de6845379d8b947f83c1744c">KeyOperation</a> (std::string operation)
-    summary: Construct a new Key Operation object.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#a0d0c916c53acacef9850e2fdb02ac8b2">KeyOperation</a> ()=default
-    summary: Construct a default Key operation.  <br>
-    returnType:  
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#aba24fccc790cd4f26c990e0b7460e94e">operator==</a> (const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> &other) const noexcept
-    summary: Enables using the equal operator for key operations.  <br>
-    returnType: bool 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#abc4d4c48a5f38a9cf195005a07cdcf77">ToString</a> () const
-    summary: Returns the fully qualified type name of this instance.  <br>
-    returnType: std::string const & 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#a3ad1ce48de6845379d8b947f83c1744c">KeyOperation</a> (std::string operation)
+    summary: Construct a new Key Operation object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#a0d0c916c53acacef9850e2fdb02ac8b2">KeyOperation</a> ()=default
+    summary: Construct a default Key operation.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#aba24fccc790cd4f26c990e0b7460e94e">operator==</a> (const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a> &amp;other) const noexcept
+    summary: Enables using the equal operator for key operations.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#abc4d4c48a5f38a9cf195005a07cdcf77">ToString</a> () const
+    summary: Returns the fully qualified type name of this instance.
+    returnType: std::string const &amp;&#160;
 - section: Static Public Attributes
   display: h2
 - apiList:
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#ad437a9a1e658320a26304030eadad2ef">Encrypt</a>
-    summary: The key can be used to encrypt with the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#ad437a9a1e658320a26304030eadad2ef" title="The key can be used to encrypt with the Encrypt method.">Encrypt</a> method.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#a708ff85b5201e7eb6883306564463d6e">Decrypt</a>
-    summary: The key can be used to decrypt with the <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#a708ff85b5201e7eb6883306564463d6e" title="The key can be used to decrypt with the Decrypt method.">Decrypt</a> method.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#a058233e8b9900ef2b3ed1979fedbd4ac">Sign</a>
-    summary: The key can be used to sign with the Sign method.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#aeffe0d7f3497c8f1b74fecf1ff174d4d">Verify</a>
-    summary: The key can be used to verify with the Verify method.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#a0f641450e6e7f4b3628df517090d59ab">WrapKey</a>
-    summary: The key can be used to wrap another key with the WrapKey method.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#a717666efc59c0d21729bdd9c20ec455a">UnwrapKey</a>
-    summary: The key can be used to unwrap another key with the UnwrapKey method.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#a3e4996e3499928b6d2adf7866ca563c5">Import</a>
-    summary: The key can be imported during creation using the ImportKey method.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> 
-  - declaration: <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html#a41e38c4d9ce63b74eaac3c26b6afef32">Export</a>
-    summary: The key can be exported during creation using the ImportKey method.  <br>
-    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a class="el" href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation.html">KeyOperation</a> 
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#ad437a9a1e658320a26304030eadad2ef">Encrypt</a>
+    summary: The key can be used to encrypt with the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#ad437a9a1e658320a26304030eadad2ef">Encrypt</a> method.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#a708ff85b5201e7eb6883306564463d6e">Decrypt</a>
+    summary: The key can be used to decrypt with the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#a708ff85b5201e7eb6883306564463d6e">Decrypt</a> method.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#a058233e8b9900ef2b3ed1979fedbd4ac">Sign</a>
+    summary: The key can be used to sign with the Sign method.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#aeffe0d7f3497c8f1b74fecf1ff174d4d">Verify</a>
+    summary: The key can be used to verify with the Verify method.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#a0f641450e6e7f4b3628df517090d59ab">WrapKey</a>
+    summary: The key can be used to wrap another key with the WrapKey method.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#a717666efc59c0d21729bdd9c20ec455a">UnwrapKey</a>
+    summary: The key can be used to unwrap another key with the UnwrapKey method.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#a3e4996e3499928b6d2adf7866ca563c5">Import</a>
+    summary: The key can be imported during creation using the ImportKey method.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation#a41e38c4d9ce63b74eaac3c26b6afef32">Export</a>
+    summary: The key can be exported during creation using the ImportKey method.
+    returnType: static AZ_SECURITY_KEYVAULT_KEYS_DLLEXPORT const <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a>&#160;
+- content: <a id="details"></a>
 - section: Detailed Description
   display: h2
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- section: '&#9670;&#160;KeyOperation() [1/2]'
-  display: h2
+- content: <a id="a3ad1ce48de6845379d8b947f83c1744c"></a>
+- section: KeyOperation() [1/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.KeyOperation%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.KeyOperation() [1/2]
+- declaration: Azure::Security::KeyVault::Keys::KeyOperation::KeyOperation(std::string&#160;operation) inline explicit
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: operation
     summary: The operation for the key as string.
-- section: '&#9670;&#160;KeyOperation() [2/2]'
-  display: h2
+- content: <a id="a0d0c916c53acacef9850e2fdb02ac8b2"></a>
+- section: KeyOperation() [2/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.KeyOperation%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.KeyOperation() [2/2]
+- declaration: Azure::Security::KeyVault::Keys::KeyOperation::KeyOperation() default
+  languageId: cpp
 - section: Member Function Documentation
   display: h2
-- section: '&#9670;&#160;operator==()'
-  display: h2
+- content: <a id="aba24fccc790cd4f26c990e0b7460e94e"></a>
+- section: operator==()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.operator%3D%3D%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.operator==()
+- declaration: bool Azure::Security::KeyVault::Keys::KeyOperation::operator==(const KeyOperation &amp;&#160;other)const inline noexcept
+  languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: other
     summary: A key operation to be compared.
-- section: '&#9670;&#160;ToString()'
-  display: h2
+- content: <a id="abc4d4c48a5f38a9cf195005a07cdcf77"></a>
+- section: ToString()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.ToString%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.ToString()
+- declaration: std::string const  &amp; Azure::Security::KeyVault::Keys::KeyOperation::ToString()const inline
+  languageId: cpp
 - section: Returns
   display: h4
 - parameters:
   - summary: The operation represented as string.
 - section: Member Data Documentation
   display: h2
-- section: '&#9670;&#160;Decrypt'
-  display: h2
-- section: '&#9670;&#160;Encrypt'
-  display: h2
-- section: '&#9670;&#160;Export'
-  display: h2
-- section: '&#9670;&#160;Import'
-  display: h2
-- section: '&#9670;&#160;Sign'
-  display: h2
-- section: '&#9670;&#160;UnwrapKey'
-  display: h2
-- section: '&#9670;&#160;Verify'
-  display: h2
-- section: '&#9670;&#160;WrapKey'
-  display: h2
-- content: >-
-    The documentation for this class was generated from the following files:inc/azure/keyvault/keys/key_client_models.hpp
-
-    src/key_operation.cppGenerated by&#160;1.9.7
+- content: <a id="a708ff85b5201e7eb6883306564463d6e"></a>
+- section: Decrypt
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.Decrypt
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.Decrypt
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Decrypt static
+  languageId: cpp
+- content: <a id="ad437a9a1e658320a26304030eadad2ef"></a>
+- section: Encrypt
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.Encrypt
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.Encrypt
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Encrypt static
+  languageId: cpp
+- content: <a id="a41e38c4d9ce63b74eaac3c26b6afef32"></a>
+- section: Export
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.Export
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.Export
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Export static
+  languageId: cpp
+- content: <a id="a3e4996e3499928b6d2adf7866ca563c5"></a>
+- section: Import
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.Import
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.Import
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Import static
+  languageId: cpp
+- content: <a id="a058233e8b9900ef2b3ed1979fedbd4ac"></a>
+- section: Sign
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.Sign
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.Sign
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Sign static
+  languageId: cpp
+- content: <a id="a717666efc59c0d21729bdd9c20ec455a"></a>
+- section: UnwrapKey
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.UnwrapKey
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.UnwrapKey
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::UnwrapKey static
+  languageId: cpp
+- content: <a id="aeffe0d7f3497c8f1b74fecf1ff174d4d"></a>
+- section: Verify
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.Verify
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.Verify
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::Verify static
+  languageId: cpp
+- content: <a id="a0f641450e6e7f4b3628df517090d59ab"></a>
+- section: WrapKey
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AKeyOperation.WrapKey
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::KeyOperation.WrapKey
+- declaration: const KeyOperation Azure::Security::KeyVault::Keys::KeyOperation::WrapKey static
+  languageId: cpp

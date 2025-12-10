@@ -1,0 +1,26 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ALeaseBlobAccessConditions
+title: Azure::Storage::Blobs::LeaseBlobAccessConditions Struct Reference
+xrefType: Struct
+xrefName: Azure::Storage::Blobs::LeaseBlobAccessConditions
+components:
+- content: >-
+    <p>Specifies access conditions for blob lease operations.  
+
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::MatchConditions
+    href: ''
+  - name: Azure::ModifiedConditions
+    href: ''
+  - name: Azure::Storage::Blobs::TagAccessConditions
+    href: struct_azure_1_1_storage_1_1_blobs_1_1_tag_access_conditions
+- section: Additional Inherited Members
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_tag_access_conditions#a25058f85ab238c355e0b3f7575d7b201">~TagAccessConditions</a> ()=default
+    summary: Destructor.
+    returnType: virtual&#160;
+  - declaration: TagConditions
+    summary: Optional SQL statement to apply to the tags of the Blob. Refer to <a href="https://docs.microsoft.com/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-predicate-syntax">https://docs.microsoft.com/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-predicate-syntax</a> for the format of SQL statements.
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;

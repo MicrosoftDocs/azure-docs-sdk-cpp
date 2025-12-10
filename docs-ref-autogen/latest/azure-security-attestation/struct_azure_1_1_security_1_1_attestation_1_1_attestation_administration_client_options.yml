@@ -1,0 +1,49 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClientOptions
+title: Azure::Security::Attestation::AttestationAdministrationClientOptions Struct Reference
+xrefType: Struct
+xrefName: Azure::Security::Attestation::AttestationAdministrationClientOptions
+components:
+- content: >-
+    <p>Define the options to create an Attestation Administration client.  
+
+    </p><p><code>#include &lt;attestation_client_options.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::_internal::ClientOptions
+    href: ''
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client_options#a9b99e00f01e82f6e2cc0654ab8873938">AttestationAdministrationClientOptions</a> (<a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options">AttestationTokenValidationOptions</a> const &amp;tokenValidationOptions={})
+    summary: Construct a new Attestation Client Options object.  <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client_options#a9b99e00f01e82f6e2cc0654ab8873938">More...</a>
+    returnType: '&#160;'
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client_options#ad6859c5bfe0b76d29a12da6a7b78d47c">ApiVersion</a> {&quot;2020-10-01&quot;}
+    summary: Version to use when communicating with the attestation service.
+    returnType: >-
+      <a id="ad6859c5bfe0b76d29a12da6a7b78d47c"></a>
+
+      std::string&#160;
+  - declaration: <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_administration_client_options#adec1eeb6da7732024e7f5f21fe8f31ca">TokenValidationOptions</a>
+    summary: Options sent when validating tokens received by the attestation service.
+    returnType: >-
+      <a id="adec1eeb6da7732024e7f5f21fe8f31ca"></a>
+
+      <a href="struct_azure_1_1_security_1_1_attestation_1_1_attestation_token_validation_options">AttestationTokenValidationOptions</a>&#160;
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a9b99e00f01e82f6e2cc0654ab8873938"></a>
+- section: AttestationAdministrationClientOptions()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AAttestation%3A%3AAttestationAdministrationClientOptions.AttestationAdministrationClientOptions%28%29
+  xrefType: Member
+  xrefName: Azure::Security::Attestation::AttestationAdministrationClientOptions.AttestationAdministrationClientOptions()
+- declaration: Azure::Security::Attestation::AttestationAdministrationClientOptions::AttestationAdministrationClientOptions(AttestationTokenValidationOptions const &amp;&#160;tokenValidationOptions = {}) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tokenValidationOptions
+    summary: Options applied when validating attestation tokens returned by the service.

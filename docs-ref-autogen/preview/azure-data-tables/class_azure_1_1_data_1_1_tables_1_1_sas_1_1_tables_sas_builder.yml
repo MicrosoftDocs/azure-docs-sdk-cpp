@@ -1,0 +1,150 @@
+### YamlMime:Reference
+uid: Azure%3A%3AData%3A%3ATables%3A%3ASas%3A%3ATablesSasBuilder
+title: Azure::Data::Tables::Sas::TablesSasBuilder Class Reference
+xrefType: Class
+xrefName: Azure::Data::Tables::Sas::TablesSasBuilder
+components:
+- content: >-
+    <p>TableSasBuilder is used to generate a Shared Access Signature (SAS) for an Azure Storage Tables.  
+
+    </p><p><code>#include &lt;tables_sas_builder.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_tables_sas_builder#a22192663606d5ffecb3048eaa351bc8f">SetPermissions</a> (TablesSasPermissions permissions)
+    summary: Sets the permissions for the table SAS.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_tables_sas_builder#a3c896177cb478094f35806e47efdc248">SetPermissions</a> (std::string rawPermissions)
+    summary: Sets the permissions for the SAS using a raw permissions string.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_tables_sas_builder#a23f64387d8ced4b14105ad1e6e71c2e9">GenerateSasToken</a> (const <a href="class_azure_1_1_data_1_1_tables_1_1_credentials_1_1_named_key_credential">Azure::Data::Tables::Credentials::NamedKeyCredential</a> &amp;credential)
+    summary: Uses the NamedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_sas_1_1_tables_sas_builder#a24117af397059f317382c8fc1c1d0b12">GetCanonicalName</a> (const <a href="class_azure_1_1_data_1_1_tables_1_1_credentials_1_1_named_key_credential">Azure::Data::Tables::Credentials::NamedKeyCredential</a> &amp;credential) const
+    summary: Gets the canonical path for the shared access signature.
+    returnType: std::string&#160;
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: Protocol
+    summary: The optional signed protocol field specifies the protocol permitted for a request made with the SAS.
+    returnType: >-
+      <a id="aa4636c7e2e6c7bdf6c2ae76084b6ddad"></a>
+
+      SasProtocol&#160;
+  - declaration: StartsOn
+    summary: Optionally specify the time at which the shared access signature becomes valid. This timestamp will be truncated to second.
+    returnType: >-
+      <a id="a4d1d133bdeabcc4d3b9eed12af512a2f"></a>
+
+      Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: ExpiresOn
+    summary: The time at which the shared access signature becomes invalid. This field must be omitted if it has been specified in an associated stored access policy. This timestamp will be truncated to second.
+    returnType: >-
+      <a id="a4536315b824b2d30e31dd6b7a7ee0f6f"></a>
+
+      Azure::DateTime&#160;
+  - declaration: IPRange
+    summary: Specifies an IP address or a range of IP addresses from which to accept requests. If the IP address from which the request originates does not match the IP address or address range specified on the SAS token, the request is not authenticated. When specifying a range of IP addresses, note that the range is inclusive.
+    returnType: >-
+      <a id="afa9b46289b6f9760295858c0be6e0004"></a>
+
+      Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: Identifier
+    summary: An optional unique value up to 64 characters in length that correlates to an access policy specified for the table.
+    returnType: >-
+      <a id="ab7bc464fab8db15a44794cffcc0430ca"></a>
+
+      std::string&#160;
+  - declaration: TableName
+    summary: The name of the table being made accessible.
+    returnType: >-
+      <a id="ac11a7c9d0ecc10df80753abc136fdec4"></a>
+
+      std::string&#160;
+  - declaration: PartitionKeyStart
+    summary: The optional start of the partition key values range being made available.
+    returnType: >-
+      <a id="a780a977fb65a9547e32769de2ac8a2b2"></a>
+
+      std::string&#160;
+  - declaration: PartitionKeyEnd
+    summary: The optional end of the partition key values range being made available.
+    returnType: >-
+      <a id="a16069fdcda17d8bafbae460190748769"></a>
+
+      std::string&#160;
+  - declaration: RowKeyStart
+    summary: The optional start of the row key values range being made available.
+    returnType: >-
+      <a id="a7794c75560e9a89a60ada5943a5ddad9"></a>
+
+      std::string&#160;
+  - declaration: RowKeyEnd
+    summary: The optional end of the partition key values range being made available.
+    returnType: >-
+      <a id="aefaa7937fcc4367aeee469ec9a61996d"></a>
+
+      std::string&#160;
+- section: Member Function Documentation
+  display: h2
+- content: <a id="a23f64387d8ced4b14105ad1e6e71c2e9"></a>
+- section: GenerateSasToken()
+  display: h3
+  uid: Azure%3A%3AData%3A%3ATables%3A%3ASas%3A%3ATablesSasBuilder.GenerateSasToken%28%29
+  xrefType: Member
+  xrefName: Azure::Data::Tables::Sas::TablesSasBuilder.GenerateSasToken()
+- declaration: std::string Azure::Data::Tables::Sas::TablesSasBuilder::GenerateSasToken(const Azure::Data::Tables::Credentials::NamedKeyCredential &amp;&#160;credential)
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: credential
+    summary: The named key credential.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The SAS query parameters used for authenticating requests.
+- content: <a id="a24117af397059f317382c8fc1c1d0b12"></a>
+- section: GetCanonicalName()
+  display: h3
+  uid: Azure%3A%3AData%3A%3ATables%3A%3ASas%3A%3ATablesSasBuilder.GetCanonicalName%28%29
+  xrefType: Member
+  xrefName: Azure::Data::Tables::Sas::TablesSasBuilder.GetCanonicalName()
+- declaration: std::string Azure::Data::Tables::Sas::TablesSasBuilder::GetCanonicalName(const Azure::Data::Tables::Credentials::NamedKeyCredential &amp;&#160;credential)const inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: credential
+    summary: The named key credential.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Canonical path.
+- content: <a id="a3c896177cb478094f35806e47efdc248"></a>
+- section: SetPermissions() [1/2]
+  display: h3
+  uid: Azure%3A%3AData%3A%3ATables%3A%3ASas%3A%3ATablesSasBuilder.SetPermissions%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Data::Tables::Sas::TablesSasBuilder.SetPermissions() [1/2]
+- declaration: void Azure::Data::Tables::Sas::TablesSasBuilder::SetPermissions(std::string&#160;rawPermissions) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: rawPermissions
+    summary: Raw permissions string for the SAS.
+- content: <a id="a22192663606d5ffecb3048eaa351bc8f"></a>
+- section: SetPermissions() [2/2]
+  display: h3
+  uid: Azure%3A%3AData%3A%3ATables%3A%3ASas%3A%3ATablesSasBuilder.SetPermissions%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Data::Tables::Sas::TablesSasBuilder.SetPermissions() [2/2]
+- declaration: void Azure::Data::Tables::Sas::TablesSasBuilder::SetPermissions(TablesSasPermissions&#160;permissions)
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: permissions
+    summary: The allowed permissions.

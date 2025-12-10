@@ -1,0 +1,465 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient
+title: Azure::Storage::Queues::QueueClient Class Reference
+xrefType: Class
+xrefName: Azure::Storage::Queues::QueueClient
+components:
+- content: <p><code>#include &lt;queue_client.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aa2c824fb88d5c85726111775d777da55">QueueClient</a> (const std::string &amp;queueUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
+    summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aa88cf353658db7f550dc86f7827b8a74">QueueClient</a> (const std::string &amp;queueUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
+    summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#ad45551df27cb30f052a09828d4be4f0c">QueueClient</a> (const std::string &amp;queueUrl, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
+    summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a57de3910c595c16e66450e9ff90ab253">GetUrl</a> () const
+    summary: Gets the queue's primary URL endpoint.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a6d3decc59308b637fedb6d32a67e2e32">Create</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_create_queue_options">CreateQueueOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_create_queue_options">CreateQueueOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Creates a new queue under the specified account. If the queue with the same name already exists, it is not changed.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_create_queue_result">Models::CreateQueueResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#ae1772368ba55042d1950f769678091ce">Delete</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_delete_queue_options">DeleteQueueOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_delete_queue_options">DeleteQueueOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Marks the specified queue for deletion if it exists.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_delete_queue_result">Models::DeleteQueueResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#ac3c54f208257cc9d3205abaa6ace2555">GetProperties</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_get_queue_properties_options">GetQueuePropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_get_queue_properties_options">GetQueuePropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns all user-defined metadata and system properties for the specified queue.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_properties">Models::QueueProperties</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a81656ea20df206d8f05374b47d4fe149">SetMetadata</a> (Metadata metadata, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_set_queue_metadata_options">SetQueueMetadataOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_set_queue_metadata_options">SetQueueMetadataOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets one or more user-defined name-value pairs for the specified queue.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_set_queue_metadata_result">Models::SetQueueMetadataResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#af38d6b536b58c07f725c18fa85909faa">GetAccessPolicy</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_get_queue_access_policy_options">GetQueueAccessPolicyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_get_queue_access_policy_options">GetQueueAccessPolicyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Gets details about any stored access policies specified on the queue that may be used with SAS.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_access_policy">Models::QueueAccessPolicy</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a20e9754beff1cd5f518dfac7bdaebf83">SetAccessPolicy</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_access_policy">Models::QueueAccessPolicy</a> &amp;accessPolicy, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_set_queue_access_policy_options">SetQueueAccessPolicyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_set_queue_access_policy_options">SetQueueAccessPolicyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets stored access policies for the queue that may be used with SAS.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_set_queue_access_policy_result">Models::SetQueueAccessPolicyResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aeff3f445d6b3c96eeaadcd724bd996d2">EnqueueMessage</a> (std::string messageText, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_enqueue_message_options">EnqueueMessageOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_enqueue_message_options">EnqueueMessageOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Adds a new message to the back of a queue. The visibility timeout specifies how long the message should be invisible to dequeue and peek operations.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_enqueue_message_result">Models::EnqueueMessageResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aba33b63bcd1cf04ac0024159eaf43a0e">ReceiveMessages</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_receive_messages_options">ReceiveMessagesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_receive_messages_options">ReceiveMessagesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Receives one or more messages from the front of the queue. Returns empty collection if there's not message available.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_received_messages">Models::ReceivedMessages</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#ad71d263442c4fd7d5a534cc13dd28327">PeekMessages</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_peek_messages_options">PeekMessagesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_peek_messages_options">PeekMessagesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Retrieves one or more messages from the front of the queue but does not alter the visibility of the message. Returns empty collection if there's not message available.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_peeked_messages">Models::PeekedMessages</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a5bd1b5399d41ba0873728e5b3570efce">UpdateMessage</a> (const std::string &amp;messageId, const std::string &amp;popReceipt, std::chrono::seconds visibilityTimeout, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_update_message_options">UpdateMessageOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_update_message_options">UpdateMessageOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Changes a message's visibility timeout and/or contents.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_update_message_result">Models::UpdateMessageResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a007f0648915ea76c995e08627056ba67">DeleteMessage</a> (const std::string &amp;messageId, const std::string &amp;popReceipt, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_delete_message_options">DeleteMessageOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_delete_message_options">DeleteMessageOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Permanently removes the specified message from the queue.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_delete_message_result">Models::DeleteMessageResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aa894bc27782336676ca7409a6991ef5b">ClearMessages</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_clear_messages_options">ClearMessagesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_clear_messages_options">ClearMessagesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Deletes all messages from the queue.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_clear_messages_result">Models::ClearMessagesResult</a> &gt;&#160;
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#abb07e7ef5fc2f3c1f730c40120d1be1a">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;queueName, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
+    summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>.
+    returnType: static <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: QueueServiceClient
+    returnType: >-
+      <a id="ae882422cde0d719cfeb1d63c171b5bf2"></a>
+
+      class&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- content: <p>The <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a> allows you to manipulate Azure Storage queues and their messages. </p>
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="aa2c824fb88d5c85726111775d777da55"></a>
+- section: QueueClient() [1/3]
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.QueueClient%28%29%20%5B1%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.QueueClient() [1/3]
+- declaration: >-
+    Azure::Storage::Queues::QueueClient::QueueClient(const std::string &amp;&#160;                          queueUrl,                      
+                                                     std::shared_ptr&lt; StorageSharedKeyCredential &gt;&#160;credential,                    
+                                                     const QueueClientOptions &amp;&#160;                   options = QueueClientOptions()&#160;
+                                                    ) explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: queueUrl
+    summary: A url referencing the queue that includes the name of the account and the name of the queue.
+  - name: credential
+    summary: The shared key credential used to sign requests.
+  - name: options
+    summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
+- content: <a id="aa88cf353658db7f550dc86f7827b8a74"></a>
+- section: QueueClient() [2/3]
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.QueueClient%28%29%20%5B2%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.QueueClient() [2/3]
+- declaration: >-
+    Azure::Storage::Queues::QueueClient::QueueClient(const std::string &amp;&#160;                                  queueUrl,                      
+                                                     std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                    
+                                                     const QueueClientOptions &amp;&#160;                           options = QueueClientOptions()&#160;
+                                                    ) explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: queueUrl
+    summary: A url referencing the queue that includes the name of the account and the name of the queue.
+  - name: credential
+    summary: The token credential used to sign requests.
+  - name: options
+    summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
+- content: <a id="ad45551df27cb30f052a09828d4be4f0c"></a>
+- section: QueueClient() [3/3]
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.QueueClient%28%29%20%5B3%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.QueueClient() [3/3]
+- declaration: >-
+    Azure::Storage::Queues::QueueClient::QueueClient(const std::string &amp;&#160;       queueUrl,                      
+                                                     const QueueClientOptions &amp;&#160;options = QueueClientOptions()&#160;
+                                                    ) explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: queueUrl
+    summary: A url referencing the queue that includes the name of the account and the name of the queue.
+  - name: options
+    summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
+- section: Member Function Documentation
+  display: h2
+- content: <a id="aa894bc27782336676ca7409a6991ef5b"></a>
+- section: ClearMessages()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.ClearMessages%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.ClearMessages()
+- declaration: >-
+    Azure::Response&lt; Models::ClearMessagesResult &gt; Azure::Storage::Queues::QueueClient::ClearMessages(const ClearMessagesOptions &amp;&#160;options = ClearMessagesOptions(),
+                                                                                                      const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                     )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A ClearMessagesResult describing the result.
+- content: <a id="a6d3decc59308b637fedb6d32a67e2e32"></a>
+- section: Create()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.Create%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.Create()
+- declaration: >-
+    Azure::Response&lt; Models::CreateQueueResult &gt; Azure::Storage::Queues::QueueClient::Create(const CreateQueueOptions &amp;&#160;  options = CreateQueueOptions(),  
+                                                                                             const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                            )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A CreateQueueResult describing the newly created queue if the queue doesn't exist. CreateQueueResult.Created is false if the queue already exists.
+- content: <a id="abb07e7ef5fc2f3c1f730c40120d1be1a"></a>
+- section: CreateFromConnectionString()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.CreateFromConnectionString%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.CreateFromConnectionString()
+- declaration: >-
+    QueueClient Azure::Storage::Queues::QueueClient::CreateFromConnectionString(const std::string &amp;&#160;       connectionString,              
+                                                                                const std::string &amp;&#160;       queueName,                     
+                                                                                const QueueClientOptions &amp;&#160;options = QueueClientOptions()&#160;
+                                                                               ) static
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: A connection string includes the authentication information required for your application to access data in an Azure Storage account at runtime.
+  - name: queueName
+    summary: The name of the queue.
+  - name: options
+    summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A new <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a> instance.
+- content: <a id="ae1772368ba55042d1950f769678091ce"></a>
+- section: Delete()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.Delete%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.Delete()
+- declaration: >-
+    Azure::Response&lt; Models::DeleteQueueResult &gt; Azure::Storage::Queues::QueueClient::Delete(const DeleteQueueOptions &amp;&#160;  options = DeleteQueueOptions(),  
+                                                                                             const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                            )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: DeleteQueueResult.Deleted will be true if successful, false if the queue doesn't exist.
+- content: <a id="a007f0648915ea76c995e08627056ba67"></a>
+- section: DeleteMessage()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.DeleteMessage%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.DeleteMessage()
+- declaration: >-
+    Azure::Response&lt; Models::DeleteMessageResult &gt; Azure::Storage::Queues::QueueClient::DeleteMessage(const std::string &amp;&#160;         messageId,                       
+                                                                                                      const std::string &amp;&#160;         popReceipt,                      
+                                                                                                      const DeleteMessageOptions &amp;&#160;options = DeleteMessageOptions(),
+                                                                                                      const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                     )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: messageId
+    summary: ID of the message to delete.
+  - name: popReceipt
+    summary: A valid pop receipt value returned from an earlier call.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A DeleteMessageResult describing the result.
+- content: <a id="aeff3f445d6b3c96eeaadcd724bd996d2"></a>
+- section: EnqueueMessage()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.EnqueueMessage%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.EnqueueMessage()
+- declaration: >-
+    Azure::Response&lt; Models::EnqueueMessageResult &gt; Azure::Storage::Queues::QueueClient::EnqueueMessage(std::string&#160;                  messageText,                      
+                                                                                                        const EnqueueMessageOptions &amp;&#160;options = EnqueueMessageOptions(),
+                                                                                                        const Azure::Core::Context &amp;&#160; context = Azure::Core::Context()&#160; 
+                                                                                                       )                              const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: messageText
+    summary: Message in plain text.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A EnqueueMessageResult describing the result.
+- content: <a id="af38d6b536b58c07f725c18fa85909faa"></a>
+- section: GetAccessPolicy()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.GetAccessPolicy%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.GetAccessPolicy()
+- declaration: >-
+    Azure::Response&lt; Models::QueueAccessPolicy &gt; Azure::Storage::Queues::QueueClient::GetAccessPolicy(const GetQueueAccessPolicyOptions &amp;&#160;options = GetQueueAccessPolicyOptions(),
+                                                                                                      const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
+                                                                                                     )                                    const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A QueueAccessPolicy describing the queue's access policy.
+- content: <a id="ac3c54f208257cc9d3205abaa6ace2555"></a>
+- section: GetProperties()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.GetProperties%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.GetProperties()
+- declaration: >-
+    Azure::Response&lt; Models::QueueProperties &gt; Azure::Storage::Queues::QueueClient::GetProperties(const GetQueuePropertiesOptions &amp;&#160;options = GetQueuePropertiesOptions(),
+                                                                                                  const Azure::Core::Context &amp;&#160;     context = Azure::Core::Context()&#160;     
+                                                                                                 )                                  const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A QueueProperties describing the queue and its properties.
+- content: <a id="a57de3910c595c16e66450e9ff90ab253"></a>
+- section: GetUrl()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.GetUrl%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.GetUrl()
+- declaration: std::string Azure::Storage::Queues::QueueClient::GetUrl()const inline
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The queue's primary URL endpoint.
+- content: <a id="ad71d263442c4fd7d5a534cc13dd28327"></a>
+- section: PeekMessages()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.PeekMessages%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.PeekMessages()
+- declaration: >-
+    Azure::Response&lt; Models::PeekedMessages &gt; Azure::Storage::Queues::QueueClient::PeekMessages(const PeekMessagesOptions &amp;&#160; options = PeekMessagesOptions(), 
+                                                                                                const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                               )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A PeekedMessages that contains a vector of queue messages.
+- content: <a id="aba33b63bcd1cf04ac0024159eaf43a0e"></a>
+- section: ReceiveMessages()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.ReceiveMessages%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.ReceiveMessages()
+- declaration: >-
+    Azure::Response&lt; Models::ReceivedMessages &gt; Azure::Storage::Queues::QueueClient::ReceiveMessages(const ReceiveMessagesOptions &amp;&#160;options = ReceiveMessagesOptions(),
+                                                                                                     const Azure::Core::Context &amp;&#160;  context = Azure::Core::Context()&#160;  
+                                                                                                    )                               const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A ReceivedMessages that contains a vector of queue messages.
+- content: <a id="a20e9754beff1cd5f518dfac7bdaebf83"></a>
+- section: SetAccessPolicy()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.SetAccessPolicy%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.SetAccessPolicy()
+- declaration: >-
+    Azure::Response&lt; Models::SetQueueAccessPolicyResult &gt; Azure::Storage::Queues::QueueClient::SetAccessPolicy(const Models::QueueAccessPolicy &amp;&#160;  accessPolicy,                           
+                                                                                                               const SetQueueAccessPolicyOptions &amp;&#160;options = SetQueueAccessPolicyOptions(),
+                                                                                                               const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
+                                                                                                              )                                    const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: accessPolicy
+    summary: Stored access policies that can be used to provide fine grained control over queue permissions.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A SetQueueAccessPolicyResult describing the updated queue.
+- content: <a id="a81656ea20df206d8f05374b47d4fe149"></a>
+- section: SetMetadata()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.SetMetadata%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.SetMetadata()
+- declaration: >-
+    Azure::Response&lt; Models::SetQueueMetadataResult &gt; Azure::Storage::Queues::QueueClient::SetMetadata(Metadata&#160;                       metadata,                           
+                                                                                                       const SetQueueMetadataOptions &amp;&#160;options = SetQueueMetadataOptions(),
+                                                                                                       const Azure::Core::Context &amp;&#160;   context = Azure::Core::Context()&#160;   
+                                                                                                      )                                const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: metadata
+    summary: Custom metadata to set for this queue.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A SetQueueMetadataResult if successful.
+- content: <a id="a5bd1b5399d41ba0873728e5b3570efce"></a>
+- section: UpdateMessage()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.UpdateMessage%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueClient.UpdateMessage()
+- declaration: >-
+    Azure::Response&lt; Models::UpdateMessageResult &gt; Azure::Storage::Queues::QueueClient::UpdateMessage(const std::string &amp;&#160;         messageId,                       
+                                                                                                      const std::string &amp;&#160;         popReceipt,                      
+                                                                                                      std::chrono::seconds&#160;        visibilityTimeout,               
+                                                                                                      const UpdateMessageOptions &amp;&#160;options = UpdateMessageOptions(),
+                                                                                                      const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                     )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: messageId
+    summary: ID of the message to update.
+  - name: popReceipt
+    summary: Specifies the valid pop receipt value returned from an earlier call.
+  - name: visibilityTimeout
+    summary: Specifies the new visibility timeout value, in seconds, relative to server time. The new value must be larger than or equal to 0, and cannot be larger than 7 days. The visibility timeout of a message cannot be set to a value later than the expiry time. A message can be updated until it has been deleted or has expired.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An UpdateMessageResult describing the updated message.

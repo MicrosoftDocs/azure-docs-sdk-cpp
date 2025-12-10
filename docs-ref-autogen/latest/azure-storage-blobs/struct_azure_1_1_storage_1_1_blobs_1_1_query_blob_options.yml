@@ -1,0 +1,43 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AQueryBlobOptions
+title: Azure::Storage::Blobs::QueryBlobOptions Struct Reference
+xrefType: Struct
+xrefName: Azure::Storage::Blobs::QueryBlobOptions
+components:
+- content: >-
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_blobs_1_1_block_blob_client#a6188259279eab1bd8dbff684258ea673">Azure::Storage::Blobs::BlockBlobClient::Query</a>.  
+
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: InputTextConfiguration
+    summary: Input text configuration.
+    returnType: >-
+      <a id="aad7ceb4bbdc7653e1fa910f48ee7d0f8"></a>
+
+      <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_input_text_options">BlobQueryInputTextOptions</a>&#160;
+  - declaration: OutputTextConfiguration
+    summary: Output text configuration.
+    returnType: >-
+      <a id="a1cbf813f0d77454ea41a22915ef7c717"></a>
+
+      <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_query_output_text_options">BlobQueryOutputTextOptions</a>&#160;
+  - declaration: AccessConditions
+    summary: Optional conditions that must be met to perform this operation.
+    returnType: >-
+      <a id="a8012d5d086505610e86e36ff9db7df5a"></a>
+
+      <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions">BlobAccessConditions</a>&#160;
+  - declaration: ProgressHandler
+    summary: Callback for progress handling.
+    returnType: >-
+      <a id="ae51d8c32a01068fa850db20542d74d88"></a>
+
+      std::function&lt; void(int64_t, int64_t)&gt;&#160;
+  - declaration: ErrorHandler
+    summary: Callback for error handling. If you don't specify one, the default will be used, which will ignore all non-fatal errors and throw for fatal errors.
+    returnType: >-
+      <a id="a3a01efff0f7aa837c72a01e098db3514"></a>
+
+      std::function&lt; void(<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_query_error">BlobQueryError</a>)&gt;&#160;

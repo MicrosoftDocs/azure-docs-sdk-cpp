@@ -1,0 +1,31 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AEncryptionKey
+title: Azure::Storage::Blobs::EncryptionKey Struct Reference
+xrefType: Struct
+xrefName: Azure::Storage::Blobs::EncryptionKey
+components:
+- content: >-
+    <p>Wrapper for an encryption key to be used with client provided key server-side encryption.  
+
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: Key
+    summary: Base64 encoded string of the AES256 encryption key.
+    returnType: >-
+      <a id="ab9335e635170f440f80fbbc1e3acbcd9"></a>
+
+      std::string&#160;
+  - declaration: KeyHash
+    summary: SHA256 hash of the AES256 encryption key.
+    returnType: >-
+      <a id="a580226066e830bd9f66e543ced457fad"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: Algorithm
+    summary: The algorithm for Azure Blob Storage to encrypt with.
+    returnType: >-
+      <a id="af79e8c936a50a6cd935d234d6880a13b"></a>
+
+      <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_encryption_algorithm_type">Models::EncryptionAlgorithmType</a>&#160;

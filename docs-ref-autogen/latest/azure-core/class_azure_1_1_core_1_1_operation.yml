@@ -1,0 +1,327 @@
+### YamlMime:Reference
+uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E
+title: Azure::Core::Operation&lt; T &gt; Class Template Reference
+xrefType: Class
+xrefName: Azure::Core::Operation&lt; T &gt;
+components:
+- content: >-
+    <p>Methods starting long-running operations return Operation&lt;T&gt; types.  
+     <a href="class_azure_1_1_core_1_1_operation#details">More...</a></p><p><code>#include &lt;operation.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a6fc4a704f20ce6fc4cf172f57d9579b6">~Operation</a> ()
+    summary: Destructs the <code>Operation</code>.
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ad92b8b97a7e0f1ef24a051132d447cef">Value</a> () const =0
+    summary: Final result of the long-running operation.
+    returnType: virtual T&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a44883c43c2dd4ca3e0273735ec506999">GetResumeToken</a> () const =0
+    summary: Gets a token representing the operation that can be used to poll for the status of the long-running operation.
+    returnType: virtual std::string&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ae04fa8a5e2e1f751ea299eda037f8b41">GetRawResponse</a> () const
+    summary: Gets the raw HTTP response.
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#aacfb286b1cdc3ea5586fb62ad8721b5e">Status</a> () const noexcept
+    summary: Gets the current <a href="class_azure_1_1_core_1_1_operation_status">Azure::Core::OperationStatus</a> of the long-running operation.
+    returnType: <a href="class_azure_1_1_core_1_1_operation_status">OperationStatus</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a29f86ab638e03051f6c5aedf34f3497a">IsDone</a> () const noexcept
+    summary: Checks if the long-running operation is completed.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ae55c2a76868dd21105094b6f7b21e0d0">HasValue</a> () const noexcept
+    summary: Checks if the long-running operation completed successfully and has produced a final result.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a7bc97d4a9d65bf1112adc5f248e90312">Poll</a> ()
+    summary: Gets updated status of the long-running operation.
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Http::RawResponse</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a38ea4f1b10e44616d091bfddff7bd2d5">Poll</a> (<a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context)
+    summary: Gets updated status of the long-running operation.
+    returnType: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Http::RawResponse</a> const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ae6919591c1f99490df704c744d347451">PollUntilDone</a> (std::chrono::milliseconds period)
+    summary: Periodically polls till the long-running operation completes.
+    returnType: <a href="class_azure_1_1_response">Response</a>&lt; T &gt;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a1dd3436f91112ebb63d540b9926b2c34">PollUntilDone</a> (std::chrono::milliseconds period, <a href="class_azure_1_1_core_1_1_context">Context</a> &amp;context)
+    summary: Periodically polls till the long-running operation completes;.
+    returnType: <a href="class_azure_1_1_response">Response</a>&lt; T &gt;&#160;
+- section: Protected Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a0c025983fa1ec8d2c6077afc1d21e7d9">Operation</a> ()=default
+    summary: Constructs a default instance of <code>Operation</code>.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a5aa096d3962f075a0fed8476556660ac">Operation</a> (<a href="class_azure_1_1_core_1_1_operation">Operation</a> &amp;&amp;other)
+    summary: Constructs an instance of <code>Operation</code> by moving in another instance.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a6fca7590de4fa9bb25ba343b055059b9">Operation</a> (<a href="class_azure_1_1_core_1_1_operation">Operation</a> const &amp;other)
+    summary: Constructs an instance of <code>Operation</code> by copying another instance.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#ac406eeda5d1990d72466a968eb76b1a5">operator=</a> (<a href="class_azure_1_1_core_1_1_operation">Operation</a> &amp;&amp;other)
+    summary: Assigns an instance of <code>Operation</code> by moving in another instance.
+    returnType: <a href="class_azure_1_1_core_1_1_operation">Operation</a> &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_operation#a991d84dd39866eb035d57d9429a629e8">operator=</a> (<a href="class_azure_1_1_core_1_1_operation">Operation</a> const &amp;other)
+    summary: Assigns another <code>Operation</code> instance by copying.
+    returnType: <a href="class_azure_1_1_core_1_1_operation">Operation</a> &amp;&#160;
+- section: Protected Attributes
+  display: h2
+- apiList:
+  - declaration: m_rawResponse = nullptr
+    summary: the underlying raw response for this operation.
+    returnType: >-
+      <a id="a0c40e6a0933c30778d70eaec93cd3505"></a>
+
+      std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a> &gt;&#160;
+  - declaration: m_status = <a href="class_azure_1_1_core_1_1_operation_status#a4471070aefea912692f1190405550e64">OperationStatus::NotStarted</a>
+    summary: the current status of the operation.
+    returnType: >-
+      <a id="a645caf9042b301b2b415bd8aa8da2827"></a>
+
+      <a href="class_azure_1_1_core_1_1_operation_status">OperationStatus</a>&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- content: template&lt;class T&gt;class Azure::Core::Operation&lt; T &gt;
+- section: Template Parameters
+  display: h4
+- parameters:
+  - name: T
+    summary: The long-running operation final result type.
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a0c025983fa1ec8d2c6077afc1d21e7d9"></a>
+- section: Operation() [1/3]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.Operation%28%29%20%5B1%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.Operation() [1/3]
+- content: template&lt;class T &gt;
+- declaration: Azure::Core::Operation&lt; T &gt;::Operation() protected default
+  languageId: cpp
+- content: <a id="a5aa096d3962f075a0fed8476556660ac"></a>
+- section: Operation() [2/3]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.Operation%28%29%20%5B2%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.Operation() [2/3]
+- content: template&lt;class T &gt;
+- declaration: Azure::Core::Operation&lt; T &gt;::Operation(Operation&lt; T &gt; &amp;&amp;&#160;other) inline protected
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: An <code>Operation</code> instance to move in.
+- content: <a id="a6fca7590de4fa9bb25ba343b055059b9"></a>
+- section: Operation() [3/3]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.Operation%28%29%20%5B3%2F3%5D
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.Operation() [3/3]
+- content: template&lt;class T &gt;
+- declaration: Azure::Core::Operation&lt; T &gt;::Operation(Operation&lt; T &gt; const &amp;&#160;other) inline protected
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: An <code>Operation</code> instance to copy.
+- content: <a id="a6fc4a704f20ce6fc4cf172f57d9579b6"></a>
+- section: ~Operation()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.~Operation%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.~Operation()
+- content: template&lt;class T &gt;
+- declaration: virtual Azure::Core::Operation&lt; T &gt;::~Operation() inline virtual
+  languageId: cpp
+- section: Member Function Documentation
+  display: h2
+- content: <a id="ae04fa8a5e2e1f751ea299eda037f8b41"></a>
+- section: GetRawResponse()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.GetRawResponse%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.GetRawResponse()
+- content: template&lt;class T &gt;
+- declaration: Azure::Core::Http::RawResponse const  &amp; Azure::Core::Operation&lt; T &gt;::GetRawResponse()const inline
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A reference to an <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a>.
+- section: Note
+  display: h4
+- parameters:
+  - summary: Does not give up ownership of the RawResponse.
+- content: <a id="a44883c43c2dd4ca3e0273735ec506999"></a>
+- section: GetResumeToken()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.GetResumeToken%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.GetResumeToken()
+- content: template&lt;class T &gt;
+- declaration: virtual std::string Azure::Core::Operation&lt; T &gt;::GetResumeToken()const pure virtual
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: std::string The resume token.
+- content: <a id="ae55c2a76868dd21105094b6f7b21e0d0"></a>
+- section: HasValue()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.HasValue%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.HasValue()
+- content: template&lt;class T &gt;
+- declaration: bool Azure::Core::Operation&lt; T &gt;::HasValue()const inline noexcept
+  languageId: cpp
+- section: Note
+  display: h4
+- parameters:
+  - summary: The final result is accessible from <code><a href="class_azure_1_1_core_1_1_operation#ad92b8b97a7e0f1ef24a051132d447cef">Value()</a></code>.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <code>true</code> if the long-running operation completed successfully; otherwise, <code>false</code>.
+- content: <a id="a29f86ab638e03051f6c5aedf34f3497a"></a>
+- section: IsDone()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.IsDone%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.IsDone()
+- content: template&lt;class T &gt;
+- declaration: bool Azure::Core::Operation&lt; T &gt;::IsDone()const inline noexcept
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <code>true</code> if the long-running operation is done; otherwise, <code>false</code>.
+- content: <a id="ac406eeda5d1990d72466a968eb76b1a5"></a>
+- section: operator=() [1/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.operator%3D%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.operator=() [1/2]
+- content: template&lt;class T &gt;
+- declaration: Operation &amp; Azure::Core::Operation&lt; T &gt;::operator=(Operation&lt; T &gt; &amp;&amp;&#160;other) inline protected
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: An <code>Operation</code> instance to move in.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A reference to this instance.
+- content: <a id="a991d84dd39866eb035d57d9429a629e8"></a>
+- section: operator=() [2/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.operator%3D%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.operator=() [2/2]
+- content: template&lt;class T &gt;
+- declaration: Operation &amp; Azure::Core::Operation&lt; T &gt;::operator=(Operation&lt; T &gt; const &amp;&#160;other) inline protected
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: other
+    summary: An <code>Operation</code> instance to copy.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A reference to this instance.
+- content: <a id="a7bc97d4a9d65bf1112adc5f248e90312"></a>
+- section: Poll() [1/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.Poll%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.Poll() [1/2]
+- content: template&lt;class T &gt;
+- declaration: Http::RawResponse const  &amp; Azure::Core::Operation&lt; T &gt;::Poll() inline
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a> returned from the service.
+- content: <a id="a38ea4f1b10e44616d091bfddff7bd2d5"></a>
+- section: Poll() [2/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.Poll%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.Poll() [2/2]
+- content: template&lt;class T &gt;
+- declaration: Http::RawResponse const  &amp; Azure::Core::Operation&lt; T &gt;::Poll(Context const &amp;&#160;context) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: A context to control the request lifetime.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a> returned from the service.
+- content: <a id="ae6919591c1f99490df704c744d347451"></a>
+- section: PollUntilDone() [1/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.PollUntilDone%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.PollUntilDone() [1/2]
+- content: template&lt;class T &gt;
+- declaration: Response&lt; T &gt; Azure::Core::Operation&lt; T &gt;::PollUntilDone(std::chrono::milliseconds&#160;period) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: period
+    summary: Time in milliseconds to wait between polls.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Response&lt;T&gt; the final result of the long-running operation.
+- content: <a id="a1dd3436f91112ebb63d540b9926b2c34"></a>
+- section: PollUntilDone() [2/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.PollUntilDone%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.PollUntilDone() [2/2]
+- content: template&lt;class T &gt;
+- declaration: >-
+    Response&lt; T &gt; Azure::Core::Operation&lt; T &gt;::PollUntilDone(std::chrono::milliseconds&#160;period, 
+                                                             Context &amp;&#160;                context&#160;
+                                                            ) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: period
+    summary: Time in milliseconds to wait between polls.
+  - name: context
+    summary: A context to control the request lifetime.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Response&lt;T&gt; the final result of the long-running operation.
+- content: <a id="aacfb286b1cdc3ea5586fb62ad8721b5e"></a>
+- section: Status()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.Status%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.Status()
+- content: template&lt;class T &gt;
+- declaration: OperationStatus const  &amp; Azure::Core::Operation&lt; T &gt;::Status()const inline noexcept
+  languageId: cpp
+- content: <a id="ad92b8b97a7e0f1ef24a051132d447cef"></a>
+- section: Value()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AOperation%3C%20T%20%3E.Value%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Operation< T >.Value()
+- content: template&lt;class T &gt;
+- declaration: virtual T Azure::Core::Operation&lt; T &gt;::Value()const pure virtual
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The final result of the long-running operation.

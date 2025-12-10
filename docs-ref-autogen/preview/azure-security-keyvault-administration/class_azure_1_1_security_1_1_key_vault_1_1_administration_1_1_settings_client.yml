@@ -1,0 +1,141 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ASettingsClient
+title: Azure::Security::KeyVault::Administration::SettingsClient Class Reference
+xrefType: Class
+xrefName: Azure::Security::KeyVault::Administration::SettingsClient
+components:
+- content: >-
+    <p>Settings Client class.  
+
+    </p><p><code>#include &lt;settings_client.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_settings_client#acffa9c020ca4e0983c46e24dd404ab47">~SettingsClient</a> ()=default
+    summary: Destructor.
+    returnType: virtual&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_settings_client#a3f540304441125a6dacef048a13806af">SettingsClient</a> (std::string const &amp;vaultUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt; credential, <a href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_settings_client_options">SettingsClientOptions</a> options=<a href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_settings_client_options">SettingsClientOptions</a>())
+    summary: Construct a new settings client object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_settings_client#abed805039fcc716ce8ff9f4613abb755">SettingsClient</a> (<a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_settings_client">SettingsClient</a> const &amp;settingsClient)=default
+    summary: Construct a new settings client object from another settings client.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_settings_client#a73488e35d5d4e02e65fb9cbbe3607838">UpdateSetting</a> (std::string const &amp;name, std::string const &amp;value, const Azure::Core::Context &amp;context=Azure::Core::Context{}) const
+    summary: Update a setting.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_models_1_1_setting">Models::Setting</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_settings_client#ad258561354074beda9151a704ef02664">GetSetting</a> (std::string const &amp;name, const Azure::Core::Context &amp;context=Azure::Core::Context{}) const
+    summary: Gets an existing setting.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_models_1_1_setting">Models::Setting</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_settings_client#acda690d40411df392b0441affbd29f68">GetSettings</a> (const Azure::Core::Context &amp;context=Azure::Core::Context{}) const
+    summary: Gets all settings.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_security_1_1_key_vault_1_1_administration_1_1_models_1_1_settings_list_result">Models::SettingsListResult</a> &gt;&#160;
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="acffa9c020ca4e0983c46e24dd404ab47"></a>
+- section: ~SettingsClient()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ASettingsClient.~SettingsClient%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Administration::SettingsClient.~SettingsClient()
+- declaration: virtual Azure::Security::KeyVault::Administration::SettingsClient::~SettingsClient() virtual default
+  languageId: cpp
+- content: <a id="a3f540304441125a6dacef048a13806af"></a>
+- section: SettingsClient() [1/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ASettingsClient.SettingsClient%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Administration::SettingsClient.SettingsClient() [1/2]
+- declaration: >-
+    SettingsClient::SettingsClient(std::string const &amp;&#160;                                        vaultUrl,                         
+                                   std::shared_ptr&lt; Core::Credentials::TokenCredential const &gt;&#160;credential,                       
+                                   SettingsClientOptions&#160;                                      options = SettingsClientOptions()&#160;
+                                  ) explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: vaultUrl
+    summary: The URL address where the client will send the requests to.
+  - name: credential
+    summary: The authentication method to use.
+  - name: options
+    summary: The options to customize the client behavior.
+- content: <a id="abed805039fcc716ce8ff9f4613abb755"></a>
+- section: SettingsClient() [2/2]
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ASettingsClient.SettingsClient%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Administration::SettingsClient.SettingsClient() [2/2]
+- declaration: Azure::Security::KeyVault::Administration::SettingsClient::SettingsClient(SettingsClient const &amp;&#160;settingsClient) explicit default
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: settingsClient
+    summary: An existing key vault settings client.
+- section: Member Function Documentation
+  display: h2
+- content: <a id="ad258561354074beda9151a704ef02664"></a>
+- section: GetSetting()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ASettingsClient.GetSetting%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Administration::SettingsClient.GetSetting()
+- declaration: >-
+    Azure::Response&lt; Setting &gt; SettingsClient::GetSetting(std::string const &amp;&#160;         name,                            
+                                                          const Azure::Core::Context &amp;&#160;context = Azure::Core::Context{}&#160;
+                                                         )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: Name of setting to get.
+  - name: context
+    summary: Operation context.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: response containing the setting.
+- content: <a id="acda690d40411df392b0441affbd29f68"></a>
+- section: GetSettings()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ASettingsClient.GetSettings%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Administration::SettingsClient.GetSettings()
+- declaration: Azure::Response&lt; SettingsListResult &gt; SettingsClient::GetSettings(const Azure::Core::Context &amp;&#160;context = Azure::Core::Context{})const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: context
+    summary: Operation context.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Response containing a list of settings.
+- content: <a id="a73488e35d5d4e02e65fb9cbbe3607838"></a>
+- section: UpdateSetting()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AAdministration%3A%3ASettingsClient.UpdateSetting%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Administration::SettingsClient.UpdateSetting()
+- declaration: >-
+    Azure::Response&lt; Setting &gt; SettingsClient::UpdateSetting(std::string const &amp;&#160;         name,                            
+                                                             std::string const &amp;&#160;         value,                           
+                                                             const Azure::Core::Context &amp;&#160;context = Azure::Core::Context{}&#160;
+                                                            )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: name
+    summary: Name of the setting to update.
+  - name: value
+    summary: Value of the setting .
+  - name: context
+    summary: Operation Context.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Response containing the new updated setting.

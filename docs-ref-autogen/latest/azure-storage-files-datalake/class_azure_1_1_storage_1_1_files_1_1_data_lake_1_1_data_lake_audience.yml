@@ -1,0 +1,70 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeAudience
+title: Azure::Storage::Files::DataLake::DataLakeAudience Class Reference
+xrefType: Class
+xrefName: Azure::Storage::Files::DataLake::DataLakeAudience
+components:
+- content: >-
+    <p>Audiences available for data lake service.  
+     <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_audience#details">More...</a></p><p><code>#include &lt;datalake_options.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::_internal::ExtendableEnumeration
+    href: ''
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_audience#a084b06af1ab636e325795809991c034d">DataLakeAudience</a> (std::string dataLakeAudience)
+    summary: Construct a new <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_audience">DataLakeAudience</a> object.
+    returnType: '&#160;'
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_audience#acd22928c0f239770334c9c73a266704e">CreateDataLakeServiceAccountAudience</a> (const std::string &amp;storageAccountName)
+    summary: The service endpoint for a given storage account. Use this method to acquire a token for authorizing requests to that specific Azure Storage account and service only.
+    returnType: static <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_audience">DataLakeAudience</a>&#160;
+- section: Static Public Attributes
+  display: h2
+- apiList:
+  - declaration: DefaultAudience
+    summary: Default Audience. Use to acquire a token for authorizing requests to any Azure Storage account.
+    returnType: >-
+      <a id="a9d6f994eca0002734d79176d91b36f01"></a>
+
+      AZ_STORAGE_FILES_DATALAKE_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_audience">DataLakeAudience</a>&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a084b06af1ab636e325795809991c034d"></a>
+- section: DataLakeAudience()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeAudience.DataLakeAudience%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DataLakeAudience.DataLakeAudience()
+- declaration: Azure::Storage::Files::DataLake::DataLakeAudience::DataLakeAudience(std::string&#160;dataLakeAudience) inline explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: dataLakeAudience
+    summary: 'The Azure Active Directory audience to use when forming authorization scopes. For the Language service, this value corresponds to a URL that identifies the Azure cloud where the resource is located. For more information: See <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory">https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory</a>'
+- section: Member Function Documentation
+  display: h2
+- content: <a id="acd22928c0f239770334c9c73a266704e"></a>
+- section: CreateDataLakeServiceAccountAudience()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeAudience.CreateDataLakeServiceAccountAudience%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DataLakeAudience.CreateDataLakeServiceAccountAudience()
+- declaration: static DataLakeAudience Azure::Storage::Files::DataLake::DataLakeAudience::CreateDataLakeServiceAccountAudience(const std::string &amp;&#160;storageAccountName) inline static
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: storageAccountName
+    summary: he storage account name used to populate the service endpoint.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The service endpoint for a given storage account.

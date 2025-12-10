@@ -1,0 +1,70 @@
+### YamlMime:Reference
+uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AModels%3A%3AOwnership
+title: Azure::Messaging::EventHubs::Models::Ownership Class Reference
+xrefType: Class
+xrefName: Azure::Messaging::EventHubs::Models::Ownership
+components:
+- content: >-
+    <p><a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_models_1_1_ownership">Ownership</a> tracks which consumer owns a particular partition.  
+
+    </p><p><code>#include &lt;checkpoint_store_models.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: GetOwnershipName () const
+    summary: The blob storage name for this ownership.
+    returnType: >-
+      <a id="ab04e150f5953506e75a65ff482eb8a72"></a>
+
+      std::string&#160;
+  - declaration: GetOwnershipPrefixName () const
+    summary: The blob storage name prefix for this ownership.
+    returnType: >-
+      <a id="ae7de4350b7291346ed6cb656bc26dc0c"></a>
+
+      std::string&#160;
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: ConsumerGroup
+    summary: The consumer group name.
+    returnType: >-
+      <a id="a688ab895c1f917c5a0c2321535f24bb8"></a>
+
+      std::string&#160;
+  - declaration: EventHubName
+    summary: The event hub name.
+    returnType: >-
+      <a id="aca8eb060b056208f43c72a1789358dcd"></a>
+
+      std::string&#160;
+  - declaration: FullyQualifiedNamespace
+    summary: The fully qualified namespace for the event hub.
+    returnType: >-
+      <a id="ad577431f42e27bdbabf66483315bb703"></a>
+
+      std::string&#160;
+  - declaration: PartitionId {}
+    summary: The partition ID for the corresponding ownership.
+    returnType: >-
+      <a id="ad1d73f47897f967e144d274c8efc0fc0"></a>
+
+      std::string&#160;
+  - declaration: OwnerId {}
+    summary: The owner ID for the corresponding ownership.
+    returnType: >-
+      <a id="acf307ceaa53c434627e19472960c5bd9"></a>
+
+      std::string&#160;
+  - declaration: ETag {}
+    summary: the ETag, used when attempting to claim or update ownership of a partition.
+    returnType: >-
+      <a id="abef3d3d98b4a17168692a44b8ac6609c"></a>
+
+      Azure::Nullable&lt; Azure::ETag &gt;&#160;
+  - declaration: LastModifiedTime {}
+    summary: The last modified time for the corresponding ownership. Used to calculate if ownership has expired.
+    returnType: >-
+      <a id="a9f1328d16be095ef5346dcc88fd1ef6b"></a>
+
+      Azure::Nullable&lt; Azure::DateTime &gt;&#160;

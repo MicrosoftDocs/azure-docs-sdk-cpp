@@ -1,0 +1,181 @@
+### YamlMime:Reference
+uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AJsonWebKey
+title: Azure::Security::KeyVault::Keys::JsonWebKey Class Reference
+xrefType: Class
+xrefName: Azure::Security::KeyVault::Keys::JsonWebKey
+components:
+- content: >-
+    <p>Represents a JSON Web Key as defined in <a href="http://tools.ietf.org/html/rfc7517">http://tools.ietf.org/html/rfc7517</a>.  
+     <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key#details">More...</a></p><p><code>#include &lt;key_client_models.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key#a94bc2f1f665ec3b8fade5c4cad5cf861">JsonWebKey</a> ()=default
+    summary: Construct a new Json Web Key object.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key#a8209cb0afc8cb742b014cb52679675f7">SetKeyOperations</a> (std::vector&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a> &gt; const &amp;keyOperations)
+    summary: Set the Key Operations object based on a list of operations.
+    returnType: void&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key#a6e4aa16bfae08985042a9b173925b3d6">KeyOperations</a> () const
+    summary: Get the list of operations from the <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key">JsonWebKey</a>.
+    returnType: std::vector&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a> &gt; const &amp;&#160;
+  - declaration: SupportsOperation (<a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_operation">KeyOperation</a> const &amp;operation) const
+    summary: Returns true if the key supports the desired key operation.
+    returnType: >-
+      <a id="a765b0405ecbfa07c67b4172b96bd8224"></a>
+
+      bool&#160;
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key#ad103a6266f8eda4e7d30a294dfda78dc">Id</a>
+    summary: The Identifier of the key. This is not limited to a Url.
+    returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key#acf2c978cd6ccfff03ded164591b89957">KeyType</a>
+    summary: They type of the key.
+    returnType: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_vault_key_type">KeyVaultKeyType</a>&#160;
+  - declaration: <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_json_web_key#afd7382f49db8cf3705cccbbc4fee287a">CurveName</a>
+    summary: Gets or sets the elliptic curve name.
+    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_curve_name">KeyCurveName</a> &gt;&#160;
+  - declaration: N
+    summary: The RSA modulus.
+    returnType: >-
+      <a id="aaa2b06634c369bb2f3c6a51ad1d14dc6"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: E
+    summary: The RSA public exponent.
+    returnType: >-
+      <a id="aac787d44722239f5f3b85d6fa6850ce7"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: DP
+    summary: The RSA private key parameter.
+    returnType: >-
+      <a id="aedc27af430396f5cbb40af41b35fbd28"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: DQ
+    summary: The RSA private key parameter.
+    returnType: >-
+      <a id="a31d0fc7c10fbea565b1ae65e479abb14"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: QI
+    summary: The RSA private key parameter.
+    returnType: >-
+      <a id="a20c8957cdd0cc99da7f78861ca6965a7"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: P
+    summary: The RSA secret prime.
+    returnType: >-
+      <a id="adf5925e1b09d3380bd299108893e389c"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: Q
+    summary: The RSA secret prime.
+    returnType: >-
+      <a id="a275cf04694c43045e65c6615c2d21e5e"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: D
+    summary: The RSA private exponent or EC private key.
+    returnType: >-
+      <a id="a65cd4ba022caeea7a190693f30082536"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: K
+    summary: Gets the symmetric key.
+    returnType: >-
+      <a id="aacae931271d615b82195c8e0e72d9e57"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: T
+    summary: Gets the protected key used with "Bring Your Own Key".
+    returnType: >-
+      <a id="adfc960564622be11830ceef3f55fb357"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: X
+    summary: Gets the X coordinate of the elliptic curve point.
+    returnType: >-
+      <a id="a1107959aae402b4cb9ac8a04ae42ffaf"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+  - declaration: Y
+    summary: Gets the Y coordinate for the elliptic curve point.
+    returnType: >-
+      <a id="ad132a48df945cabad9e8960035f64dd1"></a>
+
+      std::vector&lt; uint8_t &gt;&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a94bc2f1f665ec3b8fade5c4cad5cf861"></a>
+- section: JsonWebKey()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AJsonWebKey.JsonWebKey%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::JsonWebKey.JsonWebKey()
+- declaration: Azure::Security::KeyVault::Keys::JsonWebKey::JsonWebKey() default
+  languageId: cpp
+- section: Member Function Documentation
+  display: h2
+- content: <a id="a6e4aa16bfae08985042a9b173925b3d6"></a>
+- section: KeyOperations()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AJsonWebKey.KeyOperations%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::JsonWebKey.KeyOperations()
+- declaration: std::vector&lt; KeyOperation &gt; const  &amp; Azure::Security::KeyVault::Keys::JsonWebKey::KeyOperations()const inline
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: std::vector&lt;KeyOperation&gt; const&amp;
+- content: <a id="a8209cb0afc8cb742b014cb52679675f7"></a>
+- section: SetKeyOperations()
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AJsonWebKey.SetKeyOperations%28%29
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::JsonWebKey.SetKeyOperations()
+- declaration: void Azure::Security::KeyVault::Keys::JsonWebKey::SetKeyOperations(std::vector&lt; KeyOperation &gt; const &amp;&#160;keyOperations) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: keyOperations
+    summary: The list of key operations.
+- section: Member Data Documentation
+  display: h2
+- content: <a id="afd7382f49db8cf3705cccbbc4fee287a"></a>
+- section: CurveName
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AJsonWebKey.CurveName
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::JsonWebKey.CurveName
+- declaration: Azure::Nullable&lt;KeyCurveName&gt; Azure::Security::KeyVault::Keys::JsonWebKey::CurveName
+  languageId: cpp
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: See <a href="class_azure_1_1_security_1_1_key_vault_1_1_keys_1_1_key_curve_name">Azure::Security::KeyVault::Keys::KeyCurveName</a> for possible values.
+- content: <a id="ad103a6266f8eda4e7d30a294dfda78dc"></a>
+- section: Id
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AJsonWebKey.Id
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::JsonWebKey.Id
+- declaration: std::string Azure::Security::KeyVault::Keys::JsonWebKey::Id
+  languageId: cpp
+- content: <a id="acf2c978cd6ccfff03ded164591b89957"></a>
+- section: KeyType
+  display: h3
+  uid: Azure%3A%3ASecurity%3A%3AKeyVault%3A%3AKeys%3A%3AJsonWebKey.KeyType
+  xrefType: Member
+  xrefName: Azure::Security::KeyVault::Keys::JsonWebKey.KeyType
+- declaration: KeyVaultKeyType Azure::Security::KeyVault::Keys::JsonWebKey::KeyType
+  languageId: cpp

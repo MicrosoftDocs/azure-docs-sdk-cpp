@@ -1,0 +1,66 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AListFilesAndDirectoriesOptions
+title: Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions Struct Reference
+xrefType: Struct
+xrefName: Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions
+components:
+- content: >-
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client#a3d473b63dc78d60ae4238e19c25697d6">Azure::Storage::Files::Shares::ShareDirectoryClient::ListFilesAndDirectories</a>.  
+
+    </p><p><code>#include &lt;share_options.hpp&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options#a6e1649acd1b4476c676b425942597aad">Prefix</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options#af0ecf35e8775651b02c9f02f7e82f701">ContinuationToken</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options#aa61962bfc9a03c5e4e4efba3813c1f0e">PageSizeHint</a>
+    returnType: Azure::Nullable&lt; int32_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options#a656f9b22c593211c9d48666f3266c254">Include</a> = Models::ListFilesIncludeFlags ::None
+    returnType: Models::ListFilesIncludeFlags&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_list_files_and_directories_options#a5f7daad62773d27170d007a257242fe7">IncludeExtendedInfo</a>
+    returnType: Nullable&lt; bool &gt;&#160;
+- section: Member Data Documentation
+  display: h2
+- content: <a id="af0ecf35e8775651b02c9f02f7e82f701"></a>
+- section: ContinuationToken
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AListFilesAndDirectoriesOptions.ContinuationToken
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions.ContinuationToken
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::ContinuationToken
+  languageId: cpp
+- content: <p>A string value that identifies the portion of the list to be returned with the next list operation. The operation returns a marker value within the response body if the list returned was not complete. The marker value may then be used in a subsequent call to request the next set of list items. The marker value is opaque to the client. </p><a id="a656f9b22c593211c9d48666f3266c254"></a>
+- section: Include
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AListFilesAndDirectoriesOptions.Include
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions.Include
+- declaration: Models::ListFilesIncludeFlags Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::Include = Models::ListFilesIncludeFlags ::None
+  languageId: cpp
+- content: <p>Include this parameter to specify one or more datasets to include in the response. </p><a id="a5f7daad62773d27170d007a257242fe7"></a>
+- section: IncludeExtendedInfo
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AListFilesAndDirectoriesOptions.IncludeExtendedInfo
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions.IncludeExtendedInfo
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::IncludeExtendedInfo
+  languageId: cpp
+- content: <p>This header is implicitly assumed to be true if include query parameter is not empty. If true, the Content-Length property will be up to date. </p><a id="aa61962bfc9a03c5e4e4efba3813c1f0e"></a>
+- section: PageSizeHint
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AListFilesAndDirectoriesOptions.PageSizeHint
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions.PageSizeHint
+- declaration: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::PageSizeHint
+  languageId: cpp
+- content: <p>Specifies the maximum number of entries to return. If the request does not specify PageSizeHint, or specifies a value greater than 5,000, the server will return up to 5,000 items. </p><a id="a6e1649acd1b4476c676b425942597aad"></a>
+- section: Prefix
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AListFilesAndDirectoriesOptions.Prefix
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions.Prefix
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::ListFilesAndDirectoriesOptions::Prefix
+  languageId: cpp
+- content: <p>Filters the results to return only entries whose name begins with the specified prefix. </p>

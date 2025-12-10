@@ -1,11 +1,11 @@
 ---
 title: Azure Attestation SDK for C++
 description: Reference for Azure Attestation SDK for C++
-ms.date: 12/09/2025
+ms.date: 12/10/2025
 ms.topic: reference
 ms.devlang: cpp
 ms.service: attestation
 ---
-| Reference | Package | Source |
-|---|---|---|
-|[Attestation](attestation-readme.md)|[azure-security-attestation-cpp](https://vcpkg.io/en/package/azure-security-attestation-cpp)|[GitHub](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/attestation/azure-security-attestation)|
+# Azure Attestation SDK for C++ - latest
+## Packages - latest
+[!INCLUDE [packages](attestation-index.md)]

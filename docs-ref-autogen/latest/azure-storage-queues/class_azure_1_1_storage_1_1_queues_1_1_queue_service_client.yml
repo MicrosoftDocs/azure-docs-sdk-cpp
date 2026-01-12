@@ -11,7 +11,7 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a1ce18b1abb80b113a0907a9c586657a0">QueueServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
     summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client">QueueServiceClient</a>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a0ae9bde66e25efb49d8c36d49b321be4">QueueServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a40a8353ba75c04355bcb19b44ddec0d7">QueueServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
     summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client">QueueServiceClient</a>.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a22822371c2eedd3a9e766c3b7ee4f539">QueueServiceClient</a> (const std::string &amp;serviceUrl, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
@@ -41,10 +41,13 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#ac5eb95051f357a6284f3c67c7cd103a6">DeleteQueue</a> (const std::string &amp;queueName, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_delete_queue_options">DeleteQueueOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_delete_queue_options">DeleteQueueOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
     summary: Marks the specified queue for deletion.
     returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_delete_queue_result">Models::DeleteQueueResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a51ff766dfd0d5f881335c4b25477169f">GetUserDelegationKey</a> (const Azure::DateTime &amp;expiresOn, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_get_user_delegation_key_options">GetUserDelegationKeyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_get_user_delegation_key_options">GetUserDelegationKeyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Retrieves a key that can be used to delegate Active Directory authorization to shared access signatures.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_user_delegation_key">Models::UserDelegationKey</a> &gt;&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a2a4cac3f0a898640c9f7eb199ea0a374">CreateFromConnectionString</a> (const std::string &amp;connectionString, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#ae08c2eb4edf5c76c5561f18297187893">CreateFromConnectionString</a> (const std::string &amp;connectionString, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
     summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client">QueueServiceClient</a>.
     returnType: static <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client">QueueServiceClient</a>&#160;
 - content: <a id="details"></a>
@@ -74,16 +77,16 @@ components:
     summary: The shared key credential used to sign requests.
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
-- content: <a id="a0ae9bde66e25efb49d8c36d49b321be4"></a>
+- content: <a id="a40a8353ba75c04355bcb19b44ddec0d7"></a>
 - section: QueueServiceClient() [2/3]
   display: h3
   uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueServiceClient.QueueServiceClient%28%29%20%5B2%2F3%5D
   xrefType: Member
   xrefName: Azure::Storage::Queues::QueueServiceClient.QueueServiceClient() [2/3]
 - declaration: >-
-    Azure::Storage::Queues::QueueServiceClient::QueueServiceClient(const std::string &amp;&#160;                                  serviceUrl,                    
-                                                                   std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                    
-                                                                   const QueueClientOptions &amp;&#160;                           options = QueueClientOptions()&#160;
+    Azure::Storage::Queues::QueueServiceClient::QueueServiceClient(const std::string &amp;&#160;                                        serviceUrl,                    
+                                                                   std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                    
+                                                                   const QueueClientOptions &amp;&#160;                                 options = QueueClientOptions()&#160;
                                                                   ) explicit
   languageId: cpp
 - section: Parameters
@@ -115,16 +118,16 @@ components:
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a2a4cac3f0a898640c9f7eb199ea0a374"></a>
+- content: <a id="ae08c2eb4edf5c76c5561f18297187893"></a>
 - section: CreateFromConnectionString()
   display: h3
   uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueServiceClient.CreateFromConnectionString%28%29
   xrefType: Member
   xrefName: Azure::Storage::Queues::QueueServiceClient.CreateFromConnectionString()
 - declaration: >-
-    QueueServiceClient Azure::Storage::Queues::QueueServiceClient::CreateFromConnectionString(const std::string &amp;&#160;       connectionString,              
-                                                                                              const QueueClientOptions &amp;&#160;options = QueueClientOptions()&#160;
-                                                                                             ) static
+    static QueueServiceClient Azure::Storage::Queues::QueueServiceClient::CreateFromConnectionString(const std::string &amp;&#160;       connectionString,              
+                                                                                                     const QueueClientOptions &amp;&#160;options = QueueClientOptions()&#160;
+                                                                                                    ) static
   languageId: cpp
 - section: Parameters
   display: h4
@@ -260,6 +263,31 @@ components:
   display: h4
 - parameters:
   - summary: The queue service's primary URL endpoint.
+- content: <a id="a51ff766dfd0d5f881335c4b25477169f"></a>
+- section: GetUserDelegationKey()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueServiceClient.GetUserDelegationKey%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::QueueServiceClient.GetUserDelegationKey()
+- declaration: >-
+    Azure::Response&lt; Models::UserDelegationKey &gt; Azure::Storage::Queues::QueueServiceClient::GetUserDelegationKey(const Azure::DateTime &amp;&#160;            expiresOn,                              
+                                                                                                                  const GetUserDelegationKeyOptions &amp;&#160;options = GetUserDelegationKeyOptions(),
+                                                                                                                  const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
+                                                                                                                 )                                    const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: expiresOn
+    summary: Expiration of the key's validity. The time should be specified in UTC, and will be truncated to second.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A deserialized UserDelegationKey instance.
 - content: <a id="a266d271028d524cc5c55272b92ad852e"></a>
 - section: ListQueues()
   display: h3

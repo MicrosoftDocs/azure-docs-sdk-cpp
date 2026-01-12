@@ -14,7 +14,7 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client#aeb6e10a6cfdf0cb6ae5ec398cdacfb1b">ShareDirectoryClient</a> (const std::string &amp;shareDirectoryUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client">ShareDirectoryClient</a> using shared key authentication.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client#af8550545fa621113f875c85e104a438d">ShareDirectoryClient</a> (const std::string &amp;shareDirectoryUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client#a4267e4e4c453c0d1848d4d3cc79b9390">ShareDirectoryClient</a> (const std::string &amp;shareDirectoryUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client">ShareDirectoryClient</a> using shared key authentication.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client#a8c5075ac6ee4d7eaa383f9ea383a3431">ShareDirectoryClient</a> (const std::string &amp;shareDirectoryUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
@@ -108,16 +108,16 @@ components:
     summary: The shared key credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- content: <a id="af8550545fa621113f875c85e104a438d"></a>
+- content: <a id="a4267e4e4c453c0d1848d4d3cc79b9390"></a>
 - section: ShareDirectoryClient() [2/3]
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareDirectoryClient.ShareDirectoryClient%28%29%20%5B2%2F3%5D
   xrefType: Member
   xrefName: Azure::Storage::Files::Shares::ShareDirectoryClient.ShareDirectoryClient() [2/3]
 - declaration: >-
-    Azure::Storage::Files::Shares::ShareDirectoryClient::ShareDirectoryClient(const std::string &amp;&#160;                                  shareDirectoryUrl,             
-                                                                              std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                    
-                                                                              const ShareClientOptions &amp;&#160;                           options = ShareClientOptions()&#160;
+    Azure::Storage::Files::Shares::ShareDirectoryClient::ShareDirectoryClient(const std::string &amp;&#160;                                        shareDirectoryUrl,             
+                                                                              std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                    
+                                                                              const ShareClientOptions &amp;&#160;                                 options = ShareClientOptions()&#160;
                                                                              ) explicit
   languageId: cpp
 - section: Parameters

@@ -14,7 +14,7 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client#a23b3616ec4db127eae25cd231480a779">ShareServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client">ShareServiceClient</a> using shared key authentication.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client#a75803d186f28ebbb1196e48d9884ad9b">ShareServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client#a36db579978986244b71b05587d4ace91">ShareServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client">ShareServiceClient</a> using shared key authentication.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client#ace41efddfdb5234ca8287a895f43f372">ShareServiceClient</a> (const std::string &amp;serviceUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
@@ -35,6 +35,9 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client#af2da7b9bbaa7f8a6aed04d4414299d65">GetProperties</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_service_properties_options">GetServicePropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_service_properties_options">GetServicePropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
     summary: Get the service's properties.
     returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_service_properties">Models::ShareServiceProperties</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_service_client#ab036a5a81f92db7f215190eb3d2f5054">GetUserDelegationKey</a> (const Azure::DateTime &amp;expiresOn, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_user_delegation_key_options">GetUserDelegationKeyOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_user_delegation_key_options">GetUserDelegationKeyOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Retrieves a key that can be used to delegate Active Directory authorization to shared access signatures.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_user_delegation_key">Models::UserDelegationKey</a> &gt;&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
@@ -64,16 +67,16 @@ components:
     summary: The shared key credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- content: <a id="a75803d186f28ebbb1196e48d9884ad9b"></a>
+- content: <a id="a36db579978986244b71b05587d4ace91"></a>
 - section: ShareServiceClient() [2/3]
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareServiceClient.ShareServiceClient%28%29%20%5B2%2F3%5D
   xrefType: Member
   xrefName: Azure::Storage::Files::Shares::ShareServiceClient.ShareServiceClient() [2/3]
 - declaration: >-
-    Azure::Storage::Files::Shares::ShareServiceClient::ShareServiceClient(const std::string &amp;&#160;                                  serviceUrl,                    
-                                                                          std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                    
-                                                                          const ShareClientOptions &amp;&#160;                           options = ShareClientOptions()&#160;
+    Azure::Storage::Files::Shares::ShareServiceClient::ShareServiceClient(const std::string &amp;&#160;                                        serviceUrl,                    
+                                                                          std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                    
+                                                                          const ShareClientOptions &amp;&#160;                                 options = ShareClientOptions()&#160;
                                                                          ) explicit
   languageId: cpp
 - section: Parameters
@@ -178,6 +181,31 @@ components:
   display: h4
 - parameters:
   - summary: The file share service's primary URL endpoint.
+- content: <a id="ab036a5a81f92db7f215190eb3d2f5054"></a>
+- section: GetUserDelegationKey()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareServiceClient.GetUserDelegationKey%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareServiceClient.GetUserDelegationKey()
+- declaration: >-
+    Azure::Response&lt; Models::UserDelegationKey &gt; Azure::Storage::Files::Shares::ShareServiceClient::GetUserDelegationKey(const Azure::DateTime &amp;&#160;            expiresOn,                              
+                                                                                                                         const GetUserDelegationKeyOptions &amp;&#160;options = GetUserDelegationKeyOptions(),
+                                                                                                                         const Azure::Core::Context &amp;&#160;       context = Azure::Core::Context()&#160;       
+                                                                                                                        )                                    const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: expiresOn
+    summary: Expiration of the key's validity. The time should be specified in UTC, and will be truncated to second.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A deserialized UserDelegationKey instance.
 - content: <a id="a1d926a9af527d1da8c30a261b4bcdda1"></a>
 - section: ListShares()
   display: h3

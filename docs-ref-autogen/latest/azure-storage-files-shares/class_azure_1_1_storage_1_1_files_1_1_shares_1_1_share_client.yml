@@ -14,7 +14,7 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client#a55eed86ced6ff0f2a444566aa9611fbd">ShareClient</a> (const std::string &amp;shareUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client">ShareClient</a> using shared key authentication.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client#a65b53d009c3e9b054bdbdc2dccc79394">ShareClient</a> (const std::string &amp;shareUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client#a4005beb3d9c9ca210166a94cf8b3c04e">ShareClient</a> (const std::string &amp;shareUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client">ShareClient</a> using shared key authentication.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client#aaa2852e95f5e7f601c3ea01e7b98b03b">ShareClient</a> (const std::string &amp;shareUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
@@ -110,16 +110,16 @@ components:
     summary: The shared key credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- content: <a id="a65b53d009c3e9b054bdbdc2dccc79394"></a>
+- content: <a id="a4005beb3d9c9ca210166a94cf8b3c04e"></a>
 - section: ShareClient() [2/3]
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareClient.ShareClient%28%29%20%5B2%2F3%5D
   xrefType: Member
   xrefName: Azure::Storage::Files::Shares::ShareClient.ShareClient() [2/3]
 - declaration: >-
-    Azure::Storage::Files::Shares::ShareClient::ShareClient(const std::string &amp;&#160;                                  shareUrl,                      
-                                                            std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                    
-                                                            const ShareClientOptions &amp;&#160;                           options = ShareClientOptions()&#160;
+    Azure::Storage::Files::Shares::ShareClient::ShareClient(const std::string &amp;&#160;                                        shareUrl,                      
+                                                            std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                    
+                                                            const ShareClientOptions &amp;&#160;                                 options = ShareClientOptions()&#160;
                                                            ) explicit
   languageId: cpp
 - section: Parameters

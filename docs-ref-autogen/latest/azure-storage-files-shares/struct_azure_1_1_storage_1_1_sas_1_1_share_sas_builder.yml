@@ -23,7 +23,13 @@ components:
   - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder#a162934492b50850745ff293aa7dd3cb4">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
     summary: Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder#a34b247e6945178be45f1e9687306189b">GenerateSasToken</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_user_delegation_key">Files::Shares::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
+    summary: Uses an account's user delegation key to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
+    returnType: std::string&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder#ab4494a79bbdbe2e9cd9782b946c311c1">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
+    summary: For debugging purposes only.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_share_sas_builder#a2b8b5729500e0e77e66e60b6ce8c39ec">GenerateSasStringToSign</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_user_delegation_key">Files::Shares::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
     summary: For debugging purposes only.
     returnType: std::string&#160;
 - section: Public Attributes
@@ -77,6 +83,12 @@ components:
       <a id="a68255a4577f2dc6fc7fd27cea2df1297"></a>
 
       ShareSasResource&#160;
+  - declaration: DelegatedUserObjectId
+    summary: Beginning in version 2025-07-05, this value specifies the Entra ID of the user who is authorized to use the resulting SAS URL. The resulting SAS URL must be used in conjunction with an Entra ID token that has been issued to the user specified in this value. Only supported by User Delegation SAS.
+    returnType: >-
+      <a id="a966ba54ca6324dc6d9e47e58edbc6f37"></a>
+
+      std::string&#160;
   - declaration: CacheControl
     summary: Override the value returned for Cache-Control response header..
     returnType: >-
@@ -109,12 +121,34 @@ components:
       std::string&#160;
 - section: Member Function Documentation
   display: h2
-- content: <a id="ab4494a79bbdbe2e9cd9782b946c311c1"></a>
-- section: GenerateSasStringToSign()
+- content: <a id="a2b8b5729500e0e77e66e60b6ce8c39ec"></a>
+- section: GenerateSasStringToSign() [1/2]
   display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.GenerateSasStringToSign%28%29
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.GenerateSasStringToSign%28%29%20%5B1%2F2%5D
   xrefType: Member
-  xrefName: Azure::Storage::Sas::ShareSasBuilder.GenerateSasStringToSign()
+  xrefName: Azure::Storage::Sas::ShareSasBuilder.GenerateSasStringToSign() [1/2]
+- declaration: >-
+    std::string Azure::Storage::Sas::ShareSasBuilder::GenerateSasStringToSign(const Files::Shares::Models::UserDelegationKey &amp;&#160;userDelegationKey,
+                                                                              const std::string &amp;&#160;                             accountName&#160;      
+                                                                             )
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: userDelegationKey
+    summary: UserDelegationKey returned from ShareServiceClient.GetUserDelegationKey.
+  - name: accountName
+    summary: The name of the storage account.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
+- content: <a id="ab4494a79bbdbe2e9cd9782b946c311c1"></a>
+- section: GenerateSasStringToSign() [2/2]
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.GenerateSasStringToSign%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::ShareSasBuilder.GenerateSasStringToSign() [2/2]
 - declaration: std::string Azure::Storage::Sas::ShareSasBuilder::GenerateSasStringToSign(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters
@@ -126,12 +160,34 @@ components:
   display: h4
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
-- content: <a id="a162934492b50850745ff293aa7dd3cb4"></a>
-- section: GenerateSasToken()
+- content: <a id="a34b247e6945178be45f1e9687306189b"></a>
+- section: GenerateSasToken() [1/2]
   display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.GenerateSasToken%28%29
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.GenerateSasToken%28%29%20%5B1%2F2%5D
   xrefType: Member
-  xrefName: Azure::Storage::Sas::ShareSasBuilder.GenerateSasToken()
+  xrefName: Azure::Storage::Sas::ShareSasBuilder.GenerateSasToken() [1/2]
+- declaration: >-
+    std::string Azure::Storage::Sas::ShareSasBuilder::GenerateSasToken(const Files::Shares::Models::UserDelegationKey &amp;&#160;userDelegationKey,
+                                                                       const std::string &amp;&#160;                             accountName&#160;      
+                                                                      )
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: userDelegationKey
+    summary: UserDelegationKey returned from ShareServiceClient.GetUserDelegationKey.
+  - name: accountName
+    summary: The name of the storage account.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The SAS query parameters used for authenticating requests.
+- content: <a id="a162934492b50850745ff293aa7dd3cb4"></a>
+- section: GenerateSasToken() [2/2]
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AShareSasBuilder.GenerateSasToken%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::ShareSasBuilder.GenerateSasToken() [2/2]
 - declaration: std::string Azure::Storage::Sas::ShareSasBuilder::GenerateSasToken(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters

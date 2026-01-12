@@ -13,7 +13,7 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client#a030f4745a0d3acac7be36005bae33e07">DataLakeFileSystemClient</a> (const std::string &amp;fileSystemUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a>())
     summary: Shared key authentication client.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client#aac580d5bc52e362df521c30459dbc0d1">DataLakeFileSystemClient</a> (const std::string &amp;fileSystemUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client#a5b54136160833629699e3454ae4f1725">DataLakeFileSystemClient</a> (const std::string &amp;fileSystemUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a>())
     summary: Bearer token authentication client.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client#a5ed58cc7bec53175297613aa971e1ad7">DataLakeFileSystemClient</a> (const std::string &amp;fileSystemUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a>())
@@ -70,7 +70,7 @@ components:
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client#aaa8bdee92508724b810407f444bee095">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;fileSystemName, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client#ac37dbce733c7612d1b6a7e79bc59d86f">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;fileSystemName, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_client_options">DataLakeClientOptions</a>())
     summary: Create from connection string.
     returnType: static <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_file_system_client">DataLakeFileSystemClient</a>&#160;
 - section: Friends
@@ -112,16 +112,16 @@ components:
     summary: The shared key credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- content: <a id="aac580d5bc52e362df521c30459dbc0d1"></a>
+- content: <a id="a5b54136160833629699e3454ae4f1725"></a>
 - section: DataLakeFileSystemClient() [2/3]
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileSystemClient.DataLakeFileSystemClient%28%29%20%5B2%2F3%5D
   xrefType: Member
   xrefName: Azure::Storage::Files::DataLake::DataLakeFileSystemClient.DataLakeFileSystemClient() [2/3]
 - declaration: >-
-    Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DataLakeFileSystemClient(const std::string &amp;&#160;                                  fileSystemUrl,                    
-                                                                                        std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                       
-                                                                                        const DataLakeClientOptions &amp;&#160;                        options = DataLakeClientOptions()&#160;
+    Azure::Storage::Files::DataLake::DataLakeFileSystemClient::DataLakeFileSystemClient(const std::string &amp;&#160;                                        fileSystemUrl,                    
+                                                                                        std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                       
+                                                                                        const DataLakeClientOptions &amp;&#160;                              options = DataLakeClientOptions()&#160;
                                                                                        ) explicit
   languageId: cpp
 - section: Parameters
@@ -179,17 +179,17 @@ components:
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
-- content: <a id="aaa8bdee92508724b810407f444bee095"></a>
+- content: <a id="ac37dbce733c7612d1b6a7e79bc59d86f"></a>
 - section: CreateFromConnectionString()
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakeFileSystemClient.CreateFromConnectionString%28%29
   xrefType: Member
   xrefName: Azure::Storage::Files::DataLake::DataLakeFileSystemClient.CreateFromConnectionString()
 - declaration: >-
-    DataLakeFileSystemClient Azure::Storage::Files::DataLake::DataLakeFileSystemClient::CreateFromConnectionString(const std::string &amp;&#160;          connectionString,                 
-                                                                                                                   const std::string &amp;&#160;          fileSystemName,                   
-                                                                                                                   const DataLakeClientOptions &amp;&#160;options = DataLakeClientOptions()&#160;
-                                                                                                                  ) static
+    static DataLakeFileSystemClient Azure::Storage::Files::DataLake::DataLakeFileSystemClient::CreateFromConnectionString(const std::string &amp;&#160;          connectionString,                 
+                                                                                                                          const std::string &amp;&#160;          fileSystemName,                   
+                                                                                                                          const DataLakeClientOptions &amp;&#160;options = DataLakeClientOptions()&#160;
+                                                                                                                         ) static
   languageId: cpp
 - section: Parameters
   display: h4

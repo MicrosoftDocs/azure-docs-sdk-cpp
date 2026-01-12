@@ -11,7 +11,7 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aa2c824fb88d5c85726111775d777da55">QueueClient</a> (const std::string &amp;queueUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
     summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aa88cf353658db7f550dc86f7827b8a74">QueueClient</a> (const std::string &amp;queueUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a761ccab0222a6484176822b2c9a34c29">QueueClient</a> (const std::string &amp;queueUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
     summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#ad45551df27cb30f052a09828d4be4f0c">QueueClient</a> (const std::string &amp;queueUrl, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
@@ -59,7 +59,7 @@ components:
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#abb07e7ef5fc2f3c1f730c40120d1be1a">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;queueName, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a27f8542f41a9c2e99ce3a456b5594951">CreateFromConnectionString</a> (const std::string &amp;connectionString, const std::string &amp;queueName, const <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">QueueClientOptions</a>())
     summary: Initializes a new instance of <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>.
     returnType: static <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>&#160;
 - section: Friends
@@ -97,16 +97,16 @@ components:
     summary: The shared key credential used to sign requests.
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
-- content: <a id="aa88cf353658db7f550dc86f7827b8a74"></a>
+- content: <a id="a761ccab0222a6484176822b2c9a34c29"></a>
 - section: QueueClient() [2/3]
   display: h3
   uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.QueueClient%28%29%20%5B2%2F3%5D
   xrefType: Member
   xrefName: Azure::Storage::Queues::QueueClient.QueueClient() [2/3]
 - declaration: >-
-    Azure::Storage::Queues::QueueClient::QueueClient(const std::string &amp;&#160;                                  queueUrl,                      
-                                                     std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                    
-                                                     const QueueClientOptions &amp;&#160;                           options = QueueClientOptions()&#160;
+    Azure::Storage::Queues::QueueClient::QueueClient(const std::string &amp;&#160;                                        queueUrl,                      
+                                                     std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                    
+                                                     const QueueClientOptions &amp;&#160;                                 options = QueueClientOptions()&#160;
                                                     ) explicit
   languageId: cpp
 - section: Parameters
@@ -182,17 +182,17 @@ components:
   display: h4
 - parameters:
   - summary: A CreateQueueResult describing the newly created queue if the queue doesn't exist. CreateQueueResult.Created is false if the queue already exists.
-- content: <a id="abb07e7ef5fc2f3c1f730c40120d1be1a"></a>
+- content: <a id="a27f8542f41a9c2e99ce3a456b5594951"></a>
 - section: CreateFromConnectionString()
   display: h3
   uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AQueueClient.CreateFromConnectionString%28%29
   xrefType: Member
   xrefName: Azure::Storage::Queues::QueueClient.CreateFromConnectionString()
 - declaration: >-
-    QueueClient Azure::Storage::Queues::QueueClient::CreateFromConnectionString(const std::string &amp;&#160;       connectionString,              
-                                                                                const std::string &amp;&#160;       queueName,                     
-                                                                                const QueueClientOptions &amp;&#160;options = QueueClientOptions()&#160;
-                                                                               ) static
+    static QueueClient Azure::Storage::Queues::QueueClient::CreateFromConnectionString(const std::string &amp;&#160;       connectionString,              
+                                                                                       const std::string &amp;&#160;       queueName,                     
+                                                                                       const QueueClientOptions &amp;&#160;options = QueueClientOptions()&#160;
+                                                                                      ) static
   languageId: cpp
 - section: Parameters
   display: h4

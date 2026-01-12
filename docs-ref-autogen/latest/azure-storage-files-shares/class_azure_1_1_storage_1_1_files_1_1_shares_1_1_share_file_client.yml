@@ -14,7 +14,7 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#affdcaf9a88cfa721662d289d002a4abb">ShareFileClient</a> (const std::string &amp;shareFileUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client">ShareFileClient</a> using shared key authentication.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a409b8482de53d2a705c2d829376119b5">ShareFileClient</a> (const std::string &amp;shareFileUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a98ae261fd68cbbd1de85b845cad28949">ShareFileClient</a> (const std::string &amp;shareFileUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client">ShareFileClient</a> using shared key authentication.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a0f3daeabdfccf2a9f2ad874f1d97a42d">ShareFileClient</a> (const std::string &amp;shareFileUrl, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client_options">ShareClientOptions</a>())
@@ -89,6 +89,12 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#ae2d684bbf2ab3d6e1531c91b567af03a">UploadRangeFromUri</a> (int64_t destinationOffset, const std::string &amp;sourceUri, const Azure::Core::Http::HttpRange &amp;sourceRange, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_from_uri_options">UploadFileRangeFromUriOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_range_from_uri_options">UploadFileRangeFromUriOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
     summary: Upload a range from the source URI to this file's specific range.
     returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_upload_file_range_from_uri_result">Models::UploadFileRangeFromUriResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a64f59f643c91448b8044330f679818c7">CreateSymbolicLink</a> (const std::string &amp;linkText, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_symbolic_link_options">CreateSymbolicLinkOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_symbolic_link_options">CreateSymbolicLinkOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: NFS only. Creates a symbolic link to the file specified by path.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_file_symbolic_link_result">Models::CreateFileSymbolicLinkResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a54e11683dc43668ea0cbe3c7c1d831aa">GetSymbolicLink</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_symbolic_link_options">GetSymbolicLinkOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_symbolic_link_options">GetSymbolicLinkOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: NFS only. Reads the value of the symbolic link.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_get_file_symbolic_link_result">Models::GetFileSymbolicLinkResult</a> &gt;&#160;
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a83a2d195080e52e2164d3c878563066d">CreateHardLink</a> (const std::string &amp;targetFile, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_hard_link_options">CreateHardLinkOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_hard_link_options">CreateHardLinkOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
     summary: NFS only. Creates a hard link to the file specified by path.
     returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_file_hard_link_result">Models::CreateFileHardLinkResult</a> &gt;&#160;
@@ -139,16 +145,16 @@ components:
     summary: The shared key credential used to initialize the client.
   - name: options
     summary: Optional parameters used to initialize the client.
-- content: <a id="a409b8482de53d2a705c2d829376119b5"></a>
+- content: <a id="a98ae261fd68cbbd1de85b845cad28949"></a>
 - section: ShareFileClient() [2/3]
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareFileClient.ShareFileClient%28%29%20%5B2%2F3%5D
   xrefType: Member
   xrefName: Azure::Storage::Files::Shares::ShareFileClient.ShareFileClient() [2/3]
 - declaration: >-
-    Azure::Storage::Files::Shares::ShareFileClient::ShareFileClient(const std::string &amp;&#160;                                  shareFileUrl,                  
-                                                                    std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                    
-                                                                    const ShareClientOptions &amp;&#160;                           options = ShareClientOptions()&#160;
+    Azure::Storage::Files::Shares::ShareFileClient::ShareFileClient(const std::string &amp;&#160;                                        shareFileUrl,                  
+                                                                    std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                    
+                                                                    const ShareClientOptions &amp;&#160;                                 options = ShareClientOptions()&#160;
                                                                    ) explicit
   languageId: cpp
 - section: Parameters
@@ -311,6 +317,31 @@ components:
   display: h4
 - parameters:
   - summary: Azure::Response&lt;Models::CreateFileHardLinkResult&gt; containing the returned information.
+- content: <a id="a64f59f643c91448b8044330f679818c7"></a>
+- section: CreateSymbolicLink()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareFileClient.CreateSymbolicLink%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareFileClient.CreateSymbolicLink()
+- declaration: >-
+    Azure::Response&lt; Models::CreateFileSymbolicLinkResult &gt; Azure::Storage::Files::Shares::ShareFileClient::CreateSymbolicLink(const std::string &amp;&#160;              linkText,                             
+                                                                                                                               const CreateSymbolicLinkOptions &amp;&#160;options = CreateSymbolicLinkOptions(),
+                                                                                                                               const Azure::Core::Context &amp;&#160;     context = Azure::Core::Context()&#160;     
+                                                                                                                              )                                  const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: linkText
+    summary: The absolution or relative path to the file to be linked to.
+  - name: options
+    summary: Optional parameters to create this file's symbolic link.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::CreateFileSymbolicLinkResult&gt; containing the returned information.
 - content: <a id="a86036b445dce67a96f7bf6c45f163f59"></a>
 - section: Delete()
   display: h3
@@ -546,6 +577,28 @@ components:
   display: h4
 - parameters:
   - summary: Azure::Response&lt;Models::GetFileRangeListResult&gt; containing the valid ranges within the file for the specified range.
+- content: <a id="a54e11683dc43668ea0cbe3c7c1d831aa"></a>
+- section: GetSymbolicLink()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareFileClient.GetSymbolicLink%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareFileClient.GetSymbolicLink()
+- declaration: >-
+    Azure::Response&lt; Models::GetFileSymbolicLinkResult &gt; Azure::Storage::Files::Shares::ShareFileClient::GetSymbolicLink(const GetSymbolicLinkOptions &amp;&#160;options = GetSymbolicLinkOptions(),
+                                                                                                                         const Azure::Core::Context &amp;&#160;  context = Azure::Core::Context()&#160;  
+                                                                                                                        )                               const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to get this file's symbolic link.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::GetFileSymbolicLinkResult&gt; containing the returned information.
 - content: <a id="af5c6e696a07ff5c54a5e5e85c8e1d9d5"></a>
 - section: GetUrl()
   display: h3

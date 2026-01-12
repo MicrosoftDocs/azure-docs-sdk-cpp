@@ -20,7 +20,13 @@ components:
   - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder#a1fc41b9db62f219b04687c0d533646d4">GenerateSasToken</a> (const StorageSharedKeyCredential &amp;credential)
     summary: Uses the StorageSharedKeyCredential to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
     returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder#ae77dcbcd63b970c06881355f43a5d849">GenerateSasToken</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_user_delegation_key">Queues::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
+    summary: Uses an account's user delegation key to sign this shared access signature, to produce the proper SAS query parameters for authentication requests.
+    returnType: std::string&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder#a81b89ac6f38381dceac38803e6ed4794">GenerateSasStringToSign</a> (const StorageSharedKeyCredential &amp;credential)
+    summary: For debugging purposes only.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_sas_1_1_queue_sas_builder#a1919754efc87eeefec71efdc45a510af">GenerateSasStringToSign</a> (const <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_user_delegation_key">Queues::Models::UserDelegationKey</a> &amp;userDelegationKey, const std::string &amp;accountName)
     summary: For debugging purposes only.
     returnType: std::string&#160;
 - section: Public Attributes
@@ -62,14 +68,42 @@ components:
       <a id="a1cbf823204bee3740d1d9ae895483f29"></a>
 
       std::string&#160;
+  - declaration: DelegatedUserObjectId
+    summary: Beginning in version 2025-07-05, this value specifies the Entra ID of the user who is authorized to use the resulting SAS URL. The resulting SAS URL must be used in conjunction with an Entra ID token that has been issued to the user specified in this value. Only supported by User Delegation SAS.
+    returnType: >-
+      <a id="a770e1c4ed0e0fb62f9edb16583dfaa1a"></a>
+
+      std::string&#160;
 - section: Member Function Documentation
   display: h2
-- content: <a id="a81b89ac6f38381dceac38803e6ed4794"></a>
-- section: GenerateSasStringToSign()
+- content: <a id="a1919754efc87eeefec71efdc45a510af"></a>
+- section: GenerateSasStringToSign() [1/2]
   display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.GenerateSasStringToSign%28%29
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.GenerateSasStringToSign%28%29%20%5B1%2F2%5D
   xrefType: Member
-  xrefName: Azure::Storage::Sas::QueueSasBuilder.GenerateSasStringToSign()
+  xrefName: Azure::Storage::Sas::QueueSasBuilder.GenerateSasStringToSign() [1/2]
+- declaration: >-
+    std::string Azure::Storage::Sas::QueueSasBuilder::GenerateSasStringToSign(const Queues::Models::UserDelegationKey &amp;&#160;userDelegationKey,
+                                                                              const std::string &amp;&#160;                      accountName&#160;      
+                                                                             )
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: userDelegationKey
+    summary: UserDelegationKey returned from BlobServiceClient.GetUserDelegationKey.
+  - name: accountName
+    summary: The name of the storage account.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
+- content: <a id="a81b89ac6f38381dceac38803e6ed4794"></a>
+- section: GenerateSasStringToSign() [2/2]
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.GenerateSasStringToSign%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::QueueSasBuilder.GenerateSasStringToSign() [2/2]
 - declaration: std::string Azure::Storage::Sas::QueueSasBuilder::GenerateSasStringToSign(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters
@@ -81,12 +115,34 @@ components:
   display: h4
 - parameters:
   - summary: Returns the string to sign that will be used to generate the signature for the SAS URL.
-- content: <a id="a1fc41b9db62f219b04687c0d533646d4"></a>
-- section: GenerateSasToken()
+- content: <a id="ae77dcbcd63b970c06881355f43a5d849"></a>
+- section: GenerateSasToken() [1/2]
   display: h3
-  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.GenerateSasToken%28%29
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.GenerateSasToken%28%29%20%5B1%2F2%5D
   xrefType: Member
-  xrefName: Azure::Storage::Sas::QueueSasBuilder.GenerateSasToken()
+  xrefName: Azure::Storage::Sas::QueueSasBuilder.GenerateSasToken() [1/2]
+- declaration: >-
+    std::string Azure::Storage::Sas::QueueSasBuilder::GenerateSasToken(const Queues::Models::UserDelegationKey &amp;&#160;userDelegationKey,
+                                                                       const std::string &amp;&#160;                      accountName&#160;      
+                                                                      )
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: userDelegationKey
+    summary: UserDelegationKey returned from BlobServiceClient.GetUserDelegationKey.
+  - name: accountName
+    summary: The name of the storage account.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The SAS query parameters used for authenticating requests.
+- content: <a id="a1fc41b9db62f219b04687c0d533646d4"></a>
+- section: GenerateSasToken() [2/2]
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ASas%3A%3AQueueSasBuilder.GenerateSasToken%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Storage::Sas::QueueSasBuilder.GenerateSasToken() [2/2]
 - declaration: std::string Azure::Storage::Sas::QueueSasBuilder::GenerateSasToken(const StorageSharedKeyCredential &amp;&#160;credential)
   languageId: cpp
 - section: Parameters

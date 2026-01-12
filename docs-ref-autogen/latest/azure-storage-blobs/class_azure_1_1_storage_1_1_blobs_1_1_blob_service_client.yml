@@ -11,7 +11,7 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client#aa6a1310a65862c0c2995eb91d0e0b63e">BlobServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; StorageSharedKeyCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client">BlobServiceClient</a>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client#a86077a1f1f3d239531106d9e1c6d02c2">BlobServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client#a6c8f6d8b6be486b2bdaed5adb69d4bd1">BlobServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client">BlobServiceClient</a>.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client#a7033edd44abb8de807ccc618b09e81e2">BlobServiceClient</a> (const std::string &amp;serviceUrl, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a>())
@@ -65,7 +65,7 @@ components:
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client#a242d4409ff882572579c2cf650c4eaca">CreateFromConnectionString</a> (const std::string &amp;connectionString, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a>())
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client#a855a4a36facec4aa2fffe638164ab94a">CreateFromConnectionString</a> (const std::string &amp;connectionString, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a>())
     summary: Initialize a new instance of <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client">BlobServiceClient</a>.
     returnType: static <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_service_client">BlobServiceClient</a>&#160;
 - section: Friends
@@ -103,16 +103,16 @@ components:
     summary: The shared key credential used to sign requests.
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
-- content: <a id="a86077a1f1f3d239531106d9e1c6d02c2"></a>
+- content: <a id="a6c8f6d8b6be486b2bdaed5adb69d4bd1"></a>
 - section: BlobServiceClient() [2/3]
   display: h3
   uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobServiceClient.BlobServiceClient%28%29%20%5B2%2F3%5D
   xrefType: Member
   xrefName: Azure::Storage::Blobs::BlobServiceClient.BlobServiceClient() [2/3]
 - declaration: >-
-    Azure::Storage::Blobs::BlobServiceClient::BlobServiceClient(const std::string &amp;&#160;                                  serviceUrl,                   
-                                                                std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,                   
-                                                                const BlobClientOptions &amp;&#160;                            options = BlobClientOptions()&#160;
+    Azure::Storage::Blobs::BlobServiceClient::BlobServiceClient(const std::string &amp;&#160;                                        serviceUrl,                   
+                                                                std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,                   
+                                                                const BlobClientOptions &amp;&#160;                                  options = BlobClientOptions()&#160;
                                                                ) explicit
   languageId: cpp
 - section: Parameters
@@ -181,16 +181,16 @@ components:
   display: h4
 - parameters:
   - summary: A <a href="class_azure_1_1_storage_1_1_blobs_1_1_blob_container_client">BlobContainerClient</a> referencing the newly created container.
-- content: <a id="a242d4409ff882572579c2cf650c4eaca"></a>
+- content: <a id="a855a4a36facec4aa2fffe638164ab94a"></a>
 - section: CreateFromConnectionString()
   display: h3
   uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ABlobServiceClient.CreateFromConnectionString%28%29
   xrefType: Member
   xrefName: Azure::Storage::Blobs::BlobServiceClient.CreateFromConnectionString()
 - declaration: >-
-    BlobServiceClient Azure::Storage::Blobs::BlobServiceClient::CreateFromConnectionString(const std::string &amp;&#160;      connectionString,             
-                                                                                           const BlobClientOptions &amp;&#160;options = BlobClientOptions()&#160;
-                                                                                          ) static
+    static BlobServiceClient Azure::Storage::Blobs::BlobServiceClient::CreateFromConnectionString(const std::string &amp;&#160;      connectionString,             
+                                                                                                  const BlobClientOptions &amp;&#160;options = BlobClientOptions()&#160;
+                                                                                                 ) static
   languageId: cpp
 - section: Parameters
   display: h4

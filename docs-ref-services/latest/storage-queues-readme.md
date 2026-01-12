@@ -1,13 +1,13 @@
 ---
-title: Azure Storage Queues client library for C++
-keywords: Azure, cpp, SDK, API, azure-storage-queues-cpp, storage
-ms.date: 06/13/2025
+title: Azure Storage Queues Client Library for C
+keywords: Azure, cpp, SDK, API, azure-storage-queues, storage
+ms.date: 01/12/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: storage
 ---
-
-# Azure Storage Queues Client Library for C++
+# Azure Storage Queues Client Library for C - version 12.6.0 
+++
 
 Azure Queue storage is a service for storing large numbers of messages that can be accessed from anywhere in the world via authenticated calls using HTTP or HTTPS. A single queue message can be up to 64 KB in size, and a queue can contain millions of messages, up to the total capacity limit of a storage account.
 
@@ -67,7 +67,7 @@ Common uses of Queue storage include:
 - Creating a backlog of work to process asynchronously
 - Passing messages between different parts of a distributed application
 
-Learn more about options for authentication (including Connection Strings, Shared Key, Shared Key Signatures, Active Directory, and anonymous public access) in our [samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-queues/samples).
+Learn more about options for authentication (including Connection Strings, Shared Key, Shared Key Signatures, Active Directory, and anonymous public access) in our [samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-queues_12.6.0/sdk/storage/azure-storage-queues/samples).
 
 ### Thread safety
 
@@ -108,7 +108,7 @@ for (auto& msg : receiveMessagesResult.Messages)
 
 ## Troubleshooting
 
-All Azure Storage Queue  service operations will throw a [StorageException](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
+All Azure Storage Queue  service operations will throw a [StorageException](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-queues_12.6.0/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
 on failure with helpful [ErrorCode](https://learn.microsoft.com/rest/api/storageservices/queue-service-error-codes)s.
 Many of these errors are recoverable.
 
@@ -132,10 +132,10 @@ catch (Azure::Storage::StorageException& e)
 
 ## Next steps
 
-Get started with our [Queue samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-queues/samples):
+Get started with our [Queue samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-queues_12.6.0/sdk/storage/azure-storage-queues/samples):
 
-1. [Send and receive messages](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-queues/samples/queue_getting_started.cpp)
-2. [Encode and decode messages](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-queues/samples/queue_encode_message.cpp)
+1. [Send and receive messages](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-queues_12.6.0/sdk/storage/azure-storage-queues/samples/queue_getting_started.cpp)
+2. [Encode and decode messages](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-queues_12.6.0/sdk/storage/azure-storage-queues/samples/queue_encode_message.cpp)
 
 ## Contributing
 
@@ -158,7 +158,7 @@ additional questions or comments.
 [create_account_with_azure_portal]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal
 [create_account_with_powershell]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-powershell
 [create_account_with_azure_cli]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-cli
-[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md
+[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-queues_12.6.0/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/

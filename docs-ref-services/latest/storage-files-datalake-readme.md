@@ -1,13 +1,13 @@
 ---
-title: Azure Storage Files Data Lake client library for C++
-keywords: Azure, cpp, SDK, API, azure-storage-files-datalake-cpp, storage
-ms.date: 06/13/2025
+title: Azure Storage Files Data Lake Client Library for C
+keywords: Azure, cpp, SDK, API, azure-storage-files-datalake, storage
+ms.date: 01/12/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: storage
 ---
-
-# Azure Storage Files Data Lake Client Library for C++
+# Azure Storage Files Data Lake Client Library for C - version 12.14.0 
+++
 
 Azure Data Lake includes all the capabilities required to make it easy for developers, data scientists, and analysts to store data of any size, shape, and speed, and do all types of processing and analytics across platforms and languages. It removes the complexities of ingesting and storing all of your data while making it faster to get up and running with batch, streaming, and interactive analytics.
 
@@ -92,7 +92,7 @@ Data Lake Storage Gen2 offers two types of resources:
 
 Note: This client library does not support hierarchical namespace (HNS) disabled storage accounts.
 
-Learn more about options for authentication (including Connection Strings, Shared Key, Shared Key Signatures, Active Directory, and anonymous public access) in our [samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-files-datalake/samples).
+Learn more about options for authentication (including Connection Strings, Shared Key, Shared Key Signatures, Active Directory, and anonymous public access) in our [samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-files-datalake_12.14.0/sdk/storage/azure-storage-files-datalake/samples).
 
 ### Thread safety
 
@@ -152,7 +152,7 @@ for (auto pathPage = client.ListPaths(false); pathPage.HasPage(); pathPage.MoveT
 
 ## Troubleshooting
 
-All File DataLake service operations will throw a [StorageException](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
+All File DataLake service operations will throw a [StorageException](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-files-datalake_12.14.0/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
 on failure with helpful [ErrorCode](https://learn.microsoft.com/rest/api/storageservices/blob-service-error-codes)s.
 Many of these errors are recoverable.
 
@@ -176,9 +176,9 @@ catch (Azure::Storage::StorageException& e)
 
 ## Next steps
 
-Get started with our [DataLake samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-files-datalake/samples):
+Get started with our [DataLake samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-files-datalake_12.14.0/sdk/storage/azure-storage-files-datalake/samples):
 
-1. [Append and read DataLake Files](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-files-datalake/samples/datalake_getting_started.cpp)
+1. [Append and read DataLake Files](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-files-datalake_12.14.0/sdk/storage/azure-storage-files-datalake/samples/datalake_getting_started.cpp)
 
 ## Contributing
 
@@ -201,7 +201,7 @@ additional questions or comments.
 [create_account_with_azure_portal]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal
 [create_account_with_powershell]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-powershell
 [create_account_with_azure_cli]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-cli
-[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md
+[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-files-datalake_12.14.0/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/

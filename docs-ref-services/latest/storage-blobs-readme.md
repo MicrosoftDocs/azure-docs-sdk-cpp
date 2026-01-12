@@ -1,13 +1,13 @@
 ---
-title: Azure Storage Blobs client library for C++
-keywords: Azure, cpp, SDK, API, azure-storage-blobs-cpp, storage
-ms.date: 06/13/2025
+title: Azure Storage Blobs Client Library for C
+keywords: Azure, cpp, SDK, API, azure-storage-blobs, storage
+ms.date: 01/12/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: storage
 ---
-
-# Azure Storage Blobs Client Library for C++
+# Azure Storage Blobs Client Library for C - version 12.16.0 
+++
 
 Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data. Unstructured data is data that does not adhere to a particular data model or definition, such as text or binary data.
 
@@ -77,7 +77,7 @@ Blob storage offers three types of resources:
 - A container in the storage account used via `BlobContainerClient`
 - A blob in a container used via `BlobClient`
 
-Learn more about options for authentication (including Connection Strings, Shared Key, Shared Key Signatures, Active Directory, and anonymous public access) in our [samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-blobs/samples).
+Learn more about options for authentication (including Connection Strings, Shared Key, Shared Key Signatures, Active Directory, and anonymous public access) in our [samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.16.0/sdk/storage/azure-storage-blobs/samples).
 
 ### Thread safety
 
@@ -128,7 +128,7 @@ for (auto blobPage = containerClient.ListBlobs(); blobPage.HasPage(); blobPage.M
 
 ## Troubleshooting
 
-All Blob service operations will throw a [StorageException](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
+All Blob service operations will throw a [StorageException](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.16.0/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
 on failure with helpful [ErrorCode](https://learn.microsoft.com/rest/api/storageservices/blob-service-error-codes)s.
 Many of these errors are recoverable.
 
@@ -152,10 +152,10 @@ catch (Azure::Storage::StorageException& e)
 
 ## Next steps
 
-Get started with our [Blob samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-blobs/samples):
+Get started with our [Blob samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.16.0/sdk/storage/azure-storage-blobs/samples):
 
-1. [Upload and download blobs](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-blobs/samples/blob_getting_started.cpp)
-2. [List operations](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-blobs/samples/blob_list_operation.cpp)
+1. [Upload and download blobs](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.16.0/sdk/storage/azure-storage-blobs/samples/blob_getting_started.cpp)
+2. [List operations](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.16.0/sdk/storage/azure-storage-blobs/samples/blob_list_operation.cpp)
 
 ## Contributing
 
@@ -178,7 +178,7 @@ additional questions or comments.
 [create_account_with_azure_portal]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal
 [create_account_with_powershell]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-powershell
 [create_account_with_azure_cli]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-cli
-[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md
+[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.16.0/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/

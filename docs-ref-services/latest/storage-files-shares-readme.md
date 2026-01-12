@@ -1,13 +1,13 @@
 ---
-title: Azure Storage Files Shares client library for C++
-keywords: Azure, cpp, SDK, API, azure-storage-files-shares-cpp, storage
-ms.date: 06/13/2025
+title: Azure Storage Files Shares Client Library for C
+keywords: Azure, cpp, SDK, API, azure-storage-files-shares, storage
+ms.date: 01/12/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: storage
 ---
-
-# Azure Storage Files Shares Client Library for C++
+# Azure Storage Files Shares Client Library for C - version 12.16.0 
+++
 
 Azure File Shares offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol. Azure file shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS. Additionally, Azure file shares can be cached on Windows Servers with Azure File Sync for fast access near where the data is being used.
 
@@ -68,7 +68,7 @@ Azure file shares can be used to:
 - "Lift and shift" applications to the cloud that expect a file share to store file application or user data.
 - Simplify new cloud development projects with shared application settings, diagnostic shares, and Dev/Test/Debug tool file shares.
 
-Learn more about options for authentication (including Connection Strings, Shared Key, Shared Key Signatures, Active Directory, and anonymous public access) in our [samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-files-shares/samples).
+Learn more about options for authentication (including Connection Strings, Shared Key, Shared Key Signatures, Active Directory, and anonymous public access) in our [samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-files-shares_12.16.0/sdk/storage/azure-storage-files-shares/samples).
 
 ### Thread safety
 
@@ -140,7 +140,7 @@ while (remaining.size() > 0)
 
 ## Troubleshooting
 
-All Azure Storage File Shares service operations will throw a [StorageException](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
+All Azure Storage File Shares service operations will throw a [StorageException](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-files-shares_12.16.0/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
 on failure with helpful [ErrorCode](https://learn.microsoft.com/rest/api/storageservices/file-service-error-codes)s.
 Many of these errors are recoverable.
 
@@ -164,9 +164,9 @@ catch (Azure::Storage::StorageException& e)
 
 ## Next steps
 
-Get started with our [File samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-files-shares/samples):
+Get started with our [File samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-files-shares_12.16.0/sdk/storage/azure-storage-files-shares/samples):
 
-1. [Upload and download files](https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/azure-storage-files-shares/samples/file_share_getting_started.cpp)
+1. [Upload and download files](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-files-shares_12.16.0/sdk/storage/azure-storage-files-shares/samples/file_share_getting_started.cpp)
 
 ## Contributing
 
@@ -189,7 +189,7 @@ additional questions or comments.
 [create_account_with_azure_portal]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal
 [create_account_with_powershell]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-powershell
 [create_account_with_azure_cli]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-cli
-[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md
+[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-files-shares_12.16.0/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/

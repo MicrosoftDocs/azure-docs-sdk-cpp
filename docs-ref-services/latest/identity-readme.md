@@ -1,15 +1,15 @@
 ---
-title: Azure Identity client library for JavaScript
-keywords: Azure, javascript, SDK, API, @azure/identity, entra-id
-ms.date: 05/14/2025
+title: Azure Identity client library for C
+keywords: Azure, cpp, SDK, API, azure-identity, identity
+ms.date: 01/17/2026
 ms.topic: reference
-ms.devlang: javascript
-ms.service: entra-id
+ms.devlang: cpp
+ms.service: identity
 ---
+# Azure Identity client library for C - version 1.13.3 
+++
 
-# Azure Identity client library for C++
-
-The Azure Identity library provides Microsoft Entra ID ([formerly Azure Active Directory](https://learn.microsoft.com/entra/fundamentals/new-name)) token authentication support across the Azure SDK. It provides a set of `TokenCredential` implementations which can be used to construct Azure SDK clients which support Microsoft Entra token authentication.
+The Azure Identity library provides [Microsoft Entra ID](https://learn.microsoft.com/entra/fundamentals/whatis) token-based authentication support across the Azure SDK. It provides a set of `TokenCredential` implementations which can be used to construct Azure SDK clients which support Microsoft Entra token authentication.
 This library follows the [Azure SDK Design Guidelines for C++][azure_sdk_cpp_development_guidelines].
 
 [Source code][source] | [Package (vcpkg)][identity_vcpkg] | [API reference documentation][doxygen] | [Microsoft Entra ID documentation][meid_doc] | [Samples][samples]
@@ -78,7 +78,7 @@ See [Credential Classes](#credential-classes) for a complete listing of availabl
 
 ## Examples
 
-See the [code samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/identity/azure-identity/samples).
+See the [code samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-identity_1.13.3/sdk/identity/azure-identity/samples).
 
 ## Chained Token Credential
 
@@ -236,7 +236,7 @@ Configuration is attempted in the above order. For example, if values for a clie
 
 ## Troubleshooting
 
-1. Azure Identity [SDK log messages](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/core/azure-core#sdk-log-messages) contain disgnostic information, and start with "`Identity: `".
+1. Azure Identity [SDK log messages](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-identity_1.13.3/sdk/core/azure-core#sdk-log-messages) contain disgnostic information, and start with "`Identity: `".
 1. Credentials raise exceptions either when they fail to authenticate or cannot execute authentication. When a credential fails to authenticate, an `AuthenticationException` is thrown. The exception has the `what()` function that provides more information about the failure.
 
 ## Contributing
@@ -269,21 +269,21 @@ Security issues and bugs should be reported privately, via email, to the Microso
 
 ### License
 
-Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/main/LICENSE.txt) license.
+Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-identity_1.13.3/LICENSE.txt) license.
 
 <!-- LINKS -->
 [azure_cli]: https://learn.microsoft.com/cli/azure
 [azure_sub]: https://azure.microsoft.com/free/
 [azsdk_vcpkg_install]: https://github.com/Azure/azure-sdk-for-cpp#download--install-the-sdk
-[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md
-[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md#developer-guide
-[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md#pull-requests
+[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-identity_1.13.3/CONTRIBUTING.md
+[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-identity_1.13.3/CONTRIBUTING.md#developer-guide
+[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-identity_1.13.3/CONTRIBUTING.md#pull-requests
 [azure_sdk_cpp_development_guidelines]: https://azure.github.io/azure-sdk/cpp_introduction.html
-[source]: https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/identity/azure-identity
-[samples]: https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/identity/azure-identity/samples
-[blobs_client_library]: https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-blobs
+[source]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-identity_1.13.3/sdk/identity/azure-identity
+[samples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-identity_1.13.3/sdk/identity/azure-identity/samples
+[blobs_client_library]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-identity_1.13.3/sdk/storage/azure-storage-blobs
 [meid_doc]: https://learn.microsoft.com/entra/identity/
-[azure_core_library]: https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/core
+[azure_core_library]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-identity_1.13.3/sdk/core
 [doxygen]: https://azure.github.io/azure-sdk-for-cpp/
 [identity_vcpkg]: https://vcpkg.io/en/package/azure-identity-cpp
-[project_set_up_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/main/samples/integration
+[project_set_up_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-identity_1.13.3/samples/integration

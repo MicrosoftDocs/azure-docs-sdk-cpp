@@ -1,12 +1,11 @@
 ---
-title: Azure Core client library for C++
+title: 
 keywords: Azure, cpp, SDK, API, azure-core, core
-ms.date: 06/13/2025
+ms.date: 01/17/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: core
 ---
-
 # Azure SDK Core Library for C++
 
 Azure::Core (`azure-core`) provides shared primitives, abstractions, and helpers for modern Azure SDK client libraries written in the C++. These libraries follow the [Azure SDK Design Guidelines for C++][azure_sdk_cpp_development_guidelines].
@@ -76,7 +75,7 @@ auto finalResult = operation.Value();
 
 ### HTTP Transport adapter
 
-Out of the box, the Azure SDK for C++ supports the libcurl and WinHTTP libraries as HTTP stacks for communicating with Azure services over the network. The SDK also provides a mechanism for `customer-implemented` _HTTP transport adapter_. [You can learn more about the transport adapter in this doc](https://github.com/Azure/azure-sdk-for-cpp/blob/main/doc/HttpTransportAdapter.md#http-transport-adapter).
+Out of the box, the Azure SDK for C++ supports the libcurl and WinHTTP libraries as HTTP stacks for communicating with Azure services over the network. The SDK also provides a mechanism for `customer-implemented` _HTTP transport adapter_. [You can learn more about the transport adapter in this doc](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core_1.16.2/doc/HttpTransportAdapter.md#http-transport-adapter).
 
 ## Troubleshooting
 
@@ -88,7 +87,7 @@ Three main ways of troubleshooting failures are:
 ### SDK Log Messages
 
 The simplest way to enable logs is to set `AZURE_LOG_LEVEL` environment variable to one of the values:
-|`AZURE_LOG_LEVEL`|`Azure::Core::Diagnostics::Logger::Level`|Log message level
+|`AZURE_LOG_LEVEL`|`Azure::Core::Diagnostics::Logger::Level`|Log message level|
 |-|-|-|
 |`4`, or `error`, or `err`|`Error`|Logging level for failures that the application is unlikely to recover from.|
 |`3`, or `warning`, or `warn`|`Warning`|Logging level when a function fails to perform its intended task.|
@@ -166,13 +165,13 @@ Security issues and bugs should be reported privately, via email, to the Microso
 
 ### License
 
-Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/main/LICENSE.txt) license.
+Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core_1.16.2/LICENSE.txt) license.
 
 <!-- LINKS -->
 [azsdk_vcpkg_install]: https://github.com/Azure/azure-sdk-for-cpp#download--install-the-sdk
-[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md
-[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md#developer-guide
-[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md#pull-requests
+[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core_1.16.2/CONTRIBUTING.md
+[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core_1.16.2/CONTRIBUTING.md#developer-guide
+[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core_1.16.2/CONTRIBUTING.md#pull-requests
 [azure_sdk_cpp_development_guidelines]: https://azure.github.io/azure-sdk/cpp_introduction.html
 [azure_cli]: https://learn.microsoft.com/cli/azure
 [azure_pattern_circuit_breaker]: https://learn.microsoft.com/azure/architecture/patterns/circuit-breaker
@@ -182,3 +181,4 @@ Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk
 [c_compiler]: https://visualstudio.microsoft.com/vs/features/cplusplus/
 [cloud_shell]: https://learn.microsoft.com/azure/cloud-shell/overview
 [cloud_shell_bash]: https://shell.azure.com/bash
+

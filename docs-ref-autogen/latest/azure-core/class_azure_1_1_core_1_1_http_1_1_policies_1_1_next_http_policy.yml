@@ -13,7 +13,7 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy#a9563e99253733b0ed54cd0f467e72afe">NextHttpPolicy</a> (size_t index, const std::vector&lt; std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_http_policy">HttpPolicy</a> &gt; &gt; &amp;policies)
     summary: Constructs an abstraction representing a next line in the stack sequence of policies, from the caller's perspective.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy#a9c1768b963eade38336239f48d471097">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_policies_1_1_next_http_policy#a8f017f5cd9d4b03eb47b322fb1a973cb">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context)
     summary: Applies this HTTP policy.
     returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">RawResponse</a> &gt;&#160;
 - content: <a id="details"></a>
@@ -45,16 +45,16 @@ components:
     summary: A vector of unique pointers next in the line to be invoked after the current policy.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a9c1768b963eade38336239f48d471097"></a>
+- content: <a id="a8f017f5cd9d4b03eb47b322fb1a973cb"></a>
 - section: Send()
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3APolicies%3A%3ANextHttpPolicy.Send%28%29
   xrefType: Member
   xrefName: Azure::Core::Http::Policies::NextHttpPolicy.Send()
 - declaration: >-
-    std::unique_ptr&lt; RawResponse &gt; NextHttpPolicy::Send(Request &amp;&#160;      request,
-                                                        Context const &amp;&#160;context&#160;
-                                                       )
+    std::unique_ptr&lt; RawResponse &gt; Azure::Core::Http::Policies::NextHttpPolicy::Send(Request &amp;&#160;      request,
+                                                                                     Context const &amp;&#160;context&#160;
+                                                                                    )
   languageId: cpp
 - section: Parameters
   display: h4

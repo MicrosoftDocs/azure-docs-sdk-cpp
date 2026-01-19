@@ -14,16 +14,16 @@ components:
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream#a31798d744f57846908d91dbbb1ae8d83">FileBodyStream</a> (const std::string &amp;filename)
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream#aae05349b2a414a347f85049efaedabc7">FileBodyStream</a> (const std::string &amp;filename)
     summary: Constructs <code>FileBodyStream</code> from a file name.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream#a0736e4b3b4ba731c9f12a750bf20d399">~FileBodyStream</a> () override
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream#ae4665b83b847e9d0d2413c5bb0d9f796">~FileBodyStream</a> () override
     summary: Closes the file and cleans up any resources.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream#a6a508b86596a8c482ccf2b50f051a620">Rewind</a> () override
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream#afea647898404c6499a6bfb4e135a15e0">Rewind</a> () override
     summary: Rewind seeks the current stream to the start of the file.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream#a4c9ea3f7f807238a662e75d7fa7e72da">Length</a> () const override
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream#a45c1d27a75a8d930825f7fa28f9ea278">Length</a> () const override
     summary: Get the length of the data.
     returnType: int64_t&#160;
   - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a54e16528af689c00f5190858fff85e92">~BodyStream</a> ()=default
@@ -38,21 +38,21 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#ab7c962004d984d3bd1d32f33e6aa485d">Read</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
     summary: Read portion of data into a buffer.
     returnType: size_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#ac02611cf3f72c181dcf393c571df6226">ReadToCount</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#ab9f01b3d62b5d6be9b9a20c081cb31c0">ReadToCount</a> (uint8_t *buffer, size_t count, <a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
     summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> into a buffer until the buffer is filled, or until the stream is read to end.
     returnType: size_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a6d2138790b0c79e24f7fbc0f776bb069">ReadToEnd</a> (<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
+  - declaration: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a836839c633c1019b12c879d2ca11011b">ReadToEnd</a> (<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a> const &amp;context=<a href="class_azure_1_1_core_1_1_context">Azure::Core::Context</a>())
     summary: Read <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> until the stream is read to end, allocating memory for the entirety of contents.
     returnType: std::vector&lt; uint8_t &gt;&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="a31798d744f57846908d91dbbb1ae8d83"></a>
+- content: <a id="aae05349b2a414a347f85049efaedabc7"></a>
 - section: FileBodyStream()
   display: h3
   uid: Azure%3A%3ACore%3A%3AIO%3A%3AFileBodyStream.FileBodyStream%28%29
   xrefType: Member
   xrefName: Azure::Core::IO::FileBodyStream.FileBodyStream()
-- declaration: FileBodyStream::FileBodyStream(const std::string &amp;&#160;filename)
+- declaration: Azure::Core::IO::FileBodyStream::FileBodyStream(const std::string &amp;&#160;filename)
   languageId: cpp
 - section: Parameters
   display: h4
@@ -63,34 +63,34 @@ components:
   display: h4
 - parameters:
   - summary: The <a href="class_azure_1_1_core_1_1_i_o_1_1_file_body_stream">Azure::Core::IO::FileBodyStream</a> owns the file object and is responsible for opening and closing the file.
-- content: <a id="a0736e4b3b4ba731c9f12a750bf20d399"></a>
+- content: <a id="ae4665b83b847e9d0d2413c5bb0d9f796"></a>
 - section: ~FileBodyStream()
   display: h3
   uid: Azure%3A%3ACore%3A%3AIO%3A%3AFileBodyStream.~FileBodyStream%28%29
   xrefType: Member
   xrefName: Azure::Core::IO::FileBodyStream.~FileBodyStream()
-- declaration: FileBodyStream::~FileBodyStream() override
+- declaration: Azure::Core::IO::FileBodyStream::~FileBodyStream() override
   languageId: cpp
 - section: Member Function Documentation
   display: h2
-- content: <a id="a4c9ea3f7f807238a662e75d7fa7e72da"></a>
+- content: <a id="a45c1d27a75a8d930825f7fa28f9ea278"></a>
 - section: Length()
   display: h3
   uid: Azure%3A%3ACore%3A%3AIO%3A%3AFileBodyStream.Length%28%29
   xrefType: Member
   xrefName: Azure::Core::IO::FileBodyStream.Length()
-- declaration: int64_t FileBodyStream::Length()const override virtual
+- declaration: int64_t Azure::Core::IO::FileBodyStream::Length()const override virtual
   languageId: cpp
 - section: Remarks
   display: h4
 - parameters:
   - summary: Used with the HTTP <code>Content-Length</code> header.
-- content: <p>Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.</p><a id="a6a508b86596a8c482ccf2b50f051a620"></a>
+- content: <p>Implements <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a2e73f394ca060cf94146e03d5cf46d74">Azure::Core::IO::BodyStream</a>.</p><a id="afea647898404c6499a6bfb4e135a15e0"></a>
 - section: Rewind()
   display: h3
   uid: Azure%3A%3ACore%3A%3AIO%3A%3AFileBodyStream.Rewind%28%29
   xrefType: Member
   xrefName: Azure::Core::IO::FileBodyStream.Rewind()
-- declaration: void FileBodyStream::Rewind() override virtual
+- declaration: void Azure::Core::IO::FileBodyStream::Rewind() override virtual
   languageId: cpp
 - content: <p>Reimplemented from <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream#a52c2ce02e8a7dec1f55276f664c7c8b6">Azure::Core::IO::BodyStream</a>.</p>

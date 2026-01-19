@@ -20,7 +20,7 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport#a7389a13501d5339ce872ec25610850f6">WinHttpTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options">Azure::Core::Http::Policies::TransportOptions</a> const &amp;options)
     summary: Constructs <code>WinHttpTransport</code> object based on common <a href="namespace_azure">Azure</a> HTTP Transport Options.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport#a21027372be541ce167ee62b06e566402">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context) override
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport#aed24f55fc41b26f4df3eac06a9160222">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context) override
     summary: Implements the HTTP transport interface to send an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> and produce an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">RawResponse</a>.
     returnType: virtual std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">RawResponse</a> &gt;&#160;
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context)=0
@@ -32,7 +32,7 @@ components:
 - section: Protected Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport#aebe91a3b2960e25431b6106c70c003e3">OnUpgradedConnection</a> (std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;request) const
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_win_http_transport#aa60cd0a82949d5b49faf9feed22c88c0">OnUpgradedConnection</a> (std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;request) const
     summary: Callback to allow a derived transport to extract the request handle. Used for WebSocket transports.
     returnType: virtual void&#160;
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#a76c34f294158836f72741cc90e4b480f">HttpTransport</a> ()=default
@@ -75,28 +75,28 @@ components:
   languageId: cpp
 - section: Member Function Documentation
   display: h2
-- content: <a id="aebe91a3b2960e25431b6106c70c003e3"></a>
+- content: <a id="aa60cd0a82949d5b49faf9feed22c88c0"></a>
 - section: OnUpgradedConnection()
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3AWinHttpTransport.OnUpgradedConnection%28%29
   xrefType: Member
   xrefName: Azure::Core::Http::WinHttpTransport.OnUpgradedConnection()
-- declaration: void Azure::Core::Http::WinHttpTransport::OnUpgradedConnection(std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;&#160;request)const protected virtual
+- declaration: virtual void Azure::Core::Http::WinHttpTransport::OnUpgradedConnection(std::unique_ptr&lt; _detail::WinHttpRequest &gt; const &amp;&#160;request)const protected virtual
   languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: request
     summary: '- <a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> which contains the WinHttp request handle.'
-- content: <a id="a21027372be541ce167ee62b06e566402"></a>
+- content: <a id="aed24f55fc41b26f4df3eac06a9160222"></a>
 - section: Send()
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3AWinHttpTransport.Send%28%29
   xrefType: Member
   xrefName: Azure::Core::Http::WinHttpTransport.Send()
 - declaration: >-
-    std::unique_ptr&lt; RawResponse &gt; Azure::Core::Http::WinHttpTransport::Send(Request &amp;&#160;      request,
-                                                                             Context const &amp;&#160;context&#160;
-                                                                            ) override virtual
+    virtual std::unique_ptr&lt; RawResponse &gt; Azure::Core::Http::WinHttpTransport::Send(Request &amp;&#160;      request,
+                                                                                     Context const &amp;&#160;context&#160;
+                                                                                    ) override virtual
   languageId: cpp
 - content: <p>Implements <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#aab0a38b3e67079a9ede743c3e8de909d">Azure::Core::Http::HttpTransport</a>.</p>

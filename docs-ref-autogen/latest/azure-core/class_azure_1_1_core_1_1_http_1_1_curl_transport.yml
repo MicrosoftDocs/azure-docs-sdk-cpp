@@ -17,13 +17,13 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#a5ad6635c2f4f80164d95db832e13e83b">CurlTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options">CurlTransportOptions</a> const &amp;options=<a href="struct_azure_1_1_core_1_1_http_1_1_curl_transport_options">CurlTransportOptions</a>())
     summary: Construct a new <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport">CurlTransport</a> object.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#ab262ee5e4b98d00e3ca448402951cfed">CurlTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options">Azure::Core::Http::Policies::TransportOptions</a> const &amp;options)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#a4b83060c742b1eec5abfce5f6a6f6fe4">CurlTransport</a> (<a href="struct_azure_1_1_core_1_1_http_1_1_policies_1_1_transport_options">Azure::Core::Http::Policies::TransportOptions</a> const &amp;options)
     summary: Construct a new <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport">CurlTransport</a> object based on common <a href="namespace_azure">Azure</a> HTTP Transport Options.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#a5ec0198b7d400faff38599b52f174512">~CurlTransport</a> ()=default
     summary: Destroys a <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport">CurlTransport</a> object.
     returnType: virtual&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#aa6a92d65b363e50a2293b6bada21ef3e">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context) override
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_curl_transport#aa44c4d2a31213b52393e48e2ff7fa9e3">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context) override
     summary: Implements interface to send an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> and produce an HTTP <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">RawResponse</a>.
     returnType: std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">RawResponse</a> &gt;&#160;
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_http_transport#aab0a38b3e67079a9ede743c3e8de909d">Send</a> (<a href="class_azure_1_1_core_1_1_http_1_1_request">Request</a> &amp;request, <a href="class_azure_1_1_core_1_1_context">Context</a> const &amp;context)=0
@@ -65,13 +65,13 @@ components:
 - parameters:
   - name: options
     summary: Optional parameter to override the default options.
-- content: <a id="ab262ee5e4b98d00e3ca448402951cfed"></a>
+- content: <a id="a4b83060c742b1eec5abfce5f6a6f6fe4"></a>
 - section: CurlTransport() [2/2]
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlTransport.CurlTransport%28%29%20%5B2%2F2%5D
   xrefType: Member
   xrefName: Azure::Core::Http::CurlTransport.CurlTransport() [2/2]
-- declaration: CurlTransport::CurlTransport(Azure::Core::Http::Policies::TransportOptions const &amp;&#160;options)
+- declaration: Azure::Core::Http::CurlTransport::CurlTransport(Azure::Core::Http::Policies::TransportOptions const &amp;&#160;options)
   languageId: cpp
 - section: Parameters
   display: h4
@@ -94,16 +94,16 @@ components:
     non-virtual"](<a href="http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-non-virtual">http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-non-virtual</a>) </p>
 - section: Member Function Documentation
   display: h2
-- content: <a id="aa6a92d65b363e50a2293b6bada21ef3e"></a>
+- content: <a id="aa44c4d2a31213b52393e48e2ff7fa9e3"></a>
 - section: Send()
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3ACurlTransport.Send%28%29
   xrefType: Member
   xrefName: Azure::Core::Http::CurlTransport.Send()
 - declaration: >-
-    std::unique_ptr&lt; RawResponse &gt; CurlTransport::Send(Request &amp;&#160;      request,
-                                                       Context const &amp;&#160;context&#160;
-                                                      ) override virtual
+    std::unique_ptr&lt; RawResponse &gt; Azure::Core::Http::CurlTransport::Send(Request &amp;&#160;      request,
+                                                                          Context const &amp;&#160;context&#160;
+                                                                         ) override virtual
   languageId: cpp
 - section: Parameters
   display: h4

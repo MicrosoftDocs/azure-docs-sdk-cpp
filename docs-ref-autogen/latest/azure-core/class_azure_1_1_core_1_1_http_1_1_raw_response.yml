@@ -29,10 +29,10 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#a9c26c70d38445a96462013029f57555a">~RawResponse</a> ()=default
     summary: Destructs <code>RawResponse</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#a5265579e09f5254509c9aa40ff16ce7d">SetHeader</a> (std::string const &amp;name, std::string const &amp;value)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#a9449ef8010e99c54ae97780bdf42cd0b">SetHeader</a> (std::string const &amp;name, std::string const &amp;value)
     summary: Set an HTTP header to the <a href="class_azure_1_1_core_1_1_http_1_1_raw_response">Azure::Core::Http::RawResponse</a>.
     returnType: void&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#af12357c369ecf7071416b97697868cfa">SetBodyStream</a> (std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> &gt; stream)
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#a6274d5c00e15b5303a42a4d584c82bba">SetBodyStream</a> (std::unique_ptr&lt; <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> &gt; stream)
     summary: Set <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a> for this HTTP response.
     returnType: void&#160;
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#a4669c61fbdd1916c7cb4951d990a91a5">SetBody</a> (std::vector&lt; uint8_t &gt; body)
@@ -44,13 +44,13 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#acc86dc69c24c058604b09ba89df3c6df">GetMinorVersion</a> () const
     summary: Get HTTP protocol minor version.
     returnType: int32_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#a174ddd85ba65cfdbd7825122d95865ed">GetStatusCode</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#ac5add70417665de869f6445a85dea412">GetStatusCode</a> () const
     summary: Get HTTP status code of the HTTP response.
     returnType: <a href="http__status__code_8hpp#a60337476811e1ccf9ed39ce13f678d9d">HttpStatusCode</a>&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#a88fa464a1d143ba3bae4324ececb36e9">GetReasonPhrase</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#a67cf0ff0c5e284f4d9b85d732830e4c1">GetReasonPhrase</a> () const
     summary: Get HTTP reason phrase code of the HTTP response.
     returnType: std::string const &amp;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#aaceb17666be80a87f0789713ce70a8f3">GetHeaders</a> () const
+  - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#adb5700d39c08a258cec8864bda6a386b">GetHeaders</a> () const
     summary: Get HTTP response headers.
     returnType: <a href="case__insensitive__containers_8hpp#a0a9ad25d76ebd954381ff73acd04cb9e">CaseInsensitiveMap</a> const &amp;&#160;
   - declaration: <a href="class_azure_1_1_core_1_1_http_1_1_raw_response#a879d23bf6f97bba416f20154a84375ea">ExtractBodyStream</a> ()
@@ -152,13 +152,13 @@ components:
   xrefName: Azure::Core::Http::RawResponse.GetBody() [2/2]
 - declaration: std::vector&lt; uint8_t &gt; const  &amp; Azure::Core::Http::RawResponse::GetBody()const inline
   languageId: cpp
-- content: <a id="aaceb17666be80a87f0789713ce70a8f3"></a>
+- content: <a id="adb5700d39c08a258cec8864bda6a386b"></a>
 - section: GetHeaders()
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3ARawResponse.GetHeaders%28%29
   xrefType: Member
   xrefName: Azure::Core::Http::RawResponse.GetHeaders()
-- declaration: Azure::Core::CaseInsensitiveMap const  &amp; RawResponse::GetHeaders()const
+- declaration: CaseInsensitiveMap const  &amp; Azure::Core::Http::RawResponse::GetHeaders()const
   languageId: cpp
 - content: <a id="ac6103d250c183204e19ae7667ecc8bfd"></a>
 - section: GetMajorVersion()
@@ -176,21 +176,21 @@ components:
   xrefName: Azure::Core::Http::RawResponse.GetMinorVersion()
 - declaration: int32_t Azure::Core::Http::RawResponse::GetMinorVersion()const inline
   languageId: cpp
-- content: <a id="a88fa464a1d143ba3bae4324ececb36e9"></a>
+- content: <a id="a67cf0ff0c5e284f4d9b85d732830e4c1"></a>
 - section: GetReasonPhrase()
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3ARawResponse.GetReasonPhrase%28%29
   xrefType: Member
   xrefName: Azure::Core::Http::RawResponse.GetReasonPhrase()
-- declaration: std::string const  &amp; RawResponse::GetReasonPhrase()const
+- declaration: std::string const  &amp; Azure::Core::Http::RawResponse::GetReasonPhrase()const
   languageId: cpp
-- content: <a id="a174ddd85ba65cfdbd7825122d95865ed"></a>
+- content: <a id="ac5add70417665de869f6445a85dea412"></a>
 - section: GetStatusCode()
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3ARawResponse.GetStatusCode%28%29
   xrefType: Member
   xrefName: Azure::Core::Http::RawResponse.GetStatusCode()
-- declaration: HttpStatusCode RawResponse::GetStatusCode()const
+- declaration: HttpStatusCode Azure::Core::Http::RawResponse::GetStatusCode()const
   languageId: cpp
 - content: <a id="afa32efb2740edc35c4f9e1a9ea0d6e5a"></a>
 - section: operator=() [1/2]
@@ -221,29 +221,29 @@ components:
 - parameters:
   - name: body
     summary: HTTP response body bytes.
-- content: <a id="af12357c369ecf7071416b97697868cfa"></a>
+- content: <a id="a6274d5c00e15b5303a42a4d584c82bba"></a>
 - section: SetBodyStream()
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3ARawResponse.SetBodyStream%28%29
   xrefType: Member
   xrefName: Azure::Core::Http::RawResponse.SetBodyStream()
-- declaration: void RawResponse::SetBodyStream(std::unique_ptr&lt; Azure::Core::IO::BodyStream &gt;&#160;stream)
+- declaration: void Azure::Core::Http::RawResponse::SetBodyStream(std::unique_ptr&lt; Azure::Core::IO::BodyStream &gt;&#160;stream)
   languageId: cpp
 - section: Parameters
   display: h4
 - parameters:
   - name: stream
     summary: <a href="class_azure_1_1_core_1_1_i_o_1_1_body_stream">Azure::Core::IO::BodyStream</a>.
-- content: <a id="a5265579e09f5254509c9aa40ff16ce7d"></a>
+- content: <a id="a9449ef8010e99c54ae97780bdf42cd0b"></a>
 - section: SetHeader()
   display: h3
   uid: Azure%3A%3ACore%3A%3AHttp%3A%3ARawResponse.SetHeader%28%29
   xrefType: Member
   xrefName: Azure::Core::Http::RawResponse.SetHeader()
 - declaration: >-
-    void RawResponse::SetHeader(std::string const &amp;&#160;name, 
-                                std::string const &amp;&#160;value&#160;
-                               )
+    void Azure::Core::Http::RawResponse::SetHeader(std::string const &amp;&#160;name, 
+                                                   std::string const &amp;&#160;value&#160;
+                                                  )
   languageId: cpp
 - section: Remarks
   display: h4

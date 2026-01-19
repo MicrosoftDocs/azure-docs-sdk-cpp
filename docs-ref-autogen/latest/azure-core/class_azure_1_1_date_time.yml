@@ -38,25 +38,25 @@ components:
   - declaration: <a href="class_azure_1_1_date_time#a31d945351b8c6061a69f1954a5984432">DateTime</a> (int16_t year, int8_t month=1, int8_t day=1, int8_t hour=0, int8_t minute=0, int8_t second=0)
     summary: Constructs an instance of <code>DateTime</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_date_time#a2fd52469cf778230bcc178d7795c98c1">DateTime</a> (<a href="class_azure_1_1_date_time#a47ebd257a65488440d2a00bdde9342d2">time_point</a> const &amp;timePoint)
+  - declaration: <a href="class_azure_1_1_date_time#a2fd52469cf778230bcc178d7795c98c1">DateTime</a> (<a href="class_azure_1_1_date_time#ab9e485f9a7317ec847bddaac94cb828a">time_point</a> const &amp;timePoint)
     summary: Constructs an instance of <code>DateTime</code> from a <code>time_point</code>.
     returnType: constexpr&#160;
   - declaration: <a href="class_azure_1_1_date_time#a480dea5c0d4099e8c0a91194eece5b91">DateTime</a> (std::chrono::system_clock::time_point const &amp;systemTime)
     summary: Construct an instance of <code>DateTime</code> from <code>std::chrono::system_clock::time_point</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_date_time#a47ebd257a65488440d2a00bdde9342d2">operator std::chrono::system_clock::time_point</a> () const
+  - declaration: <a href="class_azure_1_1_date_time#ab9e485f9a7317ec847bddaac94cb828a">operator std::chrono::system_clock::time_point</a> () const
     summary: Convert an instance of <a href="class_azure_1_1_date_time">Azure::DateTime</a> to <code>std::chrono::system_clock::time_point</code>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_date_time#aea9897a8e5668dc7ba30fa631d27482b">ToString</a> (<a href="class_azure_1_1_date_time#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> format=<a href="class_azure_1_1_date_time#a9dd0e5265e6c5cf2ef419a30b7f806e5ac8d161c49f2f3a896d3848046f84feaa">DateFormat::Rfc3339</a>) const
+  - declaration: <a href="class_azure_1_1_date_time#afb2b398eff0cb0b6079ff1a9bd408434">ToString</a> (<a href="class_azure_1_1_date_time#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> format=<a href="class_azure_1_1_date_time#a9dd0e5265e6c5cf2ef419a30b7f806e5ac8d161c49f2f3a896d3848046f84feaa">DateFormat::Rfc3339</a>) const
     summary: Get a string representation of the <a href="class_azure_1_1_date_time">Azure::DateTime</a>.
     returnType: std::string&#160;
-  - declaration: <a href="class_azure_1_1_date_time#a09adcc030765e491d9f340db5e8a0db7">ToString</a> (<a href="class_azure_1_1_date_time#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> format, <a href="class_azure_1_1_date_time#a5f0fff7186f08a21b26057923d3c6507">TimeFractionFormat</a> fractionFormat) const
+  - declaration: <a href="class_azure_1_1_date_time#ab815e99fb7767f18ce6993a77fc3a40c">ToString</a> (<a href="class_azure_1_1_date_time#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> format, <a href="class_azure_1_1_date_time#a5f0fff7186f08a21b26057923d3c6507">TimeFractionFormat</a> fractionFormat) const
     summary: Get a string representation of the <a href="class_azure_1_1_date_time">Azure::DateTime</a>.
     returnType: std::string&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_date_time#abe9f1e977e70d30c8efada1f41b4b30f">Parse</a> (std::string const &amp;dateTime, <a href="class_azure_1_1_date_time#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> format)
+  - declaration: <a href="class_azure_1_1_date_time#a0bf55ad90e6944debdf77eb5da2530b2">Parse</a> (std::string const &amp;dateTime, <a href="class_azure_1_1_date_time#a9dd0e5265e6c5cf2ef419a30b7f806e5">DateFormat</a> format)
     summary: Create <a href="class_azure_1_1_date_time">Azure::DateTime</a> from a string representing time in UTC in the specified format.
     returnType: static <a href="class_azure_1_1_date_time">DateTime</a>&#160;
 - content: <a id="details"></a>
@@ -165,7 +165,7 @@ components:
   uid: Azure%3A%3ADateTime.DateTime%28%29%20%5B4%2F4%5D
   xrefType: Member
   xrefName: Azure::DateTime.DateTime() [4/4]
-- declaration: Azure::DateTime::DateTime(std::chrono::system_clock::time_point const &amp;&#160;systemTime) inline
+- declaration: Azure::DateTime::DateTime(std::chrono::system_clock::time_point const &amp;&#160;systemTime)
   languageId: cpp
 - section: Parameters
   display: h4
@@ -174,29 +174,29 @@ components:
     summary: A value of <code>std::chrono::system_clock::time_point</code>.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a47ebd257a65488440d2a00bdde9342d2"></a>
+- content: <a id="ab9e485f9a7317ec847bddaac94cb828a"></a>
 - section: operator std::chrono::system_clock::time_point()
   display: h3
   uid: Azure%3A%3ADateTime.operator%20std%3A%3Achrono%3A%3Asystem_clock%3A%3Atime_point%28%29
   xrefType: Member
   xrefName: Azure::DateTime.operator std::chrono::system_clock::time_point()
-- declaration: DateTime::operator std::chrono::system_clock::time_point()const explicit
+- declaration: Azure::DateTime::operator std::chrono::system_clock::time_point()const explicit
   languageId: cpp
 - section: Exceptions
   display: h4
 - parameters:
   - name: std::invalid_argument
     summary: if <a href="class_azure_1_1_date_time">Azure::DateTime</a> is outside of the range that can be represented.
-- content: <a id="abe9f1e977e70d30c8efada1f41b4b30f"></a>
+- content: <a id="a0bf55ad90e6944debdf77eb5da2530b2"></a>
 - section: Parse()
   display: h3
   uid: Azure%3A%3ADateTime.Parse%28%29
   xrefType: Member
   xrefName: Azure::DateTime.Parse()
 - declaration: >-
-    DateTime DateTime::Parse(std::string const &amp;&#160;dateTime,
-                             DateFormat&#160;         format&#160;  
-                            ) static
+    static DateTime Azure::DateTime::Parse(std::string const &amp;&#160;dateTime,
+                                           DateFormat&#160;         format&#160;  
+                                          ) static
   languageId: cpp
 - section: Parameters
   display: h4
@@ -214,16 +214,16 @@ components:
 - parameters:
   - name: std::invalid_argument
     summary: If <code>format</code> is not recognized, or if parsing error.
-- content: <a id="a09adcc030765e491d9f340db5e8a0db7"></a>
+- content: <a id="ab815e99fb7767f18ce6993a77fc3a40c"></a>
 - section: ToString() [1/2]
   display: h3
   uid: Azure%3A%3ADateTime.ToString%28%29%20%5B1%2F2%5D
   xrefType: Member
   xrefName: Azure::DateTime.ToString() [1/2]
 - declaration: >-
-    std::string DateTime::ToString(DateFormat&#160;        format,        
-                                   TimeFractionFormat&#160;fractionFormat&#160;
-                                  )                   const
+    std::string Azure::DateTime::ToString(DateFormat&#160;        format,        
+                                          TimeFractionFormat&#160;fractionFormat&#160;
+                                         )                   const
   languageId: cpp
 - section: Parameters
   display: h4
@@ -237,13 +237,13 @@ components:
 - parameters:
   - name: std::invalid_argument
     summary: If year exceeds 9999, or if <code>format</code> is not recognized.
-- content: <a id="aea9897a8e5668dc7ba30fa631d27482b"></a>
+- content: <a id="afb2b398eff0cb0b6079ff1a9bd408434"></a>
 - section: ToString() [2/2]
   display: h3
   uid: Azure%3A%3ADateTime.ToString%28%29%20%5B2%2F2%5D
   xrefType: Member
   xrefName: Azure::DateTime.ToString() [2/2]
-- declaration: std::string DateTime::ToString(DateFormat&#160;format = DateFormat::Rfc3339)const
+- declaration: std::string Azure::DateTime::ToString(DateFormat&#160;format = DateFormat::Rfc3339)const
   languageId: cpp
 - section: Parameters
   display: h4

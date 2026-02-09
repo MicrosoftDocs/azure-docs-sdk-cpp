@@ -1,7 +1,7 @@
 ---
 title: Azure Tables SDK for C++
 description: Reference for Azure Tables SDK for C++
-ms.date: 02/06/2026
+ms.date: 02/09/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: tables

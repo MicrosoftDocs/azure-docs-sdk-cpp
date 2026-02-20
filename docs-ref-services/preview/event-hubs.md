@@ -1,7 +1,7 @@
 ---
 title: Azure Event Hubs SDK for C++
 description: Reference for Azure Event Hubs SDK for C++
-ms.date: 02/19/2026
+ms.date: 02/20/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: eventhubs

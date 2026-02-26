@@ -6,6 +6,6 @@ ms.topic: reference
 ms.devlang: cpp
 ms.service: storage
 ---
-# Azure Storage SDK for C++ - latest
-## Packages - latest
+# Azure Storage SDK for C++ - preview
+## Packages - preview
 [!INCLUDE [packages](storage-index.md)]

@@ -1,0 +1,70 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareAudience
+title: Azure::Storage::Files::Shares::ShareAudience Class Reference
+xrefType: Class
+xrefName: Azure::Storage::Files::Shares::ShareAudience
+components:
+- content: >-
+    <p>Audiences available for share service.  
+     <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience#details">More...</a></p><p><code>#include &lt;share_options.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::_internal::ExtendableEnumeration
+    href: ''
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience#adea59126d568086651bc870f6cd53b7d">ShareAudience</a> (std::string shareAudience)
+    summary: Construct a new <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience">ShareAudience</a> object.
+    returnType: '&#160;'
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience#a862d6ef8102ff63e143dd5ee00165873">CreateShareServiceAccountAudience</a> (const std::string &amp;storageAccountName)
+    summary: The service endpoint for a given storage account. Use this method to acquire a token for authorizing requests to that specific Azure Storage account and service only.
+    returnType: static <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience">ShareAudience</a>&#160;
+- section: Static Public Attributes
+  display: h2
+- apiList:
+  - declaration: DefaultAudience
+    summary: Default Audience. Use to acquire a token for authorizing requests to any Azure Storage account.
+    returnType: >-
+      <a id="addaef20c3c8b192896f8805a32a76b75"></a>
+
+      AZ_STORAGE_FILES_SHARES_DLLEXPORT static const <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_audience">ShareAudience</a>&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="adea59126d568086651bc870f6cd53b7d"></a>
+- section: ShareAudience()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareAudience.ShareAudience%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareAudience.ShareAudience()
+- declaration: Azure::Storage::Files::Shares::ShareAudience::ShareAudience(std::string&#160;shareAudience) inline explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: shareAudience
+    summary: 'The Azure Active Directory audience to use when forming authorization scopes. For the Language service, this value corresponds to a URL that identifies the Azure cloud where the resource is located. For more information: See <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory">https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory</a>'
+- section: Member Function Documentation
+  display: h2
+- content: <a id="a862d6ef8102ff63e143dd5ee00165873"></a>
+- section: CreateShareServiceAccountAudience()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareAudience.CreateShareServiceAccountAudience%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareAudience.CreateShareServiceAccountAudience()
+- declaration: static ShareAudience Azure::Storage::Files::Shares::ShareAudience::CreateShareServiceAccountAudience(const std::string &amp;&#160;storageAccountName) inline static
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: storageAccountName
+    summary: he storage account name used to populate the service endpoint.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The service endpoint for a given storage account.

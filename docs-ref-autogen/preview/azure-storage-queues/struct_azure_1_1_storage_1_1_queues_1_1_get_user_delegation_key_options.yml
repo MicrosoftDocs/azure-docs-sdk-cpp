@@ -1,0 +1,32 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AGetUserDelegationKeyOptions
+title: Azure::Storage::Queues::GetUserDelegationKeyOptions Struct Reference
+xrefType: Struct
+xrefName: Azure::Storage::Queues::GetUserDelegationKeyOptions
+components:
+- content: >-
+    <p>Optional parameters for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a51ff766dfd0d5f881335c4b25477169f">Azure::Storage::Queues::QueueServiceClient::GetUserDelegationKey</a>.  
+
+    </p><p><code>#include &lt;queue_options.hpp&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: StartsOn = std::chrono::system_clock::now()
+    summary: Start time for the key's validity. The time should be specified in UTC, and will be truncated to second.
+    returnType: >-
+      <a id="aba0028f4ba64cde82ec75da602f94c2b"></a>
+
+      Azure::DateTime&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_get_user_delegation_key_options#ac35205dfb78aa3cde9854616a417b83e">DelegatedUserTid</a>
+    returnType: Nullable&lt; std::string &gt;&#160;
+- section: Member Data Documentation
+  display: h2
+- content: <a id="ac35205dfb78aa3cde9854616a417b83e"></a>
+- section: DelegatedUserTid
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AGetUserDelegationKeyOptions.DelegatedUserTid
+  xrefType: Member
+  xrefName: Azure::Storage::Queues::GetUserDelegationKeyOptions.DelegatedUserTid
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Queues::GetUserDelegationKeyOptions::DelegatedUserTid
+  languageId: cpp
+- content: <p>The delegated user tenant id in Azure AD. </p>

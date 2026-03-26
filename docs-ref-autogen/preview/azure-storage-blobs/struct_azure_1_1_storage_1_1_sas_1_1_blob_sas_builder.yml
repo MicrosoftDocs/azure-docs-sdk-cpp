@@ -72,11 +72,23 @@ components:
 
       std::string&#160;
   - declaration: BlobName
-    summary: The name of the blob being made accessible, or empty for a container SAS..
+    summary: The name of the blob being made accessible, or empty for a container SAS. Beginning in version 2020-02-10, setting <code>IsVirtualDirectory</code> to true means this is a virtual directory name for a directory SAS. Do not prefix or suffix <code>BlobName</code> with slashes for directory SAS.
     returnType: >-
       <a id="a5da56debca7f3a3691f9f197cf893a68"></a>
 
       std::string&#160;
+  - declaration: IsVirtualDirectory = false
+    summary: This value defines whether <code>BlobName</code> is a virtual directory.
+    returnType: >-
+      <a id="a16bd296c634120e5ddb612502473dd4b"></a>
+
+      bool&#160;
+  - declaration: VirtualDirectoryDepth
+    summary: Required when <code>IsVirtualDirectory</code> is set to true. Depth of the virtual blob directory.
+    returnType: >-
+      <a id="ad5be57ea31da207844438d24f1be8e3b"></a>
+
+      Azure::Nullable&lt; int32_t &gt;&#160;
   - declaration: Snapshot
     summary: The name of the blob snapshot being made accessible, or empty for a container SAS and blob SAS.
     returnType: >-

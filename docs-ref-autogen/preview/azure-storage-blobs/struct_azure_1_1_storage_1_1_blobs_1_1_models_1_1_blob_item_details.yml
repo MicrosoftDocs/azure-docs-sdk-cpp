@@ -53,6 +53,8 @@ components:
     returnType: Nullable&lt; bool &gt;&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_item_details#a09a97064290d7acb943285bb20ab391b">ArchiveStatus</a>
     returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">Models::ArchiveStatus</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_item_details#aefde762e3ab213a1648768d2f821f8ef">SmartAccessTier</a>
+    returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier">Models::AccessTier</a> &gt;&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_item_details#ade2fd2cb3d51e057c6fc17a0286f3e4a">EncryptionKeySha256</a>
     returnType: Nullable&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_item_details#aeeec25f3275cebd991c572dcfb9f21c0">EncryptionScope</a>
@@ -345,7 +347,15 @@ components:
   xrefName: Azure::Storage::Blobs::Models::BlobItemDetails.SequenceNumber
 - declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Blobs::Models::BlobItemDetails::SequenceNumber
   languageId: cpp
-- content: <p>The current sequence number for a page blob. </p><a id="aea568ca3f637300d5a56079cb367ac4a"></a>
+- content: <p>The current sequence number for a page blob. </p><a id="aefde762e3ab213a1648768d2f821f8ef"></a>
+- section: SmartAccessTier
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ABlobItemDetails.SmartAccessTier
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::BlobItemDetails.SmartAccessTier
+- declaration: Nullable&lt;Models::AccessTier&gt; Azure::Storage::Blobs::Models::BlobItemDetails::SmartAccessTier
+  languageId: cpp
+- content: <p>The tier of page blob on a premium storage account or tier of block blob on blob storage or general purpose v2 account. </p><a id="aea568ca3f637300d5a56079cb367ac4a"></a>
 - section: Tags
   display: h3
   uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ABlobItemDetails.Tags

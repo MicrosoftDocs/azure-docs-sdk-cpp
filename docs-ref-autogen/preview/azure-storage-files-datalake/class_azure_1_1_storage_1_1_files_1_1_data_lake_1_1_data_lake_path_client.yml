@@ -57,6 +57,9 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client#a78cd2ebce95319d5a056040a3cd6299e">GetAccessControlList</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options">GetPathAccessControlListOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_access_control_list_options">GetPathAccessControlListOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
     summary: Returns all access control list stored for the given path.
     returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_access_control_list">Models::PathAccessControlList</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client#a6cbde3898ea0385b577505a62209cd99">GetSystemProperties</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_system_properties_options">GetPathSystemPropertiesOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_get_path_system_properties_options">GetPathSystemPropertiesOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns system properties stored for the given path.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_path_system_properties">Models::PathSystemProperties</a> &gt;&#160;
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client#a1656d63269d2888e8cf64be4399b378c">SetMetadata</a> (Storage::Metadata metadata, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options">SetPathMetadataOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_metadata_options">SetPathMetadataOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
     summary: Sets the metadata of a resource the path points to.
     returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_set_path_metadata_result">Models::SetPathMetadataResult</a> &gt;&#160;
@@ -69,6 +72,12 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client#a42cf17848af5bbdb3e86344dc36e044b">RemoveAccessControlListRecursive</a> (const std::vector&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_models_1_1_acl">Models::Acl</a> &gt; &amp;acls, const <a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options">RemovePathAccessControlListRecursiveOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_options">RemovePathAccessControlListRecursiveOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
     summary: Removes POSIX access control rights on files and directories under given directory recursively.
     returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_set_path_access_control_list_recursive_paged_response">RemovePathAccessControlListRecursivePagedResponse</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client#a94805462d4a48d60dd4aa0486da687eb">SetTags</a> (std::map&lt; std::string, std::string &gt; tags, const SetPathTagsOptions &amp;options=SetPathTagsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Sets tags on the path.
+    returnType: Azure::Response&lt; Models::SetPathTagsResult &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_data_lake_1_1_data_lake_path_client#a781c999f9ca26f4c4c5f6d484d78932f">GetTags</a> (const GetPathTagsOptions &amp;options=GetPathTagsOptions(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Gets the tags associated with the path.
+    returnType: Azure::Response&lt; std::map&lt; std::string, std::string &gt; &gt;&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
@@ -410,6 +419,58 @@ components:
   display: h4
 - parameters:
   - summary: This request is sent to blob endpoint.
+- content: <a id="a6cbde3898ea0385b577505a62209cd99"></a>
+- section: GetSystemProperties()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakePathClient.GetSystemProperties%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DataLakePathClient.GetSystemProperties()
+- declaration: >-
+    Azure::Response&lt; Models::PathSystemProperties &gt; Azure::Storage::Files::DataLake::DataLakePathClient::GetSystemProperties(const GetPathSystemPropertiesOptions &amp;&#160;options = GetPathSystemPropertiesOptions(),
+                                                                                                                             const Azure::Core::Context &amp;&#160;          context = Azure::Core::Context()&#160;          
+                                                                                                                            )                                       const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to get system properties from the resource the path points to.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: Azure::Response&lt;Models::PathSystemProperties&gt; containing the system properties.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to dfs endpoint.
+- content: <a id="a781c999f9ca26f4c4c5f6d484d78932f"></a>
+- section: GetTags()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakePathClient.GetTags%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DataLakePathClient.GetTags()
+- declaration: >-
+    Azure::Response&lt; std::map&lt; std::string, std::string &gt; &gt; Azure::Storage::Files::DataLake::DataLakePathClient::GetTags(const GetPathTagsOptions &amp;&#160;  options = GetPathTagsOptions(),  
+                                                                                                                         const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                                        )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: path tags on successfully getting tags.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - content: <a id="acf192776f131134acc5a1aef9d814a6a"></a>
 - section: GetUrl()
   display: h3
@@ -596,6 +657,35 @@ components:
   display: h4
 - parameters:
   - summary: This request is sent to dfs endpoint.
+- content: <a id="a94805462d4a48d60dd4aa0486da687eb"></a>
+- section: SetTags()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3ADataLake%3A%3ADataLakePathClient.SetTags%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::DataLake::DataLakePathClient.SetTags()
+- declaration: >-
+    Azure::Response&lt; Models::SetPathTagsResult &gt; Azure::Storage::Files::DataLake::DataLakePathClient::SetTags(std::map&lt; std::string, std::string &gt;&#160;tags,                            
+                                                                                                              const SetPathTagsOptions &amp;&#160;          options = SetPathTagsOptions(),  
+                                                                                                              const Azure::Core::Context &amp;&#160;        context = Azure::Core::Context()&#160;
+                                                                                                             )                                     const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tags
+    summary: The tags to set on the path.
+  - name: options
+    summary: Optional parameters to execute this function.
+  - name: context
+    summary: Context for cancelling long running operations.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A SetBlobTagsResult on successfully setting tags.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: This request is sent to blob endpoint.
 - content: <a id="aebd5805fc6c4d462b9b0a606e2d68527"></a>
 - section: UpdateAccessControlListRecursive()
   display: h3

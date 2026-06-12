@@ -1,12 +1,12 @@
 ---
 title: Azure Template Package client library for C
 keywords: Azure, cpp, SDK, API, azure-template, template
-ms.date: 11/06/2025
+ms.date: 06/12/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: template
 ---
-# Azure Template Package client library for C - version 1.1.0-beta.5540743 
+# Azure Template Package client library for C - version 1.1.0-beta.6427189 
 ++
 
 Azure Template Package client library for C++ (`azure-template`)  matches necessary patterns that the development team has established to create a unified SDK written in the C++ programming language. These libraries follow the Azure SDK Design Guidelines for C++.
@@ -63,12 +63,12 @@ Security issues and bugs should be reported privately, via email, to the Microso
 
 ### License
 
-Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-template_1.1.0-beta.5540743/LICENSE.txt) license.
+Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-template_1.1.0-beta.6427189/LICENSE.txt) license.
 
 <!-- LINKS -->
-[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-template_1.1.0-beta.5540743/CONTRIBUTING.md
-[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-template_1.1.0-beta.5540743/CONTRIBUTING.md#developer-guide
-[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-template_1.1.0-beta.5540743/CONTRIBUTING.md#pull-requests
+[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-template_1.1.0-beta.6427189/CONTRIBUTING.md
+[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-template_1.1.0-beta.6427189/CONTRIBUTING.md#developer-guide
+[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-template_1.1.0-beta.6427189/CONTRIBUTING.md#pull-requests
 [azure_cli]: https://learn.microsoft.com/cli/azure
 [azure_pattern_circuit_breaker]: https://learn.microsoft.com/azure/architecture/patterns/circuit-breaker
 [azure_pattern_retry]: https://learn.microsoft.com/azure/architecture/patterns/retry

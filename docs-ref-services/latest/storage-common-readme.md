@@ -1,12 +1,12 @@
 ---
 title: Azure Storage Common Client Library for C
 keywords: Azure, cpp, SDK, API, azure-storage-common, storage
-ms.date: 01/12/2026
+ms.date: 06/15/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: storage
 ---
-# Azure Storage Common Client Library for C - version 12.12.0 
+# Azure Storage Common Client Library for C - version 12.14.0 
 ++
 
 Azure Storage is a Microsoft-managed service providing cloud storage that is highly available, secure, durable, scalable, and redundant. Azure Storage includes Azure Blobs (objects), Azure Data Lake Storage Gen2, Azure Files, and Azure Queues.
@@ -86,7 +86,7 @@ additional questions or comments.
 [create_account_with_azure_portal]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal
 [create_account_with_powershell]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-powershell
 [create_account_with_azure_cli]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-cli
-[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-common_12.12.0/CONTRIBUTING.md
+[storage_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-common_12.14.0/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/

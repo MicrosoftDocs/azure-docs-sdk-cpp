@@ -1,0 +1,44 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAccessTierAccessConditions
+title: Azure::Storage::Blobs::AccessTierAccessConditions Struct Reference
+xrefType: Struct
+xrefName: Azure::Storage::Blobs::AccessTierAccessConditions
+components:
+- content: >-
+    <p>Specifies HTTP options for conditional requests based on AccessTier.  
+
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p><p>This class is inherited by:</p>
+- linkList:
+  - name: Azure::Storage::Blobs::BlobAccessConditions
+    href: struct_azure_1_1_storage_1_1_blobs_1_1_blob_access_conditions
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_access_tier_access_conditions#a11c0e1db1b0c450b88d9382a299021e8">~AccessTierAccessConditions</a> ()=default
+    summary: Destructor.
+    returnType: virtual&#160;
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: AccessTierIfModifiedSince
+    summary: 'Specify this header value to operate only on a blob if the access-tier has been modified since the specified date/time. Note: If this is specified, AccessTierIfUnmodifiedSince cannot be specified. Only valid for Delete Blob API.'
+    returnType: >-
+      <a id="ab7d2645f2fa9eceb2eda94cd16bed28d"></a>
+
+      Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+  - declaration: AccessTierIfUnmodifiedSince
+    summary: 'Specify this header value to operate only on a blob if the access-tier has not been modified since the specified date/time. Note: If this is specified, AccessTierIfModifiedSince cannot be specified. Only valid for Delete Blob API.'
+    returnType: >-
+      <a id="a0160a624052e83a15727bbcf03765d13"></a>
+
+      Azure::Nullable&lt; Azure::DateTime &gt;&#160;
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a11c0e1db1b0c450b88d9382a299021e8"></a>
+- section: ~AccessTierAccessConditions()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AAccessTierAccessConditions.~AccessTierAccessConditions%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::AccessTierAccessConditions.~AccessTierAccessConditions()
+- declaration: virtual Azure::Storage::Blobs::AccessTierAccessConditions::~AccessTierAccessConditions() virtual default
+  languageId: cpp

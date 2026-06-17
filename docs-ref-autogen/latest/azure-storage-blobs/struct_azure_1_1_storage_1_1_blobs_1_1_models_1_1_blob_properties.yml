@@ -71,6 +71,8 @@ components:
     returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_archive_status">Models::ArchiveStatus</a> &gt;&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_properties#a16f9b53cf8ce7fe8b6dae57aa76ac448">AccessTierChangedOn</a>
     returnType: Nullable&lt; DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_properties#a276b9952aeb293239fe1509e6c009299">SmartAccessTier</a>
+    returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier">Models::AccessTier</a> &gt;&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_properties#afc6b66ff347bf800b4a818820b02252d">VersionId</a>
     returnType: Nullable&lt; std::string &gt;&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_properties#a2ce3f8c091239556b3afc2ae2aa31e9e">IsCurrentVersion</a>
@@ -377,7 +379,15 @@ components:
   xrefName: Azure::Storage::Blobs::Models::BlobProperties.SequenceNumber
 - declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Blobs::Models::BlobProperties::SequenceNumber
   languageId: cpp
-- content: <p>The current sequence number for a page blob. This header is not returned for block blobs or append blobs. </p><a id="af89e59b580f89a883869ba3a55a56281"></a>
+- content: <p>The current sequence number for a page blob. This header is not returned for block blobs or append blobs. </p><a id="a276b9952aeb293239fe1509e6c009299"></a>
+- section: SmartAccessTier
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ABlobProperties.SmartAccessTier
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::BlobProperties.SmartAccessTier
+- declaration: Nullable&lt;Models::AccessTier&gt; Azure::Storage::Blobs::Models::BlobProperties::SmartAccessTier
+  languageId: cpp
+- content: <p>The underlying tier of a smart tier blob. Only returned if the blob is in Smart tier. </p><a id="af89e59b580f89a883869ba3a55a56281"></a>
 - section: TagCount
   display: h3
   uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ABlobProperties.TagCount

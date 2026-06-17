@@ -21,6 +21,8 @@ components:
     returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_smb_properties">Models::FileSmbProperties</a>&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options#a7d3a268d9d3d213d1290d58f577406ce">PosixProperties</a>
     returnType: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_posix_properties">Models::FilePosixProperties</a>&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_directory_options#aa9be7e4184ac0476b2966ef17197b184">PropertySemantics</a>
+    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_file_property_semantics">Models::FilePropertySemantics</a> &gt;&#160;
 - section: Member Data Documentation
   display: h2
 - content: <a id="a31b8d74fdc64efe6b9770d2a044ae7ed"></a>
@@ -55,7 +57,15 @@ components:
   xrefName: Azure::Storage::Files::Shares::CreateDirectoryOptions.PosixProperties
 - declaration: Models::FilePosixProperties Azure::Storage::Files::Shares::CreateDirectoryOptions::PosixProperties
   languageId: cpp
-- content: <p>The NFS related properties for the file. </p><a id="afe031807631ed3fdeafdbfce8e994ae7"></a>
+- content: <p>The NFS related properties for the file. </p><a id="aa9be7e4184ac0476b2966ef17197b184"></a>
+- section: PropertySemantics
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ACreateDirectoryOptions.PropertySemantics
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::CreateDirectoryOptions.PropertySemantics
+- declaration: Azure::Nullable&lt;Models::FilePropertySemantics&gt; Azure::Storage::Files::Shares::CreateDirectoryOptions::PropertySemantics
+  languageId: cpp
+- content: <p>Optional. Only applies to SMB directories. How attributes and permissions should be set on the directory. </p><a id="afe031807631ed3fdeafdbfce8e994ae7"></a>
 - section: SmbProperties
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3ACreateDirectoryOptions.SmbProperties

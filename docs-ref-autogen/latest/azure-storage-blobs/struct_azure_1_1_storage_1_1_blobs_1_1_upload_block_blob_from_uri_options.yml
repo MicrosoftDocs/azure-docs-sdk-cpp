@@ -62,6 +62,8 @@ components:
       std::string&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_from_uri_options#ad7085fca8a5afe869581608a63e5c0c5">FileRequestIntent</a>
     returnType: Azure::Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_file_share_token_intent">Models::FileShareTokenIntent</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_upload_block_blob_from_uri_options#a2caa07ad82defb5d044012550106589b">SourceCustomerProvidedKey</a>
+    returnType: Azure::Nullable&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_encryption_key">EncryptionKey</a> &gt;&#160;
 - section: Member Data Documentation
   display: h2
 - content: <a id="a96d94e54f4533da84e6a8fb57d8c4377"></a>
@@ -100,3 +102,12 @@ components:
   display: h4
 - parameters:
   - summary: Azure storage service doesn't support tags access condition for this operation. Don't use it.
+- content: <a id="a2caa07ad82defb5d044012550106589b"></a>
+- section: SourceCustomerProvidedKey
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AUploadBlockBlobFromUriOptions.SourceCustomerProvidedKey
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::UploadBlockBlobFromUriOptions.SourceCustomerProvidedKey
+- declaration: Azure::Nullable&lt;EncryptionKey&gt; Azure::Storage::Blobs::UploadBlockBlobFromUriOptions::SourceCustomerProvidedKey
+  languageId: cpp
+- content: <p>Optional. Specifies the source customer provided key to use to encrypt the source blob. Applicable only for service version 2026-02-06 or later. </p>

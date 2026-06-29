@@ -1,7 +1,7 @@
 ---
 title: Azure Attestation SDK for C++
 description: Reference for Azure Attestation SDK for C++
-ms.date: 06/26/2026
+ms.date: 06/29/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: attestation

@@ -1,7 +1,7 @@
 ---
 title: Azure Storage SDK for C++
 description: Reference for Azure Storage SDK for C++
-ms.date: 07/14/2026
+ms.date: 07/15/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: storage

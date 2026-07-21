@@ -1,7 +1,7 @@
 ---
 title: Azure Identity SDK for C++
 description: Reference for Azure Identity SDK for C++
-ms.date: 07/20/2026
+ms.date: 07/21/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: identity

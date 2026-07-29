@@ -1,0 +1,82 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListPagedResponse
+title: Azure::Storage::Files::Shares::GetFileRangeListPagedResponse Class Reference
+xrefType: Class
+xrefName: Azure::Storage::Files::Shares::GetFileRangeListPagedResponse
+components:
+- content: >-
+    <p>Response type for <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#ac4e81a48f528ad12fb0aab4291ed2417">Azure::Storage::Files::Shares::ShareFileClient::GetAllRangeList</a>.  
+
+    </p><p><code>#include &lt;share_responses.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Core::PagedResponse
+    href: ''
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_paged_response#a4095b365c2e0976bc3ed07a2e58b4278">Ranges</a>
+    returnType: std::vector&lt; Core::Http::HttpRange &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_paged_response#a686d26416213764af8cb718f9ad378d9">ClearRanges</a>
+    returnType: std::vector&lt; Core::Http::HttpRange &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_paged_response#a493880e5e7b9e7adcdad1a737feeff39">LastModified</a>
+    returnType: DateTime&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_paged_response#ab47d4f2b6029c1b08718f9547b66eaac">ETag</a>
+    returnType: Azure::ETag&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_paged_response#a2074c52c9c3d9849b0d68439bcba66a7">FileSize</a> = std::int64_t()
+    returnType: std::int64_t&#160;
+- section: Friends
+  display: h2
+- apiList:
+  - declaration: ShareFileClient
+    returnType: >-
+      <a id="a7f6d70ce779455b735a9c8f55236b11e"></a>
+
+      class&#160;
+  - declaration: Azure::Core::PagedResponse&lt; GetFileRangeListPagedResponse &gt;
+    returnType: >-
+      <a id="ab0ad8e24c18a472148b73a3f468d6c23"></a>
+
+      class&#160;
+- section: Member Data Documentation
+  display: h2
+- content: <a id="a686d26416213764af8cb718f9ad378d9"></a>
+- section: ClearRanges
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListPagedResponse.ClearRanges
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::GetFileRangeListPagedResponse.ClearRanges
+- declaration: std::vector&lt;Core::Http::HttpRange&gt; Azure::Storage::Files::Shares::GetFileRangeListPagedResponse::ClearRanges
+  languageId: cpp
+- content: <p>Array of ClearRange. </p><a id="ab47d4f2b6029c1b08718f9547b66eaac"></a>
+- section: ETag
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListPagedResponse.ETag
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::GetFileRangeListPagedResponse.ETag
+- declaration: Azure::ETag Azure::Storage::Files::Shares::GetFileRangeListPagedResponse::ETag
+  languageId: cpp
+- content: <p>The ETag contains a value which represents the version of the file, in quotes. </p><a id="a2074c52c9c3d9849b0d68439bcba66a7"></a>
+- section: FileSize
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListPagedResponse.FileSize
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::GetFileRangeListPagedResponse.FileSize
+- declaration: std::int64_t Azure::Storage::Files::Shares::GetFileRangeListPagedResponse::FileSize = std::int64_t()
+  languageId: cpp
+- content: <p>The size of the file in bytes. </p><a id="a493880e5e7b9e7adcdad1a737feeff39"></a>
+- section: LastModified
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListPagedResponse.LastModified
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::GetFileRangeListPagedResponse.LastModified
+- declaration: DateTime Azure::Storage::Files::Shares::GetFileRangeListPagedResponse::LastModified
+  languageId: cpp
+- content: <p>The date/time that the file was last modified. </p><a id="a4095b365c2e0976bc3ed07a2e58b4278"></a>
+- section: Ranges
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListPagedResponse.Ranges
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::GetFileRangeListPagedResponse.Ranges
+- declaration: std::vector&lt;Core::Http::HttpRange&gt; Azure::Storage::Files::Shares::GetFileRangeListPagedResponse::Ranges
+  languageId: cpp
+- content: <p>Array of Range. </p>

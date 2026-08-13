@@ -1,7 +1,7 @@
 ---
 title: Azure Key Vault SDK for C++
 description: Reference for Azure Key Vault SDK for C++
-ms.date: 08/12/2026
+ms.date: 08/13/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: keyvault

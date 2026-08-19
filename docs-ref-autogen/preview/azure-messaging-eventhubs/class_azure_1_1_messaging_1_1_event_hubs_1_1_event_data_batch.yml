@@ -120,6 +120,10 @@ components:
   xrefName: Azure::Messaging::EventHubs::EventDataBatch.ToAmqpMessage()
 - declaration: Azure::Core::Amqp::Models::AmqpMessage Azure::Messaging::EventHubs::EventDataBatch::ToAmqpMessage()const
   languageId: cpp
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: If the batch has a partition key, the returned message carries the partition key in its message annotations. The Event Hubs service routes on the message annotations.
 - section: Returns
   display: h4
 - parameters:
@@ -132,6 +136,10 @@ components:
   xrefName: Azure::Messaging::EventHubs::EventDataBatch.TryAdd() [1/2]
 - declaration: _azure_NODISCARD bool Azure::Messaging::EventHubs::EventDataBatch::TryAdd(Azure::Messaging::EventHubs::Models::EventData const &amp;&#160;message)
   languageId: cpp
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: The batch stores a copy of the event. If the event has no message ID, the batch sets a new UUID as the message ID on that copy. If the batch has a partition key, the batch also sets the partition key annotation on that copy. The event you supply does not change.
 - section: Parameters
   display: h4
 - parameters:
@@ -149,6 +157,10 @@ components:
   xrefName: Azure::Messaging::EventHubs::EventDataBatch.TryAdd() [2/2]
 - declaration: _azure_NODISCARD bool Azure::Messaging::EventHubs::EventDataBatch::TryAdd(std::shared_ptr&lt; Azure::Core::Amqp::Models::AmqpMessage const &gt; const &amp;&#160;message) inline
   languageId: cpp
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: The batch stores a copy of the message. If the message has no message ID, the batch sets a new UUID as the message ID on that copy. If the batch has a partition key, the batch also sets the partition key annotation on that copy. The message you supply does not change.
 - section: Parameters
   display: h4
 - parameters:

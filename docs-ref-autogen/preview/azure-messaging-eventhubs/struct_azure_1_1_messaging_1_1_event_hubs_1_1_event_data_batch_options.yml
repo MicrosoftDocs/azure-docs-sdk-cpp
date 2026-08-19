@@ -17,7 +17,7 @@ components:
 
       Azure::Nullable&lt; std::uint64_t &gt;&#160;
   - declaration: PartitionKey
-    summary: PartitionKey is hashed to calculate the partition assignment.Messages and message batches with the same PartitionKey are guaranteed to end up in the same partition. Note that if you use this option then PartitionId cannot be set.
+    summary: PartitionKey is hashed by the Event Hubs service to calculate the partition assignment. The client puts the partition key in the message annotations of the batch envelope and of every event in the batch. The service then reads that annotation and sends all batches with the same PartitionKey to the same partition. Note that if you use this option then PartitionId cannot be set.
     returnType: >-
       <a id="a91d0bad8e75906118552debb02984e36"></a>
 

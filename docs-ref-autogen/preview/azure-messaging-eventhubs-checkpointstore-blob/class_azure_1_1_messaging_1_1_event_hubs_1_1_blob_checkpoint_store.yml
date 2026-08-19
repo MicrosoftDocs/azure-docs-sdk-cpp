@@ -29,13 +29,13 @@ components:
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store#a3bd9e3c8daed9dfef80dd77294fdaedb">BlobCheckpointStore</a> (Azure::Storage::Blobs::BlobContainerClient const &amp;containerClient)
     summary: Construct a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store">BlobCheckpointStore</a>.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store#a8cd55e88eeae679e4531779085a66e5e">ClaimOwnership</a> (std::vector&lt; Models::Ownership &gt; const &amp;partitionOwnership, Core::Context const &amp;context={}) override
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store#a2853a60a2a1ede146866f34b8ae5d5ff">ClaimOwnership</a> (std::vector&lt; Models::Ownership &gt; const &amp;partitionOwnership, Core::Context const &amp;context={}) override
     summary: ClaimOwnership Claims ownership for a particular partition.
     returnType: std::vector&lt; Models::Ownership &gt;&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store#a50603266f3cf1ebaf4a6187ad5bc4d73">ListCheckpoints</a> (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={}) override
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store#a3268ef1da7634c4127147ef929bd2116">ListCheckpoints</a> (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={}) override
     summary: List the checkpoints from storage.
     returnType: std::vector&lt; Models::Checkpoint &gt;&#160;
-  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store#a93060bbae446ee9aebfe3dbd7084e1ff">ListOwnership</a> (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={}) override
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_blob_checkpoint_store#a35939359571ae79243e01601c7db33eb">ListOwnership</a> (std::string const &amp;fullyQualifiedNamespace, std::string const &amp;eventHubName, std::string const &amp;consumerGroup, Core::Context const &amp;context={}) override
     summary: ListOwnership lists all ownerships.
     returnType: std::vector&lt; Models::Ownership &gt;&#160;
   - declaration: UpdateCheckpoint (Models::Checkpoint const &amp;checkpoint, Core::Context const &amp;context={}) override
@@ -61,16 +61,16 @@ components:
     summary: An Azure Blob ContainerClient used to hold the checkpoints.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a8cd55e88eeae679e4531779085a66e5e"></a>
+- content: <a id="a2853a60a2a1ede146866f34b8ae5d5ff"></a>
 - section: ClaimOwnership()
   display: h3
   uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3ABlobCheckpointStore.ClaimOwnership%28%29
   xrefType: Member
   xrefName: Azure::Messaging::EventHubs::BlobCheckpointStore.ClaimOwnership()
 - declaration: >-
-    std::vector&lt; Ownership &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ClaimOwnership(std::vector&lt; Models::Ownership &gt; const &amp;&#160;partitionOwnership,
-                                                                                              Core::Context const &amp;&#160;                   context = {}&#160;      
-                                                                                             ) override
+    std::vector&lt; Models::Ownership &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ClaimOwnership(std::vector&lt; Models::Ownership &gt; const &amp;&#160;partitionOwnership,
+                                                                                                      Core::Context const &amp;&#160;                   context = {}&#160;      
+                                                                                                     ) override
   languageId: cpp
 - section: Parameters
   display: h4
@@ -79,18 +79,18 @@ components:
     summary: '- The list of partition ownerships this instance is claiming.'
   - name: context
     summary: '- The context for cancelling long running operations.'
-- content: <a id="a50603266f3cf1ebaf4a6187ad5bc4d73"></a>
+- content: <a id="a3268ef1da7634c4127147ef929bd2116"></a>
 - section: ListCheckpoints()
   display: h3
   uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3ABlobCheckpointStore.ListCheckpoints%28%29
   xrefType: Member
   xrefName: Azure::Messaging::EventHubs::BlobCheckpointStore.ListCheckpoints()
 - declaration: >-
-    std::vector&lt; Checkpoint &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ListCheckpoints(std::string const &amp;&#160;  fullyQualifiedNamespace,
-                                                                                                std::string const &amp;&#160;  eventHubName,           
-                                                                                                std::string const &amp;&#160;  consumerGroup,          
-                                                                                                Core::Context const &amp;&#160;context = {}&#160;           
-                                                                                               ) override
+    std::vector&lt; Models::Checkpoint &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ListCheckpoints(std::string const &amp;&#160;  fullyQualifiedNamespace,
+                                                                                                        std::string const &amp;&#160;  eventHubName,           
+                                                                                                        std::string const &amp;&#160;  consumerGroup,          
+                                                                                                        Core::Context const &amp;&#160;context = {}&#160;           
+                                                                                                       ) override
   languageId: cpp
 - section: Parameters
   display: h4
@@ -107,18 +107,18 @@ components:
   display: h4
 - parameters:
   - summary: A list of checkpoints.
-- content: <a id="a93060bbae446ee9aebfe3dbd7084e1ff"></a>
+- content: <a id="a35939359571ae79243e01601c7db33eb"></a>
 - section: ListOwnership()
   display: h3
   uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3ABlobCheckpointStore.ListOwnership%28%29
   xrefType: Member
   xrefName: Azure::Messaging::EventHubs::BlobCheckpointStore.ListOwnership()
 - declaration: >-
-    std::vector&lt; Ownership &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ListOwnership(std::string const &amp;&#160;  fullyQualifiedNamespace,
-                                                                                             std::string const &amp;&#160;  eventHubName,           
-                                                                                             std::string const &amp;&#160;  consumerGroup,          
-                                                                                             Core::Context const &amp;&#160;context = {}&#160;           
-                                                                                            ) override
+    std::vector&lt; Models::Ownership &gt; Azure::Messaging::EventHubs::BlobCheckpointStore::ListOwnership(std::string const &amp;&#160;  fullyQualifiedNamespace,
+                                                                                                     std::string const &amp;&#160;  eventHubName,           
+                                                                                                     std::string const &amp;&#160;  consumerGroup,          
+                                                                                                     Core::Context const &amp;&#160;context = {}&#160;           
+                                                                                                    ) override
   languageId: cpp
 - section: Parameters
   display: h4

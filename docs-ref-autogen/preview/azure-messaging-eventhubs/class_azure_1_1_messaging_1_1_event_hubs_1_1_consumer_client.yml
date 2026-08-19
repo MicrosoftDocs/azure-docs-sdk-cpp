@@ -33,6 +33,9 @@ components:
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client#af5603f8b1432c35019666deb0d71a99a">GetRetryOptions</a> () const
     summary: Getter for retry options.
     returnType: Azure::Core::Http::Policies::RetryOptions const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client#a65f588c4cba90cd75c2d3e82fa0e6179">ConsumerClient</a> (std::string const &amp;connectionString, std::string const &amp;eventHub={}, std::string const &amp;consumerGroup=DefaultConsumerGroup, <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client_options">ConsumerClientOptions</a> const &amp;options={})
+    summary: Constructs a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client">ConsumerClient</a> from a connection string.
+    returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client#a2372850b4f1eace768803dc17c09cdb4">CreatePartitionClient</a> (std::string const &amp;partitionId, <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client_options">PartitionClientOptions</a> const &amp;options={}, Azure::Core::Context const &amp;context={})
     summary: Create new Partition client.
     returnType: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_partition_client">PartitionClient</a>&#160;
@@ -52,11 +55,11 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - content: <a id="a04a1cdf09ca20f78e56ead292ce74c24"></a>
-- section: ConsumerClient() [1/3]
+- section: ConsumerClient() [1/4]
   display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AConsumerClient.ConsumerClient%28%29%20%5B1%2F3%5D
+  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AConsumerClient.ConsumerClient%28%29%20%5B1%2F4%5D
   xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ConsumerClient.ConsumerClient() [1/3]
+  xrefName: Azure::Messaging::EventHubs::ConsumerClient.ConsumerClient() [1/4]
 - declaration: >-
     Azure::Messaging::EventHubs::ConsumerClient::ConsumerClient(std::string const &amp;&#160;                                               fullyQualifiedNamespace,             
                                                                 std::string const &amp;&#160;                                               eventHub,                            
@@ -79,22 +82,54 @@ components:
   - name: options
     summary: client options
 - content: <a id="a6e61ff5bdf91bce47070a1e6d3da8f25"></a>
-- section: ConsumerClient() [2/3]
+- section: ConsumerClient() [2/4]
   display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AConsumerClient.ConsumerClient%28%29%20%5B2%2F3%5D
+  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AConsumerClient.ConsumerClient%28%29%20%5B2%2F4%5D
   xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ConsumerClient.ConsumerClient() [2/3]
+  xrefName: Azure::Messaging::EventHubs::ConsumerClient.ConsumerClient() [2/4]
 - declaration: Azure::Messaging::EventHubs::ConsumerClient::ConsumerClient(ConsumerClient const &amp;&#160;other) delete
   languageId: cpp
 - content: <p>Copy a new <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client">ConsumerClient</a> from an existing one. </p><a id="a275beec3a2b2d9f955bac921e1afd46f"></a>
-- section: ConsumerClient() [3/3]
+- section: ConsumerClient() [3/4]
   display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AConsumerClient.ConsumerClient%28%29%20%5B3%2F3%5D
+  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AConsumerClient.ConsumerClient%28%29%20%5B3%2F4%5D
   xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ConsumerClient.ConsumerClient() [3/3]
+  xrefName: Azure::Messaging::EventHubs::ConsumerClient.ConsumerClient() [3/4]
 - declaration: Azure::Messaging::EventHubs::ConsumerClient::ConsumerClient(ConsumerClient &amp;&amp;&#160;other) delete
   languageId: cpp
-- content: <p>Move a consumer client </p>
+- content: <p>Move a consumer client </p><a id="a65f588c4cba90cd75c2d3e82fa0e6179"></a>
+- section: ConsumerClient() [4/4]
+  display: h3
+  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AConsumerClient.ConsumerClient%28%29%20%5B4%2F4%5D
+  xrefType: Member
+  xrefName: Azure::Messaging::EventHubs::ConsumerClient.ConsumerClient() [4/4]
+- declaration: >-
+    Azure::Messaging::EventHubs::ConsumerClient::ConsumerClient(std::string const &amp;&#160;          connectionString,                    
+                                                                std::string const &amp;&#160;          eventHub = {},                       
+                                                                std::string const &amp;&#160;          consumerGroup = DefaultConsumerGroup,
+                                                                ConsumerClientOptions const &amp;&#160;options = {}&#160;                        
+                                                               )
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: The Event Hubs namespace or Event Hub connection string.
+  - name: eventHub
+    summary: The Event Hub name. This can be empty when the connection string contains an EntityPath value.
+  - name: consumerGroup
+    summary: The consumer group name.
+  - name: options
+    summary: Additional options for creating the client.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: When the connection string contains an EntityPath value, eventHub must be empty or match that value.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: When eventHub conflicts with the connection string EntityPath, or when neither value supplies an Event Hub name.
 - section: Member Function Documentation
   display: h2
 - content: <a id="a4f30e551583265918d95050aa3271c6a"></a>

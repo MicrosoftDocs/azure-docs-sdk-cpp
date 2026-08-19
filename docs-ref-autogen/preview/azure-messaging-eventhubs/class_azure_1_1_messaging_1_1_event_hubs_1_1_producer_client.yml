@@ -30,6 +30,9 @@ components:
       <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client">ProducerClient</a> &amp;&#160;
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client#a7d029425c74012ce34c254dc4a3af287">ProducerClient</a> ()=default
     returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client#adef8dcb6133fab926506eba8767300bc">ProducerClient</a> (std::string const &amp;connectionString, std::string const &amp;eventHub, <a href="struct_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client_options">ProducerClientOptions</a> options={})
+    summary: Constructs a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client">ProducerClient</a> from a connection string.
+    returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client#ab093869993ed33fa1a3417786d5979d8">Close</a> (Azure::Core::Context const &amp;context={})
     summary: Close all the connections and sessions.
     returnType: void&#160;
@@ -58,11 +61,11 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - content: <a id="a1b7cdd5598ae870ee13aac09c9878b7b"></a>
-- section: ProducerClient() [1/3]
+- section: ProducerClient() [1/4]
   display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B1%2F3%5D
+  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B1%2F4%5D
   xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [1/3]
+  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [1/4]
 - declaration: >-
     Azure::Messaging::EventHubs::ProducerClient::ProducerClient(std::string const &amp;&#160;                                               fullyQualifiedNamespace,
                                                                 std::string const &amp;&#160;                                               eventHub,               
@@ -82,22 +85,51 @@ components:
   - name: options
     summary: Additional options for creating the client
 - content: <a id="a658ce7f7f520d5a0f07cf17fd55cf1e5"></a>
-- section: ProducerClient() [2/3]
+- section: ProducerClient() [2/4]
   display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B2%2F3%5D
+  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B2%2F4%5D
   xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [2/3]
+  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [2/4]
 - declaration: Azure::Messaging::EventHubs::ProducerClient::ProducerClient(ProducerClient const &amp;&#160;other) delete
   languageId: cpp
 - content: <p>Create a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client">ProducerClient</a> from another <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client">ProducerClient</a>. </p><a id="a7d029425c74012ce34c254dc4a3af287"></a>
-- section: ProducerClient() [3/3]
+- section: ProducerClient() [3/4]
   display: h3
-  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B3%2F3%5D
+  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B3%2F4%5D
   xrefType: Member
-  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [3/3]
+  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [3/4]
 - declaration: Azure::Messaging::EventHubs::ProducerClient::ProducerClient() default
   languageId: cpp
-- content: <p>Default Constructor for a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client">ProducerClient</a> </p>
+- content: <p>Default Constructor for a <a href="class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client">ProducerClient</a> </p><a id="adef8dcb6133fab926506eba8767300bc"></a>
+- section: ProducerClient() [4/4]
+  display: h3
+  uid: Azure%3A%3AMessaging%3A%3AEventHubs%3A%3AProducerClient.ProducerClient%28%29%20%5B4%2F4%5D
+  xrefType: Member
+  xrefName: Azure::Messaging::EventHubs::ProducerClient.ProducerClient() [4/4]
+- declaration: >-
+    Azure::Messaging::EventHubs::ProducerClient::ProducerClient(std::string const &amp;&#160;  connectionString,
+                                                                std::string const &amp;&#160;  eventHub,        
+                                                                ProducerClientOptions&#160;options = {}&#160;    
+                                                               )
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: connectionString
+    summary: The Event Hubs namespace or Event Hub connection string.
+  - name: eventHub
+    summary: The Event Hub name. This can be empty when the connection string contains an EntityPath value.
+  - name: options
+    summary: Additional options for creating the client.
+- section: Remarks
+  display: h4
+- parameters:
+  - summary: When the connection string contains an EntityPath value, eventHub must be empty or match that value.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: When eventHub conflicts with the connection string EntityPath, or when neither value supplies an Event Hub name.
 - section: Member Function Documentation
   display: h2
 - content: <a id="ab093869993ed33fa1a3417786d5979d8"></a>

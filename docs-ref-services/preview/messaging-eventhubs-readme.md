@@ -1,7 +1,7 @@
 ---
 title: 
 keywords: Azure, cpp, SDK, API, azure-messaging-eventhubs, eventhubs
-ms.date: 06/18/2026
+ms.date: 08/19/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: eventhubs
@@ -141,15 +141,47 @@ That should output something like:
 Event Hub clients are created using a credential from the [Azure Identity package][azure_identity_pkg], like [DefaultAzureCredential][default_azure_credential].
 Alternatively, you can create a client using a connection string.
 
-<!-- NOTE: Fix dead Links -->
-#### Using a service principal
+#### Using Microsoft Entra ID
+
+```cpp
+#include <azure/identity.hpp>
+#include <azure/messaging/eventhubs.hpp>
+
+std::string fullyQualifiedNamespace = "<namespace>.servicebus.windows.net";
+std::string eventHubName = "<event_hub_name>";
+
+auto credential = std::make_shared<Azure::Identity::DefaultAzureCredential>();
+
+Azure::Messaging::EventHubs::ProducerClient producer(
+    fullyQualifiedNamespace, eventHubName, credential);
+Azure::Messaging::EventHubs::ConsumerClient consumer(
+    fullyQualifiedNamespace, eventHubName, credential);
+```
+
  - ConsumerClient: [link][consumer_client]
  - ProducerClient: [link][producer_client]
 
-<!-- NOTE: Fix dead links -->
+Samples: [create_consumer_aad.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_consumer_aad.cpp) and [create_producer_aad.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_producer_aad.cpp).
+
 #### Using a connection string
- - ConsumerClient: [link](https://azure.github.io/azure-sdk-for-cpp/storage.html)
- - ProducerClient: [link](https://azure.github.io/azure-sdk-for-cpp/storage.html)
+
+Use a token credential for production applications when possible. A connection string is useful for local development, for the Event Hubs emulator, or when a shared access key is required.
+
+A namespace connection string does not contain an `EntityPath`. Pass the Event Hub name separately:
+
+```text
+Endpoint=sb://<namespace>.servicebus.windows.net/;SharedAccessKeyName=<key-name>;SharedAccessKey=<key>
+```
+
+An Event Hub connection string contains an `EntityPath`. The Event Hub argument can be empty or must match that value:
+
+```text
+Endpoint=sb://<namespace>.servicebus.windows.net/;SharedAccessKeyName=<key-name>;SharedAccessKey=<key>;EntityPath=<event-hub-name>
+```
+
+A different Event Hub argument throws `std::invalid_argument`.
+
+Samples: [create_consumer.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_consumer.cpp) and [create_producer.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_producer.cpp).
 
 # Key concepts
 
@@ -171,7 +203,7 @@ More information about Event Hubs features and terminology can be found here: [l
 # Examples
 
 Examples for various scenarios can be found on [azure.github.io](https://azure.github.io/azure-sdk-for-cpp/eventhubs.html) or in the samples directory in our GitHub repo for 
-[EventHubs](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.13/sdk/eventhubs/azure-messaging-eventhubs/samples).
+[EventHubs](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples).
 
 ## Send events
 
@@ -180,26 +212,26 @@ The following example shows how to send events to an event hub:
 ```cpp
 #include <azure/messaging/eventhubs.hpp>
 
+#include <stdexcept>
+
 // Your Event Hubs namespace connection string is available in the Azure portal.
 std::string connectionString = "<connection_string>";
 std::string eventHubName = "<event_hub_name>";
 
+Azure::Messaging::EventHubs::ProducerClient client(connectionString, eventHubName);
+
 Azure::Messaging::EventHubs::EventDataBatchOptions batchOptions;
 batchOptions.PartitionId = "1";
-Azure::Messaging::EventHubs::EventDataBatch eventBatch(batchOptions);
+Azure::Messaging::EventHubs::EventDataBatch eventBatch{client.CreateBatch(batchOptions)};
 
-Azure::Messaging::EventHubs::Models::EventData message;
-message.Body.Data = {'H', 'e', 'l', 'l', 'o', '2'};
+Azure::Messaging::EventHubs::Models::EventData message{"Hello Event Hubs"};
 
-eventBatch.AddMessage(message);
+if (!eventBatch.TryAdd(message))
+{
+  throw std::runtime_error("Failed to add the event to the batch.");
+}
 
-Azure::Messaging::EventHubs::ProducerClientOptions producerOptions;
-producerOptions.Name = "sender-link";
-producerOptions.ApplicationID = "some";
-
-auto client = Azure::Messaging::EventHubs::ProducerClient(
-      connectionString, eventHubName, producerOptions);
-auto result = client.SendEventDataBatch(eventBatch);
+client.Send(eventBatch);
 ```
 
 ## Receive events
@@ -214,11 +246,10 @@ The following example shows how to receive events from partition 1 on an event h
 std::string connectionString = "<connection_string>";
 std::string eventHubName = "<event_hub_name>";
 
-auto client = Azure::Messaging::EventHubs::ConsumerClient(
-	connectionString, eventHubName);
+Azure::Messaging::EventHubs::ConsumerClient client(connectionString, eventHubName);
 
 Azure::Messaging::EventHubs::PartitionClient partitionClient
-        = client.CreatePartitionClient("1");
+    = client.CreatePartitionClient("1");
 
 auto events = partitionClient.ReceiveEvents(1);
 ```
@@ -228,7 +259,7 @@ auto events = partitionClient.ReceiveEvents(1);
 
 ## Logging
 
-The EventHubs SDK client uses the [Azure SDK log message](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.13/sdk/core/azure-core#sdk-log-messages) functionality to 
+The EventHubs SDK client uses the [Azure SDK log message](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.14/sdk/core/azure-core#sdk-log-messages) functionality to 
 enable diagnostics.
 
 
@@ -262,22 +293,20 @@ Security issues and bugs should be reported privately, via email, to the Microso
 
 ### License
 
-Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.13/LICENSE.txt) license.
+Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/LICENSE.txt) license.
 
 <!-- LINKS -->
-[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.13/CONTRIBUTING.md
-[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.13/CONTRIBUTING.md#developer-guide
-[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.13/CONTRIBUTING.md#pull-requests
+[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/CONTRIBUTING.md
+[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/CONTRIBUTING.md#developer-guide
+[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/CONTRIBUTING.md#pull-requests
 
 [consumer_client]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-messaging-eventhubs/latest/class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html
 [producer_client]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-messaging-eventhubs/latest/class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html
 
-[source]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.13/sdk/eventhubs
+[source]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs
 [azure_identity_pkg]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-identity/latest/index.html
 [default_azure_credential]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-identity/latest/index.html#defaultazurecredential
 
 [cppdoc]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-messaging-eventhubs/latest/index.html
-[cppdoc_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.13/sdk/eventhubs/azure-messaging-eventhubs/samples
-
-
+[cppdoc_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples
 

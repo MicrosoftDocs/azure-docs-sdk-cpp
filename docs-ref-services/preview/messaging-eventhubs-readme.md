@@ -1,7 +1,7 @@
 ---
 title: 
 keywords: Azure, cpp, SDK, API, azure-messaging-eventhubs, eventhubs
-ms.date: 08/19/2026
+ms.date: 09/03/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: eventhubs
@@ -161,7 +161,7 @@ Azure::Messaging::EventHubs::ConsumerClient consumer(
  - ConsumerClient: [link][consumer_client]
  - ProducerClient: [link][producer_client]
 
-Samples: [create_consumer_aad.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_consumer_aad.cpp) and [create_producer_aad.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_producer_aad.cpp).
+Samples: [create_consumer_aad.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.15/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_consumer_aad.cpp) and [create_producer_aad.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.15/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_producer_aad.cpp).
 
 #### Using a connection string
 
@@ -173,15 +173,15 @@ A namespace connection string does not contain an `EntityPath`. Pass the Event H
 Endpoint=sb://<namespace>.servicebus.windows.net/;SharedAccessKeyName=<key-name>;SharedAccessKey=<key>
 ```
 
-An Event Hub connection string contains an `EntityPath`. The Event Hub argument can be empty or must match that value:
+An Event Hub connection string contains an `EntityPath`. The Event Hub argument can be empty, or it must match that value. The match ignores ASCII letter case:
 
 ```text
 Endpoint=sb://<namespace>.servicebus.windows.net/;SharedAccessKeyName=<key-name>;SharedAccessKey=<key>;EntityPath=<event-hub-name>
 ```
 
-A different Event Hub argument throws `std::invalid_argument`.
+An Event Hub argument that differs by more than ASCII letter case throws `std::invalid_argument`. When the two names differ only by case, the client uses the connection string spelling. The comparison folds ASCII A-Z only. It is not the culture-aware `InvariantCultureIgnoreCase` comparison that .NET uses.
 
-Samples: [create_consumer.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_consumer.cpp) and [create_producer.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_producer.cpp).
+Samples: [create_consumer.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.15/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_consumer.cpp) and [create_producer.cpp](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.15/sdk/eventhubs/azure-messaging-eventhubs/samples/basic-operations/create_producer.cpp).
 
 # Key concepts
 
@@ -203,7 +203,7 @@ More information about Event Hubs features and terminology can be found here: [l
 # Examples
 
 Examples for various scenarios can be found on [azure.github.io](https://azure.github.io/azure-sdk-for-cpp/eventhubs.html) or in the samples directory in our GitHub repo for 
-[EventHubs](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples).
+[EventHubs](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.15/sdk/eventhubs/azure-messaging-eventhubs/samples).
 
 ## Send events
 
@@ -259,7 +259,7 @@ auto events = partitionClient.ReceiveEvents(1);
 
 ## Logging
 
-The EventHubs SDK client uses the [Azure SDK log message](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.14/sdk/core/azure-core#sdk-log-messages) functionality to 
+The EventHubs SDK client uses the [Azure SDK log message](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.15/sdk/core/azure-core#sdk-log-messages) functionality to 
 enable diagnostics.
 
 
@@ -293,20 +293,20 @@ Security issues and bugs should be reported privately, via email, to the Microso
 
 ### License
 
-Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/LICENSE.txt) license.
+Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.15/LICENSE.txt) license.
 
 <!-- LINKS -->
-[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/CONTRIBUTING.md
-[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/CONTRIBUTING.md#developer-guide
-[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.14/CONTRIBUTING.md#pull-requests
+[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.15/CONTRIBUTING.md
+[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.15/CONTRIBUTING.md#developer-guide
+[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs_1.0.0-beta.15/CONTRIBUTING.md#pull-requests
 
 [consumer_client]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-messaging-eventhubs/latest/class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html
 [producer_client]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-messaging-eventhubs/latest/class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html
 
-[source]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs
+[source]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.15/sdk/eventhubs
 [azure_identity_pkg]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-identity/latest/index.html
 [default_azure_credential]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-identity/latest/index.html#defaultazurecredential
 
 [cppdoc]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-messaging-eventhubs/latest/index.html
-[cppdoc_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.14/sdk/eventhubs/azure-messaging-eventhubs/samples
+[cppdoc_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs_1.0.0-beta.15/sdk/eventhubs/azure-messaging-eventhubs/samples
 

@@ -124,12 +124,12 @@ components:
 - section: Remarks
   display: h4
 - parameters:
-  - summary: When the connection string contains an EntityPath value, eventHub must be empty or match that value.
+  - summary: When the connection string contains an EntityPath value, eventHub must be empty or match that value. The match ignores ASCII letter case.
 - section: Exceptions
   display: h4
 - parameters:
   - name: std::invalid_argument
-    summary: When eventHub conflicts with the connection string EntityPath, or when neither value supplies an Event Hub name.
+    summary: When eventHub differs from the connection string EntityPath by more than ASCII letter case, or when neither value supplies an Event Hub name.
 - section: Member Function Documentation
   display: h2
 - content: <a id="ab093869993ed33fa1a3417786d5979d8"></a>

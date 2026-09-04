@@ -53,8 +53,11 @@ components:
     summary: Construct a new <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_map">AmqpMap</a> object from an existing uAMQP AMQP_VALUE item.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_map#ab35ac1e7364d5e80cfce62f261d94aa0">operator[]</a> (decltype(m_value)::key_type &amp;&amp;keyVal)
-    summary: Insert a new key/value pair into the map.
+    summary: Access an element in the map.
     returnType: decltype(m_value) ::mapped_type &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_map#a4bde3692e2ce75e7a8dc67ed98913c23">find</a> (const decltype(m_value)::key_type &amp;keyVal)
+    summary: Insert a new key/value pair into the map.
+    returnType: decltype(m_value) ::iterator&#160;
 - content: <a id="details"></a>
 - section: Detailed Description
   display: h2
@@ -93,6 +96,23 @@ components:
   display: h4
 - parameters:
   - summary: std::pair&lt;iterator, bool&gt; - a pair containing an iterator to the inserted element, or an iterator to the element that prevented the insertion, and a bool indicating whether the insertion took place.
+- content: <a id="a4bde3692e2ce75e7a8dc67ed98913c23"></a>
+- section: find()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpMap.find%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpMap.find()
+- declaration: decltype(m_value) ::iterator Azure::Core::Amqp::Models::AmqpMap::find(const decltype(m_value)::key_type &amp;&#160;keyVal) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: keyVal
+    summary: The key to search for in the map.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: An iterator to the found element, or the end iterator if the key is not found.
 - content: <a id="ab35ac1e7364d5e80cfce62f261d94aa0"></a>
 - section: operator[]()
   display: h3

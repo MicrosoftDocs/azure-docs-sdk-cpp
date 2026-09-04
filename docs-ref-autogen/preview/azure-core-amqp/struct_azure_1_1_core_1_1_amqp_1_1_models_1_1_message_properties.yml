@@ -49,39 +49,39 @@ components:
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#ac61d8ac28a8cd2c3c642b5e81270d983">Serialize</a> (<a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties">MessageProperties</a> const &amp;properties)
+  - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#a2aacbee6ff13ca848a2d85f748b6e402">Serialize</a> (<a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties">MessageProperties</a> const &amp;properties)
     summary: Serialize a <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties">MessageProperties</a> object into a vector of bytes.
     returnType: static std::vector&lt; uint8_t &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#a031d29a25d10f5bbc12a2f94b89405a7">Deserialize</a> (uint8_t const *data, size_t size)
+  - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#a31f74f22af39fb6052a7f10e2408a632">Deserialize</a> (uint8_t const *data, size_t size)
     summary: Deserialize a <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties">MessageProperties</a> object from a vector of bytes.
     returnType: static <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties">MessageProperties</a>&#160;
 - section: Public Attributes
   display: h2
 - apiList:
-  - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#ac02c58781c8e3cf4b9ecf65918031454">MessageId</a>
+  - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#a9aa1cf3aa63ea7741b6833ea7e87acb1">MessageId</a>
     summary: The message-id, if set, uniquely identifies a message within the message system. The message producer is usually responsible for setting the message-id in such a way that it is assured to be globally unique. A broker MAY discard a message as a duplicate if the value of the message-id matches that of a previously received message sent to the same node.
-    returnType: Nullable&lt; <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a> &gt;&#160;
+    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a>&#160;
   - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#a2107fb94db44097732eab2bd48047a08">UserId</a>
     summary: User ID.
     returnType: Nullable&lt; std::vector&lt; uint8_t &gt; &gt;&#160;
-  - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#a259a52af66937ea622d0ff5cf62c61de">To</a>
+  - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#a09cdf5167f061fb3b55e0a24c75ae263">To</a>
     summary: The to field identifies the node that is the intended destination of the message.
-    returnType: Nullable&lt; <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a> &gt;&#160;
+    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a>&#160;
   - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#a24c55f080b159147463ccb206945622c">Subject</a>
     summary: The subject of the message.
     returnType: Nullable&lt; std::string &gt;&#160;
   - declaration: CorrelationId
     summary: This is a client-specific id that can be used to mark or identify messages between clients.
     returnType: >-
-      <a id="a9d33fddfca4dfe2314807a7e578e4594"></a>
+      <a id="aeb259b13141de1679f34f3409e87820d"></a>
 
-      Nullable&lt; <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a> &gt;&#160;
+      <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a>&#160;
   - declaration: ReplyTo
     summary: The address of the node to send replies to.
     returnType: >-
-      <a id="a902a1e942fe754faf3c41b7df895d02d"></a>
+      <a id="a4e36ba7c6afb7a4b382dd2c0729f6758"></a>
 
-      Nullable&lt; <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a> &gt;&#160;
+      <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a>&#160;
   - declaration: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties#a274d2f1a5ae6f08f43d7180bc317803b">ContentType</a>
     summary: The content-type field describes the payload type.
     returnType: Nullable&lt; std::string &gt;&#160;
@@ -131,16 +131,16 @@ components:
 - content: <p>Destroys the <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties">MessageProperties</a> object. </p>
 - section: Member Function Documentation
   display: h2
-- content: <a id="a031d29a25d10f5bbc12a2f94b89405a7"></a>
+- content: <a id="a31f74f22af39fb6052a7f10e2408a632"></a>
 - section: Deserialize()
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AMessageProperties.Deserialize%28%29
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::MessageProperties.Deserialize()
 - declaration: >-
-    MessageProperties Azure::Core::Amqp::Models::MessageProperties::Deserialize(uint8_t const *&#160;data,
-                                                                                size_t&#160;         size&#160;
-                                                                               ) static
+    static MessageProperties Azure::Core::Amqp::Models::MessageProperties::Deserialize(uint8_t const *&#160;data,
+                                                                                       size_t&#160;         size&#160;
+                                                                                      ) static
   languageId: cpp
 - section: Parameters
   display: h4
@@ -166,13 +166,13 @@ components:
 - parameters:
   - name: that
     summary: The other message properties object to compare with.
-- content: <a id="ac61d8ac28a8cd2c3c642b5e81270d983"></a>
+- content: <a id="a2aacbee6ff13ca848a2d85f748b6e402"></a>
 - section: Serialize()
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AMessageProperties.Serialize%28%29
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::MessageProperties.Serialize()
-- declaration: std::vector&lt; uint8_t &gt; Azure::Core::Amqp::Models::MessageProperties::Serialize(MessageProperties const &amp;&#160;properties) static
+- declaration: static std::vector&lt; uint8_t &gt; Azure::Core::Amqp::Models::MessageProperties::Serialize(MessageProperties const &amp;&#160;properties) static
   languageId: cpp
 - section: Parameters
   display: h4
@@ -237,13 +237,13 @@ components:
   xrefName: Azure::Core::Amqp::Models::MessageProperties.GroupSequence
 - declaration: Nullable&lt;uint32_t&gt; Azure::Core::Amqp::Models::MessageProperties::GroupSequence
   languageId: cpp
-- content: <p>The relative position of this message within its group. </p><a id="ac02c58781c8e3cf4b9ecf65918031454"></a>
+- content: <p>The relative position of this message within its group. </p><a id="a9aa1cf3aa63ea7741b6833ea7e87acb1"></a>
 - section: MessageId
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AMessageProperties.MessageId
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::MessageProperties.MessageId
-- declaration: Nullable&lt;AmqpValue&gt; Azure::Core::Amqp::Models::MessageProperties::MessageId
+- declaration: AmqpValue Azure::Core::Amqp::Models::MessageProperties::MessageId
   languageId: cpp
 - section: Remarks
   display: h4
@@ -265,13 +265,13 @@ components:
   xrefName: Azure::Core::Amqp::Models::MessageProperties.Subject
 - declaration: Nullable&lt;std::string&gt; Azure::Core::Amqp::Models::MessageProperties::Subject
   languageId: cpp
-- content: <p>A common field for summary information about the message content and purpose. </p><a id="a259a52af66937ea622d0ff5cf62c61de"></a>
+- content: <p>A common field for summary information about the message content and purpose. </p><a id="a09cdf5167f061fb3b55e0a24c75ae263"></a>
 - section: To
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AMessageProperties.To
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::MessageProperties.To
-- declaration: Nullable&lt;AmqpValue&gt; Azure::Core::Amqp::Models::MessageProperties::To
+- declaration: AmqpValue Azure::Core::Amqp::Models::MessageProperties::To
   languageId: cpp
 - section: Remarks
   display: h4

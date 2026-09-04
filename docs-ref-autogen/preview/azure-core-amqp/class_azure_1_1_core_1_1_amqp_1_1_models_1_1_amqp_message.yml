@@ -88,10 +88,10 @@ components:
 - section: Static Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#ac1f11446ee878574419914149c853529">Serialize</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message">AmqpMessage</a> const &amp;message)
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a477229ed4ecd88c612bb70c90d3c0f7f">Serialize</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message">AmqpMessage</a> const &amp;message)
     summary: Serialize the message into a buffer.
     returnType: static std::vector&lt; uint8_t &gt;&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a0cc3f9ede9f2496c970461b3abbd426f">Deserialize</a> (std::uint8_t const *buffer, size_t size)
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a002fff9fb5fff2acb06c2b72fdb4dc6c">Deserialize</a> (std::uint8_t const *buffer, size_t size)
     summary: Deserialize the message from a buffer.
     returnType: static <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message">AmqpMessage</a>&#160;
 - section: Public Attributes
@@ -103,12 +103,12 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a84428fa94c76a58f35adba08d3b307bd">Header</a>
     summary: The header for the message.
     returnType: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_header">MessageHeader</a>&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#ae6eba568e6be82e8a8083a63721e6aec">DeliveryAnnotations</a>
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a63e4602bc5080dae540e99209453ee2a">DeliveryAnnotations</a>
     summary: Delivery Annotations for the message.
-    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_map">AmqpMap</a>&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a5f303cf362123d47adc4e635230bb763">MessageAnnotations</a>
+    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_annotations">AmqpAnnotations</a>&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a0a54b28e2ae094e470a1c712d904e208">MessageAnnotations</a>
     summary: Message Annotations for the message.
-    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_map">AmqpMap</a>&#160;
+    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_annotations">AmqpAnnotations</a>&#160;
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#aafe23eb11fe9d9864f20d1a12c6c3c3c">Properties</a>
     summary: Immutable Properties for the message.
     returnType: <a href="struct_azure_1_1_core_1_1_amqp_1_1_models_1_1_message_properties">MessageProperties</a>&#160;
@@ -118,9 +118,9 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a8e8286fd9257cf983f8f28f0e7c9917c">DeliveryTag</a>
     summary: Delivery Tag for the message.
     returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a>&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#ad4f1a28d0f042ab67b4c5805280d1fa5">Footer</a>
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a242613727d0fa3e93ccc1a9503fa95aa">Footer</a>
     summary: Footer for the message.
-    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_map">AmqpMap</a>&#160;
+    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_annotations">AmqpAnnotations</a>&#160;
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_message#a63063b08f0ce22db2f312c9135d3bb16">BodyType</a> {MessageBodyType::None}
     returnType: MessageBodyType&#160;
 - content: <a id="details"></a>
@@ -142,16 +142,16 @@ components:
 - content: <p>For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#section-message-format">AMQP Message Format</a>. </p>
 - section: Member Function Documentation
   display: h2
-- content: <a id="a0cc3f9ede9f2496c970461b3abbd426f"></a>
+- content: <a id="a002fff9fb5fff2acb06c2b72fdb4dc6c"></a>
 - section: Deserialize()
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpMessage.Deserialize%28%29
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::AmqpMessage.Deserialize()
 - declaration: >-
-    AmqpMessage Azure::Core::Amqp::Models::AmqpMessage::Deserialize(std::uint8_t const *&#160;buffer,
-                                                                    size_t&#160;              size&#160;  
-                                                                   ) static
+    static AmqpMessage Azure::Core::Amqp::Models::AmqpMessage::Deserialize(std::uint8_t const *&#160;buffer,
+                                                                           size_t&#160;              size&#160;  
+                                                                          ) static
   languageId: cpp
 - section: Remarks
   display: h4
@@ -229,13 +229,13 @@ components:
   display: h4
 - parameters:
   - summary: A reference to this.
-- content: <a id="ac1f11446ee878574419914149c853529"></a>
+- content: <a id="a477229ed4ecd88c612bb70c90d3c0f7f"></a>
 - section: Serialize()
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpMessage.Serialize%28%29
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::AmqpMessage.Serialize()
-- declaration: std::vector&lt; uint8_t &gt; Azure::Core::Amqp::Models::AmqpMessage::Serialize(AmqpMessage const &amp;&#160;message) static
+- declaration: static std::vector&lt; uint8_t &gt; Azure::Core::Amqp::Models::AmqpMessage::Serialize(AmqpMessage const &amp;&#160;message) static
   languageId: cpp
 - section: Remarks
   display: h4
@@ -391,13 +391,13 @@ components:
 
     <li>A single AMQP Value. </li>
 
-    </ul><a id="ae6eba568e6be82e8a8083a63721e6aec"></a>
+    </ul><a id="a63e4602bc5080dae540e99209453ee2a"></a>
 - section: DeliveryAnnotations
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpMessage.DeliveryAnnotations
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::AmqpMessage.DeliveryAnnotations
-- declaration: AmqpMap Azure::Core::Amqp::Models::AmqpMessage::DeliveryAnnotations
+- declaration: AmqpAnnotations Azure::Core::Amqp::Models::AmqpMessage::DeliveryAnnotations
   languageId: cpp
 - content: <p>For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-delivery-annotations">AMQP Delivery Annotations</a>. </p><a id="a8e8286fd9257cf983f8f28f0e7c9917c"></a>
 - section: DeliveryTag
@@ -407,13 +407,13 @@ components:
   xrefName: Azure::Core::Amqp::Models::AmqpMessage.DeliveryTag
 - declaration: AmqpValue Azure::Core::Amqp::Models::AmqpMessage::DeliveryTag
   languageId: cpp
-- content: <p>For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-transport-v1.0-os.html#type-delivery-tag">AMQP Transport Transfer</a>. </p><a id="ad4f1a28d0f042ab67b4c5805280d1fa5"></a>
+- content: <p>For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-transport-v1.0-os.html#type-delivery-tag">AMQP Transport Transfer</a>. </p><a id="a242613727d0fa3e93ccc1a9503fa95aa"></a>
 - section: Footer
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpMessage.Footer
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::AmqpMessage.Footer
-- declaration: AmqpMap Azure::Core::Amqp::Models::AmqpMessage::Footer
+- declaration: AmqpAnnotations Azure::Core::Amqp::Models::AmqpMessage::Footer
   languageId: cpp
 - content: <p>For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-footer">AMQP Footer</a>. </p><a id="a84428fa94c76a58f35adba08d3b307bd"></a>
 - section: Header
@@ -423,13 +423,13 @@ components:
   xrefName: Azure::Core::Amqp::Models::AmqpMessage.Header
 - declaration: MessageHeader Azure::Core::Amqp::Models::AmqpMessage::Header
   languageId: cpp
-- content: <p>For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Message Header</a> </p><a id="a5f303cf362123d47adc4e635230bb763"></a>
+- content: <p>For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-header">AMQP Message Header</a> </p><a id="a0a54b28e2ae094e470a1c712d904e208"></a>
 - section: MessageAnnotations
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpMessage.MessageAnnotations
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::AmqpMessage.MessageAnnotations
-- declaration: AmqpMap Azure::Core::Amqp::Models::AmqpMessage::MessageAnnotations
+- declaration: AmqpAnnotations Azure::Core::Amqp::Models::AmqpMessage::MessageAnnotations
   languageId: cpp
 - content: <p>For more information, see <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html#type-message-annotations">AMQP Message Annotations</a>. </p><a id="a3c2e00247d78f71cfad2be5be3498d23"></a>
 - section: MessageFormat

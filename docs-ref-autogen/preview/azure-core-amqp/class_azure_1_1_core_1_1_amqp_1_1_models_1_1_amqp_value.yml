@@ -59,8 +59,20 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a9a5d5f8a8278492dae4520f1c52cffa6">AmqpValue</a> (double value)
     summary: Construct an AMQP double value, an IEEE 754-2008 value.
     returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a2e89d9997dfe41f730cc35bc2f13b0a9">AmqpValue</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal128">AmqpDecimal128</a> const &amp;value)
+    summary: Construct an AMQP Decimal128 value.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a6afc7402f81df15318a3f5113c71b055">AmqpValue</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal64">AmqpDecimal64</a> const &amp;value)
+    summary: Construct an AMQP Decimal64 value.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#ae9098754ef047935bdfd9201b664efc4">AmqpValue</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal32">AmqpDecimal32</a> const &amp;value)
+    summary: Construct an AMQP Decimal32 value.
+    returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a94fa0ade1691564ff336d2691a791b6a">AmqpValue</a> (std::string const &amp;value)
     summary: Construct an AMQP string value, a UTF-8 encoded sequence of characters.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#abf5528e743ab3d89d77b80a18b953794">AmqpValue</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_symbol">AmqpSymbol</a> const &amp;value)
+    summary: Construct an AMQP Symbol value, a UTF-8 encoded sequence of characters.
     returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#aceeb8b53de6fa924ae0509c088aab383">AmqpValue</a> (const char *value)
     summary: Construct an AMQP string value, a UTF-8 encoded sequence of characters.
@@ -122,6 +134,15 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#aaa7954d678b0c69d74c83775f5695d5c">operator double</a> () const
     summary: convert the current AMQP Value to a 64 bit IEEE 'double' value.
     returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#ad8359410bcc844ce1b11fdac89ab6780">operator AmqpDecimal128</a> () const
+    summary: convert the current AMQP Value to an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal128">AmqpDecimal128</a> value.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a7fc72a142aa35470decf426504ccf137">operator AmqpDecimal64</a> () const
+    summary: convert the current AMQP Value to an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal64">AmqpDecimal64</a> value.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a1037ec75012df09f7972ca142b576bf3">operator AmqpDecimal32</a> () const
+    summary: convert the current AMQP Value to an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal32">AmqpDecimal32</a> value.
+    returnType: '&#160;'
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a906e332a37787ed20a07c09c8bc8b840">operator char32_t</a> () const
     summary: convert the current AMQP Value to a 32bit UCS32 value.
     returnType: '&#160;'
@@ -137,6 +158,9 @@ components:
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a72414b2e7232230e7b4f7695261286a7">AsMap</a> () const
     summary: convert the current AMQP Value to an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_map">AmqpMap</a>.
     returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_map">AmqpMap</a>&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a5222265b14e89073e0b57ab39f177d8c">AsAnnotations</a> () const
+    summary: convert the current AMQP Value to an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_annotations">AmqpAnnotations</a>.
+    returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_annotations">AmqpAnnotations</a>&#160;
   - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#abec632157f1cf77a93e84374bfe0a464">AsArray</a> () const
     summary: convert the current AMQP Value to an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_array">AmqpArray</a>.
     returnType: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_array">AmqpArray</a>&#160;
@@ -161,16 +185,16 @@ components:
   - declaration: Serialize (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a> const &amp;value)
     summary: Serialize this AMQP value as an array of bytes.
     returnType: >-
-      <a id="a898b83eab2424637b0963dfe67b61c79"></a>
+      <a id="aa5d065b626fcc2d8c63186a8ff19c70a"></a>
 
       static std::vector&lt; <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a4cbb701654ce1ed415fd713ef7629fcf">uint8_t</a> &gt;&#160;
   - declaration: GetSerializedSize (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a> const &amp;value)
     summary: Returns the size (in bytes) of the serialized form of this value.
     returnType: >-
-      <a id="acb8efae090a763ae07e8b24fe56e46ef"></a>
+      <a id="a3307484f6cbf3b90fa01a8619b23249c"></a>
 
       static size_t&#160;
-  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a31c5e53b5a318b01986829076cf144c5">Deserialize</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a4cbb701654ce1ed415fd713ef7629fcf">uint8_t</a> const *data, size_t size)
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a5f7f9a73dd4900da3e26b712f1908f11">Deserialize</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value#a4cbb701654ce1ed415fd713ef7629fcf">uint8_t</a> const *data, size_t size)
     summary: Deserialize an AMQP value from an array of bytes.
     returnType: static <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a>&#160;
 - content: <a id="details"></a>
@@ -180,19 +204,19 @@ components:
 - section: Constructor &amp; Destructor Documentation
   display: h2
 - content: <a id="aeaeb8d5ef2075026ebecd64911bf1e0f"></a>
-- section: AmqpValue() [1/19]
+- section: AmqpValue() [1/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B1%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B1%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [1/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [1/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue() noexcept
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-null">AMQP Core Types section 1.6.1</a>. </p><a id="acf0815870a76125bd81390a864a7169d"></a>
-- section: AmqpValue() [2/19]
+- section: AmqpValue() [2/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B2%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B2%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [2/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [2/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(AmqpValue const &amp;&#160;that) noexcept
   languageId: cpp
 - section: Parameters
@@ -201,11 +225,11 @@ components:
   - name: that
     summary: '- source value to copy.'
 - content: <a id="a4336d64d7a1c1d93ca28e807e88fd283"></a>
-- section: AmqpValue() [3/19]
+- section: AmqpValue() [3/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B3%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B3%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [3/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [3/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(AmqpValue &amp;&amp;&#160;that) noexcept
   languageId: cpp
 - section: Parameters
@@ -214,11 +238,11 @@ components:
   - name: that
     summary: '- source value to move.'
 - content: <a id="a23ba7a3ebc1a7c31c286b7e427a5e974"></a>
-- section: AmqpValue() [4/19]
+- section: AmqpValue() [4/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B4%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B4%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [4/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [4/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(bool&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-boolean">AMQP Core Types section 1.6.2</a>.</p>
@@ -228,11 +252,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="a8dfa7ed5fb4f3fc0ad8da0ee921abc5a"></a>
-- section: AmqpValue() [5/19]
+- section: AmqpValue() [5/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B5%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B5%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [5/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [5/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(std::uint8_t&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-ubyte">AMQP Core Types section 1.6.3</a>.</p>
@@ -242,11 +266,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="a4fb7b712f7d427645d974c6d148b4fbc"></a>
-- section: AmqpValue() [6/19]
+- section: AmqpValue() [6/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B6%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B6%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [6/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [6/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(std::uint16_t&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-ushort">AMQP Core Types section 1.6.4</a>.</p>
@@ -256,11 +280,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="a072cb565fbf458c307bd5d74f2fdd015"></a>
-- section: AmqpValue() [7/19]
+- section: AmqpValue() [7/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B7%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B7%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [7/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [7/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(std::uint32_t&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-ushort">AMQP Core Types section 1.6.5</a>.</p>
@@ -270,11 +294,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="ab4e4fbbebdbfe184606ddabfd5a8eefd"></a>
-- section: AmqpValue() [8/19]
+- section: AmqpValue() [8/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B8%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B8%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [8/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [8/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(std::uint64_t&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-ulong">AMQP Core Types section 1.6.6</a>.</p>
@@ -284,11 +308,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="a24d99ca75eaf34fb741307476db8f53c"></a>
-- section: AmqpValue() [9/19]
+- section: AmqpValue() [9/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B9%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B9%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [9/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [9/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(std::int8_t&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-byte">AMQP Core Types section 1.6.7</a>.</p>
@@ -298,11 +322,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="a73abdaff79cd9148a5014089f70af4e2"></a>
-- section: AmqpValue() [10/19]
+- section: AmqpValue() [10/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B10%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B10%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [10/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [10/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(char&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-byte">AMQP Core Types section 1.6.7</a>.</p>
@@ -316,11 +340,11 @@ components:
 - parameters:
   - summary: This field is a convenience overload to allow clients to declare an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a> with a C++ character.
 - content: <a id="a10c33d9f4e36e056a1741efce2a8cbec"></a>
-- section: AmqpValue() [11/19]
+- section: AmqpValue() [11/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B11%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B11%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [11/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [11/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(std::int16_t&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-short">AMQP Core Types section 1.6.8</a>.</p>
@@ -330,11 +354,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="a24ed4eff496439dc1e02a263d1230771"></a>
-- section: AmqpValue() [12/19]
+- section: AmqpValue() [12/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B12%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B12%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [12/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [12/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(std::int32_t&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-int">AMQP Core Types section 1.6.9</a>.</p>
@@ -344,11 +368,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="a182987bc8d98cd24843ca8131ab6b1f0"></a>
-- section: AmqpValue() [13/19]
+- section: AmqpValue() [13/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B13%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B13%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [13/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [13/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(std::int64_t&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-long">AMQP Core Types section 1.6.10</a>.</p>
@@ -358,11 +382,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="a0fd251533fedd2795c72ba05ca4403cc"></a>
-- section: AmqpValue() [14/19]
+- section: AmqpValue() [14/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B14%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B14%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [14/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [14/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(float&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-float">AMQP Core Types section 1.6.11</a>.</p>
@@ -372,11 +396,11 @@ components:
   - name: value
     summary: value to be set.
 - content: <a id="a9a5d5f8a8278492dae4520f1c52cffa6"></a>
-- section: AmqpValue() [15/19]
+- section: AmqpValue() [15/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B15%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B15%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [15/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [15/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(double&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-double">AMQP Core Types section 1.6.12</a>.</p>
@@ -385,12 +409,54 @@ components:
 - parameters:
   - name: value
     summary: value to be set.
-- content: <a id="a94fa0ade1691564ff336d2691a791b6a"></a>
-- section: AmqpValue() [16/19]
+- content: <a id="a2e89d9997dfe41f730cc35bc2f13b0a9"></a>
+- section: AmqpValue() [16/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B16%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B16%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [16/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [16/23]
+- declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(AmqpDecimal128 const &amp;&#160;value)
+  languageId: cpp
+- content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-decimal128">AMQP Core Types section 1.6.20</a>.</p>
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: to be set.
+- content: <a id="a6afc7402f81df15318a3f5113c71b055"></a>
+- section: AmqpValue() [17/23]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B17%2F23%5D
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [17/23]
+- declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(AmqpDecimal64 const &amp;&#160;value)
+  languageId: cpp
+- content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-decimal64">AMQP Core Types section 1.6.20</a>.</p>
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: to be set.
+- content: <a id="ae9098754ef047935bdfd9201b664efc4"></a>
+- section: AmqpValue() [18/23]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B18%2F23%5D
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [18/23]
+- declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(AmqpDecimal32 const &amp;&#160;value)
+  languageId: cpp
+- content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-decimal32">AMQP Core Types section 1.6.20</a>.</p>
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: to be set.
+- content: <a id="a94fa0ade1691564ff336d2691a791b6a"></a>
+- section: AmqpValue() [19/23]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B19%2F23%5D
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [19/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(std::string const &amp;&#160;value) explicit
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-string">AMQP Core Types section 1.6.20</a>.</p>
@@ -399,12 +465,27 @@ components:
 - parameters:
   - name: value
     summary: to be set.
-- content: <a id="aceeb8b53de6fa924ae0509c088aab383"></a>
-- section: AmqpValue() [17/19]
+- content: <a id="abf5528e743ab3d89d77b80a18b953794"></a>
+- section: AmqpValue() [20/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B17%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B20%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [17/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [20/23]
+- declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(AmqpSymbol const &amp;&#160;value)
+  languageId: cpp
+- content: >-
+    <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-symbol">AMQP Core Types section 1.6.21</a>.</p><ul>
+
+    <li><h4>Parameters</h4><component _type="ParameterListComponent"><child _type="Parameter"><child _name="name">value</child><child _name="summary">to be set. </child></child></component>
+
+    </li>
+
+    </ul><a id="aceeb8b53de6fa924ae0509c088aab383"></a>
+- section: AmqpValue() [21/23]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B21%2F23%5D
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [21/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(const char *&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-string">AMQP Core Types section 1.6.20</a>.</p>
@@ -419,13 +500,13 @@ components:
   - summary: >-
       This is a convenience constructor to allow callers to specify: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a> myValue(&quot;This is some text&quot;);
 
-      <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">Azure::Core::Amqp::Models::AmqpValue</a>Definition amqp_value.hpp:104
+      <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">Azure::Core::Amqp::Models::AmqpValue</a>Definition amqp_value.hpp:293
 - content: <a id="a00d33b0e0354be92a98718abf54e475d"></a>
-- section: AmqpValue() [18/19]
+- section: AmqpValue() [22/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B18%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B22%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [18/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [22/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(char32_t&#160;value)
   languageId: cpp
 - content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-char">AMQP Core Types section 1.6.16</a>.</p>
@@ -435,14 +516,14 @@ components:
   - name: value
     summary: UTF-32 encoded unicode value to be set.
 - content: <a id="afbacdb9b13f4017a9a70c6093cf09e09"></a>
-- section: AmqpValue() [19/19]
+- section: AmqpValue() [23/23]
   display: h3
-  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B19%2F19%5D
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AmqpValue%28%29%20%5B23%2F23%5D
   xrefType: Member
-  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [19/19]
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AmqpValue() [23/23]
 - declaration: Azure::Core::Amqp::Models::AmqpValue::AmqpValue(Azure::Core::Uuid const &amp;&#160;value)
   languageId: cpp
-- content: '<p>TODO: Decimal32, Decimal64, and Decimal128. </p><p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-uuid">AMQP Core Types section 1.6.18</a>.</p>'
+- content: <p>Defined in <a href="http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-types-v1.0-os.html#type-uuid">AMQP Core Types section 1.6.18</a>.</p>
 - section: Parameters
   display: h4
 - parameters:
@@ -450,6 +531,23 @@ components:
     summary: UTF-32 encoded unicode value to be set.
 - section: Member Function Documentation
   display: h2
+- content: <a id="a5222265b14e89073e0b57ab39f177d8c"></a>
+- section: AsAnnotations()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.AsAnnotations%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.AsAnnotations()
+- declaration: AmqpAnnotations Azure::Core::Amqp::Models::AmqpValue::AsAnnotations()const
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_annotations">AmqpAnnotations</a>.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::runtime_error
+    summary: if the underlying AMQP value is not a map of Symbols to Values.
 - content: <a id="abec632157f1cf77a93e84374bfe0a464"></a>
 - section: AsArray()
   display: h3
@@ -588,16 +686,16 @@ components:
 - parameters:
   - name: std::runtime_error
     summary: if the underlying AMQP value is not a timestamp.
-- content: <a id="a31c5e53b5a318b01986829076cf144c5"></a>
+- content: <a id="a5f7f9a73dd4900da3e26b712f1908f11"></a>
 - section: Deserialize()
   display: h3
   uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.Deserialize%28%29
   xrefType: Member
   xrefName: Azure::Core::Amqp::Models::AmqpValue.Deserialize()
 - declaration: >-
-    AmqpValue Azure::Core::Amqp::Models::AmqpValue::Deserialize(uint8_t const *&#160;data,
-                                                                size_t&#160;         size&#160;
-                                                               ) static
+    static AmqpValue Azure::Core::Amqp::Models::AmqpValue::Deserialize(uint8_t const *&#160;data,
+                                                                       size_t&#160;         size&#160;
+                                                                      ) static
   languageId: cpp
 - section: Parameters
   display: h4
@@ -630,6 +728,57 @@ components:
   display: h4
 - parameters:
   - summary: true if the <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_value">AmqpValue</a> is null.
+- content: <a id="ad8359410bcc844ce1b11fdac89ab6780"></a>
+- section: operator AmqpDecimal128()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.operator%20AmqpDecimal128%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.operator AmqpDecimal128()
+- declaration: Azure::Core::Amqp::Models::AmqpValue::operator AmqpDecimal128()const
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal128">AmqpDecimal128</a>.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::runtime_error
+    summary: if the underlying AMQP value is not an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal128">AmqpDecimal128</a>.
+- content: <a id="a1037ec75012df09f7972ca142b576bf3"></a>
+- section: operator AmqpDecimal32()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.operator%20AmqpDecimal32%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.operator AmqpDecimal32()
+- declaration: Azure::Core::Amqp::Models::AmqpValue::operator AmqpDecimal32()const
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal32">AmqpDecimal32</a>.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::runtime_error
+    summary: if the underlying AMQP value is not an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal32">AmqpDecimal32</a>.
+- content: <a id="a7fc72a142aa35470decf426504ccf137"></a>
+- section: operator AmqpDecimal64()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpValue.operator%20AmqpDecimal64%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpValue.operator AmqpDecimal64()
+- declaration: Azure::Core::Amqp::Models::AmqpValue::operator AmqpDecimal64()const
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: the value as an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal64">AmqpDecimal64</a>.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::runtime_error
+    summary: if the underlying AMQP value is not an <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal64">AmqpDecimal64</a>.
 - content: <a id="acfe6eade9dcb9ff440e420d59dbcbfe0"></a>
 - section: operator Azure::Core::Uuid()
   display: h3

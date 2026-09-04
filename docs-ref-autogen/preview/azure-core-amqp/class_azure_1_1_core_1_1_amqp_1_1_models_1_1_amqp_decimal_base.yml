@@ -1,0 +1,276 @@
+### YamlMime:Reference
+uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E
+title: Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt; Class Template Reference
+xrefType: Class
+xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;
+components:
+- content: >-
+    <p>Provides storage and operations for a fixed-width AMQP decimal value.  
+     <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#details">More...</a></p><p><code>#include &lt;amqp_value.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: AmqpDecimalBase ()=default
+    summary: Constructs a decimal value initialized to zero.
+    returnType: >-
+      <a id="ae328cc2a876c1f770cf12e58044c9c01"></a>
+
+      &#160;
+  - declaration: ~AmqpDecimalBase ()=default
+    summary: Destructs the decimal value.
+    returnType: >-
+      <a id="a3fd250d927e45f10850bd2ae90d7f76e"></a>
+
+      &#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#a85d1fc558f1270ad00283b0ab4fa6015">AmqpDecimalBase</a> (std::array&lt; std::uint8_t, N &gt; const &amp;value)
+    summary: Constructs a decimal value from its encoded bytes.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#ab1e96fefb62befbd11d5173257a3e4de">AmqpDecimalBase</a> (std::initializer_list&lt; std::uint8_t &gt; value)
+    summary: Constructs a decimal value from its encoded bytes.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#aa2487cb7386f8470a97a35bdb6d0efec">AsArray</a> () const
+    summary: Gets the encoded bytes.
+    returnType: std::array&lt; std::uint8_t, N &gt; const &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#a3752adcde22c68cab7b8a2221af1b6cc">operator&lt;</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base">AmqpDecimalBase</a>&lt; N &gt; const &amp;that) const
+    summary: Compares two decimal values.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#aa820ae0e7e26ad6c1be8ac4d75f4f28a">operator==</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base">AmqpDecimalBase</a>&lt; N &gt; const &amp;that) const
+    summary: Compares two decimal values for equality.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#a6139396f65e53fdc5a5121ef6ffa293e">operator!=</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base">AmqpDecimalBase</a>&lt; N &gt; const &amp;that) const
+    summary: Compares two decimal values for inequality.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#a0604260e68e018a2bb9645e9c7ccc11a">operator&gt;</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base">AmqpDecimalBase</a>&lt; N &gt; const &amp;that) const
+    summary: Compares two decimal values.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#aa1b6f6e953984a0b1e108c235e67ba77">operator&lt;=</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base">AmqpDecimalBase</a>&lt; N &gt; const &amp;that) const
+    summary: Compares two decimal values.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#a3c89c2392f501a640fea825855b1291b">operator&gt;=</a> (<a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base">AmqpDecimalBase</a>&lt; N &gt; const &amp;that) const
+    summary: Compares two decimal values.
+    returnType: bool&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#aa1977c13b11ddfc126b69b2b73535230">operator std::array&lt; std::uint8_t, N &gt;</a> () const
+    summary: Converts this value to its encoded byte array.
+    returnType: '&#160;'
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#a4b96a4c5fde8e319b083ff6a748eada6">operator[]</a> (std::size_t index)
+    summary: Accesses an encoded byte.
+    returnType: std::uint8_t &amp;&#160;
+  - declaration: <a href="class_azure_1_1_core_1_1_amqp_1_1_models_1_1_amqp_decimal_base#a862f41a4ab72ec61e36636b3e6f646c7">operator[]</a> (std::size_t index) const
+    summary: Accesses an encoded byte.
+    returnType: std::uint8_t&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- content: template&lt;std::size_t N&gt;class Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;
+- section: Template Parameters
+  display: h4
+- parameters:
+  - name: N
+    summary: The number of bytes in the encoded decimal value.
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a85d1fc558f1270ad00283b0ab4fa6015"></a>
+- section: AmqpDecimalBase() [1/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.AmqpDecimalBase%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.AmqpDecimalBase() [1/2]
+- content: template&lt;std::size_t N&gt;
+- declaration: Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::AmqpDecimalBase(std::array&lt; std::uint8_t, N &gt; const &amp;&#160;value) inline explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: The encoded decimal value.
+- content: <a id="ab1e96fefb62befbd11d5173257a3e4de"></a>
+- section: AmqpDecimalBase() [2/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.AmqpDecimalBase%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.AmqpDecimalBase() [2/2]
+- content: template&lt;std::size_t N&gt;
+- declaration: Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::AmqpDecimalBase(std::initializer_list&lt; std::uint8_t &gt;&#160;value) inline explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: value
+    summary: The decimal encoding, which must contain exactly N bytes.
+- section: Exceptions
+  display: h4
+- parameters:
+  - name: std::invalid_argument
+    summary: If <code>value</code> does not contain exactly N bytes.
+- section: Member Function Documentation
+  display: h2
+- content: <a id="aa2487cb7386f8470a97a35bdb6d0efec"></a>
+- section: AsArray()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.AsArray%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.AsArray()
+- content: template&lt;std::size_t N&gt;
+- declaration: std::array&lt; std::uint8_t, N &gt; const  &amp; Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::AsArray()const inline
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A reference to the N-byte decimal encoding.
+- content: <a id="aa1977c13b11ddfc126b69b2b73535230"></a>
+- section: operator std::array&lt; std::uint8_t, N &gt;()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.operator%20std%3A%3Aarray%3C%20std%3A%3Auint8_t%2C%20N%20%3E%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.operator std::array< std::uint8_t, N >()
+- content: template&lt;std::size_t N&gt;
+- declaration: Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::operator std::array&lt; std::uint8_t, N &gt;()const inline
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The N-byte decimal encoding.
+- content: <a id="a6139396f65e53fdc5a5121ef6ffa293e"></a>
+- section: operator!=()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.operator%21%3D%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.operator!=()
+- content: template&lt;std::size_t N&gt;
+- declaration: bool Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::operator!=(AmqpDecimalBase&lt; N &gt; const &amp;&#160;that)const inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: The value to compare against.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <code>true</code> if the encoded bytes are not equal; otherwise, <code>false</code>.
+- content: <a id="a3752adcde22c68cab7b8a2221af1b6cc"></a>
+- section: operator&lt;()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.operator%3C%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.operator<()
+- content: template&lt;std::size_t N&gt;
+- declaration: bool Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::operator&lt;(AmqpDecimalBase&lt; N &gt; const &amp;&#160;that)const inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: The value to compare against.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <code>true</code> if this value is less than <code>that</code>; otherwise, <code>false</code>.
+- content: <a id="aa1b6f6e953984a0b1e108c235e67ba77"></a>
+- section: operator&lt;=()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.operator%3C%3D%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.operator<=()
+- content: template&lt;std::size_t N&gt;
+- declaration: bool Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::operator&lt;=(AmqpDecimalBase&lt; N &gt; const &amp;&#160;that)const inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: The value to compare against.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <code>true</code> if this value is less than or equal to <code>that</code>; otherwise, <code>false</code>.
+- content: <a id="aa820ae0e7e26ad6c1be8ac4d75f4f28a"></a>
+- section: operator==()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.operator%3D%3D%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.operator==()
+- content: template&lt;std::size_t N&gt;
+- declaration: bool Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::operator==(AmqpDecimalBase&lt; N &gt; const &amp;&#160;that)const inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: The value to compare against.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <code>true</code> if the encoded bytes are equal; otherwise, <code>false</code>.
+- content: <a id="a0604260e68e018a2bb9645e9c7ccc11a"></a>
+- section: operator&gt;()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.operator%3E%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.operator>()
+- content: template&lt;std::size_t N&gt;
+- declaration: bool Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::operator&gt;(AmqpDecimalBase&lt; N &gt; const &amp;&#160;that)const inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: The value to compare against.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <code>true</code> if this value is greater than <code>that</code>; otherwise, <code>false</code>.
+- content: <a id="a3c89c2392f501a640fea825855b1291b"></a>
+- section: operator&gt;=()
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.operator%3E%3D%28%29
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.operator>=()
+- content: template&lt;std::size_t N&gt;
+- declaration: bool Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::operator&gt;=(AmqpDecimalBase&lt; N &gt; const &amp;&#160;that)const inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: that
+    summary: The value to compare against.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: <code>true</code> if this value is greater than or equal to <code>that</code>; otherwise, <code>false</code>.
+- content: <a id="a4b96a4c5fde8e319b083ff6a748eada6"></a>
+- section: operator[]() [1/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.operator%5B%5D%28%29%20%5B1%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.operator[]() [1/2]
+- content: template&lt;std::size_t N&gt;
+- declaration: std::uint8_t &amp; Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::operator[](std::size_t&#160;index) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: index
+    summary: The zero-based byte index.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A reference to the byte at <code>index</code>.
+- content: <a id="a862f41a4ab72ec61e36636b3e6f646c7"></a>
+- section: operator[]() [2/2]
+  display: h3
+  uid: Azure%3A%3ACore%3A%3AAmqp%3A%3AModels%3A%3AAmqpDecimalBase%3C%20N%20%3E.operator%5B%5D%28%29%20%5B2%2F2%5D
+  xrefType: Member
+  xrefName: Azure::Core::Amqp::Models::AmqpDecimalBase< N >.operator[]() [2/2]
+- content: template&lt;std::size_t N&gt;
+- declaration: std::uint8_t Azure::Core::Amqp::Models::AmqpDecimalBase&lt; N &gt;::operator[](std::size_t&#160;index)const inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: index
+    summary: The zero-based byte index.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The byte at <code>index</code>.

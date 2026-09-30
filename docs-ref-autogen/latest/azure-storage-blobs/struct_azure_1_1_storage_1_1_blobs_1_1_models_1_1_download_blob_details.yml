@@ -69,9 +69,33 @@ components:
     returnType: Nullable&lt; <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_blob_immutability_policy">BlobImmutabilityPolicy</a> &gt;&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details#a14c9ff5a064bbbae4e351c43a77300c0">HasLegalHold</a> = false
     returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details#a435bb5152e71a85454138cb62025ccc0">AccessTier</a>
+    returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier">Models::AccessTier</a> &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details#a19e8ba1b89e6df9a3128dade8d0047c6">IsAccessTierInferred</a>
+    returnType: Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details#aea291474f3fbd7011cd2d0fa11082259">AccessTierChangedOn</a>
+    returnType: Nullable&lt; DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_models_1_1_download_blob_details#a48e55d4066ba8bb1ce674d626a733f1c">SmartAccessTier</a>
+    returnType: Nullable&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_models_1_1_access_tier">Models::AccessTier</a> &gt;&#160;
 - section: Member Data Documentation
   display: h2
-- content: <a id="a16400f4077471ddc1f43d675cba7d02b"></a>
+- content: <a id="a435bb5152e71a85454138cb62025ccc0"></a>
+- section: AccessTier
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobDetails.AccessTier
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::DownloadBlobDetails.AccessTier
+- declaration: Nullable&lt;Models::AccessTier&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::AccessTier
+  languageId: cpp
+- content: <p>The tier of page blob on a premium storage account or tier of block blob on blob storage or general purpose v2 account. </p><a id="aea291474f3fbd7011cd2d0fa11082259"></a>
+- section: AccessTierChangedOn
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobDetails.AccessTierChangedOn
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::DownloadBlobDetails.AccessTierChangedOn
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::AccessTierChangedOn
+  languageId: cpp
+- content: <p>The time the tier was changed on the object. This is only returned if the tier on the block blob was ever set. </p><a id="a16400f4077471ddc1f43d675cba7d02b"></a>
 - section: CommittedBlockCount
   display: h3
   uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobDetails.CommittedBlockCount
@@ -191,7 +215,15 @@ components:
   xrefName: Azure::Storage::Blobs::Models::DownloadBlobDetails.ImmutabilityPolicy
 - declaration: Nullable&lt;BlobImmutabilityPolicy&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::ImmutabilityPolicy
   languageId: cpp
-- content: <p>Immutability policy associated with the blob. </p><a id="a349f7ac54be4c7903c30452f2b82c6dd"></a>
+- content: <p>Immutability policy associated with the blob. </p><a id="a19e8ba1b89e6df9a3128dade8d0047c6"></a>
+- section: IsAccessTierInferred
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobDetails.IsAccessTierInferred
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::DownloadBlobDetails.IsAccessTierInferred
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::IsAccessTierInferred
+  languageId: cpp
+- content: <p>For page blobs on a premium storage account only. If the access tier is not explicitly set on the blob, the tier is inferred based on its content length and this header will be returned with true value. </p><a id="a349f7ac54be4c7903c30452f2b82c6dd"></a>
 - section: IsCurrentVersion
   display: h3
   uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobDetails.IsCurrentVersion
@@ -287,7 +319,15 @@ components:
   xrefName: Azure::Storage::Blobs::Models::DownloadBlobDetails.SequenceNumber
 - declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::SequenceNumber
   languageId: cpp
-- content: <p>The current sequence number for a page blob. </p><a id="a57c9942d75e185624ba2f19f46cf0476"></a>
+- content: <p>The current sequence number for a page blob. </p><a id="a48e55d4066ba8bb1ce674d626a733f1c"></a>
+- section: SmartAccessTier
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobDetails.SmartAccessTier
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::Models::DownloadBlobDetails.SmartAccessTier
+- declaration: Nullable&lt;Models::AccessTier&gt; Azure::Storage::Blobs::Models::DownloadBlobDetails::SmartAccessTier
+  languageId: cpp
+- content: <p>The underlying tier of a smart tier blob. Only returned if the blob is in Smart tier. </p><a id="a57c9942d75e185624ba2f19f46cf0476"></a>
 - section: TagCount
   display: h3
   uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AModels%3A%3ADownloadBlobDetails.TagCount

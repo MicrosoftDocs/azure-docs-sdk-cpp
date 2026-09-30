@@ -39,7 +39,7 @@ components:
   - declaration: ''
     returnType: '&#160;&#160;&#160;int64_t&#160;&#160;&#160;<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options#a6af9939d150b75686bb9877182a4f939">ChunkSize</a> = 4 * 1024 * 1024&#160;'
   - declaration: ''
-    returnType: '&#160;&#160;&#160;int32_t&#160;&#160;&#160;<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options#a24b18bcd1ed7dd06919153d0816ea0bf">Concurrency</a> = 5&#160;'
+    returnType: '&#160;&#160;&#160;int32_t&#160;&#160;&#160;<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_upload_file_from_options#a24b18bcd1ed7dd06919153d0816ea0bf">Concurrency</a> = (std::min)(96, (std::max)(8, _internal::GetHardwareConcurrency()))&#160;'
   - declaration: TransferOptions&#160;
     summary: Options for parallel transfer.
     returnType: '}&#160;'
@@ -59,7 +59,7 @@ components:
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AUploadFileFromOptions.Concurrency
   xrefType: Member
   xrefName: Azure::Storage::Files::Shares::UploadFileFromOptions.Concurrency
-- declaration: int32_t Azure::Storage::Files::Shares::UploadFileFromOptions::Concurrency = 5
+- declaration: int32_t Azure::Storage::Files::Shares::UploadFileFromOptions::Concurrency = (std::min)(96, (std::max)(8, _internal::GetHardwareConcurrency()))
   languageId: cpp
 - content: <p>The maximum number of threads that may be used in a parallel transfer. </p><a id="a8bb80b28e0670f15f5d9f918853607e9"></a>
 - section: FilePermission

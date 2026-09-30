@@ -17,6 +17,10 @@ components:
     returnType: LeaseAccessConditions&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options#aaf98c3feab3f236e76189d4deec3eb3a">IncludeRenames</a>
     returnType: Azure::Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options#a99eefbb10551be73b49f47adb0893f98">ContinuationToken</a>
+    returnType: Azure::Nullable&lt; std::string &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_options#a92ab6fb2bd74fcc4fb0b30ec53d4f386">PageSizeHint</a>
+    returnType: Azure::Nullable&lt; int32_t &gt;&#160;
 - section: Member Data Documentation
   display: h2
 - content: <a id="a3f59c21217edb65be54f35fc382a8a95"></a>
@@ -27,7 +31,15 @@ components:
   xrefName: Azure::Storage::Files::Shares::GetFileRangeListOptions.AccessConditions
 - declaration: LeaseAccessConditions Azure::Storage::Files::Shares::GetFileRangeListOptions::AccessConditions
   languageId: cpp
-- content: <p>The operation will only succeed if the access condition is met. </p><a id="aaf98c3feab3f236e76189d4deec3eb3a"></a>
+- content: <p>The operation will only succeed if the access condition is met. </p><a id="a99eefbb10551be73b49f47adb0893f98"></a>
+- section: ContinuationToken
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListOptions.ContinuationToken
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::GetFileRangeListOptions.ContinuationToken
+- declaration: Azure::Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::GetFileRangeListOptions::ContinuationToken
+  languageId: cpp
+- content: <p>A string value that identifies the portion of the list to be returned with the next list operation. The operation returns a marker value within the response body if the list returned was not complete. The marker value may then be used in a subsequent call to request the next set of list items. The marker value is opaque to the client. </p><a id="aaf98c3feab3f236e76189d4deec3eb3a"></a>
 - section: IncludeRenames
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListOptions.IncludeRenames
@@ -35,7 +47,15 @@ components:
   xrefName: Azure::Storage::Files::Shares::GetFileRangeListOptions.IncludeRenames
 - declaration: Azure::Nullable&lt;bool&gt; Azure::Storage::Files::Shares::GetFileRangeListOptions::IncludeRenames
   languageId: cpp
-- content: <p>This header is allowed only when PreviousSnapshot query parameter is set. Determines whether the changed ranges for a file that has been renamed or moved between the target snapshot (or the live file) and the previous snapshot should be listed. If the value is true, the valid changed ranges for the file will be returned. If the value is false, the operation will result in a failure with 409 (Conflict) response. </p><a id="a46fb4c270c260550ad8ab2bc8e4f44e7"></a>
+- content: <p>This header is allowed only when PreviousSnapshot query parameter is set. Determines whether the changed ranges for a file that has been renamed or moved between the target snapshot (or the live file) and the previous snapshot should be listed. If the value is true, the valid changed ranges for the file will be returned. If the value is false, the operation will result in a failure with 409 (Conflict) response. </p><a id="a92ab6fb2bd74fcc4fb0b30ec53d4f386"></a>
+- section: PageSizeHint
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListOptions.PageSizeHint
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::GetFileRangeListOptions.PageSizeHint
+- declaration: Azure::Nullable&lt;int32_t&gt; Azure::Storage::Files::Shares::GetFileRangeListOptions::PageSizeHint
+  languageId: cpp
+- content: <p>Specifies the maximum number of entries to return. If the request does not specify PageSizeHint, or specifies a value greater than 10,000, the server will return up to 10,000 items. </p><a id="a46fb4c270c260550ad8ab2bc8e4f44e7"></a>
 - section: Range
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AGetFileRangeListOptions.Range

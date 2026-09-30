@@ -48,7 +48,7 @@ components:
     returnType: '&#160;&#160;&#160;Azure::Nullable&lt; int64_t &gt;&#160;&#160;&#160;ChunkSize&#160;'
   - declaration: ''
     summary: The maximum number of threads that may be used in a parallel transfer.
-    returnType: '&#160;&#160;&#160;int32_t&#160;&#160;&#160;Concurrency = 5&#160;'
+    returnType: '&#160;&#160;&#160;int32_t&#160;&#160;&#160;Concurrency = (std::min)(96, (std::max)(8, _internal::GetHardwareConcurrency()))&#160;'
   - declaration: TransferOptions&#160;
     summary: Options for parallel transfer.
     returnType: '}&#160;'

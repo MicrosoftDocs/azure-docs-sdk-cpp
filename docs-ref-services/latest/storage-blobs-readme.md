@@ -1,12 +1,12 @@
 ---
 title: Azure Storage Blobs client library for C
 keywords: Azure, cpp, SDK, API, azure-storage-blobs, storage
-ms.date: 09/29/2026
+ms.date: 10/22/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: storage
 ---
-# Azure Storage Blobs client library for C - version 12.19.0 
+# Azure Storage Blobs client library for C - version 12.19.1 
 ++
 
 Azure Blob Storage is Microsoft's object storage solution for the cloud. It is optimized for
@@ -157,9 +157,9 @@ instances is safe, even across threads.
 ### Additional concepts
 
 <!-- CLIENT COMMON BAR -->
-[Replaceable HTTP transport adapter](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/sdk/core/azure-core#http-transport-adapter) |
+[Replaceable HTTP transport adapter](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/sdk/core/azure-core#http-transport-adapter) |
 [Response model types](https://github.com/Azure/azure-sdk-for-cpp#response-t-model-types) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/sdk/core/azure-core#long-running-operations)
+[Long-running operations](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/sdk/core/azure-core#long-running-operations)
 <!-- CLIENT COMMON BAR -->
 
 ## Examples
@@ -209,7 +209,7 @@ for (auto blobPage = containerClient.ListBlobs(); blobPage.HasPage();
 ## Troubleshooting
 
 Blob service operations throw an
-[`Azure::Storage::StorageException`](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
+[`Azure::Storage::StorageException`](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/sdk/storage/azure-storage-common/inc/azure/storage/common/storage_exception.hpp)
 on failure. The exception includes the HTTP status code, service error code, request ID, and other
 details that can help diagnose the failure. See the
 [Blob service error codes](https://learn.microsoft.com/rest/api/storageservices/blob-service-error-codes)
@@ -237,12 +237,12 @@ catch (const Azure::Storage::StorageException& exception)
 
 The following samples demonstrate common Blob Storage scenarios:
 
-- [Upload and download blobs](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/sdk/storage/azure-storage-blobs/samples/blob_getting_started.cpp)
-- [List containers and blobs](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/sdk/storage/azure-storage-blobs/samples/blob_list_operation.cpp)
-- [Set a timeout for list operations](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/sdk/storage/azure-storage-blobs/samples/blob_list_operation_with_timeout.cpp)
-- [Query blob contents](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/sdk/storage/azure-storage-blobs/samples/blob_query.cpp)
-- [Create shared access signatures](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/sdk/storage/azure-storage-blobs/samples/blob_sas.cpp)
-- [Use transactional checksums](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/sdk/storage/azure-storage-blobs/samples/transactional_checksum.cpp)
+- [Upload and download blobs](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/sdk/storage/azure-storage-blobs/samples/blob_getting_started.cpp)
+- [List containers and blobs](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/sdk/storage/azure-storage-blobs/samples/blob_list_operation.cpp)
+- [Set a timeout for list operations](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/sdk/storage/azure-storage-blobs/samples/blob_list_operation_with_timeout.cpp)
+- [Query blob contents](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/sdk/storage/azure-storage-blobs/samples/blob_query.cpp)
+- [Create shared access signatures](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/sdk/storage/azure-storage-blobs/samples/blob_sas.cpp)
+- [Use transactional checksums](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/sdk/storage/azure-storage-blobs/samples/transactional_checksum.cpp)
 
 ## Contributing
 
@@ -282,21 +282,21 @@ including the MSRC PGP key, see the
 ### License
 
 Azure SDK for C++ is licensed under the
-[MIT license](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/LICENSE.txt).
+[MIT license](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/LICENSE.txt).
 
 <!-- LINKS -->
 [api_reference]: https://learn.microsoft.com/cpp/api/overview/azure/storage-blobs-readme?view=azure-cpp
 [azure_cli]: https://learn.microsoft.com/cli/azure
-[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/CONTRIBUTING.md
-[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/CONTRIBUTING.md#developer-guide
-[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.0/CONTRIBUTING.md#pull-requests
+[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/CONTRIBUTING.md
+[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/CONTRIBUTING.md#developer-guide
+[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-storage-blobs_12.19.1/CONTRIBUTING.md#pull-requests
 [azure_sub]: https://azure.microsoft.com/free/
 [azsdk_vcpkg_install]: https://github.com/Azure/azure-sdk-for-cpp#getting-started
-[default_azure_credential]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.19.0/sdk/identity/azure-identity#defaultazurecredential
+[default_azure_credential]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.19.1/sdk/identity/azure-identity#defaultazurecredential
 [product_documentation]: https://learn.microsoft.com/azure/storage/blobs/
-[project_set_up_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.19.0/samples/integration
-[samples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.19.0/sdk/storage/azure-storage-blobs/samples
-[source_code]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.19.0/sdk/storage/azure-storage-blobs
+[project_set_up_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.19.1/samples/integration
+[samples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.19.1/sdk/storage/azure-storage-blobs/samples
+[source_code]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-storage-blobs_12.19.1/sdk/storage/azure-storage-blobs
 [storage_account_overview]: https://learn.microsoft.com/azure/storage/common/storage-account-overview
 [vcpkg_package]: https://vcpkg.io/en/package/azure-storage-blobs-cpp
 

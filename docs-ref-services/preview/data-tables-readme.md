@@ -1,18 +1,19 @@
 ---
-title: Azure Tables client library for C++
-keywords: Azure, cpp, SDK, API, azure-data-tables-cpp, tables
-ms.date: 06/13/2025
+title: Azure Tables client library for C
+keywords: Azure, cpp, SDK, API, azure-data-tables, tables
+ms.date: 11/04/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: tables
 ---
-# Azure Tables client library for C++
+# Azure Tables client library for C - version 1.0.0-beta.7 
+++
 
 Azure Data Tables is a NoSQL data storage service that can be accessed from anywhere in the world via authenticated calls using HTTP or HTTPS.
 Tables scales as needed to support the amount of data inserted, and allows for the storing of data with non-complex accessing.
 The Azure Tables client can be used to access Azure Storage or Cosmos accounts.
 
-[Source code][source_code] | [Package (vcpkg)](https://vcpkg.io/en/package/azure-data-tables-cpp) | [API reference documentation](https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-data-tables/latest/index.html) | [Product documentation](https://learn.microsoft.com/azure/storage/tables/) | [Samples](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/tables/azure-data-tables/samples)
+[Source code][source_code] | [Package (vcpkg)](https://vcpkg.io/en/package/azure-data-tables-cpp) | [API reference documentation](https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-data-tables/latest/index.html) | [Product documentation](https://learn.microsoft.com/azure/storage/tables/) | [Samples](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-data-tables_1.0.0-beta.7/sdk/tables/azure-data-tables/samples)
 
 ## Getting started
 
@@ -95,7 +96,7 @@ az storage account show -n <your-storage-account> -g <your-resource-group-name> 
 
 ### Credentials
 
-We'll be using the `DefaultAzureCredential` to authenticate which will pick up the credentials we used when logging in with the Azure CLI earlier. `DefaultAzureCredential` can pick up on a number of Credential types from your environment and is ideal when getting started and developing. Check out our section on [DefaultAzureCredentials](https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/identity/azure-identity#defaultazurecredential) to learn more.
+We'll be using the `DefaultAzureCredential` to authenticate which will pick up the credentials we used when logging in with the Azure CLI earlier. `DefaultAzureCredential` can pick up on a number of Credential types from your environment and is ideal when getting started and developing. Check out our section on [DefaultAzureCredentials](https://github.com/Azure/azure-sdk-for-cpp/tree/azure-data-tables_1.0.0-beta.7/sdk/identity/azure-identity#defaultazurecredential) to learn more.
 
 ### Clients
 Two different clients are provided to interact with the various components of the Table Service:
@@ -296,13 +297,13 @@ or contact [opencode@microsoft.com][coc_contact] with any
 additional questions or comments.
 
 <!-- LINKS -->
-[sdk_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/CONTRIBUTING.md
-[storage_testing]: https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/storage/TestingGuide.md
+[sdk_contrib]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-data-tables_1.0.0-beta.7/CONTRIBUTING.md
+[storage_testing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-data-tables_1.0.0-beta.7/sdk/storage/TestingGuide.md
 [cla]: https://cla.microsoft.com
 [coc]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 [coc_contact]: mailto:opencode@microsoft.com
-[source_code]:https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/
+[source_code]:https://github.com/Azure/azure-sdk-for-cpp/tree/azure-data-tables_1.0.0-beta.7/sdk/
 [Tables_product_doc]:https://learn.microsoft.com/azure/cosmos-db/table-introduction
 [azure_sub]: https://azure.microsoft.com/free/
 [azure_cli]: https://learn.microsoft.com/cli/azure
@@ -316,5 +317,6 @@ additional questions or comments.
 [azure_powershell_create_account]:https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-powershell
 [azure_cli_create_account]: https://learn.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-cli
 [azsdk_vcpkg_install]: https://github.com/Azure/azure-sdk-for-cpp#getting-started
-[project_set_up_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/main/samples/integration
+[project_set_up_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-data-tables_1.0.0-beta.7/samples/integration
  
+

@@ -11,51 +11,48 @@ components:
 - section: Public Member Functions
   display: h2
 - apiList:
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#aa720fced348a2c9cb8ddd85d87e7c4e5">TableServiceClient</a> (const std::string &amp;serviceUrl, const <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options">TableClientOptions</a> &amp;options={})
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#aab1fdc5c8c9d70cc4e0aa74e554eec96">TableServiceClient</a> (const std::string &amp;serviceUrl, const <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options">TableClientOptions</a> &amp;options={})
     summary: Initializes a new instance of tableClient.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a18802d3855930e558f241759fb12ab76">TableServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options">TableClientOptions</a> &amp;options={})
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#ad5d6f358e1b45527dd9ffbebf51b19fa">TableServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options">TableClientOptions</a> &amp;options={})
     summary: Initializes a new instance of tableClient.
     returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#acb90347314d262f96aadaeb0bc4eee98">TableServiceClient</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; <a href="class_azure_1_1_data_1_1_tables_1_1_credentials_1_1_azure_sas_credential">Azure::Data::Tables::Credentials::AzureSasCredential</a> &gt; credential, const <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options">TableClientOptions</a> &amp;options={})
-    summary: Initializes a new instance of tableClient.
-    returnType: '&#160;'
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a39ac64e998c0e0d3ba8af43aa85e6136">CreateTable</a> (std::string const &amp;tableName, Core::Context const &amp;context={})
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a1a6108877cbdb9b6c584a67f8918fe59">CreateTable</a> (std::string const &amp;tableName, Core::Context const &amp;context={}) const
     summary: Creates a new table under the given account.
     returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table">Models::Table</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a7f237cdff7a6276291cad7f7a5ce6464">DeleteTable</a> (std::string const &amp;tableName, Core::Context const &amp;context={})
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a6db6e565e85f8a781cdadf8ce8e832bc">DeleteTable</a> (std::string const &amp;tableName, Core::Context const &amp;context={}) const
     summary: Operation permanently deletes the specified table.
     returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_delete_table_result">Models::DeleteTableResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#ac6fb6e46dd5ef4322e963441eba75cbe">QueryTables</a> (const <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_query_tables_options">Models::QueryTablesOptions</a> &amp;options={}, const Azure::Core::Context &amp;context={}) const
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#ad58600f0f4ab0e6a4ab509564e1a9aaa">QueryTables</a> (const <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_query_tables_options">Models::QueryTablesOptions</a> &amp;options={}, const Azure::Core::Context &amp;context={}) const
     summary: Queries tables under the given account.
     returnType: <a href="class_azure_1_1_data_1_1_tables_1_1_models_1_1_query_tables_paged_response">Models::QueryTablesPagedResponse</a>&#160;
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a25278f1c2ae2bb0c0a769f7bdb14af29">SetServiceProperties</a> (<a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_set_service_properties_options">Models::SetServicePropertiesOptions</a> const &amp;options={}, Core::Context const &amp;context={})
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#af9357328e0a04ef103d9a10c2c879c48">SetServiceProperties</a> (<a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_set_service_properties_options">Models::SetServicePropertiesOptions</a> const &amp;options={}, Core::Context const &amp;context={}) const
     summary: Set service properties.
     returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_set_service_properties_result">Models::SetServicePropertiesResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#adbfe1ab01b27b93b56ee78d69ac1e653">GetServiceProperties</a> (Core::Context const &amp;context={})
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a11f09f438a22701fa8314fd9c31fc9dd">GetServiceProperties</a> (Core::Context const &amp;context={}) const
     summary: Get service properties.
     returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_table_service_properties">Models::TableServiceProperties</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a5ab3b1e8306e3a5adbb7998b21698e0f">GetStatistics</a> (Core::Context const &amp;context={})
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a3deb2b6e10a5dde47006cd0de86f34fc">GetStatistics</a> (Core::Context const &amp;context={}) const
     summary: Get service statistics.
     returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_service_statistics">Models::ServiceStatistics</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a2fa64fe53c6551f31eb3289a6f64be2e">PreflightCheck</a> (<a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_preflight_check_options">Models::PreflightCheckOptions</a> const &amp;options, Core::Context const &amp;context={})
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a369ff9c4157477d387ad174104791682">PreflightCheck</a> (<a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_preflight_check_options">Models::PreflightCheckOptions</a> const &amp;options, Core::Context const &amp;context={}) const
     summary: Pre flight check.
     returnType: Response&lt; <a href="struct_azure_1_1_data_1_1_tables_1_1_models_1_1_preflight_check_result">Models::PreflightCheckResult</a> &gt;&#160;
-  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a32684f4168ab87bfd69ac5f532a6bdd4">GetTableClient</a> (const std::string &amp;tableName, <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options">TableClientOptions</a> const &amp;options={}) const
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_service_client#a310168c5e7bb35c4eb8e887e61262e13">GetTableClient</a> (const std::string &amp;tableName, <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options">TableClientOptions</a> const &amp;options={}) const
     summary: Get table client.
     returnType: <a href="class_azure_1_1_data_1_1_tables_1_1_table_client">TableClient</a>&#160;
 - section: Constructor &amp; Destructor Documentation
   display: h2
-- content: <a id="aa720fced348a2c9cb8ddd85d87e7c4e5"></a>
-- section: TableServiceClient() [1/3]
+- content: <a id="aab1fdc5c8c9d70cc4e0aa74e554eec96"></a>
+- section: TableServiceClient() [1/2]
   display: h3
-  uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.TableServiceClient%28%29%20%5B1%2F3%5D
+  uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.TableServiceClient%28%29%20%5B1%2F2%5D
   xrefType: Member
-  xrefName: Azure::Data::Tables::TableServiceClient.TableServiceClient() [1/3]
+  xrefName: Azure::Data::Tables::TableServiceClient.TableServiceClient() [1/2]
 - declaration: >-
-    TableServiceClient::TableServiceClient(const std::string &amp;&#160;       serviceUrl,  
-                                           const TableClientOptions &amp;&#160;options = {}&#160;
-                                          ) explicit
+    Azure::Data::Tables::TableServiceClient::TableServiceClient(const std::string &amp;&#160;       serviceUrl,  
+                                                                const TableClientOptions &amp;&#160;options = {}&#160;
+                                                               ) explicit
   languageId: cpp
 - section: Parameters
   display: h4
@@ -64,17 +61,17 @@ components:
     summary: A url referencing the table that includes the name of the account and the name of the table.
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
-- content: <a id="a18802d3855930e558f241759fb12ab76"></a>
-- section: TableServiceClient() [2/3]
+- content: <a id="ad5d6f358e1b45527dd9ffbebf51b19fa"></a>
+- section: TableServiceClient() [2/2]
   display: h3
-  uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.TableServiceClient%28%29%20%5B2%2F3%5D
+  uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.TableServiceClient%28%29%20%5B2%2F2%5D
   xrefType: Member
-  xrefName: Azure::Data::Tables::TableServiceClient.TableServiceClient() [2/3]
+  xrefName: Azure::Data::Tables::TableServiceClient.TableServiceClient() [2/2]
 - declaration: >-
-    TableServiceClient::TableServiceClient(const std::string &amp;&#160;                                  serviceUrl,  
-                                           std::shared_ptr&lt; Core::Credentials::TokenCredential &gt;&#160;credential,  
-                                           const TableClientOptions &amp;&#160;                           options = {}&#160;
-                                          ) explicit
+    Azure::Data::Tables::TableServiceClient::TableServiceClient(const std::string &amp;&#160;                                        serviceUrl,  
+                                                                std::shared_ptr&lt; const Core::Credentials::TokenCredential &gt;&#160;credential,  
+                                                                const TableClientOptions &amp;&#160;                                 options = {}&#160;
+                                                               ) explicit
   languageId: cpp
 - section: Parameters
   display: h4
@@ -85,39 +82,18 @@ components:
     summary: The shared key credential used to sign requests.
   - name: options
     summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
-- content: <a id="acb90347314d262f96aadaeb0bc4eee98"></a>
-- section: TableServiceClient() [3/3]
-  display: h3
-  uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.TableServiceClient%28%29%20%5B3%2F3%5D
-  xrefType: Member
-  xrefName: Azure::Data::Tables::TableServiceClient.TableServiceClient() [3/3]
-- declaration: >-
-    TableServiceClient::TableServiceClient(const std::string &amp;&#160;                                                    serviceUrl,  
-                                           std::shared_ptr&lt; Azure::Data::Tables::Credentials::AzureSasCredential &gt;&#160;credential,  
-                                           const TableClientOptions &amp;&#160;                                             options = {}&#160;
-                                          ) explicit
-  languageId: cpp
-- section: Parameters
-  display: h4
-- parameters:
-  - name: serviceUrl
-    summary: A url referencing the table that includes the name of the account and the name of the table.
-  - name: credential
-    summary: The SAS credential used to sign requests.
-  - name: options
-    summary: Optional client options that define the transport pipeline policies for authentication, retries, etc., that are applied to every request.
 - section: Member Function Documentation
   display: h2
-- content: <a id="a39ac64e998c0e0d3ba8af43aa85e6136"></a>
+- content: <a id="a1a6108877cbdb9b6c584a67f8918fe59"></a>
 - section: CreateTable()
   display: h3
   uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.CreateTable%28%29
   xrefType: Member
   xrefName: Azure::Data::Tables::TableServiceClient.CreateTable()
 - declaration: >-
-    Azure::Response&lt; Models::Table &gt; TableServiceClient::CreateTable(std::string const &amp;&#160;  tableName,   
-                                                                     Core::Context const &amp;&#160;context = {}&#160;
-                                                                    )
+    Response&lt; Models::Table &gt; Azure::Data::Tables::TableServiceClient::CreateTable(std::string const &amp;&#160;  tableName,   
+                                                                                   Core::Context const &amp;&#160;context = {}&#160;
+                                                                                  )                      const
   languageId: cpp
 - section: Parameters
   display: h4
@@ -130,16 +106,16 @@ components:
   display: h4
 - parameters:
   - summary: Create table result.
-- content: <a id="a7f237cdff7a6276291cad7f7a5ce6464"></a>
+- content: <a id="a6db6e565e85f8a781cdadf8ce8e832bc"></a>
 - section: DeleteTable()
   display: h3
   uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.DeleteTable%28%29
   xrefType: Member
   xrefName: Azure::Data::Tables::TableServiceClient.DeleteTable()
 - declaration: >-
-    Azure::Response&lt; Models::DeleteTableResult &gt; TableServiceClient::DeleteTable(std::string const &amp;&#160;  tableName,   
-                                                                                 Core::Context const &amp;&#160;context = {}&#160;
-                                                                                )
+    Response&lt; Models::DeleteTableResult &gt; Azure::Data::Tables::TableServiceClient::DeleteTable(std::string const &amp;&#160;  tableName,   
+                                                                                               Core::Context const &amp;&#160;context = {}&#160;
+                                                                                              )                      const
   languageId: cpp
 - section: Parameters
   display: h4
@@ -152,13 +128,13 @@ components:
   display: h4
 - parameters:
   - summary: Delete table result.
-- content: <a id="adbfe1ab01b27b93b56ee78d69ac1e653"></a>
+- content: <a id="a11f09f438a22701fa8314fd9c31fc9dd"></a>
 - section: GetServiceProperties()
   display: h3
   uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.GetServiceProperties%28%29
   xrefType: Member
   xrefName: Azure::Data::Tables::TableServiceClient.GetServiceProperties()
-- declaration: Azure::Response&lt; Models::TableServiceProperties &gt; TableServiceClient::GetServiceProperties(Core::Context const &amp;&#160;context = {})
+- declaration: Response&lt; Models::TableServiceProperties &gt; Azure::Data::Tables::TableServiceClient::GetServiceProperties(Core::Context const &amp;&#160;context = {})const
   languageId: cpp
 - section: Parameters
   display: h4
@@ -169,13 +145,13 @@ components:
   display: h4
 - parameters:
   - summary: Get service properties result.
-- content: <a id="a5ab3b1e8306e3a5adbb7998b21698e0f"></a>
+- content: <a id="a3deb2b6e10a5dde47006cd0de86f34fc"></a>
 - section: GetStatistics()
   display: h3
   uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.GetStatistics%28%29
   xrefType: Member
   xrefName: Azure::Data::Tables::TableServiceClient.GetStatistics()
-- declaration: Azure::Response&lt; Models::ServiceStatistics &gt; TableServiceClient::GetStatistics(Core::Context const &amp;&#160;context = {})
+- declaration: Response&lt; Models::ServiceStatistics &gt; Azure::Data::Tables::TableServiceClient::GetStatistics(Core::Context const &amp;&#160;context = {})const
   languageId: cpp
 - section: Parameters
   display: h4
@@ -186,16 +162,16 @@ components:
   display: h4
 - parameters:
   - summary: Get service statistics result.
-- content: <a id="a32684f4168ab87bfd69ac5f532a6bdd4"></a>
+- content: <a id="a310168c5e7bb35c4eb8e887e61262e13"></a>
 - section: GetTableClient()
   display: h3
   uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.GetTableClient%28%29
   xrefType: Member
   xrefName: Azure::Data::Tables::TableServiceClient.GetTableClient()
 - declaration: >-
-    TableClient TableServiceClient::GetTableClient(const std::string &amp;&#160;       tableName,   
-                                                   TableClientOptions const &amp;&#160;options = {}&#160;
-                                                  )                           const
+    TableClient Azure::Data::Tables::TableServiceClient::GetTableClient(const std::string &amp;&#160;       tableName,   
+                                                                        TableClientOptions const &amp;&#160;options = {}&#160;
+                                                                       )                           const
   languageId: cpp
 - section: Parameters
   display: h4
@@ -212,16 +188,16 @@ components:
   display: h4
 - parameters:
   - summary: The <a href="class_azure_1_1_data_1_1_tables_1_1_table_client">TableClient</a> can be used to perform operations on the table. This method will attempt to create a table client with the same credentials as the service client except the SAS token credential as the SAS token permissions varies from the service level permissions.
-- content: <a id="a2fa64fe53c6551f31eb3289a6f64be2e"></a>
+- content: <a id="a369ff9c4157477d387ad174104791682"></a>
 - section: PreflightCheck()
   display: h3
   uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.PreflightCheck%28%29
   xrefType: Member
   xrefName: Azure::Data::Tables::TableServiceClient.PreflightCheck()
 - declaration: >-
-    Azure::Response&lt; Models::PreflightCheckResult &gt; TableServiceClient::PreflightCheck(Models::PreflightCheckOptions const &amp;&#160;options,     
-                                                                                       Core::Context const &amp;&#160;                context = {}&#160;
-                                                                                      )
+    Response&lt; Models::PreflightCheckResult &gt; Azure::Data::Tables::TableServiceClient::PreflightCheck(Models::PreflightCheckOptions const &amp;&#160;options,     
+                                                                                                     Core::Context const &amp;&#160;                context = {}&#160;
+                                                                                                    )                                      const
   languageId: cpp
 - section: Parameters
   display: h4
@@ -234,16 +210,16 @@ components:
   display: h4
 - parameters:
   - summary: Get service statistics result.
-- content: <a id="ac6fb6e46dd5ef4322e963441eba75cbe"></a>
+- content: <a id="ad58600f0f4ab0e6a4ab509564e1a9aaa"></a>
 - section: QueryTables()
   display: h3
   uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.QueryTables%28%29
   xrefType: Member
   xrefName: Azure::Data::Tables::TableServiceClient.QueryTables()
 - declaration: >-
-    Models::QueryTablesPagedResponse TableServiceClient::QueryTables(const Models::QueryTablesOptions &amp;&#160;options = {},
-                                                                     const Azure::Core::Context &amp;&#160;      context = {}&#160;
-                                                                    )                                   const
+    Models::QueryTablesPagedResponse Azure::Data::Tables::TableServiceClient::QueryTables(const Models::QueryTablesOptions &amp;&#160;options = {},
+                                                                                          const Azure::Core::Context &amp;&#160;      context = {}&#160;
+                                                                                         )                                   const
   languageId: cpp
 - section: Parameters
   display: h4
@@ -256,16 +232,16 @@ components:
   display: h4
 - parameters:
   - summary: Query tables paged response.
-- content: <a id="a25278f1c2ae2bb0c0a769f7bdb14af29"></a>
+- content: <a id="af9357328e0a04ef103d9a10c2c879c48"></a>
 - section: SetServiceProperties()
   display: h3
   uid: Azure%3A%3AData%3A%3ATables%3A%3ATableServiceClient.SetServiceProperties%28%29
   xrefType: Member
   xrefName: Azure::Data::Tables::TableServiceClient.SetServiceProperties()
 - declaration: >-
-    Azure::Response&lt; Models::SetServicePropertiesResult &gt; TableServiceClient::SetServiceProperties(Models::SetServicePropertiesOptions const &amp;&#160;options = {},
-                                                                                                   Core::Context const &amp;&#160;                      context = {}&#160;
-                                                                                                  )
+    Response&lt; Models::SetServicePropertiesResult &gt; Azure::Data::Tables::TableServiceClient::SetServiceProperties(Models::SetServicePropertiesOptions const &amp;&#160;options = {},
+                                                                                                                 Core::Context const &amp;&#160;                      context = {}&#160;
+                                                                                                                )                                            const
   languageId: cpp
 - section: Parameters
   display: h4

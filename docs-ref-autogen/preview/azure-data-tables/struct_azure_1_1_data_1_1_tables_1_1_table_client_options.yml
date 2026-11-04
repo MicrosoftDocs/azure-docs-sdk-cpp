@@ -18,6 +18,8 @@ components:
     returnType: std::string&#160;
   - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options#a3fe26f7eaf45ac09f06c5272546272ae">EnableTenantDiscovery</a> = false
     returnType: bool&#160;
+  - declaration: <a href="struct_azure_1_1_data_1_1_tables_1_1_table_client_options#a88edcf9439a97cd05e8fadd669c2294a">Audience</a>
+    returnType: Azure::Nullable&lt; <a href="class_azure_1_1_data_1_1_tables_1_1_table_audience">TableAudience</a> &gt;&#160;
 - section: Member Data Documentation
   display: h2
 - content: <a id="ace48fd127e7a321371c37bae94bf8baf"></a>
@@ -28,7 +30,15 @@ components:
   xrefName: Azure::Data::Tables::TableClientOptions.ApiVersion
 - declaration: std::string Azure::Data::Tables::TableClientOptions::ApiVersion {&quot;2019-02-02&quot;}
   languageId: cpp
-- content: <p>API version used by this client. </p><a id="a3fe26f7eaf45ac09f06c5272546272ae"></a>
+- content: <p>API version used by this client. </p><a id="a88edcf9439a97cd05e8fadd669c2294a"></a>
+- section: Audience
+  display: h3
+  uid: Azure%3A%3AData%3A%3ATables%3A%3ATableClientOptions.Audience
+  xrefType: Member
+  xrefName: Azure::Data::Tables::TableClientOptions.Audience
+- declaration: Azure::Nullable&lt;TableAudience&gt; Azure::Data::Tables::TableClientOptions::Audience
+  languageId: cpp
+- content: <p>The Audience to use for authentication with Azure Active Directory (AAD). Audience will be assumed based on serviceUrl if it is not set. </p><a id="a3fe26f7eaf45ac09f06c5272546272ae"></a>
 - section: EnableTenantDiscovery
   display: h3
   uid: Azure%3A%3AData%3A%3ATables%3A%3ATableClientOptions.EnableTenantDiscovery

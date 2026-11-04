@@ -1,0 +1,64 @@
+### YamlMime:Reference
+uid: Azure%3A%3AData%3A%3ATables%3A%3ATableAudience
+title: Azure::Data::Tables::TableAudience Class Reference
+xrefType: Class
+xrefName: Azure::Data::Tables::TableAudience
+components:
+- content: >-
+    <p>Audiences available for Azure Table storage service.  
+     <a href="class_azure_1_1_data_1_1_tables_1_1_table_audience#details">More...</a></p><p><code>#include &lt;table_audience.hpp&gt;</code></p>
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: GetAudience () const
+    summary: Get the audience value.
+    returnType: >-
+      <a id="ac2d52e4b0bae70e7793a70ad7eee22c7"></a>
+
+      std::string&#160;
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_audience#aa2be44afd822753062d03de30cccc47b">TableAudience</a> (std::string tableAudience)
+    summary: Construct a new TablesAudience object.
+    returnType: '&#160;'
+- section: Static Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_data_1_1_tables_1_1_table_audience#acc6684bc8c5406af60fd734a5402ecf5">CreateAccountAudience</a> (const std::string &amp;tableAccountName)
+    summary: The service endpoint for a given storage account. Use this method to acquire a token for authorizing requests to that specific Azure Storage account and service only.
+    returnType: static <a href="class_azure_1_1_data_1_1_tables_1_1_table_audience">TableAudience</a>&#160;
+- content: <a id="details"></a>
+- section: Detailed Description
+  display: h2
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="aa2be44afd822753062d03de30cccc47b"></a>
+- section: TableAudience()
+  display: h3
+  uid: Azure%3A%3AData%3A%3ATables%3A%3ATableAudience.TableAudience%28%29
+  xrefType: Member
+  xrefName: Azure::Data::Tables::TableAudience.TableAudience()
+- declaration: Azure::Data::Tables::TableAudience::TableAudience(std::string&#160;tableAudience) inline explicit
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tableAudience
+    summary: 'The Azure Active Directory audience to use when forming authorization scopes. For the Language service, this value corresponds to a URL that identifies the Azure cloud where the resource is located. For more information: See <a href="https://learn.microsoft.com/azure/storage/tables/authorize-access-azure-active-directory">https://learn.microsoft.com/azure/storage/tables/authorize-access-azure-active-directory</a>'
+- section: Member Function Documentation
+  display: h2
+- content: <a id="acc6684bc8c5406af60fd734a5402ecf5"></a>
+- section: CreateAccountAudience()
+  display: h3
+  uid: Azure%3A%3AData%3A%3ATables%3A%3ATableAudience.CreateAccountAudience%28%29
+  xrefType: Member
+  xrefName: Azure::Data::Tables::TableAudience.CreateAccountAudience()
+- declaration: static TableAudience Azure::Data::Tables::TableAudience::CreateAccountAudience(const std::string &amp;&#160;tableAccountName) inline static
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: tableAccountName
+    summary: The storage account name used to populate the service endpoint.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The service endpoint for a given storage account.

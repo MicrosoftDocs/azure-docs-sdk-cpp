@@ -5,28 +5,114 @@ xrefType: File
 xrefName: queue_responses.hpp
 components:
 - content: >-
-    <p>Defines Queue operation responses.  
+    <p>Defines Queue service models and operation results.  
 
     <a href="queue__responses_8hpp#details">More...</a></p><p><code>#include &quot;azure/storage/queues/queue_options.hpp&quot;</code><br>
 
-    <code>#include &quot;azure/storage/queues/rest_client.hpp&quot;</code><br>
+    <code>#include &lt;azure/core/case_insensitive_containers.hpp&gt;</code><br>
+
+    <code>#include &lt;azure/core/datetime.hpp&gt;</code><br>
+
+    <code>#include &lt;azure/core/internal/extendable_enumeration.hpp&gt;</code><br>
+
+    <code>#include &lt;azure/core/nullable.hpp&gt;</code><br>
 
     <code>#include &lt;azure/core/paged_response.hpp&gt;</code><br>
+
+    <code>#include &lt;azure/storage/queues/dll_import_export.hpp&gt;</code><br>
+
+    <code>#include &lt;cstdint&gt;</code><br>
 
     <code>#include &lt;memory&gt;</code><br>
 
     <code>#include &lt;string&gt;</code><br>
 
+    <code>#include &lt;utility&gt;</code><br>
+
+    <code>#include &lt;vector&gt;</code><br>
+
     </p>
 - section: Classes
   display: h2
 - apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_retention_policy">Azure::Storage::Queues::Models::RetentionPolicy</a>
+    summary: The retention policy.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_retention_policy#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_analytics_logging">Azure::Storage::Queues::Models::AnalyticsLogging</a>
+    summary: Azure Analytics Logging settings.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_analytics_logging#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_metrics">Azure::Storage::Queues::Models::Metrics</a>
+    summary: A summary of request statistics grouped by API in hour or minute aggregates for queues.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_metrics#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_cors_rule">Azure::Storage::Queues::Models::CorsRule</a>
+    summary: CORS is an HTTP feature that enables a web application running under one domain to access resources in another domain. Web browsers implement a security restriction known as same-origin policy that prevents a web page from calling APIs in a different domain; CORS provides a secure way to allow one domain (the origin domain) to call APIs in another domain.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_cors_rule#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_set_service_properties_result">Azure::Storage::Queues::Models::SetServicePropertiesResult</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a93626fb5b9473a1fbcca7c74d8f9ae0e">Azure::Storage::Queues::QueueServiceClient::SetProperties</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_set_service_properties_result#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_service_properties">Azure::Storage::Queues::Models::QueueServiceProperties</a>
+    summary: Storage Service Properties.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_service_properties#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_models_1_1_geo_replication_status">Azure::Storage::Queues::Models::GeoReplicationStatus</a>
+    summary: The status of the secondary location.  <a href="class_azure_1_1_storage_1_1_queues_1_1_models_1_1_geo_replication_status#details">More...</a>
+    returnType: class &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_geo_replication">Azure::Storage::Queues::Models::GeoReplication</a>
+    summary: Geo-Replication information for the Secondary Storage Service.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_geo_replication#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_service_statistics">Azure::Storage::Queues::Models::ServiceStatistics</a>
+    summary: Stats for the storage service.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_service_statistics#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_user_delegation_key">Azure::Storage::Queues::Models::UserDelegationKey</a>
+    summary: A user delegation key.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_user_delegation_key#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_item">Azure::Storage::Queues::Models::QueueItem</a>
+    summary: An Azure Storage Queue.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_item#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_create_queue_result">Azure::Storage::Queues::Models::CreateQueueResult</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a6d3decc59308b637fedb6d32a67e2e32">Azure::Storage::Queues::QueueClient::Create</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_create_queue_result#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_delete_queue_result">Azure::Storage::Queues::Models::DeleteQueueResult</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#ae1772368ba55042d1950f769678091ce">Azure::Storage::Queues::QueueClient::Delete</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_delete_queue_result#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_set_queue_metadata_result">Azure::Storage::Queues::Models::SetQueueMetadataResult</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a81656ea20df206d8f05374b47d4fe149">Azure::Storage::Queues::QueueClient::SetMetadata</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_set_queue_metadata_result#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_signed_identifier">Azure::Storage::Queues::Models::SignedIdentifier</a>
+    summary: Signed identifier.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_signed_identifier#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_access_policy">Azure::Storage::Queues::Models::QueueAccessPolicy</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#af38d6b536b58c07f725c18fa85909faa">Azure::Storage::Queues::QueueClient::GetAccessPolicy</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_access_policy#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_set_queue_access_policy_result">Azure::Storage::Queues::Models::SetQueueAccessPolicyResult</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a20e9754beff1cd5f518dfac7bdaebf83">Azure::Storage::Queues::QueueClient::SetAccessPolicy</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_set_queue_access_policy_result#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_message">Azure::Storage::Queues::Models::QueueMessage</a>
+    summary: The object returned in the QueueMessageList array when calling Get Messages on a Queue.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_message#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_received_messages">Azure::Storage::Queues::Models::ReceivedMessages</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aba33b63bcd1cf04ac0024159eaf43a0e">Azure::Storage::Queues::QueueClient::ReceiveMessages</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_received_messages#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_clear_messages_result">Azure::Storage::Queues::Models::ClearMessagesResult</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#aa894bc27782336676ca7409a6991ef5b">Azure::Storage::Queues::QueueClient::ClearMessages</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_clear_messages_result#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_enqueue_message_result">Azure::Storage::Queues::Models::EnqueueMessageResult</a>
+    summary: The object returned in the QueueMessageList array when calling Put Message on a Queue.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_enqueue_message_result#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_peeked_queue_message">Azure::Storage::Queues::Models::PeekedQueueMessage</a>
+    summary: The object returned in the QueueMessageList array when calling Peek Messages on a Queue.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_peeked_queue_message#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_peeked_messages">Azure::Storage::Queues::Models::PeekedMessages</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#ad71d263442c4fd7d5a534cc13dd28327">Azure::Storage::Queues::QueueClient::PeekMessages</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_peeked_messages#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_delete_message_result">Azure::Storage::Queues::Models::DeleteMessageResult</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a007f0648915ea76c995e08627056ba67">Azure::Storage::Queues::QueueClient::DeleteMessage</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_delete_message_result#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_update_message_result">Azure::Storage::Queues::Models::UpdateMessageResult</a>
+    summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#a5bd1b5399d41ba0873728e5b3570efce">Azure::Storage::Queues::QueueClient::UpdateMessage</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_update_message_result#details">More...</a>
+    returnType: struct &#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_properties">Azure::Storage::Queues::Models::QueueProperties</a>
     summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client#ac3c54f208257cc9d3205abaa6ace2555">Azure::Storage::Queues::QueueClient::GetProperties</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_queue_properties#details">More...</a>
     returnType: struct &#160;
   - declaration: <a href="class_azure_1_1_storage_1_1_queues_1_1_list_queues_paged_response">Azure::Storage::Queues::ListQueuesPagedResponse</a>
     summary: Response type for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a266d271028d524cc5c55272b92ad852e">Azure::Storage::Queues::QueueServiceClient::ListQueues</a>.  <a href="class_azure_1_1_storage_1_1_queues_1_1_list_queues_paged_response#details">More...</a>
     returnType: class &#160;
-- content: <a id="details"></a>
-- section: Detailed Description
-  display: h2

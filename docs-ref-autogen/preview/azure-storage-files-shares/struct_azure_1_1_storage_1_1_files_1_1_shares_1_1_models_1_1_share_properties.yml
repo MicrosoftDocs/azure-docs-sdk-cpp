@@ -19,6 +19,8 @@ components:
     returnType: Azure::ETag&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_properties#ad7ae9fab48deee89ca3da9ba05476443">LastModified</a>
     returnType: DateTime&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_properties#a5371c871810c90e4f3d86e2b1fbd370d">CreatedOn</a>
+    returnType: Nullable&lt; DateTime &gt;&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_properties#a7bdde42bfc5a476ea34ff7d5f6093f32">Quota</a> = std::int64_t()
     returnType: std::int64_t&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_properties#a3f038224b5d5c3602f9bf3158cd2c167">ProvisionedIops</a>
@@ -61,6 +63,12 @@ components:
     returnType: Nullable&lt; DateTime &gt;&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_properties#a50707b8f652ea35a98bd6e8c8d117700">NextAllowedProvisionedBandwidthDowngradeTime</a>
     returnType: Nullable&lt; DateTime &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_properties#ad27171fa4891b69a497524400c3456e8">IsChangeFeedEnabled</a>
+    returnType: Nullable&lt; bool &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_properties#a0ed49c4550ecea33de5320c031c3f48d">ChangeFeedRetentionInDays</a>
+    returnType: Nullable&lt; std::int32_t &gt;&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_share_properties#a309317e4c658a92aa28eca6d8bfcc59c">ChangeFeedBlobContainerName</a>
+    returnType: Nullable&lt; std::string &gt;&#160;
 - section: Member Data Documentation
   display: h2
 - content: <a id="a3876132473e84718a20589c14f3002f6"></a>
@@ -87,7 +95,31 @@ components:
   xrefName: Azure::Storage::Files::Shares::Models::ShareProperties.AccessTierTransitionState
 - declaration: Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::Models::ShareProperties::AccessTierTransitionState
   languageId: cpp
-- content: <p>Returns the transition state between access tiers, when present. </p><a id="a3ee1f99a1a6c09f7f69dba1f44d5aac2"></a>
+- content: <p>Returns the transition state between access tiers, when present. </p><a id="a309317e4c658a92aa28eca6d8bfcc59c"></a>
+- section: ChangeFeedBlobContainerName
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AShareProperties.ChangeFeedBlobContainerName
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::Models::ShareProperties.ChangeFeedBlobContainerName
+- declaration: Nullable&lt;std::string&gt; Azure::Storage::Files::Shares::Models::ShareProperties::ChangeFeedBlobContainerName
+  languageId: cpp
+- content: <p>The name of the blob container where change feed records are stored. </p><a id="a0ed49c4550ecea33de5320c031c3f48d"></a>
+- section: ChangeFeedRetentionInDays
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AShareProperties.ChangeFeedRetentionInDays
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::Models::ShareProperties.ChangeFeedRetentionInDays
+- declaration: Nullable&lt;std::int32_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::ChangeFeedRetentionInDays
+  languageId: cpp
+- content: <p>The number of days that change feed records are retained. </p><a id="a5371c871810c90e4f3d86e2b1fbd370d"></a>
+- section: CreatedOn
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AShareProperties.CreatedOn
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::Models::ShareProperties.CreatedOn
+- declaration: Nullable&lt;DateTime&gt; Azure::Storage::Files::Shares::Models::ShareProperties::CreatedOn
+  languageId: cpp
+- content: <p>Returns the date and time the share was created. </p><a id="a3ee1f99a1a6c09f7f69dba1f44d5aac2"></a>
 - section: EnabledProtocols
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AShareProperties.EnabledProtocols
@@ -119,7 +151,15 @@ components:
   xrefName: Azure::Storage::Files::Shares::Models::ShareProperties.IncludedBurstIops
 - declaration: Nullable&lt;std::int64_t&gt; Azure::Storage::Files::Shares::Models::ShareProperties::IncludedBurstIops
   languageId: cpp
-- content: <p>Return the calculated burst IOPS of the share. </p><a id="ad7ae9fab48deee89ca3da9ba05476443"></a>
+- content: <p>Return the calculated burst IOPS of the share. </p><a id="ad27171fa4891b69a497524400c3456e8"></a>
+- section: IsChangeFeedEnabled
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AShareProperties.IsChangeFeedEnabled
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::Models::ShareProperties.IsChangeFeedEnabled
+- declaration: Nullable&lt;bool&gt; Azure::Storage::Files::Shares::Models::ShareProperties::IsChangeFeedEnabled
+  languageId: cpp
+- content: <p>Specifies whether change feed is enabled on the share. </p><a id="ad7ae9fab48deee89ca3da9ba05476443"></a>
 - section: LastModified
   display: h3
   uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AModels%3A%3AShareProperties.LastModified

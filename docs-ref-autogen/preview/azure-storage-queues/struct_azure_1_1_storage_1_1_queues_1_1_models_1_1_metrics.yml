@@ -7,13 +7,13 @@ components:
 - content: >-
     <p>A summary of request statistics grouped by API in hour or minute aggregates for queues.  
 
-    </p><p><code>#include &lt;rest_client.hpp&gt;</code></p>
+    </p><p><code>#include &lt;queue_responses.hpp&gt;</code></p>
 - section: Public Attributes
   display: h2
 - apiList:
   - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_metrics#a61c884754584947db35716033e989d40">Version</a>
     returnType: std::string&#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_metrics#a08faa3e39b3a90a6a1e5ce1a224962a3">IsEnabled</a> = bool()
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_metrics#a08faa3e39b3a90a6a1e5ce1a224962a3">IsEnabled</a> = false
     returnType: bool&#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_models_1_1_metrics#a648aa7bfe37132736ecf031b89834e97">IncludeApis</a>
     returnType: Nullable&lt; bool &gt;&#160;
@@ -35,7 +35,7 @@ components:
   uid: Azure%3A%3AStorage%3A%3AQueues%3A%3AModels%3A%3AMetrics.IsEnabled
   xrefType: Member
   xrefName: Azure::Storage::Queues::Models::Metrics.IsEnabled
-- declaration: bool Azure::Storage::Queues::Models::Metrics::IsEnabled = bool()
+- declaration: bool Azure::Storage::Queues::Models::Metrics::IsEnabled = false
   languageId: cpp
 - content: <p>Indicates whether metrics are enabled for the Queue service. </p><a id="a89e4c1c64506a27e9667b66b54f91020"></a>
 - section: RetentionPolicy

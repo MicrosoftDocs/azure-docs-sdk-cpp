@@ -1,0 +1,42 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AContainerSessionProvider
+title: Azure::Storage::Blobs::ContainerSessionProvider Class Reference
+xrefType: Class
+xrefName: Azure::Storage::Blobs::ContainerSessionProvider
+components:
+- content: >-
+    <p>Creates and caches container-scoped sessions using a TokenCredential.  
+
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p><p>This class inherits from:</p>
+- linkList:
+  - name: Azure::Storage::Blobs::SessionProvider
+    href: class_azure_1_1_storage_1_1_blobs_1_1_session_provider
+- section: Public Member Functions
+  display: h2
+- apiList:
+  - declaration: <a href="class_azure_1_1_storage_1_1_blobs_1_1_container_session_provider#a740edd6de7f21f4aef80b58edc0d7467">ContainerSessionProvider</a> (const std::string &amp;serviceUrl, std::shared_ptr&lt; const Azure::Core::Credentials::TokenCredential &gt; credential, const <a href="struct_azure_1_1_storage_1_1_blobs_1_1_blob_client_options">BlobClientOptions</a> &amp;options)
+    summary: Creates a provider backed by a TokenCredential.
+    returnType: '&#160;'
+- section: Constructor &amp; Destructor Documentation
+  display: h2
+- content: <a id="a740edd6de7f21f4aef80b58edc0d7467"></a>
+- section: ContainerSessionProvider()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3AContainerSessionProvider.ContainerSessionProvider%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::ContainerSessionProvider.ContainerSessionProvider()
+- declaration: >-
+    Azure::Storage::Blobs::ContainerSessionProvider::ContainerSessionProvider(const std::string &amp;&#160;                                               serviceUrl,
+                                                                              std::shared_ptr&lt; const Azure::Core::Credentials::TokenCredential &gt;&#160;credential,
+                                                                              const BlobClientOptions &amp;&#160;                                         options&#160;   
+                                                                             )
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: serviceUrl
+    summary: The Blob service URL.
+  - name: credential
+    summary: The credential used to create sessions.
+  - name: options
+    summary: Client options used by Create Session requests.

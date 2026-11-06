@@ -23,6 +23,9 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client#a2688f599c955ad31d59f5adcaf9ac288">GetUrl</a> () const
     summary: Gets the directory's primary URL endpoint.
     returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client#abea0134e74691990acf131c5a6c445c9">GetFileId</a> () const
+    summary: Gets the file ID when this client addresses a directory by ID.
+    returnType: std::string&#160;
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client#afa1efba5cc9533e7834ccd31ae1eecd4">GetSubdirectoryClient</a> (const std::string &amp;subdirectoryName) const
     summary: Create a <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client">ShareDirectoryClient</a> that's a sub directory of the current <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client">ShareDirectoryClient</a>.
     returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client">ShareDirectoryClient</a>&#160;
@@ -329,6 +332,18 @@ components:
   display: h4
 - parameters:
   - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client">ShareFileClient</a> A file client that can be used to manage a share file resource.
+- content: <a id="abea0134e74691990acf131c5a6c445c9"></a>
+- section: GetFileId()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareDirectoryClient.GetFileId%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareDirectoryClient.GetFileId()
+- declaration: std::string Azure::Storage::Files::Shares::ShareDirectoryClient::GetFileId()const
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The file ID, or an empty string when this client addresses a directory by path.
 - content: <a id="ac0d172b7a45cab3a29c921cf1d12d1bc"></a>
 - section: GetProperties()
   display: h3

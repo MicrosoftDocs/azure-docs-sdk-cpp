@@ -29,6 +29,12 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client#a86fde6d2af5f2878bd2f4408ae4398e9">GetRootDirectoryClient</a> () const
     summary: Gets the <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client">ShareDirectoryClient</a> that's pointing to the root directory of current <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client">ShareClient</a>.
     returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client">ShareDirectoryClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client#a7de4ca945abf720730d76ecb94feeefe">GetFileClientByFileId</a> (const std::string &amp;fileId) const
+    summary: Creates a file client that addresses a file by its file ID.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client">ShareFileClient</a>&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client#a3cf8505aac0086272d84b1b06f99998c">GetDirectoryClientByFileId</a> (const std::string &amp;fileId) const
+    summary: Creates a directory client that addresses a directory by its file ID.
+    returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_directory_client">ShareDirectoryClient</a>&#160;
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_client#a3865128d92097d9cd8405fb67ff4ad23">Create</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_share_options">CreateShareOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_share_options">CreateShareOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
     summary: Creates the file share.
     returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_share_result">Models::CreateShareResult</a> &gt;&#160;
@@ -333,6 +339,40 @@ components:
   display: h4
 - parameters:
   - summary: Azure::Response&lt;Models::ShareAccessPolicy&gt; containing the access policy of the share.
+- content: <a id="a3cf8505aac0086272d84b1b06f99998c"></a>
+- section: GetDirectoryClientByFileId()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareClient.GetDirectoryClientByFileId%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareClient.GetDirectoryClientByFileId()
+- declaration: ShareDirectoryClient Azure::Storage::Files::Shares::ShareClient::GetDirectoryClientByFileId(const std::string &amp;&#160;fileId)const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileId
+    summary: The file ID of the directory.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A client that addresses the directory by its file ID.
+- content: <a id="a7de4ca945abf720730d76ecb94feeefe"></a>
+- section: GetFileClientByFileId()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareClient.GetFileClientByFileId%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareClient.GetFileClientByFileId()
+- declaration: ShareFileClient Azure::Storage::Files::Shares::ShareClient::GetFileClientByFileId(const std::string &amp;&#160;fileId)const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: fileId
+    summary: The file ID of the file.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A client that addresses the file by its file ID.
 - content: <a id="a32dbb93628fbadbfd1fe107d6f532ddd"></a>
 - section: GetPermission()
   display: h3

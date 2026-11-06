@@ -1,0 +1,49 @@
+### YamlMime:Reference
+uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ASessionOptions
+title: Azure::Storage::Blobs::SessionOptions Struct Reference
+xrefType: Struct
+xrefName: Azure::Storage::Blobs::SessionOptions
+components:
+- content: >-
+    <p>Configures persisted session authentication.  
+
+    </p><p><code>#include &lt;blob_options.hpp&gt;</code></p>
+- section: Public Attributes
+  display: h2
+- apiList:
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_session_options#a8ac86cab717ebd970b244e8d0ea28c22">Mode</a> = SessionMode::Auto
+    summary: The session authentication mode.
+    returnType: SessionMode&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_session_options#abc2265797f1277d06363fda8d0a2cf1f">AccountName</a>
+    summary: Account name used when signing requests. Required when it cannot be inferred from URL.
+    returnType: std::string&#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_blobs_1_1_session_options#ab2fb4d2e43ae9c0a02e853de6ad040f0">Provider</a>
+    summary: Optional provider whose session cache can be shared by multiple clients.
+    returnType: std::shared_ptr&lt; <a href="class_azure_1_1_storage_1_1_blobs_1_1_session_provider">SessionProvider</a> &gt;&#160;
+- section: Member Data Documentation
+  display: h2
+- content: <a id="abc2265797f1277d06363fda8d0a2cf1f"></a>
+- section: AccountName
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ASessionOptions.AccountName
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::SessionOptions.AccountName
+- declaration: std::string Azure::Storage::Blobs::SessionOptions::AccountName
+  languageId: cpp
+- content: <p>For custom endpoints, both AccountName and Provider must be specified. </p><a id="a8ac86cab717ebd970b244e8d0ea28c22"></a>
+- section: Mode
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ASessionOptions.Mode
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::SessionOptions.Mode
+- declaration: SessionMode Azure::Storage::Blobs::SessionOptions::Mode = SessionMode::Auto
+  languageId: cpp
+- content: <p>In Auto mode, clients currently use bearer authentication. </p><a id="ab2fb4d2e43ae9c0a02e853de6ad040f0"></a>
+- section: Provider
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3ABlobs%3A%3ASessionOptions.Provider
+  xrefType: Member
+  xrefName: Azure::Storage::Blobs::SessionOptions.Provider
+- declaration: std::shared_ptr&lt;SessionProvider&gt; Azure::Storage::Blobs::SessionOptions::Provider
+  languageId: cpp
+- content: <p>When unset, each independently constructed client creates its own provider. Clients derived from that client share its provider and cache. For custom endpoints, both Provider and AccountName must be specified. </p>

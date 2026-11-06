@@ -23,6 +23,9 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#af5c6e696a07ff5c54a5e5e85c8e1d9d5">GetUrl</a> () const
     summary: Gets the file's primary URL endpoint.
     returnType: std::string&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#ad63c73bf65c8091d623f6c10a15170fe">GetFileId</a> () const
+    summary: Gets the file ID when this client addresses a file by ID.
+    returnType: std::string&#160;
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a333318af2900a195c76f32990c4850ad">WithShareSnapshot</a> (const std::string &amp;shareSnapshot) const
     summary: Initializes a new instance of the <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client">ShareFileClient</a> class with an identical URL source but the specified share snapshot timestamp.
     returnType: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client">ShareFileClient</a>&#160;
@@ -104,6 +107,9 @@ components:
   - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a83a2d195080e52e2164d3c878563066d">CreateHardLink</a> (const std::string &amp;targetFile, const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_hard_link_options">CreateHardLinkOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_create_hard_link_options">CreateHardLinkOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
     summary: NFS only. Creates a hard link to the file specified by path.
     returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_create_file_hard_link_result">Models::CreateFileHardLinkResult</a> &gt;&#160;
+  - declaration: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_share_file_client#a2ca32fa53a9d5c079a182b9be44cde5a">GetFileLinks</a> (const <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_links_options">GetFileLinksOptions</a> &amp;options=<a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_links_options">GetFileLinksOptions</a>(), const Azure::Core::Context &amp;context=Azure::Core::Context()) const
+    summary: Returns the hard links and properties of a file addressed by file ID.
+    returnType: Azure::Response&lt; <a href="struct_azure_1_1_storage_1_1_files_1_1_shares_1_1_models_1_1_get_file_links_result">Models::GetFileLinksResult</a> &gt;&#160;
 - section: Static Public Member Functions
   display: h2
 - apiList:
@@ -569,6 +575,40 @@ components:
   display: h4
 - parameters:
   - summary: <a href="class_azure_1_1_storage_1_1_files_1_1_shares_1_1_get_file_range_list_paged_response">GetFileRangeListPagedResponse</a> describing the changed ranges within the file.
+- content: <a id="ad63c73bf65c8091d623f6c10a15170fe"></a>
+- section: GetFileId()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareFileClient.GetFileId%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareFileClient.GetFileId()
+- declaration: std::string Azure::Storage::Files::Shares::ShareFileClient::GetFileId()const
+  languageId: cpp
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The file ID, or an empty string when this client addresses a file by path.
+- content: <a id="a2ca32fa53a9d5c079a182b9be44cde5a"></a>
+- section: GetFileLinks()
+  display: h3
+  uid: Azure%3A%3AStorage%3A%3AFiles%3A%3AShares%3A%3AShareFileClient.GetFileLinks%28%29
+  xrefType: Member
+  xrefName: Azure::Storage::Files::Shares::ShareFileClient.GetFileLinks()
+- declaration: >-
+    Azure::Response&lt; Models::GetFileLinksResult &gt; Azure::Storage::Files::Shares::ShareFileClient::GetFileLinks(const GetFileLinksOptions &amp;&#160; options = GetFileLinksOptions(), 
+                                                                                                               const Azure::Core::Context &amp;&#160;context = Azure::Core::Context()&#160;
+                                                                                                              )                             const
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: options
+    summary: Optional parameters for getting the file links.
+  - name: context
+    summary: Context for cancelling the operation.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The file properties and hard links.
 - content: <a id="a220017815847877cfe8f244b482fb45c"></a>
 - section: GetProperties()
   display: h3

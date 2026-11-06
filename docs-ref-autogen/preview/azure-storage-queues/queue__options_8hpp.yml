@@ -7,7 +7,9 @@ components:
 - content: >-
     <p>Defines Queue client options and operation options.  
 
-    <a href="queue__options_8hpp#details">More...</a></p><p><code>#include &quot;azure/storage/queues/rest_client.hpp&quot;</code><br>
+    <a href="queue__options_8hpp#details">More...</a></p><p><code>#include &quot;azure/storage/queues/dll_import_export.hpp&quot;</code><br>
+
+    <code>#include &lt;azure/core/datetime.hpp&gt;</code><br>
 
     <code>#include &lt;azure/core/internal/client_options.hpp&gt;</code><br>
 
@@ -17,7 +19,13 @@ components:
 
     <code>#include &lt;chrono&gt;</code><br>
 
+    <code>#include &lt;cstdint&gt;</code><br>
+
     <code>#include &lt;string&gt;</code><br>
+
+    <code>#include &lt;type_traits&gt;</code><br>
+
+    <code>#include &lt;utility&gt;</code><br>
 
     </p>
 - section: Classes
@@ -32,8 +40,6 @@ components:
   - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options">Azure::Storage::Queues::QueueClientOptions</a>
     summary: Optional parameters for constructing a new <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_client">QueueClient</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_queue_client_options#details">More...</a>
     returnType: struct &#160;
-  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_list_queues_options">Azure::Storage::Queues::ListQueuesOptions</a>
-    returnType: struct &#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_set_service_properties_options">Azure::Storage::Queues::SetServicePropertiesOptions</a>
     returnType: struct &#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_get_service_properties_options">Azure::Storage::Queues::GetServicePropertiesOptions</a>
@@ -42,6 +48,8 @@ components:
     returnType: struct &#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_get_user_delegation_key_options">Azure::Storage::Queues::GetUserDelegationKeyOptions</a>
     summary: Optional parameters for <a href="class_azure_1_1_storage_1_1_queues_1_1_queue_service_client#a51ff766dfd0d5f881335c4b25477169f">Azure::Storage::Queues::QueueServiceClient::GetUserDelegationKey</a>.  <a href="struct_azure_1_1_storage_1_1_queues_1_1_get_user_delegation_key_options#details">More...</a>
+    returnType: struct &#160;
+  - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_list_queues_options">Azure::Storage::Queues::ListQueuesOptions</a>
     returnType: struct &#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_create_queue_options">Azure::Storage::Queues::CreateQueueOptions</a>
     returnType: struct &#160;
@@ -67,6 +75,121 @@ components:
     returnType: struct &#160;
   - declaration: <a href="struct_azure_1_1_storage_1_1_queues_1_1_clear_messages_options">Azure::Storage::Queues::ClearMessagesOptions</a>
     returnType: struct &#160;
+- section: Enumerations
+  display: h2
+- apiList:
+  - declaration: >-
+      <a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">Azure::Storage::Queues::Models::ListQueuesIncludeFlags</a> { None = 0
+
+      , Metadata = 1
+       }
+    summary: Include this parameter to specify that the queues' metadata be returned as part of the response body.
+    returnType: <a id="af6d1fc1171644b3aab5291c01d8174a8"></a>enum class &#160;
+- section: Functions
+  display: h2
+- apiList:
+  - declaration: <a href="queue__options_8hpp#aacbed51b504c6f31745014c1a5349ce4">Azure::Storage::Queues::Models::operator|</a> (<a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> lhs, <a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> rhs)
+    summary: Combines the flags from both operands.
+    returnType: <a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a>&#160;
+  - declaration: <a href="queue__options_8hpp#a8f57ed37ce8b7a6fe16ba36c9ee59307">Azure::Storage::Queues::Models::operator|=</a> (<a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> &amp;lhs, <a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> rhs)
+    summary: Adds the right operand's flags to the left operand.
+    returnType: <a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> &amp;&#160;
+  - declaration: <a href="queue__options_8hpp#ad2558233efb42199821c38923c706f73">Azure::Storage::Queues::Models::operator&amp;</a> (<a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> lhs, <a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> rhs)
+    summary: Selects the flags present in both operands.
+    returnType: <a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a>&#160;
+  - declaration: <a href="queue__options_8hpp#a3493653d73ea8da8bf2be4b6786a5539">Azure::Storage::Queues::Models::operator&amp;=</a> (<a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> &amp;lhs, <a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> rhs)
+    summary: Retains only the right operand's flags in the left operand.
+    returnType: <a href="queue__options_8hpp#af6d1fc1171644b3aab5291c01d8174a8">ListQueuesIncludeFlags</a> &amp;&#160;
 - content: <a id="details"></a>
 - section: Detailed Description
   display: h2
+- section: Function Documentation
+  display: h2
+- content: <a id="ad2558233efb42199821c38923c706f73"></a>
+- section: operator&amp;()
+  display: h3
+  uid: queue_options.hpp.operator%26%28%29
+  xrefType: Member
+  xrefName: queue_options.hpp.operator&()
+- declaration: >-
+    ListQueuesIncludeFlags Azure::Storage::Queues::Models::operator&amp;(ListQueuesIncludeFlags&#160;lhs,
+                                                                     ListQueuesIncludeFlags&#160;rhs&#160;
+                                                                    ) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: lhs
+    summary: The left operand.
+  - name: rhs
+    summary: The right operand.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The flags present in both operands.
+- content: <a id="a3493653d73ea8da8bf2be4b6786a5539"></a>
+- section: operator&amp;=()
+  display: h3
+  uid: queue_options.hpp.operator%26%3D%28%29
+  xrefType: Member
+  xrefName: queue_options.hpp.operator&=()
+- declaration: >-
+    ListQueuesIncludeFlags &amp; Azure::Storage::Queues::Models::operator&amp;=(ListQueuesIncludeFlags &amp;&#160;lhs,
+                                                                        ListQueuesIncludeFlags&#160;  rhs&#160;
+                                                                       ) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: lhs
+    summary: The flags to update.
+  - name: rhs
+    summary: The flags to retain.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A reference to the updated left operand.
+- content: <a id="aacbed51b504c6f31745014c1a5349ce4"></a>
+- section: operator|()
+  display: h3
+  uid: queue_options.hpp.operator%7C%28%29
+  xrefType: Member
+  xrefName: queue_options.hpp.operator|()
+- declaration: >-
+    ListQueuesIncludeFlags Azure::Storage::Queues::Models::operator|(ListQueuesIncludeFlags&#160;lhs,
+                                                                     ListQueuesIncludeFlags&#160;rhs&#160;
+                                                                    ) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: lhs
+    summary: The left operand.
+  - name: rhs
+    summary: The right operand.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: The combined flags.
+- content: <a id="a8f57ed37ce8b7a6fe16ba36c9ee59307"></a>
+- section: operator|=()
+  display: h3
+  uid: queue_options.hpp.operator%7C%3D%28%29
+  xrefType: Member
+  xrefName: queue_options.hpp.operator|=()
+- declaration: >-
+    ListQueuesIncludeFlags &amp; Azure::Storage::Queues::Models::operator|=(ListQueuesIncludeFlags &amp;&#160;lhs,
+                                                                        ListQueuesIncludeFlags&#160;  rhs&#160;
+                                                                       ) inline
+  languageId: cpp
+- section: Parameters
+  display: h4
+- parameters:
+  - name: lhs
+    summary: The flags to update.
+  - name: rhs
+    summary: The flags to add.
+- section: Returns
+  display: h4
+- parameters:
+  - summary: A reference to the updated left operand.

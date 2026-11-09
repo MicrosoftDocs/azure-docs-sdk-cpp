@@ -1,7 +1,7 @@
 ---
 title: 
 keywords: Azure, cpp, SDK, API, azure-core-amqp, core
-ms.date: 09/04/2026
+ms.date: 11/09/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: core
@@ -138,13 +138,13 @@ Security issues and bugs should be reported privately, via email, to the Microso
 
 ### License
 
-Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core-amqp_1.0.0-beta.13/LICENSE.txt) license.
+Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core-amqp_1.0.0-beta.14/LICENSE.txt) license.
 
 <!-- LINKS -->
 [azsdk_vcpkg_install]: https://github.com/Azure/azure-sdk-for-cpp#download--install-the-sdk
-[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core-amqp_1.0.0-beta.13/CONTRIBUTING.md
-[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core-amqp_1.0.0-beta.13/CONTRIBUTING.md#developer-guide
-[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core-amqp_1.0.0-beta.13/CONTRIBUTING.md#pull-requests
+[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core-amqp_1.0.0-beta.14/CONTRIBUTING.md
+[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core-amqp_1.0.0-beta.14/CONTRIBUTING.md#developer-guide
+[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-core-amqp_1.0.0-beta.14/CONTRIBUTING.md#pull-requests
 [azure_sdk_cpp_development_guidelines]: https://azure.github.io/azure-sdk/cpp_introduction.html
 [azure_cli]: https://learn.microsoft.com/cli/azure
 [azure_amqp]: https://github.com/Azure/azure-amqp

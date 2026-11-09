@@ -1,7 +1,7 @@
 ---
 title: 
 keywords: Azure, cpp, SDK, API, azure-messaging-eventhubs-checkpointstore-blob, eventhubs
-ms.date: 08/19/2026
+ms.date: 11/09/2026
 ms.topic: reference
 ms.devlang: cpp
 ms.service: eventhubs
@@ -68,22 +68,22 @@ Security issues and bugs should be reported privately, via email, to the Microso
 
 ### License
 
-Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.4/LICENSE.txt) license.
+Azure SDK for C++ is licensed under the [MIT](https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.5/LICENSE.txt) license.
 
 <!-- LINKS -->
-[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.4/CONTRIBUTING.md
-[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.4/CONTRIBUTING.md#developer-guide
-[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.4/CONTRIBUTING.md#pull-requests
+[azure_sdk_for_cpp_contributing]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.5/CONTRIBUTING.md
+[azure_sdk_for_cpp_contributing_developer_guide]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.5/CONTRIBUTING.md#developer-guide
+[azure_sdk_for_cpp_contributing_pull_requests]: https://github.com/Azure/azure-sdk-for-cpp/blob/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.5/CONTRIBUTING.md#pull-requests
 
 [consumer_client]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-messaging-eventhubs/latest/class_azure_1_1_messaging_1_1_event_hubs_1_1_consumer_client.html
 [producer_client]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-messaging-eventhubs/latest/class_azure_1_1_messaging_1_1_event_hubs_1_1_producer_client.html
 
-[source]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.4/sdk/eventhubs
+[source]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.5/sdk/eventhubs
 [azure_identity_pkg]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-identity/latest/index.html
 [default_azure_credential]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-identity/latest/index.html#defaultazurecredential
 
 [cppdoc]: https://azuresdkdocs.z19.web.core.windows.net/cpp/azure-messaging-eventhubs-checkpointstore-blob/latest/index.html
-[cppdoc_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.4/sdk/eventhubs/azure-messaging-eventhubs/samples
+[cppdoc_examples]: https://github.com/Azure/azure-sdk-for-cpp/tree/azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.5/sdk/eventhubs/azure-messaging-eventhubs/samples
 
 
 
